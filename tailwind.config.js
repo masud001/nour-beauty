@@ -2,10 +2,16 @@
 export default {
   content: [
     "./index.html",
-    "./src/**/*.{js,ts,jsx,tsx}", // Include paths to your JS files.
+    "./src/**/*.{html,js,ts,jsx,tsx}", // Include paths to your JS files.
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        inter: ['Inter','Roboto', 'sans-serif'],
+        // roboto: ['Roboto', 'sans-serif'],
+        cookie: ['Cookie', 'serif'],
+      },
+    },
   },
   plugins: [],
 }
