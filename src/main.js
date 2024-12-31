@@ -1,4 +1,3 @@
-import { space } from "postcss/lib/list";
 
 console.log("Hello from main.js");
 // categorySlider
