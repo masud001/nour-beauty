@@ -7,9 +7,8 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        inter: ['Inter','Roboto', 'sans-serif'],
-        // roboto: ['Roboto', 'sans-serif'],
-        cookie: ['Cookie', 'serif'],
+        averta: ['Averta Demo PE', 'sans-serif'],
+        // cookie: ['Cookie', 'serif'],
       },
     },
   },
