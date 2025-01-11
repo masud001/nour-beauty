@@ -1,7 +1,7 @@
 {
   "name": "nour-beauty",
   "version": "1.0.0",
-  "main": "gulpfile.js",
+  "main": "index.js",
   "dependencies": {
     "ansi-regex": "^6.1.0",
     "ansi-styles": "^6.2.1",
@@ -22,7 +22,6 @@
     "color-convert": "^2.0.1",
     "color-name": "^1.1.4",
     "commander": "^4.1.1",
-    "concurrently": "^9.1.0",
     "cross-spawn": "^7.0.6",
     "cssesc": "^3.0.0",
     "didyoumean": "^1.2.2",
@@ -123,16 +122,21 @@
   },
   "devDependencies": {
     "bootstrap": "^5.3.3",
+    "concurrently": "^9.1.2",
     "gulp": "^5.0.0",
     "gulp-concat": "^2.6.1",
     "gulp-purgecss": "^7.0.2",
     "gulp-sass": "^6.0.0",
     "gulp-uglify": "^3.0.2",
     "sass": "^1.83.1",
+    "swiper": "^11.2.1",
     "vite": "^6.0.7"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "vite",
+    "build": "vite build",
+    "gulp": "gulp",
+    "start": "concurrently \"npm run gulp\" \"npm run dev\""
   },
   "keywords": [],
   "author": "",

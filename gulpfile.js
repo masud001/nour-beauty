@@ -1,36 +1,45 @@
-const gulp = require('gulp');
+const  {src, dest, watch, series }= require('gulp');
 const sass = require('gulp-sass')(require('sass'));
+const purgecss = require('gulp-purgecss');
 const concat = require('gulp-concat');
 const uglify = require('gulp-uglify');
-const purgecss = require('gulp-purgecss');
 
-const path ={
-    scss: './src/assets/sass/**/*.scss',
-    js: './src/assets/js/**/*.js',
-    html: './src/**/*.html',
-    dist: 'dist',
-    distCss: 'dist/assets/css',
-    distJs: 'dist/assets/js',
-    distHtml: 'dist',
-    distImg: 'dist/assets/img',
-    distFont: 'dist/assets/fonts'
+
+function copySwiperJs(){
+  return src([
+    './node_modules/swiper/swiper-bundle.min.{js,css}',
+  ]).pipe(dest("src/assets/swiper"));
 }
 
-gulp.task('sass', () => {
-    return gulp.src(path.scss)
-        .pipe(sass())
-        .pipe(gulp.dest(path.distCss))
-        .pipe(purgecss({content: [path.html]}))
-        .pipe(gulp.dest(path.distCss))
-});
+function compyBootstrapJs(){
+  return src([
+    './node_modules/bootstrap/dist/js/bootstrap.min.js',
+  ]).pipe(dest("src/assets/js"));
+}
 
-gulp.task('purgecss', () => {
-  return gulp
-    .src(`${path.dist}/css/**/*.css`)
-    .pipe(
-      purgecss({
-        content: [paths.html, paths.js],
-      })
-    )
-    .pipe(gulp.dest(`${paths.dist}/css`));
-});
+function compileSass(){
+  return src('src/sass/style.scss')
+  .pipe(sass().on('error', sass.logError))
+  .pipe(purgecss({
+    content: ['src/**/*.html', 'src/**/*.js'],
+    extractors:[{
+      extractor: content => content.match(/[A-Za-z0-9-_:/]+/g) || [],
+      extensions: ['html', 'js']
+    }],
+     satisfies:{
+      standard: [
+          /^offcanvas/,  // Safelisting all offcanvas-related classes
+          'show',        // For showing the offcanvas
+          'fade',        // Fade transition for modals
+          'offcanvas-backdrop',  // Safelists the offcanvas backdrop
+          'modal-backdrop',  // For any modals you might use
+    ]}
+  }))
+  .pipe(dest('./src/assets/css'))
+}
+
+function watchTask() {
+    watch(['src/scss/**/*.scss', 'src/*.html'], compileSass);
+}
+
+exports.default = series(copySwiperJs, compyBootstrapJs, compileSass, watchTask);
