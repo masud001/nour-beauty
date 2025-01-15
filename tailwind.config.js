@@ -7,8 +7,7 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        averta: ['Averta Demo PE', 'sans-serif'],
-        // cookie: ['Cookie', 'serif'],
+        averta: ['var(--font-family)', 'sans-serif'],
       },
     },
   },
