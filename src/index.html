@@ -45,12 +45,15 @@
       </a>
     </div>
 
-    <header id="site-header" class="">
-      <div class="">
+    <header id="site-header" class="header-container bg-white shadow py-3">
+      <div
+        class="container container-fluid d-flex align-items-center justify-content-between">
         <!-- search container for mobile  -->
-        <div class="">
+        <div class="col d-flex d-lg-none gap-3 align-items-center">
           <div class="menu-bar">
-            <span><i class="fa-solid fa-bars"></i></span>
+            <button
+              ><span><i class="fa-solid fa-bars"></i></span
+            ></button>
           </div>
           <div class="search-bar">
             <button class="">
@@ -59,16 +62,16 @@
           </div>
         </div>
         <!-- search container for pc  -->
-        <div class="">
-          <div class="">
+        <div class="col d-none d-lg-block">
+          <div class="header-search">
             <form action="" class="">
-              <div class="">
+              <div class="position-relative">
                 <input
                   id="search-input"
                   type="text"
-                  class=""
+                  class="w-100 rounded-1"
                   placeholder="Search for a product or brand" />
-                <button class="">
+                <button class="position-absolute">
                   <span><i class="fa-solid fa-magnifying-glass"></i></span>
                 </button>
               </div>
@@ -76,41 +79,77 @@
           </div>
         </div>
         <!-- logo container  -->
-        <div class="logo-container">
+        <div
+          class="col logo-container d-flex align-items-center justify-content-center mx-auto">
           <a href="/#">
-            <img src="./src/assets/img/brand-logo.svg" alt="brand-logo" />
+            <img src="./assets/img/brand-logo.svg" alt="brand-logo" />
           </a>
         </div>
         <!-- other container  -->
-        <div class="other-container">
-          <div class="change-local">
-            <button class="">
+        <div
+          class="col other-container d-flex gap-3 gap-lg-4 align-items-center justify-content-end">
+          <div class="change-local d-none d-lg-flex align-items-center">
+            <button class="text-uppercase d-flex align-items-center gap-2">
               <span class="">
                 <img
                   class=""
-                  src="./src/assets/img/flags/united-kingdom.png"
+                  src="./assets/img/flags/united-kingdom.png"
                   alt="united-kingdom flag" />
               </span>
               <span class="">&bull;</span>
-              <span class="">usd</span>
+              <span class="fw-bold">usd</span>
             </button>
           </div>
-          <div class="customar-account">
-            <button class="">
+          <div class="customar-account dropdown">
+            <button
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              class="d-flex gap-2 align-items-center"
+              type="button">
               <span><i class="fa-regular fa-user"></i></span>
-              <span class="">Account</span>
+              <span class="d-none d-lg-flex fw-semibold">Account</span>
             </button>
+            <ul
+              class="dropdown-menu dropdown-menu-end rounded-0 border border-light-subtle shadow m-0 p-0">
+              <li
+                ><button
+                  class="w-100 p-3 text-uppercase fs-6 fw-normal text-white bg-black"
+                  >registration</button
+                ></li
+              >
+              <li
+                ><button
+                  class="w-100 p-3 text-uppercase fs-6 fw-normal text-black bg-white border border-black"
+                  >login</button
+                ></li
+              >
+              <li
+                ><a class="dropdown-item p-3 fs-6 text-capitalize" href="#"
+                  >your wishlist</a
+                ></li
+              >
+              <li
+                ><a class="dropdown-item p-3 fs-6 text-capitalize" href="#"
+                  >your order</a
+                ></li
+              >
+              <li
+                ><a class="dropdown-item p-3 fs-6 text-capitalize" href="#"
+                  >your referrel</a
+                ></li
+              >
+            </ul>
           </div>
           <div class="addto-busket">
-            <a href="/#" class="">
+            <button class="d-flex gap-2 align-items-center">
               <span><i class="fa-solid fa-basket-shopping"></i></span>
-              <span class="">Bag</span>
-            </a>
+              <span class="d-none d-lg-flex fw-semibold">Bag</span>
+            </button>
           </div>
         </div>
       </div>
       <!-- desktop navigation  -->
-      <nav class="header-nav">
+      <nav class="header-nav d-none d-lg-block">
         <ul class="flex">
           <li class="nav-item">
             <a href="/#" class="">SALE </a>
@@ -152,6 +191,8 @@
       </nav>
     </header>
 
+    <!-- <script src="./assets/js/bootstrap.min.js"></script> -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="./assets/js/main.js"></script>
   </body>
 </html>

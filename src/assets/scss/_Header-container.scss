@@ -1,0 +1,87 @@
+.header-container {
+  button {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+    i {
+      font-size: 16px;
+    }
+  }
+  @media (min-width: 320px) {
+    .logo-container {
+      a {
+        font-size: 100%;
+        img {
+          width: 150px;
+        }
+      }
+    }
+  }
+  @media (min-width: 576px) {
+    .logo-container {
+      a {
+        font-size: 100%;
+        img {
+          width: auto;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    button {
+      i {
+        font-size: 20px;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    .header-search {
+      position: relative;
+      input {
+        width: 100%;
+        padding: 0.75rem 2.5rem 0.75rem 1.5rem;
+        border: 1px solid vars.$color-gray;
+        &::placeholder {
+          color: vars.$primary-color;
+          opacity: 0.6;
+          font-size: vars.$font-xl;
+        }
+      }
+      button {
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translate(-80%, -36%);
+      }
+    }
+    .other-container {
+      font-weight: bold;
+    }
+    .customar-account {
+      ul.dropdown-menu {
+        width: 320px;
+        background-color: white;
+        li {
+          &:first-child,
+          &:nth-child(2) {
+            padding: 8px 15px;
+            background-color: vars.$color-gray;
+          }
+
+          button {
+            &:hover {
+              opacity: 0.8;
+              text-decoration: underline;
+              outline: 1px solid black;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+  }
+  @media (min-width: 1400px) {
+  }
+}
