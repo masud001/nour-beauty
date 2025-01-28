@@ -1,6 +1,8 @@
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 
-h2 {
-  font-size: 100px;
-  margin: 10px;
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
 }
