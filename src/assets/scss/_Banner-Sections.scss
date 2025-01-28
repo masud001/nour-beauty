@@ -20,6 +20,31 @@
     }
   }
 }
+/* Mobile Slides */
+.mobile-slides {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  justify-content: center;
+  .slide-item {
+    display: none !important;
+    &.active {
+      display: flex !important;
+    }
+  }
+}
+
+.slide-item {
+  // flex: 0 0 100%;
+  transition: transform 0.5s ease-in-out;
+  // display: none;
+  justify-content: center;
+}
+
+.slide-item.active {
+  display: block !important; /* Show the active item */
+}
 
 .stripe-banner {
   background-color: vars.$color-pink;

@@ -36,3 +36,20 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".slide-item");
+  let currentSlide = 0;
+
+  if (slides.length > 0) {
+    slides[currentSlide].classList.add("active");
+  }
+
+  function showNextSlide() {
+    slides[currentSlide].classList.remove("active");
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add("active");
+  }
+
+  setInterval(showNextSlide, 3000);
+});
