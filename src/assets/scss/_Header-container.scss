@@ -79,9 +79,107 @@
         }
       }
     }
+    // header nav
+    .header-nav {
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+
+        position: relative;
+        li {
+          a {
+            text-transform: capitalize;
+            text-decoration: none;
+            color: vars.$primary-color;
+            font-size: vars.$font-sm;
+            font-weight: 500;
+            padding: 0.75rem 1rem;
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .nav-navigation {
+      position: static;
+    }
+    .mega-navigation {
+      padding-top: 30px;
+      width: 100vw;
+      background-color: white;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      right: 0;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+      opacity: 0;
+      visibility: hidden;
+    }
+    .nav-navigation:hover .mega-navigation {
+      opacity: 1;
+      visibility: visible;
+    }
+    .mega-navigation {
+      ul {
+        li {
+          display: block;
+          a {
+            color: vars.$primary-color;
+            text-decoration: none;
+            font-size: vars.$font-xl;
+            font-weight: 500;
+            padding: 0.3rem 1rem;
+            display: block;
+            &:hover {
+              background: vars.$color-gray;
+              text-decoration: underline;
+              outline: none;
+            }
+          }
+        }
+      }
+    }
   }
   @media (min-width: 1200px) {
+    .header-nav {
+      ul {
+        li {
+          a {
+            font-size: vars.$font-xl;
+          }
+        }
+      }
+    }
   }
   @media (min-width: 1400px) {
   }
+}
+
+// mobile menu desing
+.mobile-registraion {
+  button {
+    padding: 10px;
+    font-size: 14px;
+  }
+}
+.slide-window {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%; /* Adjust width as needed */
+  min-height: 100vh;
+  overflow-y: auto;
+  background-color: white;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+  transition: left 0.3s ease-in-out;
+  z-index: 1000;
+}
+
+.slide-window.open {
+  left: 0;
+}
+
+.slide-content {
+  padding: 20px;
 }
