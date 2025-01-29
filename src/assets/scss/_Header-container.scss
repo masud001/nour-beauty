@@ -121,6 +121,7 @@
     .nav-navigation:hover .mega-navigation {
       opacity: 1;
       visibility: visible;
+      z-index: 99 !important;
     }
     .mega-navigation {
       ul {

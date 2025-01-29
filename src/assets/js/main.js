@@ -1,9 +1,8 @@
 import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
-console.log("Hello World");
 
-// mobile nav menu
+// mobile nav menu for small screen inside canvas
 // ------------------
 
 document.addEventListener("DOMContentLoaded", function () {
@@ -37,6 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 });
 
+// header top slider on mobile view
 document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".slide-item");
   let currentSlide = 0;
