@@ -5,9 +5,11 @@
 
 // section scss file import
 @import "./Banner-Sections.scss";
+@import "./category-section";
 
 // all component scss file import
 @import "./Header-container";
+@import "./Breadcrumb-Section";
 
 *,
 ::before,
