@@ -1,0 +1,3834 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home page</title>
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+    <!-- swiper slider css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <!-- header top banner  -->
+    <div class="header-banner">
+      <div
+        class="container-fluid d-flex justify-content-center align-items-center gap-sm-3 gap-lg-4 p-2 p-lg-3">
+        <!-- Mobile Slides -->
+        <div class="mobile-slides d-lg-none">
+          <a
+            href="/#"
+            class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+            <span><i class="fa-solid fa-truck-moving"></i></span>
+            <span class="text-reset"> Free UK shipping over £25</span>
+          </a>
+          <a
+            href="/#"
+            class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+            <span><i class="fa-solid fa-mobile-screen-button"></i></span>
+            <span>15% off your app order</span>
+          </a>
+          <a
+            href="/#"
+            class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+            <span><i class="fa-regular fa-envelope"></i></span>
+            <span> Sign up for email exclusives</span>
+          </a>
+          <a
+            href="/#"
+            class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+            <span><i class="fa-solid fa-gift"></i></span>
+            <span> Earn Cult Status Points</span>
+          </a>
+        </div>
+
+        <!-- Desktop Items -->
+        <a
+          href="/#"
+          class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+          <span><i class="fa-solid fa-truck-moving"></i></span>
+          <span class="text-reset"> Free UK shipping over £25</span>
+        </a>
+        <a
+          href="/#"
+          class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+          <span><i class="fa-solid fa-mobile-screen-button"></i></span>
+          <span> 15% off your app order</span>
+        </a>
+        <a
+          href="/#"
+          class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+          <span><i class="fa-regular fa-envelope"></i></span>
+          <span> Sign up for email exclusives</span>
+        </a>
+        <a
+          href="/#"
+          class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+          <span><i class="fa-solid fa-gift"></i></span>
+          <span> Earn Cult Status Points</span>
+        </a>
+      </div>
+    </div>
+
+    <!-- stripe banner  -->
+    <div
+      class="stripe-banner container-fluid d-flex justify-content-center align-items-center p-2 p-lg-3">
+      <a href="/#" class="text-reset text-uppercase text-decoration-none fs-6">
+        <span class="">SALE - UP TO 50% OFF</span>
+      </a>
+    </div>
+
+    <header
+      id="site-header"
+      class="header-container sticky top-0 z-30 bg-white py-3">
+      <div
+        class="container container-fluid d-flex align-items-center justify-content-between">
+        <!-- search container for mobile  -->
+        <div class="col d-flex d-lg-none gap-3 align-items-center">
+          <div class="menu-bar">
+            <button
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#mobileNavigation"
+              aria-controls="mobileNavigation"
+              ><span><i class="fa-solid fa-bars"></i></span
+            ></button>
+          </div>
+          <div class="search-bar">
+            <button class="">
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            </button>
+          </div>
+        </div>
+        <!-- search container for pc  -->
+        <div class="col d-none d-lg-block">
+          <div class="header-search">
+            <form action="" class="">
+              <div class="position-relative">
+                <input
+                  id="search-input"
+                  type="text"
+                  class="w-100 rounded-1"
+                  placeholder="Search for a product or brand" />
+                <button class="position-absolute">
+                  <span><i class="fa-solid fa-magnifying-glass"></i></span>
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- logo container  -->
+        <div
+          class="col logo-container d-flex align-items-center justify-content-center mx-auto">
+          <a href="/#">
+            <img src="./assets/img/brand-logo.svg" alt="brand-logo" />
+          </a>
+        </div>
+        <!-- other container  -->
+        <div
+          class="col other-container d-flex gap-3 gap-lg-4 align-items-center justify-content-end">
+          <div class="change-local d-none d-lg-flex align-items-center">
+            <button class="text-uppercase d-flex align-items-center gap-2">
+              <span class="">
+                <img
+                  class=""
+                  src="./assets/img/flags/united-kingdom.png"
+                  alt="united-kingdom flag" />
+              </span>
+              <span class="">&bull;</span>
+              <span class="fw-bold">usd</span>
+            </button>
+          </div>
+          <div class="customar-account dropdown">
+            <button
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+              class="d-flex gap-2 align-items-center"
+              type="button">
+              <span><i class="fa-regular fa-user"></i></span>
+              <span class="d-none d-lg-flex fw-semibold">Account</span>
+            </button>
+            <ul
+              class="dropdown-menu dropdown-menu-end rounded-0 border border-light-subtle shadow m-0 p-0">
+              <li
+                ><button
+                  class="w-100 p-3 text-uppercase fs-6 fw-normal text-white bg-black"
+                  >registration</button
+                ></li
+              >
+              <li
+                ><button
+                  class="w-100 p-3 text-uppercase fs-6 fw-normal text-black bg-white border border-black"
+                  >login</button
+                ></li
+              >
+              <li
+                ><a class="dropdown-item p-3 fs-6 text-capitalize" href="#"
+                  >your wishlist</a
+                ></li
+              >
+              <li
+                ><a class="dropdown-item p-3 fs-6 text-capitalize" href="#"
+                  >your order</a
+                ></li
+              >
+              <li
+                ><a class="dropdown-item p-3 fs-6 text-capitalize" href="#"
+                  >your referrel</a
+                ></li
+              >
+            </ul>
+          </div>
+          <div class="addto-busket">
+            <button class="d-flex gap-2 align-items-center">
+              <span><i class="fa-solid fa-basket-shopping"></i></span>
+              <span class="d-none d-lg-flex fw-semibold">Bag</span>
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- desktop navigation  -->
+      <nav class="header-nav d-none d-lg-block mt-3">
+        <ul class="d-flex justify-content-center align-items-center">
+          <div class="nav-navigation">
+            <li class="nav-item">
+              <a href="/#" class="">SALE </a>
+            </li>
+            <div class="mega-navigation">
+              <div class="container">
+                <div class="row row-cols-5 g-3">
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-navigation">
+            <li class="nav-item">
+              <a href="/#" class="">Brands</a>
+            </li>
+
+            <div class="mega-navigation">
+              <div class="container">
+                <div class="row row-cols-5 g-3">
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-navigation">
+            <li class="nav-item">
+              <a href="/#" class="">New & Trending</a>
+            </li>
+
+            <div class="mega-navigation">
+              <div class="container">
+                <div class="row row-cols-5 g-3">
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-navigation">
+            <li class="nav-item">
+              <a href="/#" class="">Fragrance</a>
+            </li>
+
+            <div class="mega-navigation">
+              <div class="container">
+                <div class="row row-cols-5 g-3">
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-navigation">
+            <li class="nav-item">
+              <a href="/#" class="">Skin Care</a>
+            </li>
+
+            <div class="mega-navigation">
+              <div class="container">
+                <div class="row row-cols-5 g-3">
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-navigation">
+            <li class="nav-item">
+              <a href="/#" class="">Make Up</a>
+            </li>
+
+            <div class="mega-navigation">
+              <div class="container">
+                <div class="row row-cols-5 g-3">
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-navigation">
+            <li class="nav-item">
+              <a href="/#" class="">Hair</a>
+            </li>
+
+            <div class="mega-navigation">
+              <div class="container">
+                <div class="row row-cols-5 g-3">
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-navigation">
+            <li class="nav-item">
+              <a href="/#" class="">Body & Wellbeing</a>
+            </li>
+
+            <div class="mega-navigation">
+              <div class="container">
+                <div class="row row-cols-5 g-3">
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-navigation">
+            <li class="nav-item">
+              <a href="/#" class="">SPF</a>
+            </li>
+
+            <div class="mega-navigation">
+              <div class="container">
+                <div class="row row-cols-5 g-3">
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-navigation">
+            <li class="nav-item">
+              <a href="/#" class="">Minis</a>
+            </li>
+
+            <div class="mega-navigation">
+              <div class="container">
+                <div class="row row-cols-5 g-3">
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-navigation">
+            <li class="nav-item">
+              <a href="/#" class="">Cult Conscious</a>
+            </li>
+
+            <div class="mega-navigation">
+              <div class="container">
+                <div class="row row-cols-5 g-3">
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="nav-navigation">
+            <li class="nav-item">
+              <a href="/#" class="">Blog</a>
+            </li>
+
+            <div class="mega-navigation">
+              <div class="container">
+                <div class="row row-cols-5 g-3">
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                  <div class="col">
+                    <h3
+                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
+                      >View All Brands</h3
+                    >
+                    <ul class="list-unstyled">
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                      <li><a href="/#">items</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </ul>
+      </nav>
+    </header>
+    <!-- mobile nagigation -->
+    <div
+      class="offcanvas offcanvas-start mobile-navigation"
+      tabindex="-1"
+      id="mobileNavigation"
+      aria-labelledby="mobileNavigationLabel">
+      <div class="offcanvas-header d-flex flex-column p-0">
+        <div
+          class="d-flex justify-content-between w-100 p-4 border-bottom border-light-subtle">
+          <div class="offcanvas-title" id="mobileNavigationLabel">
+            <i class="fa-solid fa-house fs-4"></i>
+          </div>
+          <div class="d-flex align-items-center gap-4">
+            <button
+              class="text-uppercase d-flex align-items-center gap-2 border-0 bg-transparent">
+              <span class="">
+                <img
+                  class=""
+                  src="./assets/img/flags/united-kingdom.png"
+                  alt="united-kingdom flag" />
+              </span>
+              <span class="">&bull;</span>
+              <span class="fw-bold">usd</span>
+            </button>
+
+            <button
+              type="button"
+              class="btn-close text-black"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"></button>
+          </div>
+        </div>
+        <div
+          class="w-100 d-flex flex-row gap-4 px-4 py-3 mobile-registraion border-bottom border-light-subtle">
+          <button
+            class="w-100 text-uppercase fs-6 fw-normal text-white bg-black"
+            >registration</button
+          >
+          <button
+            class="w-100 text-uppercase fs-6 fw-normal text-black bg-transparent"
+            >login</button
+          >
+        </div>
+      </div>
+      <div class="offcanvas-body position-relative px-0">
+        <div
+          class="position-static pb-4 border-bottom border-light-subtle px-3 mb-4">
+          <a href="/#" class="h5 text-decoration-none fw-bold mb-3 d-block"
+            >Brand</a
+          >
+          <div class="d-flex flex-column gap-2">
+            <button
+              data-slide="slide1"
+              class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+              <span>items</span>
+              <span><i class="fa-solid fa-angle-right"></i></span>
+            </button>
+            <button
+              data-slide="slide2"
+              class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+              <span>items 2</span>
+              <span><i class="fa-solid fa-angle-right"></i></span>
+            </button>
+          </div>
+        </div>
+        <!-- slider-1 window -->
+        <div id="slide1" class="slide-window bg-white">
+          <div class="slide-content">
+            <div class="d-flex gap-3 align-items-center mb-4">
+              <button
+                class="close-btn p-0 bg-transparent border-0 fs-5 d-flex align-items-center gap-3 text-capitalize">
+                <span><i class="fa-solid fa-angle-left"></i></span>
+                <span class="h5 text-decoration-none fw-bold d-block m-0"
+                  >items</span
+                >
+              </button>
+            </div>
+            <div class="">
+              <div class="d-flex flex-column gap-2">
+                <button
+                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                  <span>nested items</span>
+                </button>
+                <button
+                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                  <span>nested items</span>
+                </button>
+                <button
+                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                  <span>nested items</span>
+                </button>
+                <button
+                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                  <span>nested items</span>
+                </button>
+                <button
+                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                  <span>nested items</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- slider-2 window -->
+        <div id="slide2" class="slide-window bg-white">
+          <div class="slide-content">
+            <div class="d-flex gap-3 align-items-center mb-4">
+              <button
+                class="close-btn p-0 bg-transparent border-0 fs-5 d-flex align-items-center gap-3 text-capitalize">
+                <span><i class="fa-solid fa-angle-left"></i></span>
+                <span class="h5 text-decoration-none fw-bold d-block m-0"
+                  >items 2</span
+                >
+              </button>
+            </div>
+            <div class="">
+              <div class="d-flex flex-column gap-2">
+                <button
+                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                  <span>nested items</span>
+                </button>
+                <button
+                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                  <span>nested items</span>
+                </button>
+                <button
+                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                  <span>nested items</span>
+                </button>
+                <button
+                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                  <span>nested items</span>
+                </button>
+                <button
+                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                  <span>nested items</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- home slider section  -->
+    <div class="home-slider bg-white py-4">
+      <!-- Slider main container -->
+      <div class="swiper homeSlider w-full max-w-[1920px] mx-auto">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper font-averta">
+          <!-- Slides 1 -->
+          <div
+            class="swiper-slide bg-gray w-full flex flex-col md:flex-row items-center justify-center">
+            <div
+              class="flex-1 order-last md:order-first w-full py-16 sm:py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
+              <div class="flex flex-col px-6 md:px-8 lg:px-16">
+                <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
+                <h3
+                  class="text-2xl font-averta lg:text-4xl font-bold uppercase">
+                  Lorem, ipsum dolor.
+                </h3>
+                <p class="text-sm mt-4 font-averta">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit, optio beatae. Nam ipsam laudantium tenetur.
+                </p>
+
+                <div class="flex flex-row gap-3 mt-4">
+                  <button
+                    class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                    shop now
+                  </button>
+                  <button
+                    class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                    discover
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 w-full h-auto">
+              <a href="" class="h-full">
+                <figure class="w-fit relative h-full mx-auto grid">
+                  <picture class="w-auto h-full">
+                    <source
+                      srcset="
+                        https://placehold.co/430x450?text=Hello+World+slider+1
+                      "
+                      media="(max-width: 430px)" />
+                    <source
+                      srcset="
+                        https://placehold.co/640x450?text=Hello+World+slider+2
+                      "
+                      media="(max-width: 640px)" />
+                    <source
+                      srcset="
+                        https://placehold.co/1024x992?text=Hello+World+slider+3
+                      "
+                      media="(max-width: 1024px)" />
+                    <source
+                      srcset="
+                        https://placehold.co/1280x850?text=Hello+World+slider+4
+                      "
+                      media="(max-width: 1280px)" />
+                    <source
+                      srcset="
+                        https://placehold.co/1366x992?text=Hello+World+slider+5
+                      "
+                      media="(max-width: 1366px)" />
+                    <img
+                      src="https://placehold.co/1920x1200?text=Hello+World+slider+6"
+                      alt="MAISON MARGIELA BOTM WK3"
+                      loading="eager"
+                      width="1920"
+                      class="mx-auto h-full max-w-full object-cover"
+                      decoding="auto"
+                      fetchpriority="high" />
+                  </picture>
+                </figure>
+              </a>
+            </div>
+          </div>
+
+          <!-- Slides 2 -->
+          <div
+            class="swiper-slide bg-gray w-full flex flex-col md:flex-row items-center justify-center">
+            <div
+              class="flex-1 order-last md:order-first w-full py-16 sm:py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
+              <div class="flex flex-col px-6 md:px-8 lg:px-16">
+                <h1 class="font-averta font-medium text-3xl lg:text-4xl">
+                  The nour
+                </h1>
+                <h3 class="text-2xl lg:text-4xl font-bold uppercase">
+                  Lorem, ipsum dolor.
+                </h3>
+                <p class="text-sm mt-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit, optio beatae. Nam ipsam laudantium tenetur.
+                </p>
+
+                <div class="flex flex-row gap-3 mt-4">
+                  <button
+                    class="px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                    shop now
+                  </button>
+                  <button
+                    class="px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                    discover
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 w-full h-auto">
+              <a href="" class="h-full">
+                <figure class="w-fit relative h-full mx-auto grid">
+                  <picture class="w-auto h-full">
+                    <source
+                      srcset="
+                        https://placehold.co/430x450?text=Hello+World+slider+1
+                      "
+                      media="(max-width: 430px)" />
+                    <source
+                      srcset="
+                        https://placehold.co/640x450?text=Hello+World+slider+2
+                      "
+                      media="(max-width: 640px)" />
+                    <source
+                      srcset="
+                        https://placehold.co/1024x992?text=Hello+World+slider+3
+                      "
+                      media="(max-width: 1024px)" />
+                    <source
+                      srcset="
+                        https://placehold.co/1280x850?text=Hello+World+slider+4
+                      "
+                      media="(max-width: 1280px)" />
+                    <source
+                      srcset="
+                        https://placehold.co/1366x992?text=Hello+World+slider+5
+                      "
+                      media="(max-width: 1366px)" />
+                    <img
+                      src="https://placehold.co/1920x1200?text=Hello+World+slider+6"
+                      alt="MAISON MARGIELA BOTM WK3"
+                      loading="eager"
+                      width="1920"
+                      class="mx-auto h-full max-w-full object-cover"
+                      decoding="auto"
+                      fetchpriority="high" />
+                  </picture>
+                </figure>
+              </a>
+            </div>
+          </div>
+          <!-- Slides 3 -->
+          <div
+            class="swiper-slide bg-gray w-full flex flex-col md:flex-row items-center justify-center">
+            <div
+              class="flex-1 order-last md:order-first w-full py-16 sm:py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
+              <div class="flex flex-col px-6 md:px-8 lg:px-16">
+                <h1 class="font-averta font-medium text-3xl lg:text-4xl">
+                  The nour
+                </h1>
+                <h3
+                  class="font-averta text-2xl lg:text-4xl font-bold uppercase">
+                  Lorem, ipsum dolor.
+                </h3>
+                <p class="text-sm mt-4 font-averta">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Impedit, optio beatae. Nam ipsam laudantium tenetur.
+                </p>
+
+                <div class="flex flex-row gap-3 mt-4">
+                  <button
+                    class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                    shop now
+                  </button>
+                  <button
+                    class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                    discover
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 w-full h-auto">
+              <a href="" class="h-full">
+                <figure class="w-fit relative h-full mx-auto grid">
+                  <picture class="w-auto h-full">
+                    <source
+                      srcset="
+                        https://placehold.co/430x450?text=Hello+World+slider+1
+                      "
+                      media="(max-width: 430px)" />
+                    <source
+                      srcset="
+                        https://placehold.co/640x450?text=Hello+World+slider+2
+                      "
+                      media="(max-width: 640px)" />
+                    <source
+                      srcset="
+                        https://placehold.co/1024x992?text=Hello+World+slider+3
+                      "
+                      media="(max-width: 1024px)" />
+                    <source
+                      srcset="
+                        https://placehold.co/1280x850?text=Hello+World+slider+4
+                      "
+                      media="(max-width: 1280px)" />
+                    <source
+                      srcset="
+                        https://placehold.co/1366x992?text=Hello+World+slider+5
+                      "
+                      media="(max-width: 1366px)" />
+                    <img
+                      src="https://placehold.co/1920x1200?text=Hello+World+slider+6"
+                      alt="MAISON MARGIELA BOTM WK3"
+                      loading="eager"
+                      width="1920"
+                      class="mx-auto h-full max-w-full object-cover"
+                      decoding="auto"
+                      fetchpriority="high" />
+                  </picture>
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
+        <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+      </div>
+    </div>
+
+    <!-- category section  -->
+    <div class="category-section py-8 mx-auto">
+      <div class="swiper categorySlider lg:w-[992px] xl:w-[1200px] mx-auto">
+        <div class="swiper-wrapper px-4 md:px-8 xl:px-0">
+          <!-- slider 1 -->
+          <div
+            class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a
+              href="/#"
+              class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center">
+              <img
+                src="https://placehold.co/350x350?text=Hello+World+slider+1"
+                alt="Brand of the month"
+                loading="lazy"
+                width="350"
+                height="350"
+                class="object-cover mx-auto rounded-full w-full h-full shrink-0"
+                decoding="auto"
+                fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase font-averta">slide 1</p>
+          </div>
+          <!-- slider 2 -->
+          <div
+            class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a
+              href="/#"
+              class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center">
+              <img
+                src="https://placehold.co/350x350?text=Hello+World+slider+1"
+                alt="Brand of the month"
+                loading="lazy"
+                width="350"
+                height="350"
+                class="object-cover mx-auto rounded-full w-full h-full shrink-0"
+                decoding="auto"
+                fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase font-averta">slide 2</p>
+          </div>
+          <!-- slider 3 -->
+          <div
+            class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a
+              href="/#"
+              class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center">
+              <img
+                src="https://placehold.co/350x350?text=Hello+World+slider+1"
+                alt="Brand of the month"
+                loading="lazy"
+                width="350"
+                height="350"
+                class="object-cover mx-auto rounded-full w-full h-full shrink-0"
+                decoding="auto"
+                fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase font-averta">slide 3</p>
+          </div>
+          <!-- slider 4 -->
+          <div
+            class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a
+              href="/#"
+              class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center">
+              <img
+                src="https://placehold.co/350x350?text=Hello+World+slider+1"
+                alt="Brand of the month"
+                loading="lazy"
+                width="350"
+                height="350"
+                class="object-cover mx-auto rounded-full w-full h-full shrink-0"
+                decoding="auto"
+                fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase font-averta">slide 4</p>
+          </div>
+          <!-- slider 5 -->
+          <div
+            class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a
+              href="/#"
+              class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center">
+              <img
+                src="https://placehold.co/350x350?text=Hello+World+slider+1"
+                alt="Brand of the month"
+                loading="lazy"
+                width="350"
+                height="350"
+                class="object-cover mx-auto rounded-full w-full h-full shrink-0"
+                decoding="auto"
+                fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase font-averta">slide 5</p>
+          </div>
+          <!-- slider 6 -->
+          <div
+            class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a
+              href="/#"
+              class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center">
+              <img
+                src="https://placehold.co/350x350?text=Hello+World+slider+1"
+                alt="Brand of the month"
+                loading="lazy"
+                width="350"
+                height="350"
+                class="object-cover mx-auto rounded-full w-full h-full shrink-0"
+                decoding="auto"
+                fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase font-averta">slide 6</p>
+          </div>
+        </div>
+        <!-- pagination buttons -->
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div
+          class="swiper-button-prev w-6 h-6 bg-white shadow-sm xl:hidden"></div>
+        <div
+          class="swiper-button-next w-6 h-6 bg-white shadow-sm xl:hidden"></div>
+      </div>
+    </div>
+
+    <div class="dynamic-banner mx-auto bg-gray">
+      <div class="container mx-auto px-4 lg:px-0">
+        <div
+          class="w-full flex flex-col lg:flex-row flex-wrap justify-between gap-6 items-center text-center py-8">
+          <div class="flex-1 shrink-0">
+            <h3 class="text-3xl font-bold font-averta">Lorem, ipsum.</h3>
+            <h3 class="text-3xl font-bold font-averta">
+              Lorem ipsum dolor sit.
+            </h3>
+          </div>
+          <div class="flex-1 shrink-0">
+            <p class="text-sm text-balance font-averta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+              explicabo quos, corrupti facere vitae ea.
+            </p>
+          </div>
+          <div class="flex-1 shrink-0">
+            <a
+              href="/#"
+              class="px-5 py-4 text-xs font-averta text-black border border-black uppercase tracking-wider cursor-pointer hover:bg-[#4c4c4c] hover:text-white">
+              shop now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- dynamic tab content  -->
+    <div class="dynamic-tab-content mx-auto py-8">
+      <div class="container mx-auto mt-10 px-4 lg:px-0">
+        <div class="flex justify-center items-center">
+          <div class="flex border-b font-averta">
+            <button
+              class="tab-btn px-4 font-averta py-2 text-xs md:text-base uppercase text-black font-bold border-b-2 border-black hover:text-black focus:text-black focus:border-black"
+              data-tab="tab1">
+              new in
+            </button>
+            <button
+              class="tab-btn px-4 font-averta py-2 text-xs md:text-base uppercase text-black border-b-2 border-transparent hover:text-black focus:text-black focus:border-black"
+              data-tab="tab2">
+              sale
+            </button>
+            <button
+              class="tab-btn px-4 font-averta py-2 text-xs md:text-base uppercase text-black border-b-2 border-transparent hover:text-black focus:text-black focus:border-black"
+              data-tab="tab3">
+              new tranding
+            </button>
+          </div>
+        </div>
+
+        <div class="tab-content mt-4">
+          <div id="tab1" class="">
+            <div class="swiper tabContentSlider !pb-[32px]">
+              <div class="swiper-wrapper font-averta">
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 py-4 font-averta text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- pagination buttons -->
+              <div class="swiper-pagination"></div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
+              <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+            </div>
+          </div>
+          <div id="tab2" class="hidden">
+            <div class="swiper tabContentSlider !pb-[32px]">
+              <div class="swiper-wrapper font-averta">
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm font-averta tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- pagination buttons -->
+              <div class="swiper-pagination"></div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
+              <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+            </div>
+          </div>
+          <div id="tab3" class="hidden">
+            <div class="swiper tabContentSlider !pb-[32px]">
+              <div class="swiper-wrapper font-averta">
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- slider 1 -->
+                <div class="swiper-slide">
+                  <div class="flex flex-col gap-2">
+                    <a href="/#">
+                      <figure>
+                        <picture>
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 1024px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 768px)" />
+                          <source
+                            srcset="
+                              https://placehold.co/350x450?text=new+in+thumbnail
+                            "
+                            media="(min-width: 640px)" />
+                          <img
+                            src="https://placehold.co/350x450?text=new+in+thumbnail"
+                            alt="Brand of the month"
+                            loading="lazy"
+                            width="350"
+                            height="350"
+                            class="object-cover mx-auto w-full h-full shrink-0"
+                            decoding="auto"
+                            fetchpriority="auto" />
+                        </picture>
+                      </figure>
+                    </a>
+                    <div class="flex flex-col">
+                      <p
+                        class="text-sm tracking-wider text-balance font-averta">
+                        Saie Glowy Super Gel Mini 15ml (Various Shades)
+                      </p>
+                      <div class="block my-2">
+                        <a href="/#">
+                          <button
+                            class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                            new in
+                          </button>
+                        </a>
+                      </div>
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span
+                            ><i class="fa-regular fa-star-half-stroke"></i
+                          ></span>
+                        </div>
+                        <p>7</p>
+                      </div>
+                      <div class="my-1">
+                        <p class="text-sm font-averta font-bold">$ 20.00</p>
+                      </div>
+                      <div class="block">
+                        <button
+                          class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                          add to bag
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- pagination buttons -->
+              <div class="swiper-pagination"></div>
+              <!-- If we need navigation buttons -->
+              <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
+              <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- new comming items  -->
+    <div class="bg-white mx-auto py-8">
+      <h2
+        class="text-center font-averta text-lg md:text-2xl font-normal mb-8 uppercase">
+        WHAT'S NEW AT nour beauty
+      </h2>
+      <div class="container mx-auto px-4 lg:px-0">
+        <div class="swiper newProductSlider !pb-[32px]">
+          <div class="swiper-wrapper">
+            <!-- slider 1 -->
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-2">
+                <a href="/#">
+                  <figure>
+                    <picture>
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 1024px)" />
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 640px)" />
+                      <img
+                        src="https://placehold.co/350x450?text=new+in+thumbnail"
+                        alt="Brand of the month"
+                        loading="lazy"
+                        width="350"
+                        height="350"
+                        class="object-cover mx-auto w-full h-full shrink-0"
+                        decoding="auto"
+                        fetchpriority="auto" />
+                    </picture>
+                  </figure>
+                </a>
+                <div class="text-center">
+                  <h3
+                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
+                    discover
+                  </h3>
+                  <p
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
+                    shark
+                  </p>
+                  <p
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    Meet the CryoGlow Skincare LED Face Mask, equipped with
+                    unique under-eye cooling tech.
+                  </p>
+
+                  <div class="block my-3">
+                    <button
+                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                      shop now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slider 1 -->
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-2">
+                <a href="/#">
+                  <figure>
+                    <picture>
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 1024px)" />
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 640px)" />
+                      <img
+                        src="https://placehold.co/350x450?text=new+in+thumbnail"
+                        alt="Brand of the month"
+                        loading="lazy"
+                        width="350"
+                        height="350"
+                        class="object-cover mx-auto w-full h-full shrink-0"
+                        decoding="auto"
+                        fetchpriority="auto" />
+                    </picture>
+                  </figure>
+                </a>
+                <div class="text-center">
+                  <h3
+                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
+                    discover
+                  </h3>
+                  <p
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
+                    shark
+                  </p>
+                  <p
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    Meet the CryoGlow Skincare LED Face Mask, equipped with
+                    unique under-eye cooling tech.
+                  </p>
+
+                  <div class="block my-3">
+                    <button
+                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                      shop now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slider 1 -->
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-2">
+                <a href="/#">
+                  <figure>
+                    <picture>
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 1024px)" />
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 640px)" />
+                      <img
+                        src="https://placehold.co/350x450?text=new+in+thumbnail"
+                        alt="Brand of the month"
+                        loading="lazy"
+                        width="350"
+                        height="350"
+                        class="object-cover mx-auto w-full h-full shrink-0"
+                        decoding="auto"
+                        fetchpriority="auto" />
+                    </picture>
+                  </figure>
+                </a>
+                <div class="text-center">
+                  <h3
+                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
+                    discover
+                  </h3>
+                  <p
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
+                    shark
+                  </p>
+                  <p
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    Meet the CryoGlow Skincare LED Face Mask, equipped with
+                    unique under-eye cooling tech.
+                  </p>
+
+                  <div class="block my-3">
+                    <button
+                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                      shop now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slider 1 -->
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-2">
+                <a href="/#">
+                  <figure>
+                    <picture>
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 1024px)" />
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 640px)" />
+                      <img
+                        src="https://placehold.co/350x450?text=new+in+thumbnail"
+                        alt="Brand of the month"
+                        loading="lazy"
+                        width="350"
+                        height="350"
+                        class="object-cover mx-auto w-full h-full shrink-0"
+                        decoding="auto"
+                        fetchpriority="auto" />
+                    </picture>
+                  </figure>
+                </a>
+                <div class="text-center">
+                  <h3
+                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
+                    discover
+                  </h3>
+                  <p
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
+                    shark
+                  </p>
+                  <p
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    Meet the CryoGlow Skincare LED Face Mask, equipped with
+                    unique under-eye cooling tech.
+                  </p>
+
+                  <div class="block my-3">
+                    <button
+                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                      shop now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slider 1 -->
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-2">
+                <a href="/#">
+                  <figure>
+                    <picture>
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 1024px)" />
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 640px)" />
+                      <img
+                        src="https://placehold.co/350x450?text=new+in+thumbnail"
+                        alt="Brand of the month"
+                        loading="lazy"
+                        width="350"
+                        height="350"
+                        class="object-cover mx-auto w-full h-full shrink-0"
+                        decoding="auto"
+                        fetchpriority="auto" />
+                    </picture>
+                  </figure>
+                </a>
+                <div class="text-center">
+                  <h3
+                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
+                    discover
+                  </h3>
+                  <p
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
+                    shark
+                  </p>
+                  <p
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    Meet the CryoGlow Skincare LED Face Mask, equipped with
+                    unique under-eye cooling tech.
+                  </p>
+
+                  <div class="block my-3">
+                    <button
+                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                      shop now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slider 1 -->
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-2">
+                <a href="/#">
+                  <figure>
+                    <picture>
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 1024px)" />
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 640px)" />
+                      <img
+                        src="https://placehold.co/350x450?text=new+in+thumbnail"
+                        alt="Brand of the month"
+                        loading="lazy"
+                        width="350"
+                        height="350"
+                        class="object-cover mx-auto w-full h-full shrink-0"
+                        decoding="auto"
+                        fetchpriority="auto" />
+                    </picture>
+                  </figure>
+                </a>
+                <div class="text-center">
+                  <h3
+                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
+                    discover
+                  </h3>
+                  <p
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
+                    shark
+                  </p>
+                  <p
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    Meet the CryoGlow Skincare LED Face Mask, equipped with
+                    unique under-eye cooling tech.
+                  </p>
+
+                  <div class="block my-3">
+                    <button
+                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                      shop now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- slider 1 -->
+            <div class="swiper-slide">
+              <div class="flex flex-col gap-2">
+                <a href="/#">
+                  <figure>
+                    <picture>
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 1024px)" />
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="
+                          https://placehold.co/350x450?text=new+in+thumbnail
+                        "
+                        media="(min-width: 640px)" />
+                      <img
+                        src="https://placehold.co/350x450?text=new+in+thumbnail"
+                        alt="Brand of the month"
+                        loading="lazy"
+                        width="350"
+                        height="350"
+                        class="object-cover mx-auto w-full h-full shrink-0"
+                        decoding="auto"
+                        fetchpriority="auto" />
+                    </picture>
+                  </figure>
+                </a>
+                <div class="text-center">
+                  <h3
+                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
+                    discover
+                  </h3>
+                  <p
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
+                    shark
+                  </p>
+                  <p
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    Meet the CryoGlow Skincare LED Face Mask, equipped with
+                    unique under-eye cooling tech.
+                  </p>
+
+                  <div class="block my-3">
+                    <button
+                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                      shop now
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- pagination buttons -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
+          <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+        </div>
+      </div>
+    </div>
+
+    <!--nour memo  -->
+    <div class="nour-memo mx-auto py-8">
+      <div class="container mx-auto px-4 lg:px-0">
+        <div class="flex flex-row flex-wrap w-full lg:h-[450px]">
+          <div class="shrink-0 w-2/4 lg:w-1/4">
+            <figure>
+              <picture>
+                <source
+                  srcset="./assets/img/memo-best-body.webp"
+                  media="(min-width: 1024px)" />
+                <source
+                  srcset="./assets/img/memo-best-body.webp"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./assets/img/memo-best-body.webp"
+                  media="(min-width: 640px)" />
+                <img
+                  src="./assets/img/memo-best-body.webp"
+                  alt="Brand of the month"
+                  loading="lazy"
+                  width="350"
+                  height="450"
+                  class="object-cover mx-auto w-full h-[450px]"
+                  decoding="auto"
+                  fetchpriority="auto" />
+              </picture>
+            </figure>
+          </div>
+          <div class="shrink-0 w-2/4 lg:w-1/4">
+            <figure>
+              <picture>
+                <source
+                  srcset="./assets/img/skintints.webp"
+                  media="(min-width: 1024px)" />
+                <source
+                  srcset="./assets/img/skintints.webp"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./assets/img/skintints.webp"
+                  media="(min-width: 640px)" />
+                <img
+                  src="./assets/img/skintints.webp"
+                  alt="Brand of the month"
+                  loading="lazy"
+                  width="350"
+                  height="450"
+                  class="object-cover mx-auto w-full h-[450px]"
+                  decoding="auto"
+                  fetchpriority="auto" />
+              </picture>
+            </figure>
+          </div>
+          <div class="shrink-0 relative w-full lg:w-2/4">
+            <figure class="">
+              <picture>
+                <source
+                  srcset="./assets/img/memo-new-beauty.webp"
+                  media="(min-width: 1024px)" />
+                <source
+                  srcset="./assets/img/memo-new-beauty.webp"
+                  media="(min-width: 768px)" />
+                <source
+                  srcset="./assets/img/memo-new-beauty.webp"
+                  media="(min-width: 640px)" />
+                <img
+                  src="./assets/img/memo-new-beauty.webp"
+                  alt="Brand of the month"
+                  loading="lazy"
+                  width="350"
+                  height="450"
+                  class="object-cover mx-auto w-full h-[450px]"
+                  decoding="auto"
+                  fetchpriority="auto" />
+              </picture>
+            </figure>
+            <div
+              class="nour-memo-content p-8 absolute bottom-0 right-0 w-full h-[450px] xl:w-2/3 xl:h-2/3">
+              <div class="flex flex-col justify-between h-full">
+                <div class="flex flex-col gap-3">
+                  <a href="/#" class="text-3xl font-normal italic font-averta">
+                    It’s New. In January. At MECCA
+                  </a>
+                  <p class="text-sm font-averta font-semibold">
+                    December 27 | 5 minute read
+                  </p>
+                </div>
+                <div class="">
+                  <a href="/#" class="text-5xl text-white font-averta">MM.</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="blog-section mx-auto py-8">
+      <div class="container mx-auto px-4 lg:px-0">
+        <div class="swiper blogSlider !pb-[32px]">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide single-post">
+              <div class="flex flex-col gap-2">
+                <a href="/#" class="group block">
+                  <figure class="overflow-hidden">
+                    <picture>
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 1024px)" />
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 640px)" />
+                      <img
+                        src="./assets/img/memo-mecca-talk.webp"
+                        alt="Brand of the month"
+                        loading="lazy"
+                        width="350"
+                        height="200"
+                        class="object-cover mx-auto w-full h-[150px] shrink-0 transform transition-transform duration-300 group-hover:scale-125"
+                        decoding="auto"
+                        fetchpriority="auto" />
+                    </picture>
+                  </figure>
+                </a>
+                <div class="text-left flex flex-col gap-3">
+                  <a
+                    href="/#"
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    Meet the CryoGlow Skincare LED Face Mask, equipped with
+                    unique
+                  </a>
+                  <p class="text-sm font-averta text-gray-500 font-medium">
+                    December 27 | 5 minute read
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide single-post">
+              <div class="flex flex-col gap-2">
+                <a href="/#" class="group block">
+                  <figure class="overflow-hidden">
+                    <picture>
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 1024px)" />
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 640px)" />
+                      <img
+                        src="./assets/img/memo-mecca-talk.webp"
+                        alt="Brand of the month"
+                        loading="lazy"
+                        width="350"
+                        height="200"
+                        class="object-cover mx-auto w-full h-[150px] shrink-0 transform transition-transform duration-300 group-hover:scale-125"
+                        decoding="auto"
+                        fetchpriority="auto" />
+                    </picture>
+                  </figure>
+                </a>
+                <div class="text-left flex flex-col gap-3">
+                  <a
+                    href="/#"
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    Meet the CryoGlow Skincare LED Face Mask, equipped with
+                    unique
+                  </a>
+                  <p class="text-sm font-averta text-gray-500 font-medium">
+                    December 27 | 5 minute read
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide single-post">
+              <div class="flex flex-col gap-2">
+                <a href="/#" class="group block">
+                  <figure class="overflow-hidden">
+                    <picture>
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 1024px)" />
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 640px)" />
+                      <img
+                        src="./assets/img/memo-mecca-talk.webp"
+                        alt="Brand of the month"
+                        loading="lazy"
+                        width="350"
+                        height="200"
+                        class="object-cover mx-auto w-full h-[150px] shrink-0 transform transition-transform duration-300 group-hover:scale-125"
+                        decoding="auto"
+                        fetchpriority="auto" />
+                    </picture>
+                  </figure>
+                </a>
+                <div class="text-left flex flex-col gap-3">
+                  <a
+                    href="/#"
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    Meet the CryoGlow Skincare LED Face Mask, equipped with
+                    unique
+                  </a>
+                  <p class="text-sm font-averta text-gray-500 font-medium">
+                    December 27 | 5 minute read
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide single-post">
+              <div class="flex flex-col gap-2">
+                <a href="/#" class="group block">
+                  <figure class="overflow-hidden">
+                    <picture>
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 1024px)" />
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 640px)" />
+                      <img
+                        src="./assets/img/memo-mecca-talk.webp"
+                        alt="Brand of the month"
+                        loading="lazy"
+                        width="350"
+                        height="200"
+                        class="object-cover mx-auto w-full h-[150px] shrink-0 transform transition-transform duration-300 group-hover:scale-125"
+                        decoding="auto"
+                        fetchpriority="auto" />
+                    </picture>
+                  </figure>
+                </a>
+                <div class="text-left flex flex-col gap-3">
+                  <a
+                    href="/#"
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    Meet the CryoGlow Skincare LED Face Mask, equipped with
+                    unique
+                  </a>
+                  <p class="text-sm font-averta text-gray-500 font-medium">
+                    December 27 | 5 minute read
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide single-post">
+              <div class="flex flex-col gap-2">
+                <a href="/#" class="group block">
+                  <figure class="overflow-hidden">
+                    <picture>
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 1024px)" />
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 640px)" />
+                      <img
+                        src="./assets/img/memo-mecca-talk.webp"
+                        alt="Brand of the month"
+                        loading="lazy"
+                        width="350"
+                        height="200"
+                        class="object-cover mx-auto w-full h-[150px] shrink-0 transform transition-transform duration-300 group-hover:scale-125"
+                        decoding="auto"
+                        fetchpriority="auto" />
+                    </picture>
+                  </figure>
+                </a>
+                <div class="text-left flex flex-col gap-3">
+                  <a
+                    href="/#"
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    Meet the CryoGlow Skincare LED Face Mask, equipped with
+                    unique
+                  </a>
+                  <p class="text-sm font-averta text-gray-500 font-medium">
+                    December 27 | 5 minute read
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide single-post">
+              <div class="flex flex-col gap-2">
+                <a href="/#" class="group block">
+                  <figure class="overflow-hidden">
+                    <picture>
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 1024px)" />
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 640px)" />
+                      <img
+                        src="./assets/img/memo-mecca-talk.webp"
+                        alt="Brand of the month"
+                        loading="lazy"
+                        width="350"
+                        height="200"
+                        class="object-cover mx-auto w-full h-[150px] shrink-0 transform transition-transform duration-300 group-hover:scale-125"
+                        decoding="auto"
+                        fetchpriority="auto" />
+                    </picture>
+                  </figure>
+                </a>
+                <div class="text-left flex flex-col gap-3">
+                  <a
+                    href="/#"
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    Meet the CryoGlow Skincare LED Face Mask, equipped with
+                    unique
+                  </a>
+                  <p class="text-sm font-averta text-gray-500 font-medium">
+                    December 27 | 5 minute read
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide single-post">
+              <div class="flex flex-col gap-2">
+                <a href="/#" class="group block">
+                  <figure class="overflow-hidden">
+                    <picture>
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 1024px)" />
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 768px)" />
+                      <source
+                        srcset="./assets/img/memo-mecca-talk.webp"
+                        media="(min-width: 640px)" />
+                      <img
+                        src="./assets/img/memo-mecca-talk.webp"
+                        alt="Brand of the month"
+                        loading="lazy"
+                        width="350"
+                        height="200"
+                        class="object-cover mx-auto w-full h-[150px] shrink-0 transform transition-transform duration-300 group-hover:scale-125"
+                        decoding="auto"
+                        fetchpriority="auto" />
+                    </picture>
+                  </figure>
+                </a>
+                <div class="text-left flex flex-col gap-3">
+                  <a
+                    href="/#"
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    Meet the CryoGlow Skincare LED Face Mask, equipped with
+                    unique
+                  </a>
+                  <p class="text-sm font-averta text-gray-500 font-medium">
+                    December 27 | 5 minute read
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- pagination buttons -->
+          <div class="swiper-pagination"></div>
+          <!-- If we need navigation buttons -->
+          <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
+          <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- swiper slider js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <!-- custom js -->
+    <script type="module" src="./assets/js/main.js"></script>
+    <script type="module" src="./assets/js/slider.js"></script>
+  </body>
+</html>
