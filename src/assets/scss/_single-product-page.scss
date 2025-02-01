@@ -1,0 +1,99 @@
+.swiper-slider-thumb {
+  background-color: white;
+  border: 1px solid vars.$color-gray;
+  padding: 0px 10px;
+  .swiper-slide {
+    width: 200px !important;
+    height: 100px;
+    img {
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+.product-details-section {
+  span {
+    a {
+      color: #000;
+      text-decoration: none;
+      margin-left: 15px;
+      &:hover {
+        color: vars.$primary-color;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+.accordion-button:not(.collapsed) {
+  background-color: transparent !important;
+}
+.accordion-button:focus {
+  box-shadow: none !important;
+}
+.accordion-header {
+  .accordion-button {
+    font-size: 1.3rem !important;
+    font-weight: 500 !important;
+    color: #000 !important;
+  }
+}
+.color-shade-select {
+  .form-select {
+    padding: 12px;
+  }
+}
+.color-options {
+  display: flex;
+  gap: 15px;
+  justify-content: start;
+  margin-top: 20px;
+  .color-option {
+    width: 50px;
+    height: 50px;
+    border-radius: 0%;
+    border: 2px solid vars.$color-gray;
+    cursor: pointer;
+    &:hover {
+      border: 2px solid black;
+    }
+    &.active {
+      border: 2px solid black;
+    }
+  }
+}
+.color-option.active {
+  border: 2px solid black; /* Highlight active button */
+}
+
+.quantity-selector {
+  display: flex;
+  gap: 15px;
+  button {
+    border: 2px solid vars.$color-gray;
+    padding: 10px 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    &:hover {
+      border: 2px solid black;
+      background-color: vars.$color-gray;
+    }
+  }
+}
+.add-to-bag {
+  button {
+    padding: 15px 30px;
+    color: vars.$background;
+    border: 2px solid vars.$background;
+    cursor: pointer;
+    &:first-child {
+      padding: 15px 50px;
+    }
+    &:hover {
+      background-color: vars.$color-gray;
+    }
+  }
+}

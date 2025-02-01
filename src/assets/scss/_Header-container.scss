@@ -107,7 +107,7 @@
     .mega-navigation {
       padding-top: 30px;
       padding-bottom: 30px;
-      width: 100vw;
+      width: 98vw;
       background-color: white;
       position: absolute;
       top: 100%;
@@ -116,7 +116,7 @@
       transition: opacity 0.3s ease, visibility 0.3s ease;
       opacity: 0;
       visibility: hidden;
-      z-index: 10;
+      z-index: 99;
     }
     .nav-navigation:hover .mega-navigation {
       opacity: 1;

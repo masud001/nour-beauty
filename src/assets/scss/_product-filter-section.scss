@@ -1,3 +1,19 @@
+.product-filter-section {
+  top: 56px;
+  @media (min-width: 480px) {
+    top: 62px;
+  }
+  @media (min-width: 576px) {
+    top: 66px;
+  }
+  @media (min-width: 768px) {
+    top: 66px;
+  }
+  @media (min-width: 992px) {
+    top: 140px;
+  }
+}
+
 .mobile-filter-offcanvas {
   &.offcanvas {
     height: 100% !important;
