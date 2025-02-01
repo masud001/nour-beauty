@@ -2441,8 +2441,22 @@
         spaceBetween: 10,
         slidesPerView: 4,
         freeMode: true,
-        watchSlidesProgress: true,
+        watchSlidesProgress: false,
         mousewheel: true,
+        autoplay: true,
+        loop: true,
+        breakpoints: {
+          320: {
+            centeredSlides: false,
+            slidesPerView: 4,
+            spaceBetween: 20,
+          },
+          768: {
+            centeredSlides: false,
+            slidesPerView: 6,
+            spaceBetween: 20,
+          },
+        },
       });
       var swiper2 = new Swiper(".mySwiper2", {
         spaceBetween: 10,
