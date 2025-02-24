@@ -10,3 +10,11 @@
   scrollbar-width: none;
   -ms-overflow-style: none;
 }
+
+.category-section {
+  .swiper-slide {
+    @media (min-width: 1200px) {
+      left: -24px !important;
+    }
+  }
+}
