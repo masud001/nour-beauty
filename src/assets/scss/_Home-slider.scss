@@ -1,0 +1,38 @@
+.home-slider{
+    .swiper-slide{
+        .slider-image{
+            @media (min-width: 320px) {
+                img{
+                    height: 400px !important;
+                }
+            }
+
+            @media (min-width: 480px) {
+                object-fit: cover;
+            }
+            
+        }
+        @media (min-width: 480px) {
+           
+        }
+        @media (min-width: 640px) {
+            
+            .sm-py-20{
+                padding-top: 4rem;
+                padding-bottom: 4rem;
+            }
+        }
+        @media (min-width: 768px) {
+            
+        }
+        @media (min-width: 1024px) {
+            
+        }
+        @media (min-width: 1280px) {
+            
+        }
+        @media (min-width: 1366px) {
+            
+        }
+    }
+}
