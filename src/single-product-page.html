@@ -5,41 +5,54 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Single Product Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="./assets/css/output.css" />
     <link rel="stylesheet" href="./assets/css/style.min.css" />
     <!-- swiper slider css -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
   </head>
   <body>
     <!-- header top banner  -->
     <div class="header-banner">
       <div
-        class="container-fluid d-flex justify-content-center align-items-center gap-sm-3 gap-lg-4 p-2 p-lg-3">
+        class="container-fluid d-flex justify-content-center align-items-center gap-sm-3 gap-lg-4 p-2 p-lg-3"
+      >
         <!-- Mobile Slides -->
         <div class="mobile-slides d-lg-none">
           <a
             href="/#"
-            class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+            class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none"
+          >
             <span><i class="fa-solid fa-truck-moving"></i></span>
             <span class="text-reset"> Free UK shipping over £25</span>
           </a>
           <a
             href="/#"
-            class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+            class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none"
+          >
             <span><i class="fa-solid fa-mobile-screen-button"></i></span>
             <span>15% off your app order</span>
           </a>
           <a
             href="/#"
-            class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+            class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none"
+          >
             <span><i class="fa-regular fa-envelope"></i></span>
             <span> Sign up for email exclusives</span>
           </a>
           <a
             href="/#"
-            class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+            class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none"
+          >
             <span><i class="fa-solid fa-gift"></i></span>
             <span> Earn Cult Status Points</span>
           </a>
@@ -48,25 +61,29 @@
         <!-- Desktop Items -->
         <a
           href="/#"
-          class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+          class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none"
+        >
           <span><i class="fa-solid fa-truck-moving"></i></span>
           <span class="text-reset"> Free UK shipping over £25</span>
         </a>
         <a
           href="/#"
-          class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+          class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none"
+        >
           <span><i class="fa-solid fa-mobile-screen-button"></i></span>
           <span> 15% off your app order</span>
         </a>
         <a
           href="/#"
-          class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+          class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none"
+        >
           <span><i class="fa-regular fa-envelope"></i></span>
           <span> Sign up for email exclusives</span>
         </a>
         <a
           href="/#"
-          class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+          class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none"
+        >
           <span><i class="fa-solid fa-gift"></i></span>
           <span> Earn Cult Status Points</span>
         </a>
@@ -75,7 +92,8 @@
 
     <!-- stripe banner  -->
     <div
-      class="stripe-banner container-fluid d-flex justify-content-center align-items-center p-2 p-lg-3">
+      class="stripe-banner container-fluid d-flex justify-content-center align-items-center p-2 p-lg-3"
+    >
       <a href="/#" class="text-reset text-uppercase text-decoration-none fs-6">
         <span class="">SALE - UP TO 50% OFF</span>
       </a>
@@ -83,9 +101,11 @@
 
     <header
       id="site-header"
-      class="header-container sticky top-0 z-30 bg-white py-3">
+      class="header-container sticky top-0 z-30 bg-white py-3"
+    >
       <div
-        class="container container-fluid d-flex align-items-center justify-content-between">
+        class="container container-fluid d-flex align-items-center justify-content-between"
+      >
         <!-- search container for mobile  -->
         <div class="col d-flex d-lg-none gap-3 align-items-center">
           <div class="menu-bar">
@@ -94,8 +114,9 @@
               data-bs-toggle="offcanvas"
               data-bs-target="#mobileNavigation"
               aria-controls="mobileNavigation"
-              ><span><i class="fa-solid fa-bars"></i></span
-            ></button>
+            >
+              <span><i class="fa-solid fa-bars"></i></span>
+            </button>
           </div>
           <div class="search-bar">
             <button class="">
@@ -112,7 +133,8 @@
                   id="search-input"
                   type="text"
                   class="w-100 rounded-1"
-                  placeholder="Search for a product or brand" />
+                  placeholder="Search for a product or brand"
+                />
                 <button class="position-absolute">
                   <span><i class="fa-solid fa-magnifying-glass"></i></span>
                 </button>
@@ -122,21 +144,24 @@
         </div>
         <!-- logo container  -->
         <div
-          class="col logo-container d-flex align-items-center justify-content-center mx-auto">
+          class="col logo-container d-flex align-items-center justify-content-center mx-auto"
+        >
           <a href="/#">
-            <img src="./assets/img/brand-logo.svg" alt="brand-logo" />
+            <img src="./assets/img/logo/nour-dark-logo.png" alt="brand-logo" />
           </a>
         </div>
         <!-- other container  -->
         <div
-          class="col other-container d-flex gap-3 gap-lg-4 align-items-center justify-content-end">
+          class="col other-container d-flex gap-3 gap-lg-4 align-items-center justify-content-end"
+        >
           <div class="change-local d-none d-lg-flex align-items-center">
             <button class="text-uppercase d-flex align-items-center gap-2">
               <span class="">
                 <img
                   class=""
                   src="./assets/img/flags/united-kingdom.png"
-                  alt="united-kingdom flag" />
+                  alt="united-kingdom flag"
+                />
               </span>
               <span class="">&bull;</span>
               <span class="fw-bold">usd</span>
@@ -147,39 +172,43 @@
               data-bs-toggle="dropdown"
               aria-expanded="false"
               class="d-flex gap-2 align-items-center"
-              type="button">
+              type="button"
+            >
               <span><i class="fa-regular fa-user"></i></span>
               <span class="d-none d-lg-flex fw-semibold">Account</span>
             </button>
             <ul
-              class="dropdown-menu dropdown-menu-end rounded-0 border border-light-subtle shadow m-0 p-0">
-              <li
-                ><button
+              class="dropdown-menu dropdown-menu-end rounded-0 border border-light-subtle shadow m-0 p-0"
+            >
+              <li>
+                <button
                   class="w-100 p-3 text-uppercase fs-6 fw-normal text-white bg-black"
-                  >registration</button
-                ></li
-              >
-              <li
-                ><button
+                >
+                  registration
+                </button>
+              </li>
+              <li>
+                <button
                   class="w-100 p-3 text-uppercase fs-6 fw-normal text-black bg-white border border-black"
-                  >login</button
-                ></li
-              >
-              <li
-                ><a class="dropdown-item p-3 fs-6 text-capitalize" href="#"
+                >
+                  login
+                </button>
+              </li>
+              <li>
+                <a class="dropdown-item p-3 fs-6 text-capitalize" href="#"
                   >your wishlist</a
-                ></li
-              >
-              <li
-                ><a class="dropdown-item p-3 fs-6 text-capitalize" href="#"
+                >
+              </li>
+              <li>
+                <a class="dropdown-item p-3 fs-6 text-capitalize" href="#"
                   >your order</a
-                ></li
-              >
-              <li
-                ><a class="dropdown-item p-3 fs-6 text-capitalize" href="#"
+                >
+              </li>
+              <li>
+                <a class="dropdown-item p-3 fs-6 text-capitalize" href="#"
                   >your referrel</a
-                ></li
-              >
+                >
+              </li>
             </ul>
           </div>
           <div class="addto-busket">
@@ -193,7 +222,8 @@
       <!-- desktop navigation  -->
       <nav
         class="header-nav d-none d-lg-block mt-3"
-        aria-label="Main Navigation">
+        aria-label="Main Navigation"
+      >
         <ul class="d-flex justify-content-center align-items-center">
           <div class="nav-navigation">
             <li class="nav-item">
@@ -205,8 +235,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -219,8 +250,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -233,8 +265,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -247,8 +280,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -261,8 +295,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -287,8 +322,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -301,8 +337,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -315,8 +352,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -329,8 +367,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -343,8 +382,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -369,8 +409,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -383,8 +424,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -397,8 +439,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -411,8 +454,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -425,8 +469,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -451,8 +496,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -465,8 +511,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -479,8 +526,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -493,8 +541,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -507,8 +556,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -533,8 +583,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -547,8 +598,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -561,8 +613,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -575,8 +628,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -589,8 +643,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -615,8 +670,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -629,8 +685,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -643,8 +700,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -657,8 +715,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -671,8 +730,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -697,8 +757,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -711,8 +772,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -725,8 +787,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -739,8 +802,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -753,8 +817,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -779,8 +844,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -793,8 +859,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -807,8 +874,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -821,8 +889,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -835,8 +904,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -861,8 +931,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -875,8 +946,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -889,8 +961,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -903,8 +976,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -917,8 +991,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -943,8 +1018,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -957,8 +1033,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -971,8 +1048,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -985,8 +1063,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -999,8 +1078,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -1025,8 +1105,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -1039,8 +1120,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -1053,8 +1135,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -1067,8 +1150,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -1081,8 +1165,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -1107,8 +1192,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -1121,8 +1207,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -1135,8 +1222,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -1149,8 +1237,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -1163,8 +1252,9 @@
                   <div class="col">
                     <h3
                       class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                      >View All Brands</h3
                     >
+                      View All Brands
+                    </h3>
                     <ul class="list-unstyled">
                       <li><a href="/#">items</a></li>
                       <li><a href="/#">items</a></li>
@@ -1186,21 +1276,25 @@
       class="offcanvas offcanvas-start mobile-navigation"
       tabindex="-1"
       id="mobileNavigation"
-      aria-labelledby="mobileNavigationLabel">
+      aria-labelledby="mobileNavigationLabel"
+    >
       <div class="offcanvas-header d-flex flex-column p-0">
         <div
-          class="d-flex justify-content-between w-100 p-4 border-bottom border-light-subtle">
+          class="d-flex justify-content-between w-100 p-4 border-bottom border-light-subtle"
+        >
           <div class="offcanvas-title" id="mobileNavigationLabel">
             <i class="fa-solid fa-house fs-4"></i>
           </div>
           <div class="d-flex align-items-center gap-4">
             <button
-              class="text-uppercase d-flex align-items-center gap-2 border-0 bg-transparent">
+              class="text-uppercase d-flex align-items-center gap-2 border-0 bg-transparent"
+            >
               <span class="">
                 <img
                   class=""
                   src="./assets/img/flags/united-kingdom.png"
-                  alt="united-kingdom flag" />
+                  alt="united-kingdom flag"
+                />
               </span>
               <span class="">&bull;</span>
               <span class="fw-bold">usd</span>
@@ -1210,31 +1304,37 @@
               type="button"
               class="btn-close text-black"
               data-bs-dismiss="offcanvas"
-              aria-label="Close"></button>
+              aria-label="Close"
+            ></button>
           </div>
         </div>
         <div
-          class="w-100 d-flex flex-row gap-4 px-4 py-3 mobile-registraion border-bottom border-light-subtle">
+          class="w-100 d-flex flex-row gap-4 px-4 py-3 mobile-registraion border-bottom border-light-subtle"
+        >
           <button
             class="w-100 text-uppercase fs-6 fw-normal text-white bg-black"
-            >registration</button
           >
+            registration
+          </button>
           <button
             class="w-100 text-uppercase fs-6 fw-normal text-black bg-transparent"
-            >login</button
           >
+            login
+          </button>
         </div>
       </div>
       <div class="offcanvas-body position-relative px-0">
         <div
-          class="position-static pb-4 border-bottom border-light-subtle px-3 mb-4">
+          class="position-static pb-4 border-bottom border-light-subtle px-3 mb-4"
+        >
           <a href="/#" class="h5 text-decoration-none fw-bold mb-3 d-block"
             >Brand</a
           >
           <div class="d-flex flex-column gap-2">
             <button
               data-slide="slide1"
-              class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+              class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
+            >
               <span>items</span>
               <span><i class="fa-solid fa-angle-right"></i></span>
             </button>
@@ -1245,7 +1345,8 @@
           <div class="slide-content">
             <div class="d-flex gap-3 align-items-center mb-4">
               <button
-                class="close-btn p-0 bg-transparent border-0 fs-5 d-flex align-items-center gap-3 text-capitalize">
+                class="close-btn p-0 bg-transparent border-0 fs-5 d-flex align-items-center gap-3 text-capitalize"
+              >
                 <span><i class="fa-solid fa-angle-left"></i></span>
                 <span class="h5 text-decoration-none fw-bold d-block m-0"
                   >items</span
@@ -1255,23 +1356,28 @@
             <div class="">
               <div class="d-flex flex-column gap-2">
                 <button
-                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
+                >
                   <span>nested items</span>
                 </button>
                 <button
-                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
+                >
                   <span>nested items</span>
                 </button>
                 <button
-                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
+                >
                   <span>nested items</span>
                 </button>
                 <button
-                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
+                >
                   <span>nested items</span>
                 </button>
                 <button
-                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
+                >
                   <span>nested items</span>
                 </button>
               </div>
@@ -1289,16 +1395,18 @@
             style="
               --bs-breadcrumb-divider: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'8\' height=\'8\'%3E%3Cpath d=\'M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z\' fill=\'%236c757d\'/%3E%3C/svg%3E');
             "
-            aria-label="breadcrumb">
+            aria-label="breadcrumb"
+          >
             <ol class="breadcrumb mb-0 d-flex align-items-center">
-              <li class="breadcrumb-item"
-                ><a href="#" class="text-reset fs-6 fw-normal">Home</a></li
-              >
+              <li class="breadcrumb-item">
+                <a href="#" class="text-reset fs-6 fw-normal">Home</a>
+              </li>
               <li
                 class="breadcrumb-item text-capitalize fs-6 active"
                 aria-current="page"
-                >Urban Decay Face Bond Luminizer 30ml (Various Shades)</li
               >
+                Urban Decay Face Bond Luminizer 30ml (Various Shades)
+              </li>
             </ol>
           </nav>
         </div>
@@ -1317,80 +1425,96 @@
                   <div class="swiper-slide">
                     <img
                       src="./assets/img/product/images-1.avif"
-                      alt="slider-1" />
+                      alt="slider-1"
+                    />
                   </div>
                   <div class="swiper-slide">
                     <img
                       src="./assets/img/product/images-2.avif"
-                      alt="slider-1" />
+                      alt="slider-1"
+                    />
                   </div>
                   <div class="swiper-slide">
                     <img
                       src="./assets/img/product/images-3.avif"
-                      alt="slider-1" />
+                      alt="slider-1"
+                    />
                   </div>
                   <div class="swiper-slide">
                     <img
                       src="./assets/img/product/images-4.avif"
-                      alt="slider-1" />
+                      alt="slider-1"
+                    />
                   </div>
                   <div class="swiper-slide">
                     <img
                       src="./assets/img/product/images-5.avif"
-                      alt="slider-1" />
+                      alt="slider-1"
+                    />
                   </div>
                   <div class="swiper-slide">
                     <img
                       src="./assets/img/product/images-6.avif"
-                      alt="slider-1" />
+                      alt="slider-1"
+                    />
                   </div>
                   <div class="swiper-slide">
                     <img
                       src="./assets/img/product/images-7.avif"
-                      alt="slider-1" />
+                      alt="slider-1"
+                    />
                   </div>
                 </div>
                 <div
-                  class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+                  class="swiper-button-next w-6 h-6 bg-white shadow-sm"
+                ></div>
                 <div
-                  class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
+                  class="swiper-button-prev w-6 h-6 bg-white shadow-sm"
+                ></div>
               </div>
               <div thumbsSlider="" class="swiper mySwiper swiper-slider-thumb">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide p-2">
                     <img
                       src="./assets/img/product/images-1.avif"
-                      alt="slider-1" />
+                      alt="slider-1"
+                    />
                   </div>
                   <div class="swiper-slide p-2">
                     <img
                       src="./assets/img/product/images-2.avif"
-                      alt="slider-1" />
+                      alt="slider-1"
+                    />
                   </div>
                   <div class="swiper-slide p-2">
                     <img
                       src="./assets/img/product/images-3.avif"
-                      alt="slider-1" />
+                      alt="slider-1"
+                    />
                   </div>
                   <div class="swiper-slide p-2">
                     <img
                       src="./assets/img/product/images-4.avif"
-                      alt="slider-1" />
+                      alt="slider-1"
+                    />
                   </div>
                   <div class="swiper-slide p-2">
                     <img
                       src="./assets/img/product/images-5.avif"
-                      alt="slider-1" />
+                      alt="slider-1"
+                    />
                   </div>
                   <div class="swiper-slide p-2">
                     <img
                       src="./assets/img/product/images-6.avif"
-                      alt="slider-1" />
+                      alt="slider-1"
+                    />
                   </div>
                   <div class="swiper-slide p-2">
                     <img
                       src="./assets/img/product/images-7.avif"
-                      alt="slider-1" />
+                      alt="slider-1"
+                    />
                   </div>
                 </div>
               </div>
@@ -1400,7 +1524,8 @@
             <!-- accordion  -->
             <div class="accordion border-0 py-5" id="product-faq">
               <div
-                class="accordion-item rounded-0 border-0 border-bottom border-light-subtle">
+                class="accordion-item rounded-0 border-0 border-bottom border-light-subtle"
+              >
                 <h2 class="accordion-header">
                   <button
                     class="accordion-button"
@@ -1408,14 +1533,16 @@
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseOne"
                     aria-expanded="true"
-                    aria-controls="collapseOne">
+                    aria-controls="collapseOne"
+                  >
                     Accordion Item #1
                   </button>
                 </h2>
                 <div
                   id="collapseOne"
                   class="accordion-collapse collapse show"
-                  data-bs-parent="#product-faq">
+                  data-bs-parent="#product-faq"
+                >
                   <div class="accordion-body">
                     Treat your pout to some TLC with the bestselling Lip Butter
                     Balm (15g) from Summer Fridays. Brimming with
@@ -1431,7 +1558,8 @@
                 </div>
               </div>
               <div
-                class="accordion-item rounded-0 border-0 border-bottom border-light-subtle">
+                class="accordion-item rounded-0 border-0 border-bottom border-light-subtle"
+              >
                 <h2 class="accordion-header">
                   <button
                     class="accordion-button collapsed"
@@ -1439,14 +1567,16 @@
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo"
                     aria-expanded="false"
-                    aria-controls="collapseTwo">
+                    aria-controls="collapseTwo"
+                  >
                     Accordion Item #2
                   </button>
                 </h2>
                 <div
                   id="collapseTwo"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#product-faq">
+                  data-bs-parent="#product-faq"
+                >
                   <div class="accordion-body">
                     Treat your pout to some TLC with the bestselling Lip Butter
                     Balm (15g) from Summer Fridays. Brimming with
@@ -1462,7 +1592,8 @@
                 </div>
               </div>
               <div
-                class="accordion-item rounded-0 border-0 border-bottom border-light-subtle">
+                class="accordion-item rounded-0 border-0 border-bottom border-light-subtle"
+              >
                 <h2 class="accordion-header">
                   <button
                     class="accordion-button collapsed"
@@ -1470,14 +1601,16 @@
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseThree"
                     aria-expanded="false"
-                    aria-controls="collapseThree">
+                    aria-controls="collapseThree"
+                  >
                     Accordion Item #3
                   </button>
                 </h2>
                 <div
                   id="collapseThree"
                   class="accordion-collapse collapse"
-                  data-bs-parent="#product-faq">
+                  data-bs-parent="#product-faq"
+                >
                   <div class="accordion-body">
                     Treat your pout to some TLC with the bestselling Lip Butter
                     Balm (15g) from Summer Fridays. Brimming with
@@ -1496,11 +1629,11 @@
           </div>
           <div class="col-12 col-lg-5 order-1">
             <div class="product-details-section">
-              <h6 class="fs-6 text-uppercase text-dark-emphasis mt-5 mt-lg-0"
-                >Urban Decay</h6
-              >
-              <h2 class="h1 text-black fw-bold"
-                >Urban Decay Face Bond Luminizer Golden Hour
+              <h6 class="fs-6 text-uppercase text-dark-emphasis mt-5 mt-lg-0">
+                Urban Decay
+              </h6>
+              <h2 class="h1 text-black fw-bold">
+                Urban Decay Face Bond Luminizer Golden Hour
               </h2>
               <div class="review-star fs-6">
                 <span class="fs-6 text-black"
@@ -1524,24 +1657,27 @@
                 <h3 class="h3 fw-semibold text-dark">£38.00</h3>
               </div>
               <div
-                class="d-flex gap-5 justify-content-between align-items-center">
-                <p class="fs-6 fw-normal text-dark-emphasis m-0"
-                  >Or 4 interest free payments of £9.50 with clearpay</p
-                >
+                class="d-flex gap-5 justify-content-between align-items-center"
+              >
+                <p class="fs-6 fw-normal text-dark-emphasis m-0">
+                  Or 4 interest free payments of £9.50 with clearpay
+                </p>
                 <span
                   ><button
                     type="button"
                     data-bs-toggle="modal"
                     data-bs-target="#exampleModal"
                     class="text-decoration-underline text-dark-emphasis text-capitalize fs-6 fw-normal border-0 bg-transparent"
-                    >view all</button
-                  ></span
+                  >
+                    view all
+                  </button></span
                 >
               </div>
               <!--  -->
               <div class="py-4 border-bottom border-light-subtle">
                 <p
-                  class="fs-6 fw-semibold text-dark-emphasis m-0 d-flex gap-3 align-items-start justify-content-start">
+                  class="fs-6 fw-semibold text-dark-emphasis m-0 d-flex gap-3 align-items-start justify-content-start"
+                >
                   <span class="mr-3"
                     ><i class="fa-solid fa-star-and-crescent"></i
                   ></span>
@@ -1577,30 +1713,34 @@
                 <div class="color-options mt-3">
                   <button
                     class="btn color-option"
-                    data-color="Mirror Ball"></button>
+                    data-color="Mirror Ball"
+                  ></button>
                   <button
                     class="btn color-option"
-                    data-color="Sunset Orange"></button>
+                    data-color="Sunset Orange"
+                  ></button>
                   <button
                     class="btn color-option"
-                    data-color="Ocean Blue"></button>
+                    data-color="Ocean Blue"
+                  ></button>
                   <!-- Add more buttons as needed -->
                 </div>
               </div>
               <!-- quantity selection  -->
               <div class="quantity-selector">
-                <button class="" id="decrement" disabled
-                  ><i class="fa-solid fa-minus"></i
-                ></button>
+                <button class="" id="decrement" disabled>
+                  <i class="fa-solid fa-minus"></i>
+                </button>
                 <button class="quantity" id="quantity">1</button>
-                <button class="" id="increment"
-                  ><i class="fa-solid fa-plus"></i
-                ></button>
+                <button class="" id="increment">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
               </div>
               <!-- add to cart  -->
               <div class="add-to-bag d-flex gap-3 py-5">
                 <button
-                  class="border border-dark bg-black text-white text-capitalize fs-6 d-flex gap-2 align-items-center justify-content-center">
+                  class="border border-dark bg-black text-white text-capitalize fs-6 d-flex gap-2 align-items-center justify-content-center"
+                >
                   <span><i class="fa-solid fa-cart-shopping"></i></span>
                   <span> add to bag</span>
                 </button>
@@ -1612,13 +1752,15 @@
                 <div class="">
                   <button
                     class="border border-dark text-dark fs-6 fw-normal py-2 px-3"
-                    >£10 OFF EVERY £50</button
                   >
+                    £10 OFF EVERY £50
+                  </button>
                 </div>
                 <p
                   class="fs-6 fw-normal text-dark m-0 d-flex gap-3 align-items-start justify-content-start"
-                  >In stock | Usually dispatched within 24 hours</p
                 >
+                  In stock | Usually dispatched within 24 hours
+                </p>
               </div>
             </div>
           </div>
@@ -1641,15 +1783,16 @@
                 <div class="product-card-image w-25">
                   <img
                     src="./assets/img/product/images-1.avif"
-                    alt="product-1" />
+                    alt="product-1"
+                  />
                 </div>
                 <div class="product-card-content w-75">
-                  <h6 class="fs-6 text-uppercase text-dark-emphasis"
-                    >This item</h6
-                  >
-                  <h3 class="h5 text-black fw-bold"
-                    >Urban Decay Face Bond Luminizer Golden Hour</h3
-                  >
+                  <h6 class="fs-6 text-uppercase text-dark-emphasis">
+                    This item
+                  </h6>
+                  <h3 class="h5 text-black fw-bold">
+                    Urban Decay Face Bond Luminizer Golden Hour
+                  </h3>
                   <div class="price">
                     <h3 class="h5 fw-semibold text-dark">£38.00</h3>
                   </div>
@@ -1661,7 +1804,8 @@
                     >
                     <select
                       class="form-control form-select py-3"
-                      id="colorDropdown">
+                      id="colorDropdown"
+                    >
                       <option value="Mirror Ball">Mirror Ball</option>
                       <option value="Sunset Orange">Sunset Orange</option>
                       <option value="Ocean Blue">Ocean Blue</option>
@@ -1671,19 +1815,21 @@
                 </div>
               </div>
               <div
-                class="product-card d-flex gap-5 align-items-start bg-light p-4">
+                class="product-card d-flex gap-5 align-items-start bg-light p-4"
+              >
                 <div class="product-card-image w-25">
                   <img
                     src="./assets/img/product/images-1.avif"
-                    alt="product-1" />
+                    alt="product-1"
+                  />
                 </div>
                 <div class="product-card-content w-75">
-                  <h6 class="fs-6 text-uppercase text-dark-emphasis"
-                    >This item</h6
-                  >
-                  <h3 class="h5 text-black fw-bold"
-                    >Urban Decay Face Bond Luminizer Golden Hour</h3
-                  >
+                  <h6 class="fs-6 text-uppercase text-dark-emphasis">
+                    This item
+                  </h6>
+                  <h3 class="h5 text-black fw-bold">
+                    Urban Decay Face Bond Luminizer Golden Hour
+                  </h3>
                   <div class="price">
                     <h3 class="h5 fw-semibold text-dark">£38.00</h3>
                   </div>
@@ -1695,7 +1841,8 @@
                     >
                     <select
                       class="form-control form-select py-3"
-                      id="colorDropdown">
+                      id="colorDropdown"
+                    >
                       <option value="Mirror Ball">Mirror Ball</option>
                       <option value="Sunset Orange">Sunset Orange</option>
                       <option value="Ocean Blue">Ocean Blue</option>
@@ -1707,21 +1854,24 @@
             </div>
           </div>
           <div
-            class="col-12 col-lg-5 justify-content-center align-items-center">
+            class="col-12 col-lg-5 justify-content-center align-items-center"
+          >
             <div
-              class="border border-light-subtle d-flex flex-column align-items-center justify-content-start justify-content-lg-center h-100 p-5 p-lg-0">
+              class="border border-light-subtle d-flex flex-column align-items-center justify-content-start justify-content-lg-center h-100 p-5 p-lg-0"
+            >
               <div class="w-50">
                 <div class="">
-                  <h4 class="fs-5 text-dark fw-bold text-capitalize"
-                    >Total Price:</h4
-                  >
+                  <h4 class="fs-5 text-dark fw-bold text-capitalize">
+                    Total Price:
+                  </h4>
                   <h4 class="fs-5 text-dark fw-bold text-capitalize">£57.00</h4>
                 </div>
                 <div class="">
                   <button
                     class="bg-black text-white fw-normal fs-6 text-capitalize py-2 px-3"
-                    >add both to busket</button
                   >
+                    add both to busket
+                  </button>
                 </div>
               </div>
             </div>
@@ -1737,9 +1887,9 @@
         <div class="row border-top border-light-subtle py-5">
           <div class="col-md-5">
             <div class="">
-              <h4 class="fs-4 fw-medium text-dark text-capitalize"
-                >Customer Reviews</h4
-              >
+              <h4 class="fs-4 fw-medium text-dark text-capitalize">
+                Customer Reviews
+              </h4>
               <div class="review-star fs-6">
                 <span class="fs-6 text-black"
                   ><i class="fa-solid fa-star"></i
@@ -1764,7 +1914,8 @@
               </div>
               <div class="progress-bars-area w-100 py-4">
                 <div
-                  class="d-flex gap-3 justify-content-start align-items-center w-100">
+                  class="d-flex gap-3 justify-content-start align-items-center w-100"
+                >
                   <span class="fs-6 text-black">5</span>
                   <span class="fs-6 text-black"
                     ><i class="fa-solid fa-star"></i
@@ -1776,16 +1927,19 @@
                       aria-label="Basic example"
                       aria-valuenow="25"
                       aria-valuemin="0"
-                      aria-valuemax="100">
+                      aria-valuemax="100"
+                    >
                       <div
                         class="progress-bar bg-black"
-                        style="width: 75%"></div>
+                        style="width: 75%"
+                      ></div>
                     </div>
                   </div>
                   <span class="fs-6 text-black text-end">3194</span>
                 </div>
                 <div
-                  class="d-flex gap-3 justify-content-start align-items-center w-100">
+                  class="d-flex gap-3 justify-content-start align-items-center w-100"
+                >
                   <span class="fs-6 text-black">4</span>
                   <span class="fs-6 text-black"
                     ><i class="fa-solid fa-star"></i
@@ -1797,16 +1951,19 @@
                       aria-label="Basic example"
                       aria-valuenow="25"
                       aria-valuemin="0"
-                      aria-valuemax="100">
+                      aria-valuemax="100"
+                    >
                       <div
                         class="progress-bar bg-black"
-                        style="width: 75%"></div>
+                        style="width: 75%"
+                      ></div>
                     </div>
                   </div>
                   <span class="fs-6 text-black text-end">194</span>
                 </div>
                 <div
-                  class="d-flex gap-3 justify-content-start align-items-center w-100">
+                  class="d-flex gap-3 justify-content-start align-items-center w-100"
+                >
                   <span class="fs-6 text-black">3</span>
                   <span class="fs-6 text-black"
                     ><i class="fa-solid fa-star"></i
@@ -1818,16 +1975,19 @@
                       aria-label="Basic example"
                       aria-valuenow="25"
                       aria-valuemin="0"
-                      aria-valuemax="100">
+                      aria-valuemax="100"
+                    >
                       <div
                         class="progress-bar bg-black"
-                        style="width: 75%"></div>
+                        style="width: 75%"
+                      ></div>
                     </div>
                   </div>
                   <span class="fs-6 text-black">94</span>
                 </div>
                 <div
-                  class="d-flex gap-3 justify-content-start align-items-center w-100">
+                  class="d-flex gap-3 justify-content-start align-items-center w-100"
+                >
                   <span class="fs-6 text-black">2</span>
                   <span class="fs-6 text-black"
                     ><i class="fa-solid fa-star"></i
@@ -1839,16 +1999,19 @@
                       aria-label="Basic example"
                       aria-valuenow="25"
                       aria-valuemin="0"
-                      aria-valuemax="100">
+                      aria-valuemax="100"
+                    >
                       <div
                         class="progress-bar bg-black"
-                        style="width: 75%"></div>
+                        style="width: 75%"
+                      ></div>
                     </div>
                   </div>
                   <span class="fs-6 text-black">4</span>
                 </div>
                 <div
-                  class="d-flex gap-3 justify-content-start align-items-center w-100">
+                  class="d-flex gap-3 justify-content-start align-items-center w-100"
+                >
                   <span class="fs-6 text-black">1</span>
                   <span class="fs-6 text-black"
                     ><i class="fa-solid fa-star"></i
@@ -1860,10 +2023,12 @@
                       aria-label="Basic example"
                       aria-valuenow="25"
                       aria-valuemin="0"
-                      aria-valuemax="100">
+                      aria-valuemax="100"
+                    >
                       <div
                         class="progress-bar bg-black"
-                        style="width: 75%"></div>
+                        style="width: 75%"
+                      ></div>
                     </div>
                   </div>
                   <span class="fs-6 text-black">0</span>
@@ -1873,11 +2038,11 @@
           </div>
           <div class="col-md-7">
             <div class="border-bottom border-light-subtle pb-4">
-              <h4 class="fs-4 fw-medium text-dark text-capitalize"
-                >Customer Reviews</h4
-              >
-              <p class="fs-6 fw-normal text-black"
-                >Thanks for sharing your thoughts! Please remember that results
+              <h4 class="fs-4 fw-medium text-dark text-capitalize">
+                Customer Reviews
+              </h4>
+              <p class="fs-6 fw-normal text-black">
+                Thanks for sharing your thoughts! Please remember that results
                 will vary from person to person. We're proud to say that all
                 customer reviews are independent, authentic and do not represent
                 the views of Cult Beauty or The Hut Group.
@@ -1903,12 +2068,13 @@
                 ></span>
               </div>
               <div class="">
-                <p class="text-black fs-6 fw-normal"
-                  >The texture and the scent is incomparable</p
-                >
+                <p class="text-black fs-6 fw-normal">
+                  The texture and the scent is incomparable
+                </p>
               </div>
               <div
-                class="d-flex gap-3 align-items-center justify-content-start fs-6 fw-bold text-black">
+                class="d-flex gap-3 align-items-center justify-content-start fs-6 fw-bold text-black"
+              >
                 <span>2025-01-31 by Desp </span>
                 <span class="text-success">** Verified Purchase **</span>
               </div>
@@ -1916,12 +2082,14 @@
                 <p class="text-black fs-6 fw-normal">Was this helpful?</p>
                 <div class="d-inline-flex gap-3">
                   <button
-                    class="fs-6 fw-normal bg-black text-white py-2 px-3 d-flex align-items-center text-uppercase">
+                    class="fs-6 fw-normal bg-black text-white py-2 px-3 d-flex align-items-center text-uppercase"
+                  >
                     <span><i class="fa-regular fa-thumbs-up me-2"></i></span>
                     <span>yes (0)</span>
                   </button>
                   <button
-                    class="fs-6 fw-normal bg-black text-white py-2 px-3 d-flex align-items-center text-uppercase">
+                    class="fs-6 fw-normal bg-black text-white py-2 px-3 d-flex align-items-center text-uppercase"
+                  >
                     <span><i class="fa-regular fa-thumbs-down me-2"></i></span>
                     <span>no (0)</span>
                   </button>
@@ -1946,57 +2114,63 @@
       id="exampleModal"
       tabindex="-1"
       aria-labelledby="exampleModalLabel"
-      aria-hidden="true">
+      aria-hidden="true"
+    >
       <div class="modal-dialog modal-dialog-centered w-50">
         <div class="modal-content">
           <div class="modal-header">
-            <h1 class="modal-title h3 text-black" id="exampleModalLabel"
-              >Instalments</h1
-            >
+            <h1 class="modal-title h3 text-black" id="exampleModalLabel">
+              Instalments
+            </h1>
             <button
               type="button"
               class="btn-close"
               data-bs-dismiss="modal"
-              aria-label="Close"></button>
+              aria-label="Close"
+            ></button>
           </div>
           <div class="modal-body p-0">
             <div class="d-flex flex-column gap-4">
               <div
-                class="d-flex border-bottom border-light-subtle p-4 w-100 justify-content-between align-items-center">
+                class="d-flex border-bottom border-light-subtle p-4 w-100 justify-content-between align-items-center"
+              >
                 <div class="w-25">
                   <img src="./assets/img/brand-logo.svg" alt="logo" />
                 </div>
                 <div class="">
-                  <h5 class="fs-5 fw-bold text-black text-capitalize mb-0"
-                    >clearpay</h5
-                  >
-                  <p class="fs-6 fw-normal text-black mb-0"
-                    >Pay as little as £5.75 over 4 instalments</p
-                  >
+                  <h5 class="fs-5 fw-bold text-black text-capitalize mb-0">
+                    clearpay
+                  </h5>
+                  <p class="fs-6 fw-normal text-black mb-0">
+                    Pay as little as £5.75 over 4 instalments
+                  </p>
                 </div>
                 <div class="">
                   <button
-                    class="btn rounded-0 bg-black px-3 py-2 text-white text-uppercase fs-6 fw-normal">
+                    class="btn rounded-0 bg-black px-3 py-2 text-white text-uppercase fs-6 fw-normal"
+                  >
                     details
                   </button>
                 </div>
               </div>
               <div
-                class="d-flex w-100 justify-content-between p-4 align-items-center">
+                class="d-flex w-100 justify-content-between p-4 align-items-center"
+              >
                 <div class="w-25">
                   <img src="./assets/img/brand-logo.svg" alt="logo" />
                 </div>
                 <div class="">
-                  <h5 class="fs-5 fw-bold text-black text-capitalize mb-0"
-                    >clearpay</h5
-                  >
-                  <p class="fs-6 fw-normal text-black mb-0"
-                    >Pay as little as £5.75 over 4 instalments</p
-                  >
+                  <h5 class="fs-5 fw-bold text-black text-capitalize mb-0">
+                    clearpay
+                  </h5>
+                  <p class="fs-6 fw-normal text-black mb-0">
+                    Pay as little as £5.75 over 4 instalments
+                  </p>
                 </div>
                 <div class="">
                   <button
-                    class="btn rounded-0 bg-black px-3 py-2 text-white text-uppercase fs-6 fw-normal">
+                    class="btn rounded-0 bg-black px-3 py-2 text-white text-uppercase fs-6 fw-normal"
+                  >
                     details
                   </button>
                 </div>
@@ -2009,7 +2183,8 @@
 
     <div class="bg-white mx-auto py-8">
       <h2
-        class="text-center font-averta text-lg md:text-2xl font-normal mb-8 uppercase">
+        class="text-center font-averta text-lg md:text-2xl font-normal mb-8 uppercase"
+      >
         Other Customers Bought
       </h2>
       <div class="container mx-auto px-4 lg:px-0">
@@ -2025,17 +2200,20 @@
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 1024px)" />
+                        media="(min-width: 1024px)"
+                      />
                       <source
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 768px)" />
+                        media="(min-width: 768px)"
+                      />
                       <source
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 640px)" />
+                        media="(min-width: 640px)"
+                      />
                       <img
                         src="https://placehold.co/350x450?text=new+in+thumbnail"
                         alt="Brand of the month"
@@ -2044,28 +2222,33 @@
                         height="350"
                         class="object-cover mx-auto w-full h-full shrink-0"
                         decoding="auto"
-                        fetchpriority="auto" />
+                        fetchpriority="auto"
+                      />
                     </picture>
                   </figure>
                 </a>
                 <div class="text-center">
                   <h3
-                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
+                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase"
+                  >
                     discover
                   </h3>
                   <p
-                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase"
+                  >
                     shark
                   </p>
                   <p
-                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow"
+                  >
                     Meet the CryoGlow Skincare LED Face Mask, equipped with
                     unique under-eye cooling tech.
                   </p>
 
                   <div class="block my-3">
                     <button
-                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
+                    >
                       shop now
                     </button>
                   </div>
@@ -2082,17 +2265,20 @@
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 1024px)" />
+                        media="(min-width: 1024px)"
+                      />
                       <source
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 768px)" />
+                        media="(min-width: 768px)"
+                      />
                       <source
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 640px)" />
+                        media="(min-width: 640px)"
+                      />
                       <img
                         src="https://placehold.co/350x450?text=new+in+thumbnail"
                         alt="Brand of the month"
@@ -2101,28 +2287,33 @@
                         height="350"
                         class="object-cover mx-auto w-full h-full shrink-0"
                         decoding="auto"
-                        fetchpriority="auto" />
+                        fetchpriority="auto"
+                      />
                     </picture>
                   </figure>
                 </a>
                 <div class="text-center">
                   <h3
-                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
+                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase"
+                  >
                     discover
                   </h3>
                   <p
-                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase"
+                  >
                     shark
                   </p>
                   <p
-                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow"
+                  >
                     Meet the CryoGlow Skincare LED Face Mask, equipped with
                     unique under-eye cooling tech.
                   </p>
 
                   <div class="block my-3">
                     <button
-                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
+                    >
                       shop now
                     </button>
                   </div>
@@ -2139,17 +2330,20 @@
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 1024px)" />
+                        media="(min-width: 1024px)"
+                      />
                       <source
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 768px)" />
+                        media="(min-width: 768px)"
+                      />
                       <source
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 640px)" />
+                        media="(min-width: 640px)"
+                      />
                       <img
                         src="https://placehold.co/350x450?text=new+in+thumbnail"
                         alt="Brand of the month"
@@ -2158,28 +2352,33 @@
                         height="350"
                         class="object-cover mx-auto w-full h-full shrink-0"
                         decoding="auto"
-                        fetchpriority="auto" />
+                        fetchpriority="auto"
+                      />
                     </picture>
                   </figure>
                 </a>
                 <div class="text-center">
                   <h3
-                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
+                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase"
+                  >
                     discover
                   </h3>
                   <p
-                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase"
+                  >
                     shark
                   </p>
                   <p
-                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow"
+                  >
                     Meet the CryoGlow Skincare LED Face Mask, equipped with
                     unique under-eye cooling tech.
                   </p>
 
                   <div class="block my-3">
                     <button
-                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
+                    >
                       shop now
                     </button>
                   </div>
@@ -2196,17 +2395,20 @@
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 1024px)" />
+                        media="(min-width: 1024px)"
+                      />
                       <source
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 768px)" />
+                        media="(min-width: 768px)"
+                      />
                       <source
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 640px)" />
+                        media="(min-width: 640px)"
+                      />
                       <img
                         src="https://placehold.co/350x450?text=new+in+thumbnail"
                         alt="Brand of the month"
@@ -2215,28 +2417,33 @@
                         height="350"
                         class="object-cover mx-auto w-full h-full shrink-0"
                         decoding="auto"
-                        fetchpriority="auto" />
+                        fetchpriority="auto"
+                      />
                     </picture>
                   </figure>
                 </a>
                 <div class="text-center">
                   <h3
-                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
+                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase"
+                  >
                     discover
                   </h3>
                   <p
-                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase"
+                  >
                     shark
                   </p>
                   <p
-                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow"
+                  >
                     Meet the CryoGlow Skincare LED Face Mask, equipped with
                     unique under-eye cooling tech.
                   </p>
 
                   <div class="block my-3">
                     <button
-                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
+                    >
                       shop now
                     </button>
                   </div>
@@ -2253,17 +2460,20 @@
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 1024px)" />
+                        media="(min-width: 1024px)"
+                      />
                       <source
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 768px)" />
+                        media="(min-width: 768px)"
+                      />
                       <source
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 640px)" />
+                        media="(min-width: 640px)"
+                      />
                       <img
                         src="https://placehold.co/350x450?text=new+in+thumbnail"
                         alt="Brand of the month"
@@ -2272,28 +2482,33 @@
                         height="350"
                         class="object-cover mx-auto w-full h-full shrink-0"
                         decoding="auto"
-                        fetchpriority="auto" />
+                        fetchpriority="auto"
+                      />
                     </picture>
                   </figure>
                 </a>
                 <div class="text-center">
                   <h3
-                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
+                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase"
+                  >
                     discover
                   </h3>
                   <p
-                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase"
+                  >
                     shark
                   </p>
                   <p
-                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow"
+                  >
                     Meet the CryoGlow Skincare LED Face Mask, equipped with
                     unique under-eye cooling tech.
                   </p>
 
                   <div class="block my-3">
                     <button
-                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
+                    >
                       shop now
                     </button>
                   </div>
@@ -2310,17 +2525,20 @@
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 1024px)" />
+                        media="(min-width: 1024px)"
+                      />
                       <source
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 768px)" />
+                        media="(min-width: 768px)"
+                      />
                       <source
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 640px)" />
+                        media="(min-width: 640px)"
+                      />
                       <img
                         src="https://placehold.co/350x450?text=new+in+thumbnail"
                         alt="Brand of the month"
@@ -2329,28 +2547,33 @@
                         height="350"
                         class="object-cover mx-auto w-full h-full shrink-0"
                         decoding="auto"
-                        fetchpriority="auto" />
+                        fetchpriority="auto"
+                      />
                     </picture>
                   </figure>
                 </a>
                 <div class="text-center">
                   <h3
-                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
+                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase"
+                  >
                     discover
                   </h3>
                   <p
-                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase"
+                  >
                     shark
                   </p>
                   <p
-                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow"
+                  >
                     Meet the CryoGlow Skincare LED Face Mask, equipped with
                     unique under-eye cooling tech.
                   </p>
 
                   <div class="block my-3">
                     <button
-                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
+                    >
                       shop now
                     </button>
                   </div>
@@ -2367,17 +2590,20 @@
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 1024px)" />
+                        media="(min-width: 1024px)"
+                      />
                       <source
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 768px)" />
+                        media="(min-width: 768px)"
+                      />
                       <source
                         srcset="
                           https://placehold.co/350x450?text=new+in+thumbnail
                         "
-                        media="(min-width: 640px)" />
+                        media="(min-width: 640px)"
+                      />
                       <img
                         src="https://placehold.co/350x450?text=new+in+thumbnail"
                         alt="Brand of the month"
@@ -2386,28 +2612,33 @@
                         height="350"
                         class="object-cover mx-auto w-full h-full shrink-0"
                         decoding="auto"
-                        fetchpriority="auto" />
+                        fetchpriority="auto"
+                      />
                     </picture>
                   </figure>
                 </a>
                 <div class="text-center">
                   <h3
-                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
+                    class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase"
+                  >
                     discover
                   </h3>
                   <p
-                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase"
+                  >
                     shark
                   </p>
                   <p
-                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
+                    class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow"
+                  >
                     Meet the CryoGlow Skincare LED Face Mask, equipped with
                     unique under-eye cooling tech.
                   </p>
 
                   <div class="block my-3">
                     <button
-                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                      class="px-2 font-averta py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
+                    >
                       shop now
                     </button>
                   </div>

@@ -2,6 +2,7 @@ import "@fortawesome/fontawesome-free/css/all.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "bootstrap/dist/js/bootstrap.min.js";
 
+console.log("Hello from main.js");
 // mobile nav menu for small screen inside canvas
 // ------------------
 
@@ -34,22 +35,4 @@ document.addEventListener("DOMContentLoaded", function () {
       slideWindow.classList.remove("open");
     });
   });
-});
-
-// header top slider on mobile view
-document.addEventListener("DOMContentLoaded", function () {
-  const slides = document.querySelectorAll(".slide-item");
-  let currentSlide = 0;
-
-  if (slides.length > 0) {
-    slides[currentSlide].classList.add("active");
-  }
-
-  function showNextSlide() {
-    slides[currentSlide].classList.remove("active");
-    currentSlide = (currentSlide + 1) % slides.length;
-    slides[currentSlide].classList.add("active");
-  }
-
-  setInterval(showNextSlide, 3000);
 });

@@ -1,4 +1,24 @@
-console.log("Hello from main.js");
+console.log("Hello from slider.js");
+
+// header top slider on mobile view
+document.addEventListener("DOMContentLoaded", function () {
+  const slides = document.querySelectorAll(".slide-item");
+  console.log("slider : ", slides);
+  let currentSlide = 0;
+
+  if (slides.length > 0) {
+    slides[currentSlide].classList.add("active");
+  }
+
+  function showNextSlide() {
+    slides[currentSlide].classList.remove("active");
+    currentSlide = (currentSlide + 1) % slides.length;
+    slides[currentSlide].classList.add("active");
+  }
+
+  setInterval(showNextSlide, 3000);
+});
+
 // categorySlider
 const swiper2 = new Swiper(".categorySlider", {
   // Optional parameters

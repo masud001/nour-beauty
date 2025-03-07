@@ -13935,6 +13935,10 @@ textarea.form-control-lg {
   }
 }
 
+.nour-memo-content {
+  bottom: 16px !important;
+}
+
 .swiper-slider-thumb {
   background-color: white;
   border: 1px solid #efefef;
