@@ -120,6 +120,89 @@ const swiper2 = new Swiper(".categorySlider", {
     },
   },
 });
+// categorySlider
+const blogMenu = new Swiper(".blogMenu", {
+  // Optional parameters
+  direction: "horizontal",
+  breakpoints: {
+    320: {
+      loop: true,
+      slidesPerView: 4,
+      centeredSlides: true,
+      spaceBetween: 50,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+
+    480: {
+      loop: true,
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 50,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+
+    640: {
+      loop: true,
+      slidesPerView: 3,
+      centeredSlides: false,
+      spaceBetween: 70,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    762: {
+      loop: true,
+      slidesPerView: 4,
+      centeredSlides: false,
+      spaceBetween: 70,
+      navigation: false,
+      pagination: false,
+    },
+    992: {
+      loop: true,
+      slidesPerView: 4,
+      centeredSlides: false,
+      spaceBetween: 50,
+      navigation: false,
+      pagination: false,
+    },
+    1080: {
+      loop: true,
+      slidesPerView: 5,
+      centeredSlides: false,
+      spaceBetween: 50,
+      navigation: false,
+      pagination: false,
+    },
+    1280: {
+      loop: false,
+      slidesPerView: 6,
+      centeredSlides: false,
+      spaceBetween: 50,
+      navigation: false,
+      pagination: false,
+    },
+  },
+});
 // home slider
 const swiper1 = new Swiper(".homeSlider", {
   // Optional parameters

@@ -14102,6 +14102,17 @@ textarea.form-control-lg {
   left: 10%;
 }
 
+@media (max-width: 768px) {
+  .blog-details .news-tag, .blog-details .writter-name {
+    font-size: 12px !important;
+  }
+  .blog-details .blog-title {
+    font-size: 18px !important;
+  }
+  .blog-details p {
+    font-size: 13px !important;
+  }
+}
 @media (min-width: 992px) and (max-width: 1199px) {
   .blog-details .news-tag, .blog-details .writter-name {
     font-size: 14px !important;

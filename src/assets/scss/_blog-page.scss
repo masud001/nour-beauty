@@ -3,6 +3,17 @@
 }
 
 .blog-details{
+    @media (max-width: 768px) {
+        .news-tag,.writter-name{
+            font-size: 12px !important;
+        }
+         .blog-title{
+            font-size: 18px !important;
+         }
+         p{
+            font-size: 13px !important;
+         }
+    }
     @media (min-width:992px) and (max-width:1199px){
         .news-tag,.writter-name{
             font-size: 14px !important;
