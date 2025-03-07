@@ -1,0 +1,19 @@
+.blog-navigation{
+
+}
+
+.blog-details{
+    @media (min-width:992px) and (max-width:1199px){
+        .news-tag,.writter-name{
+            font-size: 14px !important;
+        }
+         .blog-title{
+            font-size: 24px !important;
+         }
+         p{
+            font-size: 16px !important;
+         }
+     }
+    
+    
+}
