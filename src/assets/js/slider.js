@@ -127,7 +127,7 @@ const blogMenu = new Swiper(".blogMenu", {
   breakpoints: {
     320: {
       loop: true,
-      slidesPerView: 4,
+      slidesPerView: 2,
       centeredSlides: true,
       spaceBetween: 50,
       navigation: {
@@ -142,7 +142,7 @@ const blogMenu = new Swiper(".blogMenu", {
 
     480: {
       loop: true,
-      slidesPerView: 3,
+      slidesPerView: 2,
       centeredSlides: true,
       spaceBetween: 50,
       navigation: {
