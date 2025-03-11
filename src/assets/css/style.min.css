@@ -13448,6 +13448,10 @@ textarea.form-control-lg {
 .header-container button i {
   font-size: 16px;
 }
+.header-container .logo-container a img {
+  -o-object-fit: contain;
+     object-fit: contain;
+}
 @media (min-width: 320px) {
   .header-container .logo-container a {
     font-size: 100%;
@@ -13654,6 +13658,7 @@ textarea.form-control-lg {
 }
 
 .product-filter-section {
+  z-index: 30;
   top: 56px;
 }
 @media (min-width: 480px) {
