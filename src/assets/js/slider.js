@@ -359,7 +359,7 @@ const swiper7 = new Swiper(".productListingTypeOne", {
   breakpoints: {
     320: {
       centeredSlides: false,
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
     400: {
@@ -399,7 +399,7 @@ const swiper8 = new Swiper(".productListingTypeTwo", {
   breakpoints: {
     320: {
       centeredSlides: false,
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
     400: {
@@ -439,7 +439,7 @@ const swiper9 = new Swiper(".productListingTypeThree", {
   breakpoints: {
     320: {
       centeredSlides: false,
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 20,
     },
     400: {
@@ -461,6 +461,46 @@ const swiper9 = new Swiper(".productListingTypeThree", {
       centeredSlides: false,
       slidesPerView: 5,
       spaceBetween: 30,
+    },
+  },
+});
+const swiper10 = new Swiper(".productListingTypeFour", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      centeredSlides: false,
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    400: {
+      centeredSlides: false,
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      centeredSlides: false,
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    1024: {
+      centeredSlides: false,
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1280: {
+      centeredSlides: false,
+      slidesPerView: 3,
+      spaceBetween: 20,
     },
   },
 });

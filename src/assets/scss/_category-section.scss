@@ -18,3 +18,38 @@
     }
   }
 }
+
+.pagination-number{
+
+  margin-bottom: 15px;
+  p{
+    font-size: 12px;
+    font-weight: normal;
+    color: #000;
+  }
+  
+}
+.pagination-nav{
+  .page-item{
+    &.active{
+      position: relative;
+      ::after{
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background-color: #000;
+        bottom: -5px;
+        left: 0;
+
+      }
+      .page-link{
+        display: inline-flex;
+        font-weight: bold !important;
+      }
+    }
+    .page-link{
+      padding: 0 8px;
+    }
+  }
+}
