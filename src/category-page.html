@@ -1271,7 +1271,7 @@
         </ul>
       </nav>
     </header>
-    <!-- mobile nagigation -->
+    <!-- mobile navigation -->
     <div
       class="offcanvas offcanvas-start mobile-navigation"
       tabindex="-1"
@@ -1948,20 +1948,204 @@
               <div class="swiper-wrapper">
                 <!-- slider  -->
                 <div class="swiper-slide">
-                  <div class="product-card">
-                    <div class="product-card-image position-relative">
-                      <img src="./assets/img/skintints.webp" alt="product " />
+                  <div class="product-card product-with-overlay-listing">
+                    <div
+                      class="product-card-image position-relative overflow-hidden"
+                    >
+                      <img
+                        class="trigger-action"
+                        src="./assets/img/skintints.webp"
+                        alt="product "
+                      />
                       <button
                         type="button"
-                        class="view-arrow-overlay"
-                        data-bs-toggle="modal"
-                        data-bs-target="#viewProductSize"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom"
+                        aria-controls="offcanvasBottom"
+                        class="view-arrow-overlay trigger-action"
                       >
                         <i class="fa-solid fa-arrow-up"></i>
                       </button>
-                      <button class="product-bookmark">
-                        <i class="fa fa-regular fa-heart"></i>
-                      </button>
+                      <!-- product overlay  -->
+                      <div
+                        class="product-overlay-listing position-absolute w-100 h-100 bg-white top-0 start-0 border border-light-subtle overflow-y-scroll d-none d-lg-flex flex-column gap-2"
+                      >
+                        <div
+                          class="py-2 pb-0 px-2 d-flex justify-content-end align-items-center"
+                        >
+                          <span class="overlay-close-btn"
+                            ><i class="fa-solid fa-xmark fs-5"></i
+                          ></span>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                      </div>
                     </div>
                     <div class="product-card-body py-3">
                       <p class="mb-0 product-title">Kérastase</p>
@@ -1973,20 +2157,204 @@
                 </div>
                 <!-- slider  -->
                 <div class="swiper-slide">
-                  <div class="product-card">
-                    <div class="product-card-image position-relative">
-                      <img src="./assets/img/skintints.webp" alt="product " />
+                  <div class="product-card product-with-overlay-listing">
+                    <div
+                      class="product-card-image position-relative overflow-hidden"
+                    >
+                      <img
+                        class="trigger-action"
+                        src="./assets/img/skintints.webp"
+                        alt="product "
+                      />
                       <button
                         type="button"
-                        class="view-arrow-overlay"
-                        data-bs-toggle="modal"
-                        data-bs-target="#viewProductSize"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom"
+                        aria-controls="offcanvasBottom"
+                        class="view-arrow-overlay trigger-action"
                       >
                         <i class="fa-solid fa-arrow-up"></i>
                       </button>
-                      <button class="product-bookmark">
-                        <i class="fa fa-regular fa-heart"></i>
-                      </button>
+                      <!-- product overlay  -->
+                      <div
+                        class="product-overlay-listing position-absolute w-100 h-100 bg-white top-0 start-0 border border-light-subtle overflow-y-scroll d-none d-lg-flex flex-column gap-2"
+                      >
+                        <div
+                          class="py-2 pb-0 px-2 d-flex justify-content-end align-items-center"
+                        >
+                          <span class="overlay-close-btn"
+                            ><i class="fa-solid fa-xmark fs-5"></i
+                          ></span>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                      </div>
                     </div>
                     <div class="product-card-body py-3">
                       <p class="mb-0 product-title">Kérastase</p>
@@ -1998,20 +2366,204 @@
                 </div>
                 <!-- slider  -->
                 <div class="swiper-slide">
-                  <div class="product-card">
-                    <div class="product-card-image position-relative">
-                      <img src="./assets/img/skintints.webp" alt="product " />
+                  <div class="product-card product-with-overlay-listing">
+                    <div
+                      class="product-card-image position-relative overflow-hidden"
+                    >
+                      <img
+                        class="trigger-action"
+                        src="./assets/img/skintints.webp"
+                        alt="product "
+                      />
                       <button
                         type="button"
-                        class="view-arrow-overlay"
-                        data-bs-toggle="modal"
-                        data-bs-target="#viewProductSize"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom"
+                        aria-controls="offcanvasBottom"
+                        class="view-arrow-overlay trigger-action"
                       >
                         <i class="fa-solid fa-arrow-up"></i>
                       </button>
-                      <button class="product-bookmark">
-                        <i class="fa fa-regular fa-heart"></i>
-                      </button>
+                      <!-- product overlay  -->
+                      <div
+                        class="product-overlay-listing position-absolute w-100 h-100 bg-white top-0 start-0 border border-light-subtle overflow-y-scroll d-none d-lg-flex flex-column gap-2"
+                      >
+                        <div
+                          class="py-2 pb-0 px-2 d-flex justify-content-end align-items-center"
+                        >
+                          <span class="overlay-close-btn"
+                            ><i class="fa-solid fa-xmark fs-5"></i
+                          ></span>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                      </div>
                     </div>
                     <div class="product-card-body py-3">
                       <p class="mb-0 product-title">Kérastase</p>
@@ -2023,20 +2575,204 @@
                 </div>
                 <!-- slider  -->
                 <div class="swiper-slide">
-                  <div class="product-card">
-                    <div class="product-card-image position-relative">
-                      <img src="./assets/img/skintints.webp" alt="product " />
+                  <div class="product-card product-with-overlay-listing">
+                    <div
+                      class="product-card-image position-relative overflow-hidden"
+                    >
+                      <img
+                        class="trigger-action"
+                        src="./assets/img/skintints.webp"
+                        alt="product "
+                      />
                       <button
                         type="button"
-                        class="view-arrow-overlay"
-                        data-bs-toggle="modal"
-                        data-bs-target="#viewProductSize"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom"
+                        aria-controls="offcanvasBottom"
+                        class="view-arrow-overlay trigger-action"
                       >
                         <i class="fa-solid fa-arrow-up"></i>
                       </button>
-                      <button class="product-bookmark">
-                        <i class="fa fa-regular fa-heart"></i>
-                      </button>
+                      <!-- product overlay  -->
+                      <div
+                        class="product-overlay-listing position-absolute w-100 h-100 bg-white top-0 start-0 border border-light-subtle overflow-y-scroll d-none d-lg-flex flex-column gap-2"
+                      >
+                        <div
+                          class="py-2 pb-0 px-2 d-flex justify-content-end align-items-center"
+                        >
+                          <span class="overlay-close-btn"
+                            ><i class="fa-solid fa-xmark fs-5"></i
+                          ></span>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                      </div>
                     </div>
                     <div class="product-card-body py-3">
                       <p class="mb-0 product-title">Kérastase</p>
@@ -2048,20 +2784,204 @@
                 </div>
                 <!-- slider  -->
                 <div class="swiper-slide">
-                  <div class="product-card">
-                    <div class="product-card-image position-relative">
-                      <img src="./assets/img/skintints.webp" alt="product " />
+                  <div class="product-card product-with-overlay-listing">
+                    <div
+                      class="product-card-image position-relative overflow-hidden"
+                    >
+                      <img
+                        class="trigger-action"
+                        src="./assets/img/skintints.webp"
+                        alt="product "
+                      />
                       <button
                         type="button"
-                        class="view-arrow-overlay"
-                        data-bs-toggle="modal"
-                        data-bs-target="#viewProductSize"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom"
+                        aria-controls="offcanvasBottom"
+                        class="view-arrow-overlay trigger-action"
                       >
                         <i class="fa-solid fa-arrow-up"></i>
                       </button>
-                      <button class="product-bookmark">
-                        <i class="fa fa-regular fa-heart"></i>
-                      </button>
+                      <!-- product overlay  -->
+                      <div
+                        class="product-overlay-listing position-absolute w-100 h-100 bg-white top-0 start-0 border border-light-subtle overflow-y-scroll d-none d-lg-flex flex-column gap-2"
+                      >
+                        <div
+                          class="py-2 pb-0 px-2 d-flex justify-content-end align-items-center"
+                        >
+                          <span class="overlay-close-btn"
+                            ><i class="fa-solid fa-xmark fs-5"></i
+                          ></span>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                      </div>
                     </div>
                     <div class="product-card-body py-3">
                       <p class="mb-0 product-title">Kérastase</p>
@@ -2073,245 +2993,204 @@
                 </div>
                 <!-- slider  -->
                 <div class="swiper-slide">
-                  <div class="product-card">
-                    <div class="product-card-image position-relative">
-                      <img src="./assets/img/skintints.webp" alt="product " />
+                  <div class="product-card product-with-overlay-listing">
+                    <div
+                      class="product-card-image position-relative overflow-hidden"
+                    >
+                      <img
+                        class="trigger-action"
+                        src="./assets/img/skintints.webp"
+                        alt="product "
+                      />
                       <button
                         type="button"
-                        class="view-arrow-overlay"
-                        data-bs-toggle="modal"
-                        data-bs-target="#viewProductSize"
+                        data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasBottom"
+                        aria-controls="offcanvasBottom"
+                        class="view-arrow-overlay trigger-action"
                       >
                         <i class="fa-solid fa-arrow-up"></i>
                       </button>
-                      <button class="product-bookmark">
-                        <i class="fa fa-regular fa-heart"></i>
-                      </button>
-                    </div>
-                    <div class="product-card-body py-3">
-                      <p class="mb-0 product-title">Kérastase</p>
-                      <h3 class="mb-0">
-                        Elixir Ultime L'Huile Originale Hair Oil
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <!-- slider  -->
-                <div class="swiper-slide">
-                  <div class="product-card">
-                    <div class="product-card-image position-relative">
-                      <img src="./assets/img/skintints.webp" alt="product " />
-                      <button
-                        type="button"
-                        class="view-arrow-overlay"
-                        data-bs-toggle="modal"
-                        data-bs-target="#viewProductSize"
+                      <!-- product overlay  -->
+                      <div
+                        class="product-overlay-listing position-absolute w-100 h-100 bg-white top-0 start-0 border border-light-subtle overflow-y-scroll d-none d-lg-flex flex-column gap-2"
                       >
-                        <i class="fa-solid fa-arrow-up"></i>
-                      </button>
-                      <button class="product-bookmark">
-                        <i class="fa fa-regular fa-heart"></i>
-                      </button>
-                    </div>
-                    <div class="product-card-body py-3">
-                      <p class="mb-0 product-title">Kérastase</p>
-                      <h3 class="mb-0">
-                        Elixir Ultime L'Huile Originale Hair Oil
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <!-- slider  -->
-                <div class="swiper-slide">
-                  <div class="product-card">
-                    <div class="product-card-image position-relative">
-                      <img src="./assets/img/skintints.webp" alt="product " />
-                      <button
-                        type="button"
-                        class="view-arrow-overlay"
-                        data-bs-toggle="modal"
-                        data-bs-target="#viewProductSize"
-                      >
-                        <i class="fa-solid fa-arrow-up"></i>
-                      </button>
-                      <button class="product-bookmark">
-                        <i class="fa fa-regular fa-heart"></i>
-                      </button>
-                    </div>
-                    <div class="product-card-body py-3">
-                      <p class="mb-0 product-title">Kérastase</p>
-                      <h3 class="mb-0">
-                        Elixir Ultime L'Huile Originale Hair Oil
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <!-- slider  -->
-                <div class="swiper-slide">
-                  <div class="product-card">
-                    <div class="product-card-image position-relative">
-                      <img src="./assets/img/skintints.webp" alt="product " />
-                      <button
-                        type="button"
-                        class="view-arrow-overlay"
-                        data-bs-toggle="modal"
-                        data-bs-target="#viewProductSize"
-                      >
-                        <i class="fa-solid fa-arrow-up"></i>
-                      </button>
-                      <button class="product-bookmark">
-                        <i class="fa fa-regular fa-heart"></i>
-                      </button>
-                    </div>
-                    <div class="product-card-body py-3">
-                      <p class="mb-0 product-title">Kérastase</p>
-                      <h3 class="mb-0">
-                        Elixir Ultime L'Huile Originale Hair Oil
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <!-- slider  -->
-                <div class="swiper-slide">
-                  <div class="product-card">
-                    <div class="product-card-image position-relative">
-                      <img src="./assets/img/skintints.webp" alt="product " />
-                      <button
-                        type="button"
-                        class="view-arrow-overlay"
-                        data-bs-toggle="modal"
-                        data-bs-target="#viewProductSize"
-                      >
-                        <i class="fa-solid fa-arrow-up"></i>
-                      </button>
-                      <button class="product-bookmark">
-                        <i class="fa fa-regular fa-heart"></i>
-                      </button>
-                    </div>
-                    <div class="product-card-body py-3">
-                      <p class="mb-0 product-title">Kérastase</p>
-                      <h3 class="mb-0">
-                        Elixir Ultime L'Huile Originale Hair Oil
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <!-- slider  -->
-                <div class="swiper-slide">
-                  <div class="product-card">
-                    <div class="product-card-image position-relative">
-                      <img src="./assets/img/skintints.webp" alt="product " />
-                      <button
-                        type="button"
-                        class="view-arrow-overlay"
-                        data-bs-toggle="modal"
-                        data-bs-target="#viewProductSize"
-                      >
-                        <i class="fa-solid fa-arrow-up"></i>
-                      </button>
-                      <button class="product-bookmark">
-                        <i class="fa fa-regular fa-heart"></i>
-                      </button>
-                    </div>
-                    <div class="product-card-body py-3">
-                      <p class="mb-0 product-title">Kérastase</p>
-                      <h3 class="mb-0">
-                        Elixir Ultime L'Huile Originale Hair Oil
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <!-- slider  -->
-                <div class="swiper-slide">
-                  <div class="product-card">
-                    <div class="product-card-image position-relative">
-                      <img src="./assets/img/skintints.webp" alt="product " />
-                      <button
-                        type="button"
-                        class="view-arrow-overlay"
-                        data-bs-toggle="modal"
-                        data-bs-target="#viewProductSize"
-                      >
-                        <i class="fa-solid fa-arrow-up"></i>
-                      </button>
-                      <button class="product-bookmark">
-                        <i class="fa fa-regular fa-heart"></i>
-                      </button>
-                    </div>
-                    <div class="product-card-body py-3">
-                      <p class="mb-0 product-title">Kérastase</p>
-                      <h3 class="mb-0">
-                        Elixir Ultime L'Huile Originale Hair Oil
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <!-- slider  -->
-                <div class="swiper-slide">
-                  <div class="product-card">
-                    <div class="product-card-image position-relative">
-                      <img src="./assets/img/skintints.webp" alt="product " />
-                      <button
-                        type="button"
-                        class="view-arrow-overlay"
-                        data-bs-toggle="modal"
-                        data-bs-target="#viewProductSize"
-                      >
-                        <i class="fa-solid fa-arrow-up"></i>
-                      </button>
-                      <button class="product-bookmark">
-                        <i class="fa fa-regular fa-heart"></i>
-                      </button>
-                    </div>
-                    <div class="product-card-body py-3">
-                      <p class="mb-0 product-title">Kérastase</p>
-                      <h3 class="mb-0">
-                        Elixir Ultime L'Huile Originale Hair Oil
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <!-- slider  -->
-                <div class="swiper-slide">
-                  <div class="product-card">
-                    <div class="product-card-image position-relative">
-                      <img src="./assets/img/skintints.webp" alt="product " />
-                      <button
-                        type="button"
-                        class="view-arrow-overlay"
-                        data-bs-toggle="modal"
-                        data-bs-target="#viewProductSize"
-                      >
-                        <i class="fa-solid fa-arrow-up"></i>
-                      </button>
-                      <button class="product-bookmark">
-                        <i class="fa fa-regular fa-heart"></i>
-                      </button>
-                    </div>
-                    <div class="product-card-body py-3">
-                      <p class="mb-0 product-title">Kérastase</p>
-                      <h3 class="mb-0">
-                        Elixir Ultime L'Huile Originale Hair Oil
-                      </h3>
-                    </div>
-                  </div>
-                </div>
-                <!-- slider  -->
-                <div class="swiper-slide">
-                  <div class="product-card">
-                    <div class="product-card-image position-relative">
-                      <img src="./assets/img/skintints.webp" alt="product " />
-                      <button
-                        type="button"
-                        class="view-arrow-overlay"
-                        data-bs-toggle="modal"
-                        data-bs-target="#viewProductSize"
-                      >
-                        <i class="fa-solid fa-arrow-up"></i>
-                      </button>
-                      <button class="product-bookmark">
-                        <i class="fa fa-regular fa-heart"></i>
-                      </button>
+                        <div
+                          class="py-2 pb-0 px-2 d-flex justify-content-end align-items-center"
+                        >
+                          <span class="overlay-close-btn"
+                            ><i class="fa-solid fa-xmark fs-5"></i
+                          ></span>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                        <!-- list 1  -->
+                        <div
+                          class="border-bottom position-relative d-flex align-items-stretch gap-2 gap-lg-3 border-light-subtle p-2"
+                        >
+                          <div
+                            class="product-card-image shrink-0 position-relative bg-light-subtle"
+                          >
+                            <img
+                              class="img-fluid"
+                              src="./assets/img/product/overlay-product-01.webp"
+                              alt="product "
+                            />
+                            <button
+                              type="button"
+                              class="view-size-modal position-absolute bottom-0 end-0"
+                            >
+                              <i class="fa-solid fa-plus"></i>
+                            </button>
+                          </div>
+                          <div class="product-card-body">
+                            <h3 class="mb-0">Kérastase</h3>
+                            <p class="mb-0 product-title">
+                              Elixir Ultime L'Huile Originale Hair Oil
+                            </p>
+                            <div class="">
+                              <span class="price">$55.00</span>
+                              <div class="review">
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span><i class="fa-solid fa-star"></i></span>
+                                <span
+                                  ><i class="fa-regular fa-star-half-stroke"></i
+                                ></span>
+                                <span><i class="fa-regular fa-star"></i></span>
+                                <span>(19) </span>
+                              </div>
+                            </div>
+                          </div>
+                          <button class="product-bookmark">
+                            <i class="fa fa-regular fa-heart"></i>
+                          </button>
+                        </div>
+                      </div>
                     </div>
                     <div class="product-card-body py-3">
                       <p class="mb-0 product-title">Kérastase</p>
@@ -4065,6 +4944,198 @@
         >
           view 71 more items
         </button>
+      </div>
+    </div>
+
+    <!-- offcanvas for overlay product listing for mobile view  -->
+    <div
+      class="offcanvas offcanvas-bottom d-lg-none"
+      tabindex="-1"
+      id="offcanvasBottom"
+      aria-labelledby="offcanvasBottomLabel"
+      data-bs-scroll="true"
+    >
+      <div class="offcanvas-header">
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="offcanvas"
+          aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body position-relative">
+        <div
+          class="product-overlay-listing position-absolute w-100 h-100 bg-white top-0 start-0 border border-light-subtle overflow-y-scroll d-flex flex-column gap-2"
+        >
+          <!-- list 1  -->
+          <div
+            class="border-bottom position-relative d-flex align-items-stretch gap-3 border-light-subtle p-2"
+          >
+            <div
+              class="product-card-image shrink-0 position-relative bg-light-subtle"
+            >
+              <img
+                class="img-fluid"
+                src="./assets/img/product/overlay-product-01.webp"
+                alt="product "
+              />
+              <button
+                type="button"
+                class="view-size-modal position-absolute bottom-0 end-0"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+            <div class="product-card-body">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+              </div>
+            </div>
+            <button
+              class="product-bookmark position-absolute top-0 end-0 me-3 mt-1"
+            >
+              <i class="fa fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <!-- list 1  -->
+          <div
+            class="border-bottom position-relative d-flex align-items-stretch gap-3 border-light-subtle p-2"
+          >
+            <div
+              class="product-card-image shrink-0 position-relative bg-light-subtle"
+            >
+              <img
+                class="img-fluid"
+                src="./assets/img/product/overlay-product-01.webp"
+                alt="product "
+              />
+              <button
+                type="button"
+                class="view-size-modal position-absolute bottom-0 end-0"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+            <div class="product-card-body">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+              </div>
+            </div>
+            <button
+              class="product-bookmark position-absolute top-0 end-0 me-3 mt-1"
+            >
+              <i class="fa fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <!-- list 1  -->
+          <div
+            class="border-bottom position-relative d-flex align-items-stretch gap-3 border-light-subtle p-2"
+          >
+            <div
+              class="product-card-image shrink-0 position-relative bg-light-subtle"
+            >
+              <img
+                class="img-fluid"
+                src="./assets/img/product/overlay-product-01.webp"
+                alt="product "
+              />
+              <button
+                type="button"
+                class="view-size-modal position-absolute bottom-0 end-0"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+            <div class="product-card-body">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+              </div>
+            </div>
+            <button
+              class="product-bookmark position-absolute top-0 end-0 me-3 mt-1"
+            >
+              <i class="fa fa-regular fa-heart"></i>
+            </button>
+          </div>
+          <!-- list 1  -->
+          <div
+            class="border-bottom position-relative d-flex align-items-stretch gap-3 border-light-subtle p-2"
+          >
+            <div
+              class="product-card-image shrink-0 position-relative bg-light-subtle"
+            >
+              <img
+                class="img-fluid"
+                src="./assets/img/product/overlay-product-01.webp"
+                alt="product "
+              />
+              <button
+                type="button"
+                class="view-size-modal position-absolute bottom-0 end-0"
+              >
+                <i class="fa-solid fa-plus"></i>
+              </button>
+            </div>
+            <div class="product-card-body">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+              </div>
+            </div>
+            <button
+              class="product-bookmark position-absolute top-0 end-0 me-3 mt-1"
+            >
+              <i class="fa fa-regular fa-heart"></i>
+            </button>
+          </div>
+        </div>
       </div>
     </div>
 

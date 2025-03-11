@@ -3,7 +3,6 @@ console.log("Hello from slider.js");
 // header top slider on mobile view
 document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".slide-item");
-  console.log("slider : ", slides);
   let currentSlide = 0;
 
   if (slides.length > 0) {
@@ -459,7 +458,7 @@ const swiper9 = new Swiper(".productListingTypeThree", {
     },
     1280: {
       centeredSlides: false,
-      slidesPerView: 5,
+      slidesPerView: 4,
       spaceBetween: 30,
     },
   },
@@ -567,5 +566,26 @@ tabButtons.forEach((button) => {
 
     // Add active styles to the clicked button
     button.classList.add("font-bold", "text-black", "border-black");
+  });
+});
+
+// listing overlay show / hide in side product
+document.addEventListener("DOMContentLoaded", function () {
+  document.querySelectorAll(".product-with-overlay-listing").forEach((card) => {
+    // get trigger button
+    const trigger = card.querySelectorAll(".trigger-action");
+    const overlay = card.querySelector(".product-overlay-listing");
+    const closeBtn = overlay.querySelector(".overlay-close-btn");
+
+    // add event listener to trigger button
+    trigger.forEach((btn) => {
+      btn.addEventListener("click", (e) => {
+        overlay.classList.add("active");
+      });
+    });
+    // add event listener to close button
+    closeBtn.addEventListener("click", () => {
+      overlay.classList.remove("active");
+    });
   });
 });
