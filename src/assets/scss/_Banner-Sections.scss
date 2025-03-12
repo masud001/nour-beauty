@@ -3,19 +3,19 @@
 .header-banner {
   background-color: vars.$color-gray;
   @media (min-width: 320px) {
-    a {
+    a,button {
       font-size: vars.$font-xl !important;
     }
   }
   @media (min-width: 576px) {
   }
   @media (min-width: 992px) {
-    a {
+    a,button {
       font-size: vars.$font-sm !important;
     }
   }
   @media (min-width: 1200px) {
-    a {
+    a,button {
       font-size: vars.$font-xl !important;
     }
   }

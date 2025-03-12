@@ -1,0 +1,8 @@
+.dynamic-tab-content{
+    button{
+        @media (max-width: 768px) {
+            font-size: 12px !important;
+            padding: 6px 15px !important;
+        }
+    }
+}

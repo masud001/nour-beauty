@@ -236,7 +236,7 @@ const swiper3 = new Swiper(".tabContentSlider", {
   breakpoints: {
     320: {
       centeredSlides: false,
-      slidesPerView: 1,
+      slidesPerView: "auto",
       spaceBetween: 20,
     },
     400: {

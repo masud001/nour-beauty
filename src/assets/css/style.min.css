@@ -13366,17 +13366,17 @@ textarea.form-control-lg {
   background-color: #efefef;
 }
 @media (min-width: 320px) {
-  .header-banner a {
+  .header-banner a, .header-banner button {
     font-size: 1rem !important;
   }
 }
 @media (min-width: 992px) {
-  .header-banner a {
+  .header-banner a, .header-banner button {
     font-size: 12px !important;
   }
 }
 @media (min-width: 1200px) {
-  .header-banner a {
+  .header-banner a, .header-banner button {
     font-size: 1rem !important;
   }
 }
@@ -14047,6 +14047,19 @@ textarea.form-control-lg {
   .offcanvas-backdrop.fade.show {
     visibility: hidden !important;
     display: none !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .tabContentSlider .swiper-wrapper .swiper-slide {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .dynamic-tab-content button {
+    font-size: 12px !important;
+    padding: 6px 15px !important;
   }
 }
 
