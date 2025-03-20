@@ -12,6 +12,10 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    />
     <link rel="stylesheet" href="./assets/css/output.css" />
     <link rel="stylesheet" href="./assets/css/style.min.css" />
     <!-- swiper slider css -->
@@ -108,7 +112,7 @@
       class="header-container sticky top-0 z-30 bg-white py-3"
     >
       <div
-        class="container container-fluid d-flex align-items-center justify-content-between"
+        class="container-fluid d-flex align-items-center justify-content-between px-lg-5"
       >
         <!-- search container for mobile  -->
         <div class="col d-flex d-lg-none gap-3 align-items-center">
@@ -1285,7 +1289,6 @@
     <!-- mobile navigation -->
     <div
       class="offcanvas offcanvas-start mobile-navigation"
-      tabindex="-1"
       id="mobileNavigation"
       aria-labelledby="mobileNavigationLabel"
     >
@@ -1298,7 +1301,10 @@
           </div>
           <div class="d-flex align-items-center gap-4">
             <button
-              class="text-uppercase d-flex align-items-center gap-2 border-0 bg-transparent"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#selectRegionModal"
+              class="open-modal-btn text-uppercase d-flex align-items-center gap-2 border-0 bg-transparent"
             >
               <span class="">
                 <img
@@ -1460,7 +1466,7 @@
             class="swiper-slide bg-gray w-full flex flex-col md:flex-row items-center justify-center"
           >
             <div
-              class="flex-1 md:order-first w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
+              class="flex-1 order-1 order-md-0 w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
             >
               <div class="flex flex-col px-6 md:px-8 lg:px-16">
                 <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
@@ -1488,7 +1494,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex-1 w-100 h-100">
+            <div class="flex-1 order-0 order-md-1 w-100 h-100">
               <a href="" class="h-100 slider-image">
                 <figure class="w-fit relative h-100 mx-auto grid mb-0">
                   <picture class="w-100 h-100">
@@ -1542,7 +1548,7 @@
             class="swiper-slide bg-gray w-full flex flex-col md:flex-row items-center justify-center"
           >
             <div
-              class="flex-1 md:order-first w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
+              class="flex-1 order-1 order-md-0 w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
             >
               <div class="flex flex-col px-6 md:px-8 lg:px-16">
                 <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
@@ -1570,7 +1576,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex-1 w-100 h-100">
+            <div class="flex-1 order-0 order-md-1 w-100 h-100">
               <a href="" class="h-100 slider-image">
                 <figure class="w-fit relative h-100 mx-auto grid mb-0">
                   <picture class="w-100 h-100">
@@ -1624,7 +1630,7 @@
             class="swiper-slide bg-gray w-full flex flex-col md:flex-row items-center justify-center"
           >
             <div
-              class="flex-1 md:order-first w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
+              class="flex-1 order-1 order-md-0 w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
             >
               <div class="flex flex-col px-6 md:px-8 lg:px-16">
                 <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
@@ -1652,7 +1658,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex-1 w-100 h-100">
+            <div class="flex-1 order-0 order-md-1 w-100 h-100">
               <a href="" class="h-100 slider-image">
                 <figure class="w-fit relative h-100 mx-auto grid mb-0">
                   <picture class="w-100 h-100">
@@ -1705,7 +1711,7 @@
             class="swiper-slide bg-gray w-full flex flex-col md:flex-row items-center justify-center"
           >
             <div
-              class="flex-1 md:order-first w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
+              class="flex-1 order-1 order-md-0 w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
             >
               <div class="flex flex-col px-6 md:px-8 lg:px-16">
                 <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
@@ -1733,7 +1739,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex-1 w-100 h-100">
+            <div class="flex-1 order-0 order-md-1 w-100 h-100">
               <a href="" class="h-100 slider-image">
                 <figure class="w-fit relative h-100 mx-auto grid mb-0">
                   <picture class="w-100 h-100">
@@ -1786,7 +1792,7 @@
             class="swiper-slide bg-gray w-full flex flex-col md:flex-row items-center justify-center"
           >
             <div
-              class="flex-1 md:order-first w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
+              class="flex-1 order-1 order-md-0 w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
             >
               <div class="flex flex-col px-6 md:px-8 lg:px-16">
                 <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
@@ -1814,7 +1820,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex-1 w-100 h-100">
+            <div class="flex-1 order-0 order-md-1 w-100 h-100">
               <a href="" class="h-100 slider-image">
                 <figure class="w-fit relative h-100 mx-auto grid mb-0">
                   <picture class="w-100 h-100">
@@ -1867,7 +1873,7 @@
             class="swiper-slide bg-gray w-full flex flex-col md:flex-row items-center justify-center"
           >
             <div
-              class="flex-1 md:order-first w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
+              class="flex-1 order-1 order-md-0 w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
             >
               <div class="flex flex-col px-6 md:px-8 lg:px-16">
                 <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
@@ -1895,7 +1901,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex-1 w-100 h-100">
+            <div class="flex-1 order-0 order-md-1 w-100 h-100">
               <a href="" class="h-100 slider-image">
                 <figure class="w-fit relative h-100 mx-auto grid mb-0">
                   <picture class="w-100 h-100">
@@ -1948,7 +1954,7 @@
             class="swiper-slide bg-gray w-full flex flex-col md:flex-row items-center justify-center"
           >
             <div
-              class="flex-1 md:order-first w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
+              class="flex-1 order-1 order-md-0 w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
             >
               <div class="flex flex-col px-6 md:px-8 lg:px-16">
                 <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
@@ -1976,7 +1982,7 @@
                 </div>
               </div>
             </div>
-            <div class="flex-1 w-100 h-100">
+            <div class="flex-1 order-0 order-md-1 w-100 h-100">
               <a href="" class="h-100 slider-image">
                 <figure class="w-fit relative h-100 mx-auto grid mb-0">
                   <picture class="w-100 h-100">
@@ -2012,492 +2018,6 @@
                     />
                     <img
                       src="./assets/img/home-slider-image/slider-image-07.jpg"
-                      alt="MAISON MARGIELA BOTM WK3"
-                      loading="eager"
-                      width="1920"
-                      class="mx-auto my-auto h-100 max-w-full object-cover"
-                      decoding="auto"
-                      fetchpriority="high"
-                    />
-                  </picture>
-                </figure>
-              </a>
-            </div>
-          </div>
-          <!-- Slides 08 -->
-          <div
-            class="swiper-slide bg-gray w-full flex flex-col md:flex-row items-center justify-center"
-          >
-            <div
-              class="flex-1 md:order-first w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
-            >
-              <div class="flex flex-col px-6 md:px-8 lg:px-16">
-                <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
-                <h3
-                  class="text-2xl font-averta lg:text-4xl font-bold uppercase"
-                >
-                  Lorem, ipsum dolor.
-                </h3>
-                <p class="text-sm mt-4 font-averta">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Impedit, optio beatae. Nam ipsam laudantium tenetur.
-                </p>
-
-                <div class="flex flex-row gap-3 mt-4">
-                  <button
-                    class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
-                  >
-                    shop now
-                  </button>
-                  <button
-                    class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
-                  >
-                    discover
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="flex-1 w-100 h-100">
-              <a href="" class="h-100 slider-image">
-                <figure class="w-fit relative h-100 mx-auto grid mb-0">
-                  <picture class="w-100 h-100">
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-08.jpg
-                      "
-                      media="(max-width: 430px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-08.jpg
-                      "
-                      media="(max-width: 640px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-08.jpg
-                      "
-                      media="(max-width: 1024px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-08.jpg
-                      "
-                      media="(max-width: 1280px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-08.jpg
-                      "
-                      media="(max-width: 1366px)"
-                    />
-                    <img
-                      src="./assets/img/home-slider-image/slider-image-08.jpg"
-                      alt="MAISON MARGIELA BOTM WK3"
-                      loading="eager"
-                      width="1920"
-                      class="mx-auto my-auto h-100 max-w-full object-cover"
-                      decoding="auto"
-                      fetchpriority="high"
-                    />
-                  </picture>
-                </figure>
-              </a>
-            </div>
-          </div>
-          <!-- Slides 09 -->
-          <div
-            class="swiper-slide bg-gray w-full flex flex-col md:flex-row items-center justify-center"
-          >
-            <div
-              class="flex-1 md:order-first w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
-            >
-              <div class="flex flex-col px-6 md:px-8 lg:px-16">
-                <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
-                <h3
-                  class="text-2xl font-averta lg:text-4xl font-bold uppercase"
-                >
-                  Lorem, ipsum dolor.
-                </h3>
-                <p class="text-sm mt-4 font-averta">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Impedit, optio beatae. Nam ipsam laudantium tenetur.
-                </p>
-
-                <div class="flex flex-row gap-3 mt-4">
-                  <button
-                    class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
-                  >
-                    shop now
-                  </button>
-                  <button
-                    class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
-                  >
-                    discover
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="flex-1 w-100 h-100">
-              <a href="" class="h-100 slider-image">
-                <figure class="w-fit relative h-100 mx-auto grid mb-0">
-                  <picture class="w-100 h-100">
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-09.jpg
-                      "
-                      media="(max-width: 430px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-09.jpg
-                      "
-                      media="(max-width: 640px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-09.jpg
-                      "
-                      media="(max-width: 1024px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-09.jpg
-                      "
-                      media="(max-width: 1280px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-09.jpg
-                      "
-                      media="(max-width: 1366px)"
-                    />
-                    <img
-                      src="./assets/img/home-slider-image/slider-image-09.jpg"
-                      alt="MAISON MARGIELA BOTM WK3"
-                      loading="eager"
-                      width="1920"
-                      class="mx-auto my-auto h-100 max-w-full object-cover"
-                      decoding="auto"
-                      fetchpriority="high"
-                    />
-                  </picture>
-                </figure>
-              </a>
-            </div>
-          </div>
-          <!-- Slides 10 -->
-          <div
-            class="swiper-slide bg-gray w-full flex flex-col md:flex-row items-center justify-center"
-          >
-            <div
-              class="flex-1 md:order-first w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
-            >
-              <div class="flex flex-col px-6 md:px-8 lg:px-16">
-                <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
-                <h3
-                  class="text-2xl font-averta lg:text-4xl font-bold uppercase"
-                >
-                  Lorem, ipsum dolor.
-                </h3>
-                <p class="text-sm mt-4 font-averta">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Impedit, optio beatae. Nam ipsam laudantium tenetur.
-                </p>
-
-                <div class="flex flex-row gap-3 mt-4">
-                  <button
-                    class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
-                  >
-                    shop now
-                  </button>
-                  <button
-                    class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
-                  >
-                    discover
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="flex-1 w-100 h-100">
-              <a href="" class="h-100 slider-image">
-                <figure class="w-fit relative h-100 mx-auto grid mb-0">
-                  <picture class="w-100 h-100">
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-10.jpg
-                      "
-                      media="(max-width: 430px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-10.jpg
-                      "
-                      media="(max-width: 640px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-10.jpg
-                      "
-                      media="(max-width: 1024px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-10.jpg
-                      "
-                      media="(max-width: 1280px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-10.jpg
-                      "
-                      media="(max-width: 1366px)"
-                    />
-                    <img
-                      src="./assets/img/home-slider-image/slider-image-10.jpg"
-                      alt="MAISON MARGIELA BOTM WK3"
-                      loading="eager"
-                      width="1920"
-                      class="mx-auto my-auto h-100 max-w-full object-cover"
-                      decoding="auto"
-                      fetchpriority="high"
-                    />
-                  </picture>
-                </figure>
-              </a>
-            </div>
-          </div>
-          <!-- Slides 11 -->
-          <div
-            class="swiper-slide bg-gray w-full flex flex-col md:flex-row items-center justify-center"
-          >
-            <div
-              class="flex-1 md:order-first w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
-            >
-              <div class="flex flex-col px-6 md:px-8 lg:px-16">
-                <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
-                <h3
-                  class="text-2xl font-averta lg:text-4xl font-bold uppercase"
-                >
-                  Lorem, ipsum dolor.
-                </h3>
-                <p class="text-sm mt-4 font-averta">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Impedit, optio beatae. Nam ipsam laudantium tenetur.
-                </p>
-
-                <div class="flex flex-row gap-3 mt-4">
-                  <button
-                    class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
-                  >
-                    shop now
-                  </button>
-                  <button
-                    class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
-                  >
-                    discover
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="flex-1 w-100 h-100">
-              <a href="" class="h-100 slider-image">
-                <figure class="w-fit relative h-100 mx-auto grid mb-0">
-                  <picture class="w-100 h-100">
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-11.jpg
-                      "
-                      media="(max-width: 430px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-11.jpg
-                      "
-                      media="(max-width: 640px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-11.jpg
-                      "
-                      media="(max-width: 1024px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-11.jpg
-                      "
-                      media="(max-width: 1280px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-11.jpg
-                      "
-                      media="(max-width: 1366px)"
-                    />
-                    <img
-                      src="./assets/img/home-slider-image/slider-image-11.jpg"
-                      alt="MAISON MARGIELA BOTM WK3"
-                      loading="eager"
-                      width="1920"
-                      class="mx-auto my-auto h-100 max-w-full object-cover"
-                      decoding="auto"
-                      fetchpriority="high"
-                    />
-                  </picture>
-                </figure>
-              </a>
-            </div>
-          </div>
-          <!-- Slides 12 -->
-          <div
-            class="swiper-slide bg-gray w-full flex flex-col md:flex-row items-center justify-center"
-          >
-            <div
-              class="flex-1 md:order-first w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
-            >
-              <div class="flex flex-col px-6 md:px-8 lg:px-16">
-                <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
-                <h3
-                  class="text-2xl font-averta lg:text-4xl font-bold uppercase"
-                >
-                  Lorem, ipsum dolor.
-                </h3>
-                <p class="text-sm mt-4 font-averta">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Impedit, optio beatae. Nam ipsam laudantium tenetur.
-                </p>
-
-                <div class="flex flex-row gap-3 mt-4">
-                  <button
-                    class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
-                  >
-                    shop now
-                  </button>
-                  <button
-                    class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
-                  >
-                    discover
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="flex-1 w-100 h-100">
-              <a href="" class="h-100 slider-image">
-                <figure class="w-fit relative h-100 mx-auto grid mb-0">
-                  <picture class="w-100 h-100">
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-12.jpg
-                      "
-                      media="(max-width: 430px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-12.jpg
-                      "
-                      media="(max-width: 640px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-12.jpg
-                      "
-                      media="(max-width: 1024px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-12.jpg
-                      "
-                      media="(max-width: 1280px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-12.jpg
-                      "
-                      media="(max-width: 1366px)"
-                    />
-                    <img
-                      src="./assets/img/home-slider-image/slider-image-12.jpg"
-                      alt="MAISON MARGIELA BOTM WK3"
-                      loading="eager"
-                      width="1920"
-                      class="mx-auto my-auto h-100 max-w-full object-cover"
-                      decoding="auto"
-                      fetchpriority="high"
-                    />
-                  </picture>
-                </figure>
-              </a>
-            </div>
-          </div>
-          <!-- Slides 13 -->
-          <div
-            class="swiper-slide bg-gray w-full flex flex-col md:flex-row items-center justify-center"
-          >
-            <div
-              class="flex-1 md:order-first w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto"
-            >
-              <div class="flex flex-col px-6 md:px-8 lg:px-16">
-                <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
-                <h3
-                  class="text-2xl font-averta lg:text-4xl font-bold uppercase"
-                >
-                  Lorem, ipsum dolor.
-                </h3>
-                <p class="text-sm mt-4 font-averta">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Impedit, optio beatae. Nam ipsam laudantium tenetur.
-                </p>
-
-                <div class="flex flex-row gap-3 mt-4">
-                  <button
-                    class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
-                  >
-                    shop now
-                  </button>
-                  <button
-                    class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
-                  >
-                    discover
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="flex-1 w-100 h-100">
-              <a href="" class="h-100 slider-image">
-                <figure class="w-fit relative h-100 mx-auto grid mb-0">
-                  <picture class="w-100 h-100">
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-13.jpg
-                      "
-                      media="(max-width: 430px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-13.jpg
-                      "
-                      media="(max-width: 640px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-13.jpg
-                      "
-                      media="(max-width: 1024px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-13.jpg
-                      "
-                      media="(max-width: 1280px)"
-                    />
-                    <source
-                      srcset="
-                        ./assets/img/home-slider-image/slider-image-13.jpg
-                      "
-                      media="(max-width: 1366px)"
-                    />
-                    <img
-                      src="./assets/img/home-slider-image/slider-image-13.jpg"
                       alt="MAISON MARGIELA BOTM WK3"
                       loading="eager"
                       width="1920"
@@ -2662,7 +2182,8 @@
       </div>
     </div>
 
-    <div class="dynamic-banner mx-auto bg-gray">
+    <!--  promotion banner  -->
+    <div class="dynamic-banner mx-auto bg-gray my-4">
       <div class="container mx-auto px-4 lg:px-0">
         <div
           class="w-full flex flex-col lg:flex-row flex-wrap justify-between gap-6 items-center text-center py-8"
@@ -2686,6 +2207,41 @@
             >
               shop now
             </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- shop with us banner  -->
+    <div class="dynamic-banner mx-auto bg-gray border border-black">
+      <div class="container mx-auto px-4 lg:px-0">
+        <div
+          class="w-full flex flex-col lg:flex-row flex-wrap justify-between gap-6 items-center text-center py-8"
+        >
+          <div class="flex-1 shrink-0">
+            <h1 class="fs-1 font-bold font-averta fst-italic text-capitalize">
+              why shop
+            </h1>
+            <h1 class="fs-1 font-bold font-averta fst-italic text-capitalize">
+              with us ?
+            </h1>
+          </div>
+          <div class="flex-1 shrink-0">
+            <p class="text-sm text-balance font-averta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+              explicabo quos, corrupti facere vitae ea.
+            </p>
+          </div>
+          <div class="flex-1 shrink-0">
+            <p class="text-sm text-balance font-averta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+              explicabo quos, corrupti facere vitae ea.
+            </p>
+          </div>
+          <div class="flex-1 shrink-0">
+            <p class="text-sm text-balance font-averta">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum
+              explicabo quos, corrupti facere vitae ea.
+            </p>
           </div>
         </div>
       </div>
@@ -4470,7 +4026,7 @@
     <div class="nour-memo mx-auto py-8">
       <div class="container mx-auto px-4 lg:px-0">
         <div class="flex flex-row flex-wrap w-full lg:h-[450px]">
-          <div class="shrink-0 w-2/4 lg:w-1/4">
+          <div class="image-figure shrink-0 w-2/4 lg:w-1/4">
             <figure>
               <picture>
                 <source
@@ -4498,7 +4054,7 @@
               </picture>
             </figure>
           </div>
-          <div class="shrink-0 w-2/4 lg:w-1/4">
+          <div class="image-figure shrink-0 w-2/4 lg:w-1/4">
             <figure>
               <picture>
                 <source
@@ -4526,7 +4082,7 @@
               </picture>
             </figure>
           </div>
-          <div class="shrink-0 relative w-full lg:w-2/4">
+          <div class="image-figure shrink-0 relative w-full lg:w-2/4">
             <figure class="mb-0 h-[450px]">
               <picture>
                 <source
@@ -4554,7 +4110,7 @@
               </picture>
             </figure>
             <div
-              class="nour-memo-content p-8 absolute bottom-0 right-0 w-full h-[450px] xl:w-2/3 xl:h-2/3"
+              class="nour-memo-content p-8 absolute bottom-0 right-0 w-full xl:w-2/3 xl:h-2/3"
             >
               <div class="flex flex-col justify-between h-full">
                 <div class="flex flex-col gap-3">
@@ -4562,8 +4118,7 @@
                     href="/#"
                     class="text-3xl font-normal italic font-averta text-reset text-black"
                   >
-                    Instant Hair Transformation? Here’s Proof That Glossing Is
-                    The Answer
+                    Instant Hair Transformation? Here’s Proof
                   </a>
                   <p class="text-sm font-averta font-semibold">
                     December 27 | 5 minute read
@@ -4911,7 +4466,7 @@
       id="selectRegionModal"
       data-bs-backdrop="static"
       data-bs-keyboard="false"
-      tabindex="-1"
+      tabindex="0"
       aria-labelledby="selectRegionModalLabel"
       aria-hidden="true"
     >
@@ -4992,6 +4547,8 @@
       </div>
     </div>
 
+    <!-- custom modal for region modal for mobile  -->
+
     <!-- modal for discount code -->
     <div
       class="modal fade"
@@ -5046,5 +4603,41 @@
     <!-- custom js -->
     <script type="module" src="./assets/js/main.js"></script>
     <script type="module" src="./assets/js/slider.js"></script>
+    <script>
+      document.addEventListener("shown.bs.modal", function () {
+        document.body.style.overflow = "hidden";
+      });
+      document.addEventListener("hidden.bs.modal", function () {
+        document.body.style.overflow = "";
+      });
+
+      document
+        .getElementById("selectRegionModal")
+        .addEventListener("show.bs.modal", function () {
+          let offcanvas = bootstrap.Offcanvas.getInstance(
+            document.getElementById("mobileNavigation")
+          );
+          if (offcanvas) {
+            offcanvas.hide();
+          }
+        });
+
+      document
+        .getElementById("selectRegionModal")
+        .addEventListener("hidden.bs.modal", function () {
+          let backdrop = document.querySelector(".offcanvas-backdrop");
+          if (backdrop) {
+            backdrop.remove();
+            location.reload(true);
+          }
+          // Hide the Offcanvas forcefully to reset it
+          let offcanvasElement = document.getElementById("mobileNavigation");
+          let offcanvasInstance =
+            bootstrap.Offcanvas.getInstance(offcanvasElement);
+          if (offcanvasInstance) {
+            offcanvasInstance.hide(); // Ensures Offcanvas is reset properly
+          }
+        });
+    </script>
   </body>
 </html>

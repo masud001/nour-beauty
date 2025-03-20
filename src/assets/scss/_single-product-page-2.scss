@@ -13,11 +13,12 @@
   .swiperSlider {
     .swiper-slide {
       width: 80%;
+      height: 600px !important;
       img {
         display: block;
         width: 100%;
         height: 100%;
-        object-fit: cover;
+        object-fit: contain;
       }
     }
   }
