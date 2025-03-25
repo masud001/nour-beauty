@@ -14330,6 +14330,15 @@ textarea.form-control-lg {
   .single-page-blog-details p, .single-page-blog-details ul > li > a {
     font-size: 13px !important;
   }
+  .single-page-blog-details .writer-avater {
+    width: 75px;
+    height: 75px;
+  }
+  .single-page-blog-details .writer-avater img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
 }
 @media (min-width: 992px) and (max-width: 1199px) {
   .single-page-blog-details p, .single-page-blog-details ul > li > a {
