@@ -14326,6 +14326,16 @@ textarea.form-control-lg {
           flex-direction: column;
   gap: 10px;
 }
+@media (max-width: 768px) {
+  .single-page-blog-details p, .single-page-blog-details ul > li > a {
+    font-size: 13px !important;
+  }
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+  .single-page-blog-details p, .single-page-blog-details ul > li > a {
+    font-size: 16px !important;
+  }
+}
 
 *,
 ::before,

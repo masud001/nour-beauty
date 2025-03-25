@@ -41,6 +41,7 @@
         background-size: cover;
         background-repeat: no-repeat;
         height: 300px;
+        
         .blog-details{
             padding: 15px;
             width: 100%;
@@ -52,6 +53,7 @@
             flex-direction: column;
             p,h1{
                 color: #fff !important;
+
             }
         }
     }
@@ -65,5 +67,15 @@
         flex-direction: column;
         gap: 10px;
         
+    }
+    @media (max-width: 768px) {
+        p,ul>li>a{
+            font-size: 13px !important;
+        }
+    }
+    @media (min-width:992px) and (max-width:1199px){
+        p,ul>li>a{
+            font-size: 16px !important;
+        }
     }
 }
