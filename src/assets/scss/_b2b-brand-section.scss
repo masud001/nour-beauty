@@ -1,0 +1,231 @@
+.b2b-brand-section{
+    h2{
+        
+        font-size: 50px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.42;
+        letter-spacing: -1px;
+        text-align: center;
+        color: vars.$primary-color;
+        text-transform: uppercase;
+        span:first-child{
+            font-family: 'Averta Extrathin';
+            font-weight: 100 !important;
+            position: relative;
+            margin-top: -9px;
+            @media (max-width: 768px) {
+                margin-top: -4px;          
+            }
+        }
+        span:last-child{
+            font-family: "Averta";
+            font-weight: 600 !important;
+        }
+        @media (max-width: 768px) {
+            font-size: 20px;           
+        }
+    }
+    p{
+        font-size: 30px;
+        font-weight: 400;
+        font-family: 'Averta';
+        margin: 0;
+        text-align: center;
+        line-height: 52px;
+        letter-spacing: -0.6px;
+        @media (max-width: 768px) {
+            font-size: 15px;
+            line-height: 25px;           
+        }
+    }
+}
+
+.brand-slider-container{
+    .swiper {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 2rem !important;
+      }
+      .swiper-grid{
+        display: grid;
+
+      }
+      .swiper-grid-column{
+        grid-template-rows: auto auto;
+        grid-auto-flow: column; 
+      }
+      .swiper-wrapper{
+        display: flex;
+        max-height: 350px !important;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+    .swiper-slide{
+        text-align: center;
+        font-size: 18px;
+        height: calc((100% - 30px) / 2) !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+
+
+.why-nour-section{
+    h2{
+        
+        font-size: 50px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.42;
+        letter-spacing: -1px;
+        text-align: center;
+        color: vars.$primary-color;
+        text-transform: uppercase;
+        span:first-child{
+            font-family: 'Averta Extrathin';
+            font-weight: 100 !important;
+            position: relative;
+            margin-top: -9px;
+            @media (max-width: 768px) {
+                margin-top: -4px;          
+            }
+        }
+        span:last-child{
+            font-family: "Averta";
+            font-weight: 600 !important;
+        }
+        @media (max-width: 768px) {
+            font-size: 20px;           
+        }
+    }
+
+
+    ul.nav-tabs{
+        .nav-item{
+            &:hover{
+                background-color: transparent;
+                border-radius: 0px !important;
+            }
+        }
+    }
+    .nav-pills{
+        .nav-link{
+            &:hover{
+                border: 1px solid transparent !important;
+                color: vars.$color-red;
+            }
+            &.active{
+                background-color: vars.$color-red;
+                color: #fff !important;
+                border-radius: 0px !important;
+                box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                border: 1px solid vars.$color-red;
+            }
+        }
+    }
+
+    .tab-content{
+        .tab-pane{
+            p{
+                font-weight: normal;
+                font-family: "Averta";
+                font-size: 30px;
+                line-height: 52px;
+                letter-spacing: -0.6px;
+                @media (max-width: 768px) {
+                    font-size: 15px;
+                    line-height: 25px;           
+                }
+            }
+        }
+    }
+}
+.why-nour-slider{
+    .swiper{
+        padding-bottom: 2rem !important;
+    }
+    .swiper-thumbs{
+        .swiper-wrapper{
+            .swiper-slide{
+                &.swiper-slide-thumb-active{
+                    background-color: vars.$color-red;
+                    border-radius: 0px !important;
+                    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+                    border: 1px solid vars.$color-red;
+                    color: #fff !important;
+                    font-weight: 600 !important;
+                    font-family: "Averta";
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+}
+.why-nour-slider-content{
+    p{
+        font-size: 18px;
+        font-family: "Averta";
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: -0.6px;
+        margin: 0;
+    }
+}
+
+.get-in-touch{
+    h2{
+        
+        font-size: 50px;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.42;
+        letter-spacing: -1px;
+        text-align: center;
+        color: vars.$primary-color;
+        text-transform: uppercase;
+        span:first-child{
+            font-family: 'Averta Extrathin';
+            font-weight: 100 !important;
+            position: relative;
+            margin-top: -9px;
+            @media (max-width: 768px) {
+                margin-top: -4px;          
+            }
+        }
+        span:last-child{
+            font-family: "Averta";
+            font-weight: 600 !important;
+        }
+        @media (max-width: 768px) {
+            font-size: 20px;           
+        }
+    }
+
+    button{
+        font-size: 35px;
+        font-weight: 400;
+        font-family: 'Averta';
+        margin: 0;
+        text-align: center;
+        line-height: 52px;
+        letter-spacing: -0.6px;
+        color: vars.$primary-color;
+        transition: all 0.3s ease;
+        &:hover{
+            background-color: vars.$color-red;
+            color: #fff !important;
+            border-radius: 0px !important;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid vars.$color-red;
+        }
+        @media (max-width: 768px) {
+            font-size: 15px;
+            line-height: 25px;           
+        }
+    }
+}

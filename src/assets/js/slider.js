@@ -1,5 +1,3 @@
-console.log("Hello from slider.js");
-
 // header top slider on mobile view
 document.addEventListener("DOMContentLoaded", function () {
   const slides = document.querySelectorAll(".slide-item");
@@ -540,6 +538,40 @@ const swiper5 = new Swiper(".blogSlider", {
       centeredSlides: false,
       slidesPerView: 5,
       spaceBetween: 35,
+    },
+  },
+});
+
+var swiper13 = new Swiper(".brandSlider", {
+  slidesPerView: 4,
+  grid: {
+    rows: 2,
+  },
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 30,
     },
   },
 });
