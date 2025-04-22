@@ -229,3 +229,37 @@
         }
     }
 }
+
+.form-label-width{
+    @media (min-width: 768px) {
+        width: 25% !important;
+    }
+}
+
+.form-check-input:checked{
+    background-color: vars.$color-red !important;
+    border-color: vars.$color-red !important;
+    box-shadow: 0 0 0 0.2rem rgba(173, 31, 26, 0.25) !important;
+}
+
+.submit-button{
+    button{
+        font-size: 18px;
+        font-weight: 400;
+        font-family: 'Averta';
+        margin: 0;
+        text-align: center;
+        letter-spacing: -0.6px;
+        color: #fff !important;
+        background-color: vars.$color-red !important;
+        transition: all 0.3s ease;
+        border: 1px solid vars.$color-red !important;
+        &:hover{
+            background-color: transparent !important;
+            color: vars.$color-red !important;
+            border-radius: 0px !important;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border: 1px solid vars.$color-red !important;
+        }
+    }
+}
