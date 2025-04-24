@@ -14078,7 +14078,7 @@ textarea.form-control-lg {
 
 @media (max-width: 768px) {
   .dynamic-tab-content button {
-    font-size: 25px !important;
+    font-size: 18px !important;
     padding: 6px 15px !important;
   }
 }
@@ -14482,8 +14482,8 @@ textarea.form-control-lg {
 .why-nour-section .tab-content .tab-pane p {
   font-weight: normal;
   font-family: "Averta";
-  font-size: 30px;
-  line-height: 52px;
+  font-size: 25px;
+  line-height: 45px;
   letter-spacing: -0.6px;
 }
 @media (max-width: 768px) {
@@ -14495,6 +14495,12 @@ textarea.form-control-lg {
 
 .why-nour-slider .swiper {
   padding-bottom: 2rem !important;
+}
+@media (max-width: 768px) {
+  .why-nour-slider .swiper-thumbs .swiper-wrapper .swiper-slide {
+    font-size: 14px !important;
+    line-height: 25px;
+  }
 }
 .why-nour-slider .swiper-thumbs .swiper-wrapper .swiper-slide.swiper-slide-thumb-active {
   background-color: #ad1f1a;

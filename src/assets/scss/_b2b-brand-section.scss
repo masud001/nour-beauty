@@ -134,8 +134,8 @@
             p{
                 font-weight: normal;
                 font-family: "Averta";
-                font-size: 30px;
-                line-height: 52px;
+                font-size: 25px;
+                line-height: 45px;
                 letter-spacing: -0.6px;
                 @media (max-width: 768px) {
                     font-size: 15px;
@@ -152,6 +152,10 @@
     .swiper-thumbs{
         .swiper-wrapper{
             .swiper-slide{
+                @media (max-width: 768px) {
+                    font-size: 14px !important;
+                    line-height: 25px;
+                }
                 &.swiper-slide-thumb-active{
                     background-color: vars.$color-red;
                     border-radius: 0px !important;
