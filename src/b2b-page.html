@@ -25,6 +25,36 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <style>
+      .brand-slider-container .swiper {
+        width: 100%;
+        height: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 2rem !important;
+      }
+      .brand-slider-container .swiper-grid {
+        display: grid;
+      }
+      .brand-slider-container .swiper-grid-column {
+        grid-template-rows: auto auto;
+        grid-auto-flow: column;
+      }
+      .brand-slider-container .swiper-wrapper {
+        display: flex;
+        max-height: 350px !important;
+        flex-wrap: wrap;
+        flex-direction: column;
+      }
+      .brand-slider-container .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        height: calc((100% - 30px) / 2) !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
   </head>
   <body>
     <!-- header top banner  -->
@@ -3802,7 +3832,51 @@
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- swiper slider js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      let resizeTimeout;
+      window.addEventListener("resize", function () {
+        // Clear the timeout if it exists
+        clearTimeout(resizeTimeout);
 
+        // Set a new timeout to reload the page after resizing stops
+        resizeTimeout = setTimeout(function () {
+          location.reload();
+        }, 300); // Adjust the delay (300ms) as needed
+      });
+      var swiper13 = new Swiper(".brandSlider", {
+        slidesPerView: 4,
+        grid: {
+          rows: 2,
+        },
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        breakpoints: {
+          320: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          480: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 3,
+            spaceBetween: 20,
+          },
+          1024: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+        },
+      });
+    </script>
     <script>
       var swiper = new Swiper(".whyNourThumbsSlider", {
         loop: true,
