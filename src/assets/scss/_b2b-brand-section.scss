@@ -134,6 +134,7 @@
 
     .tab-content{
         .tab-pane{
+            
             p{
                 font-weight: normal;
                 font-family: "Averta";
@@ -146,6 +147,17 @@
                 }
             }
         }
+    }
+}
+.tab-pane-image{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+    @media (max-width: 768px) {
+        width: 90px !important;
+        height: auto !important;
     }
 }
 .why-nour-slider{

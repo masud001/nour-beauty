@@ -14079,7 +14079,7 @@ textarea.form-control-lg {
 @media (max-width: 768px) {
   .dynamic-tab-content button {
     font-size: 18px !important;
-    padding: 6px 15px !important;
+    padding: 15px 15px !important;
   }
 }
 
@@ -14495,6 +14495,20 @@ textarea.form-control-lg {
   .why-nour-section .tab-content .tab-pane p {
     font-size: 15px;
     line-height: 25px;
+  }
+}
+
+.tab-pane-image {
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+@media (max-width: 768px) {
+  .tab-pane-image {
+    width: 90px !important;
+    height: auto !important;
   }
 }
 
