@@ -14432,6 +14432,11 @@ textarea.form-control-lg {
       -ms-flex-align: center;
           align-items: center;
 }
+@media (max-width: 767px) {
+  .brand-slider-container .swiper-slide {
+    height: calc((100% - 80px) / 2) !important;
+  }
+}
 
 .why-nour-section h2, .why-nour-section .h2 {
   font-size: 50px;
