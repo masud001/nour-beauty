@@ -14079,7 +14079,7 @@ textarea.form-control-lg {
 @media (max-width: 768px) {
   .dynamic-tab-content button {
     font-size: 18px !important;
-    padding: 15px 15px !important;
+    padding: 6px 15px !important;
   }
 }
 
@@ -14432,11 +14432,6 @@ textarea.form-control-lg {
       -ms-flex-align: center;
           align-items: center;
 }
-@media (max-width: 767px) {
-  .brand-slider-container .swiper-slide {
-    height: calc((100% - 80px) / 2) !important;
-  }
-}
 
 .why-nour-section h2, .why-nour-section .h2 {
   font-size: 50px;
@@ -14495,20 +14490,6 @@ textarea.form-control-lg {
   .why-nour-section .tab-content .tab-pane p {
     font-size: 15px;
     line-height: 25px;
-  }
-}
-
-.tab-pane-image {
-  width: 100%;
-  height: auto;
-  max-width: 100%;
-  margin: 0 auto;
-  display: block;
-}
-@media (max-width: 768px) {
-  .tab-pane-image {
-    width: 90px !important;
-    height: auto !important;
   }
 }
 
@@ -14675,6 +14656,136 @@ textarea.form-control-lg {
   .section-thumb {
     height: 300px;
   }
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+body.dark-mode .mobile-navigation {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+body.dark-mode .mobile-navigation a {
+  color: #ffffff !important;
+}
+body.dark-mode .mobile-navigation .slide-window {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+body.dark-mode .header-search input {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+  border: 1px solid rgb(107, 114, 128) !important;
+}
+body.dark-mode .header-search input::-webkit-input-placeholder {
+  color: #ffffff !important;
+}
+body.dark-mode .header-search input::-moz-placeholder {
+  color: #ffffff !important;
+}
+body.dark-mode .header-search input:-ms-input-placeholder {
+  color: #ffffff !important;
+}
+body.dark-mode .header-search input::-ms-input-placeholder {
+  color: #ffffff !important;
+}
+body.dark-mode .header-search input::placeholder {
+  color: #ffffff !important;
+}
+body.dark-mode .header-banner {
+  background-color: #121212 !important;
+}
+body.dark-mode .header-container {
+  background-color: #121212 !important;
+}
+body.dark-mode .header-container .header-nav ul li a {
+  color: #ffffff !important;
+  background-color: #121212 !important;
+}
+body.dark-mode .header-container .mega-navigation {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+body.dark-mode .home-slider .swiper-slide {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+body.dark-mode .swiper-pagination-bullet {
+  background-color: #ffffff !important;
+}
+body.dark-mode .dynamic-banner {
+  background-color: rgba(43, 41, 41, 0.4588235294) !important;
+  color: #ffffff !important;
+}
+body.dark-mode .dynamic-banner a {
+  color: #ffffff !important;
+  background-color: #121212 !important;
+}
+body.dark-mode .newProductSlider {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+body.dark-mode .newProductSlider h3, body.dark-mode .newProductSlider .h3 {
+  color: #ffffff !important;
+}
+body.dark-mode .newProductSlider p {
+  color: #ffffff !important;
+}
+body.dark-mode .blogSlider a {
+  color: #ffffff !important;
+}
+body.dark-mode .dynamic-tab-content button {
+  color: #ffffff !important;
+}
+body.dark-mode .product-filter-section {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+body.dark-mode .product-card-body .product-title {
+  color: #ffffff !important;
+}
+body.dark-mode .product-overlay-listing {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+body.dark-mode .product-card-image .product-bookmark {
+  color: #ffffff !important;
+}
+body.dark-mode .product-card-body .price {
+  color: #ffffff !important;
+}
+body.dark-mode .product-card-body .review span {
+  color: #ffffff !important;
+}
+body.dark-mode .pagination-number p {
+  color: #ffffff !important;
+}
+body.dark-mode .pagination-nav .page-item.active ::after {
+  background-color: #ffffff !important;
+}
+body.dark-mode .product-card-image .best-product-tag {
+  background-color: #ffffff !important;
+  color: #121212 !important;
+}
+
+body.dark-mode a {
+  color: #ffffff;
+}
+
+body.dark-mode .btn {
+  background-color: #333333;
+  color: #ffffff;
+}
+
+body .header-container {
+  background-color: #ffffff !important;
+}
+body .product-filter-section {
+  background-color: #ffffff !important;
+}
+body .product-overlay-listing {
+  background-color: #ffffff !important;
 }
 
 *,

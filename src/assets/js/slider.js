@@ -587,3 +587,32 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 });
+
+// dark mode light mode toggle script
+document.addEventListener("DOMContentLoaded", () => {
+  const themeToggleBtn = document.getElementById("theme-toggle-btn");
+  const body = document.body;
+
+  // Load saved theme from localStorage
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "dark") {
+    body.classList.add("dark-mode");
+    themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>'; // Light mode icon
+  } else {
+    themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i>'; // Dark mode icon
+  }
+
+  // Toggle theme on button click
+  themeToggleBtn.addEventListener("click", () => {
+    body.classList.toggle("dark-mode");
+    const isDarkMode = body.classList.contains("dark-mode");
+
+    // Update button icon
+    themeToggleBtn.innerHTML = isDarkMode
+      ? '<i class="fa-regular fa-sun"></i>' // Light mode icon
+      : '<i class="fa-solid fa-moon"></i>'; // Dark mode icon
+
+    // Save preference to localStorage
+    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
+  });
+});
