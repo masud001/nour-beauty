@@ -14799,7 +14799,7 @@ body.dark-mode .accordion-button.shadow-none.collapsed {
   background-color: #121212 !important;
   color: #ffffff !important;
 }
-body.dark-mode h2, body.dark-mode .h2, body.dark-mode h6, body.dark-mode .h6, body.dark-mode h3, body.dark-mode .h3, body.dark-mode h4, body.dark-mode .h4, body.dark-mode p {
+body.dark-mode h1, body.dark-mode .h1, body.dark-mode h2, body.dark-mode .h2, body.dark-mode h6, body.dark-mode .h6, body.dark-mode h3, body.dark-mode .h3, body.dark-mode h4, body.dark-mode .h4, body.dark-mode p {
   color: #ffffff !important;
 }
 body.dark-mode .product-card {
@@ -14864,6 +14864,22 @@ body.dark-mode input::-ms-input-placeholder {
   color: #ffffff !important;
 }
 body.dark-mode input::placeholder {
+  color: #ffffff !important;
+}
+body.dark-mode .home-slider {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+body.dark-mode .swiper-slide button {
+  background-color: #000 !important;
+  color: #ffffff !important;
+}
+body.dark-mode .blog-navigation {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+body.dark-mode .product-listing-section {
+  background-color: #121212 !important;
   color: #ffffff !important;
 }
 

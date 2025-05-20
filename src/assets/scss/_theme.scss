@@ -145,7 +145,7 @@ body.dark-mode {
         color: vars.$dark-primary-color !important;
     }
 
-    h2,h6,h3,h4,p{
+    h1,h2,h6,h3,h4,p{
         color: vars.$dark-primary-color !important;
     }
     .product-card{
@@ -204,6 +204,29 @@ body.dark-mode {
         &::placeholder{
             color: vars.$dark-primary-color !important;
         }
+    }
+
+    // b2b page 
+    .home-slider{
+        background-color: vars.$dark-background !important;
+        color : vars.$dark-primary-color !important;
+    }
+    .swiper-slide button{
+        background-color: #000 !important;
+        color: vars.$dark-primary-color !important;
+    }
+
+    // blog page 
+    .blog-navigation{
+        background-color: vars.$dark-background !important;
+        color: vars.$dark-primary-color !important;
+    }
+
+
+    // single brand page 
+    .product-listing-section{
+        background-color: vars.$dark-background !important;
+        color: vars.$dark-primary-color !important;
     }
 
 
