@@ -14818,13 +14818,30 @@ body.dark-mode .progress-bars-area i, body.dark-mode span {
 body.dark-mode .text-success {
   color: #198754 !important;
 }
+body.dark-mode .modal-content {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+body.dark-mode ul.dropdown-menu {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+body.dark-mode ul.dropdown-menu li:hover {
+  background-color: #121212 !important;
+}
+body.dark-mode ul.dropdown-menu li:hover a {
+  color: #ffffff !important;
+}
+body.dark-mode ul.dropdown-menu li a {
+  color: #ffffff !important;
+}
 
 body.dark-mode a {
   color: #ffffff;
 }
 
 body.dark-mode .btn {
-  background-color: #333333;
+  background-color: #121212 !important;
   color: #ffffff;
 }
 

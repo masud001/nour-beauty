@@ -164,6 +164,27 @@ body.dark-mode {
     .text-success{
         color: #198754 !important;
     }
+    .modal-content{
+        background-color: vars.$dark-background !important;
+        color: vars.$dark-primary-color !important;
+    }
+
+    ul.dropdown-menu{
+        background-color: vars.$dark-background !important;
+        color: vars.$dark-primary-color !important;
+        li:hover{
+            background-color: vars.$dark-background !important;
+            a{
+                color: vars.$dark-primary-color !important;
+
+            }
+        }
+        li{
+            a{
+                color: vars.$dark-primary-color !important;
+            }
+        }
+    }
 
 
   }
@@ -173,7 +194,7 @@ body.dark-mode {
   }
   
   body.dark-mode .btn {
-    background-color: #333333;
+    background-color: vars.$dark-background !important;
     color: vars.$dark-primary-color;
   }
 
