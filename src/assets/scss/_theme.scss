@@ -34,6 +34,27 @@ body.dark-mode {
         background-color: vars.$dark-background !important;
         color: vars.$dark-primary-color !important;
     }
+    .customar-account {
+        ul.dropdown-menu {
+          width: 320px;
+            background-color: vars.$dark-background !important;
+          li {
+            &:first-child,
+            &:nth-child(2) {
+              padding: 8px 15px;
+              background-color: vars.$dark-background !important;
+            }
+  
+            button {
+              &:hover {
+                opacity: 0.8;
+                text-decoration: underline;
+                outline: 1px solid black;
+              }
+            }
+          }
+        }
+      }
     .home-slider .swiper-slide{
         background-color: vars.$dark-background !important;
         color: vars.$dark-primary-color !important;
@@ -101,6 +122,47 @@ body.dark-mode {
     .product-card-image .best-product-tag{
         background-color: vars.$dark-primary-color !important;
         color: vars.$dark-background !important;
+    }
+
+
+    // single product page 
+    select{
+        background-color: vars.$dark-background !important;
+        color: vars.$dark-primary-color !important;
+    }
+    .breadcrumb-item.active{
+        color: vars.$dark-primary-color !important;
+    }
+    .accordion-item{
+        background-color: vars.$dark-background !important;
+        color: vars.$dark-primary-color !important;
+    }
+    .accordion-button.shadow-none{
+        color: vars.$dark-primary-color !important;
+    }
+    .accordion-button.shadow-none.collapsed{
+        background-color: vars.$dark-background !important;
+        color: vars.$dark-primary-color !important;
+    }
+
+    h2,h6,h3,h4,p{
+        color: vars.$dark-primary-color !important;
+    }
+    .product-card{
+        background-color: vars.$dark-background !important;
+        color: vars.$dark-primary-color !important;
+    }
+    .product-plus-icon{
+        color: vars.$dark-background !important;
+    }
+    .review-star span i,a{
+        color: vars.$dark-primary-color !important;
+    }
+    .progress-bars-area i,span{
+        color: vars.$dark-primary-color !important;
+    }
+    .text-success{
+        color: #198754 !important;
     }
 
 

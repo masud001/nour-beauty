@@ -14707,6 +14707,19 @@ body.dark-mode .header-container .mega-navigation {
   background-color: #121212 !important;
   color: #ffffff !important;
 }
+body.dark-mode .customar-account ul.dropdown-menu {
+  width: 320px;
+  background-color: #121212 !important;
+}
+body.dark-mode .customar-account ul.dropdown-menu li:first-child, body.dark-mode .customar-account ul.dropdown-menu li:nth-child(2) {
+  padding: 8px 15px;
+  background-color: #121212 !important;
+}
+body.dark-mode .customar-account ul.dropdown-menu li button:hover {
+  opacity: 0.8;
+  text-decoration: underline;
+  outline: 1px solid black;
+}
 body.dark-mode .home-slider .swiper-slide {
   background-color: #121212 !important;
   color: #ffffff !important;
@@ -14767,6 +14780,43 @@ body.dark-mode .pagination-nav .page-item.active ::after {
 body.dark-mode .product-card-image .best-product-tag {
   background-color: #ffffff !important;
   color: #121212 !important;
+}
+body.dark-mode select {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+body.dark-mode .breadcrumb-item.active {
+  color: #ffffff !important;
+}
+body.dark-mode .accordion-item {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+body.dark-mode .accordion-button.shadow-none {
+  color: #ffffff !important;
+}
+body.dark-mode .accordion-button.shadow-none.collapsed {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+body.dark-mode h2, body.dark-mode .h2, body.dark-mode h6, body.dark-mode .h6, body.dark-mode h3, body.dark-mode .h3, body.dark-mode h4, body.dark-mode .h4, body.dark-mode p {
+  color: #ffffff !important;
+}
+body.dark-mode .product-card {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+body.dark-mode .product-plus-icon {
+  color: #121212 !important;
+}
+body.dark-mode .review-star span i, body.dark-mode a {
+  color: #ffffff !important;
+}
+body.dark-mode .progress-bars-area i, body.dark-mode span {
+  color: #ffffff !important;
+}
+body.dark-mode .text-success {
+  color: #198754 !important;
 }
 
 body.dark-mode a {

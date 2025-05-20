@@ -592,14 +592,20 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", () => {
   const themeToggleBtn = document.getElementById("theme-toggle-btn");
   const body = document.body;
+  const logo = document.getElementById("brand-logo");
+  // Define logo paths
+  const darkModeLogo = "./assets/img/logo/nour-light-logo.png";
+  const lightModeLogo = "./assets/img/logo/nour-dark-logo.png";
 
   // Load saved theme from localStorage
   const savedTheme = localStorage.getItem("theme");
   if (savedTheme === "dark") {
     body.classList.add("dark-mode");
-    themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>'; // Light mode icon
+    themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
+    logo.src = darkModeLogo;
   } else {
-    themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i>'; // Dark mode icon
+    themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
+    logo.src = lightModeLogo;
   }
 
   // Toggle theme on button click
@@ -609,9 +615,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // Update button icon
     themeToggleBtn.innerHTML = isDarkMode
-      ? '<i class="fa-regular fa-sun"></i>' // Light mode icon
-      : '<i class="fa-solid fa-moon"></i>'; // Dark mode icon
+      ? '<i class="fa-regular fa-sun"></i>'
+      : '<i class="fa-solid fa-moon"></i>';
 
+    logo.src = isDarkMode ? darkModeLogo : lightModeLogo;
     // Save preference to localStorage
     localStorage.setItem("theme", isDarkMode ? "dark" : "light");
   });
