@@ -14835,6 +14835,37 @@ body.dark-mode ul.dropdown-menu li:hover a {
 body.dark-mode ul.dropdown-menu li a {
   color: #ffffff !important;
 }
+body.dark-mode .title {
+  color: #ffffff !important;
+}
+body.dark-mode input + div {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+body.dark-mode select + div {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+}
+body.dark-mode input {
+  background-color: #121212 !important;
+  color: #ffffff !important;
+  border: 1px solid rgb(107, 114, 128) !important;
+}
+body.dark-mode input::-webkit-input-placeholder {
+  color: #ffffff !important;
+}
+body.dark-mode input::-moz-placeholder {
+  color: #ffffff !important;
+}
+body.dark-mode input:-ms-input-placeholder {
+  color: #ffffff !important;
+}
+body.dark-mode input::-ms-input-placeholder {
+  color: #ffffff !important;
+}
+body.dark-mode input::placeholder {
+  color: #ffffff !important;
+}
 
 body.dark-mode a {
   color: #ffffff;

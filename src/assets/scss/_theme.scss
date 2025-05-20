@@ -186,6 +186,26 @@ body.dark-mode {
         }
     }
 
+    .title{
+        color: vars.$dark-primary-color !important;
+    }
+    input + div{
+        background-color: vars.$dark-background !important;
+        color: vars.$dark-primary-color !important;
+    }
+    select + div{
+        background-color: vars.$dark-background !important;
+        color: vars.$dark-primary-color !important;
+    }
+    input{
+        background-color: vars.$dark-background !important;
+        color: vars.$dark-primary-color !important;
+        border: 1px solid rgb(107 114 128) !important;
+        &::placeholder{
+            color: vars.$dark-primary-color !important;
+        }
+    }
+
 
   }
   
