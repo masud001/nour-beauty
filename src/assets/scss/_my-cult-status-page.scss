@@ -1,0 +1,33 @@
+/* My Cult Status Page Styles */
+
+/* Inherits layout from _wishlist-page.scss */
+
+/* Custom Utilities */
+@media (min-width: 768px) {
+    .border-end-md {
+        border-right: 1px solid #dee2e6 !important;
+    }
+}
+
+/* Progress Bar Customization */
+.progress {
+    overflow: visible;
+    /* To show labels if needed, though they are outside */
+}
+
+/* Dark Mode Overrides */
+body.dark-mode {
+    .border-end-md {
+        border-right-color: #333 !important;
+    }
+
+
+    /* Ensure links stand out in dark mode */
+    a.text-dark {
+        color: vars.$dark-primary-color !important;
+    }
+
+    .fa-trophy {
+        color: vars.$dark-primary-color;
+    }
+}

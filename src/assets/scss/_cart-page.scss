@@ -1,0 +1,146 @@
+@use "./variable" as vars;
+
+/* Populated Cart Page Styles */
+.active-cart-section {
+    font-family: 'Inter', sans-serif; // Assuming Inter or system sans
+
+    h1 {
+        font-weight: 600;
+        letter-spacing: -0.5px;
+    }
+
+    .alert-info {
+        background-color: #e3effd;
+        color: #333;
+        font-size: 0.9rem;
+    }
+
+    .cart-item {
+        .cart-item-image img {
+            object-fit: contain;
+        }
+
+        .cart-item-details {
+            h5 {
+                font-size: 1rem;
+                font-weight: 500;
+                color: #000;
+            }
+
+            .text-muted {
+                color: #666 !important;
+            }
+
+            .price {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .status-points {
+        color: #333;
+    }
+
+    .discount-code {
+        label {
+            letter-spacing: 0.5px;
+        }
+
+        .form-control:focus {
+            box-shadow: none;
+            border-color: #000;
+        }
+
+        .btn-outline-secondary {
+            border-color: #ccc;
+
+            &:hover {
+                background-color: #f8f9fa;
+                color: #333;
+            }
+        }
+    }
+
+    .cart-summary {
+        button.btn-dark {
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+
+            &:hover {
+                background-color: #333;
+            }
+        }
+    }
+}
+
+// Dark Mode
+body.dark-mode {
+    .active-cart-section {
+        background-color: vars.$dark-background;
+        color: vars.$dark-primary-color;
+
+        h1,
+        .status-points {
+            color: vars.$dark-primary-color !important;
+        }
+
+        .alert-info {
+            background-color: #1e3a5f !important;
+            /* Darker blue */
+            color: vars.$dark-primary-color !important;
+        }
+
+        .cart-item {
+            border-bottom-color: rgba(255, 255, 255, 0.1) !important;
+
+            h5 {
+                color: vars.$dark-primary-color !important;
+            }
+
+            .text-muted {
+                color: #aaa !important;
+            }
+
+            .price {
+                color: vars.$dark-primary-color !important;
+            }
+        }
+
+        .discount-code {
+            .form-control {
+                background-color: vars.$dark-background;
+                color: vars.$dark-primary-color;
+                border-color: #555;
+
+                &::placeholder {
+                    color: #888;
+                }
+            }
+
+            .btn-outline-secondary {
+                color: vars.$dark-primary-color;
+                border-color: #555;
+
+                &:hover {
+                    background-color: #333;
+                }
+            }
+        }
+
+        .cart-summary {
+            background-color: vars.$dark-background !important;
+            /* If sidebar needs to be distinct, maybe lighten it slightly, 
+               but typically in dark mode it matches bg */
+            color: vars.$dark-primary-color !important;
+
+            button.btn-dark {
+                background-color: vars.$dark-primary-color !important;
+                color: vars.$dark-background !important;
+
+                &:hover {
+                    opacity: 0.9;
+                }
+            }
+        }
+    }
+}

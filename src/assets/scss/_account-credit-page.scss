@@ -1,0 +1,25 @@
+/* Account Credit Page Styles */
+
+/* Inherits most layout styles from _wishlist-page.scss (sidebar, header) */
+
+/* Specifics for Credit Cards */
+.account-page-wrapper {
+    .bg-white.border {
+        border-color: #e5e5e5 !important;
+    }
+}
+
+/* Dark Mode Overrides */
+body.dark-mode {
+    .account-page-wrapper {
+        .bg-white {
+            background-color: vars.$dark-background !important;
+            border-color: #333 !important;
+            color: vars.$dark-primary-color !important;
+        }
+
+        .border-top {
+            border-color: #333 !important;
+        }
+    }
+}

@@ -1,0 +1,177 @@
+@use "./variable" as vars;
+
+/* Cart Page Styles */
+
+/* --- Empty Cart Section --- */
+.empty-cart-section {
+    min-height: 50vh;
+    /* Adjust height as needed */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        letter-spacing: -0.5px;
+    }
+
+    .btn {
+        letter-spacing: 2px;
+        /* Tracking wider */
+        font-size: 0.8rem !important;
+        background-color: #000;
+        border: 1px solid #000;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background-color: transparent;
+            color: #000;
+        }
+    }
+}
+
+// Dark Mode for Empty Cart
+body.dark-mode {
+    .empty-cart-section {
+        background-color: vars.$dark-background !important;
+
+        h1,
+        p {
+            color: vars.$dark-primary-color !important;
+        }
+
+        .btn {
+            background-color: vars.$dark-background !important;
+            color: vars.$dark-primary-color !important;
+            border-color: vars.$dark-primary-color !important;
+
+            &:hover {
+                background-color: vars.$dark-primary-color !important;
+                color: vars.$dark-background !important;
+            }
+        }
+    }
+}
+
+/* --- Site Footer --- */
+.site-footer {
+    font-family: 'Inter', sans-serif; // Or inherit from body, assuming Inter/Roboto is used
+    font-size: 0.9rem;
+
+    a {
+        transition: color 0.2s ease;
+
+        &:hover {
+            color: #ccc !important;
+            text-decoration: underline !important;
+        }
+    }
+
+    .footer-top {
+        .form-control {
+            border-radius: 0;
+            border: 1px solid #fff;
+            background: transparent;
+            color: #fff;
+
+            &::placeholder {
+                color: #ccc;
+            }
+        }
+
+        .btn {
+            border-radius: 0;
+        }
+
+        .social-icons {
+            a {
+                color: #fff;
+
+                &:hover {
+                    color: #ccc;
+                }
+            }
+        }
+    }
+
+    /* Accordion Styling (Mobile) */
+    .footer-accordion {
+        .footer-accordion-item {
+            border: none;
+            background: transparent;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .footer-accordion-header {
+            margin: 0;
+        }
+
+        .footer-accordion-button {
+            background: transparent;
+            color: #fff;
+            box-shadow: none;
+            padding: 1.25rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            border: none;
+
+            &:after {
+                content: '\f107';
+                /* FontAwesome angle-down */
+                font-family: "Font Awesome 6 Free";
+                font-weight: 900;
+                background-image: none;
+                transform: rotate(0deg);
+                transition: transform 0.3s ease;
+                margin-left: auto;
+            }
+
+            &.collapsed:after {
+                transform: rotate(-90deg);
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        .footer-accordion-body {
+            padding-bottom: 1.5rem;
+            text-align: left;
+        }
+    }
+
+    /* Desktop Styles */
+    @media (min-width: 992px) {
+        .footer-accordion-button {
+            pointer-events: none;
+            /* Disable click on desktop headers */
+            cursor: default;
+            padding: 0 0 1.5rem 0;
+            /* Adjust spacing */
+
+            &:after {
+                display: none;
+                /* Hide chevron on desktop */
+            }
+        }
+
+        .footer-accordion-collapse {
+            display: block !important;
+            /* Force show content */
+            height: auto !important;
+            visibility: visible !important;
+        }
+
+        .footer-accordion-item {
+            border-bottom: none !important;
+        }
+    }
+
+    .footer-desktop-view {
+        .footer-logo {
+            max-width: 160px;
+        }
+    }
+}

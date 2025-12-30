@@ -11,6 +11,7 @@
 
 // all component scss file import
 @import "./Header-container";
+@import "./footer";
 @import "./Breadcrumb-Section";
 @import "./product-filter-section";
 @import "./product-listing";
@@ -24,12 +25,27 @@
 @import "./blog-page";
 @import "./b2b-brand-section";
 @import "./theme";
+
+// pages product page
+// pages product page
+@import "./empty-cart-page";
+@import "./cart-page";
+@import "./shop-by-category";
+@import "./login-page";
+@import "./signup-page";
+@import "./wishlist-page";
+@import "./account-credit-page";
+@import "./my-cult-status-page";
+@import "./my-profile-page";
+
+
 *,
 ::before,
 ::after {
   box-sizing: border-box;
   margin: 0;
 }
+
 body {
   font-family: "Averta", sans-serif;
   font-size: 100%;

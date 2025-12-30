@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wishlist | Nour Beauty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link rel="stylesheet" href="./assets/scss/style.scss" />
+</head>
+
+<body>
+
+    <!-- Header (Specific to Account Pages) -->
+    <header class="account-header border-bottom">
+        <!-- Top Bar -->
+        <div class="top-bar border-bottom py-2 d-none d-md-block">
+            <div class="container-fluid px-4 px-lg-5 d-flex justify-content-between align-items-center">
+                <a href="index.html" class="text-decoration-none text-dark d-flex align-items-center"
+                    style="font-size: 0.85rem;">
+                    <i class="fa-solid fa-chevron-left me-2" style="font-size: 0.7rem;"></i> Return to store
+                </a>
+                <a href="#" class="text-decoration-none text-dark d-flex align-items-center text-uppercase"
+                    style="font-size: 0.85rem;">
+                    <i class="fa-solid fa-arrow-right-from-bracket me-2"></i> Log out
+                </a>
+            </div>
+        </div>
+        <!-- Main Header -->
+        <div class="main-header py-3">
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="row align-items-center">
+                    <!-- Mobile Menu Button -->
+                    <div class="col-4 d-md-none">
+                        <button class="btn border-0 p-0" id="mobileMenuBtn">
+                            <i class="fa-solid fa-bars fs-4"></i>
+                        </button>
+                    </div>
+                    <!-- Logo -->
+                    <div class="col-4 col-md-6 text-center text-md-start">
+                        <img id="brand-logo" width="120" src="./assets/img/logo/nour-dark-logo.png" alt="Nour Beauty"
+                            class="d-inline-block">
+                    </div>
+                    <!-- Basket -->
+                    <div class="col-4 col-md-6 text-end">
+                        <a href="cart-page.html"
+                            class="text-reset text-decoration-none d-flex align-items-center justify-content-end fw-bold">
+                            <i class="fa-solid fa-bag-shopping fs-5 me-2"></i>
+                            <span class="d-none d-md-inline text-uppercase" style="font-size: 0.9rem;">Basket</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="account-page-wrapper bg-light min-vh-100 pb-5">
+        <div class="container-fluid px-4 py-4 px-md-4 px-lg-5 pt-0 pt-md-4">
+            <div class="row g-0 g-md-4 py-4">
+
+                <!-- Desktop Sidebar Navigation -->
+                <aside class="col-md-3 d-none d-md-block">
+                    <div class="sidebar-nav bg-white p-3 border-0">
+                        <!-- Account Home -->
+                        <div class="nav-section mb-4">
+                            <h6 class="text-uppercase fw-bold mb-3 px-2" style="font-size: 0.8rem;">
+                                <a href="account-home-page.html" class="text-decoration-none text-dark">Account Home</a>
+                            </h6>
+                        </div>
+
+                        <!-- My Account -->
+                        <div class="nav-section mb-4">
+                            <h6 class="text-uppercase fw-bold mb-2 px-2" style="font-size: 0.8rem;">My Account</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="my-orders-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-cube me-2 text-muted" style="width: 20px;"></i> My
+                                        Orders</a></li>
+                                <li><a href="wishlist-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-heart me-2 text-muted" style="width: 20px;"></i>
+                                        Wishlist</a></li>
+                                <li><a href="account-credit-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark d-flex justify-content-between align-items-center"><span
+                                            class="d-flex align-items-center"><i
+                                                class="fa-solid fa-wallet me-2 text-muted" style="width: 20px;"></i>
+                                            Account Credit</span> <span class="fw-bold">0.00€</span></a></li>
+                                <li><a href="my-cult-status-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-crown me-2 text-muted" style="width: 20px;"></i> My Cult
+                                        Status</a></li>
+                                <li><a href="#"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark active fw-bold bg-light"><i
+                                            class="fa-regular fa-user me-2" style="width: 20px;"></i> My
+                                        Profile</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-user-group me-2 text-muted" style="width: 20px;"></i> My
+                                        Referrals</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Account Settings -->
+                        <div class="nav-section mb-4">
+                            <h6 class="text-uppercase fw-bold mb-2 px-2" style="font-size: 0.8rem;">Account Settings
+                            </h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="account-details-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-address-card me-2 text-muted" style="width: 20px;"></i>
+                                        Account Details</a></li>
+                                <li><a href="payment-cards-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-credit-card me-2 text-muted" style="width: 20px;"></i>
+                                        Payment Cards</a></li>
+                                <li><a href="address-book-page.html" class="d-block py-2 px-2 text-decoration-none text-dark"><i class="fa-solid fa-address-book me-2 text-muted" style="width: 20px;"></i>
+                                        Address Book</a></li>
+                                <li><a href="contact-preferences-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-sliders me-2 text-muted" style="width: 20px;"></i>
+                                        Contact Preferences</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Customer Service -->
+                        <div class="nav-section mb-4">
+                            <h6 class="text-uppercase fw-bold mb-2 px-2" style="font-size: 0.8rem;">Customer Service
+                            </h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-life-ring me-2 text-muted" style="width: 20px;"></i>
+                                        Help Centre</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-message me-2 text-muted" style="width: 20px;"></i>
+                                        Messages</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-brands fa-facebook me-2 text-muted" style="width: 20px;"></i>
+                                        Facebook</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-brands fa-twitter me-2 text-muted" style="width: 20px;"></i>
+                                        Twitter</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-brands fa-instagram me-2 text-muted" style="width: 20px;"></i>
+                                        Instagram</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-brands fa-tiktok me-2 text-muted" style="width: 20px;"></i>
+                                        TikTok</a></li>
+                            </ul>
+
+                        </div>
+
+                        <!-- Log out -->
+                        <div class="nav-section">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-arrow-right-from-bracket me-2 text-muted"
+                                            style="width: 20px;"></i> Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Main Content Area -->
+                <div class="col-12 col-md-9">
+                    <div class="h-100 ps-md-4">
+                        <!-- Header -->
+                        <!-- Header -->
+                        <div class="mb-5">
+                            <h2 class="h4 mb-0 fw-normal">Tell us about you</h2>
+                        </div>
+
+                        <!-- Intro / Start Card -->
+                        <div id="profile-intro" class="bg-white border p-5 text-center">
+                            <div class="py-4 px-md-5 mx-auto" style="max-width: 700px;">
+                                <p class="mb-5 mx-auto" style="font-size: 0.95rem; line-height: 1.6; max-width: 550px;">
+                                    Don't forget to let us know your birthday so we can send you a treat for your
+                                    special month! Want to receive curated beauty recommendations? Answer four quick
+                                    questions and we'll make sure they're tailored just for you.</p>
+
+                                <div class="mb-4">
+                                    <button id="start-questionnaire-btn"
+                                        class="btn btn-black text-uppercase px-5 py-3 rounded-0"
+                                        style="letter-spacing: 1px;">Get Started</button>
+                                </div>
+
+                                <a href="index.html" class="text-secondary text-decoration-underline small fw-bold">Skip
+                                    this, I'll come back later</a>
+                            </div>
+                        </div>
+
+                        <!-- Questionnaire Container (Hidden by default) -->
+                        <div id="question-container" class="bg-white border p-5 d-none">
+                            <h4 id="current-step-display" class="small text-muted mb-4">Question 1 of 16</h4>
+
+                            <!-- Step 1: Date of Birth -->
+                            <div class="question-step" id="step-1">
+                                <h5 class="fw-bold mb-3" style="font-size: 1rem;">What is your date of birth? (so we can
+                                    send you something special) <span
+                                        class="text-muted fst-italic float-end fw-normal small">(required)</span></h5>
+
+                                <div class="mb-5">
+                                    <input type="text" class="form-control rounded-0 p-3" placeholder="dd/mm/yyyy">
+                                </div>
+
+                                <div class="text-end">
+                                    <button class="btn btn-black text-uppercase px-4 py-2 rounded-0 btn-next"
+                                        style="letter-spacing: 1px;">Next</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 2: Categories -->
+                            <div class="question-step d-none" id="step-2">
+                                <h5 class="fw-bold mb-3" style="font-size: 1rem;">What are your categories of
+                                    interest?<br><span class="fw-normal text-muted">(select as many as needed)</span>
+                                    <span class="text-muted fst-italic float-end fw-normal small">(required)</span>
+                                </h5>
+
+                                <div class="mb-5 px-2">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="cat-fragrance">
+                                        <label class="form-check-label" for="cat-fragrance">Fragrance</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="cat-hair">
+                                        <label class="form-check-label" for="cat-hair">Hair Care</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="cat-makeup">
+                                        <label class="form-check-label" for="cat-makeup">Make Up</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="cat-new">
+                                        <label class="form-check-label" for="cat-new">New Arrivals</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="cat-skin">
+                                        <label class="form-check-label" for="cat-skin">Skin Care</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="cat-wellbeing">
+                                        <label class="form-check-label" for="cat-wellbeing">Wellbeing</label>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-light border text-uppercase px-4 py-2 rounded-0 btn-back"
+                                        style="letter-spacing: 1px;">Back</button>
+                                    <button class="btn btn-black text-uppercase px-4 py-2 rounded-0 btn-next"
+                                        style="letter-spacing: 1px;">Next</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 3: Brands -->
+                            <div class="question-step d-none" id="step-3">
+                                <h5 class="fw-bold mb-3" style="font-size: 1rem;">What are your favourite brands to shop
+                                    with us? <span
+                                        class="text-muted fst-italic float-end fw-normal small">(required)</span></h5>
+
+                                <div class="mb-5">
+                                    <input type="text" class="form-control rounded-0 p-3">
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-light border text-uppercase px-4 py-2 rounded-0 btn-back"
+                                        style="letter-spacing: 1px;">Back</button>
+                                    <button class="btn btn-black text-uppercase px-4 py-2 rounded-0 btn-next"
+                                        style="letter-spacing: 1px;">Next</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 4-16: Placeholders -->
+
+                            <!-- Step 4 -->
+                            <div class="question-step d-none" id="step-4">
+                                <h5 class="fw-bold mb-3" style="font-size: 1rem;">Why do you shop with Cult Beauty?
+                                    <span class="text-muted fst-italic float-end fw-normal small">(required)</span>
+                                </h5>
+
+                                <div class="mb-5 px-2">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q4-brands">
+                                        <label class="form-check-label" for="q4-brands">We stock your favourite
+                                            brands</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q4-cater">
+                                        <label class="form-check-label" for="q4-cater">We cater for you skin / hair /
+                                            body type</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q4-trends">
+                                        <label class="form-check-label" for="q4-trends">We surface the latest
+                                            trends</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q4-community">
+                                        <label class="form-check-label" for="q4-community">We make you feel like part of
+                                            a community</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q4-authority">
+                                        <label class="form-check-label" for="q4-authority">We have authority in
+                                            beauty</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q4-destination">
+                                        <label class="form-check-label" for="q4-destination">We are your favourite
+                                            destination to shop beauty online</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q4-causes">
+                                        <label class="form-check-label" for="q4-causes">We support causes you care about
+                                            - such as body image and hormonal health</label>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-light border text-uppercase px-4 py-2 rounded-0 btn-back"
+                                        style="letter-spacing: 1px;">Back</button>
+                                    <button class="btn btn-black text-uppercase px-4 py-2 rounded-0 btn-next"
+                                        style="letter-spacing: 1px;">Next</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 5 -->
+                            <div class="question-step d-none" id="step-5">
+                                <h5 class="fw-bold mb-3" style="font-size: 1rem;">What is your skin type? <span
+                                        class="text-muted fst-italic float-end fw-normal small">(required)</span></h5>
+
+                                <div class="mb-5 px-2">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q5-balanced">
+                                        <label class="form-check-label" for="q5-balanced">Balanced</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q5-dry">
+                                        <label class="form-check-label" for="q5-dry">Dry</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q5-combination">
+                                        <label class="form-check-label" for="q5-combination">Combination</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q5-oily">
+                                        <label class="form-check-label" for="q5-oily">Oily</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q5-sensitive">
+                                        <label class="form-check-label" for="q5-sensitive">Sensitive</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q5-other">
+                                        <label class="form-check-label" for="q5-other">Other</label>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-light border text-uppercase px-4 py-2 rounded-0 btn-back"
+                                        style="letter-spacing: 1px;">Back</button>
+                                    <button class="btn btn-black text-uppercase px-4 py-2 rounded-0 btn-next"
+                                        style="letter-spacing: 1px;">Next</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 6 -->
+                            <div class="question-step d-none" id="step-6">
+                                <h5 class="fw-bold mb-3" style="font-size: 1rem;">What is your main skin priority? <span
+                                        class="text-muted fst-italic float-end fw-normal small">(required)</span></h5>
+
+                                <div class="mb-5 px-2">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q6-blemishes">
+                                        <label class="form-check-label" for="q6-blemishes">Blemishes and texture</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q6-pigmentation">
+                                        <label class="form-check-label" for="q6-pigmentation">Pigmentation and
+                                            scarring</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q6-fine-lines">
+                                        <label class="form-check-label" for="q6-fine-lines">Fine lines and
+                                            wrinkles</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q6-redness">
+                                        <label class="form-check-label" for="q6-redness">Redness</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q6-dark-circles">
+                                        <label class="form-check-label" for="q6-dark-circles">Dark circles and
+                                            puffiness</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q6-pores">
+                                        <label class="form-check-label" for="q6-pores">Visible pores</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q6-dullness">
+                                        <label class="form-check-label" for="q6-dullness">Dullness</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q6-dehydration">
+                                        <label class="form-check-label" for="q6-dehydration">Dehydration</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q6-other">
+                                        <label class="form-check-label" for="q6-other">Other</label>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-light border text-uppercase px-4 py-2 rounded-0 btn-back"
+                                        style="letter-spacing: 1px;">Back</button>
+                                    <button class="btn btn-black text-uppercase px-4 py-2 rounded-0 btn-next"
+                                        style="letter-spacing: 1px;">Next</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 7 -->
+                            <div class="question-step d-none" id="step-7">
+                                <h5 class="fw-bold mb-3" style="font-size: 1rem;">What is your skin tone? <span
+                                        class="text-muted fst-italic float-end fw-normal small">(required)</span></h5>
+
+                                <div class="mb-5 px-2">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q7-fair">
+                                        <label class="form-check-label" for="q7-fair">Fair</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q7-light">
+                                        <label class="form-check-label" for="q7-light">Light</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q7-medium">
+                                        <label class="form-check-label" for="q7-medium">Medium</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q7-tan-olive">
+                                        <label class="form-check-label" for="q7-tan-olive">Tan / olive</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q7-tan-deep">
+                                        <label class="form-check-label" for="q7-tan-deep">Tan / deep</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q7-deep">
+                                        <label class="form-check-label" for="q7-deep">Deep</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q7-deep-dark">
+                                        <label class="form-check-label" for="q7-deep-dark">Deep dark</label>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-light border text-uppercase px-4 py-2 rounded-0 btn-back"
+                                        style="letter-spacing: 1px;">Back</button>
+                                    <button class="btn btn-black text-uppercase px-4 py-2 rounded-0 btn-next"
+                                        style="letter-spacing: 1px;">Next</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 8 -->
+                            <div class="question-step d-none" id="step-8">
+                                <h5 class="fw-bold mb-3" style="font-size: 1rem;">What is your hair type? <span
+                                        class="text-muted fst-italic float-end fw-normal small">(required)</span></h5>
+
+                                <div class="mb-5 px-2">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q8-1">
+                                        <label class="form-check-label" for="q8-1">1a, 1b, 1c - straight</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q8-2">
+                                        <label class="form-check-label" for="q8-2">2a, 2b, 2c - wavy</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q8-3">
+                                        <label class="form-check-label" for="q8-3">3a, 3b, 3c - curly</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q8-4">
+                                        <label class="form-check-label" for="q8-4">4a, 4b, 4c - coily / textured</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q8-wig">
+                                        <label class="form-check-label" for="q8-wig">Wear a wig</label>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-light border text-uppercase px-4 py-2 rounded-0 btn-back"
+                                        style="letter-spacing: 1px;">Back</button>
+                                    <button class="btn btn-black text-uppercase px-4 py-2 rounded-0 btn-next"
+                                        style="letter-spacing: 1px;">Next</button>
+                                </div>
+                            </div>
+                            <!-- Step 9 -->
+                            <div class="question-step d-none" id="step-9">
+                                <h5 class="fw-bold mb-3" style="font-size: 1rem;">What is your main hair priority? <span
+                                        class="text-muted fst-italic float-end fw-normal small">(required)</span></h5>
+
+                                <div class="mb-5 px-2">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q9-oiliness">
+                                        <label class="form-check-label" for="q9-oiliness">Oiliness</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q9-volume">
+                                        <label class="form-check-label" for="q9-volume">Volume</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q9-thinning">
+                                        <label class="form-check-label" for="q9-thinning">Thinning and hair loss or hair
+                                            growth</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q9-scalp">
+                                        <label class="form-check-label" for="q9-scalp">Scalp care</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q9-dandruff">
+                                        <label class="form-check-label" for="q9-dandruff">Dandruff</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q9-breakage">
+                                        <label class="form-check-label" for="q9-breakage">Breakage, flyaways and
+                                            split-ends</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q9-colour">
+                                        <label class="form-check-label" for="q9-colour">Colour preservation</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q9-damage">
+                                        <label class="form-check-label" for="q9-damage">Damage and dryness</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q9-other">
+                                        <label class="form-check-label" for="q9-other">Other</label>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-light border text-uppercase px-4 py-2 rounded-0 btn-back"
+                                        style="letter-spacing: 1px;">Back</button>
+                                    <button class="btn btn-black text-uppercase px-4 py-2 rounded-0 btn-next"
+                                        style="letter-spacing: 1px;">Next</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 10 -->
+                            <div class="question-step d-none" id="step-10">
+                                <h5 class="fw-bold mb-3" style="font-size: 1rem;">What kind of scent do you like? <span
+                                        class="text-muted fst-italic float-end fw-normal small">(required)</span></h5>
+
+                                <div class="mb-5 px-2">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q10-citrus">
+                                        <label class="form-check-label" for="q10-citrus">Citrus</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q10-feminine">
+                                        <label class="form-check-label" for="q10-feminine">Feminine</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q10-floral">
+                                        <label class="form-check-label" for="q10-floral">Floral</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q10-fresh">
+                                        <label class="form-check-label" for="q10-fresh">Fresh / green</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q10-incense">
+                                        <label class="form-check-label" for="q10-incense">Incense / spicy</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q10-masculine">
+                                        <label class="form-check-label" for="q10-masculine">Masculine</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q10-vanilla">
+                                        <label class="form-check-label" for="q10-vanilla">Vanilla</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q10-woody">
+                                        <label class="form-check-label" for="q10-woody">Woody / musk</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q10-other">
+                                        <label class="form-check-label" for="q10-other">Other</label>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-light border text-uppercase px-4 py-2 rounded-0 btn-back"
+                                        style="letter-spacing: 1px;">Back</button>
+                                    <button class="btn btn-black text-uppercase px-4 py-2 rounded-0 btn-next"
+                                        style="letter-spacing: 1px;">Next</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 11 -->
+                            <div class="question-step d-none" id="step-11">
+                                <h5 class="fw-bold mb-3" style="font-size: 1rem;">How do you usually shop your
+                                    fragrance? <span
+                                        class="text-muted fst-italic float-end fw-normal small">(required)</span></h5>
+
+                                <div class="mb-5 px-2">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q11-rebuy">
+                                        <label class="form-check-label" for="q11-rebuy">Rebuy your signature
+                                            scent</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q11-discovery">
+                                        <label class="form-check-label" for="q11-discovery">Try a discovery set</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q11-plunge">
+                                        <label class="form-check-label" for="q11-plunge">Take the plunge on a new
+                                            scent</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q11-stick">
+                                        <label class="form-check-label" for="q11-stick">Stick to a body spray</label>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-light border text-uppercase px-4 py-2 rounded-0 btn-back"
+                                        style="letter-spacing: 1px;">Back</button>
+                                    <button class="btn btn-black text-uppercase px-4 py-2 rounded-0 btn-next"
+                                        style="letter-spacing: 1px;">Next</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 12 -->
+                            <div class="question-step d-none" id="step-12">
+                                <h5 class="fw-bold mb-3" style="font-size: 1rem;">Which make up products can't you live
+                                    without? <span
+                                        class="text-muted fst-italic float-end fw-normal small">(required)</span></h5>
+
+                                <div class="mb-5 px-2">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q12-mascara">
+                                        <label class="form-check-label" for="q12-mascara">Mascara</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q12-concealer">
+                                        <label class="form-check-label" for="q12-concealer">Concealer</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q12-brows">
+                                        <label class="form-check-label" for="q12-brows">Brows</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q12-foundation">
+                                        <label class="form-check-label" for="q12-foundation">Foundation</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q12-bronzer">
+                                        <label class="form-check-label" for="q12-bronzer">Bronzer</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q12-blush">
+                                        <label class="form-check-label" for="q12-blush">Blush</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q12-lipliner">
+                                        <label class="form-check-label" for="q12-lipliner">Lip liner / lipstick</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q12-lipgloss">
+                                        <label class="form-check-label" for="q12-lipgloss">Lip gloss / lip balm</label>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-light border text-uppercase px-4 py-2 rounded-0 btn-back"
+                                        style="letter-spacing: 1px;">Back</button>
+                                    <button class="btn btn-black text-uppercase px-4 py-2 rounded-0 btn-next"
+                                        style="letter-spacing: 1px;">Next</button>
+                                </div>
+                            </div>
+                            <!-- Step 13 -->
+                            <div class="question-step d-none" id="step-13">
+                                <h5 class="fw-bold mb-3" style="font-size: 1rem;">What is your favourite type of content
+                                    to see from us? <span
+                                        class="text-muted fst-italic float-end fw-normal small">(required)</span></h5>
+
+                                <div class="mb-5 px-2">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q13-offers">
+                                        <label class="form-check-label" for="q13-offers">Offers and promotions</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q13-launches">
+                                        <label class="form-check-label" for="q13-launches">The latest beauty
+                                            launches</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q13-trends">
+                                        <label class="form-check-label" for="q13-trends">Upcoming trends</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q13-loyalty">
+                                        <label class="form-check-label" for="q13-loyalty">Loyalty perks</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q13-editorial">
+                                        <label class="form-check-label" for="q13-editorial">Editorial features</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q13-educational">
+                                        <label class="form-check-label" for="q13-educational">Educational and
+                                            informational</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-0" type="checkbox" id="q13-wellbeing">
+                                        <label class="form-check-label" for="q13-wellbeing">Wellbeing - such as hormonal
+                                            health</label>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-light border text-uppercase px-4 py-2 rounded-0 btn-back"
+                                        style="letter-spacing: 1px;">Back</button>
+                                    <button class="btn btn-black text-uppercase px-4 py-2 rounded-0 btn-next"
+                                        style="letter-spacing: 1px;">Next</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 14 -->
+                            <div class="question-step d-none" id="step-14">
+                                <h5 class="fw-bold mb-3" style="font-size: 1rem;">What brands do you wish we stocked?
+                                    <span class="text-muted fst-italic float-end fw-normal small">(required)</span>
+                                </h5>
+
+                                <div class="mb-5">
+                                    <input type="text" class="form-control rounded-0 p-3" id="q14-brands">
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-light border text-uppercase px-4 py-2 rounded-0 btn-back"
+                                        style="letter-spacing: 1px;">Back</button>
+                                    <button class="btn btn-black text-uppercase px-4 py-2 rounded-0 btn-next"
+                                        style="letter-spacing: 1px;">Next</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 15 -->
+                            <div class="question-step d-none" id="step-15">
+                                <h5 class="fw-bold mb-3" style="font-size: 1rem;">Who was the last beauty retailer you
+                                    shopped with? <span
+                                        class="text-muted fst-italic float-end fw-normal small">(required)</span></h5>
+
+                                <div class="mb-5 px-2">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-circle" type="radio" name="q15-retailer"
+                                            id="q15-cult">
+                                        <label class="form-check-label" for="q15-cult">Cult Beauty</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-circle" type="radio" name="q15-retailer"
+                                            id="q15-spacenk">
+                                        <label class="form-check-label" for="q15-spacenk">SpaceNK</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-circle" type="radio" name="q15-retailer"
+                                            id="q15-sephora">
+                                        <label class="form-check-label" for="q15-sephora">Sephora</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-circle" type="radio" name="q15-retailer"
+                                            id="q15-liberty">
+                                        <label class="form-check-label" for="q15-liberty">Liberty</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-circle" type="radio" name="q15-retailer"
+                                            id="q15-selfridges">
+                                        <label class="form-check-label" for="q15-selfridges">Selfridges</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-circle" type="radio" name="q15-retailer"
+                                            id="q15-boots">
+                                        <label class="form-check-label" for="q15-boots">Boots</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-circle" type="radio" name="q15-retailer"
+                                            id="q15-lookfantastic">
+                                        <label class="form-check-label" for="q15-lookfantastic">LOOKFANTASTIC</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-circle" type="radio" name="q15-retailer"
+                                            id="q15-beautybay">
+                                        <label class="form-check-label" for="q15-beautybay">Beauty Bay</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-circle" type="radio" name="q15-retailer"
+                                            id="q15-asos">
+                                        <label class="form-check-label" for="q15-asos">ASOS</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-circle" type="radio" name="q15-retailer"
+                                            id="q15-superdrug">
+                                        <label class="form-check-label" for="q15-superdrug">Superdrug</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-circle" type="radio" name="q15-retailer"
+                                            id="q15-other">
+                                        <label class="form-check-label" for="q15-other">Other</label>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-light border text-uppercase px-4 py-2 rounded-0 btn-back"
+                                        style="letter-spacing: 1px;">Back</button>
+                                    <button class="btn btn-black text-uppercase px-4 py-2 rounded-0 btn-next"
+                                        style="letter-spacing: 1px;">Next</button>
+                                </div>
+                            </div>
+
+                            <!-- Step 16 -->
+                            <div class="question-step d-none" id="step-16">
+                                <h5 class="fw-bold mb-3" style="font-size: 1rem;">Was your last beauty purchase made
+                                    online or in store? <span
+                                        class="text-muted fst-italic float-end fw-normal small">(required)</span></h5>
+
+                                <div class="mb-5 px-2">
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-circle" type="radio" name="q16-channel"
+                                            id="q16-online">
+                                        <label class="form-check-label" for="q16-online">Online</label>
+                                    </div>
+                                    <div class="form-check mb-2">
+                                        <input class="form-check-input rounded-circle" type="radio" name="q16-channel"
+                                            id="q16-instore">
+                                        <label class="form-check-label" for="q16-instore">In store</label>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-light border text-uppercase px-4 py-2 rounded-0 btn-back"
+                                        style="letter-spacing: 1px;">Back</button>
+                                    <button class="btn btn-black text-uppercase px-4 py-2 rounded-0 btn-next"
+                                        style="letter-spacing: 1px;">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Completion Message -->
+                        <div id="completion-message" class="bg-white border p-5 text-center d-none"
+                            style="min-height: 400px; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                            <div class="py-4 px-md-5 mx-auto" style="max-width: 700px;">
+                                <h2 class="h4 mb-3 fw-normal">Tell us about you</h2>
+                                <p class="mb-5 mx-auto" style="font-size: 0.95rem; line-height: 1.6;">Thanks for filling
+                                    out your responses!</p>
+
+                                <div class="d-flex justify-content-center gap-3">
+                                    <a href="my-profile-page.html"
+                                        class="btn btn-light border text-uppercase px-4 py-3 rounded-0"
+                                        style="letter-spacing: 1px;">Back to profiles</a>
+                                    <a href="index.html" class="btn btn-black text-uppercase px-4 py-3 rounded-0"
+                                        style="letter-spacing: 1px;">CONTINUE SHOPPING</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4 border-top">
+        <p class="mb-0 text-muted" style="font-size: 0.8rem;">&copy; 2024 The Hut.com Ltd t/a CultBeauty.com</p>
+    </footer>
+
+    <!-- Mobile Navigation Overlay -->
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay d-md-none position-fixed top-0 start-0 w-100 h-100 bg-white"
+        style="z-index: 1050; transform: translateX(-100%); transition: transform 0.3s ease-in-out;">
+        <!-- Mobile Menu Header -->
+        <div class="p-3 border-bottom d-flex align-items-center justify-content-between">
+            <button class="btn border-0 p-0" id="mobileMenuCloseBtn">
+                <i class="fa-solid fa-xmark fs-4"></i>
+            </button>
+            <img width="100" src="./assets/img/logo/nour-dark-logo.png" alt="Nour Beauty">
+            <a href="cart-page.html" class="text-reset"><i class="fa-solid fa-bag-shopping fs-5"></i></a>
+        </div>
+
+        <!-- Mobile User Info -->
+        <div class="bg-light p-3 border-bottom">
+            <h5 class="mb-1 fw-bold">MD Masudur Rahman</h5>
+            <p class="mb-0 text-muted small">Credit: 0.00€</p>
+        </div>
+
+        <!-- Mobile Menu Links (Scrollable) -->
+        <div class="mobile-menu-content overflow-auto" style="height: calc(100% - 135px);">
+            <!-- Account Home -->
+            <div class="p-3 border-bottom">
+                <h6 class="fw-bold mb-0"><a href="account-home-page.html" class="text-decoration-none text-dark">Account
+                        Home</a></h6>
+            </div>
+
+            <!-- My Account -->
+            <div class="py-2 border-bottom">
+                <h6 class="px-3 fw-bold text-uppercase text-muted small mb-2 mt-2">My Account</h6>
+                <a href="my-orders-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">My Orders</a>
+                <a href="wishlist-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Wishlist</a>
+                <a href="account-credit-page.html"
+                    class="d-block px-3 py-2 text-decoration-none text-dark d-flex justify-content-between">Account
+                    Credit <span>0.00€</span></a>
+                <a href="my-cult-status-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">My Cult
+                    Status</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark fw-bold">My Profile</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">My Referrals</a>
+            </div>
+
+            <!-- Account Settings -->
+            <div class="py-2 border-bottom">
+                <h6 class="px-3 fw-bold text-uppercase text-muted small mb-2 mt-2">Account Settings</h6>
+                <a href="account-details-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Account
+                    Details</a>
+                <a href="payment-cards-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Payment
+                    Cards</a>
+                <a href="address-book-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Address Book</a>
+                <a href="contact-preferences-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Contact Preferences</a>
+            </div>
+
+            <!-- Customer Service -->
+            <div class="py-2 border-bottom">
+                <h6 class="px-3 fw-bold text-uppercase text-muted small mb-2 mt-2">Customer Service</h6>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Help Centre</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Messages</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Facebook</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Twitter</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Instagram</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">TikTok</a>
+            </div>
+
+            <div class="p-3 border-bottom">
+                <a href="#" class="d-flex align-items-center text-decoration-none text-dark fw-bold">
+                    <i class="fa-solid fa-arrow-right-from-bracket me-2"></i> Log out
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/wishlist.js"></script>
+    <script src="./assets/js/my-profile.js"></script>
+</body>
+
+</html>

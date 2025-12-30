@@ -1,1785 +1,1674 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>all brand page</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
-    />
-    <link rel="stylesheet" href="./assets/fonts/averta/fonts.css" />
-    <link rel="stylesheet" href="./assets/css/output.css" />
-    <link rel="stylesheet" href="./assets/css/style.min.css" />
-    <!-- swiper slider css -->
 
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-  </head>
-  <body>
-    <!-- header top banner  -->
-    <div class="header-banner">
-      <div
-        class="container-fluid d-flex justify-content-center align-items-center gap-sm-3 gap-lg-4 p-2 p-lg-3"
-      >
-        <!-- Mobile Slides -->
-        <div class="mobile-slides d-lg-none">
-          <a
-            href="/#"
-            class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none"
-          >
-            <span><i class="fa-solid fa-truck-moving"></i></span>
-            <span class="text-reset"> Free UK shipping over £25</span>
-          </a>
-          <button
-            type="button"
-            data-bs-toggle="modal"
-            data-bs-target="#getDiscountModal"
-            class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none"
-          >
-            <span><i class="fa-solid fa-mobile-screen-button"></i></span>
-            <span>15% off your app order</span>
-          </button>
-          <a
-            href="./signup-page.html"
-            class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none"
-          >
-            <span><i class="fa-regular fa-envelope"></i></span>
-            <span> Sign up for email exclusives</span>
-          </a>
-          <a
-            href="/#"
-            class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none"
-          >
-            <span><i class="fa-solid fa-gift"></i></span>
-            <span> Earn Cult Status Points</span>
-          </a>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>all brand page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/fonts/averta/fonts.css" />
+  <link rel="stylesheet" href="./assets/css/output.css" />
+  <link rel="stylesheet" href="./assets/css/style.min.css" />
+  <!-- swiper slider css -->
 
-        <!-- Desktop Items -->
-        <a
-          href="/#"
-          class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none"
-        >
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- header top banner  -->
+  <div class="header-banner">
+    <div class="container-fluid d-flex justify-content-center align-items-center gap-sm-3 gap-lg-4 p-2 p-lg-3">
+      <!-- Mobile Slides -->
+      <div class="mobile-slides d-lg-none">
+        <a href="/#" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
           <span><i class="fa-solid fa-truck-moving"></i></span>
           <span class="text-reset"> Free UK shipping over £25</span>
         </a>
-        <button
-          type="button"
-          data-bs-toggle="modal"
-          data-bs-target="#getDiscountModal"
-          class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none"
-        >
+        <button type="button" data-bs-toggle="modal" data-bs-target="#getDiscountModal"
+          class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
           <span><i class="fa-solid fa-mobile-screen-button"></i></span>
-          <span> 15% off your app order</span>
+          <span>15% off your app order</span>
         </button>
-        <a
-          href="./signup-page.html"
-          class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none"
-        >
+        <a href="./signup-page.html" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
           <span><i class="fa-regular fa-envelope"></i></span>
           <span> Sign up for email exclusives</span>
         </a>
-        <a
-          href="/#"
-          class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none"
-        >
+        <a href="/#" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
           <span><i class="fa-solid fa-gift"></i></span>
           <span> Earn Cult Status Points</span>
         </a>
       </div>
-    </div>
 
-    <!-- stripe banner  -->
-    <div
-      class="stripe-banner container-fluid d-flex justify-content-center align-items-center p-2 p-lg-3"
-    >
-      <a href="/#" class="text-reset text-uppercase text-decoration-none fs-6">
-        <span class="">SALE - UP TO 50% OFF</span>
+      <!-- Desktop Items -->
+      <a href="/#" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+        <span><i class="fa-solid fa-truck-moving"></i></span>
+        <span class="text-reset"> Free UK shipping over £25</span>
+      </a>
+      <button type="button" data-bs-toggle="modal" data-bs-target="#getDiscountModal"
+        class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+        <span><i class="fa-solid fa-mobile-screen-button"></i></span>
+        <span> 15% off your app order</span>
+      </button>
+      <a href="./signup-page.html" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+        <span><i class="fa-regular fa-envelope"></i></span>
+        <span> Sign up for email exclusives</span>
+      </a>
+      <a href="/#" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+        <span><i class="fa-solid fa-gift"></i></span>
+        <span> Earn Cult Status Points</span>
       </a>
     </div>
+  </div>
 
-    <header
-      id="site-header"
-      class="header-container sticky top-0 z-30 bg-white py-3"
-    >
-      <div
-        class="container-fluid d-flex align-items-center justify-content-between px-lg-5"
-      >
-        <!-- search container for mobile  -->
-        <div class="col d-flex d-lg-none gap-3 align-items-center">
-          <div class="menu-bar">
-            <button
-              type="button"
-              data-bs-toggle="offcanvas"
-              data-bs-target="#mobileNavigation"
-              aria-controls="mobileNavigation"
-            >
-              <span><i class="fa-solid fa-bars"></i></span>
-            </button>
-          </div>
-          <div class="search-bar">
-            <button class="">
-              <span><i class="fa-solid fa-magnifying-glass"></i></span>
-            </button>
-          </div>
-        </div>
-        <!-- search container for pc  -->
-        <div class="col d-none d-lg-block">
-          <div class="header-search">
-            <form action="" class="">
-              <div class="position-relative">
-                <input
-                  id="search-input"
-                  type="text"
-                  class="w-100 rounded-1"
-                  placeholder="Search for a product or brand"
-                />
-                <button class="position-absolute">
-                  <span><i class="fa-solid fa-magnifying-glass"></i></span>
-                </button>
-              </div>
-            </form>
-          </div>
-        </div>
-        <!-- logo container  -->
-        <div
-          class="col logo-container d-flex align-items-center justify-content-center mx-auto"
-        >
-          <a href="/#">
-            <img
-              width="200"
-              height="40"
-              src="./assets/img/logo/nour-dark-logo.png"
-              alt="brand-logo"
-            />
-          </a>
-        </div>
-        <!-- other container  -->
-        <div
-          class="col other-container d-flex gap-3 gap-lg-4 align-items-center justify-content-end"
-        >
-          <div class="change-local d-none d-lg-flex align-items-center">
-            <button
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#selectRegionModal"
-              class="text-uppercase d-flex align-items-center gap-2"
-            >
-              <span class="">
-                <img
-                  class=""
-                  src="./assets/img/flags/united-kingdom.png"
-                  alt="united-kingdom flag"
-                />
-              </span>
-              <span class="">&bull;</span>
-              <span class="fw-bold">usd</span>
-            </button>
-          </div>
-          <div class="customar-account dropdown">
-            <button
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-              class="d-flex gap-2 align-items-center"
-              type="button"
-            >
-              <span><i class="fa-regular fa-user"></i></span>
-              <span class="d-none d-lg-flex fw-semibold">Account</span>
-            </button>
-            <ul
-              class="dropdown-menu dropdown-menu-end rounded-0 border border-light-subtle shadow m-0 p-0"
-            >
-              <li>
-                <button
-                  class="w-100 p-3 text-uppercase fs-6 fw-normal text-white bg-black"
-                >
-                  registration
-                </button>
-              </li>
-              <li>
-                <button
-                  class="w-100 p-3 text-uppercase fs-6 fw-normal text-black bg-white border border-black"
-                >
-                  login
-                </button>
-              </li>
-              <li>
-                <a class="dropdown-item p-3 fs-6 text-capitalize" href="#"
-                  >your wishlist</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item p-3 fs-6 text-capitalize" href="#"
-                  >your order</a
-                >
-              </li>
-              <li>
-                <a class="dropdown-item p-3 fs-6 text-capitalize" href="#"
-                  >your referrel</a
-                >
-              </li>
-            </ul>
-          </div>
-          <div class="addto-busket">
-            <button class="d-flex gap-2 align-items-center">
-              <span><i class="fa-solid fa-basket-shopping"></i></span>
-              <span class="d-none d-lg-flex fw-semibold">Bag</span>
-            </button>
-          </div>
-          <div class="theme-toggle">
-            <button id="theme-toggle-btn" class="btn btn-light bg-transparent">
-              <i class="fa-regular fa-sun"></i>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- desktop navigation  -->
-      <nav class="header-nav d-none d-lg-block mt-3">
-        <ul class="d-flex justify-content-center align-items-center">
-          <div class="nav-navigation">
-            <li class="nav-item">
-              <a href="/#" class="">SALE </a>
-            </li>
-            <div class="mega-navigation">
-              <div class="container">
-                <div class="row row-cols-5 g-3">
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="nav-navigation">
-            <li class="nav-item">
-              <a href="/#" class="">Brands</a>
-            </li>
+  <!-- stripe banner  -->
+  <div class="stripe-banner container-fluid d-flex justify-content-center align-items-center p-2 p-lg-3">
+    <a href="/#" class="text-reset text-uppercase text-decoration-none fs-6">
+      <span class="">SALE - UP TO 50% OFF</span>
+    </a>
+  </div>
 
-            <div class="mega-navigation">
-              <div class="container">
-                <div class="row row-cols-5 g-3">
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="nav-navigation">
-            <li class="nav-item">
-              <a href="/#" class="">New & Trending</a>
-            </li>
-
-            <div class="mega-navigation">
-              <div class="container">
-                <div class="row row-cols-5 g-3">
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="nav-navigation">
-            <li class="nav-item">
-              <a href="/#" class="">Fragrance</a>
-            </li>
-
-            <div class="mega-navigation">
-              <div class="container">
-                <div class="row row-cols-5 g-3">
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="nav-navigation">
-            <li class="nav-item">
-              <a href="/#" class="">Skin Care</a>
-            </li>
-
-            <div class="mega-navigation">
-              <div class="container">
-                <div class="row row-cols-5 g-3">
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="nav-navigation">
-            <li class="nav-item">
-              <a href="/#" class="">Make Up</a>
-            </li>
-
-            <div class="mega-navigation">
-              <div class="container">
-                <div class="row row-cols-5 g-3">
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="nav-navigation">
-            <li class="nav-item">
-              <a href="/#" class="">Hair</a>
-            </li>
-
-            <div class="mega-navigation">
-              <div class="container">
-                <div class="row row-cols-5 g-3">
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="nav-navigation">
-            <li class="nav-item">
-              <a href="/#" class="">Body & Wellbeing</a>
-            </li>
-
-            <div class="mega-navigation">
-              <div class="container">
-                <div class="row row-cols-5 g-3">
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="nav-navigation">
-            <li class="nav-item">
-              <a href="/#" class="">SPF</a>
-            </li>
-
-            <div class="mega-navigation">
-              <div class="container">
-                <div class="row row-cols-5 g-3">
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="nav-navigation">
-            <li class="nav-item">
-              <a href="/#" class="">Minis</a>
-            </li>
-
-            <div class="mega-navigation">
-              <div class="container">
-                <div class="row row-cols-5 g-3">
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="nav-navigation">
-            <li class="nav-item">
-              <a href="/#" class="">Cult Conscious</a>
-            </li>
-
-            <div class="mega-navigation">
-              <div class="container">
-                <div class="row row-cols-5 g-3">
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="nav-navigation">
-            <li class="nav-item">
-              <a href="/#" class="">Blog</a>
-            </li>
-
-            <div class="mega-navigation">
-              <div class="container">
-                <div class="row row-cols-5 g-3">
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                  <div class="col">
-                    <h3
-                      class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle"
-                    >
-                      View All Brands
-                    </h3>
-                    <ul class="list-unstyled">
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                      <li><a href="/#">items</a></li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </ul>
-      </nav>
-    </header>
-    <!-- mobile navigation -->
-    <div
-      class="offcanvas offcanvas-start mobile-navigation"
-      id="mobileNavigation"
-      aria-labelledby="mobileNavigationLabel"
-    >
-      <div class="offcanvas-header d-flex flex-column p-0">
-        <div
-          class="d-flex justify-content-between w-100 p-4 border-bottom border-light-subtle"
-        >
-          <div class="offcanvas-title" id="mobileNavigationLabel">
-            <i class="fa-solid fa-house fs-4"></i>
-          </div>
-          <div class="d-flex align-items-center gap-4">
-            <button
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#selectRegionModal"
-              class="open-modal-btn text-uppercase d-flex align-items-center gap-2 border-0 bg-transparent"
-            >
-              <span class="">
-                <img
-                  class=""
-                  src="./assets/img/flags/united-kingdom.png"
-                  alt="united-kingdom flag"
-                />
-              </span>
-              <span class="">&bull;</span>
-              <span class="fw-bold">usd</span>
-            </button>
-
-            <button
-              type="button"
-              class="btn-close text-black"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-        </div>
-        <div
-          class="w-100 d-flex flex-row gap-4 px-4 py-3 mobile-registraion border-bottom border-light-subtle"
-        >
-          <button
-            class="w-100 text-uppercase fs-6 fw-normal text-white bg-black"
-          >
-            registration
+  <header id="site-header" class="header-container sticky top-0 z-30 bg-white py-3">
+    <div class="container-fluid d-flex align-items-center justify-content-between px-lg-5">
+      <!-- search container for mobile  -->
+      <div class="col d-flex d-lg-none gap-3 align-items-center">
+        <div class="menu-bar">
+          <button type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavigation"
+            aria-controls="mobileNavigation">
+            <span><i class="fa-solid fa-bars"></i></span>
           </button>
-          <button
-            class="w-100 text-uppercase fs-6 fw-normal text-black bg-transparent"
-          >
-            login
+        </div>
+        <div class="search-bar">
+          <button class="">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
           </button>
         </div>
       </div>
-      <div class="offcanvas-body position-relative px-0">
-        <div
-          class="position-static pb-4 border-bottom border-light-subtle px-3 mb-4"
-        >
-          <a href="/#" class="h5 text-decoration-none fw-bold mb-3 d-block"
-            >Brand</a
-          >
-          <div class="d-flex flex-column gap-2">
-            <button
-              data-slide="slide1"
-              class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
-            >
-              <span>items</span>
-              <span><i class="fa-solid fa-angle-right"></i></span>
-            </button>
-            <button
-              data-slide="slide2"
-              class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
-            >
-              <span>items 2</span>
-              <span><i class="fa-solid fa-angle-right"></i></span>
-            </button>
-          </div>
-        </div>
-        <!-- slider-1 window -->
-        <div id="slide1" class="slide-window bg-white">
-          <div class="slide-content">
-            <div class="d-flex gap-3 align-items-center mb-4">
-              <button
-                class="close-btn p-0 bg-transparent border-0 fs-5 d-flex align-items-center gap-3 text-capitalize"
-              >
-                <span><i class="fa-solid fa-angle-left"></i></span>
-                <span class="h5 text-decoration-none fw-bold d-block m-0"
-                  >items</span
-                >
+      <!-- search container for pc  -->
+      <div class="col d-none d-lg-block">
+        <div class="header-search">
+          <form action="" class="">
+            <div class="position-relative">
+              <input id="search-input" type="text" class="w-100 rounded-1"
+                placeholder="Search for a product or brand" />
+              <button class="position-absolute">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
               </button>
             </div>
-            <div class="">
-              <div class="d-flex flex-column gap-2">
-                <button
-                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
-                >
-                  <span>nested items</span>
-                </button>
-                <button
-                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
-                >
-                  <span>nested items</span>
-                </button>
-                <button
-                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
-                >
-                  <span>nested items</span>
-                </button>
-                <button
-                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
-                >
-                  <span>nested items</span>
-                </button>
-                <button
-                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
-                >
-                  <span>nested items</span>
-                </button>
+          </form>
+        </div>
+      </div>
+      <!-- logo container  -->
+      <div class="col logo-container d-flex align-items-center justify-content-center mx-auto">
+        <a href="/#">
+          <img width="200" height="40" src="./assets/img/logo/nour-dark-logo.png" alt="brand-logo" />
+        </a>
+      </div>
+      <!-- other container  -->
+      <div class="col other-container d-flex gap-3 gap-lg-4 align-items-center justify-content-end">
+        <div class="change-local d-none d-lg-flex align-items-center">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#selectRegionModal"
+            class="text-uppercase d-flex align-items-center gap-2">
+            <span class="">
+              <img class="" src="./assets/img/flags/united-kingdom.png" alt="united-kingdom flag" />
+            </span>
+            <span class="">&bull;</span>
+            <span class="fw-bold">usd</span>
+          </button>
+        </div>
+        <div class="customar-account dropdown">
+          <button data-bs-toggle="dropdown" aria-expanded="false" class="d-flex gap-2 align-items-center" type="button">
+            <span><i class="fa-regular fa-user"></i></span>
+            <span class="d-none d-lg-flex fw-semibold">Account</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end rounded-0 border border-light-subtle shadow m-0 p-0">
+            <li>
+              <button class="w-100 p-3 text-uppercase fs-6 fw-normal text-white bg-black">
+                registration
+              </button>
+            </li>
+            <li>
+              <button class="w-100 p-3 text-uppercase fs-6 fw-normal text-black bg-white border border-black">
+                login
+              </button>
+            </li>
+            <li>
+              <a class="dropdown-item p-3 fs-6 text-capitalize" href="#">your wishlist</a>
+            </li>
+            <li>
+              <a class="dropdown-item p-3 fs-6 text-capitalize" href="#">your order</a>
+            </li>
+            <li>
+              <a class="dropdown-item p-3 fs-6 text-capitalize" href="#">your referrel</a>
+            </li>
+          </ul>
+        </div>
+        <div class="addto-busket">
+          <button class="d-flex gap-2 align-items-center">
+            <span><i class="fa-solid fa-basket-shopping"></i></span>
+            <span class="d-none d-lg-flex fw-semibold">Bag</span>
+          </button>
+        </div>
+        <div class="theme-toggle">
+          <button id="theme-toggle-btn" class="btn btn-light bg-transparent">
+            <i class="fa-regular fa-sun"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- desktop navigation  -->
+    <nav class="header-nav d-none d-lg-block mt-3">
+      <ul class="d-flex justify-content-center align-items-center">
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">SALE </a>
+          </li>
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <!-- slider-2 window -->
-        <div id="slide2" class="slide-window bg-white">
-          <div class="slide-content">
-            <div class="d-flex gap-3 align-items-center mb-4">
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Brands</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">New & Trending</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Fragrance</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Skin Care</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Make Up</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Hair</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Body & Wellbeing</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">SPF</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Minis</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Cult Conscious</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Blog</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <!-- mobile navigation -->
+  <div class="offcanvas offcanvas-start mobile-navigation" id="mobileNavigation"
+    aria-labelledby="mobileNavigationLabel">
+    <div class="offcanvas-header d-flex flex-column p-0">
+      <div class="d-flex justify-content-between w-100 p-4 border-bottom border-light-subtle">
+        <div class="offcanvas-title" id="mobileNavigationLabel">
+          <i class="fa-solid fa-house fs-4"></i>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#selectRegionModal"
+            class="open-modal-btn text-uppercase d-flex align-items-center gap-2 border-0 bg-transparent">
+            <span class="">
+              <img class="" src="./assets/img/flags/united-kingdom.png" alt="united-kingdom flag" />
+            </span>
+            <span class="">&bull;</span>
+            <span class="fw-bold">usd</span>
+          </button>
+
+          <button type="button" class="btn-close text-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="w-100 d-flex flex-row gap-4 px-4 py-3 mobile-registraion border-bottom border-light-subtle">
+        <button class="w-100 text-uppercase fs-6 fw-normal text-white bg-black">
+          registration
+        </button>
+        <button class="w-100 text-uppercase fs-6 fw-normal text-black bg-transparent">
+          login
+        </button>
+      </div>
+    </div>
+    <div class="offcanvas-body position-relative px-0">
+      <div class="position-static pb-4 border-bottom border-light-subtle px-3 mb-4">
+        <a href="/#" class="h5 text-decoration-none fw-bold mb-3 d-block">Brand</a>
+        <div class="d-flex flex-column gap-2">
+          <button data-slide="slide1"
+            class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+            <span>items</span>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </button>
+          <button data-slide="slide2"
+            class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+            <span>items 2</span>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </button>
+        </div>
+      </div>
+      <!-- slider-1 window -->
+      <div id="slide1" class="slide-window bg-white">
+        <div class="slide-content">
+          <div class="d-flex gap-3 align-items-center mb-4">
+            <button class="close-btn p-0 bg-transparent border-0 fs-5 d-flex align-items-center gap-3 text-capitalize">
+              <span><i class="fa-solid fa-angle-left"></i></span>
+              <span class="h5 text-decoration-none fw-bold d-block m-0">items</span>
+            </button>
+          </div>
+          <div class="">
+            <div class="d-flex flex-column gap-2">
               <button
-                class="close-btn p-0 bg-transparent border-0 fs-5 d-flex align-items-center gap-3 text-capitalize"
-              >
-                <span><i class="fa-solid fa-angle-left"></i></span>
-                <span class="h5 text-decoration-none fw-bold d-block m-0"
-                  >items 2</span
-                >
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
               </button>
             </div>
-            <div class="">
-              <div class="d-flex flex-column gap-2">
-                <button
-                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
-                >
-                  <span>nested items</span>
-                </button>
-                <button
-                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
-                >
-                  <span>nested items</span>
-                </button>
-                <button
-                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
-                >
-                  <span>nested items</span>
-                </button>
-                <button
-                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
-                >
-                  <span>nested items</span>
-                </button>
-                <button
-                  class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize"
-                >
-                  <span>nested items</span>
-                </button>
-              </div>
+          </div>
+        </div>
+      </div>
+      <!-- slider-2 window -->
+      <div id="slide2" class="slide-window bg-white">
+        <div class="slide-content">
+          <div class="d-flex gap-3 align-items-center mb-4">
+            <button class="close-btn p-0 bg-transparent border-0 fs-5 d-flex align-items-center gap-3 text-capitalize">
+              <span><i class="fa-solid fa-angle-left"></i></span>
+              <span class="h5 text-decoration-none fw-bold d-block m-0">items 2</span>
+            </button>
+          </div>
+          <div class="">
+            <div class="d-flex flex-column gap-2">
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
             </div>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- b2b brand section  -->
-    <div
-      class="container mx-auto p-4 pt-5 pb-5 md:p-6 lg:p-8 b2b-brand-section"
-    >
-      <div class="flex flex-col gap-4">
-        <div
-          class="d-fflex flex-col gap-2 justify-content-center align-items-center"
-        >
-          <h2
-            class="d-flex flex-row justify-content-center align-items-center gap-2 m-0"
-          >
-            <span>our</span> <span>Brands</span>
-          </h2>
-          <p class="">
-            Choose from 180+ handpicked k-beauty brands that are high in demand
-            around the world
-          </p>
-        </div>
-        <!-- brand logos  -->
+  <!-- b2b brand section  -->
+  <div class="container mx-auto p-4 pt-5 pb-5 md:p-6 lg:p-8 b2b-brand-section">
+    <div class="flex flex-col gap-4">
+      <div class="d-fflex flex-col gap-2 justify-content-center align-items-center">
+        <h2 class="d-flex flex-row justify-content-center align-items-center gap-2 m-0">
+          <span>our</span> <span>Brands</span>
+        </h2>
+        <p class="">
+          Choose from 180+ handpicked k-beauty brands that are high in demand
+          around the world
+        </p>
+      </div>
+      <!-- brand logos  -->
 
-        <div class="d-flex justify-content-end align-items-center gap-2 py-3">
-          <div class="dropdown-dropend">
-            <button
-              class="btn px-4 py-2 fs-6 text-uppercase text-dark border border-dark dropdown-toggle rounded-0"
-              type="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              all brands
-            </button>
-            <ul class="dropdown-menu rounded-0 shadow-lg border-0">
-              <li>
-                <a
-                  class="dropdown-item py-2 text-capitalize text-balance"
-                  href="#"
-                  >Brand type</a
-                >
-              </li>
-              <li>
-                <a
-                  class="dropdown-item py-2 text-capitalize text-balance"
-                  href="#"
-                  >Brand type
-                </a>
-              </li>
-              <li>
-                <a
-                  class="dropdown-item py-2 text-capitalize text-balance"
-                  href="#"
-                  >Brand type
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row gy-4">
-          <div class="col-6 col-sm-4 col-md-3">
-            <div
-              class="w-100 h-100 p-3 py-lg-4 shadow-sm border border-dark rounded-0 d-flex justify-content-center align-items-center"
-            >
-              <a href="#">
-                <img
-                  id="brand-logo"
-                  src="./assets/img/brand-logo/cosrx-logo.svg"
-                  alt=""
-                />
+      <div class="d-flex justify-content-end align-items-center gap-2 py-3">
+        <div class="dropdown-dropend">
+          <button class="btn px-4 py-2 fs-6 text-uppercase text-dark border border-dark dropdown-toggle rounded-0"
+            type="button" data-bs-toggle="dropdown" aria-expanded="false">
+            all brands
+          </button>
+          <ul class="dropdown-menu rounded-0 shadow-lg border-0">
+            <li>
+              <a class="dropdown-item py-2 text-capitalize text-balance" href="#">Brand type</a>
+            </li>
+            <li>
+              <a class="dropdown-item py-2 text-capitalize text-balance" href="#">Brand type
               </a>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3">
-            <div
-              class="w-100 h-100 p-3 py-lg-4 shadow-sm border border-dark rounded-0 d-flex justify-content-center align-items-center"
-            >
-              <a href="#">
-                <img src="./assets/img/brand-logo/cosrx-logo.svg" alt="" />
+            </li>
+            <li>
+              <a class="dropdown-item py-2 text-capitalize text-balance" href="#">Brand type
               </a>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3">
-            <div
-              class="w-100 h-100 p-3 py-lg-4 shadow-sm border border-dark rounded-0 d-flex justify-content-center align-items-center"
-            >
-              <a href="#">
-                <img src="./assets/img/brand-logo/cosrx-logo.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3">
-            <div
-              class="w-100 h-100 p-3 py-lg-4 shadow-sm border border-dark rounded-0 d-flex justify-content-center align-items-center"
-            >
-              <a href="#">
-                <img src="./assets/img/brand-logo/cosrx-logo.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3">
-            <div
-              class="w-100 h-100 p-3 py-lg-4 shadow-sm border border-dark rounded-0 d-flex justify-content-center align-items-center"
-            >
-              <a href="#">
-                <img src="./assets/img/brand-logo/cosrx-logo.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3">
-            <div
-              class="w-100 h-100 p-3 py-lg-4 shadow-sm border border-dark rounded-0 d-flex justify-content-center align-items-center"
-            >
-              <a href="#">
-                <img src="./assets/img/brand-logo/cosrx-logo.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3">
-            <div
-              class="w-100 h-100 p-3 py-lg-4 shadow-sm border border-dark rounded-0 d-flex justify-content-center align-items-center"
-            >
-              <a href="#">
-                <img src="./assets/img/brand-logo/cosrx-logo.svg" alt="" />
-              </a>
-            </div>
-          </div>
-          <div class="col-6 col-sm-4 col-md-3">
-            <div
-              class="w-100 h-100 p-3 py-lg-4 shadow-sm border border-dark rounded-0 d-flex justify-content-center align-items-center"
-            >
-              <a href="#">
-                <img src="./assets/img/brand-logo/cosrx-logo.svg" alt="" />
-              </a>
-            </div>
-          </div>
+            </li>
+          </ul>
         </div>
       </div>
-    </div>
 
-    <!-- modal for country (rigion ) selection  -->
-    <div
-      class="modal fade"
-      id="selectRegionModal"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="0"
-      aria-labelledby="selectRegionModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title fs-5" id="selectRegionModalLabel">
-              Your region settings
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <form action="" method="post">
-              <div class="input-group mb-3">
-                <label for="country" class="form-label fw-bold"
-                  >Shipping Country</label
-                >
-                <select
-                  id="country"
-                  class="form-select rounded-1 w-100 py-2"
-                  aria-label="Default select example"
-                >
-                  <option selected>country name</option>
-                  <option value="1">country name One</option>
-                  <option value="2">country name Two</option>
-                  <option value="3">country name Three</option>
-                </select>
-              </div>
-              <div class="input-group mb-3">
-                <label for="language" class="form-label fw-bold"
-                  >Region & Language</label
-                >
-                <select
-                  id="language"
-                  class="form-select rounded-1 w-100 py-2"
-                  aria-label="Default select example"
-                >
-                  <option selected>Region & Language</option>
-                  <option value="1">Region & Language One</option>
-                  <option value="2">Region & Language Two</option>
-                  <option value="3">Region & Language Three</option>
-                </select>
-              </div>
-              <div class="input-group mb-3">
-                <label for="Currencies" class="form-label fw-bold"
-                  >Currencies</label
-                >
-                <select
-                  id="Currencies"
-                  class="form-select rounded-1 w-100 py-2"
-                  aria-label="Default select example"
-                >
-                  <option selected>Currencies</option>
-                  <option value="1">Currencies One</option>
-                  <option value="2">Currencies Two</option>
-                  <option value="3">Currencies Three</option>
-                </select>
-              </div>
-            </form>
-          </div>
+      <div class="row gy-4">
+        <div class="col-6 col-sm-4 col-md-3">
           <div
-            class="modal-footer border-top-0 pb-5 w-100 justify-content-center"
-          >
-            <div class="block w-100">
-              <button
-                class="px-2 py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline"
-              >
-                add to bag
-              </button>
+            class="w-100 h-100 p-3 py-lg-4 shadow-sm border border-dark rounded-0 d-flex justify-content-center align-items-center">
+            <a href="#">
+              <img id="brand-logo" src="./assets/img/brand-logo/cosrx-logo.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <div
+            class="w-100 h-100 p-3 py-lg-4 shadow-sm border border-dark rounded-0 d-flex justify-content-center align-items-center">
+            <a href="#">
+              <img src="./assets/img/brand-logo/cosrx-logo.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <div
+            class="w-100 h-100 p-3 py-lg-4 shadow-sm border border-dark rounded-0 d-flex justify-content-center align-items-center">
+            <a href="#">
+              <img src="./assets/img/brand-logo/cosrx-logo.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <div
+            class="w-100 h-100 p-3 py-lg-4 shadow-sm border border-dark rounded-0 d-flex justify-content-center align-items-center">
+            <a href="#">
+              <img src="./assets/img/brand-logo/cosrx-logo.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <div
+            class="w-100 h-100 p-3 py-lg-4 shadow-sm border border-dark rounded-0 d-flex justify-content-center align-items-center">
+            <a href="#">
+              <img src="./assets/img/brand-logo/cosrx-logo.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <div
+            class="w-100 h-100 p-3 py-lg-4 shadow-sm border border-dark rounded-0 d-flex justify-content-center align-items-center">
+            <a href="#">
+              <img src="./assets/img/brand-logo/cosrx-logo.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <div
+            class="w-100 h-100 p-3 py-lg-4 shadow-sm border border-dark rounded-0 d-flex justify-content-center align-items-center">
+            <a href="#">
+              <img src="./assets/img/brand-logo/cosrx-logo.svg" alt="" />
+            </a>
+          </div>
+        </div>
+        <div class="col-6 col-sm-4 col-md-3">
+          <div
+            class="w-100 h-100 p-3 py-lg-4 shadow-sm border border-dark rounded-0 d-flex justify-content-center align-items-center">
+            <a href="#">
+              <img src="./assets/img/brand-logo/cosrx-logo.svg" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <!-- Site Footer -->
+  <footer class="site-footer bg-black text-white pt-5 pb-3">
+    <!-- Footer Top: Newsletter & Social -->
+    <div class="footer-top border-bottom border-light-subtle pb-4 mb-5">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <!-- Newsletter -->
+          <div class="col-lg-6">
+            <div
+              class="d-flex flex-column flex-lg-row align-items-center gap-3 justify-content-center justify-content-lg-start">
+              <span><i class="fa-regular fa-envelope fs-4"></i></span>
+              <span class="text-uppercase fw-light text-center text-lg-start">15% off your order when you sign-up to our
+                emails</span>
+              <button class="btn btn-light rounded-0 px-4 py-2 text-uppercase fw-bold">Sign Up</button>
+            </div>
+          </div>
+          <!-- Social Icons -->
+          <div class="col-lg-6">
+            <div class="d-flex justify-content-center justify-content-lg-end gap-4 fs-5 social-icons">
+              <span>Connect with us</span>
+              <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-pinterest"></i></a>
             </div>
           </div>
         </div>
       </div>
     </div>
 
-    <!-- custom modal for region modal for mobile  -->
+    <!-- Footer Main: Accordion for Mobile, Grid for Desktop -->
+    <div class="footer-main mb-5">
+      <div class="container px-lg-5">
 
-    <!-- modal for discount code -->
-    <div
-      class="modal fade"
-      id="getDiscountModal"
-      data-bs-backdrop="static"
-      data-bs-keyboard="false"
-      tabindex="-1"
-      aria-labelledby="getDiscountModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h1
-              class="modal-title fs-5 text-capitalize"
-              id="getDiscountModalLabel"
-            >
-              get your cupon code
-            </h1>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body py-5">
-            <form action="" method="post">
-              <div class="input-group mb-3">
-                <input
-                  type="text"
-                  class="form-control py-2 form-control-lg"
-                  placeholder="cupon code - 123456"
-                  aria-label="cupon code - 123456"
-                  aria-describedby="basic-addon2"
-                />
-                <span
-                  class="input-group-text bg-black text-white border border-black cursor-pointer"
-                  id="basic-addon2"
-                  >Copy code</span
-                >
+        <!-- Mobile View: Accordion (Visible only on mobile/tablet) -->
+        <div class="footer-mobile-view text-center d-lg-none">
+          <div class="footer-accordion" id="footerAccordion">
+
+            <!-- Customer Service -->
+            <div class="footer-accordion-item w-100">
+              <h2 class="footer-accordion-header" id="headingCS">
+                <button class="footer-accordion-button collapsed text-uppercase fw-bold fs-6" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseCS" aria-expanded="false"
+                  aria-controls="collapseCS">
+                  Customer Service
+                </button>
+              </h2>
+              <div id="collapseCS" class="footer-accordion-collapse collapse" aria-labelledby="headingCS"
+                data-bs-parent="#footerAccordion">
+                <div class="footer-accordion-body">
+                  <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small fw-light">
+                    <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Help Centre / FAQs</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Shipping</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Returns</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Track my order</a></li>
+                  </ul>
+                </div>
               </div>
-            </form>
+            </div>
+
+            <!-- About Cult Beauty -->
+            <div class="footer-accordion-item w-100">
+              <h2 class="footer-accordion-header" id="headingAbout">
+                <button class="footer-accordion-button collapsed text-uppercase fw-bold fs-6" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseAbout" aria-expanded="false"
+                  aria-controls="collapseAbout">
+                  About Cult Beauty
+                </button>
+              </h2>
+              <div id="collapseAbout" class="footer-accordion-collapse collapse" aria-labelledby="headingAbout"
+                data-bs-parent="#footerAccordion">
+                <div class="footer-accordion-body">
+                  <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small fw-light">
+                    <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">People and Planet</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Cult Conscious</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Legal -->
+            <div class="footer-accordion-item w-100">
+              <h2 class="footer-accordion-header" id="headingLegal">
+                <button class="footer-accordion-button collapsed text-uppercase fw-bold fs-6" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseLegal" aria-expanded="false"
+                  aria-controls="collapseLegal">
+                  Legal
+                </button>
+              </h2>
+              <div id="collapseLegal" class="footer-accordion-collapse collapse" aria-labelledby="headingLegal"
+                data-bs-parent="#footerAccordion">
+                <div class="footer-accordion-body">
+                  <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small fw-light">
+                    <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Cookie Policy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Modern Slavery Policy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Accessibility</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Find Out More -->
+            <div class="footer-accordion-item w-100">
+              <h2 class="footer-accordion-header" id="headingMore">
+                <button class="footer-accordion-button collapsed text-uppercase fw-bold fs-6" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseMore" aria-expanded="false"
+                  aria-controls="collapseMore">
+                  Find Out More
+                </button>
+              </h2>
+              <div id="collapseMore" class="footer-accordion-collapse collapse" aria-labelledby="headingMore"
+                data-bs-parent="#footerAccordion">
+                <div class="footer-accordion-body">
+                  <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small fw-light">
+                    <li><a href="#" class="text-white text-decoration-none">Cult Status</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Promotions</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Affiliates</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Refer A Friend</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Logo & Blurb (Mobile Bottom) -->
+          <div class="text-center mt-4">
+            <img src="./assets/img/logo/nour-dark-logo.png" alt="Cult Beauty" class="img-fluid mb-3 footer-logo mx-auto"
+              style="filter: invert(1); max-width: 120px;">
+            <p class="small fw-light">Cult Beauty is THE destination for the very best in beauty!</p>
+          </div>
+        </div>
+
+        <!-- Desktop View: Static Grid (Visible only on desktop) -->
+        <div class="footer-desktop-view d-none d-lg-block">
+          <div class="row gx-5">
+            <!-- Col 1: Logo & Blurb -->
+            <div class="col-lg-3">
+              <img src="./assets/img/logo/nour-dark-logo.png" alt="Cult Beauty" class="img-fluid mb-4 footer-logo"
+                style="filter: invert(1); max-width: 160px;">
+              <p class="small fw-light lh-lg" style="color: #ccc;">Cult Beauty is THE destination for the very best in
+                beauty! From make up and skin care to fragrance, hair care and more, explore our line up of trending
+                brands today.</p>
+            </div>
+
+            <!-- Col 2: Customer Service -->
+            <div class="col-lg-2 offset-lg-1">
+              <h5 class="text-uppercase fw-bold fs-6 mb-4 text-white">Customer Service</h5>
+              <ul class="list-unstyled d-flex flex-column gap-2 small fw-light">
+                <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Help Centre / FAQs</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Shipping</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Returns</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Track my order</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 3: About Cult Beauty -->
+            <div class="col-lg-2">
+              <h5 class="text-uppercase fw-bold fs-6 mb-4 text-white">About Cult Beauty</h5>
+              <ul class="list-unstyled d-flex flex-column gap-2 small fw-light">
+                <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                <li><a href="#" class="text-white text-decoration-none">People and Planet</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Cult Conscious</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 4: Legal -->
+            <div class="col-lg-2">
+              <h5 class="text-uppercase fw-bold fs-6 mb-4 text-white">Legal</h5>
+              <ul class="list-unstyled d-flex flex-column gap-2 small fw-light">
+                <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Cookie Policy</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Modern Slavery Policy</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Accessibility</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 5: Find Out More -->
+            <div class="col-lg-2">
+              <h5 class="text-uppercase fw-bold fs-6 mb-4 text-white">Find Out More</h5>
+              <ul class="list-unstyled d-flex flex-column gap-2 small fw-light">
+                <li><a href="#" class="text-white text-decoration-none">Cult Status</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Promotions</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Affiliates</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Refer A Friend</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom pt-4 border-top border-light-subtle">
+      <div class="container ">
+        <div class="row gy-3  justify-content-between">
+          <div class="col-lg-6 text-center text-lg-start">
+            <span class="small fw-light">2025 © The Hut.com Ltd. t/a CultBeauty.com</span>
+          </div>
+          <div class="col-lg-4 offset-lg-2">
+            <div class="d-flex flex-column gap-2 align-items-center align-items-lg-end">
+              <span class="fw-bold">Pay Securely With</span>
+              <div class="d-flex gap-2 payment-icons fs-3">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+                <i class="fa-brands fa-cc-apple-pay"></i>
+                <i class="fa-brands fa-google-pay"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- modal for country (rigion ) selection  -->
+  <div class="modal fade" id="selectRegionModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="0"
+    aria-labelledby="selectRegionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="selectRegionModalLabel">
+            Your region settings
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="" method="post">
+            <div class="input-group mb-3">
+              <label for="country" class="form-label fw-bold">Shipping Country</label>
+              <select id="country" class="form-select rounded-1 w-100 py-2" aria-label="Default select example">
+                <option selected>country name</option>
+                <option value="1">country name One</option>
+                <option value="2">country name Two</option>
+                <option value="3">country name Three</option>
+              </select>
+            </div>
+            <div class="input-group mb-3">
+              <label for="language" class="form-label fw-bold">Region & Language</label>
+              <select id="language" class="form-select rounded-1 w-100 py-2" aria-label="Default select example">
+                <option selected>Region & Language</option>
+                <option value="1">Region & Language One</option>
+                <option value="2">Region & Language Two</option>
+                <option value="3">Region & Language Three</option>
+              </select>
+            </div>
+            <div class="input-group mb-3">
+              <label for="Currencies" class="form-label fw-bold">Currencies</label>
+              <select id="Currencies" class="form-select rounded-1 w-100 py-2" aria-label="Default select example">
+                <option selected>Currencies</option>
+                <option value="1">Currencies One</option>
+                <option value="2">Currencies Two</option>
+                <option value="3">Currencies Three</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer border-top-0 pb-5 w-100 justify-content-center">
+          <div class="block w-100">
+            <button
+              class="px-2 py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+              add to bag
+            </button>
           </div>
         </div>
       </div>
     </div>
+  </div>
 
-    <script src="./assets/js/bootstrap.bundle.min.js"></script>
-    <!-- swiper slider js CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- custom modal for region modal for mobile  -->
 
-    <!-- custom js -->
-    <script type="module" src="./assets/js/main.js"></script>
-    <script type="module" src="./assets/js/slider.js"></script>
+  <!-- modal for discount code -->
+  <div class="modal fade" id="getDiscountModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="getDiscountModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-capitalize" id="getDiscountModalLabel">
+            get your cupon code
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body py-5">
+          <form action="" method="post">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control py-2 form-control-lg" placeholder="cupon code - 123456"
+                aria-label="cupon code - 123456" aria-describedby="basic-addon2" />
+              <span class="input-group-text bg-black text-white border border-black cursor-pointer"
+                id="basic-addon2">Copy code</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
-    <!-- rigional modal  -->
-    <script>
-      document.addEventListener("shown.bs.modal", function () {
-        document.body.style.overflow = "hidden";
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- swiper slider js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <!-- custom js -->
+  <script type="module" src="./assets/js/main.js"></script>
+  <script type="module" src="./assets/js/slider.js"></script>
+
+  <!-- rigional modal  -->
+  <script>
+    document.addEventListener("shown.bs.modal", function () {
+      document.body.style.overflow = "hidden";
+    });
+    document.addEventListener("hidden.bs.modal", function () {
+      document.body.style.overflow = "";
+    });
+
+    document
+      .getElementById("selectRegionModal")
+      .addEventListener("show.bs.modal", function () {
+        let offcanvas = bootstrap.Offcanvas.getInstance(
+          document.getElementById("mobileNavigation")
+        );
+        if (offcanvas) {
+          offcanvas.hide();
+        }
       });
-      document.addEventListener("hidden.bs.modal", function () {
-        document.body.style.overflow = "";
+
+    document
+      .getElementById("selectRegionModal")
+      .addEventListener("hidden.bs.modal", function () {
+        let backdrop = document.querySelector(".offcanvas-backdrop");
+        if (backdrop) {
+          backdrop.remove();
+          location.reload(true);
+        }
+        // Hide the Offcanvas forcefully to reset it
+        let offcanvasElement = document.getElementById("mobileNavigation");
+        let offcanvasInstance =
+          bootstrap.Offcanvas.getInstance(offcanvasElement);
+        if (offcanvasInstance) {
+          offcanvasInstance.hide(); // Ensures Offcanvas is reset properly
+        }
       });
+  </script>
+</body>
 
-      document
-        .getElementById("selectRegionModal")
-        .addEventListener("show.bs.modal", function () {
-          let offcanvas = bootstrap.Offcanvas.getInstance(
-            document.getElementById("mobileNavigation")
-          );
-          if (offcanvas) {
-            offcanvas.hide();
-          }
-        });
-
-      document
-        .getElementById("selectRegionModal")
-        .addEventListener("hidden.bs.modal", function () {
-          let backdrop = document.querySelector(".offcanvas-backdrop");
-          if (backdrop) {
-            backdrop.remove();
-            location.reload(true);
-          }
-          // Hide the Offcanvas forcefully to reset it
-          let offcanvasElement = document.getElementById("mobileNavigation");
-          let offcanvasInstance =
-            bootstrap.Offcanvas.getInstance(offcanvasElement);
-          if (offcanvasInstance) {
-            offcanvasInstance.hide(); // Ensures Offcanvas is reset properly
-          }
-        });
-    </script>
-  </body>
 </html>

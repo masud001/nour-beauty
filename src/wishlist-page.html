@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wishlist | Nour Beauty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link rel="stylesheet" href="./assets/scss/style.scss" />
+</head>
+
+<body>
+
+    <!-- Header (Specific to Account Pages) -->
+    <header class="account-header border-bottom">
+        <!-- Top Bar -->
+        <div class="top-bar border-bottom py-2 d-none d-md-block">
+            <div class="container-fluid px-4 px-lg-5 d-flex justify-content-between align-items-center">
+                <a href="index.html" class="text-decoration-none text-dark d-flex align-items-center"
+                    style="font-size: 0.85rem;">
+                    <i class="fa-solid fa-chevron-left me-2" style="font-size: 0.7rem;"></i> Return to store
+                </a>
+                <a href="#" class="text-decoration-none text-dark d-flex align-items-center text-uppercase"
+                    style="font-size: 0.85rem;">
+                    <i class="fa-solid fa-arrow-right-from-bracket me-2"></i> Log out
+                </a>
+            </div>
+        </div>
+        <!-- Main Header -->
+        <div class="main-header py-3">
+            <div class="container-fluid px-4 px-lg-5">
+                <div class="row align-items-center">
+                    <!-- Mobile Menu Button -->
+                    <div class="col-4 d-md-none">
+                        <button class="btn border-0 p-0" id="mobileMenuBtn">
+                            <i class="fa-solid fa-bars fs-4"></i>
+                        </button>
+                    </div>
+                    <!-- Logo -->
+                    <div class="col-4 col-md-6 text-center text-md-start">
+                        <img id="brand-logo" width="120" src="./assets/img/logo/nour-dark-logo.png" alt="Nour Beauty"
+                            class="d-inline-block">
+                    </div>
+                    <!-- Basket -->
+                    <div class="col-4 col-md-6 text-end">
+                        <a href="cart-page.html"
+                            class="text-reset text-decoration-none d-flex align-items-center justify-content-end fw-bold">
+                            <i class="fa-solid fa-bag-shopping fs-5 me-2"></i>
+                            <span class="d-none d-md-inline text-uppercase" style="font-size: 0.9rem;">Basket</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="account-page-wrapper bg-light min-vh-100 pb-5">
+        <div class="container-fluid px-0 px-md-4 px-lg-5 pt-0 pt-md-4">
+            <div class="row g-0 g-md-4">
+
+                <!-- Desktop Sidebar Navigation -->
+                <aside class="col-md-3 d-none d-md-block">
+                    <div class="sidebar-nav bg-white p-3 border-0">
+                        <!-- Account Home -->
+                        <div class="nav-section mb-4">
+                            <h6 class="text-uppercase fw-bold mb-3 px-2" style="font-size: 0.8rem;">
+                                <a href="account-home-page.html" class="text-decoration-none text-dark">Account Home</a>
+                            </h6>
+                        </div>
+
+                        <!-- My Account -->
+                        <div class="nav-section mb-4">
+                            <h6 class="text-uppercase fw-bold mb-2 px-2" style="font-size: 0.8rem;">My Account</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="my-orders-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-cube me-2 text-muted" style="width: 20px;"></i> My
+                                        Orders</a></li>
+                                <li><a href="#"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark active fw-bold bg-light"><i
+                                            class="fa-regular fa-heart me-2" style="width: 20px;"></i> Wishlist</a></li>
+                                <li><a href="account-credit-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark d-flex justify-content-between align-items-center"><span
+                                            class="d-flex align-items-center"><i
+                                                class="fa-solid fa-wallet me-2 text-muted" style="width: 20px;"></i>
+                                            Account Credit</span> <span class="fw-bold">0.00€</span></a></li>
+                                <li><a href="my-cult-status-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-crown me-2 text-muted" style="width: 20px;"></i> My Cult
+                                        Status</a></li>
+                                <li><a href="my-profile-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-user me-2 text-muted" style="width: 20px;"></i> My
+                                        Profile</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-user-group me-2 text-muted" style="width: 20px;"></i> My
+                                        Referrals</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Account Settings -->
+                        <div class="nav-section mb-4">
+                            <h6 class="text-uppercase fw-bold mb-2 px-2" style="font-size: 0.8rem;">Account Settings
+                            </h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="account-details-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-address-card me-2 text-muted" style="width: 20px;"></i>
+                                        Account Details</a></li>
+                                <li><a href="payment-cards-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-credit-card me-2 text-muted" style="width: 20px;"></i>
+                                        Payment Cards</a></li>
+                                <li><a href="address-book-page.html" class="d-block py-2 px-2 text-decoration-none text-dark"><i class="fa-solid fa-address-book me-2 text-muted" style="width: 20px;"></i>
+                                        Address Book</a></li>
+                                <li><a href="contact-preferences-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-sliders me-2 text-muted" style="width: 20px;"></i>
+                                        Contact Preferences</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Customer Service -->
+                        <div class="nav-section mb-4">
+                            <h6 class="text-uppercase fw-bold mb-2 px-2" style="font-size: 0.8rem;">Customer Service
+                            </h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-life-ring me-2 text-muted" style="width: 20px;"></i>
+                                        Help Centre</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-message me-2 text-muted" style="width: 20px;"></i>
+                                        Messages</a></li>
+                            </ul>
+
+                        </div>
+
+                        <!-- Log out -->
+                        <div class="nav-section">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-arrow-right-from-bracket me-2 text-muted"
+                                            style="width: 20px;"></i> Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Main Content Area -->
+                <div class="col-12 col-md-9">
+                    <div class="bg-white p-4 p-md-5 h-100">
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <h2 class="h4 mb-0 fw-normal">Wishlist</h2>
+                        </div>
+
+                        <!-- Toolbar -->
+                        <div class="d-flex justify-content-between align-items-center mb-4">
+                            <span class="text-muted" style="font-size: 0.9rem;">4 items</span>
+                            <div class="d-flex align-items-center">
+                                <span class="me-2 text-muted" style="font-size: 0.9rem;">Sort By</span>
+                                <select class="form-select form-select-sm rounded-0 border-secondary"
+                                    style="width: auto; font-size: 0.9rem;">
+                                    <option selected>Default</option>
+                                    <option value="price-asc">Price: Low to High</option>
+                                    <option value="price-desc">Price: High to Low</option>
+                                    <option value="newest">Newest Arrivals</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <!-- Product Grid -->
+                        <div class="row row-cols-2 row-cols-md-2 row-cols-lg-3 g-4">
+
+                            <!-- Product 1: PATRICK TA -->
+                            <div class="col">
+                                <div class="product-card position-relative h-100 d-flex flex-column">
+                                    <button
+                                        class="btn-close-custom position-absolute top-0 end-0 p-2 border-0 bg-transparent text-muted"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                    <div class="product-image mb-3 text-center">
+                                        <img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?q=80&w=2680&auto=format&fit=crop"
+                                            alt="PATRICK TA Blush" class="img-fluid"
+                                            style="aspect-ratio: 1/1; object-fit: contain;">
+                                    </div>
+                                    <div class="product-info flex-grow-1">
+                                        <h3 class="product-title fs-6 fw-normal mb-2">PATRICK TA Major Headlines
+                                            Double-Take Cream and Powder Blush Duo (Various Shades)</h3>
+                                        <div class="product-price mb-2">
+                                            <span class="text-muted small">from</span> <span
+                                                class="fw-bold">38.95€</span>
+                                        </div>
+                                        <div class="product-options mb-3">
+                                            <label class="form-label small fw-bold mb-1">Shade:</label>
+                                            <select class="form-select form-select-sm rounded-0">
+                                                <option selected>Select option</option>
+                                                <option>She's a Doll</option>
+                                                <option>She's Vibrant</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="product-actions mt-auto">
+                                        <button
+                                            class="btn btn-secondary w-100 rounded-0 text-uppercase py-2 small disabled"
+                                            style="font-size: 0.8rem; letter-spacing: 0.5px;">Out of Stock</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 2: Anua -->
+                            <div class="col">
+                                <div class="product-card position-relative h-100 d-flex flex-column">
+                                    <button
+                                        class="btn-close-custom position-absolute top-0 end-0 p-2 border-0 bg-transparent text-muted"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                    <div class="product-image mb-3 text-center">
+                                        <img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?q=80&w=2680&auto=format&fit=crop"
+                                            alt="Anua Serum" class="img-fluid"
+                                            style="aspect-ratio: 1/1; object-fit: contain;">
+                                    </div>
+                                    <div class="product-info flex-grow-1">
+                                        <h3 class="product-title fs-6 fw-normal mb-2">Anua Niacinamide 10% + TXA 4%
+                                            Serum 30ml</h3>
+                                        <div class="product-price mb-3">
+                                            <span class="fw-bold">25.45€</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-actions mt-auto">
+                                        <button class="btn btn-black w-100 rounded-0 text-uppercase py-2 small"
+                                            style="font-size: 0.8rem; letter-spacing: 0.5px;">Add to Basket</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 3: The Ordinary -->
+                            <div class="col">
+                                <div class="product-card position-relative h-100 d-flex flex-column">
+                                    <button
+                                        class="btn-close-custom position-absolute top-0 end-0 p-2 border-0 bg-transparent text-muted"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                    <div class="product-image mb-3 text-center">
+                                        <img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?q=80&w=2680&auto=format&fit=crop"
+                                            alt="The Ordinary Serum" class="img-fluid"
+                                            style="aspect-ratio: 1/1; object-fit: contain;">
+                                    </div>
+                                    <div class="product-info flex-grow-1">
+                                        <h3 class="product-title fs-6 fw-normal mb-2">The Ordinary PHA 5% Exfoliating
+                                            Lip Serum 15ml</h3>
+                                        <div class="product-price mb-3">
+                                            <span class="fw-bold">8.95€</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-actions mt-auto">
+                                        <button class="btn btn-black w-100 rounded-0 text-uppercase py-2 small"
+                                            style="font-size: 0.8rem; letter-spacing: 0.5px;">Add to Basket</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Product 4: Another Item (Matches Row Count) -->
+                            <div class="col">
+                                <div class="product-card position-relative h-100 d-flex flex-column">
+                                    <button
+                                        class="btn-close-custom position-absolute top-0 end-0 p-2 border-0 bg-transparent text-muted"><i
+                                            class="fa-solid fa-xmark"></i></button>
+                                    <div class="product-image mb-3 text-center">
+                                        <img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?q=80&w=2680&auto=format&fit=crop"
+                                            alt="Another Product" class="img-fluid"
+                                            style="aspect-ratio: 1/1; object-fit: contain;">
+                                    </div>
+                                    <div class="product-info flex-grow-1">
+                                        <h3 class="product-title fs-6 fw-normal mb-2">Caudalie Vinoperfect Radiance
+                                            Serum Complexion Correcting 30ml</h3>
+                                        <div class="product-price mb-3">
+                                            <span class="fw-bold">48.00€</span>
+                                        </div>
+                                    </div>
+                                    <div class="product-actions mt-auto">
+                                        <button class="btn btn-black w-100 rounded-0 text-uppercase py-2 small"
+                                            style="font-size: 0.8rem; letter-spacing: 0.5px;">Add to Basket</button>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4 border-top">
+        <p class="mb-0 text-muted" style="font-size: 0.8rem;">&copy; 2024 The Hut.com Ltd t/a CultBeauty.com</p>
+    </footer>
+
+    <!-- Mobile Navigation Overlay -->
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay d-md-none position-fixed top-0 start-0 w-100 h-100 bg-white"
+        style="z-index: 1050; transform: translateX(-100%); transition: transform 0.3s ease-in-out;">
+        <!-- Mobile Menu Header -->
+        <div class="p-3 border-bottom d-flex align-items-center justify-content-between">
+            <button class="btn border-0 p-0" id="mobileMenuCloseBtn">
+                <i class="fa-solid fa-xmark fs-4"></i>
+            </button>
+            <img width="100" src="./assets/img/logo/nour-dark-logo.png" alt="Nour Beauty">
+            <a href="cart-page.html" class="text-reset"><i class="fa-solid fa-bag-shopping fs-5"></i></a>
+        </div>
+
+        <!-- Mobile User Info -->
+        <div class="bg-light p-3 border-bottom">
+            <h5 class="mb-1 fw-bold">MD Masudur Rahman</h5>
+            <p class="mb-0 text-muted small">Credit: 0.00€</p>
+        </div>
+
+        <!-- Mobile Menu Links (Scrollable) -->
+        <div class="mobile-menu-content overflow-auto" style="height: calc(100% - 135px);">
+            <!-- Account Home -->
+            <div class="p-3 border-bottom">
+                <h6 class="fw-bold mb-0"><a href="account-home-page.html" class="text-decoration-none text-dark">Account
+                        Home</a></h6>
+            </div>
+
+            <!-- My Account -->
+            <div class="py-2 border-bottom">
+                <h6 class="px-3 fw-bold text-uppercase text-muted small mb-2 mt-2">My Account</h6>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">My Orders</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark fw-bold">Wishlist</a>
+                <a href="account-credit-page.html"
+                    class="d-block px-3 py-2 text-decoration-none text-dark d-flex justify-content-between">Account
+                    Credit <span>0.00€</span></a>
+                <a href="my-cult-status-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">My Cult
+                    Status</a>
+                <a href="my-profile-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">My Profile</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">My Referrals</a>
+            </div>
+
+            <!-- Account Settings -->
+            <div class="py-2 border-bottom">
+                <h6 class="px-3 fw-bold text-uppercase text-muted small mb-2 mt-2">Account Settings</h6>
+                <a href="account-details-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Account
+                    Details</a>
+                <a href="payment-cards-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Payment
+                    Cards</a>
+                <a href="address-book-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Address Book</a>
+                <a href="contact-preferences-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Contact Preferences</a>
+            </div>
+
+            <!-- Customer Service -->
+            <div class="py-2 border-bottom">
+                <h6 class="px-3 fw-bold text-uppercase text-muted small mb-2 mt-2">Customer Service</h6>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Help Centre</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Messages</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Facebook</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Twitter</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Instagram</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">TikTok</a>
+            </div>
+
+            <div class="p-3 border-bottom">
+                <a href="#" class="d-flex align-items-center text-decoration-none text-dark fw-bold">
+                    <i class="fa-solid fa-arrow-right-from-bracket me-2"></i> Log out
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/wishlist.js"></script>
+</body>
+
+</html>

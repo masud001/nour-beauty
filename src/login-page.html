@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login | Nour Beauty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link rel="stylesheet" href="./assets/scss/style.scss" />
+</head>
+
+<body>
+
+    <main class="login-page-container">
+        <div class="container-fluid p-0">
+            <div class="row g-0">
+                <!-- Left Column: Login Form -->
+                <div
+                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center vh-100 bg-white order-2 order-md-1">
+                    <div class="login-form-wrapper w-100 p-4" style="max-width: 480px;">
+
+                        <!-- Logo -->
+                        <div class="text-center mb-5">
+                            <img id="brand-logo" width="200" height="40" src="./assets/img/logo/nour-dark-logo.png"
+                                alt="brand-logo" />
+                        </div>
+
+                        <!-- Heading -->
+                        <div class="mb-4">
+                            <h3 class="h4 fw-normal">Log in to continue</h3>
+                        </div>
+
+                        <!-- Login Form -->
+                        <form action="#" method="POST">
+                            <!-- Email Input -->
+                            <div class="mb-3">
+                                <label for="emailInput"
+                                    class="form-label d-flex justify-content-between align-items-center"
+                                    style="font-weight: 600; font-size: 0.9rem;">
+                                    Email Address
+                                    <span class="text-muted fw-normal fst-italic"
+                                        style="font-size: 0.8rem;">(required)</span>
+                                </label>
+                                <input type="email" class="form-control rounded-0" id="emailInput"
+                                    style="height: 50px;">
+                            </div>
+
+                            <!-- Password Input -->
+                            <div class="mb-2 position-relative">
+                                <label for="passwordInput"
+                                    class="form-label d-flex justify-content-between align-items-center"
+                                    style="font-weight: 600; font-size: 0.9rem;">
+                                    Password
+                                    <span class="text-muted fw-normal fst-italic"
+                                        style="font-size: 0.8rem;">(required)</span>
+                                </label>
+                                <input type="password" class="form-control rounded-0" id="passwordInput"
+                                    style="height: 50px;">
+                            </div>
+
+                            <!-- Show Password Toggle -->
+                            <div class="text-end mb-4">
+                                <button type="button"
+                                    class="btn btn-link text-decoration-none text-muted p-0 text-uppercase"
+                                    style="font-size: 0.85rem;" onclick="togglePassword()">Show</button>
+                            </div>
+
+                            <!-- Login Button -->
+                            <div class="mb-3">
+                                <button type="submit"
+                                    class="btn btn-black w-100 rounded-0 text-white fw-bold text-uppercase py-3"
+                                    style="background-color: #000; letter-spacing: 1px;">Login</button>
+                            </div>
+
+                            <!-- Forgot Password -->
+                            <div class="text-center mb-5">
+                                <a href="#" class="text-decoration-underline text-dark"
+                                    style="font-size: 0.9rem;">Forgot Password?</a>
+                            </div>
+
+                            <!-- Continue With -->
+                            <div class="mb-4">
+                                <p class="mb-3" style="font-size: 1rem;">Continue with</p>
+                                <div class="row g-2">
+                                    <div class="col-6">
+                                        <button type="button"
+                                            class="btn w-100 rounded-0 py-2 d-flex align-items-center justify-content-center text-white"
+                                            style="background-color: #3b5998; height: 50px;">
+                                            <i class="fa-brands fa-facebook-f me-2"></i> Facebook
+                                        </button>
+                                    </div>
+                                    <div class="col-6">
+                                        <button type="button"
+                                            class="btn w-100 rounded-0 border py-2 d-flex align-items-center justify-content-center bg-white"
+                                            style="height: 50px;">
+                                            <svg class="me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
+                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18"
+                                                version="1.1">
+                                                <g id="Google-Button" stroke="none" stroke-width="1" fill="none"
+                                                    fill-rule="evenodd">
+                                                    <path
+                                                        d="M17.64,9.20454545 C17.64,8.56636364 17.5827273,7.95272727 17.4763636,7.36363636 L9,7.36363636 L9,10.845 L13.8436364,10.845 C13.635,11.97 13.0009091,12.9231818 12.0477273,13.5613636 L12.0477273,15.8195455 L14.9563636,15.8195455 C16.6581818,14.2527273 17.64,11.9454545 17.64,9.20454545 L17.64,9.20454545 Z"
+                                                        fill="#4285F4" />
+                                                    <path
+                                                        d="M9,18 C11.43,18 13.4672727,17.1940909 14.9563636,15.8195455 L12.0477273,13.5613636 C11.2418182,14.1013636 10.2109091,14.4204545 9,14.4204545 C6.65590909,14.4204545 4.67181818,12.8372727 3.96409091,10.71 L0.957272727,10.71 L0.957272727,13.0418182 C2.43818182,15.9831818 5.48181818,18 9,18 L9,18 Z"
+                                                        fill="#34A853" />
+                                                    <path
+                                                        d="M3.96409091,10.71 C3.78409091,10.17 3.68181818,9.59318182 3.68181818,9 C3.68181818,8.40681818 3.78409091,7.83 3.96409091,7.29 L3.96409091,4.95818182 L0.957272727,4.95818182 C0.347727273,6.17318182 0,7.54772727 0,9 C0,10.4522727 0.347727273,11.8268182 0.957272727,13.0418182 L3.96409091,10.71 L3.96409091,10.71 Z"
+                                                        fill="#FBBC05" />
+                                                    <path
+                                                        d="M9,3.57954545 C10.3213636,3.57954545 11.5077273,4.03363636 12.4404545,4.92545455 L15.0218182,2.34409091 C13.4631818,0.891818182 11.4259091,0 9,0 C5.48181818,0 2.43818182,2.01681818 0.957272727,4.95818182 L3.96409091,7.29 C4.67181818,5.16272727 6.65590909,3.57954545 9,3.57954545 L9,3.57954545 Z"
+                                                        fill="#EA4335" />
+                                                </g>
+                                            </svg> Google
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- OR Separator -->
+                            <div class="position-relative text-center mb-5">
+                                <hr class="my-0" style="opacity: 0.15;">
+                                <span
+                                    class="position-absolute top-50 start-50 translate-middle bg-white px-3 text-uppercase"
+                                    style="font-size: 0.8rem; letter-spacing: 1px;">OR</span>
+                            </div>
+
+                            <!-- Sign Up Link -->
+                            <div class="text-center">
+                                <a href="signup-page.html" class="fw-bold text-dark text-decoration-underline">New Here?
+                                    Sign up today!</a>
+                            </div>
+
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Right Column: Image -->
+                <div
+                    class="col-12 col-md-6 d-none d-md-block vh-100 p-0 order-1 order-md-2 position-relative overflow-hidden">
+                    <img src="./assets/img/hero-banner-1.jpg" alt="Login Banner" class="w-100 h-100 object-fit-cover"
+                        onerror="this.src='https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=2574&auto=format&fit=crop'">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function togglePassword() {
+            const passwordInput = document.getElementById('passwordInput');
+            const toggleBtn = event.target;
+
+            if (passwordInput.type === 'password') {
+                passwordInput.type = 'text';
+                toggleBtn.textContent = 'Hide';
+            } else {
+                passwordInput.type = 'password';
+                toggleBtn.textContent = 'Show';
+            }
+        }
+    </script>
+</body>
+
+</html>
