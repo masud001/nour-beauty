@@ -112,8 +112,171 @@ const swiper2 = new Swiper(".categorySlider", {
       slidesPerView: 6,
       centeredSlides: false,
       spaceBetween: 50,
-      navigation: false,
-      pagination: false,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+  },
+});
+// newCategorySlider
+const newCategorySlider = new Swiper(".newCategorySlider", {
+  direction: "horizontal",
+  loop: false,
+  slidesPerView: 3,
+  spaceBetween: 24,
+  breakpoints: {
+    480: {
+      slidesPerView: 4,
+      spaceBetween: 28,
+    },
+    640: {
+      slidesPerView: 5,
+      spaceBetween: 32,
+    },
+    768: {
+      slidesPerView: 6,
+      spaceBetween: 32,
+    },
+    1024: {
+      slidesPerView: 7,
+      spaceBetween: 36,
+    },
+    1280: {
+      slidesPerView: 8,
+      spaceBetween: 40,
+    },
+  },
+});
+const concernSlider = new Swiper(".concernSlider", {
+  direction: "horizontal",
+  breakpoints: {
+    320: {
+      loop: true,
+      slidesPerView: 2,
+      centeredSlides: true,
+      spaceBetween: 50,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    480: {
+      loop: true,
+      slidesPerView: 3,
+      centeredSlides: true,
+      spaceBetween: 50,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    640: {
+      loop: true,
+      slidesPerView: 3,
+      centeredSlides: false,
+      spaceBetween: 70,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    762: {
+      loop: true,
+      slidesPerView: 4,
+      centeredSlides: false,
+      spaceBetween: 70,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    992: {
+      loop: true,
+      slidesPerView: 4,
+      centeredSlides: false,
+      spaceBetween: 50,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    1080: {
+      loop: true,
+      slidesPerView: 5,
+      centeredSlides: false,
+      spaceBetween: 50,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    1280: {
+      loop: false,
+      slidesPerView: 6,
+      centeredSlides: false,
+      spaceBetween: 50,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+  },
+});
+// featureCardsSlider
+const featureCardsSlider = new Swiper(".featureCardsSlider", {
+  loop: false,
+  slidesPerView: 1.5,
+  spaceBetween: 16,
+  breakpoints: {
+    480: {
+      slidesPerView: 1.5,
+      spaceBetween: 18,
+    },
+    640: {
+      slidesPerView: 2.1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 2.3,
+      spaceBetween: 22,
+    },
+    1024: {
+      slidesPerView: 4,
+      spaceBetween: 24,
+      allowTouchMove: false,
     },
   },
 });
@@ -197,6 +360,95 @@ const blogMenu = new Swiper(".blogMenu", {
       spaceBetween: 50,
       navigation: false,
       pagination: false,
+    },
+  },
+});
+const ingredientSlider = new Swiper(".ingredientSlider", {
+  direction: "horizontal",
+  breakpoints: {
+    320: {
+      loop: true,
+      slidesPerView: 1.4,
+      centeredSlides: true,
+      spaceBetween: 16,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    480: {
+      loop: true,
+      slidesPerView: 2,
+      centeredSlides: true,
+      spaceBetween: 18,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    640: {
+      loop: true,
+      slidesPerView: 2.5,
+      centeredSlides: false,
+      spaceBetween: 24,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    768: {
+      loop: true,
+      slidesPerView: 3,
+      centeredSlides: false,
+      spaceBetween: 28,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    1024: {
+      loop: true,
+      slidesPerView: 4,
+      centeredSlides: false,
+      spaceBetween: 32,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    },
+    1280: {
+      loop: false,
+      slidesPerView: 4,
+      centeredSlides: false,
+      spaceBetween: 36,
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
     },
   },
 });
@@ -595,7 +847,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const logo = document.getElementById("brand-logo");
   // Define logo paths
   const darkModeLogo = "./assets/img/logo/nour-light-logo.png";
-  const lightModeLogo = "./assets/img/logo/nour-dark-logo.png";
+  const lightModeLogo = "./assets/img/logo/brand-logo.svg";
 
   // Load saved theme from localStorage
   const savedTheme = localStorage.getItem("theme");

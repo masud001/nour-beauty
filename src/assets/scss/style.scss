@@ -4,6 +4,7 @@
 @import "../fonts/averta/fonts.css";
 
 // section scss file import
+@import "./new-top-banner";
 @import "./Home-slider";
 @import "./Banner-Sections.scss";
 @import "./category-section";
@@ -18,6 +19,7 @@
 @import "./sliders";
 @import "./tab-content";
 @import "./custom-modal";
+@import "./trust-grid-section";
 
 // pages product page
 @import "./single-product-page";
@@ -37,6 +39,7 @@
 @import "./account-credit-page";
 @import "./my-cult-status-page";
 @import "./my-profile-page";
+@import "./shop-by-brands";
 
 
 *,

@@ -1,8 +1,21 @@
-.dynamic-tab-content{
-    button{
+.dynamic-tab-content {
+    button {
         @media (max-width: 768px) {
             font-size: 18px !important;
             padding: 6px 15px !important;
         }
+    }
+
+    .block button.w-full {
+        background-color: #EADCFD !important;
+        color: #000 !important;
+    }
+
+    .block button.w-full:hover {
+        background-color: #d7c2fa !important;
+    }
+
+    .tab-content img {
+        border-radius: 12px;
     }
 }
