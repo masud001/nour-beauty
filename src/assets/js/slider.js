@@ -8,12 +8,15 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function showNextSlide() {
+    if (slides.length === 0) return;
     slides[currentSlide].classList.remove("active");
     currentSlide = (currentSlide + 1) % slides.length;
     slides[currentSlide].classList.add("active");
   }
 
-  setInterval(showNextSlide, 3000);
+  if (slides.length > 1) {
+    setInterval(showNextSlide, 3000);
+  }
 });
 
 // categorySlider
@@ -22,13 +25,12 @@ const swiper2 = new Swiper(".categorySlider", {
   direction: "horizontal",
   breakpoints: {
     320: {
-      loop: true,
+      loop: false,
       slidesPerView: 2,
-      centeredSlides: true,
       spaceBetween: 50,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".category-slider-next",
+        prevEl: ".category-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -37,13 +39,12 @@ const swiper2 = new Swiper(".categorySlider", {
     },
 
     480: {
-      loop: true,
-      slidesPerView: 3,
-      centeredSlides: true,
+      loop: false,
+      slidesPerView: 2,
       spaceBetween: 50,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".category-slider-next",
+        prevEl: ".category-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -52,13 +53,12 @@ const swiper2 = new Swiper(".categorySlider", {
     },
 
     640: {
-      loop: true,
+      loop: false,
       slidesPerView: 3,
-      centeredSlides: false,
       spaceBetween: 70,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".category-slider-next",
+        prevEl: ".category-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -66,13 +66,12 @@ const swiper2 = new Swiper(".categorySlider", {
       },
     },
     762: {
-      loop: true,
+      loop: false,
       slidesPerView: 4,
-      centeredSlides: false,
       spaceBetween: 70,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".category-slider-next",
+        prevEl: ".category-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -80,13 +79,12 @@ const swiper2 = new Swiper(".categorySlider", {
       },
     },
     992: {
-      loop: true,
+      loop: false,
       slidesPerView: 4,
-      centeredSlides: false,
       spaceBetween: 50,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".category-slider-next",
+        prevEl: ".category-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -94,13 +92,12 @@ const swiper2 = new Swiper(".categorySlider", {
       },
     },
     1080: {
-      loop: true,
+      loop: false,
       slidesPerView: 5,
-      centeredSlides: false,
       spaceBetween: 50,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".category-slider-next",
+        prevEl: ".category-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -110,11 +107,10 @@ const swiper2 = new Swiper(".categorySlider", {
     1280: {
       loop: false,
       slidesPerView: 6,
-      centeredSlides: false,
       spaceBetween: 50,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".category-slider-next",
+        prevEl: ".category-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -127,28 +123,39 @@ const swiper2 = new Swiper(".categorySlider", {
 const newCategorySlider = new Swiper(".newCategorySlider", {
   direction: "horizontal",
   loop: false,
-  slidesPerView: 3,
-  spaceBetween: 24,
+  watchOverflow: true,
+  initialSlide: 0,
+  centeredSlides: false,
+  pagination: {
+    el: ".newCategorySlider .swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".newCategorySlider .new-category-next",
+    prevEl: ".newCategorySlider .new-category-prev",
+  },
+  slidesPerView: 3.7,
+  spaceBetween: 8,
   breakpoints: {
     480: {
-      slidesPerView: 4,
-      spaceBetween: 28,
+      slidesPerView: 3.7,
+      spaceBetween: 20,
     },
     640: {
       slidesPerView: 5,
-      spaceBetween: 32,
+      spaceBetween: 20,
     },
     768: {
       slidesPerView: 6,
-      spaceBetween: 32,
+      spaceBetween: 20,
     },
     1024: {
       slidesPerView: 7,
-      spaceBetween: 36,
+      spaceBetween: 20,
     },
     1280: {
-      slidesPerView: 8,
-      spaceBetween: 40,
+      slidesPerView: 9,
+      spaceBetween: 20,
     },
   },
 });
@@ -156,13 +163,13 @@ const concernSlider = new Swiper(".concernSlider", {
   direction: "horizontal",
   breakpoints: {
     320: {
-      loop: true,
+      loop: false,
       slidesPerView: 2,
-      centeredSlides: true,
-      spaceBetween: 50,
+
+      spaceBetween: 20,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".concern-slider-next",
+        prevEl: ".concern-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -170,13 +177,13 @@ const concernSlider = new Swiper(".concernSlider", {
       },
     },
     480: {
-      loop: true,
+      loop: false,
       slidesPerView: 3,
-      centeredSlides: true,
-      spaceBetween: 50,
+
+      spaceBetween: 20,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".concern-slider-next",
+        prevEl: ".concern-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -184,13 +191,12 @@ const concernSlider = new Swiper(".concernSlider", {
       },
     },
     640: {
-      loop: true,
+      loop: false,
       slidesPerView: 3,
-      centeredSlides: false,
-      spaceBetween: 70,
+      spaceBetween: 20,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".concern-slider-next",
+        prevEl: ".concern-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -198,13 +204,12 @@ const concernSlider = new Swiper(".concernSlider", {
       },
     },
     762: {
-      loop: true,
+      loop: false,
       slidesPerView: 4,
-      centeredSlides: false,
-      spaceBetween: 70,
+      spaceBetween: 20,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".concern-slider-next",
+        prevEl: ".concern-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -212,13 +217,12 @@ const concernSlider = new Swiper(".concernSlider", {
       },
     },
     992: {
-      loop: true,
+      loop: false,
       slidesPerView: 4,
-      centeredSlides: false,
-      spaceBetween: 50,
+      spaceBetween: 20,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".concern-slider-next",
+        prevEl: ".concern-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -226,13 +230,12 @@ const concernSlider = new Swiper(".concernSlider", {
       },
     },
     1080: {
-      loop: true,
+      loop: false,
       slidesPerView: 5,
-      centeredSlides: false,
-      spaceBetween: 50,
+      spaceBetween: 20,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".concern-slider-next",
+        prevEl: ".concern-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -242,11 +245,10 @@ const concernSlider = new Swiper(".concernSlider", {
     1280: {
       loop: false,
       slidesPerView: 6,
-      centeredSlides: false,
-      spaceBetween: 50,
+      spaceBetween: 20,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".concern-slider-next",
+        prevEl: ".concern-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -259,23 +261,23 @@ const concernSlider = new Swiper(".concernSlider", {
 const featureCardsSlider = new Swiper(".featureCardsSlider", {
   loop: false,
   slidesPerView: 1.5,
-  spaceBetween: 16,
+  spaceBetween: 8,
   breakpoints: {
     480: {
       slidesPerView: 1.5,
-      spaceBetween: 18,
+      spaceBetween: 8,
     },
     640: {
       slidesPerView: 2.1,
-      spaceBetween: 20,
+      spaceBetween: 8,
     },
     768: {
       slidesPerView: 2.3,
-      spaceBetween: 22,
+      spaceBetween: 8,
     },
     1024: {
       slidesPerView: 4,
-      spaceBetween: 24,
+      spaceBetween: 8,
       allowTouchMove: false,
     },
   },
@@ -288,7 +290,7 @@ const blogMenu = new Swiper(".blogMenu", {
     320: {
       loop: true,
       slidesPerView: 2,
-      centeredSlides: true,
+
       spaceBetween: 50,
       navigation: {
         nextEl: ".swiper-button-next",
@@ -303,7 +305,7 @@ const blogMenu = new Swiper(".blogMenu", {
     480: {
       loop: true,
       slidesPerView: 2,
-      centeredSlides: true,
+
       spaceBetween: 50,
       navigation: {
         nextEl: ".swiper-button-next",
@@ -367,13 +369,12 @@ const ingredientSlider = new Swiper(".ingredientSlider", {
   direction: "horizontal",
   breakpoints: {
     320: {
-      loop: true,
       slidesPerView: 1.4,
-      centeredSlides: true,
+
       spaceBetween: 16,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".ingredient-slider-next",
+        prevEl: ".ingredient-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -381,13 +382,12 @@ const ingredientSlider = new Swiper(".ingredientSlider", {
       },
     },
     480: {
-      loop: true,
+      loop: false,
       slidesPerView: 2,
-      centeredSlides: true,
       spaceBetween: 18,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".ingredient-slider-next",
+        prevEl: ".ingredient-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -395,13 +395,12 @@ const ingredientSlider = new Swiper(".ingredientSlider", {
       },
     },
     640: {
-      loop: true,
+      loop: false,
       slidesPerView: 2.5,
-      centeredSlides: false,
       spaceBetween: 24,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".ingredient-slider-next",
+        prevEl: ".ingredient-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -409,13 +408,12 @@ const ingredientSlider = new Swiper(".ingredientSlider", {
       },
     },
     768: {
-      loop: true,
+      loop: false,
       slidesPerView: 3,
-      centeredSlides: false,
       spaceBetween: 28,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".ingredient-slider-next",
+        prevEl: ".ingredient-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -423,13 +421,12 @@ const ingredientSlider = new Swiper(".ingredientSlider", {
       },
     },
     1024: {
-      loop: true,
+      loop: false,
       slidesPerView: 4,
-      centeredSlides: false,
       spaceBetween: 32,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".ingredient-slider-next",
+        prevEl: ".ingredient-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -439,11 +436,10 @@ const ingredientSlider = new Swiper(".ingredientSlider", {
     1280: {
       loop: false,
       slidesPerView: 4,
-      centeredSlides: false,
       spaceBetween: 36,
       navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+        nextEl: ".ingredient-slider-next",
+        prevEl: ".ingredient-slider-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -466,8 +462,26 @@ const swiper1 = new Swiper(".homeSlider", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".home-slider-next",
+    prevEl: ".home-slider-prev",
+  },
+});
+// sub category home slider
+const subCategoryHomeSlider = new Swiper(".subCategoryHomeSlider", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: ".sub-category-home-next",
+    prevEl: ".sub-category-home-prev",
   },
 });
 // tab content slider
@@ -487,7 +501,7 @@ const swiper3 = new Swiper(".tabContentSlider", {
     320: {
       centeredSlides: false,
       slidesPerView: "auto",
-      spaceBetween: 20,
+      spaceBetween: 10,
     },
     400: {
       centeredSlides: false,
@@ -497,17 +511,17 @@ const swiper3 = new Swiper(".tabContentSlider", {
     768: {
       centeredSlides: false,
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 20,
     },
     1024: {
       centeredSlides: false,
       slidesPerView: 3,
-      spaceBetween: 35,
+      spaceBetween: 20,
     },
     1280: {
       centeredSlides: false,
       slidesPerView: 4,
-      spaceBetween: 35,
+      spaceBetween: 20,
     },
   },
 });
@@ -602,8 +616,8 @@ const swiper7 = new Swiper(".productListingTypeOne", {
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".category-slider-next",
+    prevEl: ".category-slider-prev",
   },
   breakpoints: {
     320: {
@@ -682,8 +696,8 @@ const swiper9 = new Swiper(".productListingTypeThree", {
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".category-slider-next",
+    prevEl: ".category-slider-prev",
   },
   breakpoints: {
     320: {
@@ -758,12 +772,12 @@ const swiper5 = new Swiper(".blogSlider", {
   direction: "horizontal",
   loop: false,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".blog-slider-pagination",
     clickable: true,
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".blog-slider-next",
+    prevEl: ".blog-slider-prev",
   },
   breakpoints: {
     320: {
@@ -779,17 +793,17 @@ const swiper5 = new Swiper(".blogSlider", {
     768: {
       centeredSlides: false,
       slidesPerView: 2,
-      spaceBetween: 40,
+      spaceBetween: 20,
     },
     1024: {
       centeredSlides: false,
       slidesPerView: 3,
-      spaceBetween: 35,
+      spaceBetween: 20,
     },
     1280: {
       centeredSlides: false,
       slidesPerView: 5,
-      spaceBetween: 35,
+      spaceBetween: 20,
     },
   },
 });
@@ -812,10 +826,21 @@ tabButtons.forEach((button) => {
     );
 
     // Show the target tab content
-    document.getElementById(targetTab).classList.remove("hidden");
+    const activeTab = document.getElementById(targetTab);
+    activeTab.classList.remove("hidden");
 
     // Add active styles to the clicked button
     button.classList.add("font-bold", "text-black", "border-black");
+
+    requestAnimationFrame(() => {
+      activeTab.querySelectorAll(".tabContentSlider").forEach((sliderEl) => {
+        const swiperInstance = sliderEl.swiper;
+        if (!swiperInstance) return;
+
+        swiperInstance.update();
+        swiperInstance.navigation?.update?.();
+      });
+    });
   });
 });
 
@@ -837,41 +862,5 @@ document.addEventListener("DOMContentLoaded", function () {
     closeBtn.addEventListener("click", () => {
       overlay.classList.remove("active");
     });
-  });
-});
-
-// dark mode light mode toggle script
-document.addEventListener("DOMContentLoaded", () => {
-  const themeToggleBtn = document.getElementById("theme-toggle-btn");
-  const body = document.body;
-  const logo = document.getElementById("brand-logo");
-  // Define logo paths
-  const darkModeLogo = "./assets/img/logo/nour-light-logo.png";
-  const lightModeLogo = "./assets/img/logo/brand-logo.svg";
-
-  // Load saved theme from localStorage
-  const savedTheme = localStorage.getItem("theme");
-  if (savedTheme === "dark") {
-    body.classList.add("dark-mode");
-    themeToggleBtn.innerHTML = '<i class="fa-solid fa-sun"></i>';
-    logo.src = darkModeLogo;
-  } else {
-    themeToggleBtn.innerHTML = '<i class="fa-solid fa-moon"></i>';
-    logo.src = lightModeLogo;
-  }
-
-  // Toggle theme on button click
-  themeToggleBtn.addEventListener("click", () => {
-    body.classList.toggle("dark-mode");
-    const isDarkMode = body.classList.contains("dark-mode");
-
-    // Update button icon
-    themeToggleBtn.innerHTML = isDarkMode
-      ? '<i class="fa-regular fa-sun"></i>'
-      : '<i class="fa-solid fa-moon"></i>';
-
-    logo.src = isDarkMode ? darkModeLogo : lightModeLogo;
-    // Save preference to localStorage
-    localStorage.setItem("theme", isDarkMode ? "dark" : "light");
   });
 });

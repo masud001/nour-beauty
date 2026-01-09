@@ -10,16 +10,3 @@
 }
 
 /* Dark Mode Overrides */
-body.dark-mode {
-    .account-page-wrapper {
-        .bg-white {
-            background-color: vars.$dark-background !important;
-            border-color: #333 !important;
-            color: vars.$dark-primary-color !important;
-        }
-
-        .border-top {
-            border-color: #333 !important;
-        }
-    }
-}

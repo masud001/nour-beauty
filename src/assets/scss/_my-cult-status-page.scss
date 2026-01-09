@@ -16,18 +16,3 @@
 }
 
 /* Dark Mode Overrides */
-body.dark-mode {
-    .border-end-md {
-        border-right-color: #333 !important;
-    }
-
-
-    /* Ensure links stand out in dark mode */
-    a.text-dark {
-        color: vars.$dark-primary-color !important;
-    }
-
-    .fa-trophy {
-        color: vars.$dark-primary-color;
-    }
-}

@@ -5,24 +5,3 @@
 /* Inherits layout from _wishlist-page.scss and others */
 
 /* Dark Mode Overrides */
-body.dark-mode {
-    .bg-white {
-        background-color: vars.$dark-card-bg !important;
-        border-color: vars.$dark-border-color !important;
-        color: vars.$dark-text-color;
-    }
-
-    .btn-black {
-        background-color: vars.$dark-primary-color;
-        color: #000;
-        border: none;
-
-        &:hover {
-            background-color: darken(vars.$dark-primary-color, 10%);
-        }
-    }
-
-    a.text-dark {
-        color: vars.$dark-primary-color !important;
-    }
-}

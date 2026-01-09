@@ -51,22 +51,3 @@
         }
     }
 }
-
-// Dark Mode Styles
-body.dark-mode {
-    .shop-by-category-section {
-        background-color: vars.$dark-background !important;
-
-        .section-title {
-            color: vars.$dark-primary-color !important;
-        }
-
-        .category-card {
-            color: vars.$dark-primary-color !important;
-
-            .category-name {
-                color: vars.$dark-primary-color !important;
-            }
-        }
-    }
-}

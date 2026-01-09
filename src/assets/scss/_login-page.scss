@@ -16,78 +16,9 @@
 }
 
 .form-label {
-    // font-family: 'Averta', sans-serif;
     font-size: 0.9rem;
 }
 
 /* Custom Checkbox or specific inputs overrides if needed */
 
 /* Dark Mode Support for Login Page (as per standard) */
-body.dark-mode {
-    .login-page-container {
-        background-color: vars.$dark-background !important;
-    }
-
-    .col-md-6.bg-white {
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color;
-    }
-
-    h2,
-    h3,
-    h4,
-    label,
-    span,
-    p,
-    a,
-    button.btn-link {
-        color: vars.$dark-primary-color !important;
-    }
-
-    /* Invert logo logic handled by main.js or similar script swapping src, 
-       but if we need CSS filter for svg icons or similar */
-
-
-    .text-muted {
-        color: #aaa !important;
-    }
-
-    .form-control {
-        background-color: #1a1a1a;
-        border-color: #333;
-        color: vars.$dark-primary-color;
-
-        &:focus {
-            border-color: vars.$dark-primary-color;
-            background-color: #2a2a2a;
-        }
-    }
-
-    .bg-white {
-        // Google button, OR separator
-        background-color: transparent !important;
-        color: vars.$dark-primary-color !important;
-
-        &.border {
-            border-color: #333 !important;
-        }
-    }
-
-    // Google button text needs to be white in dark mode if bg is dark
-    .col-6 button.bg-white {
-        color: vars.$dark-primary-color !important;
-        background-color: #1a1a1a !important;
-        border-color: #444 !important;
-    }
-
-    // OR separator line
-    hr {
-        opacity: 0.5;
-        border-color: #fff;
-    }
-
-    // OR separator text bg must match container
-    .position-absolute.bg-white {
-        background-color: vars.$dark-background !important;
-    }
-}

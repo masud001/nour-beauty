@@ -1,14 +1,32 @@
+@use "./variable" as vars;
+
 .dynamic-tab-content {
+    padding-top: vars.$section-space-sm !important;
+    padding-bottom: vars.$section-space-sm !important;
+
+    @media (min-width: 768px) {
+        padding-top: vars.$section-space-md !important;
+        padding-bottom: vars.$section-space-md !important;
+    }
+
+    @media (min-width: 1024px) {
+        padding-top: vars.$section-space-lg !important;
+        padding-bottom: vars.$section-space-lg !important;
+    }
+
     button {
+        font-size: 18px;
+
         @media (max-width: 768px) {
-            font-size: 18px !important;
-            padding: 6px 15px !important;
+            font-size: 14px !important;
+            padding: 14px 15px !important;
         }
     }
 
     .block button.w-full {
         background-color: #EADCFD !important;
         color: #000 !important;
+        font-size: 14px;
     }
 
     .block button.w-full:hover {
@@ -17,5 +35,80 @@
 
     .tab-content img {
         border-radius: 12px;
+    }
+
+    .card-title {
+        margin-top: 12px !important;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 1.35;
+        letter-spacing: 0.02em;
+        color: #111827;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+
+    @media (min-width: 768px) {
+        .card-title {
+            font-size: 14px;
+            min-height: calc(14px * 1.35 * 2);
+        }
+    }
+
+    .tabContentSlider {
+
+        .swiper-button-prev,
+        .swiper-button-next {
+            width: 45px !important;
+            height: 45px !important;
+            background-image: linear-gradient(to right, #4c4c4c 50%, #fff 50%);
+            background-size: 200% 100%;
+            background-position: right bottom;
+            transition: all 0.3s ease-out;
+            color: #000;
+            opacity: 0;
+            visibility: hidden;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            &::after {
+                content: none;
+            }
+
+            i {
+                font-size: 16px;
+                font-weight: bold;
+                color: inherit;
+            }
+
+            &:hover {
+                background-position: left bottom;
+                color: #fff;
+            }
+
+            &.swiper-button-disabled {
+                cursor: not-allowed;
+                opacity: 0.45 !important;
+                pointer-events: auto;
+
+                &:hover {
+                    background-position: right bottom;
+                    color: #000;
+                }
+            }
+        }
+
+        &:hover {
+
+            .swiper-button-prev,
+            .swiper-button-next {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
     }
 }

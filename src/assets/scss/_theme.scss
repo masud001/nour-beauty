@@ -1,258 +1,98 @@
-body.dark-mode {
-    background-color: vars.$dark-background;
-    color: vars.$dark-primary-color;
-    .mobile-navigation{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-        a{
-            color: vars.$dark-primary-color !important;
-        }
-        .slide-window{
-            background-color: vars.$dark-background !important;
-            color: vars.$dark-primary-color !important;
-        }
-    }
-    .header-search input{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-        border: 1px solid rgb(107 114 128) !important;
-        &::placeholder{
-            color: vars.$dark-primary-color !important;
-        }
-    }
-    .header-banner {
-      background-color: vars.$dark-background !important;
-    }
-    .header-container{
-        background-color: vars.$dark-background !important;
-    }
-    .header-container .header-nav ul li a {
-      color: vars.$dark-primary-color !important;
-      background-color: vars.$dark-background !important;
-    }
-    .header-container .mega-navigation{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-    }
-    .customar-account {
-        ul.dropdown-menu {
-          width: 320px;
-            background-color: vars.$dark-background !important;
-          li {
-            &:first-child,
-            &:nth-child(2) {
-              padding: 8px 15px;
-              background-color: vars.$dark-background !important;
-            }
-  
-            button {
-              &:hover {
-                opacity: 0.8;
-                text-decoration: underline;
-                outline: 1px solid black;
-              }
-            }
-          }
-        }
-      }
-    .home-slider .swiper-slide{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-    }
-    .swiper-pagination-bullet{
-        background-color: vars.$dark-primary-color !important;
-    }
-    .dynamic-banner{
-        background-color: #2b292975 !important;
-        color: vars.$dark-primary-color !important;
+@use "sass:math";
+@use "./variable" as vars;
 
-        a{
-            color: vars.$dark-primary-color !important;
-            background-color: vars.$dark-background !important;
-        }
-    }
-    .newProductSlider{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-        h3{
-            color: vars.$dark-primary-color !important;
-        }
-        p{
-            color: vars.$dark-primary-color !important;
-        }
-    }
-    .blogSlider{
-        a{
-            color: vars.$dark-primary-color !important;
-        }
-    }
-    .dynamic-tab-content{
-        button{
-            color: vars.$dark-primary-color !important;
-        }
+//   light mode 
+body {
+    .header-container {
+        background-color: vars.$dark-primary-color !important;
     }
 
     // category page 
-    .product-filter-section{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-    }
-    .product-card-body .product-title{
-        color: vars.$dark-primary-color !important;
-    }
-    .product-overlay-listing{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-    }
-    .product-card-image .product-bookmark{
-        color: vars.$dark-primary-color !important;
-    }
-    .product-card-body .price{
-        color: vars.$dark-primary-color !important;
-    }
-    .product-card-body .review span{
-        color: vars.$dark-primary-color !important;
-    }
-    .pagination-number p{
-        color: vars.$dark-primary-color !important;
-    } 
-    .pagination-nav .page-item.active ::after{
+    .product-filter-section {
         background-color: vars.$dark-primary-color !important;
     }
-    .product-card-image .best-product-tag{
-        background-color: vars.$dark-primary-color !important;
-        color: vars.$dark-background !important;
-    }
 
-
-    // single product page 
-    select{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-    }
-    .breadcrumb-item.active{
-        color: vars.$dark-primary-color !important;
-    }
-    .accordion-item{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-    }
-    .accordion-button.shadow-none{
-        color: vars.$dark-primary-color !important;
-    }
-    .accordion-button.shadow-none.collapsed{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-    }
-
-    h1,h2,h6,h3,h4,p{
-        color: vars.$dark-primary-color !important;
-    }
-    .product-card{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-    }
-    .product-plus-icon{
-        color: vars.$dark-background !important;
-    }
-    .review-star span i,a{
-        color: vars.$dark-primary-color !important;
-    }
-    .progress-bars-area i,span{
-        color: vars.$dark-primary-color !important;
-    }
-    .text-success{
-        color: #198754 !important;
-    }
-    .modal-content{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-    }
-
-    ul.dropdown-menu{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-        li:hover{
-            background-color: vars.$dark-background !important;
-            a{
-                color: vars.$dark-primary-color !important;
-
-            }
-        }
-        li{
-            a{
-                color: vars.$dark-primary-color !important;
-            }
-        }
-    }
-
-    .title{
-        color: vars.$dark-primary-color !important;
-    }
-    input + div{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-    }
-    select + div{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-    }
-    input{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-        border: 1px solid rgb(107 114 128) !important;
-        &::placeholder{
-            color: vars.$dark-primary-color !important;
-        }
-    }
-
-    // b2b page 
-    .home-slider{
-        background-color: vars.$dark-background !important;
-        color : vars.$dark-primary-color !important;
-    }
-    .swiper-slide button{
-        background-color: #000 !important;
-        color: vars.$dark-primary-color !important;
-    }
-
-    // blog page 
-    .blog-navigation{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-    }
-
-
-    // single brand page 
-    .product-listing-section{
-        background-color: vars.$dark-background !important;
-        color: vars.$dark-primary-color !important;
-    }
-
-
-  }
-  
-  body.dark-mode a {
-    color: vars.$dark-primary-color;
-  }
-  
-  body.dark-mode .btn {
-    background-color: vars.$dark-background !important;
-    color: vars.$dark-primary-color;
-  }
-
-
-//   light mode 
-body{
-    .header-container {
-        background-color: vars.$dark-primary-color !important;
-      }
-
-     // category page 
-     .product-filter-section{
+    .product-overlay-listing {
         background-color: vars.$dark-primary-color !important;
     }
-    .product-overlay-listing{
-        background-color: vars.$dark-primary-color !important;
+}
+
+// ========================================
+// Universal Typography System
+// ========================================
+
+// Font Families
+.font-averta {
+    font-family: vars.$font-family-base !important;
+}
+
+.font-font-medium {
+    font-weight: 500 !important;
+}
+
+// Fluid Typography Mixin
+@mixin fluid-text($min-size, $max-size, $min-vw: 375px, $max-vw: 1440px) {
+    font-size: $min-size;
+
+    @media (min-width: $min-vw) {
+        font-size: calc(#{$min-size} + #{strip-unit($max-size - $min-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+    }
+
+    @media (min-width: $max-vw) {
+        font-size: $max-size;
+    }
+}
+
+@function strip-unit($value) {
+    @return math.div($value, ($value * 0 + 1));
+}
+
+// Text Size Utilities (Mobile First -> Desktop)
+// Scale: 1.2 ratio approx
+.text-xs {
+    @include fluid-text(11px, 13px);
+}
+
+.text-sm {
+    @include fluid-text(13px, 15px);
+}
+
+.text-base {
+    @include fluid-text(15px, 17px);
+}
+
+.text-lg {
+    @include fluid-text(17px, 20px);
+}
+
+.text-xl {
+    @include fluid-text(19px, 24px);
+}
+
+.text-2xl {
+    @include fluid-text(22px, 30px);
+}
+
+.text-3xl {
+    @include fluid-text(28px, 40px);
+}
+
+.text-4xl {
+    @include fluid-text(34px, 52px);
+}
+
+.text-5xl {
+    @include fluid-text(40px, 64px);
+}
+
+// Responsive Overrides (Tailwind-like)
+// Using \: escape for colon in class name
+@media (min-width: 1024px) {
+    .lg\:text-4xl {
+        font-size: 52px !important; // Desktop max for 4xl
+    }
+
+    .lg\:text-3xl {
+        font-size: 40px !important; // Desktop max for 3xl
     }
 }

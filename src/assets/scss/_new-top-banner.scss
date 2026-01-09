@@ -4,8 +4,8 @@
 
 .new-top-banner {
     background: linear-gradient(to right, #DEF3EE, #EADCFD);
-    padding: 15px 0;
-    font-family: 'Averta', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    padding: 12px 0;
+    font-family: vars.$font-family-base;
 
     // Left Navigation Links
     &__nav {

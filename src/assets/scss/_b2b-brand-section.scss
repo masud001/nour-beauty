@@ -1,6 +1,8 @@
-.b2b-brand-section{
-    h2{
-        
+@use "./variable" as vars;
+
+.b2b-brand-section {
+    h2 {
+
         font-size: 50px;
         font-stretch: normal;
         font-style: normal;
@@ -9,61 +11,71 @@
         text-align: center;
         color: vars.$primary-color;
         text-transform: uppercase;
-        span:first-child{
-            font-family: 'Averta Extrathin';
+
+        span:first-child {
+            font-family: vars.$font-family-thin;
             font-weight: 100 !important;
             position: relative;
             margin-top: -9px;
+
             @media (max-width: 768px) {
-                margin-top: -4px;          
+                margin-top: -4px;
             }
         }
-        span:last-child{
-            font-family: "Averta";
+
+        span:last-child {
+            font-family: vars.$font-family-base;
             font-weight: 600 !important;
         }
+
         @media (max-width: 768px) {
-            font-size: 20px;           
+            font-size: 20px;
         }
     }
-    p{
+
+    p {
         font-size: 20px;
         font-weight: 400;
-        font-family: 'Averta';
+        font-family: vars.$font-primary;
         margin: 0;
         text-align: center;
         line-height: 40px;
         letter-spacing: -0.6px;
+
         @media (max-width: 768px) {
             font-size: 15px;
-            line-height: 25px;           
+            line-height: 25px;
         }
     }
 }
 
-.brand-slider-container{
+.brand-slider-container {
     .swiper {
         width: 100%;
         height: 100%;
         margin-left: auto;
         margin-right: auto;
         padding-bottom: 2rem !important;
-      }
-      .swiper-grid{
+    }
+
+    .swiper-grid {
         display: grid;
 
-      }
-      .swiper-grid-column{
+    }
+
+    .swiper-grid-column {
         grid-template-rows: auto auto;
-        grid-auto-flow: column; 
-      }
-      .swiper-wrapper{
+        grid-auto-flow: column;
+    }
+
+    .swiper-wrapper {
         display: flex;
         max-height: 350px !important;
         flex-wrap: wrap;
         flex-direction: column;
-      }
-    .swiper-slide{
+    }
+
+    .swiper-slide {
         text-align: center;
         font-size: 18px;
         height: calc((100% - 30px) / 2) !important;
@@ -71,13 +83,13 @@
         justify-content: center;
         align-items: center;
     }
-    
+
 }
 
 
-.why-nour-section{
-    h2{
-        
+.why-nour-section {
+    h2 {
+
         font-size: 50px;
         font-stretch: normal;
         font-style: normal;
@@ -86,40 +98,46 @@
         text-align: center;
         color: vars.$primary-color;
         text-transform: uppercase;
-        span:first-child{
-            font-family: 'Averta Extrathin';
+
+        span:first-child {
+            font-family: vars.$font-family-thin;
             font-weight: 100 !important;
             position: relative;
             margin-top: -9px;
+
             @media (max-width: 768px) {
-                margin-top: -4px;          
+                margin-top: -4px;
             }
         }
-        span:last-child{
-            font-family: "Averta";
+
+        span:last-child {
+            font-family: vars.$font-primary;
             font-weight: 600 !important;
         }
+
         @media (max-width: 768px) {
-            font-size: 20px;           
+            font-size: 20px;
         }
     }
 
 
-    ul.nav-tabs{
-        .nav-item{
-            &:hover{
+    ul.nav-tabs {
+        .nav-item {
+            &:hover {
                 background-color: transparent;
                 border-radius: 0px !important;
             }
         }
     }
-    .nav-pills{
-        .nav-link{
-            &:hover{
+
+    .nav-pills {
+        .nav-link {
+            &:hover {
                 border: 1px solid transparent !important;
                 color: vars.$color-red;
             }
-            &.active{
+
+            &.active {
                 background-color: vars.$color-red;
                 color: #fff !important;
                 border-radius: 0px !important;
@@ -129,51 +147,56 @@
         }
     }
 
-    .tab-content{
-        .tab-pane{
-            p{
+    .tab-content {
+        .tab-pane {
+            p {
                 font-weight: normal;
-                font-family: "Averta";
+                font-family: vars.$font-primary;
                 font-size: 25px;
                 line-height: 45px;
                 letter-spacing: -0.6px;
+
                 @media (max-width: 768px) {
                     font-size: 15px;
-                    line-height: 25px;           
+                    line-height: 25px;
                 }
             }
         }
     }
 }
-.why-nour-slider{
-    .swiper{
+
+.why-nour-slider {
+    .swiper {
         padding-bottom: 2rem !important;
     }
-    .swiper-thumbs{
-        .swiper-wrapper{
-            .swiper-slide{
+
+    .swiper-thumbs {
+        .swiper-wrapper {
+            .swiper-slide {
                 @media (max-width: 768px) {
                     font-size: 14px !important;
                     line-height: 25px;
                 }
-                &.swiper-slide-thumb-active{
+
+                &.swiper-slide-thumb-active {
                     background-color: vars.$color-red;
                     border-radius: 0px !important;
                     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
                     border: 1px solid vars.$color-red;
                     color: #fff !important;
                     font-weight: 600 !important;
-                    font-family: "Averta";
+                    font-family: vars.$font-primary;
                     font-size: 20px;
                 }
             }
         }
     }
 }
-.why-nour-slider-content{
-    p{
+
+.why-nour-slider-content {
+    p {
         font-size: 18px;
-        font-family: "Averta";
+        font-family: vars.$font-primary;
         font-weight: 400;
         line-height: 25px;
         letter-spacing: -0.6px;
@@ -181,9 +204,9 @@
     }
 }
 
-.get-in-touch{
-    h2{
-        
+.get-in-touch {
+    h2 {
+
         font-size: 50px;
         font-stretch: normal;
         font-style: normal;
@@ -192,65 +215,71 @@
         text-align: center;
         color: vars.$primary-color;
         text-transform: uppercase;
-        span:first-child{
-            font-family: 'Averta Extrathin';
+
+        span:first-child {
+            font-family: vars.$font-family-thin;
             font-weight: 100 !important;
             position: relative;
             margin-top: -9px;
+
             @media (max-width: 768px) {
-                margin-top: -4px;          
+                margin-top: -4px;
             }
         }
-        span:last-child{
-            font-family: "Averta";
+
+        span:last-child {
+            font-family: vars.$font-primary;
             font-weight: 600 !important;
         }
+
         @media (max-width: 768px) {
-            font-size: 20px;           
+            font-size: 20px;
         }
     }
 
-    button{
+    button {
         font-size: 35px;
         font-weight: 400;
-        font-family: 'Averta';
+        font-family: vars.$font-primary;
         margin: 0;
         text-align: center;
         line-height: 52px;
         letter-spacing: -0.6px;
         color: vars.$primary-color;
         transition: all 0.3s ease;
-        &:hover{
+
+        &:hover {
             background-color: vars.$color-red;
             color: #fff !important;
             border-radius: 0px !important;
             box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
             border: 1px solid vars.$color-red;
         }
+
         @media (max-width: 768px) {
             font-size: 15px;
-            line-height: 25px;           
+            line-height: 25px;
         }
     }
 }
 
-.form-label-width{
+.form-label-width {
     @media (min-width: 768px) {
         width: 25% !important;
     }
 }
 
-.form-check-input:checked{
+.form-check-input:checked {
     background-color: vars.$color-red !important;
     border-color: vars.$color-red !important;
     box-shadow: 0 0 0 0.2rem rgba(173, 31, 26, 0.25) !important;
 }
 
-.submit-button{
-    button{
+.submit-button {
+    button {
         font-size: 18px;
         font-weight: 400;
-        font-family: 'Averta';
+        font-family: vars.$font-primary;
         margin: 0;
         text-align: center;
         letter-spacing: -0.6px;
@@ -258,7 +287,8 @@
         background-color: vars.$color-red !important;
         transition: all 0.3s ease;
         border: 1px solid vars.$color-red !important;
-        &:hover{
+
+        &:hover {
             background-color: transparent !important;
             color: vars.$color-red !important;
             border-radius: 0px !important;
@@ -268,10 +298,10 @@
     }
 }
 
-.section-thumb{
+.section-thumb {
     color: #fff;
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
-                    url('https://picsum.photos/1200/540.webp/?blur=2');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('https://picsum.photos/1200/540.webp/?blur=2');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -282,23 +312,27 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    h2{
+
+    h2 {
         text-transform: uppercase;
         font-size: 40px;
-        font-family: "Averta";
+        font-family: vars.$font-primary;
         font-weight: 400 !important;
         letter-spacing: 20px;
     }
+
     @media (max-width: 768px) {
         height: 150px;
-        h2{
+
+        h2 {
             font-size: 20px;
             letter-spacing: 15px;
         }
-        
+
     }
+
     @media (min-width:769) and (max-width: 992px) {
         height: 300px;
-        
+
     }
 }

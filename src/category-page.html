@@ -16,57 +16,59 @@
 </head>
 
 <body>
-  <!-- header top banner  -->
-  <div class="header-banner">
-    <div class="container-fluid d-flex justify-content-center align-items-center gap-sm-3 gap-lg-4 p-2 p-lg-3">
-      <!-- Mobile Slides -->
-      <div class="mobile-slides d-lg-none">
-        <a href="/#" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
-          <span><i class="fa-solid fa-truck-moving"></i></span>
-          <span class="text-reset"> Free UK shipping over £25</span>
-        </a>
-        <a href="/#" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
-          <span><i class="fa-solid fa-mobile-screen-button"></i></span>
-          <span>15% off your app order</span>
-        </a>
-        <a href="/#" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
-          <span><i class="fa-regular fa-envelope"></i></span>
-          <span> Sign up for email exclusives</span>
-        </a>
-        <a href="/#" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
-          <span><i class="fa-solid fa-gift"></i></span>
-          <span> Earn Cult Status Points</span>
-        </a>
-      </div>
+  <!-- Header top new banner start-->
+  <div class="new-top-banner">
+    <div class="container-fluid px-lg-5">
+      <div class="row align-items-center">
+        <!-- Left Section: Links (Hidden on Mobile) -->
+        <div class="col-lg-4 d-none d-lg-flex justify-content-start">
+          <nav class="new-top-banner__nav">
+            <a href="#">Help Center</a>
+            <a href="#">Find a Store</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
 
-      <!-- Desktop Items -->
-      <a href="/#" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
-        <span><i class="fa-solid fa-truck-moving"></i></span>
-        <span class="text-reset"> Free UK shipping over £25</span>
-      </a>
-      <a href="/#" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
-        <span><i class="fa-solid fa-mobile-screen-button"></i></span>
-        <span> 15% off your app order</span>
-      </a>
-      <a href="/#" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
-        <span><i class="fa-regular fa-envelope"></i></span>
-        <span> Sign up for email exclusives</span>
-      </a>
-      <a href="/#" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
-        <span><i class="fa-solid fa-gift"></i></span>
-        <span> Earn Cult Status Points</span>
-      </a>
+        <!-- Center Section: Promo Message (Always Visible) -->
+        <div class="col-12 col-lg-4 d-flex justify-content-center">
+          <div class="new-top-banner__promo">
+            <span class="new-top-banner__promo-emoji">✌🏼</span>
+            <p class="new-top-banner__promo-text">
+              Free Express Shipping on orders $120!
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Section: Social Icons (Hidden on Mobile) -->
+        <div class="col-lg-4 d-none d-lg-flex justify-content-end">
+          <div class="new-top-banner__social">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <!-- Header top new banner end  -->
 
   <!-- stripe banner  -->
-  <div class="stripe-banner container-fluid d-flex justify-content-center align-items-center p-2 p-lg-3">
+  <div class="stripe-banner container-fluid d-flex justify-content-center align-items-center p-2">
     <a href="/#" class="text-reset text-uppercase text-decoration-none fs-6">
       <span class="">SALE - UP TO 50% OFF</span>
     </a>
   </div>
 
-  <header id="site-header" class="header-container sticky top-0 z-30 py-3">
+  <header id="site-header" class="header-container shadow-sm sticky top-0 z-30 py-3">
     <div class="container-fluid d-flex align-items-center justify-content-between px-lg-5">
       <!-- search container for mobile  -->
       <div class="col d-flex d-lg-none gap-3 align-items-center">
@@ -99,18 +101,27 @@
       <!-- logo container  -->
       <div class="col logo-container d-flex align-items-center justify-content-center mx-auto">
         <a href="/#">
-          <img id="brand-logo" src="./assets/img/logo/nour-dark-logo.png" alt="brand-logo" />
+          <img id="brand-logo" width="200" height="40" src="./assets/img/brand-logo/brand-logo.svg" alt="brand-logo" />
         </a>
       </div>
       <!-- other container  -->
       <div class="col other-container d-flex gap-3 gap-lg-4 align-items-center justify-content-end">
         <div class="change-local d-none d-lg-flex align-items-center">
-          <button class="text-uppercase d-flex align-items-center gap-2">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#selectRegionModal"
+            class="text-uppercase d-flex align-items-center gap-2">
             <span class="">
               <img class="" src="./assets/img/flags/united-kingdom.png" alt="united-kingdom flag" />
             </span>
             <span class="">&bull;</span>
-            <span class="fw-bold">usd</span>
+            <span class="fw-bold">KSA</span>
+          </button>
+        </div>
+        <!-- map location -->
+        <div class="map-location">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#mapLocationModal"
+            class="d-flex gap-2 align-items-center">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span class="d-none d-lg-flex fw-semibold">Map Location</span>
           </button>
         </div>
         <div class="customar-account dropdown">
@@ -146,15 +157,10 @@
             <span class="d-none d-lg-flex fw-semibold">Bag</span>
           </button>
         </div>
-        <div class="theme-toggle">
-          <button id="theme-toggle-btn" class="btn btn-light bg-transparent">
-            <i class="fa-regular fa-sun"></i>
-          </button>
-        </div>
       </div>
     </div>
     <!-- desktop navigation  -->
-    <nav class="header-nav d-none d-lg-block mt-3" aria-label="Main Navigation">
+    <nav class="header-nav d-none d-lg-block mt-3">
       <ul class="d-flex justify-content-center align-items-center">
         <div class="nav-navigation">
           <li class="nav-item">
@@ -1186,7 +1192,7 @@
   <div class="category-heading-section">
     <div class="container-fluid px-lg-5">
       <div class="row">
-        <div class="col-12 text-end pt-3 pb-4">
+        <div class="col-12 text-end pt-3 pb-3">
           <p class="m-0 text-dark-emphasis">260 items</p>
         </div>
       </div>
@@ -1243,7 +1249,7 @@
 
   <!-- product filter section  (product-filter-section.scss)-->
 
-  <div class="product-filter-section py-5 sticky z-20">
+  <div class="product-filter-section pt-2 pb-3 sticky z-20">
     <div class="container-fluid px-lg-5">
       <div class="row">
         <!-- for mobile  -->
@@ -1521,7 +1527,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="swiper productListingTypeThree !pb-[32px]">
+          <div class="swiper productListingTypeThree !pb-[32px] category-common-slider">
             <div class="swiper-wrapper">
               <!-- slider  -->
               <div class="swiper-slide">
@@ -2397,8 +2403,8 @@
             <!-- pagination buttons -->
             <div class="swiper-pagination"></div>
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-            <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+            <div class="category-slider-prev"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="category-slider-next"><i class="fa-solid fa-chevron-right"></i></div>
           </div>
         </div>
       </div>
@@ -2409,7 +2415,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <div class="swiper productListingTypeOne !pb-[32px]">
+          <div class="swiper productListingTypeOne !pb-[32px] category-common-slider">
             <div class="swiper-wrapper">
               <!-- slider  -->
               <div class="swiper-slide">
@@ -2905,8 +2911,8 @@
             <!-- pagination buttons -->
             <div class="swiper-pagination"></div>
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-            <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+            <div class="category-slider-prev"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="category-slider-next"><i class="fa-solid fa-chevron-right"></i></div>
           </div>
         </div>
       </div>
@@ -2932,7 +2938,7 @@
           </div>
         </div>
         <div class="col-12 col-md-6">
-          <div class="swiper productListingTypeTwo !pb-[32px]">
+          <div class="swiper productListingTypeTwo !pb-[32px] category-common-slider">
             <div class="swiper-wrapper">
               <!-- slider  -->
               <div class="swiper-slide">
@@ -3428,8 +3434,8 @@
             <!-- pagination buttons -->
             <div class="swiper-pagination"></div>
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-            <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+            <div class="category-slider-prev"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="category-slider-next"><i class="fa-solid fa-chevron-right"></i></div>
           </div>
         </div>
       </div>
@@ -3455,7 +3461,7 @@
           </div>
         </div>
         <div class="col-6 col-md-8 col-lg-9">
-          <div class="swiper productListingTypeFour !pb-[32px]">
+          <div class="swiper productListingTypeFour !pb-[32px] category-common-slider">
             <div class="swiper-wrapper">
               <!-- slider  -->
               <div class="swiper-slide">
@@ -3636,8 +3642,8 @@
             <!-- pagination buttons -->
             <div class="swiper-pagination"></div>
             <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-            <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+            <div class="category-slider-prev"><i class="fa-solid fa-chevron-left"></i></div>
+            <div class="category-slider-next"><i class="fa-solid fa-chevron-right"></i></div>
           </div>
         </div>
       </div>

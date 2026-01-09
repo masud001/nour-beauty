@@ -2,7 +2,7 @@
 
 /* Populated Cart Page Styles */
 .active-cart-section {
-    font-family: 'Inter', sans-serif; // Assuming Inter or system sans
+    font-family: vars.$font-family-base; // Assuming Inter or system sans
 
     h1 {
         font-weight: 600;
@@ -68,78 +68,6 @@
 
             &:hover {
                 background-color: #333;
-            }
-        }
-    }
-}
-
-// Dark Mode
-body.dark-mode {
-    .active-cart-section {
-        background-color: vars.$dark-background;
-        color: vars.$dark-primary-color;
-
-        h1,
-        .status-points {
-            color: vars.$dark-primary-color !important;
-        }
-
-        .alert-info {
-            background-color: #1e3a5f !important;
-            /* Darker blue */
-            color: vars.$dark-primary-color !important;
-        }
-
-        .cart-item {
-            border-bottom-color: rgba(255, 255, 255, 0.1) !important;
-
-            h5 {
-                color: vars.$dark-primary-color !important;
-            }
-
-            .text-muted {
-                color: #aaa !important;
-            }
-
-            .price {
-                color: vars.$dark-primary-color !important;
-            }
-        }
-
-        .discount-code {
-            .form-control {
-                background-color: vars.$dark-background;
-                color: vars.$dark-primary-color;
-                border-color: #555;
-
-                &::placeholder {
-                    color: #888;
-                }
-            }
-
-            .btn-outline-secondary {
-                color: vars.$dark-primary-color;
-                border-color: #555;
-
-                &:hover {
-                    background-color: #333;
-                }
-            }
-        }
-
-        .cart-summary {
-            background-color: vars.$dark-background !important;
-            /* If sidebar needs to be distinct, maybe lighten it slightly, 
-               but typically in dark mode it matches bg */
-            color: vars.$dark-primary-color !important;
-
-            button.btn-dark {
-                background-color: vars.$dark-primary-color !important;
-                color: vars.$dark-background !important;
-
-                &:hover {
-                    opacity: 0.9;
-                }
             }
         }
     }

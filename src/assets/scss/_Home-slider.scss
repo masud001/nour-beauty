@@ -1,14 +1,56 @@
+@use "./variable" as vars;
+
 .home-slider {
+    padding-top: vars.$section-space-sm !important;
+    padding-bottom: vars.$section-space-sm !important;
+
+    @media (min-width: 768px) {
+        padding-top: vars.$section-space-md !important;
+        padding-bottom: vars.$section-space-md !important;
+    }
+
+    @media (min-width: 1024px) {
+        padding-top: vars.$section-space-lg !important;
+        padding-bottom: vars.$section-space-lg !important;
+    }
+
     .swiper-slide {
         .slider-image {
-            @media (min-width: 320px) {
-                img {
-                    height: 400px !important;
-                }
+            display: block;
+
+            figure,
+            picture {
+                width: 100%;
+                display: block;
+                overflow: hidden;
+                height: auto !important;
             }
 
-            @media (min-width: 480px) {
+            img {
+                width: 100%;
+                height: auto;
+                display: block;
                 object-fit: cover;
+                transform: scale(1);
+                transform-origin: center;
+                transition: transform 220ms ease;
+                will-change: transform;
+            }
+
+            &:hover img,
+            &:focus-visible img {
+                transform: scale(1.04);
+            }
+
+            @media (prefers-reduced-motion: reduce) {
+                img {
+                    transition: none;
+                }
+
+                &:hover img,
+                &:focus-visible img {
+                    transform: none;
+                }
             }
 
         }
@@ -33,6 +75,8 @@
     }
 
     .slider-btns {
+        margin-top: 2rem !important;
+
         button:first-child {
             background-color: #EADCFD !important;
             color: #000 !important;
@@ -43,8 +87,169 @@
             color: #000 !important;
         }
 
+        button:only-child {
+            width: 200px;
+            text-align: center;
+            margin: auto;
+        }
+
         button {
             border: none;
+        }
+    }
+
+    // Custom Slider Content Card
+    // Maintains consistent spacing ratio and clean design
+    .slider-content-card {
+        gap: 0.7rem; // Mobile default
+        text-align: center;
+
+        @media (min-width: 768px) {
+            gap: 1rem; // Tablet
+        }
+
+        @media (min-width: 1024px) {
+            gap: 1.5rem; // Desktop
+        }
+
+        // Reset utility margins to let gap handle spacing
+        >* {
+            margin-top: 0 !important;
+            margin-bottom: 0 !important;
+        }
+
+        // Typography tweaks
+        h1 {
+            line-height: 1.2;
+            margin-bottom: 0.25rem;
+        }
+
+        h3 {
+            line-height: 1.2;
+            letter-spacing: 0.05em;
+        }
+
+        p {
+            line-height: 1.5;
+            opacity: 0.8;
+            max-width: 45ch; // Readable line length
+            margin: 0 auto;
+        }
+    }
+
+    .home-slider-prev,
+    .home-slider-next,
+    .sub-category-home-prev,
+    .sub-category-home-next {
+        width: 45px !important;
+        height: 45px !important;
+        background-image: linear-gradient(to right, #4c4c4c 50%, #fff 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all 0.3s ease-out;
+        color: #000;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &::after {
+            content: none;
+        }
+
+        i {
+            font-size: 16px;
+            font-weight: bold;
+            color: inherit;
+        }
+
+        &:hover {
+            background-position: left bottom;
+            color: #fff;
+        }
+    }
+
+    .home-slider-prev,
+    .sub-category-home-prev {
+        left: 20px;
+    }
+
+    .home-slider-next,
+    .sub-category-home-next {
+        right: 20px;
+    }
+
+    &:hover {
+
+        .home-slider-prev,
+        .home-slider-next,
+        .sub-category-home-prev,
+        .sub-category-home-next {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}
+
+.category-common-slider {
+    position: relative;
+
+    .category-slider-prev,
+    .category-slider-next {
+        width: 45px !important;
+        height: 45px !important;
+        background-image: linear-gradient(to right, #4c4c4c 50%, #fff 50%);
+        background-size: 200% 100%;
+        background-position: right bottom;
+        transition: all 0.3s ease-out;
+        color: #000;
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &::after {
+            content: none;
+        }
+
+        i {
+            font-size: 16px;
+            font-weight: bold;
+            color: inherit;
+        }
+
+        &:hover {
+            background-position: left bottom;
+            color: #fff;
+        }
+    }
+
+    .category-slider-prev {
+        left: 20px;
+    }
+
+    .category-slider-next {
+        right: 20px;
+    }
+
+    &:hover {
+
+        .category-slider-prev,
+        .category-slider-next {
+            opacity: 1;
+            visibility: visible;
         }
     }
 }

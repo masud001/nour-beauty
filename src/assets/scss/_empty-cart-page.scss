@@ -29,32 +29,10 @@
     }
 }
 
-// Dark Mode for Empty Cart
-body.dark-mode {
-    .empty-cart-section {
-        background-color: vars.$dark-background !important;
-
-        h1,
-        p {
-            color: vars.$dark-primary-color !important;
-        }
-
-        .btn {
-            background-color: vars.$dark-background !important;
-            color: vars.$dark-primary-color !important;
-            border-color: vars.$dark-primary-color !important;
-
-            &:hover {
-                background-color: vars.$dark-primary-color !important;
-                color: vars.$dark-background !important;
-            }
-        }
-    }
-}
 
 /* --- Site Footer --- */
 .site-footer {
-    font-family: 'Inter', sans-serif; // Or inherit from body, assuming Inter/Roboto is used
+    font-family: vars.$font-family-base; // Or inherit from body, assuming Inter/Roboto is used
     font-size: 0.9rem;
 
     a {

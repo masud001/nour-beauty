@@ -12,7 +12,6 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./assets/css/output.css" />
   <link rel="stylesheet" href="./assets/css/style.min.css" />
-  <link rel="stylesheet" href="./assets/scss/style.scss" />
   <!-- swiper slider css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
@@ -21,7 +20,7 @@
 
   <!-- Header top new banner start-->
   <div class="new-top-banner">
-    <div class="container">
+    <div class="container-fluid px-lg-5">
       <div class="row align-items-center">
         <!-- Left Section: Links (Hidden on Mobile) -->
         <div class="col-lg-4 d-none d-lg-flex justify-content-start">
@@ -66,13 +65,13 @@
 
 
   <!-- stripe banner  -->
-  <div class="stripe-banner container-fluid d-flex justify-content-center align-items-center p-2 p-lg-3">
+  <div class="stripe-banner container-fluid d-flex justify-content-center align-items-center p-2">
     <a href="/#" class="text-reset text-uppercase text-decoration-none fs-6">
       <span class="">SALE - UP TO 50% OFF</span>
     </a>
   </div>
 
-  <header id="site-header" class="header-container sticky top-0 z-30 py-3">
+  <header id="site-header" class="header-container shadow-sm sticky top-0 z-30 py-3">
     <div class="container-fluid d-flex align-items-center justify-content-between px-lg-5">
       <!-- search container for mobile  -->
       <div class="col d-flex d-lg-none gap-3 align-items-center">
@@ -120,6 +119,14 @@
             <span class="fw-bold">KSA</span>
           </button>
         </div>
+        <!-- map location -->
+        <div class="map-location">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#mapLocationModal"
+            class="d-flex gap-2 align-items-center">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span class="d-none d-lg-flex fw-semibold">Map Location</span>
+          </button>
+        </div>
         <div class="customar-account dropdown">
           <button data-bs-toggle="dropdown" aria-expanded="false" class="d-flex gap-2 align-items-center" type="button">
             <span><i class="fa-regular fa-user"></i></span>
@@ -151,11 +158,6 @@
           <button class="d-flex gap-2 align-items-center">
             <span><i class="fa-solid fa-basket-shopping"></i></span>
             <span class="d-none d-lg-flex fw-semibold">Bag</span>
-          </button>
-        </div>
-        <div class="theme-toggle">
-          <button id="theme-toggle-btn" class="btn btn-light bg-transparent">
-            <i class="fa-regular fa-sun"></i>
           </button>
         </div>
       </div>
@@ -1209,33 +1211,29 @@
   </div>
 
   <!-- home slider section  -->
-  <div class="home-slider py-4">
+  <div class="home-slider py-4 container-fluid px-lg-5">
     <!-- Slider main container -->
-    <div class="swiper homeSlider w-full max-w-[1920px] mx-auto">
+    <div class="swiper subCategoryHomeSlider w-full max-w-[1920px] mx-auto">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper font-averta">
         <!-- Slides 1 -->
         <div class="swiper-slide w-full flex flex-col md:flex-row items-center justify-center">
           <div
-            class="flex-1 order-1 order-md-0 w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
-            <div class="flex flex-col px-6 md:px-8 lg:px-16">
-              <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
-              <h3 class="text-2xl font-averta lg:text-4xl font-bold uppercase">
+            class="flex-1 order-1 order-md-0 w-full py-4 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
+            <div class="flex flex-col px-6 md:px-8 lg:px-16 slider-content-card">
+              <h1 class="font-font-normal text-lg fst-italic lg:text-xl">The nour</h1>
+              <h3 class="text-2xl font-averta lg:text-3xl font-bold uppercase">
                 Lorem, ipsum dolor.
               </h3>
-              <p class="text-sm mt-4 font-averta">
+              <p class="text-sm  lg:mt-4 font-averta">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Impedit, optio beatae. Nam ipsam laudantium tenetur.
               </p>
 
-              <div class="flex flex-row gap-3 mt-4 slider-btns ">
+              <div class="flex flex-row gap-3 mt-3 slider-btns ">
                 <button
-                  class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                  class="font-averta px-2 py-3 lg:py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
                   shop now
-                </button>
-                <button
-                  class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
-                  discover
                 </button>
               </div>
             </div>
@@ -1243,7 +1241,7 @@
           <div class="flex-1 order-0 order-md-1 w-100 h-100">
             <a href="" class="h-100 slider-image">
               <figure class="w-fit relative h-100 mx-auto grid mb-0">
-                <picture class="w-100 h-100">
+                <picture class="w-100 h-100 rounded-4">
                   <source srcset="
                         ./assets/img/home-slider-image/slider-image-01.jpg
                       " media="(max-width: 430px)" />
@@ -1260,8 +1258,8 @@
                         ./assets/img/home-slider-image/slider-image-01.jpg
                       " media="(max-width: 1366px)" />
                   <img src="./assets/img/home-slider-image/slider-image-01.jpg" alt="MAISON MARGIELA BOTM WK3"
-                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover" decoding="auto"
-                    fetchpriority="high" />
+                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover rounded-4"
+                    decoding="auto" fetchpriority="high" />
                 </picture>
               </figure>
             </a>
@@ -1271,24 +1269,24 @@
         <!-- Slides 2 -->
         <div class="swiper-slide w-full flex flex-col md:flex-row items-center justify-center">
           <div
-            class="flex-1 order-1 order-md-0 w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
-            <div class="flex flex-col px-6 md:px-8 lg:px-16">
-              <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
-              <h3 class="text-2xl font-averta lg:text-4xl font-bold uppercase">
+            class="flex-1 order-1 order-md-0 w-full py-4 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
+            <div class="flex flex-col px-6 md:px-8 lg:px-16 slider-content-card">
+              <h1 class="font-font-normal text-lg fst-italic lg:text-xl">The nour</h1>
+              <h3 class="text-2xl font-averta lg:text-3xl font-bold uppercase">
                 Lorem, ipsum dolor.
               </h3>
-              <p class="text-sm mt-4 font-averta">
+              <p class="text-sm  lg:mt-4 font-averta">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Impedit, optio beatae. Nam ipsam laudantium tenetur.
               </p>
 
-              <div class="flex flex-row gap-3 mt-4 slider-btns">
+              <div class="flex flex-row gap-3 mt-3 slider-btns">
                 <button
-                  class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                  class="font-averta px-2 py-3 lg:py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
                   shop now
                 </button>
                 <button
-                  class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                  class="font-averta px-2 py-3 lg:py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
                   discover
                 </button>
               </div>
@@ -1314,8 +1312,8 @@
                         ./assets/img/home-slider-image/slider-image-02.jpg
                       " media="(max-width: 1366px)" />
                   <img src="./assets/img/home-slider-image/slider-image-02.jpg" alt="MAISON MARGIELA BOTM WK3"
-                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover" decoding="auto"
-                    fetchpriority="high" />
+                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover rounded-4"
+                    decoding="auto" fetchpriority="high" />
                 </picture>
               </figure>
             </a>
@@ -1325,24 +1323,24 @@
         <!-- Slides 3 -->
         <div class="swiper-slide w-full flex flex-col md:flex-row items-center justify-center">
           <div
-            class="flex-1 order-1 order-md-0 w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
-            <div class="flex flex-col px-6 md:px-8 lg:px-16">
-              <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
-              <h3 class="text-2xl font-averta lg:text-4xl font-bold uppercase">
+            class="flex-1 order-1 order-md-0 w-full py-4 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
+            <div class="flex flex-col px-6 md:px-8 lg:px-16 slider-content-card">
+              <h1 class="font-font-normal text-lg fst-italic lg:text-xl">The nour</h1>
+              <h3 class="text-2xl font-averta lg:text-3xl font-bold uppercase">
                 Lorem, ipsum dolor.
               </h3>
-              <p class="text-sm mt-4 font-averta">
+              <p class="text-sm  lg:mt-4 font-averta">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Impedit, optio beatae. Nam ipsam laudantium tenetur.
               </p>
 
-              <div class="flex flex-row gap-3 mt-4 slider-btns">
+              <div class="flex flex-row gap-3 mt-3 slider-btns">
                 <button
-                  class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                  class="font-averta px-2 py-3 lg:py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
                   shop now
                 </button>
                 <button
-                  class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                  class="font-averta px-2 py-3 lg:py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
                   discover
                 </button>
               </div>
@@ -1368,8 +1366,8 @@
                         ./assets/img/home-slider-image/slider-image-05.jpg
                       " media="(max-width: 1366px)" />
                   <img src="./assets/img/home-slider-image/slider-image-05.jpg" alt="MAISON MARGIELA BOTM WK3"
-                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover" decoding="auto"
-                    fetchpriority="high" />
+                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover rounded-4"
+                    decoding="auto" fetchpriority="high" />
                 </picture>
               </figure>
             </a>
@@ -1378,24 +1376,24 @@
         <!-- Slides 4 -->
         <div class="swiper-slide w-full flex flex-col md:flex-row items-center justify-center">
           <div
-            class="flex-1 order-1 order-md-0 w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
-            <div class="flex flex-col px-6 md:px-8 lg:px-16">
-              <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
-              <h3 class="text-2xl font-averta lg:text-4xl font-bold uppercase">
+            class="flex-1 order-1 order-md-0 w-full py-4 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
+            <div class="flex flex-col px-6 md:px-8 lg:px-16 slider-content-card">
+              <h1 class="font-font-normal text-lg fst-italic lg:text-xl">The nour</h1>
+              <h3 class="text-2xl font-averta lg:text-3xl font-bold uppercase">
                 Lorem, ipsum dolor.
               </h3>
-              <p class="text-sm mt-4 font-averta">
+              <p class="text-sm  lg:mt-4 font-averta">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Impedit, optio beatae. Nam ipsam laudantium tenetur.
               </p>
 
-              <div class="flex flex-row gap-3 mt-4 slider-btns">
+              <div class="flex flex-row gap-3 mt-3 slider-btns">
                 <button
-                  class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                  class="font-averta px-2 py-3 lg:py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
                   shop now
                 </button>
                 <button
-                  class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                  class="font-averta px-2 py-3 lg:py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
                   discover
                 </button>
               </div>
@@ -1421,8 +1419,8 @@
                         ./assets/img/home-slider-image/slider-image-04.jpg
                       " media="(max-width: 1366px)" />
                   <img src="./assets/img/home-slider-image/slider-image-04.jpg" alt="MAISON MARGIELA BOTM WK3"
-                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover" decoding="auto"
-                    fetchpriority="high" />
+                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover rounded-4"
+                    decoding="auto" fetchpriority="high" />
                 </picture>
               </figure>
             </a>
@@ -1431,24 +1429,24 @@
         <!-- Slides 5 -->
         <div class="swiper-slide w-full flex flex-col md:flex-row items-center justify-center">
           <div
-            class="flex-1 order-1 order-md-0 w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
-            <div class="flex flex-col px-6 md:px-8 lg:px-16">
-              <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
-              <h3 class="text-2xl font-averta lg:text-4xl font-bold uppercase">
+            class="flex-1 order-1 order-md-0 w-full py-4 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
+            <div class="flex flex-col px-6 md:px-8 lg:px-16 slider-content-card">
+              <h1 class="font-font-normal text-lg fst-italic lg:text-xl">The nour</h1>
+              <h3 class="text-2xl font-averta lg:text-3xl font-bold uppercase">
                 Lorem, ipsum dolor.
               </h3>
-              <p class="text-sm mt-4 font-averta">
+              <p class="text-sm  lg:mt-4 font-averta">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Impedit, optio beatae. Nam ipsam laudantium tenetur.
               </p>
 
-              <div class="flex flex-row gap-3 mt-4 slider-btns">
+              <div class="flex flex-row gap-3 mt-3 slider-btns">
                 <button
-                  class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                  class="font-averta px-2 py-3 lg:py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
                   shop now
                 </button>
                 <button
-                  class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                  class="font-averta px-2 py-3 lg:py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
                   discover
                 </button>
               </div>
@@ -1474,8 +1472,8 @@
                         ./assets/img/home-slider-image/slider-image-05.jpg
                       " media="(max-width: 1366px)" />
                   <img src="./assets/img/home-slider-image/slider-image-05.jpg" alt="MAISON MARGIELA BOTM WK3"
-                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover" decoding="auto"
-                    fetchpriority="high" />
+                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover rounded-4"
+                    decoding="auto" fetchpriority="high" />
                 </picture>
               </figure>
             </a>
@@ -1484,24 +1482,24 @@
         <!-- Slides 06 -->
         <div class="swiper-slide w-full flex flex-col md:flex-row items-center justify-center">
           <div
-            class="flex-1 order-1 order-md-0 w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
-            <div class="flex flex-col px-6 md:px-8 lg:px-16">
-              <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
-              <h3 class="text-2xl font-averta lg:text-4xl font-bold uppercase">
+            class="flex-1 order-1 order-md-0 w-full py-4 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
+            <div class="flex flex-col px-6 md:px-8 lg:px-16 slider-content-card">
+              <h1 class="font-font-normal text-lg fst-italic lg:text-xl">The nour</h1>
+              <h3 class="text-2xl font-averta lg:text-3xl font-bold uppercase">
                 Lorem, ipsum dolor.
               </h3>
-              <p class="text-sm mt-4 font-averta">
+              <p class="text-sm  lg:mt-4 font-averta">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Impedit, optio beatae. Nam ipsam laudantium tenetur.
               </p>
 
-              <div class="flex flex-row gap-3 mt-4 slider-btns">
+              <div class="flex flex-row gap-3 mt-3 slider-btns">
                 <button
-                  class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                  class="font-averta px-2 py-3 lg:py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
                   shop now
                 </button>
                 <button
-                  class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                  class="font-averta px-2 py-3 lg:py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
                   discover
                 </button>
               </div>
@@ -1527,8 +1525,8 @@
                         ./assets/img/home-slider-image/slider-image-06.jpg
                       " media="(max-width: 1366px)" />
                   <img src="./assets/img/home-slider-image/slider-image-06.jpg" alt="MAISON MARGIELA BOTM WK3"
-                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover" decoding="auto"
-                    fetchpriority="high" />
+                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover rounded-4"
+                    decoding="auto" fetchpriority="high" />
                 </picture>
               </figure>
             </a>
@@ -1537,24 +1535,24 @@
         <!-- Slides 07 -->
         <div class="swiper-slide w-full flex flex-col md:flex-row items-center justify-center">
           <div
-            class="flex-1 order-1 order-md-0 w-full py-16 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
-            <div class="flex flex-col px-6 md:px-8 lg:px-16">
-              <h1 class="font-font-medium text-3xl lg:text-4xl">The nour</h1>
-              <h3 class="text-2xl font-averta lg:text-4xl font-bold uppercase">
+            class="flex-1 order-1 order-md-0 w-full py-4 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
+            <div class="flex flex-col px-6 md:px-8 lg:px-16 slider-content-card">
+              <h1 class="font-font-normal text-lg fst-italic lg:text-xl">The nour</h1>
+              <h3 class="text-2xl font-averta lg:text-3xl font-bold uppercase">
                 Lorem, ipsum dolor.
               </h3>
-              <p class="text-sm mt-4 font-averta">
+              <p class="text-sm  lg:mt-4 font-averta">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Impedit, optio beatae. Nam ipsam laudantium tenetur.
               </p>
 
-              <div class="flex flex-row gap-3 mt-4 slider-btns">
+              <div class="flex flex-row gap-3 mt-3 slider-btns">
                 <button
-                  class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                  class="font-averta px-2 py-3 lg:py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
                   shop now
                 </button>
                 <button
-                  class="font-averta px-2 py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                  class="font-averta px-2 py-3 lg:py-4 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
                   discover
                 </button>
               </div>
@@ -1563,7 +1561,7 @@
           <div class="flex-1 order-0 order-md-1 w-100 h-100">
             <a href="" class="h-100 slider-image">
               <figure class="w-fit relative h-100 mx-auto grid mb-0">
-                <picture class="w-100 h-100">
+                <picture class="w-100 h-100 rounded-4">
                   <source srcset="
                         ./assets/img/home-slider-image/slider-image-07.jpg
                       " media="(max-width: 430px)" />
@@ -1580,8 +1578,8 @@
                         ./assets/img/home-slider-image/slider-image-07.jpg
                       " media="(max-width: 1366px)" />
                   <img src="./assets/img/home-slider-image/slider-image-07.jpg" alt="MAISON MARGIELA BOTM WK3"
-                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover" decoding="auto"
-                    fetchpriority="high" />
+                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover rounded-4"
+                    decoding="auto" fetchpriority="high" />
                 </picture>
               </figure>
             </a>
@@ -1589,21 +1587,24 @@
         </div>
       </div>
       <!-- If we need pagination -->
-      <div class="swiper-pagination"></div>
+      <!-- <div class="swiper-pagination"></div> -->
       <!-- If we need navigation buttons -->
-      <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-      <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+      <div class="sub-category-home-prev  bg-white shadow-sm rounded-circle">
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
+      <div class="sub-category-home-next  bg-white shadow-sm rounded-circle">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
     </div>
   </div>
 
 
 
   <!-- category section  -->
-  <div class="category-section py-8 mx-auto">
-    <h4 style="font-size: 24px; text-transform: uppercase; margin-bottom:2rem;"
-      class="text-xl font-normal font-averta text-center">shop by
+  <div class="category-section container-fluid mx-auto px-lg-5">
+    <h4 class=" font-averta text-center">shop by
       skin care Category</h4>
-    <div class="swiper categorySlider lg:w-[992px] xl:w-[1200px] mx-auto">
+    <div class="swiper categorySlider  mx-auto">
       <div class="swiper-wrapper px-4 md:px-8 xl:px-0">
 
         <div class="swiper-slide flex flex-col gap-2 items-center text-center">
@@ -1677,9 +1678,15 @@
       </div>
 
 
+      <div class="swiper-pagination"></div>
 
-      <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-      <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+
+      <div class="category-slider-prev">
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
+      <div class="category-slider-next">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
     </div>
   </div>
 
@@ -1687,7 +1694,7 @@
 
   <!-- dynamic tab content  -->
   <div class="dynamic-tab-content mx-auto">
-    <div class="container mx-auto mt-10 px-4 lg:px-0">
+    <div class="container-fluid mx-auto px-lg-5">
       <h4 style="margin-bottom: 1.5rem; font-weight: normal;"
         class="text-xl font-normal font-averta text-center text-uppercase">in the
         spotlight</h2>
@@ -1729,13 +1736,23 @@
                       <p class="text-sm tracking-wider text-balance font-averta m-0">
                         Saie Glowy Super Gel Mini 15ml (Various Shades)
                       </p>
-                      <div class="block my-2">
+                      <!-- <div class="block my-2">
                         <a href="/#">
                           <button
                             class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
                             unlock a $ 15 gift card
                           </button>
                         </a>
+                      </div> -->
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                        </div>
+                        <p class="m-0">7</p>
                       </div>
 
                       <div class="my-1">
@@ -1769,13 +1786,23 @@
                       <p class="text-sm tracking-wider text-balance font-averta m-0">
                         Saie Glowy Super Gel Mini 15ml (Various Shades)
                       </p>
-                      <div class="block my-2">
+                      <!-- <div class="block my-2">
                         <a href="/#">
                           <button
                             class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
                             unlock a $ 15 gift card
                           </button>
                         </a>
+                      </div> -->
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                        </div>
+                        <p class="m-0">7</p>
                       </div>
 
                       <div class="my-1">
@@ -1809,13 +1836,23 @@
                       <p class="text-sm tracking-wider text-balance font-averta m-0">
                         Saie Glowy Super Gel Mini 15ml (Various Shades)
                       </p>
-                      <div class="block my-2">
+                      <!-- <div class="block my-2">
                         <a href="/#">
                           <button
                             class="px-2 py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
                             unlock a $ 15 gift card
                           </button>
                         </a>
+                      </div> -->
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                        </div>
+                        <p class="m-0">7</p>
                       </div>
 
                       <div class="my-1">
@@ -1849,13 +1886,23 @@
                       <p class="text-sm tracking-wider text-balance font-averta m-0">
                         Saie Glowy Super Gel Mini 15ml (Various Shades)
                       </p>
-                      <div class="block my-2">
+                      <!-- <div class="block my-2">
                         <a href="/#">
                           <button
                             class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
                             unlock a $ 15 gift card
                           </button>
                         </a>
+                      </div> -->
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                        </div>
+                        <p class="m-0">7</p>
                       </div>
 
                       <div class="my-1">
@@ -1889,13 +1936,23 @@
                       <p class="text-sm tracking-wider text-balance font-averta m-0">
                         Saie Glowy Super Gel Mini 15ml (Various Shades)
                       </p>
-                      <div class="block my-2">
+                      <!-- <div class="block my-2">
                         <a href="/#">
                           <button
                             class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
                             unlock a $ 15 gift card
                           </button>
                         </a>
+                      </div> -->
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                        </div>
+                        <p class="m-0">7</p>
                       </div>
 
                       <div class="my-1">
@@ -1929,13 +1986,23 @@
                       <p class="text-sm tracking-wider text-balance font-averta m-0">
                         Saie Glowy Super Gel Mini 15ml (Various Shades)
                       </p>
-                      <div class="block my-2">
+                      <!-- <div class="block my-2">
                         <a href="/#">
                           <button
                             class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
                             unlock a $ 15 gift card
                           </button>
                         </a>
+                      </div> -->
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                        </div>
+                        <p class="m-0">7</p>
                       </div>
 
                       <div class="my-1">
@@ -1954,8 +2021,12 @@
               <!-- pagination buttons -->
               <div class="swiper-pagination"></div>
               <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-              <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+              <div class="swiper-button-prev bg-white shadow-sm">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="swiper-button-next bg-white shadow-sm">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
             </div>
           </div>
           <div id="tab2" class="hidden">
@@ -1980,13 +2051,23 @@
                       <p class="text-sm tracking-wider text-balance font-averta m-0">
                         Saie Glowy Super Gel Mini 15ml (Various Shades)
                       </p>
-                      <div class="block my-2">
+                      <!-- <div class="block my-2">
                         <a href="/#">
                           <button
                             class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
                             unlock a $ 15 gift card
                           </button>
                         </a>
+                      </div> -->
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                        </div>
+                        <p class="m-0">7</p>
                       </div>
 
                       <div class="my-1">
@@ -2020,13 +2101,23 @@
                       <p class="text-sm tracking-wider text-balance font-averta m-0">
                         Saie Glowy Super Gel Mini 15ml (Various Shades)
                       </p>
-                      <div class="block my-2">
+                      <!-- <div class="block my-2">
                         <a href="/#">
                           <button
                             class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
                             unlock a $ 15 gift card
                           </button>
                         </a>
+                      </div> -->
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                        </div>
+                        <p class="m-0">7</p>
                       </div>
 
                       <div class="my-1">
@@ -2060,13 +2151,23 @@
                       <p class="text-sm m-0 font-averta tracking-wider text-balance font-averta">
                         Saie Glowy Super Gel Mini 15ml (Various Shades)
                       </p>
-                      <div class="block my-2">
+                      <!-- <div class="block my-2">
                         <a href="/#">
                           <button
                             class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
                             unlock a $ 15 gift card
                           </button>
                         </a>
+                      </div> -->
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                        </div>
+                        <p class="m-0">7</p>
                       </div>
 
                       <div class="my-1">
@@ -2100,13 +2201,23 @@
                       <p class="text-sm tracking-wider text-balance font-averta m-0">
                         Saie Glowy Super Gel Mini 15ml (Various Shades)
                       </p>
-                      <div class="block my-2">
+                      <!-- <div class="block my-2">
                         <a href="/#">
                           <button
                             class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
                             unlock a $ 15 gift card
                           </button>
                         </a>
+                      </div> -->
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                        </div>
+                        <p class="m-0">7</p>
                       </div>
 
                       <div class="my-1">
@@ -2140,13 +2251,23 @@
                       <p class="text-sm tracking-wider text-balance font-averta m-0">
                         Saie Glowy Super Gel Mini 15ml (Various Shades)
                       </p>
-                      <div class="block my-2">
+                      <!-- <div class="block my-2">
                         <a href="/#">
                           <button
                             class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
                             unlock a $ 15 gift card
                           </button>
                         </a>
+                      </div> -->
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                        </div>
+                        <p class="m-0">7</p>
                       </div>
 
                       <div class="my-1">
@@ -2180,13 +2301,23 @@
                       <p class="text-sm tracking-wider text-balance font-averta m-0">
                         Saie Glowy Super Gel Mini 15ml (Various Shades)
                       </p>
-                      <div class="block my-2">
+                      <!-- <div class="block my-2">
                         <a href="/#">
                           <button
                             class="px-2 font-averta py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
                             unlock a $ 15 gift card
                           </button>
                         </a>
+                      </div> -->
+                      <div class="flex gap-2 text-sm tracking-wider">
+                        <div class="flex items-center">
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-solid fa-star"></i></span>
+                          <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                        </div>
+                        <p class="m-0">7</p>
                       </div>
 
                       <div class="my-1">
@@ -2205,8 +2336,12 @@
               <!-- pagination buttons -->
               <div class="swiper-pagination"></div>
               <!-- If we need navigation buttons -->
-              <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-              <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+              <div class="swiper-button-prev  bg-white shadow-sm">
+                <i class="fa-solid fa-chevron-left"></i>
+              </div>
+              <div class="swiper-button-next  bg-white shadow-sm">
+                <i class="fa-solid fa-chevron-right"></i>
+              </div>
             </div>
           </div>
 
@@ -2216,10 +2351,9 @@
 
 
   <section class="concern-section py-8">
-    <div class="container mx-auto px-4 lg:px-0">
-      <h4 style="font-size: 24px; text-transform: uppercase; margin-bottom:2rem;"
-        class="text-xl font-normal font-averta text-center">SHOP BY SKIN CARE CONCERN</h4>
-      <div class="swiper concernSlider lg:w-[992px] xl:w-[1200px] mx-auto">
+    <div class="container-fluid mx-auto px-lg-5">
+      <h4 class="text-xl font-normal font-averta text-center">SHOP BY SKIN CARE CONCERN</h4>
+      <div class="swiper concernSlider  mx-auto">
         <div class="swiper-wrapper px-4 md:px-8 xl:px-0">
           <div class="swiper-slide flex flex-col gap-2 items-center text-center">
             <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
@@ -2331,17 +2465,20 @@
           </div>
         </div>
 
-        <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-        <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+        <div class="concern-slider-prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="concern-slider-next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
       </div>
     </div>
   </section>
 
   <section class="ingredient-section py-8">
-    <div class="container mx-auto px-4 lg:px-0">
-      <h4 style="font-size: 24px; text-transform: uppercase; margin-bottom:2rem;"
-        class="text-xl font-normal font-averta text-center">SHOP BY SKIN CARE INGREDIENT</h4>
-      <div class="swiper ingredientSlider lg:w-[992px] xl:w-[1200px] mx-auto">
+    <div class="container-fluid mx-auto px-lg-5">
+      <h4 class="text-xl font-normal font-averta text-center">SHOP BY SKIN CARE INGREDIENT</h4>
+      <div class="swiper ingredientSlider  mx-auto">
         <div class="swiper-wrapper px-4 md:px-8 xl:px-0">
           <div class="swiper-slide">
             <div class="ingredient-card">
@@ -2401,8 +2538,12 @@
           </div>
         </div>
         <div class="swiper-pagination"></div>
-        <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-        <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+        <div class="ingredient-slider-prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="ingredient-slider-next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
       </div>
       <div class="text-center mt-6">
         <a href="/#"
@@ -2413,8 +2554,8 @@
   </section>
 
 
-  <section class="shop-by-brands-section py-8">
-    <div class="container mx-auto px-4 lg:px-0">
+  <section class="shop-by-brands-section pt-4">
+    <div class="container-fluid mx-auto px-lg-5">
       <div class="brands-header">
         <h2 class="title font-averta">Shop By Brands</h2>
         <a href="/#" class="view-all">Shop All Brands ›</a>
@@ -2431,16 +2572,6 @@
         <a href="/#" class="brand-cell"><img src="./assets/img/brand-logo/brand-logo.svg" alt="Brand 9"></a>
         <a href="/#" class="brand-cell"><img src="./assets/img/brand-logo/cosrx-logo.svg" alt="Brand 10"></a>
       </div>
-
-      <!-- button  -->
-      <div class="text-center mt-4 mb-2">
-        <a href="/#"
-          class="shop-all-btn inline-block px-6 py-3 font-averta text-xs md:text-sm uppercase tracking-wider">
-          SHOP ALL SKINCARE
-        </a>
-      </div>
-      <!-- button end -->
-
     </div>
   </section>
 
@@ -2966,17 +3097,19 @@
 
 
   <!-- Site Footer -->
-  <footer class="site-footer bg-black text-white pt-5 pb-3">
+  <footer class="site-footer bg-black text-white pt-4 pb-3">
     <!-- Footer Top: Newsletter & Social -->
-    <div class="footer-top border-bottom border-light-subtle pb-4 mb-5">
-      <div class="container">
+    <div class="footer-top border-bottom border-light-subtle pb-4 mb-4">
+      <div class="container-fluid mx-auto px-lg-5">
         <div class="row align-items-center gy-4">
           <!-- Newsletter -->
           <div class="col-lg-6">
             <div
               class="d-flex flex-column flex-lg-row align-items-center gap-3 justify-content-center justify-content-lg-start">
-              <span><i class="fa-regular fa-envelope fs-4"></i></span>
-              <span class="text-uppercase fw-light text-center text-lg-start">15% off your order when you sign-up to our
+
+              <span class="text-uppercase d-flex justify-center fw-light text-center text-lg-start">
+                <span class="me-2"><i class="fa-regular fa-envelope fs-4"></i></span>
+                15% off your order when you sign-up to our
                 emails</span>
               <button class="btn btn-light rounded-0 px-4 py-2 text-uppercase fw-bold">Sign Up</button>
             </div>
@@ -2984,7 +3117,7 @@
           <!-- Social Icons -->
           <div class="col-lg-6">
             <div class="d-flex justify-content-center justify-content-lg-end gap-4 fs-5 social-icons">
-              <span>Connect with us</span>
+              <span class="d-none d-lg-block">Connect with us</span>
               <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-facebook-f"></i></a>
               <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-x-twitter"></i></a>
               <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram"></i></a>
@@ -2998,7 +3131,7 @@
 
     <!-- Footer Main: Accordion for Mobile, Grid for Desktop -->
     <div class="footer-main mb-5">
-      <div class="container px-lg-5">
+      <div class="container-fluid mx-auto px-lg-5">
 
         <!-- Mobile View: Accordion (Visible only on mobile/tablet) -->
         <div class="footer-mobile-view text-center d-lg-none">
@@ -3118,7 +3251,8 @@
 
             <!-- Col 2: Customer Service -->
             <div class="col-lg-2 offset-lg-1">
-              <h5 class="text-uppercase fw-bold fs-6 mb-4 text-white">Customer Service</h5>
+              <h5 class="text-uppercase fw-bold mb-4 text-white fst-medium" style="font-size: 14px;">Customer Service
+              </h5>
               <ul class="list-unstyled d-flex flex-column gap-2 small fw-light">
                 <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
                 <li><a href="#" class="text-white text-decoration-none">Help Centre / FAQs</a></li>
@@ -3130,7 +3264,8 @@
 
             <!-- Col 3: About Cult Beauty -->
             <div class="col-lg-2">
-              <h5 class="text-uppercase fw-bold fs-6 mb-4 text-white">About Cult Beauty</h5>
+              <h5 class="text-uppercase fw-bold mb-4 text-white fst-medium" style="font-size: 14px;">About Cult Beauty
+              </h5>
               <ul class="list-unstyled d-flex flex-column gap-2 small fw-light">
                 <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
                 <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
@@ -3141,7 +3276,7 @@
 
             <!-- Col 4: Legal -->
             <div class="col-lg-2">
-              <h5 class="text-uppercase fw-bold fs-6 mb-4 text-white">Legal</h5>
+              <h5 class="text-uppercase fw-bold mb-4 text-white fst-medium" style="font-size: 14px;">Legal</h5>
               <ul class="list-unstyled d-flex flex-column gap-2 small fw-light">
                 <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
                 <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
@@ -3153,7 +3288,7 @@
 
             <!-- Col 5: Find Out More -->
             <div class="col-lg-2">
-              <h5 class="text-uppercase fw-bold fs-6 mb-4 text-white">Find Out More</h5>
+              <h5 class="text-uppercase fw-bold mb-4 text-white fst-medium" style="font-size: 14px;">Find Out More</h5>
               <ul class="list-unstyled d-flex flex-column gap-2 small fw-light">
                 <li><a href="#" class="text-white text-decoration-none">Cult Status</a></li>
                 <li><a href="#" class="text-white text-decoration-none">Promotions</a></li>
@@ -3169,7 +3304,7 @@
 
     <!-- Footer Bottom -->
     <div class="footer-bottom pt-4 border-top border-light-subtle">
-      <div class="container ">
+      <div class="container-fluid mx-auto px-lg-5">
         <div class="row gy-3  justify-content-between">
           <div class="col-lg-6 text-center text-lg-start">
             <span class="small fw-light">2025 © The Hut.com Ltd. t/a CultBeauty.com</span>
