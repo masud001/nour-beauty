@@ -14101,6 +14101,10 @@ textarea.form-control-lg {
   }
 }
 
+.blog-section figure {
+  margin-bottom: 0px !important;
+}
+
 @media (max-width: 768px) {
   .blog-details .news-tag,
   .blog-details .writter-name {
