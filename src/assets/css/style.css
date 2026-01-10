@@ -13282,6 +13282,14 @@ textarea.form-control-lg {
   position: relative;
   z-index: 0;
 }
+.product-listing-section button {
+  background-color: #eadcfd !important;
+  color: #000 !important;
+  font-size: 14px;
+}
+.product-listing-section button:hover {
+  background-color: #d7c2fa !important;
+}
 
 .product-card:hover {
   cursor: pointer;
