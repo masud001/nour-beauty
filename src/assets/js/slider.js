@@ -365,16 +365,16 @@ const blogMenu = new Swiper(".blogMenu", {
     },
   },
 });
-const ingredientSlider = new Swiper(".ingredientSlider", {
+const shopByBrand = new Swiper(".shopByBrand", {
   direction: "horizontal",
   breakpoints: {
     320: {
-      slidesPerView: 1.4,
+      slidesPerView: 1.7,
 
       spaceBetween: 16,
       navigation: {
-        nextEl: ".ingredient-slider-next",
-        prevEl: ".ingredient-slider-prev",
+        nextEl: ".shop-by-brand-next",
+        prevEl: ".shop-by-brand-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -384,10 +384,10 @@ const ingredientSlider = new Swiper(".ingredientSlider", {
     480: {
       loop: false,
       slidesPerView: 2,
-      spaceBetween: 18,
+      spaceBetween: 20,
       navigation: {
-        nextEl: ".ingredient-slider-next",
-        prevEl: ".ingredient-slider-prev",
+        nextEl: ".shop-by-brand-next",
+        prevEl: ".shop-by-brand-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -399,8 +399,8 @@ const ingredientSlider = new Swiper(".ingredientSlider", {
       slidesPerView: 2.5,
       spaceBetween: 24,
       navigation: {
-        nextEl: ".ingredient-slider-next",
-        prevEl: ".ingredient-slider-prev",
+        nextEl: ".shop-by-brand-next",
+        prevEl: ".shop-by-brand-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -410,10 +410,10 @@ const ingredientSlider = new Swiper(".ingredientSlider", {
     768: {
       loop: false,
       slidesPerView: 3,
-      spaceBetween: 28,
+      spaceBetween: 20,
       navigation: {
-        nextEl: ".ingredient-slider-next",
-        prevEl: ".ingredient-slider-prev",
+        nextEl: ".shop-by-brand-next",
+        prevEl: ".shop-by-brand-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -422,11 +422,11 @@ const ingredientSlider = new Swiper(".ingredientSlider", {
     },
     1024: {
       loop: false,
-      slidesPerView: 4,
-      spaceBetween: 32,
+      slidesPerView: 5,
+      spaceBetween: 20,
       navigation: {
-        nextEl: ".ingredient-slider-next",
-        prevEl: ".ingredient-slider-prev",
+        nextEl: ".shop-by-brand-next",
+        prevEl: ".shop-by-brand-prev",
       },
       pagination: {
         el: ".swiper-pagination",
@@ -435,11 +435,11 @@ const ingredientSlider = new Swiper(".ingredientSlider", {
     },
     1280: {
       loop: false,
-      slidesPerView: 4,
-      spaceBetween: 36,
+      slidesPerView: 6,
+      spaceBetween: 20,
       navigation: {
-        nextEl: ".ingredient-slider-next",
-        prevEl: ".ingredient-slider-prev",
+        nextEl: ".shop-by-brand-next",
+        prevEl: ".shop-by-brand-prev",
       },
       pagination: {
         el: ".swiper-pagination",

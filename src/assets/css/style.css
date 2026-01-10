@@ -12323,6 +12323,111 @@ textarea.form-control-lg {
   display: flex !important;
 }
 
+.shop-by-brand-slider-section h4, .shop-by-brand-slider-section .h4 {
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: uppercase !important;
+  margin-bottom: 2rem;
+}
+@media (max-width: 768px) {
+  .shop-by-brand-slider-section h4, .shop-by-brand-slider-section .h4 {
+    font-size: 20px;
+  }
+}
+.shop-by-brand-slider-section .shopByBrand {
+  padding-bottom: 1.5rem;
+}
+.shop-by-brand-slider-section .brand-card {
+  aspect-ratio: 16/9;
+  height: 116px;
+}
+.shop-by-brand-slider-section .brand-card img {
+  object-fit: cover;
+  display: block;
+}
+.shop-by-brand-slider-section .swiper-slide {
+  width: auto;
+}
+.shop-by-brand-slider-section .shop-by-brand-view-all-btn {
+  margin-top: 25px;
+  background-color: #EADCFD;
+  color: #000;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+.shop-by-brand-slider-section .shop-by-brand-view-all-btn:hover {
+  background-color: #d7c2fa;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+.shop-by-brand-slider-section .shop-by-brand-prev,
+.shop-by-brand-slider-section .shop-by-brand-next {
+  width: 45px !important;
+  height: 45px !important;
+  border-radius: 50%;
+  background-image: linear-gradient(to right, #4c4c4c 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.3s ease-out;
+  color: #000;
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .shop-by-brand-slider-section .shop-by-brand-prev,
+  .shop-by-brand-slider-section .shop-by-brand-next {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+.shop-by-brand-slider-section .shop-by-brand-prev::after,
+.shop-by-brand-slider-section .shop-by-brand-next::after {
+  content: none;
+}
+.shop-by-brand-slider-section .shop-by-brand-prev i,
+.shop-by-brand-slider-section .shop-by-brand-next i {
+  font-size: 16px;
+  font-weight: bold;
+  color: inherit;
+}
+.shop-by-brand-slider-section .shop-by-brand-prev:hover,
+.shop-by-brand-slider-section .shop-by-brand-next:hover {
+  background-position: left bottom;
+  color: #fff;
+}
+.shop-by-brand-slider-section .shop-by-brand-prev {
+  left: 20px;
+}
+.shop-by-brand-slider-section .shop-by-brand-next {
+  right: 20px;
+}
+.shop-by-brand-slider-section .shopByBrand:hover .shop-by-brand-prev,
+.shop-by-brand-slider-section .shopByBrand:hover .shop-by-brand-next {
+  opacity: 1;
+  visibility: visible;
+}
+.shop-by-brand-slider-section .shopByBrand .shop-by-brand-prev.swiper-button-disabled,
+.shop-by-brand-slider-section .shopByBrand .shop-by-brand-next.swiper-button-disabled,
+.shop-by-brand-slider-section .shopByBrand .shop-by-brand-prev.swiper-button-lock,
+.shop-by-brand-slider-section .shopByBrand .shop-by-brand-next.swiper-button-lock {
+  opacity: 0.35 !important;
+  cursor: not-allowed !important;
+  background-position: right bottom !important;
+  color: #000 !important;
+}
+.shop-by-brand-slider-section .shopByBrand .shop-by-brand-prev.swiper-button-lock,
+.shop-by-brand-slider-section .shopByBrand .shop-by-brand-next.swiper-button-lock {
+  display: flex !important;
+}
+
 .shop-all-btn {
   background-color: #EADCFD;
   color: #000;
