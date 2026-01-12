@@ -1,0 +1,503 @@
+// ============================================
+// Typography System - Luxurious & Premium
+// ============================================
+@use "./design-tokens" as tokens;
+
+// ============================================
+// BASE TYPOGRAPHY
+// ============================================
+
+body {
+    font-family: tokens.$font-family-body;
+    font-size: tokens.$font-size-base;
+    font-weight: tokens.$font-weight-regular;
+    line-height: tokens.$line-height-relaxed;
+    color: tokens.$color-text-primary;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// ============================================
+// HEADINGS
+// ============================================
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+    font-family: tokens.$font-family-heading;
+    font-weight: tokens.$font-weight-bold;
+    line-height: tokens.$line-height-tight;
+    color: tokens.$color-text-primary;
+    margin-top: 0;
+    margin-bottom: tokens.$spacing-4;
+}
+
+h1,
+.h1 {
+    font-size: tokens.$font-size-5xl;
+    font-weight: tokens.$font-weight-black;
+    letter-spacing: tokens.$letter-spacing-tight;
+    line-height: tokens.$line-height-tight;
+}
+
+h2,
+.h2 {
+    font-size: tokens.$font-size-4xl;
+    font-weight: tokens.$font-weight-bold;
+    letter-spacing: tokens.$letter-spacing-tight;
+}
+
+h3,
+.h3 {
+    font-size: tokens.$font-size-3xl;
+    font-weight: tokens.$font-weight-bold;
+    line-height: tokens.$line-height-snug;
+}
+
+h4,
+.h4 {
+    font-size: tokens.$font-size-2xl;
+    font-weight: tokens.$font-weight-semibold;
+    line-height: tokens.$line-height-snug;
+}
+
+h5,
+.h5 {
+    font-size: tokens.$font-size-xl;
+    font-weight: tokens.$font-weight-semibold;
+    line-height: tokens.$line-height-normal;
+}
+
+h6,
+.h6 {
+    font-size: tokens.$font-size-lg;
+    font-weight: tokens.$font-weight-semibold;
+    line-height: tokens.$line-height-normal;
+}
+
+// ============================================
+// PARAGRAPH & TEXT
+// ============================================
+
+p {
+    margin-top: 0;
+    margin-bottom: tokens.$spacing-4;
+    font-size: tokens.$font-size-base;
+    line-height: tokens.$line-height-relaxed;
+    color: tokens.$color-text-primary;
+}
+
+.lead {
+    font-size: tokens.$font-size-lg;
+    font-weight: tokens.$font-weight-regular;
+    line-height: tokens.$line-height-relaxed;
+    color: tokens.$color-text-primary;
+}
+
+// ============================================
+// DISPLAY TEXT (Hero Sections)
+// ============================================
+
+.text-display {
+    font-size: tokens.$font-size-6xl;
+    font-weight: tokens.$font-weight-black;
+    line-height: tokens.$line-height-none;
+    letter-spacing: tokens.$letter-spacing-tighter;
+    color: tokens.$color-text-primary;
+}
+
+.text-display-sm {
+    font-size: tokens.$font-size-5xl;
+    font-weight: tokens.$font-weight-black;
+    line-height: tokens.$line-height-tight;
+    letter-spacing: tokens.$letter-spacing-tight;
+}
+
+// ============================================
+// SUBTITLE & OVERLINE
+// ============================================
+
+.text-subtitle {
+    font-size: tokens.$font-size-lg;
+    font-weight: tokens.$font-weight-medium;
+    line-height: tokens.$line-height-normal;
+    letter-spacing: tokens.$letter-spacing-wide;
+    text-transform: uppercase;
+    color: tokens.$color-text-secondary;
+}
+
+.text-overline {
+    font-size: tokens.$font-size-sm;
+    font-weight: tokens.$font-weight-semibold;
+    line-height: tokens.$line-height-normal;
+    letter-spacing: tokens.$letter-spacing-widest;
+    text-transform: uppercase;
+    color: tokens.$color-text-secondary;
+}
+
+// ============================================
+// CAPTION & SMALL TEXT
+// ============================================
+
+.text-caption {
+    font-size: tokens.$font-size-sm;
+    font-weight: tokens.$font-weight-regular;
+    line-height: tokens.$line-height-normal;
+    color: tokens.$color-text-secondary;
+}
+
+.text-small {
+    font-size: tokens.$font-size-xs;
+    font-weight: tokens.$font-weight-regular;
+    line-height: tokens.$line-height-normal;
+    color: tokens.$color-text-secondary;
+}
+
+// ============================================
+// FONT SIZE UTILITIES
+// ============================================
+
+.text-xs {
+    font-size: tokens.$font-size-xs;
+}
+
+.text-sm {
+    font-size: tokens.$font-size-sm;
+}
+
+.text-base {
+    font-size: tokens.$font-size-base;
+}
+
+.text-lg {
+    font-size: tokens.$font-size-lg;
+}
+
+.text-xl {
+    font-size: tokens.$font-size-xl;
+}
+
+.text-2xl {
+    font-size: tokens.$font-size-2xl;
+}
+
+.text-3xl {
+    font-size: tokens.$font-size-3xl;
+}
+
+.text-4xl {
+    font-size: tokens.$font-size-4xl;
+}
+
+.text-5xl {
+    font-size: tokens.$font-size-5xl;
+}
+
+.text-6xl {
+    font-size: tokens.$font-size-6xl;
+}
+
+// ============================================
+// FONT WEIGHT UTILITIES
+// ============================================
+
+.font-extralight {
+    font-weight: tokens.$font-weight-extralight;
+}
+
+.font-light {
+    font-weight: tokens.$font-weight-light;
+}
+
+.font-regular {
+    font-weight: tokens.$font-weight-regular;
+}
+
+.font-medium {
+    font-weight: tokens.$font-weight-medium;
+}
+
+.font-semibold {
+    font-weight: tokens.$font-weight-semibold;
+}
+
+.font-bold {
+    font-weight: tokens.$font-weight-bold;
+}
+
+.font-extrabold {
+    font-weight: tokens.$font-weight-extrabold;
+}
+
+.font-black {
+    font-weight: tokens.$font-weight-black;
+}
+
+// ============================================
+// LINE HEIGHT UTILITIES
+// ============================================
+
+.leading-none {
+    line-height: tokens.$line-height-none;
+}
+
+.leading-tight {
+    line-height: tokens.$line-height-tight;
+}
+
+.leading-snug {
+    line-height: tokens.$line-height-snug;
+}
+
+.leading-normal {
+    line-height: tokens.$line-height-normal;
+}
+
+.leading-relaxed {
+    line-height: tokens.$line-height-relaxed;
+}
+
+.leading-loose {
+    line-height: tokens.$line-height-loose;
+}
+
+// ============================================
+// LETTER SPACING UTILITIES
+// ============================================
+
+.tracking-tighter {
+    letter-spacing: tokens.$letter-spacing-tighter;
+}
+
+.tracking-tight {
+    letter-spacing: tokens.$letter-spacing-tight;
+}
+
+.tracking-normal {
+    letter-spacing: tokens.$letter-spacing-normal;
+}
+
+.tracking-wide {
+    letter-spacing: tokens.$letter-spacing-wide;
+}
+
+.tracking-wider {
+    letter-spacing: tokens.$letter-spacing-wider;
+}
+
+.tracking-widest {
+    letter-spacing: tokens.$letter-spacing-widest;
+}
+
+// ============================================
+// TEXT ALIGNMENT
+// ============================================
+
+.text-left {
+    text-align: left;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-justify {
+    text-align: justify;
+}
+
+// ============================================
+// TEXT TRANSFORM
+// ============================================
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.lowercase {
+    text-transform: lowercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.normal-case {
+    text-transform: none;
+}
+
+// ============================================
+// TEXT DECORATION
+// ============================================
+
+.underline {
+    text-decoration: underline;
+}
+
+.line-through {
+    text-decoration: line-through;
+}
+
+.no-underline {
+    text-decoration: none;
+}
+
+// ============================================
+// FONT STYLE
+// ============================================
+
+.italic {
+    font-style: italic;
+}
+
+.not-italic {
+    font-style: normal;
+}
+
+// ============================================
+// TEXT TRUNCATION
+// ============================================
+
+.truncate {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+// ============================================
+// LINKS
+// ============================================
+
+a {
+    color: tokens.$color-text-primary;
+    text-decoration: none;
+    transition: tokens.$transition-base;
+
+    &:hover {
+        color: tokens.$color-primary;
+        text-decoration: underline;
+    }
+}
+
+.link-primary {
+    color: tokens.$color-primary;
+    font-weight: tokens.$font-weight-semibold;
+
+    &:hover {
+        color: darken(tokens.$color-primary, 10%);
+    }
+}
+
+.link-secondary {
+    color: tokens.$color-secondary;
+    font-weight: tokens.$font-weight-semibold;
+
+    &:hover {
+        color: darken(tokens.$color-secondary, 10%);
+    }
+}
+
+// ============================================
+// LISTS
+// ============================================
+
+ul,
+ol {
+    margin-top: 0;
+    margin-bottom: tokens.$spacing-4;
+    padding-left: tokens.$spacing-6;
+}
+
+li {
+    margin-bottom: tokens.$spacing-2;
+}
+
+.list-none {
+    list-style: none;
+    padding-left: 0;
+}
+
+.list-disc {
+    list-style-type: disc;
+}
+
+.list-decimal {
+    list-style-type: decimal;
+}
+
+// ============================================
+// BLOCKQUOTE
+// ============================================
+
+blockquote {
+    margin: tokens.$spacing-6 0;
+    padding: tokens.$spacing-4 tokens.$spacing-6;
+    border-left: 4px solid tokens.$color-primary;
+    background-color: tokens.$color-gray-50;
+    font-size: tokens.$font-size-lg;
+    font-style: italic;
+    color: tokens.$color-text-secondary;
+}
+
+// ============================================
+// CODE & PRE
+// ============================================
+
+code {
+    font-family: 'Courier New', monospace;
+    font-size: 0.875em;
+    padding: tokens.$spacing-1 tokens.$spacing-2;
+    background-color: tokens.$color-gray-100;
+    border-radius: tokens.$radius-base;
+    color: tokens.$color-text-primary;
+}
+
+pre {
+    font-family: 'Courier New', monospace;
+    font-size: tokens.$font-size-sm;
+    padding: tokens.$spacing-4;
+    background-color: tokens.$color-gray-900;
+    color: tokens.$color-gray-50;
+    border-radius: tokens.$radius-lg;
+    overflow-x: auto;
+    margin: tokens.$spacing-6 0;
+
+    code {
+        background: none;
+        padding: 0;
+        color: inherit;
+    }
+}

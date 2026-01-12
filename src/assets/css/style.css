@@ -4,7 +4,7 @@
  * Copyright 2011-2024 The Bootstrap Authors
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
-@import "../fonts/averta/fonts.css";
+@import "../fonts/flink-font/fonts.css";
 :root,
 [data-bs-theme=light] {
   --bs-blue: #0d6efd;
@@ -11846,9 +11846,9 @@ textarea.form-control-lg {
   }
 }
 .new-top-banner {
-  background: linear-gradient(to right, #DEF3EE, #EADCFD);
+  background: linear-gradient(to right, #DEF3EE, rgba(234, 220, 253, 0.5019607843));
   padding: 12px 0;
-  font-family: "Averta", sans-serif;
+  font-family: "Flink", sans-serif;
 }
 .new-top-banner__nav {
   display: flex;
@@ -13171,7 +13171,7 @@ textarea.form-control-lg {
 .site-footer {
   background: linear-gradient(90deg, #BEE4DA 0%, #D5BAFD 100%);
   color: #111827;
-  font-family: "Averta", sans-serif;
+  font-family: "Flink", sans-serif;
   padding-top: 12px !important;
   padding-bottom: 12px !important;
 }
@@ -14392,7 +14392,7 @@ textarea.form-control-lg {
   text-transform: uppercase;
 }
 .b2b-brand-section h2 span:first-child, .b2b-brand-section .h2 span:first-child {
-  font-family: "Averta Extrathin", sans-serif;
+  font-family: "Flink", sans-serif;
   font-weight: 100 !important;
   position: relative;
   margin-top: -9px;
@@ -14403,7 +14403,7 @@ textarea.form-control-lg {
   }
 }
 .b2b-brand-section h2 span:last-child, .b2b-brand-section .h2 span:last-child {
-  font-family: "Averta", sans-serif;
+  font-family: "Flink", sans-serif;
   font-weight: 600 !important;
 }
 @media (max-width: 768px) {
@@ -14414,7 +14414,7 @@ textarea.form-control-lg {
 .b2b-brand-section p {
   font-size: 20px;
   font-weight: 400;
-  font-family: "Averta", sans-serif;
+  font-family: "Flink", sans-serif;
   margin: 0;
   text-align: center;
   line-height: 40px;
@@ -14467,7 +14467,7 @@ textarea.form-control-lg {
   text-transform: uppercase;
 }
 .why-nour-section h2 span:first-child, .why-nour-section .h2 span:first-child {
-  font-family: "Averta Extrathin", sans-serif;
+  font-family: "Flink", sans-serif;
   font-weight: 100 !important;
   position: relative;
   margin-top: -9px;
@@ -14478,7 +14478,7 @@ textarea.form-control-lg {
   }
 }
 .why-nour-section h2 span:last-child, .why-nour-section .h2 span:last-child {
-  font-family: "Averta", sans-serif;
+  font-family: "Flink", sans-serif;
   font-weight: 600 !important;
 }
 @media (max-width: 768px) {
@@ -14503,7 +14503,7 @@ textarea.form-control-lg {
 }
 .why-nour-section .tab-content .tab-pane p {
   font-weight: normal;
-  font-family: "Averta", sans-serif;
+  font-family: "Flink", sans-serif;
   font-size: 25px;
   line-height: 45px;
   letter-spacing: -0.6px;
@@ -14531,13 +14531,13 @@ textarea.form-control-lg {
   border: 1px solid #ad1f1a;
   color: #fff !important;
   font-weight: 600 !important;
-  font-family: "Averta", sans-serif;
+  font-family: "Flink", sans-serif;
   font-size: 20px;
 }
 
 .why-nour-slider-content p {
   font-size: 18px;
-  font-family: "Averta", sans-serif;
+  font-family: "Flink", sans-serif;
   font-weight: 400;
   line-height: 25px;
   letter-spacing: -0.6px;
@@ -14555,7 +14555,7 @@ textarea.form-control-lg {
   text-transform: uppercase;
 }
 .get-in-touch h2 span:first-child, .get-in-touch .h2 span:first-child {
-  font-family: "Averta Extrathin", sans-serif;
+  font-family: "Flink", sans-serif;
   font-weight: 100 !important;
   position: relative;
   margin-top: -9px;
@@ -14566,7 +14566,7 @@ textarea.form-control-lg {
   }
 }
 .get-in-touch h2 span:last-child, .get-in-touch .h2 span:last-child {
-  font-family: "Averta", sans-serif;
+  font-family: "Flink", sans-serif;
   font-weight: 600 !important;
 }
 @media (max-width: 768px) {
@@ -14577,7 +14577,7 @@ textarea.form-control-lg {
 .get-in-touch button {
   font-size: 35px;
   font-weight: 400;
-  font-family: "Averta", sans-serif;
+  font-family: "Flink", sans-serif;
   margin: 0;
   text-align: center;
   line-height: 52px;
@@ -14614,7 +14614,7 @@ textarea.form-control-lg {
 .submit-button button {
   font-size: 18px;
   font-weight: 400;
-  font-family: "Averta", sans-serif;
+  font-family: "Flink", sans-serif;
   margin: 0;
   text-align: center;
   letter-spacing: -0.6px;
@@ -14648,7 +14648,7 @@ textarea.form-control-lg {
 .section-thumb h2, .section-thumb .h2 {
   text-transform: uppercase;
   font-size: 40px;
-  font-family: "Averta", sans-serif;
+  font-family: "Flink", sans-serif;
   font-weight: 400 !important;
   letter-spacing: 20px;
 }
@@ -14678,7 +14678,7 @@ body .product-overlay-listing {
 }
 
 .font-averta {
-  font-family: "Averta", sans-serif !important;
+  font-family: "Flink", sans-serif !important;
 }
 
 .font-font-medium {
@@ -14846,7 +14846,7 @@ body .product-overlay-listing {
 
 /* --- Site Footer --- */
 .site-footer {
-  font-family: "Averta", sans-serif;
+  font-family: "Flink", sans-serif;
   font-size: 0.9rem;
   /* Accordion Styling (Mobile) */
   /* Desktop Styles */
@@ -14943,7 +14943,7 @@ body .product-overlay-listing {
 
 /* Populated Cart Page Styles */
 .active-cart-section {
-  font-family: "Averta", sans-serif;
+  font-family: "Flink", sans-serif;
 }
 .active-cart-section h1, .active-cart-section .h1 {
   font-weight: 600;
@@ -15311,12 +15311,10 @@ body .product-overlay-listing {
 }
 
 body {
-  font-family: "Averta", sans-serif;
+  font-family: "Flink", sans-serif;
   font-size: 100%;
   font-weight: normal;
   font-style: normal;
   background-color: #ffffff;
   color: #000000;
 }
-
-/*# sourceMappingURL=style.css.map */
