@@ -151,11 +151,11 @@ const newCategorySlider = new Swiper(".newCategorySlider", {
     },
     1024: {
       slidesPerView: 7,
-      spaceBetween: 20,
+      spaceBetween: 0,
     },
     1280: {
       slidesPerView: 9,
-      spaceBetween: 20,
+      spaceBetween: 0,
     },
   },
 });
@@ -499,27 +499,20 @@ const swiper3 = new Swiper(".tabContentSlider", {
   },
   breakpoints: {
     320: {
-      centeredSlides: false,
-      slidesPerView: "auto",
+      slidesPerView: 1.2,
       spaceBetween: 10,
     },
     400: {
-      centeredSlides: false,
       slidesPerView: 2,
-      spaceBetween: 20,
     },
     768: {
-      centeredSlides: false,
       slidesPerView: 2,
-      spaceBetween: 20,
     },
     1024: {
-      centeredSlides: false,
       slidesPerView: 3,
       spaceBetween: 20,
     },
     1280: {
-      centeredSlides: false,
       slidesPerView: 4,
       spaceBetween: 20,
     },

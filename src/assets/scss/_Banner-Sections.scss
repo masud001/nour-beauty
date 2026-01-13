@@ -3,24 +3,34 @@
 
 .header-banner {
   background-color: vars.$color-gray;
+
   @media (min-width: 320px) {
-    a,button {
-      font-size: vars.$font-xl !important;
+
+    a,
+    button {
+      font-size: vars.$font-12 !important;
     }
   }
-  @media (min-width: 576px) {
-  }
+
+  @media (min-width: 576px) {}
+
   @media (min-width: 992px) {
-    a,button {
-      font-size: vars.$font-sm !important;
+
+    a,
+    button {
+      font-size: vars.$font-12 !important;
     }
   }
+
   @media (min-width: 1200px) {
-    a,button {
-      font-size: vars.$font-xl !important;
+
+    a,
+    button {
+      font-size: vars.$font-18 !important;
     }
   }
 }
+
 /* Mobile Slides */
 .mobile-slides {
   display: flex;
@@ -28,8 +38,10 @@
   width: 100%;
   position: relative;
   justify-content: center;
+
   .slide-item {
     display: none !important;
+
     &.active {
       display: flex !important;
     }
@@ -44,11 +56,17 @@
 }
 
 .slide-item.active {
-  display: block !important; /* Show the active item */
+  display: block !important;
+  /* Show the active item */
 }
 
 .stripe-banner {
   background-color: vars.$color-pink;
+
+  span {
+    font-size: vars.$font-12;
+
+  }
 }
 
 .dynamic-banner {

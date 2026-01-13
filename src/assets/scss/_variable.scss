@@ -1,8 +1,13 @@
 $background: #ffffff;
 $primary-color: #000000;
-$color-pink: #EADCFD;
+$color-pink: #eadcfdcf;
 $color-gray: #efefef;
 $color-red: #ad1f1a;
+
+$heading-color: #072835;
+$text-color: #072835;
+$paragraph-color: #516971;
+$icon-color: #516971;
 
 // dark-mode theme 
 $dark-background: #121212;
@@ -15,14 +20,39 @@ $dark-text-color: #ffffff;
 
 
 // font-size for mobile
-$font-sm: 12px;
-$font-xl: 1rem;
+$font-xs: 12px;
+$font-sm: 14px;
+$font-base: 16px;
+$font-lg: 18px;
+$font-xl: 20px;
+$font-xxl: 22px;
+$font-2xl: 24px;
+$font-3xl: 32px;
+$font-4xl: 40px;
+$font-5xl: 48px;
+$font-6xl: 52px;
+$font-7xl: 56px;
+$font-8xl: 64px;
+
+$font-8: 8px;
+$font-12: 12px;
+$font-14: 14px;
+$font-16: 16px;
+$font-18: 18px;
+$font-20: 20px;
+$font-24: 24px;
+$font-32: 32px;
+$font-40: 40px;
+$font-48: 48px;
+$font-56: 56px;
+$font-64: 64px;
+$font-72: 72px;
 
 // Font Families
-$font-primary: 'Averta', sans-serif;
+$font-primary: 'Flink', sans-serif;
 $font-family-base: $font-primary;
 $font-family-heading: $font-primary;
-$font-family-thin: 'Averta Extrathin', sans-serif;
+$font-family-thin: 'Flink', sans-serif;
 
 
 
@@ -30,6 +60,11 @@ $font-family-thin: 'Averta Extrathin', sans-serif;
 $section-space-sm: 12px;
 $section-space-md: 24px;
 $section-space-lg: 30px;
+$section-space-xl: 40px;
+$section-space-xxl: 50px;
+$section-space-xxxl: 60px;
+$section-space-xxxxl: 70px;
+$section-space-xxxxxl: 80px;
 
 
 // bootstrap classes 

@@ -7,10 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "scss:build": "sass src/assets/scss/style.scss src/assets/css/style.min.css --style=compressed",
-    "scss:watch": "sass --watch src/assets/scss/style.scss:src/assets/css/style.css --style=expanded"
+    "scss:build": "sass src/assets/scss/style.scss src/assets/css/style.css --style=expanded --no-source-map",
+    "scss:watch": "sass src/assets/scss:src/assets/css --watch --style=expanded --no-source-map",
+    "watch": "concurrently \"npm run scss:watch\" \"npm run dev\"",
+    "start": "npm run watch"
   },
   "devDependencies": {
+    "concurrently": "^9.2.1",
     "sass": "^1.83.4",
     "vite": "^6.0.5"
   },

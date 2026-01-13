@@ -109,7 +109,7 @@
                 padding-bottom: 0;
 
                 a {
-                    color: #1f2937;
+                    color: vars.$text-color !important;
                     transition: color 0.2s;
 
                     &:hover {

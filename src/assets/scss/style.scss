@@ -1,7 +1,7 @@
 @use "./variable" as vars;
 @import "../../../node_modules/bootstrap/scss/bootstrap.scss";
 // font install from local folder
-@import "../fonts/averta/fonts.css";
+@import "../fonts/flink-font/fonts.css";
 
 // section scss file import
 @import "./new-top-banner";
@@ -49,6 +49,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: vars.$font-family-base;
   font-size: 100%;
@@ -56,4 +60,16 @@ body {
   font-style: normal;
   background-color: vars.$background;
   color: vars.$primary-color;
+}
+
+.h-color {
+  color: vars.$heading-color;
+}
+
+.t-color {
+  color: vars.$text-color;
+}
+
+.p-color {
+  color: vars.$paragraph-color;
 }

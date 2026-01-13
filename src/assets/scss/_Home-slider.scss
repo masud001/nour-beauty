@@ -1,20 +1,54 @@
 @use "./variable" as vars;
 
 .home-slider {
-    padding-top: vars.$section-space-sm !important;
-    padding-bottom: vars.$section-space-sm !important;
+    padding-top: vars.$section-space-xl !important;
+    padding-bottom: vars.$section-space-xl !important;
 
-    @media (min-width: 768px) {
+    @media (max-width: 768px) {
         padding-top: vars.$section-space-md !important;
         padding-bottom: vars.$section-space-md !important;
     }
 
-    @media (min-width: 1024px) {
-        padding-top: vars.$section-space-lg !important;
-        padding-bottom: vars.$section-space-lg !important;
-    }
-
     .swiper-slide {
+        min-height: 100%;
+
+        .home-slider-sub-title {
+            font-size: vars.$font-lg;
+            color: vars.$text-color;
+            font-weight: 400;
+            line-height: 1.2;
+            letter-spacing: 0.05em;
+            opacity: 0.8;
+            max-width: 45ch;
+            margin: 0 auto;
+        }
+
+        .home-slider-title {
+            font-size: vars.$font-6xl;
+            color: vars.$heading-color;
+            font-weight: 600;
+            line-height: 1.2;
+            letter-spacing: 0.05em;
+            opacity: 0.8;
+            max-width: 45ch;
+            margin: 0 auto;
+
+            @media (max-width: 768px) {
+                font-size: vars.$font-3xl;
+            }
+        }
+
+        .home-slider-description {
+            font-size: vars.$font-sm;
+            color: vars.$paragraph-color;
+            font-weight: 400;
+            line-height: 1.2;
+            letter-spacing: 0.05em;
+            opacity: 0.8;
+            max-width: 45ch;
+            margin: 0 auto;
+        }
+
         .slider-image {
             display: block;
 
@@ -24,6 +58,7 @@
                 display: block;
                 overflow: hidden;
                 height: auto !important;
+                aspect-ratio: 16 / 9;
             }
 
             img {
@@ -55,7 +90,7 @@
 
         }
 
-        @media (min-width: 480px) {}
+
 
         @media (min-width: 640px) {
 
@@ -64,27 +99,60 @@
                 padding-bottom: 4rem;
             }
         }
-
-        @media (min-width: 768px) {}
-
-        @media (min-width: 1024px) {}
-
-        @media (min-width: 1280px) {}
-
-        @media (min-width: 1366px) {}
     }
 
     .slider-btns {
-        margin-top: 2rem !important;
+        margin: 15px auto 0;
+
+        @media (max-width:768px) {
+            padding-top: 15px;
+        }
+
+        .home-slider-btn {
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+            padding: 15px 25px;
+            color: vars.$text-color !important;
+            font-size: vars.$font-base;
+            font-weight: 300;
+            font-family: vars.$font-family-base;
+            text-transform: capitalize;
+            min-width: 200px;
+            transition: color 0.4s ease;
+            border: 1px solid transparent; // prevent layout shift if needed, usually fine without
+
+            @media (max-width:768px) {
+                min-width: 130px;
+            }
+
+            &::before {
+                content: "";
+                position: absolute;
+                z-index: -1;
+                top: 0;
+                left: 0;
+                width: 0;
+                height: 100%;
+                background-color: vars.$text-color;
+                transition: width 0.4s ease;
+            }
+
+            &:hover {
+                color: vars.$background !important;
+
+                &::before {
+                    width: 100%;
+                }
+            }
+        }
 
         button:first-child {
             background-color: #EADCFD !important;
-            color: #000 !important;
         }
 
         button:nth-child(2) {
             background-color: #CCDEF6 !important;
-            color: #000 !important;
         }
 
         button:only-child {
@@ -109,7 +177,7 @@
         }
 
         @media (min-width: 1024px) {
-            gap: 1.5rem; // Desktop
+            gap: 1rem; // Desktop
         }
 
         // Reset utility margins to let gap handle spacing
@@ -250,6 +318,31 @@
         .category-slider-next {
             opacity: 1;
             visibility: visible;
+        }
+    }
+}
+
+.slider-pagination.swiper-pagination {
+    .swiper-pagination-bullet {
+        background-color: vars.$icon-color !important;
+        border: 1px solid vars.$icon-color !important;
+        width: 10px !important;
+        height: 10px !important;
+        border-radius: 50% !important;
+        transition: all 0.3s ease-in-out !important;
+
+        &:hover {
+            background-color: vars.$text-color !important;
+            border-color: vars.$text-color !important;
+        }
+
+        // Smooth transition for width and color
+
+        &.swiper-pagination-bullet-active {
+            width: 43px !important;
+            border-radius: 20px !important;
+            background-color: vars.$text-color !important;
+            border-color: vars.$text-color !important;
         }
     }
 }
