@@ -1,23 +1,39 @@
 @use "./variable" as vars;
 
 .category-heading-section {
+  display: none;
+
+  @media (min-width:768px) {
+    display: flex;
+  }
+
   p {
+    font-size: vars.$font-base;
+    font-weight: 300;
+    color: vars.$text-color;
+    font-family: vars.$font-family-base;
+
     @media (max-width: 768px) {
-      font-size: 12px;
+      font-size: vars.$font-sm;
     }
   }
 
   a {
+    font-size: vars.$font-base !important;
+    color: vars.$text-color !important;
+
     @media (max-width: 768px) {
-      font-size: 12px !important;
+      font-size: vars.$font-sm !important;
+
     }
   }
 
   .heading-title {
     @media (max-width: 768px) {
-
-      font-size: 20px;
+      font-size: vars.$font-xxl;
       font-weight: 500;
+      color: vars.$heading-color;
+      font-family: vars.$font-family-heading;
       text-transform: uppercase !important;
     }
   }
@@ -27,7 +43,13 @@
   a {
     white-space: nowrap !important;
     padding: 10px 20px !important;
-    font-size: 14px !important;
+    font-size: vars.$font-sm !important;
+    color: vars.$paragraph-color !important;
+    border: .5px solid vars.$paragraph-color;
+
+    &:hover {
+      color: vars.$text-color !important;
+    }
   }
 
   &::-webkit-scrollbar {
@@ -36,6 +58,23 @@
 
   scrollbar-width: none;
   -ms-overflow-style: none;
+}
+
+.product-filter-section {
+  button {
+    font-size: vars.$font-sm;
+    color: vars.$paragraph-color;
+    border: .5px solid vars.$paragraph-color;
+
+    &:hover {
+      color: vars.$text-color !important;
+    }
+  }
+
+  .dropdown-menu {
+    font-size: vars.$font-sm;
+    color: vars.$paragraph-color;
+  }
 }
 
 .ingredient-section {
@@ -218,12 +257,34 @@
     color: #000;
     border-radius: 6px;
     text-decoration: none;
-    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    // transition: color 0.3s ease, box-shadow 0.3s ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #d7c2fa;
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s cubic-bezier(0.19, 1, 0.22, 1);
+      z-index: -1;
+    }
   }
 
   .shop-by-brand-view-all-btn:hover {
-    background-color: #d7c2fa;
+    // background-color: #d7c2fa; // removed as ::after handles it
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+
+    &::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
   }
 
   // Styles for shop by brand slider navigation buttons
@@ -320,20 +381,23 @@
 }
 
 .category-section {
-  h4 {
-    font-size: 24px;
-    font-weight: 500;
-    text-transform: uppercase !important;
-    margin-bottom: 2rem;
-
-    @media (max-width: 768px) {
-      font-size: 20px;
-    }
-  }
 
   .swiper-slide {
     @media (min-width: 1200px) {
       left: -24px !important;
+    }
+  }
+
+  .category-section-title {
+    font-size: vars.$font-2xl;
+    font-family: vars.$font-family-base;
+    font-weight: 500;
+    text-transform: uppercase !important;
+    color: vars.$heading-color;
+    margin-bottom: 2rem;
+
+    @media (max-width: 768px) {
+      font-size: vars.$font-xl;
     }
   }
 

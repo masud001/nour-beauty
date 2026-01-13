@@ -23,6 +23,47 @@
   }
 }
 
+
+.card-button {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 0.4s ease;
+  width: 100%;
+  padding: 12px 20px;
+  font-family: vars.$font-family-base;
+  font-size: vars.$font-sm;
+  font-weight: 400;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  opacity: 0.8;
+  max-width: 45ch;
+  margin: 0 auto;
+  text-transform: uppercase;
+  background-color: vars.$color-pink;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: vars.$text-color; // Match slider button (black/dark)
+    z-index: -1;
+    transition: width 0.4s ease;
+  }
+
+  &:hover {
+    color: #ffffff !important; // Match slider button (white text)
+
+    &::before {
+      width: 100%;
+    }
+  }
+}
+
+
 .product-card-image {
   position: relative;
 
@@ -366,5 +407,15 @@
     visibility: hidden !important;
     display: none !important;
 
+  }
+}
+
+
+
+.pagination-section {
+  .pagination-number {
+    color: vars.$paragraph-color;
+    font-family: vars.$font-family-base;
+    font-size: vars.$font-sm;
   }
 }

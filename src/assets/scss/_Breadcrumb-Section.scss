@@ -1,27 +1,38 @@
 .breadcrumb-section {
   .breadcrumb-item {
     text-decoration: none;
+    color: vars.$text-color;
+    font-size: vars.$font-sm;
+    font-family: vars.$font-family-base;
+    font-weight: 300;
     cursor: pointer;
+
     a {
       text-decoration: none;
+      color: vars.$text-color;
+
       &:hover {
         text-decoration: underline;
+        color: vars.$primary-color;
       }
     }
+
     &:last-child {
       &:hover {
         text-decoration: none;
         cursor: auto;
+        color: vars.$text-color;
       }
     }
+
     &:hover {
       text-decoration: underline;
+      color: vars.$primary-color;
     }
-    @media (max-width: 320px) {
-      font-size: vars.$font-sm !important;
-    }
+
+
     @media (max-width: 768px) {
-      font-size: vars.$font-xl;
+      font-size: vars.$font-xs;
     }
   }
 }
