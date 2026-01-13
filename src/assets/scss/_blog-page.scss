@@ -118,6 +118,29 @@
         position: relative;
     }
 
+    .single-post {
+        a {
+            font-size: vars.$font-sm;
+            font-family: vars.$font-family-base;
+            font-weight: 500;
+            text-decoration: none;
+            color: vars.$heading-color;
+            transition: all 0.3s ease-out;
+
+            &:hover {
+                color: vars.$primary-color;
+                text-decoration: underline;
+            }
+        }
+
+        p {
+            font-size: vars.$font-sm;
+            font-family: vars.$font-family-base;
+            font-weight: 300;
+            color: vars.$paragraph-color;
+        }
+    }
+
     .blog-slider-prev,
     .blog-slider-next {
         position: absolute;

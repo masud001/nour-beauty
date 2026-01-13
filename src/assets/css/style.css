@@ -12264,7 +12264,7 @@ textarea.form-control-lg {
 }
 
 .stripe-banner {
-  background-color: rgba(234, 220, 253, 0.8117647059);
+  background-color: rgba(234, 220, 253, 0.47) !important;
 }
 .stripe-banner span {
   font-size: 12px;
@@ -13986,7 +13986,7 @@ textarea.form-control-lg {
   }
 }
 .trust-grid-section .trust-grid-title {
-  font-size: 32px;
+  font-size: 40px;
   line-height: 1.3;
   margin: 0 0 16px 0;
   font-weight: 500 !important;
@@ -14001,7 +14001,7 @@ textarea.form-control-lg {
 }
 @media (min-width: 1024px) {
   .trust-grid-section .trust-grid-title {
-    width: 37%;
+    width: 44%;
     margin: 0 auto;
   }
 }
@@ -14039,8 +14039,6 @@ textarea.form-control-lg {
     width: auto;
     margin-left: 0;
     margin-right: 0;
-    padding-left: 0;
-    padding-right: 0;
   }
 }
 .trust-grid-section .trust-badges .badge-chip {
@@ -14239,6 +14237,176 @@ textarea.form-control-lg {
 }
 .trust-grid-section .category-tile:hover img {
   transform: scale(1.1);
+}
+
+.promo-popup-modal .modal-content {
+  border-radius: 0;
+  border: none;
+  overflow: hidden;
+}
+.promo-popup-modal .modal-body {
+  padding: 0;
+}
+.promo-popup-modal .popup-close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 10;
+  background: transparent;
+  border: none;
+  font-size: 1.5rem;
+  color: #000;
+  opacity: 0.5;
+  transition: opacity 0.3s;
+  padding: 0;
+  line-height: 1;
+}
+.promo-popup-modal .popup-close-btn:hover {
+  opacity: 1;
+}
+.promo-popup-modal .promo-image-col {
+  background-color: #f5f5f5;
+  min-height: 300px;
+  position: relative;
+}
+.promo-popup-modal .promo-image-col img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media (min-width: 768px) {
+  .promo-popup-modal .promo-image-col {
+    min-height: 100%;
+  }
+}
+.promo-popup-modal .promo-content-col {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  .promo-popup-modal .promo-content-col {
+    padding: 3rem;
+  }
+}
+.promo-popup-modal .brand-title {
+  font-family: "Flink", sans-serif;
+  font-weight: 900;
+  font-size: 1.75rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+  color: #000;
+}
+.promo-popup-modal .sub-title {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  color: #000;
+}
+.promo-popup-modal .offer-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 0.5rem;
+  color: #000;
+  white-space: nowrap;
+}
+.promo-popup-modal .offer-subtitle {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  color: #000;
+}
+.promo-popup-modal .countdown-timer {
+  background-color: #C0581B;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Flink", sans-serif;
+  font-weight: 600;
+  font-size: 1.25rem;
+  letter-spacing: 1px;
+  margin-bottom: 1.5rem;
+}
+.promo-popup-modal .countdown-timer .time-part {
+  font-weight: 700;
+  margin: 0 5px;
+}
+.promo-popup-modal .countdown-timer .label {
+  font-size: 0.75rem;
+  font-weight: 400;
+  margin-right: 5px;
+  margin-left: 2px;
+}
+.promo-popup-modal .email-input {
+  width: 100%;
+  border: 1px solid #000;
+  padding: 12px 15px;
+  text-align: center;
+  font-size: 0.9rem;
+  margin-bottom: 10px;
+  border-radius: 0;
+}
+.promo-popup-modal .email-input::placeholder {
+  color: #000;
+  font-weight: 500;
+}
+.promo-popup-modal .email-input:focus {
+  outline: none;
+  box-shadow: 0 0 0 1px #000;
+}
+.promo-popup-modal .signup-btn {
+  width: 100%;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 12px 0;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 1.5rem;
+}
+.promo-popup-modal .signup-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+.promo-popup-modal .no-thanks {
+  color: #000;
+  text-decoration: underline;
+  font-size: 0.9rem;
+  margin-bottom: 2rem;
+  display: inline-block;
+  cursor: pointer;
+}
+.promo-popup-modal .no-thanks:hover {
+  color: #555;
+}
+.promo-popup-modal .disclaimer {
+  font-size: 0.65rem;
+  color: #000;
+  line-height: 1.4;
+  max-width: 80%;
+  margin: 0 auto;
+}
+.promo-popup-modal .disclaimer a {
+  color: #000;
+  text-decoration: underline;
 }
 
 .swiper-slider-thumb {
@@ -14485,6 +14653,24 @@ textarea.form-control-lg {
 }
 .blog-section .blogSlider {
   position: relative;
+}
+.blog-section .single-post a {
+  font-size: 14px;
+  font-family: "Flink", sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  color: #072835;
+  transition: all 0.3s ease-out;
+}
+.blog-section .single-post a:hover {
+  color: #000000;
+  text-decoration: underline;
+}
+.blog-section .single-post p {
+  font-size: 14px;
+  font-family: "Flink", sans-serif;
+  font-weight: 300;
+  color: #516971;
 }
 .blog-section .blog-slider-prev,
 .blog-section .blog-slider-next {
