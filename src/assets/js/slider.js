@@ -232,7 +232,7 @@ const concernSlider = new Swiper(".concernSlider", {
     1080: {
       loop: false,
       slidesPerView: 5,
-      spaceBetween: 20,
+      spaceBetween: 50,
       navigation: {
         nextEl: ".concern-slider-next",
         prevEl: ".concern-slider-prev",
@@ -245,7 +245,7 @@ const concernSlider = new Swiper(".concernSlider", {
     1280: {
       loop: false,
       slidesPerView: 6,
-      spaceBetween: 20,
+      spaceBetween: 50,
       navigation: {
         nextEl: ".concern-slider-next",
         prevEl: ".concern-slider-prev",
@@ -367,104 +367,112 @@ const blogMenu = new Swiper(".blogMenu", {
 });
 const shopByBrand = new Swiper(".shopByBrand", {
   direction: "horizontal",
+  loop: false,
+  navigation: {
+    nextEl: ".shop-by-brand-next",
+    prevEl: ".shop-by-brand-prev",
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
   breakpoints: {
     320: {
-      slidesPerView: 1.7,
-
+      slidesPerView: 1,
       spaceBetween: 16,
-      navigation: {
-        nextEl: ".shop-by-brand-next",
-        prevEl: ".shop-by-brand-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
     },
     480: {
-      loop: false,
       slidesPerView: 2,
       spaceBetween: 20,
-      navigation: {
-        nextEl: ".shop-by-brand-next",
-        prevEl: ".shop-by-brand-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
     },
     640: {
-      loop: false,
-      slidesPerView: 2.5,
+      slidesPerView: 2,
       spaceBetween: 24,
-      navigation: {
-        nextEl: ".shop-by-brand-next",
-        prevEl: ".shop-by-brand-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
     },
     768: {
-      loop: false,
       slidesPerView: 3,
       spaceBetween: 20,
-      navigation: {
-        nextEl: ".shop-by-brand-next",
-        prevEl: ".shop-by-brand-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
     },
     1024: {
-      loop: false,
-      slidesPerView: 5,
-      spaceBetween: 20,
-      navigation: {
-        nextEl: ".shop-by-brand-next",
-        prevEl: ".shop-by-brand-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+      slidesPerView: 4,
+      spaceBetween: 30,
     },
     1280: {
-      loop: false,
-      slidesPerView: 6,
-      spaceBetween: 20,
-      navigation: {
-        nextEl: ".shop-by-brand-next",
-        prevEl: ".shop-by-brand-prev",
-      },
-      pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
-      },
+      slidesPerView: 4,
+      spaceBetween: 30,
     },
   },
 });
 // home slider
 const swiper1 = new Swiper(".homeSlider", {
-  // Optional parameters
   direction: "horizontal",
   loop: true,
-
-  // If we need pagination
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
   },
-
-  // Navigation arrows
   navigation: {
-    nextEl: ".home-slider-next",
-    prevEl: ".home-slider-prev",
+    nextEl: ".home-next",
+    prevEl: ".home-prev",
   },
+});
+
+const featureCards = document.querySelectorAll(
+  ".category-feature-section .feature-card[data-youtube-id]"
+);
+
+featureCards.forEach((card) => {
+  const videoId = card.getAttribute("data-youtube-id");
+  if (!videoId) return;
+
+  const layer = document.createElement("div");
+  layer.className = "feature-video-layer";
+  card.appendChild(layer);
+
+  let iframe = null;
+
+  function createIframe() {
+    if (iframe) return;
+    iframe = document.createElement("iframe");
+    iframe.src =
+      "https://www.youtube.com/embed/" +
+      videoId +
+      "?autoplay=1&mute=1&controls=0&rel=0&playsinline=1&showinfo=0";
+    iframe.allow = "autoplay; encrypted-media; picture-in-picture";
+    iframe.setAttribute("allowfullscreen", "");
+    layer.appendChild(iframe);
+  }
+
+  function destroyIframe() {
+    if (!iframe) return;
+    iframe.remove();
+    iframe = null;
+  }
+
+  function play() {
+    createIframe();
+    card.classList.add("video-playing");
+  }
+
+  function stop() {
+    destroyIframe();
+    card.classList.remove("video-playing");
+  }
+
+  card.addEventListener("mouseenter", play);
+  card.addEventListener("mouseleave", stop);
+
+  card.addEventListener(
+    "touchstart",
+    () => {
+      if (card.classList.contains("video-playing")) {
+        stop();
+      } else {
+        play();
+      }
+    },
+    { passive: true }
+  );
 });
 // sub category home slider
 const subCategoryHomeSlider = new Swiper(".subCategoryHomeSlider", {
@@ -499,14 +507,16 @@ const swiper3 = new Swiper(".tabContentSlider", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1.2,
+      slidesPerView: 1.1,
       spaceBetween: 10,
     },
     400: {
-      slidesPerView: 2,
+      slidesPerView: 1.4,
+      spaceBetween: 10,
     },
     768: {
       slidesPerView: 2,
+      spaceBetween: 10,
     },
     1024: {
       slidesPerView: 3,

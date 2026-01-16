@@ -12,15 +12,16 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
   <link rel="stylesheet" href="./assets/css/output.css" />
   <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.min.css" />
   <!-- swiper slider css -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css" />
 </head>
 
 <body>
 
   <!-- Header top new banner start-->
   <div class="new-top-banner">
-    <div class="container-fluid px-lg-5">
+    <div class="container px-lg-5">
       <div class="row align-items-center">
         <!-- Left Section: Links (Hidden on Mobile) -->
         <div class="col-lg-4 d-none d-lg-flex justify-content-start">
@@ -116,7 +117,7 @@
   </div>
 
   <header id="site-header" class="header-container shadow-sm sticky top-0 z-30 pt-3 pb-3 pb-lg-0">
-    <div class="container-fluid d-flex align-items-center justify-content-between px-lg-5">
+    <div class="container d-flex align-items-center justify-content-between px-lg-5">
       <!-- search container for mobile  -->
       <div class="col d-flex d-lg-none gap-3 align-items-center">
         <div class="menu-bar">
@@ -163,12 +164,12 @@
             <span class="fw-medium">KSA</span>
           </button>
         </div>
-        <!-- map location -->
+        <!-- Location -->
         <div class="map-location">
           <button type="button" data-bs-toggle="modal" data-bs-target="#mapLocationModal"
             class="d-flex gap-2 align-items-center">
             <span><i class="fa-solid fa-location-dot"></i></span>
-            <span class="d-none d-lg-flex fw-medium">Map Location</span>
+            <span class="d-none d-lg-flex fw-medium">Location</span>
           </button>
         </div>
         <div class="customar-account dropdown">
@@ -1255,9 +1256,9 @@
   </div>
 
   <!-- home slider section  -->
-  <div class="home-slider  container-fluid px-lg-5">
+  <div class="home-slider home-slider-inline-controls container px-lg-5">
     <!-- Slider main container -->
-    <div class="swiper homeSlider w-full max-w-[1920px] mx-auto">
+    <div class="swiper homeSlider pb-0 w-full max-w-[1920px] mx-auto">
       <!-- Additional required wrapper -->
       <div class="swiper-wrapper ">
         <!-- Slides 1 -->
@@ -1424,238 +1425,22 @@
             </a>
           </div>
         </div>
-        <!-- Slides 4 -->
-        <div class="swiper-slide w-full flex flex-col md:flex-row items-center justify-center">
-          <div
-            class="flex-1 order-1 order-md-0 w-full py-4 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
-            <div class="flex flex-col px-6 md:px-8 lg:px-16 slider-content-card">
-              <h1 class="home-slider-sub-title">The nour</h1>
-              <h3 class="home-slider-title">
-
-
-                Getting Your Natural Beauty
-
-              </h3>
-              <p class="home-slider-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Impedit, optio beatae. Nam ipsam laudantium tenetur.
-              </p>
-
-              <div class="flex flex-row gap-3 mt-3 slider-btns">
-                <button class="home-slider-btn rounded-pill">
-                  shop now
-                </button>
-                <button class="home-slider-btn rounded-pill">
-                  discover
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="flex-1 order-0 order-md-1 w-100 h-100">
-            <a href="" class="h-100 slider-image">
-              <figure class="w-fit relative h-100 mx-auto grid mb-0 rounded-4">
-                <picture class="w-100 h-100">
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-04.jpg
-                      " media="(max-width: 430px)" />
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-04.jpg
-                      " media="(max-width: 640px)" />
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-04.jpg
-                      " media="(max-width: 1024px)" />
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-04.jpg
-                      " media="(max-width: 1280px)" />
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-04.jpg
-                      " media="(max-width: 1366px)" />
-                  <img src="./assets/img/home-slider-image/slider-image-04.jpg" alt="MAISON MARGIELA BOTM WK3"
-                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover rounded-4"
-                    decoding="auto" fetchpriority="high" />
-                </picture>
-              </figure>
-            </a>
-          </div>
-        </div>
-        <!-- Slides 5 -->
-        <div class="swiper-slide w-full flex flex-col md:flex-row items-center justify-center">
-          <div
-            class="flex-1 order-1 order-md-0 w-full py-4 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
-            <div class="flex flex-col px-6 md:px-8 lg:px-16 slider-content-card">
-              <h1 class="home-slider-sub-title">The nour</h1>
-              <h3 class="home-slider-title">
-
-
-                Getting Your Natural Beauty
-
-              </h3>
-              <p class="home-slider-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Impedit, optio beatae. Nam ipsam laudantium tenetur.
-              </p>
-
-              <div class="flex flex-row gap-3 mt-3 slider-btns">
-                <button class="home-slider-btn rounded-pill">
-                  shop now
-                </button>
-                <button class="home-slider-btn rounded-pill">
-                  discover
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="flex-1 order-0 order-md-1 w-100 h-100">
-            <a href="" class="h-100 slider-image">
-              <figure class="w-fit relative h-100 mx-auto grid mb-0 rounded-4">
-                <picture class="w-100 h-100">
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-05.jpg
-                      " media="(max-width: 430px)" />
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-05.jpg
-                      " media="(max-width: 640px)" />
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-05.jpg
-                      " media="(max-width: 1024px)" />
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-05.jpg
-                      " media="(max-width: 1280px)" />
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-05.jpg
-                      " media="(max-width: 1366px)" />
-                  <img src="./assets/img/home-slider-image/slider-image-05.jpg" alt="MAISON MARGIELA BOTM WK3"
-                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover rounded-4"
-                    decoding="auto" fetchpriority="high" />
-                </picture>
-              </figure>
-            </a>
-          </div>
-        </div>
-        <!-- Slides 06 -->
-        <div class="swiper-slide w-full flex flex-col md:flex-row items-center justify-center">
-          <div
-            class="flex-1 order-1 order-md-0 w-full py-4 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
-            <div class="flex flex-col px-6 md:px-8 lg:px-16 slider-content-card">
-              <h1 class="home-slider-sub-title">The nour</h1>
-              <h3 class="home-slider-title">
-
-
-                Getting Your Natural Beauty
-
-              </h3>
-              <p class="home-slider-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Impedit, optio beatae. Nam ipsam laudantium tenetur.
-              </p>
-
-              <div class="flex flex-row gap-3 mt-3 slider-btns">
-                <button class="home-slider-btn rounded-pill">
-                  shop now
-                </button>
-                <button class="home-slider-btn rounded-pill">
-                  discover
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="flex-1 order-0 order-md-1 w-100 h-100">
-            <a href="" class="h-100 slider-image">
-              <figure class="w-fit relative h-100 mx-auto grid mb-0 rounded-4">
-                <picture class="w-100 h-100">
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-06.jpg
-                      " media="(max-width: 430px)" />
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-06.jpg
-                      " media="(max-width: 640px)" />
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-06.jpg
-                      " media="(max-width: 1024px)" />
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-06.jpg
-                      " media="(max-width: 1280px)" />
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-06.jpg
-                      " media="(max-width: 1366px)" />
-                  <img src="./assets/img/home-slider-image/slider-image-06.jpg" alt="MAISON MARGIELA BOTM WK3"
-                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover rounded-4"
-                    decoding="auto" fetchpriority="high" />
-                </picture>
-              </figure>
-            </a>
-          </div>
-        </div>
-        <!-- Slides 07 -->
-        <div class="swiper-slide w-full flex flex-col md:flex-row items-center justify-center">
-          <div
-            class="flex-1 order-1 order-md-0 w-full py-4 sm-py-20 h-auto text-center flex flex-col mx-auto sm:w-auto">
-            <div class="flex flex-col px-6 md:px-8 lg:px-16 slider-content-card">
-              <h1 class="home-slider-sub-title">The nour</h1>
-              <h3 class="home-slider-title">
-
-
-                Getting Your Natural Beauty
-
-              </h3>
-              <p class="home-slider-description">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Impedit, optio beatae. Nam ipsam laudantium tenetur.
-              </p>
-
-              <div class="flex flex-row gap-3 mt-3 slider-btns">
-                <button class="home-slider-btn rounded-pill">
-                  shop now
-                </button>
-                <button class="home-slider-btn rounded-pill">
-                  discover
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="flex-1 order-0 order-md-1 w-100 h-100">
-            <a href="" class="h-100 slider-image">
-              <figure class="w-fit relative h-100 mx-auto grid mb-0 rounded-4">
-                <picture class="w-100 h-100 rounded-4">
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-07.jpg
-                      " media="(max-width: 430px)" />
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-07.jpg
-                      " media="(max-width: 640px)" />
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-07.jpg
-                      " media="(max-width: 1024px)" />
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-07.jpg
-                      " media="(max-width: 1280px)" />
-                  <source srcset="
-                        ./assets/img/home-slider-image/slider-image-07.jpg
-                      " media="(max-width: 1366px)" />
-                  <img src="./assets/img/home-slider-image/slider-image-07.jpg" alt="MAISON MARGIELA BOTM WK3"
-                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover rounded-4"
-                    decoding="auto" fetchpriority="high" />
-                </picture>
-              </figure>
-            </a>
-          </div>
-        </div>
       </div>
-      <!-- If we need pagination -->
-      <div class="slider-pagination swiper-pagination"></div>
-      <!-- If we need navigation buttons -->
-      <div class="home-slider-prev  bg-white shadow-sm rounded-circle">
-        <i class="fa-solid fa-chevron-left"></i>
-      </div>
-      <div class="home-slider-next  bg-white shadow-sm rounded-circle">
-        <i class="fa-solid fa-chevron-right"></i>
+      <div class="home-slider-controls">
+        <div class="home-prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="slider-pagination swiper-pagination"></div>
+        <div class="home-next ">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- new category section start  -->
   <section class="new-category-section py-5">
-    <div class=" container-fluid px-lg-5">
+    <div class=" container px-lg-5">
       <div class="swiper newCategorySlider">
         <div class="swiper-wrapper newCategorySlider-wrapper">
           <div class="swiper-slide">
@@ -1836,10 +1621,10 @@
   <!-- new category section end  -->
 
   <section class="category-feature-section py-4">
-    <div class="container-fluid px-lg-5">
+    <div class="container px-lg-5">
       <div class="swiper featureCardsSlider">
         <div class="swiper-wrapper">
-          <article class="swiper-slide feature-card"
+          <article class="swiper-slide feature-card" data-youtube-id="ScMzIvxBSi4"
             style="background-image: url('./assets/img/home-slider-image/slider-image-01.jpg')">
             <div class="feature-content">
               <span class="feature-category">Skin Care</span>
@@ -2007,7 +1792,7 @@
 
   <!-- dynamic tab content  -->
   <div class="dynamic-tab-content mx-auto">
-    <div class="container-fluid px-lg-5">
+    <div class="container px-lg-5">
       <div class="flex justify-center items-center">
         <div class="flex border-b ">
           <button
@@ -2042,7 +1827,7 @@
                         <source srcset="./assets/img/product/nour-product-01.jpg" media="(min-width: 768px)" />
                         <source srcset="./assets/img/product/nour-product-01.jpg" media="(min-width: 640px)" />
                         <img src="./assets/img/product/nour-product-01.jpg" alt="Brand of the month" loading="lazy"
-                          width="350" height="430" class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
+                          width="350" height="350" class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
                           fetchpriority="auto" />
                       </picture>
                     </figure>
@@ -2896,7 +2681,7 @@
 
   <!-- trust + countdown + 12-grid section -->
   <section class="trust-grid-section pt-4 pb-4">
-    <div class="container-fluid mx-auto px-lg-5">
+    <div class="container mx-auto px-lg-5">
       <h2 class="trust-grid-title text-center fw-bold">
         Take the time you <span class="accent">deserve</span>, and let beauty shine within you
       </h2>
@@ -2976,7 +2761,7 @@
   </section>
 
   <section class="shop-by-brands-section pt-4">
-    <div class="container-fluid mx-auto px-lg-5">
+    <div class="container mx-auto px-lg-5">
       <div class="brands-header">
         <h2 class="title ">Shop By Brands</h2>
         <a href="/#" class="view-all">Shop All Brands <i class="fa-solid fa-chevron-right ml-1 text-xs"></i></a>
@@ -3364,7 +3149,7 @@
 
   <!-- blogs  -->
   <div class="blog-section mx-auto py-8">
-    <div class="container-fluid mx-auto px-lg-5">
+    <div class="container mx-auto px-lg-5">
       <div class="swiper blogSlider !pb-[32px]">
         <div class="swiper-wrapper">
           <div class="swiper-slide single-post">
@@ -3566,7 +3351,7 @@
   <footer class="site-footer bg-black text-white pt-4 pb-3">
     <!-- Footer Top: Newsletter & Social -->
     <div class="footer-top border-bottom border-light-subtle pb-4 mb-4">
-      <div class="container-fluid mx-auto px-lg-5">
+      <div class="container mx-auto px-lg-5">
         <div class="row align-items-center gy-4">
           <!-- Newsletter -->
           <div class="col-lg-6">
@@ -3597,7 +3382,7 @@
 
     <!-- Footer Main: Accordion for Mobile, Grid for Desktop -->
     <div class="footer-main mb-5">
-      <div class="container-fluid mx-auto px-lg-5">
+      <div class="container mx-auto px-lg-5">
 
         <!-- Mobile View: Accordion (Visible only on mobile/tablet) -->
         <div class="footer-mobile-view text-center d-lg-none">
@@ -3770,7 +3555,7 @@
 
     <!-- Footer Bottom -->
     <div class="footer-bottom pt-4 border-top border-light-subtle">
-      <div class="container-fluid mx-auto px-lg-5">
+      <div class="container mx-auto px-lg-5">
         <div class="row gy-3  justify-content-between">
           <div class="col-lg-6 text-center text-lg-start">
             <span class="small fw-light">2025 © The Hut.com Ltd. t/a CultBeauty.com</span>
@@ -3877,10 +3662,10 @@
 
   <script src="./assets/js/bootstrap.bundle.min.js"></script>
   <!-- swiper slider js CDN -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="./assets/js/swiper-bundle.min.js"></script>
   <!-- custom js -->
-  <script type="module" src="./assets/js/main.js"></script>
-  <script type="module" src="./assets/js/slider.js"></script>
+  <script src="./assets/js/main.js"></script>
+  <script src="./assets/js/slider.js"></script>
   <script>
     document.addEventListener("shown.bs.modal", function () {
       document.body.style.overflow = "hidden";

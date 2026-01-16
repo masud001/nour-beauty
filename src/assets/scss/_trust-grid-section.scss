@@ -28,7 +28,7 @@
     }
 
     @media (min-width: 1024px) {
-      width: 44%;
+      width: 48% !important;
       margin: 0 auto;
     }
   }
@@ -127,7 +127,7 @@
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 
     @media (max-width: 768px) {
-      min-height: 343px !important;
+      min-height: 450px !important;
     }
 
     @media (min-width: 1024px) {
@@ -234,7 +234,7 @@
     gap: 10px;
     padding: 18px;
     border-radius: 12px;
-    background: #f8fafc;
+    background: #f7f7f5;
     // border: 1px solid #eceff1;
     text-decoration: none;
     color: #111827;
