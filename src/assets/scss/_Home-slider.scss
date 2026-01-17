@@ -2,7 +2,7 @@
 
 .home-slider {
     padding-top: vars.$section-space-xl !important;
-    padding-bottom: vars.$section-space-xl !important;
+    padding-bottom: 0 !important;
 
     @media (max-width: 768px) {
         padding-top: vars.$section-space-md !important;
@@ -19,8 +19,6 @@
             line-height: 1.2;
             letter-spacing: 0.05em;
             opacity: 0.8;
-            max-width: 45ch;
-            margin: 0 auto;
         }
 
         .home-slider-title {
@@ -31,10 +29,15 @@
             letter-spacing: 0.05em;
             opacity: 0.8;
             max-width: 45ch;
-            margin: 0 auto;
 
             @media (max-width: 768px) {
                 font-size: vars.$font-3xl;
+                max-width: 15ch;
+                margin: 0 auto;
+            }
+
+            @media (min-width: 1580px) {
+                font-size: vars.$font-6xl;
             }
         }
 
@@ -45,8 +48,10 @@
             line-height: 1.2;
             letter-spacing: 0.05em;
             opacity: 0.8;
-            max-width: 45ch;
-            margin: 0 auto;
+
+            @media (max-width: 768px) {
+                margin: 0 auto;
+            }
         }
 
         .slider-image {
@@ -61,7 +66,7 @@
                 aspect-ratio: 16 / 9;
 
                 @media (max-width: 768px) {
-                    aspect-ratio: 1 / 1;
+                    aspect-ratio: 3 / 2;
                 }
             }
 
@@ -106,10 +111,11 @@
     }
 
     .slider-btns {
-        margin: 15px auto 0;
+
 
         @media (max-width:768px) {
             padding-top: 15px;
+            margin: 0 auto;
         }
 
         .home-slider-btn {
@@ -123,6 +129,7 @@
             font-family: vars.$font-family-base;
             text-transform: capitalize;
             min-width: 200px;
+            text-decoration: none;
             transition: color 0.4s ease;
             border: 1px solid transparent; // prevent layout shift if needed, usually fine without
 
@@ -151,21 +158,21 @@
             }
         }
 
-        button:first-child {
+        a:first-child {
             background-color: #EADCFD !important;
         }
 
-        button:nth-child(2) {
+        a:nth-child(2) {
             background-color: #CCDEF6 !important;
         }
 
-        button:only-child {
+        a:only-child {
             width: 200px;
             text-align: center;
             margin: auto;
         }
 
-        button {
+        a {
             border: none;
         }
     }
@@ -177,11 +184,15 @@
         text-align: center;
 
         @media (min-width: 768px) {
+            text-align: left;
             gap: 1rem; // Tablet
         }
 
         @media (min-width: 1024px) {
             gap: 1rem; // Desktop
+
+            max-width: 460px;
+            margin: 0 auto;
         }
 
         // Reset utility margins to let gap handle spacing
@@ -204,8 +215,7 @@
         p {
             line-height: 1.5;
             opacity: 0.8;
-            max-width: 45ch; // Readable line length
-            margin: 0 auto;
+
         }
     }
 
@@ -278,6 +288,10 @@
         gap: 16px;
         max-width: 150px;
         margin: 20px auto;
+
+        @media (max-width: 768px) {
+            margin: 10px auto;
+        }
     }
 
     .slider-pagination.swiper-pagination {

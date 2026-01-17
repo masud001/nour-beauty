@@ -26,8 +26,8 @@ const swiper2 = new Swiper(".categorySlider", {
   breakpoints: {
     320: {
       loop: false,
-      slidesPerView: 2,
-      spaceBetween: 50,
+      slidesPerView: 2.5,
+      spaceBetween: 30,
       navigation: {
         nextEl: ".category-slider-next",
         prevEl: ".category-slider-prev",
@@ -40,7 +40,7 @@ const swiper2 = new Swiper(".categorySlider", {
 
     480: {
       loop: false,
-      slidesPerView: 2,
+      slidesPerView: 2.5,
       spaceBetween: 50,
       navigation: {
         nextEl: ".category-slider-next",
@@ -54,7 +54,7 @@ const swiper2 = new Swiper(".categorySlider", {
 
     640: {
       loop: false,
-      slidesPerView: 3,
+      slidesPerView: 3.5,
       spaceBetween: 70,
       navigation: {
         nextEl: ".category-slider-next",
@@ -67,7 +67,7 @@ const swiper2 = new Swiper(".categorySlider", {
     },
     762: {
       loop: false,
-      slidesPerView: 4,
+      slidesPerView: 4.5,
       spaceBetween: 70,
       navigation: {
         nextEl: ".category-slider-next",
@@ -157,6 +157,18 @@ const newCategorySlider = new Swiper(".newCategorySlider", {
       slidesPerView: 9,
       spaceBetween: 0,
     },
+    1440: {
+      slidesPerView: 10,
+      spaceBetween: 0,
+    },
+    1600: {
+      slidesPerView: 12,
+      spaceBetween: 0,
+    },
+    1920: {
+      slidesPerView: 12,
+      spaceBetween: 0,
+    },
   },
 });
 const concernSlider = new Swiper(".concernSlider", {
@@ -164,9 +176,8 @@ const concernSlider = new Swiper(".concernSlider", {
   breakpoints: {
     320: {
       loop: false,
-      slidesPerView: 2,
-
-      spaceBetween: 20,
+      slidesPerView: 2.5,
+      spaceBetween: 30,
       navigation: {
         nextEl: ".concern-slider-next",
         prevEl: ".concern-slider-prev",
@@ -178,9 +189,8 @@ const concernSlider = new Swiper(".concernSlider", {
     },
     480: {
       loop: false,
-      slidesPerView: 3,
-
-      spaceBetween: 20,
+      slidesPerView: 2.5,
+      spaceBetween: 50,
       navigation: {
         nextEl: ".concern-slider-next",
         prevEl: ".concern-slider-prev",
@@ -192,8 +202,8 @@ const concernSlider = new Swiper(".concernSlider", {
     },
     640: {
       loop: false,
-      slidesPerView: 3,
-      spaceBetween: 20,
+      slidesPerView: 3.5,
+      spaceBetween: 70,
       navigation: {
         nextEl: ".concern-slider-next",
         prevEl: ".concern-slider-prev",
@@ -205,8 +215,8 @@ const concernSlider = new Swiper(".concernSlider", {
     },
     762: {
       loop: false,
-      slidesPerView: 4,
-      spaceBetween: 20,
+      slidesPerView: 4.5,
+      spaceBetween: 70,
       navigation: {
         nextEl: ".concern-slider-next",
         prevEl: ".concern-slider-prev",
@@ -219,7 +229,7 @@ const concernSlider = new Swiper(".concernSlider", {
     992: {
       loop: false,
       slidesPerView: 4,
-      spaceBetween: 20,
+      spaceBetween: 50,
       navigation: {
         nextEl: ".concern-slider-next",
         prevEl: ".concern-slider-prev",
@@ -260,11 +270,11 @@ const concernSlider = new Swiper(".concernSlider", {
 // featureCardsSlider
 const featureCardsSlider = new Swiper(".featureCardsSlider", {
   loop: false,
-  slidesPerView: 1.5,
+  slidesPerView: 1.4,
   spaceBetween: 8,
   breakpoints: {
     480: {
-      slidesPerView: 1.5,
+      slidesPerView: 1.4,
       spaceBetween: 8,
     },
     640: {
@@ -378,7 +388,7 @@ const shopByBrand = new Swiper(".shopByBrand", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 1.2,
       spaceBetween: 16,
     },
     480: {
@@ -507,7 +517,7 @@ const swiper3 = new Swiper(".tabContentSlider", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1.1,
+      slidesPerView: 1,
       spaceBetween: 10,
     },
     400: {
