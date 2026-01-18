@@ -389,7 +389,7 @@ const shopByBrand = new Swiper(".shopByBrand", {
   breakpoints: {
     320: {
       slidesPerView: 1.2,
-      spaceBetween: 16,
+      spaceBetween: 20,
     },
     480: {
       slidesPerView: 2,
@@ -514,6 +514,41 @@ const swiper3 = new Swiper(".tabContentSlider", {
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 1.1,
+      spaceBetween: 10,
+    },
+    400: {
+      slidesPerView: 1.4,
+      spaceBetween: 10,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1024: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    1280: {
+      slidesPerView: 4,
+      spaceBetween: 20,
+    },
+  },
+});
+const swiper03 = new Swiper(".tabContentSlider02", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: false,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".tab-content-swiper-button-next",
+    prevEl: ".tab-content-swiper-button-prev",
   },
   breakpoints: {
     320: {

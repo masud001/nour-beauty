@@ -13582,7 +13582,7 @@ textarea.form-control-lg {
   color: #fff;
 }
 .shop-by-brand-slider-section .shop-by-brand-prev {
-  left: 20px;
+  left: 0px;
 }
 .shop-by-brand-slider-section .shop-by-brand-next {
   right: 0px;
@@ -13753,6 +13753,11 @@ textarea.form-control-lg {
 }
 .new-category-section .newCategorySlider {
   padding: 0 0 30px;
+}
+@media (max-width: 768px) {
+  .new-category-section .newCategorySlider {
+    padding: 0 0 10px;
+  }
 }
 .new-category-section .newCategorySlider .newCategorySlider-wrapper {
   justify-content: flex-start;
@@ -14194,15 +14199,6 @@ textarea.form-control-lg {
   font-size: 14px;
 }
 
-@media (max-width: 768px) {
-  .product-items-number {
-    font-size: 14px !important;
-    color: red !important;
-    position: absolute !important;
-    top: -29px !important;
-    right: 15px !important;
-  }
-}
 .header-container button {
   background-color: transparent;
   border: none;
@@ -15115,6 +15111,63 @@ textarea.form-control-lg {
 }
 .dynamic-tab-content .tabContentSlider:hover .swiper-button-prev,
 .dynamic-tab-content .tabContentSlider:hover .swiper-button-next {
+  opacity: 1;
+  visibility: visible;
+}
+.dynamic-tab-content .tabContentSlider02 .tab-content-swiper-button-prev,
+.dynamic-tab-content .tabContentSlider02 .tab-content-swiper-button-next {
+  width: 45px !important;
+  height: 45px !important;
+  background-image: linear-gradient(to right, #4c4c4c 50%, #fff 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.3s ease-out;
+  color: #000;
+  opacity: 0;
+  visibility: hidden;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+}
+.dynamic-tab-content .tabContentSlider02 .tab-content-swiper-button-prev::after,
+.dynamic-tab-content .tabContentSlider02 .tab-content-swiper-button-next::after {
+  content: none;
+}
+.dynamic-tab-content .tabContentSlider02 .tab-content-swiper-button-prev i,
+.dynamic-tab-content .tabContentSlider02 .tab-content-swiper-button-next i {
+  font-size: 16px;
+  font-weight: bold;
+  color: inherit;
+}
+.dynamic-tab-content .tabContentSlider02 .tab-content-swiper-button-prev:hover,
+.dynamic-tab-content .tabContentSlider02 .tab-content-swiper-button-next:hover {
+  background-position: left bottom;
+  color: #fff;
+}
+.dynamic-tab-content .tabContentSlider02 .tab-content-swiper-button-prev.swiper-button-disabled,
+.dynamic-tab-content .tabContentSlider02 .tab-content-swiper-button-next.swiper-button-disabled {
+  cursor: not-allowed;
+  opacity: 0.45 !important;
+  pointer-events: auto;
+}
+.dynamic-tab-content .tabContentSlider02 .tab-content-swiper-button-prev.swiper-button-disabled:hover,
+.dynamic-tab-content .tabContentSlider02 .tab-content-swiper-button-next.swiper-button-disabled:hover {
+  background-position: right bottom;
+  color: #000;
+}
+.dynamic-tab-content .tabContentSlider02 .tab-content-swiper-button-prev {
+  left: 0px;
+}
+.dynamic-tab-content .tabContentSlider02 .tab-content-swiper-button-next {
+  right: 0px;
+}
+.dynamic-tab-content .tabContentSlider02:hover .tab-content-swiper-button-prev,
+.dynamic-tab-content .tabContentSlider02:hover .tab-content-swiper-button-next {
   opacity: 1;
   visibility: visible;
 }

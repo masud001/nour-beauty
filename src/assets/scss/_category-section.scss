@@ -359,7 +359,7 @@
   }
 
   .shop-by-brand-prev {
-    left: 20px;
+    left: 0px;
   }
 
   .shop-by-brand-next {
@@ -567,6 +567,10 @@
 
   .newCategorySlider {
     padding: 0 0 30px;
+
+    @media (max-width:768px) {
+      padding: 0 0 10px;
+    }
 
     .newCategorySlider-wrapper {
       justify-content: flex-start;
@@ -1082,16 +1086,5 @@
     i {
       font-size: 14px;
     }
-  }
-}
-
-@media (max-width: 768px) {
-  .product-items-number {
-    font-size: 14px !important;
-    color: red !important;
-    position: absolute !important;
-    top: -29px !important;
-    right: 15px !important;
-
   }
 }
