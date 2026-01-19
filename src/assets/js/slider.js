@@ -388,27 +388,27 @@ const shopByBrand = new Swiper(".shopByBrand", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1.2,
-      spaceBetween: 20,
+      slidesPerView: 1,
+      spaceBetween: 40,
     },
     480: {
-      slidesPerView: 2,
+      slidesPerView: 1.4,
       spaceBetween: 20,
     },
     640: {
-      slidesPerView: 2,
+      slidesPerView: 2.5,
       spaceBetween: 24,
     },
     768: {
-      slidesPerView: 3,
+      slidesPerView: 3.2,
       spaceBetween: 20,
     },
     1024: {
-      slidesPerView: 4,
+      slidesPerView: 4.2,
       spaceBetween: 30,
     },
     1280: {
-      slidesPerView: 4,
+      slidesPerView: 3.6,
       spaceBetween: 30,
     },
   },
