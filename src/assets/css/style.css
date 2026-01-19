@@ -14223,19 +14223,17 @@ textarea.form-control-lg {
   right: 10px;
   width: 36px;
   height: 36px;
-  border-radius: 50%;
-  background-color: rgba(255, 255, 255, 0.9);
   border: none;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  opacity: 0;
-  visibility: hidden;
-  transform: scale(0.8);
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
   transition: all 0.3s ease;
   z-index: 5;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: transparent !important;
 }
 .product-card .wishlist-btn i {
   font-size: 18px;
@@ -14243,11 +14241,11 @@ textarea.form-control-lg {
   transition: all 0.3s ease;
 }
 .product-card .wishlist-btn:hover {
-  background-color: #fff;
+  background-color: transparent !important;
   transform: scale(1);
 }
 .product-card .wishlist-btn:hover i {
-  color: #e63946;
+  color: #111827;
 }
 .product-card .wishlist-btn:active {
   transform: scale(0.95);
@@ -14259,11 +14257,6 @@ textarea.form-control-lg {
 .product-card .wishlist-btn.active i::before {
   content: "\f004";
   font-family: "Font Awesome 6 Free";
-}
-.product-card:hover .wishlist-btn {
-  opacity: 1;
-  visibility: visible;
-  transform: scale(1);
 }
 @media (max-width: 767px) {
   .product-card .wishlist-btn {
