@@ -428,44 +428,62 @@ const swiper1 = new Swiper(".homeSlider", {
 });
 
 const featureCards = document.querySelectorAll(
-  ".category-feature-section .feature-card[data-youtube-id]"
+  ".category-feature-section .feature-card[data-youtube-id], .category-feature-section .feature-card[data-local-video-src]"
 );
 
 featureCards.forEach((card) => {
-  const videoId = card.getAttribute("data-youtube-id");
-  if (!videoId) return;
+  const youtubeId = card.getAttribute("data-youtube-id");
+  const localVideoSrc = card.getAttribute("data-local-video-src");
+
+  if (!youtubeId && !localVideoSrc) return;
 
   const layer = document.createElement("div");
   layer.className = "feature-video-layer";
   card.appendChild(layer);
 
-  let iframe = null;
+  let videoElement = null;
 
-  function createIframe() {
-    if (iframe) return;
-    iframe = document.createElement("iframe");
-    iframe.src =
-      "https://www.youtube.com/embed/" +
-      videoId +
-      "?autoplay=1&mute=1&controls=0&rel=0&playsinline=1&showinfo=0";
-    iframe.allow = "autoplay; encrypted-media; picture-in-picture";
-    iframe.setAttribute("allowfullscreen", "");
-    layer.appendChild(iframe);
+  function createVideo() {
+    if (videoElement) return;
+
+    if (youtubeId) {
+      videoElement = document.createElement("iframe");
+      videoElement.src =
+        "https://www.youtube.com/embed/" +
+        youtubeId +
+        "?autoplay=1&mute=1&controls=0&rel=0&playsinline=1&showinfo=0";
+      videoElement.allow = "autoplay; encrypted-media; picture-in-picture";
+      videoElement.setAttribute("allowfullscreen", "");
+    } else if (localVideoSrc) {
+      videoElement = document.createElement("video");
+      videoElement.src = localVideoSrc;
+      videoElement.autoplay = true;
+      videoElement.muted = true;
+      videoElement.loop = true;
+      videoElement.playsInline = true;
+      videoElement.controls = false;
+      // Ensure the video fits effectively like the iframe
+      videoElement.style.width = "100%";
+      videoElement.style.height = "100%";
+      videoElement.style.objectFit = "cover";
+    }
+
+    layer.appendChild(videoElement);
   }
 
-  function destroyIframe() {
-    if (!iframe) return;
-    iframe.remove();
-    iframe = null;
+  function destroyVideo() {
+    if (!videoElement) return;
+    videoElement.remove();
+    videoElement = null;
   }
 
   function play() {
-    createIframe();
+    createVideo();
     card.classList.add("video-playing");
   }
 
   function stop() {
-    destroyIframe();
+    destroyVideo();
     card.classList.remove("video-playing");
   }
 
