@@ -69,14 +69,20 @@
 
     .color-shades-wrapper {
       display: grid;
-      grid-template-columns: repeat(6, 1fr);
+      grid-template-columns: repeat(7, 1fr);
       gap: 10px;
       width: fit-content;
       margin-top: 15px;
 
       @media (max-width: 576px) {
-        grid-template-columns: repeat(5, 1fr);
-        width: 100%;
+        grid-template-columns: repeat(8, 1fr);
+        width: fit-content;
+        gap: 8px;
+      }
+
+      @media (max-width: 425px) {
+        grid-template-columns: repeat(6, 1fr);
+        width: fit-content;
         gap: 8px;
       }
 
