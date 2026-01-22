@@ -101,13 +101,29 @@
     }
 
     .custom-add-btn {
-      background-color: rgba(234, 220, 253, 1);
+      background-color: #eadcfd;
       color: #000;
       transition: all 0.3s ease;
+      border: 1px solid #eadcfd;
 
       &:hover {
-        background-color: darken(rgba(234, 220, 253, 1), 10%);
+        background-color: darken(#eadcfd, 10%);
+        border-color: darken(#eadcfd, 10%);
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    // Heart/Wishlist button next to Add to Bag
+    .add-to-bag button:not(.custom-add-btn) {
+      background-color: #eadcfd;
+      color: #000;
+      border: 1px solid #eadcfd !important; // Override bootstrap border
+      transition: all 0.3s ease;
+      width: 50px; // Heuristic to match height if needed, or let it flow
+
+      &:hover {
+        background-color: darken(#eadcfd, 10%);
+        border-color: darken(#eadcfd, 10%) !important;
       }
     }
   }
@@ -168,6 +184,53 @@
 .frequently-brought-together-section {
   .product-plus-icon {
     left: 10%;
+  }
+
+  .total-price {
+    button {
+      background-color: #eadcfd !important;
+      color: #000 !important;
+      border: 1px solid #eadcfd;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: darken(#eadcfd, 10%) !important;
+        border-color: darken(#eadcfd, 10%);
+      }
+    }
+  }
+}
+
+.customar-review-section {
+  button {
+    background-color: #eadcfd !important;
+    color: #000 !important;
+    border: 1px solid #eadcfd;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: darken(#eadcfd, 10%) !important;
+      border-color: darken(#eadcfd, 10%);
+    }
+  }
+}
+
+.dynamic-tab-content,
+.tabContentSlider {
+  .card-button {
+    background-color: #eadcfd;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(#eadcfd, 10%);
+    }
   }
 }
 

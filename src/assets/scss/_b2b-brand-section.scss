@@ -34,17 +34,17 @@
     }
 
     p {
-        font-size: 20px;
-        font-weight: 400;
-        font-family: vars.$font-primary;
+        font-size: 16px;
+        font-weight: 300;
+        font-family: vars.$font-family-base;
         margin: 0;
         text-align: center;
-        line-height: 40px;
+        line-height: 1.5;
         letter-spacing: -0.6px;
 
         @media (max-width: 768px) {
             font-size: 15px;
-            line-height: 25px;
+            line-height: 1.5;
         }
     }
 }

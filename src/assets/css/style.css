@@ -15877,13 +15877,26 @@ textarea.form-control-lg {
   border: 1px solid #000;
 }
 .product-details-section .product-details-sub-section .custom-add-btn {
-  background-color: rgb(234, 220, 253);
+  background-color: #eadcfd;
   color: #000;
   transition: all 0.3s ease;
+  border: 1px solid #eadcfd;
 }
 .product-details-section .product-details-sub-section .custom-add-btn:hover {
   background-color: rgb(205.0540540541, 171.7567567568, 250.2432432432);
+  border-color: rgb(205.0540540541, 171.7567567568, 250.2432432432);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.product-details-section .product-details-sub-section .add-to-bag button:not(.custom-add-btn) {
+  background-color: #eadcfd;
+  color: #000;
+  border: 1px solid #eadcfd !important;
+  transition: all 0.3s ease;
+  width: 50px;
+}
+.product-details-section .product-details-sub-section .add-to-bag button:not(.custom-add-btn):hover {
+  background-color: rgb(205.0540540541, 171.7567567568, 250.2432432432);
+  border-color: rgb(205.0540540541, 171.7567567568, 250.2432432432) !important;
 }
 
 .recommendation-title {
@@ -15933,6 +15946,44 @@ textarea.form-control-lg {
 
 .frequently-brought-together-section .product-plus-icon {
   left: 10%;
+}
+.frequently-brought-together-section .total-price button {
+  background-color: #eadcfd !important;
+  color: #000 !important;
+  border: 1px solid #eadcfd;
+  transition: all 0.3s ease;
+}
+.frequently-brought-together-section .total-price button:hover {
+  background-color: rgb(205.0540540541, 171.7567567568, 250.2432432432) !important;
+  border-color: rgb(205.0540540541, 171.7567567568, 250.2432432432);
+}
+
+.customar-review-section button {
+  background-color: #eadcfd !important;
+  color: #000 !important;
+  border: 1px solid #eadcfd;
+  transition: all 0.3s ease;
+}
+.customar-review-section button:hover {
+  background-color: rgb(205.0540540541, 171.7567567568, 250.2432432432) !important;
+  border-color: rgb(205.0540540541, 171.7567567568, 250.2432432432);
+}
+
+.dynamic-tab-content .card-button,
+.tabContentSlider .card-button {
+  background-color: #eadcfd;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+.dynamic-tab-content .card-button:hover,
+.tabContentSlider .card-button:hover {
+  background-color: rgb(205.0540540541, 171.7567567568, 250.2432432432);
 }
 
 @media (max-width: 992px) {
@@ -16139,18 +16190,18 @@ textarea.form-control-lg {
   }
 }
 .b2b-brand-section p {
-  font-size: 20px;
-  font-weight: 400;
+  font-size: 16px;
+  font-weight: 300;
   font-family: "Flink", sans-serif;
   margin: 0;
   text-align: center;
-  line-height: 40px;
+  line-height: 1.5;
   letter-spacing: -0.6px;
 }
 @media (max-width: 768px) {
   .b2b-brand-section p {
     font-size: 15px;
-    line-height: 25px;
+    line-height: 1.5;
   }
 }
 
