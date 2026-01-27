@@ -18,60 +18,105 @@
 </head>
 
 <body>
-    <!-- header top banner  -->
-    <div class="header-banner">
-        <div class="container-fluid d-flex justify-content-center align-items-center gap-sm-3 gap-lg-4 p-2 p-lg-3">
-            <!-- Mobile Slides -->
-            <div class="mobile-slides d-lg-none">
-                <a href="/#" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
-                    <span><i class="fa-solid fa-truck-moving"></i></span>
-                    <span class="text-reset"> Free UK shipping over £25</span>
-                </a>
-                <button type="button" data-bs-toggle="modal" data-bs-target="#getDiscountModal"
-                    class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
-                    <span><i class="fa-solid fa-mobile-screen-button"></i></span>
-                    <span>15% off your app order</span>
-                </button>
-                <a href="./signup-page.html" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
-                    <span><i class="fa-regular fa-envelope"></i></span>
-                    <span> Sign up for email exclusives</span>
-                </a>
-                <a href="/#" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
-                    <span><i class="fa-solid fa-gift"></i></span>
-                    <span> Earn Cult Status Points</span>
-                </a>
-            </div>
+    <!-- Header top new banner start-->
+    <div class="new-top-banner">
+        <div class="container">
+            <div class="row align-items-center">
+                <!-- Left Section: Links (Hidden on Mobile) -->
+                <div class="col-lg-4 d-none d-lg-flex justify-content-start">
+                    <nav class="new-top-banner__nav">
+                        <a href="#">Help Center</a>
+                        <a href="#">Find a Store</a>
+                        <a href="#">Contact</a>
+                    </nav>
+                </div>
 
-            <!-- Desktop Items -->
-            <a href="/#" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
-                <span><i class="fa-solid fa-truck-moving"></i></span>
-                <span class="text-reset"> Free UK shipping over £25</span>
-            </a>
-            <button type="button" data-bs-toggle="modal" data-bs-target="#getDiscountModal"
-                class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
-                <span><i class="fa-solid fa-mobile-screen-button"></i></span>
-                <span> 15% off your app order</span>
-            </button>
-            <a href="./signup-page.html" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
-                <span><i class="fa-regular fa-envelope"></i></span>
-                <span> Sign up for email exclusives</span>
-            </a>
-            <a href="/#" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
-                <span><i class="fa-solid fa-gift"></i></span>
-                <span> Earn Cult Status Points</span>
-            </a>
+                <!-- Center Section: Promo Message (Always Visible) -->
+                <div class="col-12 col-lg-4 d-flex justify-content-center">
+                    <div class="new-top-banner__promo">
+                        <span class="new-top-banner__promo-emoji">✌🏼</span>
+                        <p class="new-top-banner__promo-text">
+                            Free Express Shipping on orders $120!
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Right Section: Social Icons (Hidden on Mobile) -->
+                <div class="col-lg-4 d-none d-lg-flex justify-content-end">
+                    <div class="new-top-banner__social">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
+    <!-- Header top new banner end  -->
+
+    <!-- header top banner  -->
+    <!-- <div class="header-banner">
+    <div class="container-fluid d-flex justify-content-center align-items-center gap-sm-3 gap-lg-4 p-2 p-lg-3">
+
+      <div class="mobile-slides d-lg-none">
+        <a href="/#" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+          <span><i class="fa-solid fa-truck-moving"></i></span>
+          <span class="text-reset"> Free UK shipping over £25</span>
+        </a>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#getDiscountModal"
+          class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+          <span><i class="fa-solid fa-mobile-screen-button"></i></span>
+          <span>15% off your app order</span>
+        </button>
+        <a href="./signup-page.html" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+          <span><i class="fa-regular fa-envelope"></i></span>
+          <span> Sign up for email exclusives</span>
+        </a>
+        <a href="/#" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+          <span><i class="fa-solid fa-gift"></i></span>
+          <span> Earn Cult Status Points</span>
+        </a>
+      </div>
+
+
+      <a href="/#" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+        <span><i class="fa-solid fa-truck-moving"></i></span>
+        <span class="text-reset"> Free UK shipping over £25</span>
+      </a>
+      <button type="button" data-bs-toggle="modal" data-bs-target="#getDiscountModal"
+        class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+        <span><i class="fa-solid fa-mobile-screen-button"></i></span>
+        <span> 15% off your app order</span>
+      </button>
+      <a href="./signup-page.html" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+        <span><i class="fa-regular fa-envelope"></i></span>
+        <span> Sign up for email exclusives</span>
+      </a>
+      <a href="/#" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+        <span><i class="fa-solid fa-gift"></i></span>
+        <span> Earn Cult Status Points</span>
+      </a>
+    </div>
+  </div> -->
 
     <!-- stripe banner  -->
-    <div class="stripe-banner container-fluid d-flex justify-content-center align-items-center p-2 p-lg-3">
+    <div class="stripe-banner container-fluid d-flex justify-content-center align-items-center p-2">
         <a href="/#" class="text-reset text-uppercase text-decoration-none fs-6">
             <span class="">SALE - UP TO 50% OFF</span>
         </a>
     </div>
 
-    <header id="site-header" class="header-container sticky top-0 z-30 py-3">
-        <div class="container-fluid d-flex align-items-center justify-content-between px-lg-5">
+    <header id="site-header" class="header-container shadow-sm sticky top-0 z-30 pt-3 pb-3 pb-lg-0">
+        <div class="container d-flex align-items-center justify-content-between">
             <!-- search container for mobile  -->
             <div class="col d-flex d-lg-none gap-3 align-items-center">
                 <div class="menu-bar">
@@ -91,7 +136,7 @@
                 <div class="header-search">
                     <form action="" class="">
                         <div class="position-relative">
-                            <input id="search-input" type="text" class="w-100 rounded-1"
+                            <input id="search-input" type="text" class="w-100 rounded-pill"
                                 placeholder="Search for a product or brand" />
                             <button class="position-absolute">
                                 <span><i class="fa-solid fa-magnifying-glass"></i></span>
@@ -116,14 +161,22 @@
                             <img class="" src="./assets/img/flags/united-kingdom.png" alt="united-kingdom flag" />
                         </span>
                         <span class="">&bull;</span>
-                        <span class="fw-bold">usd</span>
+                        <span class="fw-medium">KSA</span>
+                    </button>
+                </div>
+                <!-- Location -->
+                <div class="map-location">
+                    <button type="button" data-bs-toggle="modal" data-bs-target="#mapLocationModal"
+                        class="d-flex gap-2 align-items-center">
+                        <span><i class="fa-solid fa-location-dot"></i></span>
+                        <span class="d-none d-lg-flex fw-medium">Location</span>
                     </button>
                 </div>
                 <div class="customar-account dropdown">
                     <button data-bs-toggle="dropdown" aria-expanded="false" class="d-flex gap-2 align-items-center"
                         type="button">
                         <span><i class="fa-regular fa-user"></i></span>
-                        <span class="d-none d-lg-flex fw-semibold">Account</span>
+                        <span class="d-none d-lg-flex fw-medium">Account</span>
                     </button>
                     <ul class="dropdown-menu dropdown-menu-end rounded-0 border border-light-subtle shadow m-0 p-0">
                         <li>
@@ -151,7 +204,7 @@
                 <div class="addto-busket">
                     <button class="d-flex gap-2 align-items-center">
                         <span><i class="fa-solid fa-basket-shopping"></i></span>
-                        <span class="d-none d-lg-flex fw-semibold">Bag</span>
+                        <span class="d-none d-lg-flex fw-medium">Bag</span>
                     </button>
                 </div>
             </div>
@@ -168,7 +221,7 @@
                             <div class="row row-cols-5 g-3">
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -182,7 +235,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -196,7 +249,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -210,7 +263,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -224,7 +277,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -250,7 +303,7 @@
                             <div class="row row-cols-5 g-3">
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -264,7 +317,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -278,7 +331,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -292,7 +345,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -306,7 +359,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -332,7 +385,7 @@
                             <div class="row row-cols-5 g-3">
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -346,7 +399,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -360,7 +413,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -374,7 +427,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -388,7 +441,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -414,7 +467,7 @@
                             <div class="row row-cols-5 g-3">
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -428,7 +481,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -442,7 +495,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -456,7 +509,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -470,7 +523,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -496,7 +549,7 @@
                             <div class="row row-cols-5 g-3">
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -510,7 +563,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -524,7 +577,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -538,7 +591,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -552,7 +605,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -578,7 +631,7 @@
                             <div class="row row-cols-5 g-3">
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -592,7 +645,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -606,7 +659,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -620,7 +673,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -634,7 +687,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -660,7 +713,7 @@
                             <div class="row row-cols-5 g-3">
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -674,7 +727,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -688,7 +741,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -702,7 +755,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -716,7 +769,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -742,7 +795,7 @@
                             <div class="row row-cols-5 g-3">
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -756,7 +809,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -770,7 +823,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -784,7 +837,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -798,7 +851,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -824,7 +877,7 @@
                             <div class="row row-cols-5 g-3">
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -838,7 +891,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -852,7 +905,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -866,7 +919,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -880,7 +933,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -906,7 +959,7 @@
                             <div class="row row-cols-5 g-3">
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -920,7 +973,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -934,7 +987,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -948,7 +1001,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -962,7 +1015,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -988,7 +1041,7 @@
                             <div class="row row-cols-5 g-3">
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -1002,7 +1055,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -1016,7 +1069,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -1030,7 +1083,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -1044,7 +1097,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -1070,7 +1123,7 @@
                             <div class="row row-cols-5 g-3">
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -1084,7 +1137,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -1098,7 +1151,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -1112,7 +1165,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -1126,7 +1179,7 @@
                                 </div>
                                 <div class="col">
                                     <h3
-                                        class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                                        class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                                         View All Brands
                                     </h3>
                                     <ul class="list-unstyled">
@@ -1160,7 +1213,7 @@
                             <img class="" src="./assets/img/flags/united-kingdom.png" alt="united-kingdom flag" />
                         </span>
                         <span class="">&bull;</span>
-                        <span class="fw-bold">usd</span>
+                        <span class="fw-medium">KSA</span>
                     </button>
 
                     <button type="button" class="btn-close text-black" data-bs-dismiss="offcanvas"
@@ -1398,307 +1451,663 @@
 
         <!-- new comming items  -->
         <div class="mx-auto py-8">
-            <h2 class="text-center font-averta text-lg md:text-2xl font-normal mb-8 uppercase">
-                WHAT'S NEW AT nour beauty
-            </h2>
-            <div class="container mx-auto px-4 lg:px-0">
-                <div class="swiper newProductSlider !pb-[32px]">
-                    <div class="swiper-wrapper">
-                        <!-- slider 1 -->
-                        <div class="swiper-slide">
-                            <div class="flex flex-col gap-2">
-                                <a href="/#">
-                                    <figure>
-                                        <picture>
-                                            <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                media="(min-width: 1024px)" />
-                                            <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                media="(min-width: 768px)" />
-                                            <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                media="(min-width: 640px)" />
-                                            <img src="./assets/img/product/nour-product-01.jpg" alt="Brand of the month"
-                                                loading="lazy" width="350" height="350"
-                                                class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
-                                                fetchpriority="auto" />
-                                        </picture>
-                                    </figure>
-                                </a>
-                                <div class="text-center">
-                                    <h3 class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
-                                        discover
-                                    </h3>
-                                    <p
-                                        class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
-                                        shark
-                                    </p>
-                                    <p class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
-                                        Meet the CryoGlow Skincare LED Face Mask, equipped with
-                                        unique under-eye cooling tech.
-                                    </p>
 
-                                    <div class="block my-3">
-                                        <button
-                                            class="px-2 font-averta py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
-                                            shop now
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slider 1 -->
-                        <div class="swiper-slide">
-                            <div class="flex flex-col gap-2">
-                                <a href="/#">
-                                    <figure>
-                                        <picture>
-                                            <source srcset="./assets/img/product/nour-product-02.jpg"
-                                                media="(min-width: 1024px)" />
-                                            <source srcset="./assets/img/product/nour-product-02.jpg"
-                                                media="(min-width: 768px)" />
-                                            <source srcset="./assets/img/product/nour-product-02.jpg"
-                                                media="(min-width: 640px)" />
-                                            <img src="./assets/img/product/nour-product-02.jpg" alt="Brand of the month"
-                                                loading="lazy" width="350" height="350"
-                                                class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
-                                                fetchpriority="auto" />
-                                        </picture>
-                                    </figure>
-                                </a>
-                                <div class="text-center">
-                                    <h3 class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
-                                        discover
-                                    </h3>
-                                    <p
-                                        class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
-                                        shark
-                                    </p>
-                                    <p class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
-                                        Meet the CryoGlow Skincare LED Face Mask, equipped with
-                                        unique under-eye cooling tech.
-                                    </p>
 
-                                    <div class="block my-3">
-                                        <button
-                                            class="px-2 font-averta py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
-                                            shop now
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slider 1 -->
-                        <div class="swiper-slide">
-                            <div class="flex flex-col gap-2">
-                                <a href="/#">
-                                    <figure>
-                                        <picture>
-                                            <source srcset="./assets/img/product/nour-product-03.jpg"
-                                                media="(min-width: 1024px)" />
-                                            <source srcset="./assets/img/product/nour-product-03.jpg"
-                                                media="(min-width: 768px)" />
-                                            <source srcset="./assets/img/product/nour-product-03.jpg"
-                                                media="(min-width: 640px)" />
-                                            <img src="./assets/img/product/nour-product-03.jpg" alt="Brand of the month"
-                                                loading="lazy" width="350" height="350"
-                                                class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
-                                                fetchpriority="auto" />
-                                        </picture>
-                                    </figure>
-                                </a>
-                                <div class="text-center">
-                                    <h3 class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
-                                        discover
-                                    </h3>
-                                    <p
-                                        class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
-                                        shark
-                                    </p>
-                                    <p class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
-                                        Meet the CryoGlow Skincare LED Face Mask, equipped with
-                                        unique under-eye cooling tech.
-                                    </p>
+            <div class="dynamic-tab-content mx-auto">
+                <div class="container mx-auto">
+                    <h4 class="category-section-title text-center text-uppercase pb-4"> WHAT'S NEW AT nour beauty</h4>
+                    <div class="flex justify-center items-center">
+                        <div class="flex border-b ">
+                            <button
+                                class="tab-btn px-4  py-2 text-xs md:text-base uppercase text-black font-bold border-b-2 border-black hover:text-black focus:text-black focus:border-black"
+                                data-tab="tab1">
+                                Trending
+                            </button>
+                            <button
+                                class="tab-btn px-4  py-2 text-xs md:text-base uppercase text-black border-b-2 border-transparent hover:text-black focus:text-black focus:border-black"
+                                data-tab="tab2">
+                                best seller
+                            </button>
 
-                                    <div class="block my-3">
-                                        <button
-                                            class="px-2 font-averta py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
-                                            shop now
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slider 1 -->
-                        <div class="swiper-slide">
-                            <div class="flex flex-col gap-2">
-                                <a href="/#">
-                                    <figure>
-                                        <picture>
-                                            <source srcset="./assets/img/product/nour-product-04.jpg"
-                                                media="(min-width: 1024px)" />
-                                            <source srcset="./assets/img/product/nour-product-04.jpg"
-                                                media="(min-width: 768px)" />
-                                            <source srcset="./assets/img/product/nour-product-04.jpg"
-                                                media="(min-width: 640px)" />
-                                            <img src="./assets/img/product/nour-product-04.jpg" alt="Brand of the month"
-                                                loading="lazy" width="350" height="350"
-                                                class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
-                                                fetchpriority="auto" />
-                                        </picture>
-                                    </figure>
-                                </a>
-                                <div class="text-center">
-                                    <h3 class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
-                                        discover
-                                    </h3>
-                                    <p
-                                        class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
-                                        shark
-                                    </p>
-                                    <p class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
-                                        Meet the CryoGlow Skincare LED Face Mask, equipped with
-                                        unique under-eye cooling tech.
-                                    </p>
-
-                                    <div class="block my-3">
-                                        <button
-                                            class="px-2 font-averta py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
-                                            shop now
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slider 1 -->
-                        <div class="swiper-slide">
-                            <div class="flex flex-col gap-2">
-                                <a href="/#">
-                                    <figure>
-                                        <picture>
-                                            <source srcset="./assets/img/product/nour-product-05.jpg"
-                                                media="(min-width: 1024px)" />
-                                            <source srcset="./assets/img/product/nour-product-05.jpg"
-                                                media="(min-width: 768px)" />
-                                            <source srcset="./assets/img/product/nour-product-05.jpg"
-                                                media="(min-width: 640px)" />
-                                            <img src="./assets/img/product/nour-product-05.jpg" alt="Brand of the month"
-                                                loading="lazy" width="350" height="350"
-                                                class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
-                                                fetchpriority="auto" />
-                                        </picture>
-                                    </figure>
-                                </a>
-                                <div class="text-center">
-                                    <h3 class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
-                                        discover
-                                    </h3>
-                                    <p
-                                        class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
-                                        shark
-                                    </p>
-                                    <p class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
-                                        Meet the CryoGlow Skincare LED Face Mask, equipped with
-                                        unique under-eye cooling tech.
-                                    </p>
-
-                                    <div class="block my-3">
-                                        <button
-                                            class="px-2 font-averta py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
-                                            shop now
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slider 1 -->
-                        <div class="swiper-slide">
-                            <div class="flex flex-col gap-2">
-                                <a href="/#">
-                                    <figure>
-                                        <picture>
-                                            <source srcset="./assets/img/product/nour-product-06.jpg"
-                                                media="(min-width: 1024px)" />
-                                            <source srcset="./assets/img/product/nour-product-06.jpg"
-                                                media="(min-width: 768px)" />
-                                            <source srcset="./assets/img/product/nour-product-06.jpg"
-                                                media="(min-width: 640px)" />
-                                            <img src="./assets/img/product/nour-product-06.jpg" alt="Brand of the month"
-                                                loading="lazy" width="350" height="350"
-                                                class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
-                                                fetchpriority="auto" />
-                                        </picture>
-                                    </figure>
-                                </a>
-                                <div class="text-center">
-                                    <h3 class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
-                                        discover
-                                    </h3>
-                                    <p
-                                        class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
-                                        shark
-                                    </p>
-                                    <p class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
-                                        Meet the CryoGlow Skincare LED Face Mask, equipped with
-                                        unique under-eye cooling tech.
-                                    </p>
-
-                                    <div class="block my-3">
-                                        <button
-                                            class="px-2 font-averta py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
-                                            shop now
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- slider 1 -->
-                        <div class="swiper-slide">
-                            <div class="flex flex-col gap-2">
-                                <a href="/#">
-                                    <figure>
-                                        <picture>
-                                            <source srcset="./assets/img/product/nour-product-07.jpg"
-                                                media="(min-width: 1024px)" />
-                                            <source srcset="./assets/img/product/nour-product-07.jpg"
-                                                media="(min-width: 768px)" />
-                                            <source srcset="./assets/img/product/nour-product-07.jpg"
-                                                media="(min-width: 640px)" />
-                                            <img src="./assets/img/product/nour-product-07.jpg" alt="Brand of the month"
-                                                loading="lazy" width="350" height="350"
-                                                class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
-                                                fetchpriority="auto" />
-                                        </picture>
-                                    </figure>
-                                </a>
-                                <div class="text-center">
-                                    <h3 class="text-gray-900 title-font text-lg font-averta font-medium mt-4 uppercase">
-                                        discover
-                                    </h3>
-                                    <p
-                                        class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow uppercase">
-                                        shark
-                                    </p>
-                                    <p class="text-gray-900 title-font text-sm font-averta font-medium mt-2 flex-grow">
-                                        Meet the CryoGlow Skincare LED Face Mask, equipped with
-                                        unique under-eye cooling tech.
-                                    </p>
-
-                                    <div class="block my-3">
-                                        <button
-                                            class="px-2 font-averta py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
-                                            shop now
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
-                    <!-- pagination buttons -->
-                    <div class="swiper-pagination"></div>
-                    <!-- If we need navigation buttons -->
-                    <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-                    <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+                    <div class="tab-content mt-4">
+                        <div id="tab1" class="">
+                            <div class="swiper tabContentSlider02 !pb-[32px]">
+                                <div class="swiper-wrapper ">
+                                    <!-- slider 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="product-card flex flex-col gap-2">
+                                            <a href="/#" class="product-image-link">
+                                                <figure class="mb-0 position-relative">
+                                                    <picture>
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 1024px)" />
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 768px)" />
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 640px)" />
+                                                        <img src="./assets/img/product/images.avif"
+                                                            alt="Brand of the month" loading="lazy" width="350"
+                                                            height="430"
+                                                            class="object-cover mx-auto w-full h-full shrink-0"
+                                                            decoding="auto" fetchpriority="auto" />
+                                                    </picture>
+                                                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </button>
+                                                </figure>
+                                            </a>
+                                            <div class="flex flex-col gap-2">
+                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                </p>
+                                                <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                <div class="flex gap-2 text-sm tracking-wider">
+                                                    <div class="flex items-center">
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                                                    </div>
+                                                    <p class="m-0">7</p>
+                                                </div>
+                                                <div class="my-1">
+                                                    <p class="text-sm  font-bold">$ 20.00</p>
+                                                </div>
+                                                <div class="block">
+                                                    <button class="card-button">
+                                                        add to bag
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slider 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="product-card flex flex-col gap-2">
+                                            <a href="/#" class="product-image-link">
+                                                <figure class="mb-0 position-relative">
+                                                    <picture>
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 1024px)" />
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 768px)" />
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 640px)" />
+                                                        <img src="./assets/img/product/images.avif"
+                                                            alt="Brand of the month" loading="lazy" width="350"
+                                                            height="430"
+                                                            class="object-cover mx-auto w-full h-full shrink-0"
+                                                            decoding="auto" fetchpriority="auto" />
+                                                    </picture>
+                                                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </button>
+                                                </figure>
+                                            </a>
+                                            <div class="flex flex-col gap-2">
+                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                </p>
+                                                <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                <div class="flex gap-2 text-sm tracking-wider">
+                                                    <div class="flex items-center">
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                                                    </div>
+                                                    <p class="m-0">7</p>
+                                                </div>
+                                                <div class="my-1">
+                                                    <p class="text-sm  font-bold">$ 20.00</p>
+                                                </div>
+                                                <div class="block">
+                                                    <button class="card-button">
+                                                        add to bag
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slider 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="product-card flex flex-col gap-2">
+                                            <a href="/#" class="product-image-link">
+                                                <figure class="mb-0 position-relative">
+                                                    <picture>
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 1024px)" />
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 768px)" />
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 640px)" />
+                                                        <img src="./assets/img/product/images.avif"
+                                                            alt="Brand of the month" loading="lazy" width="350"
+                                                            height="430"
+                                                            class="object-cover mx-auto w-full h-full shrink-0"
+                                                            decoding="auto" fetchpriority="auto" />
+                                                    </picture>
+                                                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </button>
+                                                </figure>
+                                            </a>
+                                            <div class="flex flex-col gap-2">
+                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                </p>
+                                                <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                <div class="flex gap-2 text-sm tracking-wider">
+                                                    <div class="flex items-center">
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                                                    </div>
+                                                    <p class="m-0">7</p>
+                                                </div>
+                                                <div class="my-1">
+                                                    <p class="text-sm  font-bold">$ 20.00</p>
+                                                </div>
+                                                <div class="block">
+                                                    <button class="card-button">
+                                                        add to bag
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slider 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="product-card flex flex-col gap-2">
+                                            <a href="/#" class="product-image-link">
+                                                <figure class="mb-0 position-relative">
+                                                    <picture>
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 1024px)" />
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 768px)" />
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 640px)" />
+                                                        <img src="./assets/img/product/images.avif"
+                                                            alt="Brand of the month" loading="lazy" width="350"
+                                                            height="430"
+                                                            class="object-cover mx-auto w-full h-full shrink-0"
+                                                            decoding="auto" fetchpriority="auto" />
+                                                    </picture>
+                                                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </button>
+                                                </figure>
+                                            </a>
+                                            <div class="flex flex-col gap-2">
+                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                </p>
+                                                <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                <div class="flex gap-2 text-sm tracking-wider">
+                                                    <div class="flex items-center">
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                                                    </div>
+                                                    <p class="m-0">7</p>
+                                                </div>
+                                                <div class="my-1">
+                                                    <p class="text-sm  font-bold">$ 20.00</p>
+                                                </div>
+                                                <div class="block">
+                                                    <button class="card-button">
+                                                        add to bag
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slider 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="product-card flex flex-col gap-2">
+                                            <a href="/#" class="product-image-link">
+                                                <figure class="mb-0 position-relative">
+                                                    <picture>
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 1024px)" />
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 768px)" />
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 640px)" />
+                                                        <img src="./assets/img/product/images.avif"
+                                                            alt="Brand of the month" loading="lazy" width="350"
+                                                            height="430"
+                                                            class="object-cover mx-auto w-full h-full shrink-0"
+                                                            decoding="auto" fetchpriority="auto" />
+                                                    </picture>
+                                                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </button>
+                                                </figure>
+                                            </a>
+                                            <div class="flex flex-col gap-2">
+                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                </p>
+                                                <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                <div class="flex gap-2 text-sm tracking-wider">
+                                                    <div class="flex items-center">
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                                                    </div>
+                                                    <p class="m-0">7</p>
+                                                </div>
+                                                <div class="my-1">
+                                                    <p class="text-sm  font-bold">$ 20.00</p>
+                                                </div>
+                                                <div class="block">
+                                                    <button class="card-button">
+                                                        add to bag
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slider 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="product-card flex flex-col gap-2">
+                                            <a href="/#" class="product-image-link">
+                                                <figure class="mb-0 position-relative">
+                                                    <picture>
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 1024px)" />
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 768px)" />
+                                                        <source srcset="./assets/img/product/images.avif"
+                                                            media="(min-width: 640px)" />
+                                                        <img src="./assets/img/product/images.avif"
+                                                            alt="Brand of the month" loading="lazy" width="350"
+                                                            height="430"
+                                                            class="object-cover mx-auto w-full h-full shrink-0"
+                                                            decoding="auto" fetchpriority="auto" />
+                                                    </picture>
+                                                    <button class="wishlist-btn" aria-label="Add to wishlist">
+                                                        <i class="fa-regular fa-heart"></i>
+                                                    </button>
+                                                </figure>
+                                            </a>
+                                            <div class="flex flex-col gap-2">
+                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                </p>
+                                                <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                <div class="flex gap-2 text-sm tracking-wider">
+                                                    <div class="flex items-center">
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                                                    </div>
+                                                    <p class="m-0">7</p>
+                                                </div>
+                                                <div class="my-1">
+                                                    <p class="text-sm  font-bold">$ 20.00</p>
+                                                </div>
+                                                <div class="block">
+                                                    <button class="card-button">
+                                                        add to bag
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- pagination buttons -->
+                                <div class="slider-pagination swiper-pagination"></div>
+                                <!-- If we need navigation buttons -->
+                                <div class="tab-content-swiper-button-prev bg-white shadow-sm">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </div>
+                                <div class="tab-content-swiper-button-next bg-white shadow-sm">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="tab2" class="hidden">
+                            <div class="swiper tabContentSlider02 !pb-[32px]">
+                                <div class="swiper-wrapper ">
+                                    <!-- slider 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="/#">
+                                                <figure class="mb-0">
+                                                    <picture>
+                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
+                                                            media="(min-width: 1024px)" />
+                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
+                                                            media="(min-width: 768px)" />
+                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
+                                                            media="(min-width: 640px)" />
+                                                        <img src="./assets/img/product/nour-product-01.jpg"
+                                                            alt="Brand of the month" loading="lazy" width="350"
+                                                            height="430"
+                                                            class="object-cover mx-auto w-full h-full shrink-0"
+                                                            decoding="auto" fetchpriority="auto" />
+                                                    </picture>
+                                                </figure>
+                                            </a>
+                                            <div class="flex flex-col gap-2">
+                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                </p>
+                                                <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                <div class="flex gap-2 text-sm tracking-wider">
+                                                    <div class="flex items-center">
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                                                    </div>
+                                                    <p class="m-0">7</p>
+                                                </div>
+                                                <div class="my-1">
+                                                    <p class="text-sm  font-bold">$ 20.00</p>
+                                                </div>
+                                                <div class="block">
+                                                    <button class="card-button">
+                                                        add to bag
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slider 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="/#">
+                                                <figure class="mb-0">
+                                                    <picture>
+                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
+                                                            media="(min-width: 1024px)" />
+                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
+                                                            media="(min-width: 768px)" />
+                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
+                                                            media="(min-width: 640px)" />
+                                                        <img src="./assets/img/product/nour-product-01.jpg"
+                                                            alt="Brand of the month" loading="lazy" width="350"
+                                                            height="430"
+                                                            class="object-cover mx-auto w-full h-full shrink-0"
+                                                            decoding="auto" fetchpriority="auto" />
+                                                    </picture>
+                                                </figure>
+                                            </a>
+                                            <div class="flex flex-col gap-2">
+                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                </p>
+                                                <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                <div class="flex gap-2 text-sm tracking-wider">
+                                                    <div class="flex items-center">
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                                                    </div>
+                                                    <p class="m-0">7</p>
+                                                </div>
+                                                <div class="my-1">
+                                                    <p class="text-sm  font-bold">$ 20.00</p>
+                                                </div>
+                                                <div class="block">
+                                                    <button class="card-button">
+                                                        add to bag
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slider 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="/#">
+                                                <figure class="mb-0">
+                                                    <picture>
+                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
+                                                            media="(min-width: 1024px)" />
+                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
+                                                            media="(min-width: 768px)" />
+                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
+                                                            media="(min-width: 640px)" />
+                                                        <img src="./assets/img/product/nour-product-01.jpg"
+                                                            alt="Brand of the month" loading="lazy" width="350"
+                                                            height="430"
+                                                            class="object-cover mx-auto w-full h-full shrink-0"
+                                                            decoding="auto" fetchpriority="auto" />
+                                                    </picture>
+                                                </figure>
+                                            </a>
+                                            <div class="flex flex-col gap-2">
+                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                </p>
+                                                <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                <div class="flex gap-2 text-sm tracking-wider">
+                                                    <div class="flex items-center">
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                                                    </div>
+                                                    <p class="m-0">7</p>
+                                                </div>
+                                                <div class="my-1">
+                                                    <p class="text-sm  font-bold">$ 20.00</p>
+                                                </div>
+                                                <div class="block">
+                                                    <button class="card-button">
+                                                        add to bag
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slider 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="/#">
+                                                <figure class="mb-0">
+                                                    <picture>
+                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
+                                                            media="(min-width: 1024px)" />
+                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
+                                                            media="(min-width: 768px)" />
+                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
+                                                            media="(min-width: 640px)" />
+                                                        <img src="./assets/img/product/nour-product-01.jpg"
+                                                            alt="Brand of the month" loading="lazy" width="350"
+                                                            height="430"
+                                                            class="object-cover mx-auto w-full h-full shrink-0"
+                                                            decoding="auto" fetchpriority="auto" />
+                                                    </picture>
+                                                </figure>
+                                            </a>
+                                            <div class="flex flex-col gap-2">
+                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                </p>
+                                                <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                <div class="flex gap-2 text-sm tracking-wider">
+                                                    <div class="flex items-center">
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                                                    </div>
+                                                    <p class="m-0">7</p>
+                                                </div>
+                                                <div class="my-1">
+                                                    <p class="text-sm  font-bold">$ 20.00</p>
+                                                </div>
+                                                <div class="block">
+                                                    <button class="card-button">
+                                                        add to bag
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- slider 1 -->
+                                    <div class="swiper-slide">
+                                        <div class="flex flex-col gap-2">
+                                            <a href="/#">
+                                                <figure class="mb-0">
+                                                    <picture>
+                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
+                                                            media="(min-width: 1024px)" />
+                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
+                                                            media="(min-width: 768px)" />
+                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
+                                                            media="(min-width: 640px)" />
+                                                        <img src="./assets/img/product/nour-product-01.jpg"
+                                                            alt="Brand of the month" loading="lazy" width="350"
+                                                            height="430"
+                                                            class="object-cover mx-auto w-full h-full shrink-0"
+                                                            decoding="auto" fetchpriority="auto" />
+                                                    </picture>
+                                                </figure>
+                                            </a>
+                                            <div class="flex flex-col gap-2">
+                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                </p>
+                                                <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                <div class="flex gap-2 text-sm tracking-wider">
+                                                    <div class="flex items-center">
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-solid fa-star"></i></span>
+                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                                                    </div>
+                                                    <p class="m-0">7</p>
+                                                </div>
+                                                <div class="my-1">
+                                                    <p class="text-sm  font-bold">$ 20.00</p>
+                                                </div>
+                                                <div class="block">
+                                                    <button class="card-button">
+                                                        add to bag
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- pagination buttons -->
+                                <div class="slider-pagination swiper-pagination"></div>
+                                <!-- If we need navigation buttons -->
+                                <div class="tab-content-swiper-button-prev  bg-white shadow-sm">
+                                    <i class="fa-solid fa-chevron-left"></i>
+                                </div>
+                                <div class="tab-content-swiper-button-next  bg-white shadow-sm">
+                                    <i class="fa-solid fa-chevron-right"></i>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
             </div>
+
         </div>
 
         <!-- Shop by Category Section all css have shop-by-category.scss file -->

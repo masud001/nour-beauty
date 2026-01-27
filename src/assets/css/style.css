@@ -15814,7 +15814,7 @@ textarea.form-control-lg {
   object-fit: contain;
 }
 .product-gallery-section .product-thumbs {
-  height: 125px;
+  height: 115px;
   box-sizing: border-box;
   padding: 10px 0;
 }
@@ -15899,7 +15899,7 @@ textarea.form-control-lg {
   color: #000;
   border: 1px solid #eadcfd !important;
   transition: all 0.3s ease;
-  width: 50px;
+  width: 80px;
 }
 .product-details-section .product-details-sub-section .add-to-bag button:not(.custom-add-btn):hover {
   background-color: rgb(205.0540540541, 171.7567567568, 250.2432432432);
@@ -16001,6 +16001,23 @@ textarea.form-control-lg {
 
 .blog-section figure {
   margin-bottom: 0px !important;
+}
+
+.blog-thumb {
+  width: 100%;
+  height: 280px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+.blog-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+@media (max-width: 768px) {
+  .blog-thumb {
+    height: 180px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -16164,6 +16181,30 @@ textarea.form-control-lg {
 .blog-section:hover .blog-slider-next {
   opacity: 1;
   visibility: visible;
+}
+
+.single-blog-thumb {
+  width: 100%;
+  max-height: 350px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+.single-blog-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.related-blog-thumb {
+  width: 100%;
+  max-height: 375px;
+  overflow: hidden;
+  aspect-ratio: 16/9;
+}
+.related-blog-thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .b2b-brand-section h2, .b2b-brand-section .h2 {
@@ -16866,6 +16907,36 @@ body .product-overlay-listing {
 }
 
 /* Dark Mode Support for Signup Page */
+.find-store-area h1, .find-store-area .h1,
+.find-store-area h2,
+.find-store-area .h2,
+.find-store-area h5,
+.find-store-area .h5 {
+  color: #072835;
+}
+.find-store-area .text-theme {
+  color: #047857;
+}
+.find-store-area .font-serif {
+  font-family: serif;
+}
+@media screen and (max-width: 768px) {
+  .find-store-area .store-image {
+    border-radius: 10px;
+  }
+}
+@media screen and (min-width: 769px) {
+  .find-store-area .store-image {
+    min-height: 450px;
+  }
+  .find-store-area .store-image img {
+    height: 100%;
+  }
+}
+.find-store-area .store-image img {
+  border-radius: 20px;
+}
+
 /* Wishlist / Account Page Styles */
 /* Account Header */
 .account-header {

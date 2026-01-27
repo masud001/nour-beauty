@@ -26,7 +26,7 @@
   }
 
   .product-thumbs {
-    height: 125px; // Adjust as needed
+    height: 115px; // Adjust as needed
     box-sizing: border-box;
     padding: 10px 0;
 
@@ -125,7 +125,7 @@
       color: #000;
       border: 1px solid #eadcfd !important; // Override bootstrap border
       transition: all 0.3s ease;
-      width: 50px; // Heuristic to match height if needed, or let it flow
+      width: 80px; // Heuristic to match height if needed, or let it flow
 
       &:hover {
         background-color: darken(#eadcfd, 10%);
