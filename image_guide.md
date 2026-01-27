@@ -11,6 +11,16 @@ This document provides recommendations for image dimensions and aspect ratios ac
 | **Section Banners** | Full Width Strip | Variable | 1920 x 400 | 1024 x 300 | 600 x 300 |
 
 
+
+## 1.1 Homepage V2 (Alternative Layout)
+| Section | Image Type | Aspect Ratio | Desktop Size (px) | Tablet Size (px) | Mobile Size (px) |
+|---------|------------|--------------|-------------------|------------------|------------------|
+| **Category Slider**| Circular Thumbnail | 1:1 | 80 x 80 | 80 x 80 | 60 x 60 |
+| **Feature Card** | Background Image | 5:3 | 940 x 565 | 700 x 420 | 600 x 360 |
+| **Countdown** | Card Background | Portrait (Cover) | 600 x 800 | 500 x 700 | 500 x 500 |
+| **Trust Grid** | Category Tile | 1:1 | 100 x 100 | 100 x 100 | 80 x 80 |
+| **Brands** | Logo Cell | 2:1 | 240 x 120 | 200 x 100 | 160 x 80 |
+
 ## 2. Shop & Category Pages
 | Section | Image Type | Aspect Ratio | Desktop Size (px) | Tablet Size (px) | Mobile Size (px) |
 |---------|------------|--------------|-------------------|------------------|------------------|
@@ -27,7 +37,7 @@ This document provides recommendations for image dimensions and aspect ratios ac
 ## 4. Blog Pages
 | Section | Image Type | Aspect Ratio | Desktop Size (px) | Tablet Size (px) | Mobile Size (px) |
 |---------|------------|--------------|-------------------|------------------|------------------|
-| **Listing** | Post Thumbnail | 16:9 or 3:2 | 500 x 300 | 400 x 240 | 350 x 210 |
+| **Listing** | Post Thumbnail (blog-thumb) | Variable (Cover) | 550 x 280 | 720 x 280 | 350 x 180 |
 | **Single Post** | Featured Image | 16:9 or 3:2 | 800 x 450 | 700 x 400 | 350 x 200 |
 | **Author** | Author Avatar | 1:1 | 150 x 150 | 100 x 100 | 80 x 80 |
 
@@ -43,3 +53,4 @@ This document provides recommendations for image dimensions and aspect ratios ac
 | Page | Image Type | Aspect Ratio | Desktop Size (px) | Tablet Size (px) | Mobile Size (px) |
 |------|------------|--------------|-------------------|------------------|------------------|
 | **Find Store** | Store Image | 16:9 | 100% width (max 600px height) | 100% width | 100% width |
+
