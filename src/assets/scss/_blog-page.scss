@@ -6,9 +6,10 @@
 
 .blog-thumb {
     width: 100%;
-    height: 280px;
+    max-width: 500px;
+    height: 281px;
     overflow: hidden;
-    aspect-ratio: 16/9;
+    aspect-ratio: 500/281;
 
     img {
         width: 100%;
@@ -22,37 +23,39 @@
 }
 
 .blog-details {
-    @media (max-width: 768px) {
 
-        .news-tag,
-        .writter-name {
-            font-size: 12px !important;
-        }
-
-        .blog-title {
-            font-size: 18px !important;
-        }
-
-        p {
-            font-size: 13px !important;
-        }
+    .blog-content {
+        gap: 1.5rem !important;
     }
 
-    @media (min-width:992px) and (max-width:1199px) {
-
-        .news-tag,
-        .writter-name {
-            font-size: 14px !important;
-        }
-
-        .blog-title {
-            font-size: 24px !important;
-        }
-
-        p {
-            font-size: 16px !important;
-        }
+    .date-writter-area {
+        gap: 24px;
     }
+
+    .news-tag,
+    .writter-name {
+        font-size: 16px !important;
+        text-transform: uppercase;
+    }
+
+
+
+    .blog-title {
+        font-size: 24px !important;
+    }
+
+    .blog-text {
+        font-size: 18px !important;
+        opacity: .60 !important;
+    }
+
+    .blog-date {
+        font-size: 16px !important;
+        opacity: .60 !important;
+    }
+
+
+
 
 
 }
