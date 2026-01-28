@@ -682,8 +682,8 @@ const swiper7 = new Swiper(".productListingTypeOne", {
     clickable: true,
   },
   navigation: {
-    nextEl: ".category-slider-next",
-    prevEl: ".category-slider-prev",
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
   },
   breakpoints: {
     320: {
