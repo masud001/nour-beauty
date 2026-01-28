@@ -7,13 +7,15 @@
     margin-top: 0;
     background-color: transparent;
   }
+
   .swiper-pagination-bullets {
     padding: 15px;
   }
+
   .swiperSlider {
     .swiper-slide {
-      width: 80%;
-      height: 600px !important;
+      height: 674px !important;
+
       img {
         display: block;
         width: 100%;
@@ -22,18 +24,150 @@
       }
     }
   }
-}
-.product-details-section {
-  .product-details-sub-section {
-    h2 {
-      font-size: vars.$font-sm;
-      margin-bottom: 10px !important;
+
+  .product-thumbs {
+    height: 115px; // Adjust as needed
+    box-sizing: border-box;
+    padding: 10px 0;
+
+    .swiper-slide {
+      width: 25%;
+      height: 100%;
+      opacity: 0.4;
+      cursor: pointer;
+
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border: 1px solid transparent;
+      }
+    }
+
+    .swiper-slide-thumb-active {
+      opacity: 1;
+
+      img {
+        border: 1px solid #000; // Active border
+      }
     }
   }
 }
+
+.product-details-section {
+  .product-details-sub-section {
+    h2 {
+      font-size: 30px !important;
+      margin-bottom: 10px !important;
+    }
+
+    .variant-title {
+      font-size: 14px !important;
+      text-transform: uppercase;
+    }
+
+    .color-shades-wrapper {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 10px;
+      width: fit-content;
+      margin-top: 15px;
+
+      @media (max-width: 576px) {
+        grid-template-columns: repeat(8, 1fr);
+        width: fit-content;
+        gap: 8px;
+      }
+
+      @media (max-width: 425px) {
+        grid-template-columns: repeat(6, 1fr);
+        width: fit-content;
+        gap: 8px;
+      }
+
+      .color-shade {
+        width: 45px;
+        height: 45px;
+        border: 1px solid #e0e0e0;
+        border-radius: 0;
+        cursor: pointer;
+        padding: 0;
+        transition: all 0.2s ease;
+        position: relative;
+
+        &:hover {
+          border-color: #000;
+        }
+
+        &.active {
+          border: 1px solid #000;
+        }
+      }
+    }
+
+    .custom-add-btn {
+      background-color: #eadcfd;
+      color: #000;
+      transition: all 0.3s ease;
+      border: 1px solid #eadcfd;
+
+      &:hover {
+        background-color: darken(#eadcfd, 10%);
+        border-color: darken(#eadcfd, 10%);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    // Heart/Wishlist button next to Add to Bag
+    .add-to-bag button:not(.custom-add-btn) {
+      background-color: #eadcfd;
+      color: #000;
+      border: 1px solid #eadcfd !important; // Override bootstrap border
+      transition: all 0.3s ease;
+      width: 80px; // Heuristic to match height if needed, or let it flow
+
+      &:hover {
+        background-color: darken(#eadcfd, 10%);
+        border-color: darken(#eadcfd, 10%) !important;
+      }
+    }
+  }
+}
+
+.recommendation-title {
+  text-transform: uppercase;
+  font-size: 20px;
+  color: #000;
+  margin-bottom: 44px;
+}
+
 .accordion-faq-style-2 {
-  .accordion-button::after {
-    display: none;
+  .accordion-button {
+    padding: 1.5rem 0;
+
+    &::after {
+      display: none; // Hide default bootstrap arrow
+    }
+
+    .accordion-icon {
+      transition: transform 0.3s ease;
+      font-size: 0.9rem;
+    }
+
+    &:not(.collapsed) {
+      background-color: transparent !important;
+      box-shadow: none !important;
+
+      .accordion-icon {
+        transform: rotate(180deg);
+      }
+    }
+
+    &:focus {
+      box-shadow: none;
+      border-color: rgba(0, 0, 0, .125);
+    }
   }
 }
 
@@ -57,13 +191,60 @@
   .product-plus-icon {
     left: 10%;
   }
+
+  .total-price {
+    button {
+      background-color: #eadcfd !important;
+      color: #000 !important;
+      border: 1px solid #eadcfd;
+      transition: all 0.3s ease;
+
+      &:hover {
+        background-color: darken(#eadcfd, 10%) !important;
+        border-color: darken(#eadcfd, 10%);
+      }
+    }
+  }
 }
 
-.total-price{
+.customar-review-section {
+  button {
+    background-color: #eadcfd !important;
+    color: #000 !important;
+    border: 1px solid #eadcfd;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: darken(#eadcfd, 10%) !important;
+      border-color: darken(#eadcfd, 10%);
+    }
+  }
+}
+
+.dynamic-tab-content,
+.tabContentSlider {
+  .card-button {
+    background-color: #eadcfd;
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    width: 100%;
+    text-transform: uppercase;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken(#eadcfd, 10%);
+    }
+  }
+}
+
+.total-price {
   @media (max-width: 992px) {
-    .w-50{
+    .w-50 {
       width: 100% !important;
     }
-    
+
   }
 }

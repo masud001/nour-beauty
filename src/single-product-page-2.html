@@ -10,26 +10,74 @@
     integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <link rel="stylesheet" href="./assets/css/output.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
   <link rel="stylesheet" href="./assets/css/style.min.css" />
   <!-- swiper slider css -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 </head>
 
 <body>
+
+  <!-- Header top new banner start-->
+  <div class="new-top-banner">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Section: Links (Hidden on Mobile) -->
+        <div class="col-lg-4 d-none d-lg-flex justify-content-start">
+          <nav class="new-top-banner__nav">
+            <a href="#">Help Center</a>
+            <a href="#">Find a Store</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Center Section: Promo Message (Always Visible) -->
+        <div class="col-12 col-lg-4 d-flex justify-content-center">
+          <div class="new-top-banner__promo">
+            <span class="new-top-banner__promo-emoji">✌🏼</span>
+            <p class="new-top-banner__promo-text">
+              Free Express Shipping on orders $120!
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Section: Social Icons (Hidden on Mobile) -->
+        <div class="col-lg-4 d-none d-lg-flex justify-content-end">
+          <div class="new-top-banner__social">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header top new banner end  -->
+
   <!-- header top banner  -->
-  <div class="header-banner">
+  <!-- <div class="header-banner">
     <div class="container-fluid d-flex justify-content-center align-items-center gap-sm-3 gap-lg-4 p-2 p-lg-3">
-      <!-- Mobile Slides -->
+
       <div class="mobile-slides d-lg-none">
         <a href="/#" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
           <span><i class="fa-solid fa-truck-moving"></i></span>
           <span class="text-reset"> Free UK shipping over £25</span>
         </a>
-        <a href="/#" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+        <button type="button" data-bs-toggle="modal" data-bs-target="#getDiscountModal"
+          class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
           <span><i class="fa-solid fa-mobile-screen-button"></i></span>
           <span>15% off your app order</span>
-        </a>
-        <a href="/#" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+        </button>
+        <a href="./signup-page.html" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
           <span><i class="fa-regular fa-envelope"></i></span>
           <span> Sign up for email exclusives</span>
         </a>
@@ -39,16 +87,17 @@
         </a>
       </div>
 
-      <!-- Desktop Items -->
+
       <a href="/#" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
         <span><i class="fa-solid fa-truck-moving"></i></span>
         <span class="text-reset"> Free UK shipping over £25</span>
       </a>
-      <a href="/#" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+      <button type="button" data-bs-toggle="modal" data-bs-target="#getDiscountModal"
+        class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
         <span><i class="fa-solid fa-mobile-screen-button"></i></span>
         <span> 15% off your app order</span>
-      </a>
-      <a href="/#" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+      </button>
+      <a href="./signup-page.html" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
         <span><i class="fa-regular fa-envelope"></i></span>
         <span> Sign up for email exclusives</span>
       </a>
@@ -57,17 +106,17 @@
         <span> Earn Cult Status Points</span>
       </a>
     </div>
-  </div>
+  </div> -->
 
   <!-- stripe banner  -->
-  <div class="stripe-banner container-fluid d-flex justify-content-center align-items-center p-2 p-lg-3">
+  <div class="stripe-banner container-fluid d-flex justify-content-center align-items-center p-2">
     <a href="/#" class="text-reset text-uppercase text-decoration-none fs-6">
       <span class="">SALE - UP TO 50% OFF</span>
     </a>
   </div>
 
-  <header id="site-header" class="header-container sticky top-0 z-30 bg-white py-3">
-    <div class="container-fluid d-flex align-items-center justify-content-between px-lg-5">
+  <header id="site-header" class="header-container shadow-sm sticky top-0 z-30 pt-3 pb-3 pb-lg-0">
+    <div class="container d-flex align-items-center justify-content-between">
       <!-- search container for mobile  -->
       <div class="col d-flex d-lg-none gap-3 align-items-center">
         <div class="menu-bar">
@@ -87,7 +136,7 @@
         <div class="header-search">
           <form action="" class="">
             <div class="position-relative">
-              <input id="search-input" type="text" class="w-100 rounded-1"
+              <input id="search-input" type="text" class="w-100 rounded-pill"
                 placeholder="Search for a product or brand" />
               <button class="position-absolute">
                 <span><i class="fa-solid fa-magnifying-glass"></i></span>
@@ -99,24 +148,33 @@
       <!-- logo container  -->
       <div class="col logo-container d-flex align-items-center justify-content-center mx-auto">
         <a href="/#">
-          <img id="brand-logo" src="./assets/img/logo/nour-dark-logo.png" alt="brand-logo" />
+          <img id="brand-logo" width="200" height="40" src="./assets/img/brand-logo/brand-logo.svg" alt="brand-logo" />
         </a>
       </div>
       <!-- other container  -->
       <div class="col other-container d-flex gap-3 gap-lg-4 align-items-center justify-content-end">
         <div class="change-local d-none d-lg-flex align-items-center">
-          <button class="text-uppercase d-flex align-items-center gap-2">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#selectRegionModal"
+            class="text-uppercase d-flex align-items-center gap-2">
             <span class="">
               <img class="" src="./assets/img/flags/united-kingdom.png" alt="united-kingdom flag" />
             </span>
             <span class="">&bull;</span>
-            <span class="fw-bold">usd</span>
+            <span class="fw-medium">KSA</span>
+          </button>
+        </div>
+        <!-- Location -->
+        <div class="map-location">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#mapLocationModal"
+            class="d-flex gap-2 align-items-center">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span class="d-none d-lg-flex fw-medium">Location</span>
           </button>
         </div>
         <div class="customar-account dropdown">
           <button data-bs-toggle="dropdown" aria-expanded="false" class="d-flex gap-2 align-items-center" type="button">
             <span><i class="fa-regular fa-user"></i></span>
-            <span class="d-none d-lg-flex fw-semibold">Account</span>
+            <span class="d-none d-lg-flex fw-medium">Account</span>
           </button>
           <ul class="dropdown-menu dropdown-menu-end rounded-0 border border-light-subtle shadow m-0 p-0">
             <li>
@@ -143,13 +201,13 @@
         <div class="addto-busket">
           <button class="d-flex gap-2 align-items-center">
             <span><i class="fa-solid fa-basket-shopping"></i></span>
-            <span class="d-none d-lg-flex fw-semibold">Bag</span>
+            <span class="d-none d-lg-flex fw-medium">Bag</span>
           </button>
         </div>
       </div>
     </div>
     <!-- desktop navigation  -->
-    <nav class="header-nav d-none d-lg-block mt-3" aria-label="Main Navigation">
+    <nav class="header-nav d-none d-lg-block mt-3">
       <ul class="d-flex justify-content-center align-items-center">
         <div class="nav-navigation">
           <li class="nav-item">
@@ -159,7 +217,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -172,7 +230,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -185,7 +243,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -198,7 +256,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -211,7 +269,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -236,7 +294,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -249,7 +307,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -262,7 +320,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -275,7 +333,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -288,7 +346,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -313,7 +371,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -326,7 +384,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -339,7 +397,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -352,7 +410,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -365,7 +423,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -390,7 +448,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -403,7 +461,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -416,7 +474,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -429,7 +487,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -442,7 +500,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -467,7 +525,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -480,7 +538,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -493,7 +551,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -506,7 +564,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -519,7 +577,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -544,7 +602,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -557,7 +615,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -570,7 +628,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -583,7 +641,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -596,7 +654,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -621,7 +679,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -634,7 +692,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -647,7 +705,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -660,7 +718,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -673,7 +731,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -698,7 +756,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -711,7 +769,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -724,7 +782,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -737,7 +795,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -750,7 +808,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -775,7 +833,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -788,7 +846,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -801,7 +859,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -814,7 +872,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -827,7 +885,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -852,7 +910,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -865,7 +923,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -878,7 +936,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -891,7 +949,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -904,7 +962,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -929,7 +987,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -942,7 +1000,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -955,7 +1013,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -968,7 +1026,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -981,7 +1039,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -1006,7 +1064,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -1019,7 +1077,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -1032,7 +1090,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -1045,7 +1103,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -1058,7 +1116,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -1077,8 +1135,8 @@
       </ul>
     </nav>
   </header>
-  <!-- mobile nagigation -->
-  <div class="offcanvas offcanvas-start mobile-navigation" tabindex="-1" id="mobileNavigation"
+  <!-- mobile navigation -->
+  <div class="offcanvas offcanvas-start mobile-navigation" id="mobileNavigation"
     aria-labelledby="mobileNavigationLabel">
     <div class="offcanvas-header d-flex flex-column p-0">
       <div class="d-flex justify-content-between w-100 p-4 border-bottom border-light-subtle">
@@ -1086,12 +1144,13 @@
           <i class="fa-solid fa-house fs-4"></i>
         </div>
         <div class="d-flex align-items-center gap-4">
-          <button class="text-uppercase d-flex align-items-center gap-2 border-0 bg-transparent">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#selectRegionModal"
+            class="open-modal-btn text-uppercase d-flex align-items-center gap-2 border-0 bg-transparent">
             <span class="">
               <img class="" src="./assets/img/flags/united-kingdom.png" alt="united-kingdom flag" />
             </span>
             <span class="">&bull;</span>
-            <span class="fw-bold">usd</span>
+            <span class="fw-medium">KSA</span>
           </button>
 
           <button type="button" class="btn-close text-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1115,10 +1174,15 @@
             <span>items</span>
             <span><i class="fa-solid fa-angle-right"></i></span>
           </button>
+          <button data-slide="slide2"
+            class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+            <span>items 2</span>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </button>
         </div>
       </div>
-      <!-- slider -->
-      <div id="slide1" class="slide-window bg-white">
+      <!-- slider-1 window -->
+      <div id="slide1" class="slide-window">
         <div class="slide-content">
           <div class="d-flex gap-3 align-items-center mb-4">
             <button class="close-btn p-0 bg-transparent border-0 fs-5 d-flex align-items-center gap-3 text-capitalize">
@@ -1152,17 +1216,79 @@
           </div>
         </div>
       </div>
+      <!-- slider-2 window -->
+      <div id="slide2" class="slide-window">
+        <div class="slide-content">
+          <div class="d-flex gap-3 align-items-center mb-4">
+            <button class="close-btn p-0 bg-transparent border-0 fs-5 d-flex align-items-center gap-3 text-capitalize">
+              <span><i class="fa-solid fa-angle-left"></i></span>
+              <span class="h5 text-decoration-none fw-bold d-block m-0">items 2</span>
+            </button>
+          </div>
+          <div class="">
+            <div class="d-flex flex-column gap-2">
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
+
+
   <!-- single product page content goes here -->
-  <div class="single-product-section d-flex flex-column gap-5 pt-4">
+  <div class="single-product-section d-flex flex-column gap-4 pt-4">
+    <!-- breadcrumb section  -->
+    <div class="container breadcrumb-section">
+      <div class="row">
+        <div class="col-12">
+          <nav style="
+                --bs-breadcrumb-divider: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'8\' height=\'8\'%3E%3Cpath d=\'M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z\' fill=\'%236c757d\'/%3E%3C/svg%3E');
+              " aria-label="breadcrumb">
+            <ol class="breadcrumb mb-0 d-flex align-items-center">
+              <li class="breadcrumb-item">
+                <a href="#" class="text-reset fs-6 fw-normal ">Home</a>
+              </li>
+              <li class="breadcrumb-item" aria-current="page">
+                <a href="#" class="text-reset fs-6 ">Maison Crivelli</a>
+              </li>
+              <li class="breadcrumb-item" aria-current="page">
+                <a href="#" class="text-reset fs-6 ">Perfume</a>
+              </li>
+              <li class="breadcrumb-item text-capitalize fs-6 active" aria-current="page">
+                Unisex Perfume
+              </li>
+            </ol>
+          </nav>
+        </div>
+      </div>
+    </div>
     <div class="container order-0">
       <div class="row row-cols-2 gap-4 gap-lg-0">
         <div class="col-12 col-lg-8 order-0">
           <div class="position-relative product-gallery-section pb-5 border-bottom border-light-subtle">
-            <!-- slider  -->
-            <div class="swiper-container swiper swiperSlider">
+
+            <div class="swiper-container swiper swiperSlider mySwiper2">
               <div class="swiper-wrapper">
                 <div class="swiper-slide">
                   <img src="./assets/img/product/product-image-02.jpg" alt="product-1" />
@@ -1183,30 +1309,127 @@
 
               <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
               <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-              <div class="swiper-pagination"></div>
             </div>
-            <div class="position-absolute">
-              <button class="new-tag">new</button>
+
+            <div thumbsSlider="" class="swiper mySwiper product-thumbs mt-3">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./assets/img/product/product-image-02.jpg" alt="product-1" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/product/product-image-02.avif" alt="product-2" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/product/product-image-02.jpg" alt="product-3" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/product/product-image-02.jpg" alt="product-4" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./assets/img/product/product-image-02.jpg" alt="product-5" />
+                </div>
+              </div>
             </div>
+
           </div>
         </div>
         <div class="col-12 col-lg-4 order-1">
           <div class="product-details-section d-flex flex-column gap-4">
             <div class="product-details-sub-section">
-              <h2 class="text-uppercase fw-bold fs-4 m-0">Maison Crivelli</h2>
+              <p class="fw-normal fs-6 opacity-75 m-0 text-uppercase "
+                style="color: #072835; font-weight: 300; opacity: .6; margin-bottom: 10px;">Charlotte
+                Tilbury</p>
+              <h2 class=" text-uppercase fw-normal fs-4 m-0">Maison Crivelli</h2>
               <p class="fw-normal fs-6 opacity-75 m-0">
                 x Jordi Fernandez Oud Cadenza Extrait de Parfum (100ml)
               </p>
               <p class="fw-normal fs-6 opacity-75 m-0 mt-3">$425.00</p>
             </div>
             <div class="product-details-sub-section">
-              <h2 class="fw-normal opacity-75 text-capitalize m-0">color</h2>
+              <h2 class="fw-normal opacity-75 variant-title  m-0">color</h2>
               <p class="fw-normal fs-6 opacity-75 m-0 text-capitalize">
                 no colour
               </p>
+              <!-- color shades start-->
+              <div class="color-shades-wrapper mt-3">
+                <button class="color-shade active" style="background-color: #F3C3AA;"
+                  aria-label="Select color shade 1"></button>
+                <button class="color-shade" style="background-color: #FCECE0;"
+                  aria-label="Select color shade 2"></button>
+                <button class="color-shade" style="background-color: #F8D9C5;"
+                  aria-label="Select color shade 3"></button>
+                <button class="color-shade" style="background-color: #F5CBAE;"
+                  aria-label="Select color shade 4"></button>
+                <button class="color-shade" style="background-color: #EBB698;"
+                  aria-label="Select color shade 5"></button>
+                <button class="color-shade" style="background-color: #E2A788;"
+                  aria-label="Select color shade 6"></button>
+
+                <button class="color-shade" style="background-color: #DDA286;"
+                  aria-label="Select color shade 7"></button>
+                <button class="color-shade" style="background-color: #F2C39A;"
+                  aria-label="Select color shade 8"></button>
+                <button class="color-shade" style="background-color: #FFBFA3;"
+                  aria-label="Select color shade 9"></button>
+                <button class="color-shade" style="background-color: #CD9878;"
+                  aria-label="Select color shade 10"></button>
+                <button class="color-shade" style="background-color: #C69273;"
+                  aria-label="Select color shade 11"></button>
+                <button class="color-shade" style="background-color: #BF8C6E;"
+                  aria-label="Select color shade 12"></button>
+
+                <button class="color-shade" style="background-color: #B98669;"
+                  aria-label="Select color shade 13"></button>
+                <button class="color-shade" style="background-color: #B58463;"
+                  aria-label="Select color shade 14"></button>
+                <button class="color-shade" style="background-color: #E7AB79;"
+                  aria-label="Select color shade 15"></button>
+                <button class="color-shade" style="background-color: #E0A06D;"
+                  aria-label="Select color shade 16"></button>
+                <button class="color-shade" style="background-color: #C1885C;"
+                  aria-label="Select color shade 17"></button>
+                <button class="color-shade" style="background-color: #C1885C;"
+                  aria-label="Select color shade 18"></button>
+
+                <button class="color-shade" style="background-color: #C68E65;"
+                  aria-label="Select color shade 19"></button>
+                <button class="color-shade" style="background-color: #A06F4D;"
+                  aria-label="Select color shade 20"></button>
+                <button class="color-shade" style="background-color: #A47451;"
+                  aria-label="Select color shade 21"></button>
+                <button class="color-shade" style="background-color: #A97A55;"
+                  aria-label="Select color shade 22"></button>
+                <button class="color-shade" style="background-color: #AD7F59;"
+                  aria-label="Select color shade 23"></button>
+                <button class="color-shade" style="background-color: #92603F;"
+                  aria-label="Select color shade 24"></button>
+
+                <button class="color-shade" style="background-color: #8E5C3B;"
+                  aria-label="Select color shade 25"></button>
+                <button class="color-shade" style="background-color: #995B30;"
+                  aria-label="Select color shade 26"></button>
+                <button class="color-shade" style="background-color: #93562C;"
+                  aria-label="Select color shade 27"></button>
+                <button class="color-shade" style="background-color: #7D441D;"
+                  aria-label="Select color shade 28"></button>
+                <button class="color-shade" style="background-color: #83522E;"
+                  aria-label="Select color shade 29"></button>
+                <button class="color-shade" style="background-color: #884A29;"
+                  aria-label="Select color shade 30"></button>
+
+                <button class="color-shade" style="background-color: #6D3D1B;"
+                  aria-label="Select color shade 31"></button>
+                <button class="color-shade" style="background-color: #3F1F04;"
+                  aria-label="Select color shade 32"></button>
+                <button class="color-shade" style="background-color: #4C290D;"
+                  aria-label="Select color shade 33"></button>
+                <button class="color-shade" style="background-color: #3D352F;"
+                  aria-label="Select color shade 34"></button>
+              </div>
+              <!-- color shades end -->
             </div>
             <div class="product-details-sub-section">
-              <h2 class="fw-normal opacity-75 text-capitalize m-0">Size</h2>
+              <h2 class="fw-normal opacity-75 variant-title  m-0">Size</h2>
               <div class="form-group">
                 <select class="form-control form-select py-3 rounded-0 w-50" id="size">
                   <option value="OS">OS</option>
@@ -1217,7 +1440,7 @@
               </div>
             </div>
             <div class="product-details-sub-section">
-              <h2 class="fw-normal opacity-75 text-capitalize m-0">
+              <h2 class="fw-normal opacity-75 variant-title  m-0">
                 Quantity
               </h2>
               <div class="form-group">
@@ -1232,14 +1455,14 @@
                 </select>
               </div>
             </div>
-            <div class="product-details-sub-section">
+            <div class="product-details-sub-section w-full">
               <div class="add-to-bag d-flex gap-3">
                 <button
-                  class="border border-dark bg-black text-white text-capitalize fs-6 d-flex gap-2 align-items-center justify-content-center">
+                  class="custom-add-btn text-capitalize fs-6 d-flex gap-2 align-items-center justify-content-center">
                   <span><i class="fa-solid fa-cart-shopping"></i></span>
                   <span> add to bag</span>
                 </button>
-                <button class="border-2 border-dark text-dark">
+                <button class="flex-shrink-1 border border-light-subtle text-dark">
                   <span><i class="fa-regular fa-heart"></i></span>
                 </button>
               </div>
@@ -1248,86 +1471,119 @@
         </div>
       </div>
     </div>
-    <!-- breadcrumb section  -->
-    <div class="container breadcrumb-section order-2 order-lg-1">
-      <div class="row">
-        <div class="col-12">
-          <nav style="
-                --bs-breadcrumb-divider: url('data:image/svg+xml,%3Csvg xmlns=\'http://www.w3.org/2000/svg\' width=\'8\' height=\'8\'%3E%3Cpath d=\'M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z\' fill=\'%236c757d\'/%3E%3C/svg%3E');
-              " aria-label="breadcrumb">
-            <ol class="breadcrumb mb-0 d-flex align-items-center">
-              <li class="breadcrumb-item">
-                <a href="#" class="text-reset fs-6 fw-normal text-decoration-underline">Home</a>
-              </li>
-              <li class="breadcrumb-item" aria-current="page">
-                <a href="#" class="text-reset fs-6 fw-normal text-decoration-underline">Maison Crivelli</a>
-              </li>
-              <li class="breadcrumb-item" aria-current="page">
-                <a href="#" class="text-reset fs-6 fw-normal text-decoration-underline">Perfume</a>
-              </li>
-              <li class="breadcrumb-item text-capitalize fs-6 active" aria-current="page">
-                Unisex Perfume
-              </li>
-            </ol>
-          </nav>
-        </div>
-      </div>
-    </div>
+
     <div class="container order-1 order-lg-2">
       <div class="row">
-        <div class="col-12 col-lg-4 offset-lg-1">
-          <div class="product-descriptions">
-            <h2 class="fw-normal fs-3">A sweet journey down memory lane.</h2>
-            <p class="opacity-75 fs-6 fw-normal m-0">
-              Olfactory experiences are tightly linked to our memories, as
-              discovered by Maison Crivelli’s founder and creative director,
-              Thibaud Crivelli, when he concocted Oud Cadenza based on his own
-              vivid experience. The scent of Oud wood, tempted by dates and
-              roasted almonds glistening with syrup, are topped with cinnamon
-              and saffron which brings about a spicy signature.This fragrance
-              is part of an exclusive collaboration between Maison Crivelli
-              and perfumer Jordi Fernandez. Launching exclusively to Harrods,
-              Oud Cadenza contrasts the deep richness of oud with the sweet
-              notes of date and toasted cane sugar accord.
-            </p>
-          </div>
-        </div>
-        <div class="col-12 col-lg-6 offset-lg-1 mt-5 mt-lg-0">
+
+        <div class="col-12 col-lg-8 mt-5 mt-lg-0">
+          <!-- accordion  -->
           <!-- accordion  -->
           <div class="accordion accordion-faq-style-2 rounded-0" id="accordionExample">
+            <!-- Item 1: Why It's Cult -->
             <div class="accordion-item rounded-0 border-0 border-top border-bottom border-light-subtle">
               <h2 class="accordion-header" id="headingOne">
-                <button class="accordion-button shadow-none" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                  <i class="fas fa-plus me-2"></i> Accordion Item #1
+                <button
+                  class="accordion-button shadow-none d-flex justify-content-between align-items-center bg-transparent"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  <span class="fs-5 text-dark">Why It's Cult</span>
+                  <i class="fa-solid fa-chevron-down accordion-icon"></i>
                 </button>
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
                 data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Content for the first accordion item.
+                <div class="accordion-body pt-0 pb-4">
+                  <p class="mb-0">Step into the world of professional make up artistry with Charlotte Tilbury. Famed for
+                    gracing the faces of A-Listers including Bella Hadid and Kate Moss, Charlotte developed her
+                    eponymous brand by fusing Hollywood finishes with easy-to-use formulas. The latest addition to the
+                    iconic Airbrush Flawless line, the Airbrush Flawless Blur Concealer (8.3g) is a next-gen formula
+                    that instantly blurs imperfections and smooths texture with a seamless, natural matte finish.</p>
                 </div>
               </div>
             </div>
-            <!-- Accordion Item 2 -->
+
+            <!-- Item 2: Description -->
             <div class="accordion-item rounded-0 border-0 border-bottom border-light-subtle">
               <h2 class="accordion-header" id="headingTwo">
-                <button class="accordion-button collapsed shadow-none" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                  <i class="fas fa-plus me-2"></i> Accordion Item #2
+                <button
+                  class="accordion-button collapsed shadow-none d-flex justify-content-between align-items-center bg-transparent"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  <span class="fs-5 text-dark">Description</span>
+                  <i class="fa-solid fa-chevron-down accordion-icon"></i>
                 </button>
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
                 data-bs-parent="#accordionExample">
-                <div class="accordion-body">
-                  Content for the second accordion item.
+                <div class="accordion-body pt-0 pb-4">
+                  <p class="mb-0">Product description content goes here.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3: Ingredients -->
+            <div class="accordion-item rounded-0 border-0 border-bottom border-light-subtle">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed shadow-none d-flex justify-content-between align-items-center bg-transparent"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+                  <span class="fs-5 text-dark">Ingredients</span>
+                  <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body pt-0 pb-4">
+                  <p class="mb-0">Ingredients list content goes here.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4: How to use -->
+            <div class="accordion-item rounded-0 border-0 border-bottom border-light-subtle">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed shadow-none d-flex justify-content-between align-items-center bg-transparent"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                  aria-controls="collapseFour">
+                  <span class="fs-5 text-dark">How to use</span>
+                  <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body pt-0 pb-4">
+                  <p class="mb-0">Instructions on how to use the product.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 5: Postal Address -->
+            <div class="accordion-item rounded-0 border-0 border-bottom border-light-subtle">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed shadow-none d-flex justify-content-between align-items-center bg-transparent"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                  aria-controls="collapseFive">
+                  <span class="fs-5 text-dark">Postal Address</span>
+                  <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body pt-0 pb-4">
+                  <p class="mb-0">Postal address information goes here.</p>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
+  </div>
+  </div>
   </div>
 
   <!-- frequently brought togather  -->
@@ -1550,22 +1806,300 @@
   </div>
 
   <!-- dynamic tab content  -->
-  <div class="dynamic-tab-content mx-auto py-8">
+  <div class="dynamic-tab-content mx-auto">
+    <div class="container">
+      <div class="flex justify-center items-center">
+        <div class="flex">
+          <h3 class="recommendation-title">Other Customers Bought</h3>
+        </div>
+      </div>
+
+      <div class="tab-content mt-4">
+        <div id="tab1" class="">
+          <div class="swiper tabContentSlider !pb-[32px]">
+            <div class="swiper-wrapper">
+              <!-- slider 1 -->
+              <div class="swiper-slide">
+                <div class="product-card flex flex-col gap-2">
+                  <a href="/#" class="product-image-link">
+                    <figure class="mb-0 position-relative">
+                      <picture>
+                        <source srcset="./assets/img/product/images.avif" media="(min-width: 1024px)" />
+                        <source srcset="./assets/img/product/images.avif" media="(min-width: 768px)" />
+                        <source srcset="./assets/img/product/images.avif" media="(min-width: 640px)" />
+                        <img src="./assets/img/product/images.avif" alt="Brand of the month" loading="lazy" width="350"
+                          height="430" class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
+                          fetchpriority="auto" />
+                      </picture>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </figure>
+                  </a>
+                  <div class="flex flex-col gap-2">
+                    <p class="card-title text-sm tracking-wider text-balance  m-0">
+                      Saie Glowy Super Gel Mini 15ml (Various Shades)
+                    </p>
+
+                    <div class="flex gap-2 text-sm tracking-wider">
+                      <div class="flex items-center">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                      </div>
+                      <p class="m-0">7</p>
+                    </div>
+                    <div class="my-1">
+                      <p class="text-sm  font-bold">$ 20.00</p>
+                    </div>
+                    <div class="block">
+                      <button class="card-button">
+                        add to bag
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slider 1 -->
+              <div class="swiper-slide">
+                <div class="flex flex-col gap-2">
+                  <a href="/#">
+                    <figure class="mb-0">
+                      <picture>
+                        <source srcset="./assets/img/product/images-01.avif" media="(min-width: 1024px)" />
+                        <source srcset="./assets/img/product/images-01.avif" media="(min-width: 768px)" />
+                        <source srcset="./assets/img/product/images-01.avif" media="(min-width: 640px)" />
+                        <img src="./assets/img/product/images-01.avif" alt="Brand of the month" loading="lazy"
+                          width="350" height="430" class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
+                          fetchpriority="auto" />
+                      </picture>
+                    </figure>
+                  </a>
+                  <div class="flex flex-col gap-2">
+                    <p class="card-title text-sm tracking-wider text-balance  m-0">
+                      Saie Glowy Super Gel Mini 15ml (Various Shades)
+                    </p>
+
+                    <div class="flex gap-2 text-sm tracking-wider">
+                      <div class="flex items-center">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                      </div>
+                      <p class="m-0">7</p>
+                    </div>
+                    <div class="my-1">
+                      <p class="text-sm  font-bold">$ 20.00</p>
+                    </div>
+                    <div class="block">
+                      <button class="card-button">
+                        add to bag
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slider 1 -->
+              <div class="swiper-slide">
+                <div class="flex flex-col gap-2">
+                  <a href="/#">
+                    <figure class="mb-0">
+                      <picture>
+                        <source srcset="./assets/img/product/nour-product-01.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./assets/img/product/nour-product-01.jpg" media="(min-width: 768px)" />
+                        <source srcset="./assets/img/product/nour-product-01.jpg" media="(min-width: 640px)" />
+                        <img src="./assets/img/product/nour-product-01.jpg" alt="Brand of the month" loading="lazy"
+                          width="350" height="430" class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
+                          fetchpriority="auto" />
+                      </picture>
+                    </figure>
+                  </a>
+                  <div class="flex flex-col gap-2">
+                    <p class="card-title text-sm tracking-wider text-balance  m-0">
+                      Saie Glowy Super Gel Mini 15ml (Various Shades)
+                    </p>
+
+                    <div class="flex gap-2 text-sm tracking-wider">
+                      <div class="flex items-center">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                      </div>
+                      <p class="m-0">7</p>
+                    </div>
+                    <div class="my-1">
+                      <p class="text-sm  font-bold">$ 20.00</p>
+                    </div>
+                    <div class="block">
+                      <button class="card-button">
+                        add to bag
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slider 1 -->
+              <div class="swiper-slide">
+                <div class="flex flex-col gap-2">
+                  <a href="/#">
+                    <figure class="mb-0">
+                      <picture>
+                        <source srcset="./assets/img/product/nour-product-01.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./assets/img/product/nour-product-01.jpg" media="(min-width: 768px)" />
+                        <source srcset="./assets/img/product/nour-product-01.jpg" media="(min-width: 640px)" />
+                        <img src="./assets/img/product/nour-product-01.jpg" alt="Brand of the month" loading="lazy"
+                          width="350" height="430" class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
+                          fetchpriority="auto" />
+                      </picture>
+                    </figure>
+                  </a>
+                  <div class="flex flex-col gap-2">
+                    <p class="card-title text-sm tracking-wider text-balance  m-0">
+                      Saie Glowy Super Gel Mini 15ml (Various Shades)
+                    </p>
+
+                    <div class="flex gap-2 text-sm tracking-wider">
+                      <div class="flex items-center">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                      </div>
+                      <p class="m-0">7</p>
+                    </div>
+                    <div class="my-1">
+                      <p class="text-sm  font-bold">$ 20.00</p>
+                    </div>
+                    <div class="block">
+                      <button class="card-button">
+                        add to bag
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slider 1 -->
+              <div class="swiper-slide">
+                <div class="flex flex-col gap-2">
+                  <a href="/#">
+                    <figure class="mb-0">
+                      <picture>
+                        <source srcset="./assets/img/product/nour-product-01.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./assets/img/product/nour-product-01.jpg" media="(min-width: 768px)" />
+                        <source srcset="./assets/img/product/nour-product-01.jpg" media="(min-width: 640px)" />
+                        <img src="./assets/img/product/nour-product-01.jpg" alt="Brand of the month" loading="lazy"
+                          width="350" height="430" class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
+                          fetchpriority="auto" />
+                      </picture>
+                    </figure>
+                  </a>
+                  <div class="flex flex-col gap-2">
+                    <p class="card-title text-sm tracking-wider text-balance  m-0">
+                      Saie Glowy Super Gel Mini 15ml (Various Shades)
+                    </p>
+
+                    <div class="flex gap-2 text-sm tracking-wider">
+                      <div class="flex items-center">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                      </div>
+                      <p class="m-0">7</p>
+                    </div>
+                    <div class="my-1">
+                      <p class="text-sm  font-bold">$ 20.00</p>
+                    </div>
+                    <div class="block">
+                      <button class="card-button">
+                        add to bag
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slider 1 -->
+              <div class="swiper-slide">
+                <div class="flex flex-col gap-2">
+                  <a href="/#">
+                    <figure class="mb-0">
+                      <picture>
+                        <source srcset="./assets/img/product/nour-product-01.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./assets/img/product/nour-product-01.jpg" media="(min-width: 768px)" />
+                        <source srcset="./assets/img/product/nour-product-01.jpg" media="(min-width: 640px)" />
+                        <img src="./assets/img/product/nour-product-01.jpg" alt="Brand of the month" loading="lazy"
+                          width="350" height="430" class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
+                          fetchpriority="auto" />
+                      </picture>
+                    </figure>
+                  </a>
+                  <div class="flex flex-col gap-2">
+                    <p class="card-title text-sm tracking-wider text-balance  m-0">
+                      Saie Glowy Super Gel Mini 15ml (Various Shades)
+                    </p>
+
+                    <div class="flex gap-2 text-sm tracking-wider">
+                      <div class="flex items-center">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                      </div>
+                      <p class="m-0">7</p>
+                    </div>
+                    <div class="my-1">
+                      <p class="text-sm  font-bold">$ 20.00</p>
+                    </div>
+                    <div class="block">
+                      <button class="card-button">
+                        add to bag
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pagination buttons -->
+            <div class="slider-pagination swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev bg-white shadow-sm">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="swiper-button-next bg-white shadow-sm">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- dynamic tab content  -->
+  <!-- <div class="dynamic-tab-content mx-auto py-8">
     <div class="container mx-auto mt-10 px-4 lg:px-0">
       <div class="flex justify-start items-center border-b border-light-subtle">
-        <div class="flex font-averta">
+        <div class="flex ">
           <button
-            class="tab-btn px-4 font-averta py-2 text-xs md:text-base uppercase text-black font-bold border-b-2 border-black hover:text-black focus:text-black focus:border-black"
+            class="tab-btn px-4  py-2 text-xs md:text-base uppercase text-black font-bold border-b-2 border-black hover:text-black focus:text-black focus:border-black"
             data-tab="tab1">
             new in
           </button>
           <button
-            class="tab-btn px-4 font-averta py-2 text-xs md:text-base uppercase text-black border-b-2 border-transparent hover:text-black focus:text-black focus:border-black"
+            class="tab-btn px-4  py-2 text-xs md:text-base uppercase text-black border-b-2 border-transparent hover:text-black focus:text-black focus:border-black"
             data-tab="tab2">
             sale
           </button>
           <button
-            class="tab-btn px-4 font-averta py-2 text-xs md:text-base uppercase text-black border-b-2 border-transparent hover:text-black focus:text-black focus:border-black"
+            class="tab-btn px-4  py-2 text-xs md:text-base uppercase text-black border-b-2 border-transparent hover:text-black focus:text-black focus:border-black"
             data-tab="tab3">
             new Trending
           </button>
@@ -1576,7 +2110,7 @@
         <div id="tab1" class="">
           <div class="swiper productListingTypeOne !pb-[32px]">
             <div class="swiper-wrapper">
-              <!-- slider  -->
+
               <div class="swiper-slide">
                 <div class="product-card">
                   <div class="product-card-image bg-light position-relative">
@@ -1611,7 +2145,7 @@
                   </div>
                 </div>
               </div>
-              <!-- slider  -->
+
               <div class="swiper-slide">
                 <div class="product-card">
                   <div class="product-card-image bg-light position-relative">
@@ -1646,7 +2180,7 @@
                   </div>
                 </div>
               </div>
-              <!-- slider  -->
+
               <div class="swiper-slide">
                 <div class="product-card">
                   <div class="product-card-image bg-light position-relative">
@@ -1681,7 +2215,7 @@
                   </div>
                 </div>
               </div>
-              <!-- slider  -->
+
               <div class="swiper-slide">
                 <div class="product-card">
                   <div class="product-card-image bg-light position-relative">
@@ -1716,7 +2250,7 @@
                   </div>
                 </div>
               </div>
-              <!-- slider  -->
+
               <div class="swiper-slide">
                 <div class="product-card">
                   <div class="product-card-image bg-light position-relative">
@@ -1751,7 +2285,7 @@
                   </div>
                 </div>
               </div>
-              <!-- slider  -->
+
               <div class="swiper-slide">
                 <div class="product-card">
                   <div class="product-card-image bg-light position-relative">
@@ -1786,7 +2320,7 @@
                   </div>
                 </div>
               </div>
-              <!-- slider  -->
+
               <div class="swiper-slide">
                 <div class="product-card">
                   <div class="product-card-image bg-light position-relative">
@@ -1821,7 +2355,7 @@
                   </div>
                 </div>
               </div>
-              <!-- slider  -->
+
               <div class="swiper-slide">
                 <div class="product-card">
                   <div class="product-card-image bg-light position-relative">
@@ -1856,7 +2390,7 @@
                   </div>
                 </div>
               </div>
-              <!-- slider  -->
+
               <div class="swiper-slide">
                 <div class="product-card">
                   <div class="product-card-image bg-light position-relative">
@@ -1891,7 +2425,7 @@
                   </div>
                 </div>
               </div>
-              <!-- slider  -->
+
               <div class="swiper-slide">
                 <div class="product-card">
                   <div class="product-card-image bg-light position-relative">
@@ -1926,7 +2460,7 @@
                   </div>
                 </div>
               </div>
-              <!-- slider  -->
+
               <div class="swiper-slide">
                 <div class="product-card">
                   <div class="product-card-image bg-light position-relative">
@@ -1961,7 +2495,7 @@
                   </div>
                 </div>
               </div>
-              <!-- slider  -->
+
               <div class="swiper-slide">
                 <div class="product-card">
                   <div class="product-card-image bg-light position-relative">
@@ -1996,7 +2530,7 @@
                   </div>
                 </div>
               </div>
-              <!-- slider  -->
+
               <div class="swiper-slide">
                 <div class="product-card">
                   <div class="product-card-image bg-light position-relative">
@@ -2031,7 +2565,7 @@
                   </div>
                 </div>
               </div>
-              <!-- slider  -->
+
               <div class="swiper-slide">
                 <div class="product-card">
                   <div class="product-card-image bg-light position-relative">
@@ -2067,1018 +2601,1019 @@
                 </div>
               </div>
             </div>
-            <!-- pagination buttons -->
-            <div class="swiper-pagination"></div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-            <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+           
+  <div class="swiper-pagination"></div>
+
+  <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
+  <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+  </div>
+  </div>
+  <div id="tab2" class="hidden">
+    <div class="swiper productListingTypeOne !pb-[32px]">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="best-product-tag">Best Seller</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
           </div>
         </div>
-        <div id="tab2" class="hidden">
-          <div class="swiper productListingTypeOne !pb-[32px]">
-            <div class="swiper-wrapper">
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="best-product-tag">Best Seller</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="best-product-tag">limited edition</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
                 </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="best-product-tag">limited edition</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="value-product-tag">value set</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
               </div>
             </div>
-            <!-- pagination buttons -->
-            <div class="swiper-pagination"></div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-            <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
           </div>
         </div>
-        <div id="tab3" class="hidden">
-          <div class="swiper productListingTypeOne !pb-[32px]">
-            <div class="swiper-wrapper">
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="best-product-tag">Best Seller</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="value-product-tag">value set</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
                 </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="best-product-tag">limited edition</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="value-product-tag">value set</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <!-- slider  -->
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
               </div>
             </div>
-            <!-- pagination buttons -->
-            <div class="swiper-pagination"></div>
-            <!-- If we need navigation buttons -->
-            <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-            <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+     
+      <div class="swiper-pagination"></div>
+      
+      <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
+      <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
     </div>
   </div>
+  <div id="tab3" class="hidden">
+    <div class="swiper productListingTypeOne !pb-[32px]">
+      <div class="swiper-wrapper">
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="best-product-tag">Best Seller</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="best-product-tag">limited edition</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="value-product-tag">value set</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-slide">
+          <div class="product-card">
+            <div class="product-card-image bg-light position-relative">
+              <span class="classified-tag">Beauty Election Finalist</span>
+              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
+              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
+                class="view-size-modal shadow-sm">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              <button class="product-bookmark">
+                <i class="fa fa-regular fa-heart"></i>
+              </button>
+            </div>
+            <div class="product-card-body py-3">
+              <h3 class="mb-0">Kérastase</h3>
+              <p class="mb-0 product-title">
+                Elixir Ultime L'Huile Originale Hair Oil
+              </p>
+              <div class="">
+                <span class="price">$55.00 - $110.00</span>
+                <div class="review">
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-solid fa-star"></i></span>
+                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                  <span><i class="fa-regular fa-star"></i></span>
+                  <span>(19) </span>
+                </div>
+                <span class="size-title">New Size</span>
+                <span class="size-number"> 3 Sizes</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     
+      <div class="swiper-pagination"></div>
+      
+      <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
+      <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+ -->
 
 
   <!-- Site Footer -->
@@ -3143,7 +3678,7 @@
               </div>
             </div>
 
-            <!-- About Cult Beauty -->
+
             <div class="footer-accordion-item w-100">
               <h2 class="footer-accordion-header" id="headingAbout">
                 <button class="footer-accordion-button collapsed text-uppercase fw-bold fs-6" type="button"
@@ -3165,7 +3700,7 @@
               </div>
             </div>
 
-            <!-- Legal -->
+
             <div class="footer-accordion-item w-100">
               <h2 class="footer-accordion-header" id="headingLegal">
                 <button class="footer-accordion-button collapsed text-uppercase fw-bold fs-6" type="button"
@@ -3214,8 +3749,8 @@
 
           <!-- Logo & Blurb (Mobile Bottom) -->
           <div class="text-center mt-4">
-            <img src="./assets/img/logo/nour-dark-logo.png" alt="Cult Beauty" class="img-fluid mb-3 footer-logo mx-auto"
-              style="filter: invert(1); max-width: 120px;">
+            <img src="./assets/img/brand-logo/brand-logo.svg" alt="Cult Beauty"
+              class="img-fluid mb-3 footer-logo mx-auto" style="filter: invert(1); max-width: 120px;">
             <p class="small fw-light">Cult Beauty is THE destination for the very best in beauty!</p>
           </div>
         </div>
@@ -3225,7 +3760,7 @@
           <div class="row gx-5">
             <!-- Col 1: Logo & Blurb -->
             <div class="col-lg-3">
-              <img src="./assets/img/logo/nour-dark-logo.png" alt="Cult Beauty" class="img-fluid mb-4 footer-logo"
+              <img src="./assets/img/brand-logo/brand-logo.svg" alt="Cult Beauty" class="img-fluid mb-4 footer-logo"
                 style="filter: invert(1); max-width: 160px;">
               <p class="small fw-light lh-lg" style="color: #ccc;">Cult Beauty is THE destination for the very best in
                 beauty! From make up and skin care to fragrance, hair care and more, explore our line up of trending
@@ -3452,6 +3987,29 @@
           icon.classList.remove("fa-minus");
           icon.classList.add("fa-plus");
         });
+      });
+    });
+  </script>
+  <!-- Swiper Thumbs Gallery Script -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 20,
+        slidesPerView: 6,
+        freeMode: true,
+        watchSlidesProgress: true,
+      });
+      var swiper2 = new Swiper(".mySwiper2", {
+        loop: true,
+        spaceBetween: 30,
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        thumbs: {
+          swiper: swiper,
+        },
       });
     });
   </script>

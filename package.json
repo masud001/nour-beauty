@@ -9,6 +9,7 @@
     "preview": "vite preview",
     "scss:build": "sass src/assets/scss/style.scss src/assets/css/style.css --style=expanded --no-source-map",
     "scss:watch": "sass src/assets/scss:src/assets/css --watch --style=expanded --no-source-map",
+    "scss:minify": "sass src/assets/scss/style.scss src/assets/css/style.min.css --style=compressed --no-source-map",
     "watch": "concurrently \"npm run scss:watch\" \"npm run dev\"",
     "start": "npm run watch"
   },

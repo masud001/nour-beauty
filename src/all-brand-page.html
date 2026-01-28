@@ -19,10 +19,55 @@
 </head>
 
 <body>
+  <!-- Header top new banner start-->
+  <div class="new-top-banner">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Section: Links (Hidden on Mobile) -->
+        <div class="col-lg-4 d-none d-lg-flex justify-content-start">
+          <nav class="new-top-banner__nav">
+            <a href="#">Help Center</a>
+            <a href="#">Find a Store</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Center Section: Promo Message (Always Visible) -->
+        <div class="col-12 col-lg-4 d-flex justify-content-center">
+          <div class="new-top-banner__promo">
+            <span class="new-top-banner__promo-emoji">✌🏼</span>
+            <p class="new-top-banner__promo-text">
+              Free Express Shipping on orders $120!
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Section: Social Icons (Hidden on Mobile) -->
+        <div class="col-lg-4 d-none d-lg-flex justify-content-end">
+          <div class="new-top-banner__social">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header top new banner end  -->
+
   <!-- header top banner  -->
-  <div class="header-banner">
+  <!-- <div class="header-banner">
     <div class="container-fluid d-flex justify-content-center align-items-center gap-sm-3 gap-lg-4 p-2 p-lg-3">
-      <!-- Mobile Slides -->
+
       <div class="mobile-slides d-lg-none">
         <a href="/#" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
           <span><i class="fa-solid fa-truck-moving"></i></span>
@@ -43,7 +88,7 @@
         </a>
       </div>
 
-      <!-- Desktop Items -->
+
       <a href="/#" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
         <span><i class="fa-solid fa-truck-moving"></i></span>
         <span class="text-reset"> Free UK shipping over £25</span>
@@ -62,17 +107,17 @@
         <span> Earn Cult Status Points</span>
       </a>
     </div>
-  </div>
+  </div> -->
 
   <!-- stripe banner  -->
-  <div class="stripe-banner container-fluid d-flex justify-content-center align-items-center p-2 p-lg-3">
+  <div class="stripe-banner container-fluid d-flex justify-content-center align-items-center p-2">
     <a href="/#" class="text-reset text-uppercase text-decoration-none fs-6">
       <span class="">SALE - UP TO 50% OFF</span>
     </a>
   </div>
 
-  <header id="site-header" class="header-container sticky top-0 z-30 bg-white py-3">
-    <div class="container-fluid d-flex align-items-center justify-content-between px-lg-5">
+  <header id="site-header" class="header-container shadow-sm sticky top-0 z-30 pt-3 pb-3 pb-lg-0">
+    <div class="container d-flex align-items-center justify-content-between">
       <!-- search container for mobile  -->
       <div class="col d-flex d-lg-none gap-3 align-items-center">
         <div class="menu-bar">
@@ -92,7 +137,7 @@
         <div class="header-search">
           <form action="" class="">
             <div class="position-relative">
-              <input id="search-input" type="text" class="w-100 rounded-1"
+              <input id="search-input" type="text" class="w-100 rounded-pill"
                 placeholder="Search for a product or brand" />
               <button class="position-absolute">
                 <span><i class="fa-solid fa-magnifying-glass"></i></span>
@@ -104,7 +149,7 @@
       <!-- logo container  -->
       <div class="col logo-container d-flex align-items-center justify-content-center mx-auto">
         <a href="/#">
-          <img width="200" height="40" src="./assets/img/logo/nour-dark-logo.png" alt="brand-logo" />
+          <img id="brand-logo" width="200" height="40" src="./assets/img/brand-logo/brand-logo.svg" alt="brand-logo" />
         </a>
       </div>
       <!-- other container  -->
@@ -116,13 +161,21 @@
               <img class="" src="./assets/img/flags/united-kingdom.png" alt="united-kingdom flag" />
             </span>
             <span class="">&bull;</span>
-            <span class="fw-bold">usd</span>
+            <span class="fw-medium">KSA</span>
+          </button>
+        </div>
+        <!-- Location -->
+        <div class="map-location">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#mapLocationModal"
+            class="d-flex gap-2 align-items-center">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span class="d-none d-lg-flex fw-medium">Location</span>
           </button>
         </div>
         <div class="customar-account dropdown">
           <button data-bs-toggle="dropdown" aria-expanded="false" class="d-flex gap-2 align-items-center" type="button">
             <span><i class="fa-regular fa-user"></i></span>
-            <span class="d-none d-lg-flex fw-semibold">Account</span>
+            <span class="d-none d-lg-flex fw-medium">Account</span>
           </button>
           <ul class="dropdown-menu dropdown-menu-end rounded-0 border border-light-subtle shadow m-0 p-0">
             <li>
@@ -149,7 +202,7 @@
         <div class="addto-busket">
           <button class="d-flex gap-2 align-items-center">
             <span><i class="fa-solid fa-basket-shopping"></i></span>
-            <span class="d-none d-lg-flex fw-semibold">Bag</span>
+            <span class="d-none d-lg-flex fw-medium">Bag</span>
           </button>
         </div>
       </div>
@@ -165,7 +218,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -178,7 +231,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -191,7 +244,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -204,7 +257,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -217,7 +270,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -242,7 +295,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -255,7 +308,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -268,7 +321,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -281,7 +334,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -294,7 +347,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -319,7 +372,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -332,7 +385,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -345,7 +398,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -358,7 +411,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -371,7 +424,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -396,7 +449,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -409,7 +462,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -422,7 +475,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -435,7 +488,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -448,7 +501,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -473,7 +526,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -486,7 +539,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -499,7 +552,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -512,7 +565,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -525,7 +578,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -550,7 +603,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -563,7 +616,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -576,7 +629,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -589,7 +642,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -602,7 +655,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -627,7 +680,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -640,7 +693,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -653,7 +706,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -666,7 +719,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -679,7 +732,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -704,7 +757,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -717,7 +770,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -730,7 +783,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -743,7 +796,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -756,7 +809,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -781,7 +834,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -794,7 +847,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -807,7 +860,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -820,7 +873,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -833,7 +886,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -858,7 +911,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -871,7 +924,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -884,7 +937,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -897,7 +950,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -910,7 +963,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -935,7 +988,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -948,7 +1001,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -961,7 +1014,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -974,7 +1027,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -987,7 +1040,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -1012,7 +1065,7 @@
             <div class="container">
               <div class="row row-cols-5 g-3">
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -1025,7 +1078,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -1038,7 +1091,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -1051,7 +1104,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -1064,7 +1117,7 @@
                   </ul>
                 </div>
                 <div class="col">
-                  <h3 class="text-uppercase fs-6 fw-light p-2 shadow-sm border-bottom border-light-subtle">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
                     View All Brands
                   </h3>
                   <ul class="list-unstyled">
@@ -1098,7 +1151,7 @@
               <img class="" src="./assets/img/flags/united-kingdom.png" alt="united-kingdom flag" />
             </span>
             <span class="">&bull;</span>
-            <span class="fw-bold">usd</span>
+            <span class="fw-medium">KSA</span>
           </button>
 
           <button type="button" class="btn-close text-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
@@ -1130,7 +1183,7 @@
         </div>
       </div>
       <!-- slider-1 window -->
-      <div id="slide1" class="slide-window bg-white">
+      <div id="slide1" class="slide-window">
         <div class="slide-content">
           <div class="d-flex gap-3 align-items-center mb-4">
             <button class="close-btn p-0 bg-transparent border-0 fs-5 d-flex align-items-center gap-3 text-capitalize">
@@ -1165,7 +1218,7 @@
         </div>
       </div>
       <!-- slider-2 window -->
-      <div id="slide2" class="slide-window bg-white">
+      <div id="slide2" class="slide-window">
         <div class="slide-content">
           <div class="d-flex gap-3 align-items-center mb-4">
             <button class="close-btn p-0 bg-transparent border-0 fs-5 d-flex align-items-center gap-3 text-capitalize">
@@ -1443,8 +1496,8 @@
 
           <!-- Logo & Blurb (Mobile Bottom) -->
           <div class="text-center mt-4">
-            <img src="./assets/img/logo/nour-dark-logo.png" alt="Cult Beauty" class="img-fluid mb-3 footer-logo mx-auto"
-              style="filter: invert(1); max-width: 120px;">
+            <img src="./assets/img/brand-logo/brand-logo.svg" alt="Cult Beauty"
+              class="img-fluid mb-3 footer-logo mx-auto" style="filter: invert(1); max-width: 120px;">
             <p class="small fw-light">Cult Beauty is THE destination for the very best in beauty!</p>
           </div>
         </div>
@@ -1454,7 +1507,7 @@
           <div class="row gx-5">
             <!-- Col 1: Logo & Blurb -->
             <div class="col-lg-3">
-              <img src="./assets/img/logo/nour-dark-logo.png" alt="Cult Beauty" class="img-fluid mb-4 footer-logo"
+              <img src="./assets/img/brand-logo/brand-logo.svg" alt="Cult Beauty" class="img-fluid mb-4 footer-logo"
                 style="filter: invert(1); max-width: 160px;">
               <p class="small fw-light lh-lg" style="color: #ccc;">Cult Beauty is THE destination for the very best in
                 beauty! From make up and skin care to fragrance, hair care and more, explore our line up of trending

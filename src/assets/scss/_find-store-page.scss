@@ -1,0 +1,36 @@
+@use "./variable" as vars;
+
+.find-store-area {
+
+    h1,
+    h2,
+    h5 {
+        color: vars.$heading-color;
+    }
+
+    .text-theme {
+        color: #047857; // Emerald 700
+    }
+
+    .font-serif {
+        font-family: serif; // You might want to update this to a specific serif font if the project has one
+    }
+
+    .store-image {
+        @media screen and (max-width: 768px) {
+            border-radius: 10px;
+        }
+
+        @media screen and (min-width: 769px) {
+            min-height: 450px;
+
+            img {
+                height: 100%;
+            }
+        }
+
+        img {
+            border-radius: 20px;
+        }
+    }
+}
