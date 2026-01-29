@@ -15820,6 +15820,7 @@ textarea.form-control-lg {
 }
 .product-gallery-section .product-thumbs .swiper-slide {
   width: 25%;
+  max-width: 110px;
   height: 100%;
   opacity: 0.4;
   cursor: pointer;
