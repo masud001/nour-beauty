@@ -48,7 +48,18 @@
 
 
     .blog-title {
-        font-size: 24px !important;
+        font-size: 30px !important;
+        width: 80%;
+
+        @media screen and (min-width: 768px) {
+            font-size: 48px !important;
+            max-width: 87%;
+            width: 100%;
+        }
+
+        @media screen and (min-width: 1536px) {
+            width: 72%;
+        }
     }
 
     .blog-text {
@@ -76,13 +87,13 @@
 // --------------------------------
 
 .blog-title-background {
-    @media (max-width: 768px) {
-        background-color: red;
+    @media (max-width: 767px) {
+        // background-color: red;
         background-image: url("../img/blog/blog-thumb-01.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 300px;
+        height: 250px;
 
         .blog-details {
             padding: 15px;
@@ -99,6 +110,12 @@
                 color: #fff !important;
 
             }
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .blog-title {
+            font-size: 24px !important;
         }
     }
 

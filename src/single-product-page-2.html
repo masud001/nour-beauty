@@ -1332,6 +1332,109 @@
             </div>
 
           </div>
+
+          <!-- accordion on desktop  -->
+          <div class="accordion accordion-faq-style-2 rounded-0 d-none d-lg-block" id="accordionExample">
+            <!-- Item 1: Why It's Cult -->
+            <div class="accordion-item rounded-0 border-0 border-top border-bottom border-light-subtle">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button shadow-none d-flex justify-content-between align-items-center bg-transparent"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                  aria-controls="collapseOne">
+                  <span class="fs-5 text-dark">Why It's Cult</span>
+                  <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body pt-0 pb-4">
+                  <p class="mb-0">Step into the world of professional make up artistry with Charlotte Tilbury. Famed for
+                    gracing the faces of A-Listers including Bella Hadid and Kate Moss, Charlotte developed her
+                    eponymous brand by fusing Hollywood finishes with easy-to-use formulas. The latest addition to the
+                    iconic Airbrush Flawless line, the Airbrush Flawless Blur Concealer (8.3g) is a next-gen formula
+                    that instantly blurs imperfections and smooths texture with a seamless, natural matte finish.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 2: Description -->
+            <div class="accordion-item rounded-0 border-0 border-bottom border-light-subtle">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed shadow-none d-flex justify-content-between align-items-center bg-transparent"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                  aria-controls="collapseTwo">
+                  <span class="fs-5 text-dark">Description</span>
+                  <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body pt-0 pb-4">
+                  <p class="mb-0">Product description content goes here.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 3: Ingredients -->
+            <div class="accordion-item rounded-0 border-0 border-bottom border-light-subtle">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed shadow-none d-flex justify-content-between align-items-center bg-transparent"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                  aria-controls="collapseThree">
+                  <span class="fs-5 text-dark">Ingredients</span>
+                  <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body pt-0 pb-4">
+                  <p class="mb-0">Ingredients list content goes here.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 4: How to use -->
+            <div class="accordion-item rounded-0 border-0 border-bottom border-light-subtle">
+              <h2 class="accordion-header" id="headingFour">
+                <button
+                  class="accordion-button collapsed shadow-none d-flex justify-content-between align-items-center bg-transparent"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false"
+                  aria-controls="collapseFour">
+                  <span class="fs-5 text-dark">How to use</span>
+                  <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body pt-0 pb-4">
+                  <p class="mb-0">Instructions on how to use the product.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- Item 5: Postal Address -->
+            <div class="accordion-item rounded-0 border-0 border-bottom border-light-subtle">
+              <h2 class="accordion-header" id="headingFive">
+                <button
+                  class="accordion-button collapsed shadow-none d-flex justify-content-between align-items-center bg-transparent"
+                  type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false"
+                  aria-controls="collapseFive">
+                  <span class="fs-5 text-dark">Postal Address</span>
+                  <i class="fa-solid fa-chevron-down accordion-icon"></i>
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#accordionExample">
+                <div class="accordion-body pt-0 pb-4">
+                  <p class="mb-0">Postal address information goes here.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
         <div class="col-12 col-lg-4 order-1">
           <div class="product-details-section d-flex flex-column gap-4">
@@ -1466,6 +1569,29 @@
                   <span><i class="fa-regular fa-heart"></i></span>
                 </button>
               </div>
+              <!-- select area section start -->
+              <button class="select-area-trigger" data-bs-toggle="modal" data-bs-target="#locationModal">
+                <i class="fa-solid fa-location-dot"></i>
+                Select Area <i class="fa-solid fa-chevron-down"></i>
+              </button>
+              <!-- select area section end -->
+              <div class="delivery-options-container d-flex flex-column gap-3 mt-4">
+                <!-- Express Delivery -->
+                <div class="delivery-box express d-flex align-items-center p-3 rounded-3">
+                  <span class="icon-wrapper me-3 fs-5"><i class="fa-solid fa-truck-fast"></i></span>
+                  <div class="text-content">
+                    <span class="fw-bold fst-italic">Express</span> Delivery by <span
+                      class="fw-bold text-dark">Tomorrow</span>
+                  </div>
+                </div>
+                <!-- Standard Delivery -->
+                <div class="delivery-box standard d-flex align-items-center p-3 rounded-3">
+                  <span class="icon-wrapper me-3 text-black fs-5"><i class="fa-solid fa-truck"></i></span>
+                  <div class="text-content text-black">
+                    <span class="fw-bold">Standard</span> Delivery by <span class="fw-bold">01 Feb, Sun</span>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1476,9 +1602,9 @@
       <div class="row">
 
         <div class="col-12 col-lg-8 mt-5 mt-lg-0">
+
           <!-- accordion  -->
-          <!-- accordion  -->
-          <div class="accordion accordion-faq-style-2 rounded-0" id="accordionExample">
+          <div class="accordion accordion-faq-style-2 rounded-0 d-block d-lg-none" id="accordionExample">
             <!-- Item 1: Why It's Cult -->
             <div class="accordion-item rounded-0 border-0 border-top border-bottom border-light-subtle">
               <h2 class="accordion-header" id="headingOne">
@@ -2361,1537 +2487,7 @@
     </div>
   </div>
 
-  <!-- dynamic tab content  -->
-  <!-- <div class="dynamic-tab-content mx-auto py-8">
-    <div class="container mx-auto mt-10 px-4 lg:px-0">
-      <div class="flex justify-start items-center border-b border-light-subtle">
-        <div class="flex ">
-          <button
-            class="tab-btn px-4  py-2 text-xs md:text-base uppercase text-black font-bold border-b-2 border-black hover:text-black focus:text-black focus:border-black"
-            data-tab="tab1">
-            new in
-          </button>
-          <button
-            class="tab-btn px-4  py-2 text-xs md:text-base uppercase text-black border-b-2 border-transparent hover:text-black focus:text-black focus:border-black"
-            data-tab="tab2">
-            sale
-          </button>
-          <button
-            class="tab-btn px-4  py-2 text-xs md:text-base uppercase text-black border-b-2 border-transparent hover:text-black focus:text-black focus:border-black"
-            data-tab="tab3">
-            new Trending
-          </button>
-        </div>
-      </div>
 
-      <div class="tab-content mt-4">
-        <div id="tab1" class="">
-          <div class="swiper productListingTypeOne !pb-[32px]">
-            <div class="swiper-wrapper">
-
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="best-product-tag">Best Seller</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="best-product-tag">limited edition</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="value-product-tag">value set</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="swiper-slide">
-                <div class="product-card">
-                  <div class="product-card-image bg-light position-relative">
-                    <span class="classified-tag">Beauty Election Finalist</span>
-                    <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-                    <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                      class="view-size-modal shadow-sm">
-                      <i class="fa-solid fa-plus"></i>
-                    </button>
-                    <button class="product-bookmark">
-                      <i class="fa fa-regular fa-heart"></i>
-                    </button>
-                  </div>
-                  <div class="product-card-body py-3">
-                    <h3 class="mb-0">Kérastase</h3>
-                    <p class="mb-0 product-title">
-                      Elixir Ultime L'Huile Originale Hair Oil
-                    </p>
-                    <div class="">
-                      <span class="price">$55.00 - $110.00</span>
-                      <div class="review">
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-solid fa-star"></i></span>
-                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                        <span><i class="fa-regular fa-star"></i></span>
-                        <span>(19) </span>
-                      </div>
-                      <span class="size-title">New Size</span>
-                      <span class="size-number"> 3 Sizes</span>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-           
-  <div class="swiper-pagination"></div>
-
-  <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-  <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
-  </div>
-  </div>
-  <div id="tab2" class="hidden">
-    <div class="swiper productListingTypeOne !pb-[32px]">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="best-product-tag">Best Seller</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="best-product-tag">limited edition</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="value-product-tag">value set</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-     
-      <div class="swiper-pagination"></div>
-      
-      <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-      <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
-    </div>
-  </div>
-  <div id="tab3" class="hidden">
-    <div class="swiper productListingTypeOne !pb-[32px]">
-      <div class="swiper-wrapper">
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="best-product-tag">Best Seller</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="best-product-tag">limited edition</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="value-product-tag">value set</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="swiper-slide">
-          <div class="product-card">
-            <div class="product-card-image bg-light position-relative">
-              <span class="classified-tag">Beauty Election Finalist</span>
-              <img src="./assets/img/product/nour-product-02.jpg" alt="product " />
-              <button type="button" data-bs-toggle="modal" data-bs-target="#viewProductSize"
-                class="view-size-modal shadow-sm">
-                <i class="fa-solid fa-plus"></i>
-              </button>
-              <button class="product-bookmark">
-                <i class="fa fa-regular fa-heart"></i>
-              </button>
-            </div>
-            <div class="product-card-body py-3">
-              <h3 class="mb-0">Kérastase</h3>
-              <p class="mb-0 product-title">
-                Elixir Ultime L'Huile Originale Hair Oil
-              </p>
-              <div class="">
-                <span class="price">$55.00 - $110.00</span>
-                <div class="review">
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-solid fa-star"></i></span>
-                  <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                  <span><i class="fa-regular fa-star"></i></span>
-                  <span>(19) </span>
-                </div>
-                <span class="size-title">New Size</span>
-                <span class="size-number"> 3 Sizes</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-     
-      <div class="swiper-pagination"></div>
-      
-      <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
-      <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
-    </div>
-  </div>
-  </div>
-  </div>
-  </div>
- -->
 
 
   <!-- Site Footer -->
@@ -4301,6 +2897,37 @@
       });
     });
   </script>
+  <!-- Confirm Location Modal -->
+  <div class="modal fade location-modal" id="locationModal" tabindex="-1" aria-labelledby="locationModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="locationModalLabel">Confirm Location</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="search-bar-container">
+            <input type="text" placeholder="Search Location...">
+          </div>
+          <div class="map-container">
+            <!-- Placeholder for map -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.636742055132!2d46.675294314999996!3d24.7135517!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0xba974d1c98e79fd5!2sRiyadh%2C%20Saudi%20Arabia!5e0!3m2!1sen!2sus!4v1625686000000!5m2!1sen!2sus"
+              width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+          <div class="address-confirm-container">
+            <div class="address-display">
+              <i class="fa-solid fa-location-dot"></i>
+              <p>RHOB7731, 7731 Olaya St, 2117, Al Olaya, Riyadh 12244, Saudi Arabia</p>
+            </div>
+            <button class="confirm-btn">Confirm Address</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
