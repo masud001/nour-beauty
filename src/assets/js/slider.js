@@ -605,11 +605,11 @@ const swiper03 = new Swiper(".tabContentSlider02", {
   },
   breakpoints: {
     320: {
-      slidesPerView: 1,
+      slidesPerView: 2,
       spaceBetween: 10,
     },
     400: {
-      slidesPerView: 1.4,
+      slidesPerView: 2,
       spaceBetween: 10,
     },
     768: {

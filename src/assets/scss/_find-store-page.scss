@@ -1,22 +1,83 @@
 @use "./variable" as vars;
 
 .find-store-area {
+    background-color: vars.$background;
+    padding: 3rem 0;
 
-    h1,
-    h2,
-    h5 {
+    // Apply project font family to all text elements
+    * {
+        font-family: vars.$font-family-base;
+    }
+
+    // Main heading
+    h1 {
+        font-family: vars.$font-family-heading;
+        font-weight: 400;
         color: vars.$heading-color;
+        font-size: vars.$font-4xl;
+
+        @media (max-width: 768px) {
+            font-size: vars.$font-3xl;
+        }
     }
 
+    // Store name headings
+    h2 {
+        font-family: vars.$font-family-heading;
+        font-weight: 400;
+        color: vars.$heading-color;
+        font-size: vars.$font-3xl;
+
+        @media (max-width: 768px) {
+            font-size: vars.$font-2xl;
+        }
+    }
+
+    // Section headings (Address, Call Us, etc.)
+    h5 {
+        font-family: vars.$font-family-heading;
+        font-weight: 700;
+        color: vars.$heading-color;
+        font-size: vars.$font-lg;
+    }
+
+    // Paragraph text
+    p {
+        font-family: vars.$font-family-base;
+        color: vars.$paragraph-color;
+        font-size: vars.$font-base;
+        line-height: 1.6;
+    }
+
+    // Button styling
+    .btn {
+        font-family: vars.$font-family-base;
+        font-weight: 700;
+        letter-spacing: 0.5px;
+    }
+
+    // Icon colors
     .text-theme {
-        color: #047857; // Emerald 700
+        color: vars.$primary-color;
     }
 
-    .font-serif {
-        font-family: serif; // You might want to update this to a specific serif font if the project has one
+    // Store info section
+    .store-info {
+        .icon-wrapper {
+            i {
+                color: vars.$icon-color;
+            }
+        }
     }
 
+    // Store image container styling
     .store-image {
+        max-height: 600px;
+        max-width: 100%;
+        aspect-ratio: 16/9;
+        border-radius: 10px;
+        overflow: hidden;
+
         @media screen and (max-width: 768px) {
             border-radius: 10px;
         }
@@ -30,7 +91,25 @@
         }
 
         img {
-            border-radius: 20px;
+            width: 100%;
+            border-radius: 10px;
+            aspect-ratio: 16/9;
+            object-fit: cover;
         }
     }
+}
+
+// Footer specific styles for find-store page
+.footer-logo {
+    filter: invert(1);
+    max-width: 120px;
+}
+
+.footer-payment-icons {
+    filter: invert(1);
+    max-width: 160px;
+}
+
+.footer-description {
+    color: #ccc;
 }

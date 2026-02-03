@@ -4,6 +4,11 @@
 .active-cart-section {
     font-family: vars.$font-family-base; // Assuming Inter or system sans
 
+    // Add bottom padding on mobile to account for fixed cart summary
+    @media (max-width: 991px) {
+        padding-bottom: 350px !important; // Adjust based on cart summary height
+    }
+
     h1 {
         font-weight: 600;
         letter-spacing: -0.5px;
@@ -34,6 +39,59 @@
             .price {
                 font-size: 1.1rem;
             }
+
+            .delivery-options-container {
+                max-width: 200px;
+
+                .delivery-box {
+                    padding: 6px 10px;
+
+                    .icon-wrapper {
+                        font-size: 0.8rem !important;
+                    }
+
+                    .text-content {
+                        font-size: 9px !important;
+                    }
+                }
+
+                .delivery-box.express {
+                    background-color: #fff0ed;
+
+                    .icon-wrapper {
+                        color: #ff6347;
+                    }
+
+                    .text-content {
+                        color: #000;
+
+                        span:first-child {
+                            color: #ff6347;
+                            font-style: italic;
+                        }
+                    }
+
+                    .delivery-price {
+                        color: #000;
+                    }
+                }
+
+                .delivery-box.standard {
+                    background-color: #f3f4f6;
+
+                    .icon-wrapper {
+                        color: #000;
+                    }
+
+                    .text-content {
+                        color: #000;
+                    }
+
+                    .delivery-price {
+                        color: #000;
+                    }
+                }
+            }
         }
     }
 
@@ -42,26 +100,156 @@
     }
 
     .discount-code {
-        label {
-            letter-spacing: 0.5px;
+        // Center the entire discount code section
+        max-width: 100%;
+
+        // Inner container styling
+        >div {
+            width: 100%;
         }
 
-        .form-control:focus {
-            box-shadow: none;
-            border-color: #000;
+        label {
+            letter-spacing: 0.5px;
+            font-size: 0.8rem;
+            font-weight: 700;
+            color: #6c757d;
+            text-transform: uppercase;
+            margin-bottom: 0.5rem;
+            width: 100%;
+        }
+
+        .input-group {
+            width: 100%;
+
+            .form-control {
+                border: 1px solid #dee2e6;
+                padding: 0.5rem 0.75rem;
+                font-size: 0.95rem;
+
+                &::placeholder {
+                    color: #6b7280;
+                    font-size: 0.9rem;
+                }
+
+                &:focus {
+                    box-shadow: none;
+                    border-color: #000;
+                    outline: none;
+                }
+            }
         }
 
         .btn-outline-secondary {
-            border-color: #ccc;
+            border-color: #dee2e6;
+            color: #495057;
+            font-weight: 500;
+            padding: 0.5rem 1.5rem;
+            transition: all 0.2s ease;
 
             &:hover {
                 background-color: #f8f9fa;
                 color: #333;
+                border-color: #adb5bd;
+            }
+
+            &:focus {
+                box-shadow: none;
+            }
+        }
+
+        // Payment methods section
+        .payments-methods {
+            width: 100%;
+
+            .payment-icons {
+                img {
+                    transition: transform 0.2s ease;
+
+                    &:hover {
+                        transform: scale(1.05);
+                    }
+                }
             }
         }
     }
 
     .cart-summary {
+
+        // Mobile Layout: Side by side
+        .mobile-checkout-layout {
+            display: none; // Hidden by default
+
+            @media (max-width: 1024px) {
+                display: flex;
+                align-items: center;
+                gap: 1rem;
+                margin-bottom: 0;
+
+                .basket-total-section {
+                    flex-shrink: 0;
+
+                    .basket-label {
+                        font-size: 0.9rem;
+                        color: #666;
+                        margin-bottom: 0.25rem;
+                    }
+
+                    .basket-price {
+                        font-size: 1.5rem;
+                        font-weight: 700;
+                        color: #000;
+                        line-height: 1;
+                    }
+                }
+
+                .checkout-btn {
+                    flex: 1;
+                    padding: 1rem 1.5rem;
+                    border-radius: 0;
+                    background-color: #000;
+                    letter-spacing: 1px;
+                    font-size: 0.95rem;
+                    white-space: nowrap;
+
+                    &:hover {
+                        background-color: #333;
+                    }
+                }
+            }
+        }
+
+        // Desktop Layout: Stacked
+        .desktop-checkout-layout {
+            display: block; // Visible by default
+
+            @media (max-width: 991px) {
+                display: none; // Hidden on mobile
+            }
+        }
+
+        // Mobile secure text
+        .mobile-secure-text {
+            display: none;
+
+            @media (max-width: 991px) {
+                display: block;
+            }
+        }
+
+        // Mobile: Fixed at bottom
+        @media (max-width: 1024px) {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            margin: 0;
+            border-radius: 0;
+            box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            padding: 1.25rem 1rem !important;
+        }
+
         button.btn-dark {
             letter-spacing: 1px;
             font-size: 0.9rem;

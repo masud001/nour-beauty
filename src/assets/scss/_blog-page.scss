@@ -96,7 +96,7 @@
         height: 250px;
 
         .blog-details {
-            padding: 15px;
+            padding: 15px 2.5rem 15px 2.5rem;
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.5);
@@ -110,6 +110,7 @@
                 color: #fff !important;
 
             }
+
         }
     }
 
@@ -137,6 +138,9 @@
     }
 
     @media (max-width: 768px) {
+
+        padding-left: 1rem;
+        padding-right: 1rem;
 
 
         ul>li>a {
