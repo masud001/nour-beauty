@@ -1,0 +1,225 @@
+/* Order Summary Page Styles */
+@use "./variable" as vars;
+
+
+.summary-brand-logo {
+    width: 150px;
+    height: auto;
+    margin: 0 auto;
+
+    img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+.delivery-address-section {
+    background-color: #fff;
+}
+
+.order-summary-page {
+    font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    background-color: #fafafa;
+
+    // Header
+    .checkout-header {
+        text-align: center;
+        padding: 1rem 0;
+        background-color: #fff;
+
+
+    }
+
+    .checkout-section-title {
+        font-size: 0.95rem;
+        font-weight: 700;
+        color: #000;
+    }
+
+    // Forms
+    .checkout-form-label {
+        font-size: 0.75rem;
+        font-weight: 500;
+        margin-bottom: 0.35rem;
+        color: #333;
+    }
+
+    .form-control,
+    .form-select {
+        border-radius: 2px;
+        border: 1px solid #d1d1d1;
+        padding: 0.65rem 0.75rem;
+        font-size: 0.875rem;
+        background-color: #fff;
+
+        &:focus {
+            box-shadow: none;
+            border-color: #666;
+        }
+    }
+
+    // Delivery Option Box
+    .delivery-option-box {
+        background-color: #e8f4fc;
+        border: none;
+        border-radius: 3px;
+        color: #0066cc;
+
+        i {
+            color: #0066cc;
+            font-size: 1rem;
+        }
+
+        span {
+            color: #0066cc;
+        }
+    }
+
+    // Payment Section
+    .payment-summary-box {
+        background: #fff;
+        border: 3px solid #c9b896 !important; // Beige/tan border color
+        border-radius: 8px;
+        padding: 2rem;
+
+        .payment-checkmark {
+            top: -12px;
+            right: -12px;
+            width: 24px;
+            height: 24px;
+            background-color: #fff;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            i {
+                color: #8b7355;
+                font-size: 2rem;
+            }
+        }
+    }
+
+    .payment-icons {
+        img {
+            height: 30px;
+            object-fit: contain;
+        }
+    }
+
+    .alt-payment-btn {
+        font-weight: 500;
+
+        &:hover {
+            background-color: #f8f8f8;
+        }
+    }
+
+    .alt-payment-wrapper {
+        border: 1px solid #d1d1d1;
+        border-radius: 4px;
+        overflow: hidden;
+    }
+
+    .alt-payment-content {
+        background-color: #fff;
+        border-top: 1px solid #d1d1d1;
+
+        h6 {
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+        }
+
+        hr {
+            border-color: #e5e5e5;
+            margin: 0;
+        }
+    }
+
+    .alt-payment-option {
+        padding: 0.75rem 0;
+
+        .form-check-input {
+            width: 20px;
+            height: 20px;
+            margin-top: 0.25rem;
+        }
+
+        .form-check-label {
+            cursor: pointer;
+            width: 100%;
+        }
+    }
+
+
+    // Summary Sidebar
+    .order-summary-sidebar {
+        position: sticky;
+        top: 2rem;
+
+        .summary-card {
+            background: #fff;
+            padding: 1.5rem;
+            border: 1px solid #e5e5e5;
+            border-radius: 2px;
+        }
+
+        .item-list {
+            li {
+                padding-bottom: 1rem;
+                margin-bottom: 1rem;
+                border-bottom: 1px solid #f0f0f0;
+
+                &:last-child {
+                    border-bottom: none;
+                    margin-bottom: 0;
+                    padding-bottom: 0;
+                }
+            }
+        }
+
+        .product-img {
+            width: 60px;
+            height: 60px;
+            object-fit: cover;
+            border-radius: 4px;
+        }
+
+        .summary-totals {
+            margin-top: 1.5rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e5e5e5;
+
+            .row-line {
+                display: flex;
+                justify-content: space-between;
+                margin-bottom: 0.75rem;
+                font-size: 0.875rem;
+
+                &.total {
+                    font-size: 1.125rem;
+                    font-weight: 700;
+                    margin-top: 1rem;
+                    border-top: 1px solid #e5e5e5;
+                    padding-top: 1rem;
+                }
+            }
+        }
+    }
+
+    // Submit Button
+    .btn-submit-order {
+        background-color: #000;
+        color: #fff;
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+        border-radius: 2px;
+        border: none;
+
+        &:hover {
+            background-color: #222;
+        }
+    }
+}
