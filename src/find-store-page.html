@@ -1757,6 +1757,62 @@
       });
     });
   </script>
+
+  <!-- modal for map location -->
+  <div class="modal fade" id="mapLocationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="mapLocationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content rounded-3">
+        <div class="modal-header border-0 pb-3">
+          <h1 class="modal-title fw-bold text-uppercase" style="font-size: 18px; letter-spacing: 0.5px;"
+            id="mapLocationModalLabel">
+            Confirm Location
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-0">
+          <!-- Map Container with Search Bar Overlay -->
+          <div class="position-relative" style="height: 400px;">
+            <!-- Search Bar Overlay -->
+            <div class="position-absolute w-100 px-3 pt-3" style="z-index: 10;">
+              <input type="text" class="form-control form-control-lg shadow-sm border-0 fw-light"
+                placeholder="SEARCH LOCATION..."
+                style="background-color: rgba(255, 255, 255, 0.95); color: #999; font-size: 15px; letter-spacing: 0.5px;" />
+            </div>
+
+            <!-- Google Map Embed -->
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3624.4977641316823!2d46.67234431500186!3d24.713552784128!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e2f03890d489399%3A0x7e9b6b1c8e5e5e5e!2sRiyadh%2C%20Saudi%20Arabia!5e0!3m2!1sen!2s!4v1234567890123!5m2!1sen!2s"
+              width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+            <!-- Address Display Overlay -->
+            <div class="position-absolute w-100 px-3 pb-3" style="bottom: 0; z-index: 10;">
+              <div class="bg-white rounded-3 shadow-sm px-4 py-3">
+                <div class="d-flex align-items-start gap-3">
+                  <i class="fa-solid fa-location-dot text-danger fs-5 mt-1" style="opacity: 0.7;"></i>
+                  <p class="mb-0 fw-normal" style="color: #4a4a4a; font-size: 15px; line-height: 1.6;"
+                    id="selectedAddress">
+                    RHOB7731, 7731 Olaya St, 2117, Al Olaya, Riyadh 12244, Saudi Arabia
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Confirm Button -->
+        <div class="modal-footer border-0 pt-0 pb-4 px-4">
+          <button type="button" class="btn btn-dark w-100 py-3 text-uppercase fw-bold rounded-3"
+            style="letter-spacing: 1px; font-size: 14px;">
+            Confirm Address
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </body>
 
 </html>
