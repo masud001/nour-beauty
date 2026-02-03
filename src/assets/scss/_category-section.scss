@@ -423,7 +423,7 @@
   }
 
   .category-section-title {
-    font-size: vars.$font-2xl;
+    font-size: 20px;
     font-family: vars.$font-family-base;
     font-weight: 500;
     text-transform: uppercase !important;
@@ -431,7 +431,7 @@
     margin-bottom: 2rem;
 
     @media (max-width: 768px) {
-      font-size: vars.$font-xl;
+      font-size: 20px;
     }
   }
 

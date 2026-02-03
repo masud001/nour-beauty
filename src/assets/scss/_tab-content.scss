@@ -56,6 +56,29 @@
         }
     }
 
+    .discount-badge {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        background-color: #dc3545; // Bootstrap danger red
+        color: #ffffff;
+        font-size: vars.$font-xs;
+        font-weight: 600;
+        padding: 6px 12px;
+        border-radius: 4px;
+        z-index: 2;
+        text-transform: uppercase;
+        letter-spacing: 0.5px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+
+        @media (max-width: 768px) {
+            font-size: 10px;
+            padding: 4px 8px;
+            top: 8px;
+            left: 8px;
+        }
+    }
+
     .card-title {
         margin-top: 12px !important;
         font-size: vars.$font-sm; // Fallback 14px
@@ -69,6 +92,27 @@
         -webkit-line-clamp: 2;
         -webkit-box-orient: vertical;
         overflow: hidden;
+    }
+
+    .card-price {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+        margin-top: 0.25rem;
+        margin-bottom: 0.25rem;
+
+        p {
+            margin: 0;
+            font-family: vars.$font-family-base;
+        }
+
+        .compare-price {
+            color: #6c757d; // Muted gray color
+            opacity: 0.7;
+            text-decoration: line-through;
+            font-size: vars.$font-xs;
+            font-weight: 400;
+        }
     }
 
     .card-button {

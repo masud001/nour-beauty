@@ -13632,7 +13632,7 @@ textarea.form-control-lg {
   }
 }
 .category-section .category-section-title {
-  font-size: 24px;
+  font-size: 20px;
   font-family: "Flink", sans-serif;
   font-weight: 500;
   text-transform: uppercase !important;
@@ -15091,6 +15091,29 @@ textarea.form-control-lg {
   width: 100%;
   height: 100%;
 }
+.dynamic-tab-content .discount-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #dc3545;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 768px) {
+  .dynamic-tab-content .discount-badge {
+    font-size: 10px;
+    padding: 4px 8px;
+    top: 8px;
+    left: 8px;
+  }
+}
 .dynamic-tab-content .card-title {
   margin-top: 12px !important;
   font-size: 14px;
@@ -15104,6 +15127,24 @@ textarea.form-control-lg {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   overflow: hidden;
+}
+.dynamic-tab-content .card-price {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-top: 0.25rem;
+  margin-bottom: 0.25rem;
+}
+.dynamic-tab-content .card-price p {
+  margin: 0;
+  font-family: "Flink", sans-serif;
+}
+.dynamic-tab-content .card-price .compare-price {
+  color: #6c757d;
+  opacity: 0.7;
+  text-decoration: line-through;
+  font-size: 12px;
+  font-weight: 400;
 }
 .dynamic-tab-content .card-button {
   position: relative;
@@ -16453,7 +16494,7 @@ textarea.form-control-lg {
 }
 @media (max-width: 768px) {
   .b2b-brand-section p {
-    font-size: 15px;
+    font-size: 18px;
     line-height: 1.5;
   }
 }
@@ -16976,11 +17017,11 @@ body .product-overlay-listing {
 }
 @media (max-width: 991px) {
   .active-cart-section {
-    padding-bottom: 350px !important;
+    padding-bottom: 0px !important;
   }
 }
-.active-cart-section h1, .active-cart-section .h1 {
-  font-weight: 600;
+.active-cart-section h2, .active-cart-section .h2 {
+  font-weight: 500;
   letter-spacing: -0.5px;
 }
 .active-cart-section .alert-info {
@@ -17176,6 +17217,11 @@ body .product-overlay-listing {
   background-color: #333;
 }
 
+.offcanvas-backdrop.fade.show {
+  visibility: visible !important;
+  display: block !important;
+}
+
 /* Shop By Category Section */
 .shop-by-category-section {
   padding: 60px 0;
@@ -17329,7 +17375,7 @@ body .product-overlay-listing {
   color: #516971;
 }
 .find-store-area .store-image {
-  max-height: 600px;
+  max-height: 502px;
   max-width: 100%;
   aspect-ratio: 16/9;
   border-radius: 10px;

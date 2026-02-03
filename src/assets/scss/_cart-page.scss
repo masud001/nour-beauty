@@ -6,11 +6,11 @@
 
     // Add bottom padding on mobile to account for fixed cart summary
     @media (max-width: 991px) {
-        padding-bottom: 350px !important; // Adjust based on cart summary height
+        padding-bottom: 0px !important; // Adjust based on cart summary height
     }
 
-    h1 {
-        font-weight: 600;
+    h2 {
+        font-weight: 500;
         letter-spacing: -0.5px;
     }
 
@@ -259,4 +259,9 @@
             }
         }
     }
+}
+
+.offcanvas-backdrop.fade.show {
+    visibility: visible !important;
+    display: block !important;
 }
