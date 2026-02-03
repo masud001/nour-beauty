@@ -35,254 +35,266 @@
 
     <main class="py-4 py-lg-5">
         <div class="container">
-            <div class="row g-5">
-                <!-- Left Column: Forms -->
-                <div class="col-lg-7">
+            <div class="row">
+                <div class=" offset-lg-1 col-lg-10">
+                    <div class="row g-5">
+                        <!-- Left Column: Forms -->
+                        <div class="col-lg-8">
 
-                    <!-- 1. Delivery Address -->
-                    <div
-                        class="mb-4 delivery-address-section bg-white p-4 border border-3 border-dark border-bottom-0 border-start-0 border-end-0">
-                        <h5 class="checkout-section-title mb-3">1. Delivery Address</h5>
-                        <form class="row gy-3">
-                            <div class="col-12">
-                                <label class="form-label small checkout-form-label">*Country/Region</label>
-                                <select class="form-select">
-                                    <option selected>Malaysia</option>
-                                    <option>United Kingdom</option>
-                                    <option>United States</option>
-                                </select>
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label small checkout-form-label">*Full Name</label>
-                                <input type="text" class="form-control" value="MD Masudur Rahman" />
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label small checkout-form-label">*Post Code/Zip</label>
-                                <input type="text" class="form-control" />
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label small checkout-form-label">Company Name</label>
-                                <input type="text" class="form-control" />
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label small checkout-form-label">*House Name/Number</label>
-                                <input type="text" class="form-control" />
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label small checkout-form-label">*Address 1</label>
-                                <input type="text" class="form-control" />
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label small checkout-form-label">Address 2</label>
-                                <input type="text" class="form-control" />
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label small checkout-form-label">*Town/City</label>
-                                <input type="text" class="form-control" />
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label small checkout-form-label">County</label>
-                                <input type="text" class="form-control" />
-                            </div>
-                            <div class="col-12">
-                                <label class="form-label small checkout-form-label">Contact Number</label>
-                                <input type="text" class="form-control" />
-                            </div>
-                            <div class="col-12">
-                                <a href="#" class="text-dark text-decoration-underline small">Why do we need your
-                                    number?</a>
-                            </div>
-                        </form>
-                    </div>
-
-                    <!-- 2. Select Delivery Option -->
-                    <div class="mb-4 delivery-option-section bg-white p-4">
-                        <h5 class="checkout-section-title mb-3">2. Select Delivery Option</h5>
-                        <div class="delivery-option-box p-3 d-flex align-items-center">
-                            <i class="fa-solid fa-circle-info me-2"></i>
-                            <span class="small fw-medium">Please enter your address so we can calculate your delivery
-                                options.</span>
-                        </div>
-                    </div>
-
-                    <!-- 3. Select Payment Method -->
-                    <div class="mb-4 payment-method-section bg-white p-4">
-                        <h5 class="checkout-section-title mb-3">3. Select Payment Method</h5>
-                        <div class="payment-summary-box position-relative">
-                            <div class="payment-checkmark position-absolute">
-                                <i class="fa-solid fa-circle-check"></i>
-                            </div>
-                            <div class="mb-4">
-                                <div class="fw-bold mb-3" style="font-size: 1.1rem;">Credit/Debit Card</div>
-                                <div class="payment-icons d-flex gap-2 flex-wrap">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png"
-                                        alt="Visa">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
-                                        alt="Mastercard">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
-                                        alt="Maestro">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg"
-                                        alt="Amex">
-                                    <img src="https://logos-world.net/wp-content/uploads/2020/11/JCB-Logo.png"
-                                        alt="JCB">
-                                </div>
-                            </div>
-
-                            <form class="row gy-3">
-                                <div class="col-12">
-                                    <label class="form-label checkout-form-label">*Card Number</label>
-                                    <input type="text" class="form-control" />
-                                </div>
-                                <div class="col-12">
-                                    <label class="form-label checkout-form-label">*Name on card</label>
-                                    <input type="text" class="form-control" value="MD Masudur Rahman" />
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label checkout-form-label">*Expiry Date</label>
-                                    <div class="d-flex gap-2">
+                            <!-- 1. Delivery Address -->
+                            <div
+                                class="mb-4 delivery-address-section bg-white p-4 border border-3 border-dark border-bottom-0 border-start-0 border-end-0">
+                                <h5 class="checkout-section-title mb-3">1. Delivery Address</h5>
+                                <form class="row gy-3">
+                                    <div class="col-12">
+                                        <label class="form-label small checkout-form-label">*Country/Region</label>
                                         <select class="form-select">
-                                            <option selected>Month</option>
-                                            <option>01</option>
-                                            <option>02</option>
-                                            <option>03</option>
-                                            <option>04</option>
-                                            <option>05</option>
-                                            <option>06</option>
-                                            <option>07</option>
-                                            <option>08</option>
-                                            <option>09</option>
-                                            <option>10</option>
-                                            <option>11</option>
-                                            <option>12</option>
-                                        </select>
-                                        <select class="form-select">
-                                            <option selected>Year</option>
-                                            <option>2026</option>
-                                            <option>2027</option>
-                                            <option>2028</option>
-                                            <option>2029</option>
-                                            <option>2030</option>
+                                            <option selected>Malaysia</option>
+                                            <option>United Kingdom</option>
+                                            <option>United States</option>
                                         </select>
                                     </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <label class="form-label checkout-form-label">*Security Code (CV2)</label>
-                                    <div class="input-group">
-                                        <input type="text" class="form-control border-end-0" />
-                                        <span class="input-group-text bg-white border-start-0"><i
-                                                class="fa-regular fa-circle-question text-muted"></i></span>
+                                    <div class="col-12">
+                                        <label class="form-label small checkout-form-label">*Full Name</label>
+                                        <input type="text" class="form-control" value="MD Masudur Rahman" />
                                     </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="form-check mt-2">
-                                        <input class="form-check-input" type="checkbox" id="sameAddress" checked>
-                                        <label class="form-check-label" for="sameAddress">
-                                            Use my delivery address as my cardholder address
-                                        </label>
+                                    <div class="col-12">
+                                        <label class="form-label small checkout-form-label">*Post Code/Zip</label>
+                                        <input type="text" class="form-control" />
                                     </div>
-                                </div>
-                            </form>
-                        </div>
-
-                        <div class="mt-3 alt-payment-wrapper border border-1">
-                            <button
-                                class="btn btn-link text-decoration-none text-dark w-100 p-3 d-flex justify-content-between align-items-center alt-payment-btn border-0"
-                                type="button" data-bs-toggle="collapse" data-bs-target="#altPayments">
-                                <span class="fw-semibold">Use a different payment method</span>
-                                <i class="fa-solid fa-chevron-down"></i>
-                            </button>
-                            <div class="collapse" id="altPayments">
-                                <div class="alt-payment-content p-4">
-                                    <hr class="mb-3">
-
-                                    <div class="form-check alt-payment-option">
-                                        <input class="form-check-input" type="radio" name="altPaymentMethod"
-                                            id="paypalOption">
-                                        <label class="form-check-label d-flex align-items-center" for="paypalOption">
-                                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
-                                                alt="PayPal" style="height: 24px; margin-left: 0.5rem;">
-                                        </label>
+                                    <div class="col-12">
+                                        <label class="form-label small checkout-form-label">Company Name</label>
+                                        <input type="text" class="form-control" />
                                     </div>
-                                    <hr class="my-3">
+                                    <div class="col-12">
+                                        <label class="form-label small checkout-form-label">*House Name/Number</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label small checkout-form-label">*Address 1</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label small checkout-form-label">Address 2</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label small checkout-form-label">*Town/City</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label small checkout-form-label">County</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                    <div class="col-12">
+                                        <label class="form-label small checkout-form-label">Contact Number</label>
+                                        <input type="text" class="form-control" />
+                                    </div>
+                                    <div class="col-12">
+                                        <a href="#" class="text-dark text-decoration-underline small">Why do we need
+                                            your
+                                            number?</a>
+                                    </div>
+                                </form>
+                            </div>
 
-                                    <div class="form-check alt-payment-option">
-                                        <input class="form-check-input" type="radio" name="altPaymentMethod"
-                                            id="gpayOption">
-                                        <label class="form-check-label d-flex align-items-center" for="gpayOption">
-                                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f2/Google_Pay_Logo.svg"
-                                                alt="G Pay" style="height: 24px; margin-left: 0.5rem;">
-                                        </label>
+                            <!-- 2. Select Delivery Option -->
+                            <div class="mb-4 delivery-option-section bg-white p-4">
+                                <h5 class="checkout-section-title mb-3">2. Select Delivery Option</h5>
+                                <div class="delivery-option-box p-3 d-flex align-items-center">
+                                    <i class="fa-solid fa-circle-info me-2"></i>
+                                    <span class="small fw-medium">Please enter your address so we can calculate your
+                                        delivery
+                                        options.</span>
+                                </div>
+                            </div>
+
+                            <!-- 3. Select Payment Method -->
+                            <div class="mb-4 payment-method-section bg-white p-4">
+                                <h5 class="checkout-section-title mb-3">3. Select Payment Method</h5>
+                                <div class="payment-summary-box position-relative">
+                                    <div class="payment-checkmark position-absolute">
+                                        <i class="fa-solid fa-circle-check"></i>
+                                    </div>
+                                    <div class="mb-4">
+                                        <div class="fw-bold mb-3" style="font-size: 1.1rem;">Credit/Debit Card</div>
+                                        <div class="payment-icons d-flex gap-2 flex-wrap">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png"
+                                                alt="Visa">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
+                                                alt="Mastercard">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+                                                alt="Maestro">
+                                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg"
+                                                alt="Amex">
+                                            <img src="https://logos-world.net/wp-content/uploads/2020/11/JCB-Logo.png"
+                                                alt="JCB">
+                                        </div>
+                                    </div>
+
+                                    <form class="row gy-3">
+                                        <div class="col-12">
+                                            <label class="form-label checkout-form-label">*Card Number</label>
+                                            <input type="text" class="form-control" />
+                                        </div>
+                                        <div class="col-12">
+                                            <label class="form-label checkout-form-label">*Name on card</label>
+                                            <input type="text" class="form-control" value="MD Masudur Rahman" />
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label checkout-form-label">*Expiry Date</label>
+                                            <div class="d-flex gap-2">
+                                                <select class="form-select">
+                                                    <option selected>Month</option>
+                                                    <option>01</option>
+                                                    <option>02</option>
+                                                    <option>03</option>
+                                                    <option>04</option>
+                                                    <option>05</option>
+                                                    <option>06</option>
+                                                    <option>07</option>
+                                                    <option>08</option>
+                                                    <option>09</option>
+                                                    <option>10</option>
+                                                    <option>11</option>
+                                                    <option>12</option>
+                                                </select>
+                                                <select class="form-select">
+                                                    <option selected>Year</option>
+                                                    <option>2026</option>
+                                                    <option>2027</option>
+                                                    <option>2028</option>
+                                                    <option>2029</option>
+                                                    <option>2030</option>
+                                                </select>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <label class="form-label checkout-form-label">*Security Code (CV2)</label>
+                                            <div class="input-group">
+                                                <input type="text" class="form-control border-end-0" />
+                                                <span class="input-group-text bg-white border-start-0"><i
+                                                        class="fa-regular fa-circle-question text-muted"></i></span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="form-check mt-2">
+                                                <input class="form-check-input" type="checkbox" id="sameAddress"
+                                                    checked>
+                                                <label class="form-check-label" for="sameAddress">
+                                                    Use my delivery address as my cardholder address
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+
+                                <div class="mt-3 alt-payment-wrapper border border-1">
+                                    <button
+                                        class="btn btn-link text-decoration-none text-dark w-100 p-3 d-flex justify-content-between align-items-center alt-payment-btn border-0"
+                                        type="button" data-bs-toggle="collapse" data-bs-target="#altPayments">
+                                        <span class="fw-semibold">Use a different payment method</span>
+                                        <i class="fa-solid fa-chevron-down"></i>
+                                    </button>
+                                    <div class="collapse" id="altPayments">
+                                        <div class="alt-payment-content p-4">
+                                            <hr class="mb-3">
+
+                                            <div class="form-check alt-payment-option ms-4">
+                                                <input class="form-check-input" type="radio" name="altPaymentMethod"
+                                                    id="paypalOption">
+                                                <label class="form-check-label d-flex align-items-center"
+                                                    for="paypalOption">
+                                                    <img src="./assets/img/payments-methods/PayPal.svg" alt="PayPal"
+                                                        style="height: 24px; margin-left: 0.5rem;">
+                                                </label>
+                                            </div>
+                                            <hr class="my-3">
+
+                                            <div class="form-check alt-payment-option ms-4">
+                                                <input class="form-check-input" type="radio" name="altPaymentMethod"
+                                                    id="gpayOption">
+                                                <label class="form-check-label d-flex align-items-center"
+                                                    for="gpayOption">
+                                                    <img src="./assets/img/payments-methods/Google_Pay_Logo.svg"
+                                                        alt="G Pay" style="height: 24px; margin-left: 0.5rem;">
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
 
-                    <div class=" bg-white p-4">
-                        <button class="btn btn-submit-order w-100 py-3">
-                            Submit My Order
-                        </button>
+                            <div class=" bg-white p-4">
+                                <button class="btn btn-submit-order w-100 py-3">
+                                    Submit My Order
+                                </button>
 
-                    </div>
-                    <div class=" bg-transparent p-4">
-                        <p class="text-center text-muted small" style="font-size: 0.75rem;">
-                            By placing this order, you are confirming that you agree to our <a href="#"
-                                class="text-dark text-decoration-underline">Terms and Conditions</a> and <a href="#"
-                                class="text-dark text-decoration-underline">Privacy Policy</a>
-                        </p>
-                    </div>
-
-                </div>
-
-                <!-- Right Column: Summary -->
-                <div class="col-lg-5">
-                    <aside class="order-summary-sidebar">
-                        <div class="summary-card">
-                            <div class="d-flex justify-content-between align-items-center mb-4">
-                                <h6 class="fw-bold m-0">Order Summary</h6>
-                                <a href="#" class="text-dark text-decoration-underline small">Edit</a>
+                            </div>
+                            <div class=" bg-transparent p-4">
+                                <p class="text-center text-muted small" style="font-size: 0.75rem;">
+                                    By placing this order, you are confirming that you agree to our <a href="#"
+                                        class="text-dark text-decoration-underline">Terms and Conditions</a> and <a
+                                        href="#" class="text-dark text-decoration-underline">Privacy Policy</a>
+                                </p>
                             </div>
 
-                            <ul class="list-unstyled item-list m-0">
-                                <li class="d-flex align-items-start gap-3">
-                                    <img src="./assets/img/product/images.avif" alt="Product"
-                                        class="product-img bg-light">
-                                    <div class="flex-grow-1">
-                                        <div class="fw-bold small mb-1">L'Occitane Shea (Karite) Foot Cream 150ml</div>
-                                        <div class="text-muted small">Quantity: 1</div>
-                                        <div class="fw-bold small mt-1">£27.00</div>
-                                    </div>
-                                </li>
-                                <li class="d-flex align-items-start gap-3">
-                                    <img src="./assets/img/product/images.avif" alt="Product"
-                                        class="product-img bg-light">
-                                    <div class="flex-grow-1">
-                                        <div class="fw-bold small mb-1">Luvia Daily The Everywhere Body Mist Starter Set
-                                            Jasmine & Ylang Ylang 150ml</div>
-                                        <div class="text-muted small">Quantity: 1</div>
-                                        <div class="fw-bold small mt-1">£26.00</div>
-                                    </div>
-                                </li>
-                            </ul>
-
-                            <div class="summary-totals">
-                                <div class="row-line">
-                                    <span class="text-muted">Subtotal</span>
-                                    <span class="fw-bold">£53.00</span>
-                                </div>
-                                <div class="row-line">
-                                    <span class="text-muted">Delivery</span>
-                                    <span class="text-muted fst-italic">Calculated at next step</span>
-                                </div>
-                                <div class="row-line total">
-                                    <span>Total to pay</span>
-                                    <span>£53.00</span>
-                                </div>
-                            </div>
                         </div>
-                    </aside>
+
+                        <!-- Right Column: Summary -->
+                        <div class="col-lg-4">
+                            <aside class="order-summary-sidebar">
+                                <div class="summary-card">
+                                    <div class="d-flex justify-content-between align-items-center mb-4">
+                                        <h6 class="fw-bold m-0" style="font-size: 14px;">Order Summary</h6>
+                                        <a href="#" class="text-dark text-decoration-underline small">Edit</a>
+                                    </div>
+
+                                    <ul class="list-unstyled item-list m-0">
+                                        <li class="d-flex align-items-start gap-3">
+                                            <img src="./assets/img/product/images.avif" alt="Product"
+                                                class="product-img bg-light">
+                                            <div class="flex-grow-1">
+                                                <div class="fw-normal small mb-1">L'Occitane Shea (Karite) Foot Cream
+                                                    150ml</div>
+                                                <div class="text-muted small">Quantity: 1</div>
+                                                <div class="fw-bold small mt-1">£27.00</div>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex align-items-start gap-3">
+                                            <img src="./assets/img/product/images.avif" alt="Product"
+                                                class="product-img bg-light">
+                                            <div class="flex-grow-1">
+                                                <div class="fw-normal small mb-1">Luvia Daily The Everywhere Body Mist
+                                                    Starter Set
+                                                    Jasmine & Ylang Ylang 150ml</div>
+                                                <div class="text-muted small">Quantity: 1</div>
+                                                <div class="fw-bold small mt-1">£26.00</div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <div class="summary-totals">
+                                        <div class="row-line">
+                                            <span class="text-muted">Subtotal</span>
+                                            <span class="fw-bold">£53.00</span>
+                                        </div>
+                                        <div class="row-line">
+                                            <span class="text-muted">Delivery</span>
+                                            <span class="text-muted fst-italic">Calculated at next step</span>
+                                        </div>
+                                        <div class="row-line total">
+                                            <span>Total to pay</span>
+                                            <span>£53.00</span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
                 </div>
             </div>
+
         </div>
     </main>
 
