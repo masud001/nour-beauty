@@ -41,6 +41,33 @@
                         <!-- Left Column: Forms -->
                         <div class="col-lg-8">
 
+                            <div
+                                class="mb-4 p-4 login-signup-section bg-white border border-3 border-dark border-bottom-0 border-start-0 border-end-0">
+                                <!-- Login / Sign Up Header -->
+                                <div class="mb-3 bg-white border p-3 d-flex justify-content-between align-items-center">
+                                    <span class="text-secondary fw-medium">Login / Sign Up</span>
+                                    <button
+                                        class="btn border-0 bg-transparent text-secondary fw-bold small p-0 text-uppercase">Edit</button>
+                                </div>
+                                <!-- Selected Location Display -->
+                                <div class="mb-4 p-3 d-flex justify-content-between align-items-center rounded-1">
+                                    <div class="d-flex align-items-center gap-3">
+                                        <i class="fa-solid fa-location-dot fs-4 text-dark"></i>
+                                        <div>
+                                            <div class="fw-bold text-dark mb-0" id="userLocationTitle">Riyadh 12244
+                                            </div>
+                                            <div class="text-muted small mb-0" id="userLocationAddress">RHOB7731, 7731
+                                                Olaya St, 2117, Al Olaya,
+                                                Riyadh 12244, Saudi Arabia</div>
+                                        </div>
+                                    </div>
+                                    <button
+                                        class="btn border-0 bg-transparent text-secondary fw-normal small p-0 text-uppercase"
+                                        data-bs-toggle="modal" data-bs-target="#mapLocationModal">Change
+                                    </button>
+                                </div>
+                            </div>
+
                             <!-- 1. Delivery Address -->
                             <div
                                 class="mb-4 delivery-address-section bg-white p-4 border border-3 border-dark border-bottom-0 border-start-0 border-end-0">
@@ -297,6 +324,78 @@
 
         </div>
     </main>
+
+    <!-- Leaflet Map Modal -->
+    <div class="modal fade" id="mapLocationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="mapLocationModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content rounded-3">
+                <div class="modal-header border-0 pb-3">
+                    <h1 class="modal-title fw-bold text-uppercase" style="font-size: 18px; letter-spacing: 0.5px;"
+                        id="mapLocationModalLabel">
+                        Confirm Location
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0">
+                    <!-- Map Container with Search Bar Overlay -->
+                    <div class="position-relative" style="height: 400px;">
+                        <!-- Search Bar Overlay -->
+                        <div class="position-absolute w-100 px-3 pt-3" style="z-index: 1000;">
+                            <div class="input-group shadow-sm rounded-3 overflow-hidden bg-white">
+                                <span class="input-group-text bg-white border-0 ps-3">
+                                    <i class="fa-solid fa-magnifying-glass text-muted"></i>
+                                </span>
+                                <input type="text" id="mapSearchInput"
+                                    class="form-control border-0 fw-light shadow-none" placeholder="Search location..."
+                                    style="font-size: 15px; letter-spacing: 0.5px; height: 50px;" />
+                                <button class="btn btn-white border-0 bg-white pe-3" type="button" id="searchButton">
+                                    <span class="visually-hidden">Search</span>
+                                </button>
+                            </div>
+                            <div id="searchResults" class="list-group mt-1 shadow-sm d-none"
+                                style="max-height: 200px; overflow-y: auto;"></div>
+                        </div>
+
+                        <!-- Leaflet Map Container -->
+                        <div id="leafletMap" style="width: 100%; height: 400px; z-index: 1;"></div>
+
+                        <!-- Address Display Overlay -->
+                        <div class="position-absolute w-100 px-3 pb-3" style="bottom: 0; z-index: 1000;">
+                            <div class="bg-white rounded-3 shadow-sm px-4 py-3">
+                                <div class="d-flex align-items-start gap-3">
+                                    <i class="fa-solid fa-location-dot text-danger fs-5 mt-1" style="opacity: 0.7;"></i>
+                                    <p class="mb-0 fw-normal" style="color: #4a4a4a; font-size: 15px; line-height: 1.6;"
+                                        id="selectedAddress">
+                                        Drag marker or search to select location...
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Confirm Button -->
+                <div class="modal-footer border-0 pt-0 pb-4 px-4">
+                    <button type="button" class="btn btn-dark w-100 py-3 text-uppercase fw-bold rounded-3"
+                        style="letter-spacing: 1px; font-size: 14px;" id="confirmLocationBtn">
+                        Confirm Address
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Leaflet CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+        integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+
+    <!-- Leaflet JS -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+        integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+
+    <!-- Map Logic -->
+    <script type="module" src="./assets/js/map-handler.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
