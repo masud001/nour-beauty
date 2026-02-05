@@ -2,22 +2,13 @@
 
 This document provides recommendations for image dimensions and aspect ratios across the Nour Beauty website to ensure optimal display on Mobile, Tablet, and Desktop devices.
 
-## 1. Homepage & General Headers
-
-| Section | Image Type | Aspect Ratio | Desktop Size (px) | Tablet Size (px) | Mobile Size (px) |
-|---------|------------|--------------|-------------------|------------------|------------------|
-| **Hero Banner** | Main Slider/Banner | 16:9 (Desktop)<br>1:1 (Mobile/Tablet) | 1920 x 1080 | 1024 x 1024 | 800 x 800 |
-| **Category Icons** | Circle Thumbnails | 1:1 | 200 x 200 | 150 x 150 | 100 x 100 |
-| **Section Banners** | Full Width Strip | Variable | 1920 x 400 | 1024 x 300 | 600 x 300 |
-
-
 
 ## 1.1 Homepage V2 (Alternative Layout)
 | Section | Image Type | Aspect Ratio | Desktop Size (px) | Tablet Size (px) | Mobile Size (px) |
 |---------|------------|--------------|-------------------|------------------|------------------|
 | **Category Slider**| Circular Thumbnail | 1:1 | 80 x 80 | 80 x 80 | 60 x 60 |
 | **Feature Card** | Background Image | 5:3 | 940 x 565 | 700 x 420 | 600 x 360 |
-| **Countdown** | Card Background | Portrait (Cover) | 600 x 800 | 500 x 700 | 500 x 500 |
+| **Countdown** | Card Background | Portrait (Cover) | 600 x 800 | 500 x 700 | 351 x 500 |
 | **Trust Grid** | Category Tile | 1:1 | 100 x 100 | 100 x 100 | 80 x 80 |
 | **Brands** | Logo Cell | 2:1 | 240 x 120 | 200 x 100 | 160 x 80 |
 
