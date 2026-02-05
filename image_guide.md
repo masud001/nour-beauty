@@ -11,6 +11,7 @@ This document provides recommendations for image dimensions and aspect ratios ac
 | **Countdown** | Card Background | Portrait (Cover) | 600 x 800 | 500 x 700 | 351 x 500 |
 | **Trust Grid** | Category Tile | 1:1 | 100 x 100 | 100 x 100 | 80 x 80 |
 | **Brands** | Logo Cell | 2:1 | 240 x 120 | 200 x 100 | 160 x 80 |
+| **Blog Section** | Post Thumbnail | 7:4 | 350 x 200 | 350 x 200 | 350 x 200 |
 
 ## 2. Shop & Category Pages
 | Section | Image Type | Aspect Ratio | Desktop Size (px) | Tablet Size (px) | Mobile Size (px) |
