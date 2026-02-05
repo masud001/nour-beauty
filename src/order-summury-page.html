@@ -38,235 +38,397 @@
             <div class="row">
                 <div class=" offset-lg-1 col-lg-10">
                     <div class="row g-5">
-                        <!-- Left Column: Forms -->
+                        <!-- Left Column: Checkout Steps -->
                         <div class="col-lg-8">
 
-                            <div
-                                class="mb-4 p-4 login-signup-section bg-white border border-3 border-dark border-bottom-0 border-start-0 border-end-0">
-                                <!-- Login / Sign Up Header -->
-                                <div class="mb-3 bg-white border p-3 d-flex justify-content-between align-items-center">
+                            <!-- Step 1: Login / Sign Up -->
+                            <div id="step-login" class="mb-4 bg-white">
+                                <!-- Active View -->
+                                <div id="login-active" class="p-4">
+                                    <h5 class="mb-4 fw-bold">Login / Sign Up</h5>
+                                    <div class="d-flex gap-3">
+                                        <button class="btn btn-dark rounded-0 px-5 py-3 fw-bold flex-grow-1"
+                                            id="btn-signin">
+                                            SIGN IN <i class="fa-solid fa-lock ms-2"></i>
+                                        </button>
+                                        <button class="btn btn-outline-dark rounded-0 px-5 py-3 fw-bold flex-grow-1"
+                                            id="btn-guest">
+                                            CONTINUE AS GUEST
+                                        </button>
+                                    </div>
+                                </div>
+                                <!-- Completed View (Hidden) -->
+                                <div id="login-completed"
+                                    class="d-none border p-3 d-flex justify-content-between align-items-center">
                                     <span class="text-secondary fw-medium">Login / Sign Up</span>
                                     <button
-                                        class="btn border-0 bg-transparent text-secondary fw-bold small p-0 text-uppercase">Edit</button>
-                                </div>
-                                <!-- Selected Location Display -->
-                                <div class="mb-4 p-3 d-flex justify-content-between align-items-center rounded-1">
-                                    <div class="d-flex align-items-center gap-3">
-                                        <i class="fa-solid fa-location-dot fs-4 text-dark"></i>
-                                        <div>
-                                            <div class="fw-bold text-dark mb-0" id="userLocationTitle">Riyadh 12244
-                                            </div>
-                                            <div class="text-muted small mb-0" id="userLocationAddress">RHOB7731, 7731
-                                                Olaya St, 2117, Al Olaya,
-                                                Riyadh 12244, Saudi Arabia</div>
-                                        </div>
-                                    </div>
-                                    <button
-                                        class="btn border-0 bg-transparent text-secondary fw-normal small p-0 text-uppercase"
-                                        data-bs-toggle="modal" data-bs-target="#mapLocationModal">Change
-                                    </button>
+                                        class="btn border-0 bg-transparent text-secondary fw-bold small p-0 text-uppercase"
+                                        id="btn-edit-login">EDIT</button>
                                 </div>
                             </div>
 
-                            <!-- 1. Delivery Address -->
-                            <div
-                                class="mb-4 delivery-address-section bg-white p-4 border border-3 border-dark border-bottom-0 border-start-0 border-end-0">
-                                <h5 class="checkout-section-title mb-3">1. Delivery Address</h5>
-                                <form class="row gy-3">
-                                    <div class="col-12">
-                                        <label class="form-label small checkout-form-label">*Country/Region</label>
-                                        <select class="form-select">
-                                            <option selected>Malaysia</option>
-                                            <option>United Kingdom</option>
-                                            <option>United States</option>
-                                        </select>
-                                    </div>
-                                    <div class="col-12">
-                                        <label class="form-label small checkout-form-label">*Full Name</label>
-                                        <input type="text" class="form-control" value="MD Masudur Rahman" />
-                                    </div>
-                                    <div class="col-12">
-                                        <label class="form-label small checkout-form-label">*Post Code/Zip</label>
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-12">
-                                        <label class="form-label small checkout-form-label">Company Name</label>
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-12">
-                                        <label class="form-label small checkout-form-label">*House Name/Number</label>
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-12">
-                                        <label class="form-label small checkout-form-label">*Address 1</label>
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-12">
-                                        <label class="form-label small checkout-form-label">Address 2</label>
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-12">
-                                        <label class="form-label small checkout-form-label">*Town/City</label>
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-12">
-                                        <label class="form-label small checkout-form-label">County</label>
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-12">
-                                        <label class="form-label small checkout-form-label">Contact Number</label>
-                                        <input type="text" class="form-control" />
-                                    </div>
-                                    <div class="col-12">
-                                        <a href="#" class="text-dark text-decoration-underline small">Why do we need
-                                            your
-                                            number?</a>
-                                    </div>
-                                </form>
-                            </div>
+                            <!-- location summury  here -->
 
-                            <!-- 2. Select Delivery Option -->
-                            <div class="mb-4 delivery-option-section bg-white p-4">
-                                <h5 class="checkout-section-title mb-3">2. Select Delivery Option</h5>
-                                <div class="delivery-option-box p-3 d-flex align-items-center">
-                                    <i class="fa-solid fa-circle-info me-2"></i>
-                                    <span class="small fw-medium">Please enter your address so we can calculate your
-                                        delivery
-                                        options.</span>
+                            <!-- Location Summary Box (Hidden Initially) -->
+                            <div id="location-summary"
+                                class="d-none mb-4 p-3 d-flex justify-content-between align-items-center bg-white border rounded-1">
+                                <div class="d-flex align-items-center gap-3">
+                                    <i class="fa-solid fa-location-dot fs-4 text-dark"></i>
+                                    <div>
+                                        <div class="fw-bold text-dark mb-0" id="userLocationTitle">Riyadh 12244</div>
+                                        <div class="text-muted small mb-0" id="userLocationAddress">RHOB7731, 7731 Olaya
+                                            St...</div>
+                                    </div>
                                 </div>
+                                <button
+                                    class="btn border-0 bg-transparent text-secondary fw-normal small p-0 text-uppercase"
+                                    id="btn-change-location">CHANGE</button>
                             </div>
 
-                            <!-- 3. Select Payment Method -->
-                            <div class="mb-4 payment-method-section bg-white p-4">
-                                <h5 class="checkout-section-title mb-3">3. Select Payment Method</h5>
-                                <div class="payment-summary-box position-relative">
-                                    <div class="payment-checkmark position-absolute">
-                                        <i class="fa-solid fa-circle-check"></i>
-                                    </div>
-                                    <div class="mb-4">
-                                        <div class="fw-bold mb-3" style="font-size: 1.1rem;">Credit/Debit Card</div>
-                                        <div class="payment-icons d-flex gap-2 flex-wrap">
-                                            <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png"
-                                                alt="Visa">
-                                            <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
-                                                alt="Mastercard">
-                                            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
-                                                alt="Maestro">
-                                            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg"
-                                                alt="Amex">
-                                            <img src="https://logos-world.net/wp-content/uploads/2020/11/JCB-Logo.png"
-                                                alt="JCB">
-                                        </div>
+                            <!-- Step 2: Shipping Options -->
+                            <div id="step-shipping" class="mb-4 bg-white opacity-50">
+                                <div class="border p-3" id="shipping-header">
+                                    <h5 class="mb-0 text-muted fw-bold">Shipping Options</h5>
+                                </div>
+
+                                <div id="shipping-content" class="d-none">
+                                    <!-- Add Address Button View -->
+                                    <div id="shipping-initial" class="p-4 border border-top-0">
+                                        <button class="btn btn-dark rounded-0 px-4 py-2 fw-bold text-uppercase"
+                                            id="btn-add-address">
+                                            Add Address
+                                        </button>
                                     </div>
 
-                                    <form class="row gy-3">
-                                        <div class="col-12">
-                                            <label class="form-label checkout-form-label">*Card Number</label>
-                                            <input type="text" class="form-control" />
-                                        </div>
-                                        <div class="col-12">
-                                            <label class="form-label checkout-form-label">*Name on card</label>
-                                            <input type="text" class="form-control" value="MD Masudur Rahman" />
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label class="form-label checkout-form-label">*Expiry Date</label>
-                                            <div class="d-flex gap-2">
-                                                <select class="form-select">
-                                                    <option selected>Month</option>
-                                                    <option>01</option>
-                                                    <option>02</option>
-                                                    <option>03</option>
-                                                    <option>04</option>
-                                                    <option>05</option>
-                                                    <option>06</option>
-                                                    <option>07</option>
-                                                    <option>08</option>
-                                                    <option>09</option>
-                                                    <option>10</option>
-                                                    <option>11</option>
-                                                    <option>12</option>
-                                                </select>
-                                                <select class="form-select">
-                                                    <option selected>Year</option>
-                                                    <option>2026</option>
-                                                    <option>2027</option>
-                                                    <option>2028</option>
-                                                    <option>2029</option>
-                                                    <option>2030</option>
+                                    <!-- Address Form View (Hidden) -->
+                                    <div id="shipping-form-container" class="d-none p-4 border border-top-0">
+                                        <h5 class="checkout-section-title mb-3">1. Delivery Address</h5>
+                                        <form class="row gy-3">
+                                            <div class="col-12">
+                                                <label
+                                                    class="form-label small checkout-form-label">*Country/Region</label>
+                                                <select class="form-select rounded-0">
+                                                    <option selected>Malaysia</option>
+                                                    <option>United Kingdom</option>
+                                                    <option>United States</option>
                                                 </select>
                                             </div>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <label class="form-label checkout-form-label">*Security Code (CV2)</label>
-                                            <div class="input-group">
-                                                <input type="text" class="form-control border-end-0" />
-                                                <span class="input-group-text bg-white border-start-0"><i
-                                                        class="fa-regular fa-circle-question text-muted"></i></span>
+                                            <div class="col-12">
+                                                <label class="form-label small checkout-form-label">*Full Name</label>
+                                                <input type="text" class="form-control rounded-0"
+                                                    value="MD Masudur Rahman" />
                                             </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="form-check mt-2">
-                                                <input class="form-check-input" type="checkbox" id="sameAddress"
-                                                    checked>
-                                                <label class="form-check-label" for="sameAddress">
-                                                    Use my delivery address as my cardholder address
-                                                </label>
+                                            <div class="col-12">
+                                                <label class="form-label small checkout-form-label">*Post
+                                                    Code/Zip</label>
+                                                <input type="text" class="form-control rounded-0" />
                                             </div>
-                                        </div>
-                                    </form>
-                                </div>
-
-                                <div class="mt-3 alt-payment-wrapper border border-1">
-                                    <button
-                                        class="btn btn-link text-decoration-none text-dark w-100 p-3 d-flex justify-content-between align-items-center alt-payment-btn border-0"
-                                        type="button" data-bs-toggle="collapse" data-bs-target="#altPayments">
-                                        <span class="fw-semibold">Use a different payment method</span>
-                                        <i class="fa-solid fa-chevron-down"></i>
-                                    </button>
-                                    <div class="collapse" id="altPayments">
-                                        <div class="alt-payment-content p-4">
-                                            <hr class="mb-3">
-
-                                            <div class="form-check alt-payment-option ms-4">
-                                                <input class="form-check-input" type="radio" name="altPaymentMethod"
-                                                    id="paypalOption">
-                                                <label class="form-check-label d-flex align-items-center"
-                                                    for="paypalOption">
-                                                    <img src="./assets/img/payments-methods/PayPal.svg" alt="PayPal"
-                                                        style="height: 24px; margin-left: 0.5rem;">
-                                                </label>
+                                            <div class="col-12">
+                                                <label class="form-label small checkout-form-label">Company Name</label>
+                                                <input type="text" class="form-control rounded-0" />
                                             </div>
-                                            <hr class="my-3">
-
-                                            <div class="form-check alt-payment-option ms-4">
-                                                <input class="form-check-input" type="radio" name="altPaymentMethod"
-                                                    id="gpayOption">
-                                                <label class="form-check-label d-flex align-items-center"
-                                                    for="gpayOption">
-                                                    <img src="./assets/img/payments-methods/Google_Pay_Logo.svg"
-                                                        alt="G Pay" style="height: 24px; margin-left: 0.5rem;">
-                                                </label>
+                                            <div class="col-12">
+                                                <label class="form-label small checkout-form-label">*House
+                                                    Name/Number</label>
+                                                <input type="text" class="form-control rounded-0" />
                                             </div>
-                                        </div>
+                                            <div class="col-12">
+                                                <label class="form-label small checkout-form-label">*Address 1</label>
+                                                <input type="text" class="form-control rounded-0" />
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label small checkout-form-label">Address 2</label>
+                                                <input type="text" class="form-control rounded-0" />
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label small checkout-form-label">*Town/City</label>
+                                                <input type="text" class="form-control rounded-0" />
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label small checkout-form-label">County</label>
+                                                <input type="text" class="form-control rounded-0" />
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label small checkout-form-label">Contact
+                                                    Number</label>
+                                                <input type="text" class="form-control rounded-0" />
+                                            </div>
+                                            <div class="col-12">
+                                                <a href="#" class="text-dark text-decoration-underline small">Why do we
+                                                    need your number?</a>
+                                            </div>
+                                            <div class="col-12 mt-4">
+                                                <button type="button" class="btn btn-dark rounded-0 px-4 py-2"
+                                                    id="btn-save-address">SAVE ADDRESS</button>
+                                            </div>
+                                        </form>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class=" bg-white p-4">
-                                <button class="btn btn-submit-order w-100 py-3">
-                                    Submit My Order
-                                </button>
-
+                            <!-- Step 3: Delivery Options -->
+                            <div id="step-delivery" class="mb-4 bg-white opacity-50">
+                                <div class="border p-3" id="delivery-header">
+                                    <h5 class="mb-0 text-muted fw-bold">Delivery Options</h5>
+                                </div>
+                                <div id="delivery-content" class="d-none p-4 border border-top-0">
+                                    <div class="delivery-option-box p-3 d-flex align-items-center bg-light">
+                                        <i class="fa-solid fa-circle-info me-2 text-primary"></i>
+                                        <span class="small fw-medium">Please enter your address so we can calculate your
+                                            delivery options.</span>
+                                    </div>
+                                </div>
                             </div>
-                            <div class=" bg-transparent p-4">
-                                <p class="text-center text-muted small" style="font-size: 0.75rem;">
-                                    By placing this order, you are confirming that you agree to our <a href="#"
-                                        class="text-dark text-decoration-underline">Terms and Conditions</a> and <a
-                                        href="#" class="text-dark text-decoration-underline">Privacy Policy</a>
-                                </p>
+
+                            <!-- Step 4: Payment Options -->
+                            <div id="step-payment" class="mb-4 bg-white opacity-50">
+                                <div class="border p-3" id="payment-header">
+                                    <h5 class="mb-0 text-muted fw-bold">Payment Options</h5>
+                                </div>
+                                <div id="payment-content" class="d-none p-4 border border-top-0">
+                                    <div class="payment-summary-box position-relative">
+                                        <div class="payment-checkmark position-absolute">
+                                            <i class="fa-solid fa-circle-check"></i>
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="fw-bold mb-3" style="font-size: 1.1rem;">Credit/Debit Card</div>
+                                            <div class="payment-icons d-flex gap-2 flex-wrap">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png"
+                                                    alt="Visa" height="24">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Mastercard-logo.png"
+                                                    alt="Mastercard" height="24">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+                                                    alt="Maestro" height="24">
+                                                <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg"
+                                                    alt="Amex" height="24">
+                                                <img src="https://logos-world.net/wp-content/uploads/2020/11/JCB-Logo.png"
+                                                    alt="JCB" height="24">
+                                            </div>
+                                        </div>
+
+                                        <form class="row gy-3">
+                                            <div class="col-12">
+                                                <label class="form-label checkout-form-label">*Card Number</label>
+                                                <input type="text" class="form-control rounded-0" />
+                                            </div>
+                                            <div class="col-12">
+                                                <label class="form-label checkout-form-label">*Name on card</label>
+                                                <input type="text" class="form-control rounded-0"
+                                                    value="MD Masudur Rahman" />
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label checkout-form-label">*Expiry Date</label>
+                                                <div class="d-flex gap-2">
+                                                    <select class="form-select rounded-0">
+                                                        <option selected>Month</option>
+                                                        <option>01</option>
+                                                        <option>02</option>
+                                                        <option>03</option>
+                                                        <option>04</option>
+                                                        <option>05</option>
+                                                        <option>06</option>
+                                                        <option>07</option>
+                                                        <option>08</option>
+                                                        <option>09</option>
+                                                        <option>10</option>
+                                                        <option>11</option>
+                                                        <option>12</option>
+                                                    </select>
+                                                    <select class="form-select rounded-0">
+                                                        <option selected>Year</option>
+                                                        <option>2026</option>
+                                                        <option>2027</option>
+                                                        <option>2028</option>
+                                                        <option>2029</option>
+                                                        <option>2030</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <label class="form-label checkout-form-label">*Security Code
+                                                    (CV2)</label>
+                                                <div class="input-group">
+                                                    <input type="text" class="form-control border-end-0 rounded-0" />
+                                                    <span class="input-group-text bg-white border-start-0 rounded-0"><i
+                                                            class="fa-regular fa-circle-question text-muted"></i></span>
+                                                </div>
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="form-check mt-2">
+                                                    <input class="form-check-input" type="checkbox" id="sameAddress"
+                                                        checked>
+                                                    <label class="form-check-label" for="sameAddress">
+                                                        Use my delivery address as my cardholder address
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </form>
+                                    </div>
+
+                                    <div class="mt-3 alt-payment-wrapper border border-1">
+                                        <button
+                                            class="btn btn-link text-decoration-none text-dark w-100 p-3 d-flex justify-content-between align-items-center alt-payment-btn border-0"
+                                            type="button" data-bs-toggle="collapse" data-bs-target="#altPayments">
+                                            <span class="fw-semibold">Use a different payment method</span>
+                                            <i class="fa-solid fa-chevron-down"></i>
+                                        </button>
+                                        <div class="collapse" id="altPayments">
+                                            <div class="alt-payment-content p-4">
+                                                <hr class="mb-3">
+                                                <div class="form-check alt-payment-option ms-4">
+                                                    <input class="form-check-input" type="radio" name="altPaymentMethod"
+                                                        id="paypalOption">
+                                                    <label class="form-check-label d-flex align-items-center"
+                                                        for="paypalOption">
+                                                        <img src="./assets/img/payments-methods/PayPal.svg" alt="PayPal"
+                                                            style="height: 24px; margin-left: 0.5rem;">
+                                                    </label>
+                                                </div>
+                                                <hr class="my-3">
+                                                <div class="form-check alt-payment-option ms-4">
+                                                    <input class="form-check-input" type="radio" name="altPaymentMethod"
+                                                        id="gpayOption">
+                                                    <label class="form-check-label d-flex align-items-center"
+                                                        for="gpayOption">
+                                                        <img src="./assets/img/payments-methods/Google_Pay_Logo.svg"
+                                                            alt="G Pay" style="height: 24px; margin-left: 0.5rem;">
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="mt-4">
+                                        <button
+                                            class="btn btn-submit-order w-100 py-3 rounded-0 bg-black text-white fw-bold">
+                                            <i class="fa-solid fa-lock me-2"></i> Submit My Order
+                                        </button>
+                                    </div>
+                                    <div class="bg-transparent pt-3">
+                                        <p class="text-center text-muted small" style="font-size: 0.75rem;">
+                                            By placing this order, you are confirming that you agree to our <a href="#"
+                                                class="text-dark text-decoration-underline">Terms and Conditions</a> and
+                                            <a href="#" class="text-dark text-decoration-underline">Privacy Policy</a>
+                                        </p>
+                                    </div>
+                                </div>
                             </div>
 
                         </div>
+
+                        <!-- Hidden elements to prevent map-handler.js alert -->
+                        <div class="d-none">
+                            <div id="userLocationTitle"></div>
+                            <div id="userLocationAddress"></div>
+                        </div>
+
+                        <script>
+                            document.addEventListener('DOMContentLoaded', function () {
+                                // Steps
+                                const stepLogin = document.getElementById('step-login');
+                                const stepShipping = document.getElementById('step-shipping');
+                                const stepDelivery = document.getElementById('step-delivery');
+                                const stepPayment = document.getElementById('step-payment');
+
+                                // Login Elements
+                                const loginActive = document.getElementById('login-active');
+                                const loginCompleted = document.getElementById('login-completed');
+                                const btnSignin = document.getElementById('btn-signin');
+                                const btnGuest = document.getElementById('btn-guest');
+                                const btnEditLogin = document.getElementById('btn-edit-login');
+
+                                // Shipping Elements
+                                const shippingContent = document.getElementById('shipping-content');
+                                const shippingInitial = document.getElementById('shipping-initial');
+                                const shippingFormContainer = document.getElementById('shipping-form-container');
+                                const locationSummary = document.getElementById('location-summary');
+                                const btnAddAddress = document.getElementById('btn-add-address');
+                                const btnSaveAddress = document.getElementById('btn-save-address');
+                                const btnChangeLocation = document.getElementById('btn-change-location');
+
+                                // Delivery & Payment Elements
+                                const deliveryContent = document.getElementById('delivery-content');
+                                const paymentContent = document.getElementById('payment-content');
+
+                                function completeLogin() {
+                                    // Switch Login View
+                                    loginActive.classList.add('d-none');
+                                    loginCompleted.classList.remove('d-none');
+
+                                    // Activate Shipping Step
+                                    stepShipping.classList.remove('opacity-50');
+                                    stepShipping.querySelector('h5').classList.remove('text-muted');
+                                    stepShipping.querySelector('h5').classList.add('text-dark');
+                                    shippingContent.classList.remove('d-none');
+                                }
+
+                                function resetLogin() {
+                                    // Switch Login View Back
+                                    loginActive.classList.remove('d-none');
+                                    loginCompleted.classList.add('d-none');
+
+                                    // Deactivate Shipping Step
+                                    stepShipping.classList.add('opacity-50');
+                                    stepShipping.querySelector('h5').classList.add('text-muted');
+                                    stepShipping.querySelector('h5').classList.remove('text-dark');
+                                    shippingContent.classList.add('d-none');
+
+                                    // Reset inner shipping state
+                                    shippingInitial.classList.remove('d-none');
+                                    shippingFormContainer.classList.add('d-none');
+                                    locationSummary.classList.add('d-none');
+
+                                    // Deactivate subsequent steps if they were active
+                                    stepDelivery.classList.add('opacity-50');
+                                    stepDelivery.querySelector('h5').classList.add('text-muted');
+                                    deliveryContent.classList.add('d-none');
+
+                                    stepPayment.classList.add('opacity-50');
+                                    stepPayment.querySelector('h5').classList.add('text-muted');
+                                    paymentContent.classList.add('d-none');
+                                }
+
+                                btnSignin.addEventListener('click', completeLogin);
+                                btnGuest.addEventListener('click', completeLogin);
+                                btnEditLogin.addEventListener('click', resetLogin);
+
+                                btnAddAddress.addEventListener('click', function () {
+                                    const mapModal = new bootstrap.Modal(document.getElementById('mapLocationModal'));
+                                    mapModal.show();
+                                });
+
+                                // Handle confirmation from modal to switch views
+                                const btnConfirmLocation = document.getElementById('confirmLocationBtn');
+                                if (btnConfirmLocation) {
+                                    btnConfirmLocation.addEventListener('click', function () {
+                                        shippingInitial.classList.add('d-none');
+                                        shippingFormContainer.classList.remove('d-none');
+                                        locationSummary.classList.remove('d-none');
+                                    });
+                                }
+
+                                if (btnChangeLocation) {
+                                    btnChangeLocation.addEventListener('click', function () {
+                                        const mapModal = new bootstrap.Modal(document.getElementById('mapLocationModal'));
+                                        mapModal.show();
+                                    });
+                                }
+
+                                btnSaveAddress.addEventListener('click', function () {
+                                    // Activate Delivery
+                                    stepDelivery.classList.remove('opacity-50');
+                                    stepDelivery.querySelector('h5').classList.remove('text-muted');
+                                    stepDelivery.querySelector('h5').classList.add('text-dark');
+                                    deliveryContent.classList.remove('d-none');
+
+                                    // Activate Payment
+                                    stepPayment.classList.remove('opacity-50');
+                                    stepPayment.querySelector('h5').classList.remove('text-muted');
+                                    stepPayment.querySelector('h5').classList.add('text-dark');
+                                    paymentContent.classList.remove('d-none');
+                                });
+                            });
+                        </script>
 
                         <!-- Right Column: Summary -->
                         <div class="col-lg-4">
