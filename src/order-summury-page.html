@@ -51,10 +51,11 @@
                                             id="btn-signin">
                                             SIGN IN <i class="fa-solid fa-lock ms-2"></i>
                                         </button>
-                                        <button class="btn btn-outline-dark rounded-0 px-5 py-3 fw-bold flex-grow-1"
+                                        <a href="index-page-2.html"
+                                            class="btn btn-outline-dark rounded-0 px-5 py-3 fw-bold flex-grow-1"
                                             id="btn-guest">
                                             CONTINUE AS GUEST
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                                 <!-- Completed View (Hidden) -->
@@ -322,113 +323,7 @@
                             <div id="userLocationAddress"></div>
                         </div>
 
-                        <script>
-                            document.addEventListener('DOMContentLoaded', function () {
-                                // Steps
-                                const stepLogin = document.getElementById('step-login');
-                                const stepShipping = document.getElementById('step-shipping');
-                                const stepDelivery = document.getElementById('step-delivery');
-                                const stepPayment = document.getElementById('step-payment');
 
-                                // Login Elements
-                                const loginActive = document.getElementById('login-active');
-                                const loginCompleted = document.getElementById('login-completed');
-                                const btnSignin = document.getElementById('btn-signin');
-                                const btnGuest = document.getElementById('btn-guest');
-                                const btnEditLogin = document.getElementById('btn-edit-login');
-
-                                // Shipping Elements
-                                const shippingContent = document.getElementById('shipping-content');
-                                const shippingInitial = document.getElementById('shipping-initial');
-                                const shippingFormContainer = document.getElementById('shipping-form-container');
-                                const locationSummary = document.getElementById('location-summary');
-                                const btnAddAddress = document.getElementById('btn-add-address');
-                                const btnSaveAddress = document.getElementById('btn-save-address');
-                                const btnChangeLocation = document.getElementById('btn-change-location');
-
-                                // Delivery & Payment Elements
-                                const deliveryContent = document.getElementById('delivery-content');
-                                const paymentContent = document.getElementById('payment-content');
-
-                                function completeLogin() {
-                                    // Switch Login View
-                                    loginActive.classList.add('d-none');
-                                    loginCompleted.classList.remove('d-none');
-
-                                    // Activate Shipping Step
-                                    stepShipping.classList.remove('opacity-50');
-                                    stepShipping.querySelector('h5').classList.remove('text-muted');
-                                    stepShipping.querySelector('h5').classList.add('text-dark');
-                                    shippingContent.classList.remove('d-none');
-                                }
-
-                                function resetLogin() {
-                                    // Switch Login View Back
-                                    loginActive.classList.remove('d-none');
-                                    loginCompleted.classList.add('d-none');
-
-                                    // Deactivate Shipping Step
-                                    stepShipping.classList.add('opacity-50');
-                                    stepShipping.querySelector('h5').classList.add('text-muted');
-                                    stepShipping.querySelector('h5').classList.remove('text-dark');
-                                    shippingContent.classList.add('d-none');
-
-                                    // Reset inner shipping state
-                                    shippingInitial.classList.remove('d-none');
-                                    shippingFormContainer.classList.add('d-none');
-                                    locationSummary.classList.add('d-none');
-
-                                    // Deactivate subsequent steps if they were active
-                                    stepDelivery.classList.add('opacity-50');
-                                    stepDelivery.querySelector('h5').classList.add('text-muted');
-                                    deliveryContent.classList.add('d-none');
-
-                                    stepPayment.classList.add('opacity-50');
-                                    stepPayment.querySelector('h5').classList.add('text-muted');
-                                    paymentContent.classList.add('d-none');
-                                }
-
-                                btnSignin.addEventListener('click', completeLogin);
-                                btnGuest.addEventListener('click', completeLogin);
-                                btnEditLogin.addEventListener('click', resetLogin);
-
-                                btnAddAddress.addEventListener('click', function () {
-                                    const mapModal = new bootstrap.Modal(document.getElementById('mapLocationModal'));
-                                    mapModal.show();
-                                });
-
-                                // Handle confirmation from modal to switch views
-                                const btnConfirmLocation = document.getElementById('confirmLocationBtn');
-                                if (btnConfirmLocation) {
-                                    btnConfirmLocation.addEventListener('click', function () {
-                                        shippingInitial.classList.add('d-none');
-                                        shippingFormContainer.classList.remove('d-none');
-                                        locationSummary.classList.remove('d-none');
-                                    });
-                                }
-
-                                if (btnChangeLocation) {
-                                    btnChangeLocation.addEventListener('click', function () {
-                                        const mapModal = new bootstrap.Modal(document.getElementById('mapLocationModal'));
-                                        mapModal.show();
-                                    });
-                                }
-
-                                btnSaveAddress.addEventListener('click', function () {
-                                    // Activate Delivery
-                                    stepDelivery.classList.remove('opacity-50');
-                                    stepDelivery.querySelector('h5').classList.remove('text-muted');
-                                    stepDelivery.querySelector('h5').classList.add('text-dark');
-                                    deliveryContent.classList.remove('d-none');
-
-                                    // Activate Payment
-                                    stepPayment.classList.remove('opacity-50');
-                                    stepPayment.querySelector('h5').classList.remove('text-muted');
-                                    stepPayment.querySelector('h5').classList.add('text-dark');
-                                    paymentContent.classList.remove('d-none');
-                                });
-                            });
-                        </script>
 
                         <!-- Right Column: Summary -->
                         <div class="col-lg-4">
@@ -547,6 +442,118 @@
             </div>
         </div>
     </div>
+
+
+
+
+    login / signup
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Steps
+            const stepLogin = document.getElementById('step-login');
+            const stepShipping = document.getElementById('step-shipping');
+            const stepDelivery = document.getElementById('step-delivery');
+            const stepPayment = document.getElementById('step-payment');
+
+            // Login Elements
+            const loginActive = document.getElementById('login-active');
+            const loginCompleted = document.getElementById('login-completed');
+            const btnSignin = document.getElementById('btn-signin');
+            const btnGuest = document.getElementById('btn-guest');
+            const btnEditLogin = document.getElementById('btn-edit-login');
+
+            // Shipping Elements
+            const shippingContent = document.getElementById('shipping-content');
+            const shippingInitial = document.getElementById('shipping-initial');
+            const shippingFormContainer = document.getElementById('shipping-form-container');
+            const locationSummary = document.getElementById('location-summary');
+            const btnAddAddress = document.getElementById('btn-add-address');
+            const btnSaveAddress = document.getElementById('btn-save-address');
+            const btnChangeLocation = document.getElementById('btn-change-location');
+
+            // Delivery & Payment Elements
+            const deliveryContent = document.getElementById('delivery-content');
+            const paymentContent = document.getElementById('payment-content');
+
+            function completeLogin() {
+                // Switch Login View
+                loginActive.classList.add('d-none');
+                loginCompleted.classList.remove('d-none');
+
+                // Activate Shipping Step
+                stepShipping.classList.remove('opacity-50');
+                stepShipping.querySelector('h5').classList.remove('text-muted');
+                stepShipping.querySelector('h5').classList.add('text-dark');
+                shippingContent.classList.remove('d-none');
+            }
+
+            function resetLogin() {
+                // Switch Login View Back
+                loginActive.classList.remove('d-none');
+                loginCompleted.classList.add('d-none');
+
+                // Deactivate Shipping Step
+                stepShipping.classList.add('opacity-50');
+                stepShipping.querySelector('h5').classList.add('text-muted');
+                stepShipping.querySelector('h5').classList.remove('text-dark');
+                shippingContent.classList.add('d-none');
+
+                // Reset inner shipping state
+                shippingInitial.classList.remove('d-none');
+                shippingFormContainer.classList.add('d-none');
+                locationSummary.classList.add('d-none');
+
+                // Deactivate subsequent steps if they were active
+                stepDelivery.classList.add('opacity-50');
+                stepDelivery.querySelector('h5').classList.add('text-muted');
+                deliveryContent.classList.add('d-none');
+
+                stepPayment.classList.add('opacity-50');
+                stepPayment.querySelector('h5').classList.add('text-muted');
+                paymentContent.classList.add('d-none');
+            }
+
+            btnSignin.addEventListener('click', completeLogin);
+            btnGuest.addEventListener('click', completeLogin);
+            btnEditLogin.addEventListener('click', resetLogin);
+
+            btnAddAddress.addEventListener('click', function () {
+                const mapModal = new bootstrap.Modal(document.getElementById('mapLocationModal'));
+                mapModal.show();
+            });
+
+            // Handle confirmation from modal to switch views
+            const btnConfirmLocation = document.getElementById('confirmLocationBtn');
+            if (btnConfirmLocation) {
+                btnConfirmLocation.addEventListener('click', function () {
+                    shippingInitial.classList.add('d-none');
+                    shippingFormContainer.classList.remove('d-none');
+                    locationSummary.classList.remove('d-none');
+                });
+            }
+
+            if (btnChangeLocation) {
+                btnChangeLocation.addEventListener('click', function () {
+                    const mapModal = new bootstrap.Modal(document.getElementById('mapLocationModal'));
+                    mapModal.show();
+                });
+            }
+
+            btnSaveAddress.addEventListener('click', function () {
+                // Activate Delivery
+                stepDelivery.classList.remove('opacity-50');
+                stepDelivery.querySelector('h5').classList.remove('text-muted');
+                stepDelivery.querySelector('h5').classList.add('text-dark');
+                deliveryContent.classList.remove('d-none');
+
+                // Activate Payment
+                stepPayment.classList.remove('opacity-50');
+                stepPayment.querySelector('h5').classList.remove('text-muted');
+                stepPayment.querySelector('h5').classList.add('text-dark');
+                paymentContent.classList.remove('d-none');
+            });
+        });
+    </script>
 
     <!-- Leaflet CSS -->
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
