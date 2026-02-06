@@ -34,6 +34,8 @@ This document provides recommendations for image dimensions and aspect ratios ac
 |---------|------------|--------------|-------------------|------------------|------------------|
 | **Listing** | Post Thumbnail (blog-thumb) | Variable (Cover) | 550 x 280 | 720 x 280 | 350 x 180 |
 | **Single Post** | Featured Image | 16:9 or 3:2 | 800 x 450 | 700 x 400 | 350 x 200 |
+| **Single Post Main** | Main Image (single-blog-thumb) | 3:2 | 570 x 380 | 360 x 240 | 350 x 250 |
+| **Related Posts** | Related Thumbnail (related-blog-thumb) | ~16:9 | 582 x 327 | 360 x 205 | 350 x 195 |
 | **Author** | Author Avatar | 1:1 | 150 x 150 | 100 x 100 | 80 x 80 |
 
 
