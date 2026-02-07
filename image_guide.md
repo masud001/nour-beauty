@@ -17,7 +17,7 @@ This document provides recommendations for image dimensions and aspect ratios ac
 ## 2. Shop & Category Pages
 | Section | Image Type | Aspect Ratio | Desktop Size (px) | Tablet Size (px) | Mobile Size (px) |
 |---------|------------|--------------|-------------------|------------------|------------------|
-| **Product Card** | Listing Image | ~1:1.23 (Portrait) | 350 x 430 | 300 x 370 | 170 x 210 |
+| **Product Card** | Listing Image | 1:1 (Portrait) | 347 x 347 | 347 x 347 | 347 x 347 |
 | **Banners** | Promo Banner | Variable | 1920 x 300 | 1024 x 250 | 600 x 200 |
 | **Sub-Category Slider** | Category Thumbnail | 1:1 | 350 x 350 | 350 x 350 | 350 x 350 |
 | **Concern Slider** | Concern Thumbnail | 1:1 | 350 x 350 | 350 x 350 | 350 x 350 |
