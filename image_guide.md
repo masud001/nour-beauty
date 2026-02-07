@@ -19,9 +19,9 @@ This document provides recommendations for image dimensions and aspect ratios ac
 |---------|------------|--------------|-------------------|------------------|------------------|
 | **Product Card** | Listing Image | 1:1 | 744 x 744 | 728 x 728 | 375 x 375 |
 | **Hero Banner** | Main Slider/Banner | 16:9 (Desktop) / 313:235 (Mobile) | 1920 x 1080 | 1024 x 1024 | 313 x 235 |
-| **Sub-Category Slider** | Category Thumbnail | 1:1 | 350 x 350 | 350 x 350 | 350 x 350 |
-| **Concern Slider** | Concern Thumbnail | 1:1 | 350 x 350 | 350 x 350 | 350 x 350 |
-| **Brand Slider** | Brand Card Image | 1:1 | 350 x 350 | 350 x 350 | 350 x 350 |
+| **Sub-Category Slider** | Category Thumbnail | 1:1 | 168 x 168 | 168 x 168 | 168 x 168 |
+| **Concern Slider** | Concern Thumbnail | 1:1 | 168 x 168 | 168 x 168 | 168 x 168 |
+| **Brand Slider** | Brand Card Image | 1:1 | 327 x 269 | 327 x 269 | 327 x 269 |
 
 ## 3. Product Details Page (PDP)
 | Section | Image Type | Aspect Ratio | Desktop Size (px) | Tablet Size (px) | Mobile Size (px) |
