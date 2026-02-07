@@ -6,6 +6,7 @@ This document provides recommendations for image dimensions and aspect ratios ac
 ## 1.1 Homepage V2 (Alternative Layout)
 | Section | Image Type | Aspect Ratio | Desktop Size (px) | Tablet Size (px) | Mobile Size (px) |
 |---------|------------|--------------|-------------------|------------------|------------------|
+| **Hero Banner** | Main Slider/Banner | 16:9 (Desktop) / 16:9 (Mobile) | 1920 x 1080 | 1024 x 1024 | 800 x 800 |
 | **Category Slider**| Circular Thumbnail | 1:1 | 80 x 80 | 80 x 80 | 60 x 60 |
 | **Feature Card** | Background Image | 5:3 | 940 x 565 | 700 x 420 | 600 x 360 |
 | **Countdown** | Card Background | Portrait (Cover) | 600 x 800 | 500 x 700 | 351 x 500 |
