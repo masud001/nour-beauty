@@ -12911,7 +12911,7 @@ textarea.form-control-lg {
 @media (max-width: 768px) {
   .home-slider .swiper-slide .slider-image figure,
   .home-slider .swiper-slide .slider-image picture {
-    aspect-ratio: 3/2;
+    aspect-ratio: 4/3;
   }
 }
 .home-slider .swiper-slide .slider-image img {
@@ -16425,12 +16425,6 @@ textarea.form-control-lg {
   width: 100%;
   overflow: hidden;
   aspect-ratio: 194/109;
-}
-@media screen and (min-width: 1440px) {
-  .related-blog-thumb {
-    max-width: 582px;
-    max-height: 327px;
-  }
 }
 .related-blog-thumb img {
   width: 100%;
