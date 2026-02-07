@@ -286,10 +286,13 @@
 
 .related-blog-thumb {
     width: 100%;
-    max-width: 582px;
-    max-height: 327px;
     overflow: hidden;
-    aspect-ratio: 582/327;
+    aspect-ratio: 194/109;
+
+    // @media screen and (min-width:1440px) {
+    //     max-width: 582px;
+    //     max-height: 327px;
+    // }
 
     img {
         width: 100%;

@@ -16423,10 +16423,14 @@ textarea.form-control-lg {
 
 .related-blog-thumb {
   width: 100%;
-  max-width: 582px;
-  max-height: 327px;
   overflow: hidden;
-  aspect-ratio: 582/327;
+  aspect-ratio: 194/109;
+}
+@media screen and (min-width: 1440px) {
+  .related-blog-thumb {
+    max-width: 582px;
+    max-height: 327px;
+  }
 }
 .related-blog-thumb img {
   width: 100%;
