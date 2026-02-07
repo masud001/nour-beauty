@@ -32,7 +32,7 @@ This document provides recommendations for image dimensions and aspect ratios ac
 | Section | Image Type | Aspect Ratio | Desktop Size (px) | Tablet Size (px) | Mobile Size (px) |
 |---------|------------|--------------|-------------------|------------------|------------------|
 | **Listing** | Post Thumbnail (blog-thumb) | 	194∶109 | 	710px × 399px  | 	710px × 399px | 	710px × 399px |
-| **Single Post** | Featured Image | 16:9 or 3:2 | 800 x 450 | 700 x 400 | 350 x 200 |
+| **Single Post** | Featured Image | 373∶298 | 1492px × 1192px | 1492px × 1192px | 1492px × 1192px |
 | **Author** | Author Avatar | 1:1 | 150 x 150 | 100 x 100 | 80 x 80 |
 
 
