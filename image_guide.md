@@ -17,7 +17,7 @@ This document provides recommendations for image dimensions and aspect ratios ac
 ## 2. Shop & Category Pages
 | Section | Image Type | Aspect Ratio | Desktop Size (px) | Tablet Size (px) | Mobile Size (px) |
 |---------|------------|--------------|-------------------|------------------|------------------|
-| **Product Card** | Listing Image | 1:1 | 347 x 347 | 347 x 347 | 347 x 347 |
+| **Product Card** | Listing Image | 1:1 | 744 x 744 | 728 x 728 | 375 x 375 |
 | **Banners** | Promo Banner | Variable | 1920 x 300 | 1024 x 250 | 600 x 200 |
 | **Sub-Category Slider** | Category Thumbnail | 1:1 | 350 x 350 | 350 x 350 | 350 x 350 |
 | **Concern Slider** | Concern Thumbnail | 1:1 | 350 x 350 | 350 x 350 | 350 x 350 |
@@ -26,9 +26,7 @@ This document provides recommendations for image dimensions and aspect ratios ac
 ## 3. Product Details Page (PDP)
 | Section | Image Type | Aspect Ratio | Desktop Size (px) | Tablet Size (px) | Mobile Size (px) |
 |---------|------------|--------------|-------------------|------------------|------------------|
-| **Main Gallery** | Main Product Image | ~1:1.23 (Portrait) | 600 x 740 | 500 x 615 | 350 x 430 |
-| **Thumbnail** | Gallery Thumbnails | 1:1 | 100 x 100 | 80 x 80 | 60 x 60 |
-| **Related Products** | "Frequently Bought" | ~1:1.23 | 150 x 185 | 120 x 150 | 100 x 123 |
+
 
 ## 4. Blog Pages
 | Section | Image Type | Aspect Ratio | Desktop Size (px) | Tablet Size (px) | Mobile Size (px) |
