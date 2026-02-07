@@ -12,7 +12,7 @@ This document provides recommendations for image dimensions and aspect ratios ac
 | **Countdown** | Card Background | Portrait (Cover) | 600 x 800 | 500 x 700 | 351 x 500 |
 | **Trust Grid** | Category Tile | 1:1 | 100 x 100 | 100 x 100 | 80 x 80 |
 | **Brands** | Logo Cell | 2:1 | 240 x 120 | 200 x 100 | 160 x 80 |
-| **Blog Section** | Post Thumbnail | 7:4 | 350 x 200 | 350 x 200 | 350 x 200 |
+| **Blog Section** | Post Thumbnail | 	500∶281 | 	500∶281 | 	500∶281 | 	500∶281 |
 
 ## 2. Shop & Category Pages
 | Section | Image Type | Aspect Ratio | Desktop Size (px) | Tablet Size (px) | Mobile Size (px) |
@@ -31,10 +31,8 @@ This document provides recommendations for image dimensions and aspect ratios ac
 ## 4. Blog Pages
 | Section | Image Type | Aspect Ratio | Desktop Size (px) | Tablet Size (px) | Mobile Size (px) |
 |---------|------------|--------------|-------------------|------------------|------------------|
-| **Listing** | Post Thumbnail (blog-thumb) | Variable (Cover) | 550 x 280 | 720 x 280 | 350 x 180 |
+| **Listing** | Post Thumbnail (blog-thumb) | 	194∶109 | 	710px × 399px  | 	710px × 399px | 	710px × 399px |
 | **Single Post** | Featured Image | 16:9 or 3:2 | 800 x 450 | 700 x 400 | 350 x 200 |
-| **Single Post Main** | Main Image (single-blog-thumb) | 3:2 | 570 x 380 | 360 x 240 | 350 x 250 |
-| **Related Posts** | Related Thumbnail (related-blog-thumb) | ~16:9 | 582 x 327 | 360 x 205 | 350 x 195 |
 | **Author** | Author Avatar | 1:1 | 150 x 150 | 100 x 100 | 80 x 80 |
 
 
