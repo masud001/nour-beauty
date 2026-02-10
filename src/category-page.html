@@ -1581,22 +1581,10 @@
 
 
   <!-- clear filter section start -->
-  <div class="active-filters-wrapper py-0">
+  <div class="active-filters-wrapper py-0" style="display: none;">
     <div class="container">
-      <div class="d-flex align-items-center flex-wrap gap-2">
-        <div class="filter-tag">
-          Exfoliators & Scrubs
-          <button type="button" class="btn-close-custom" aria-label="Remove filter">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </div>
-        <div class="filter-tag">
-          Eye Care
-          <button type="button" class="btn-close-custom" aria-label="Remove filter">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </div>
-        <a href="#" class="clear-all-btn">Clear All</a>
+      <div class="d-flex align-items-center flex-wrap gap-2" id="active-filters-container">
+        <!-- Filters will be injected here by filter-manager.js -->
       </div>
     </div>
   </div>
@@ -2613,6 +2601,7 @@
     });
   </script>
   <script src="./assets/js/wishlist-manager.js"></script>
+  <script src="./assets/js/filter-manager.js"></script>
 </body>
 
 </html>
