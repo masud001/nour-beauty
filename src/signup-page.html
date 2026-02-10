@@ -21,7 +21,7 @@
       <div class="row g-0">
         <!-- Left Column: Signup Form -->
         <div
-          class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center min-vh-100 bg-white order-2 order-md-1 py-5">
+          class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-start vh-100 bg-white order-2 order-md-1 py-5 overflow-auto">
           <div class="signup-form-wrapper w-100 p-4" style="max-width: 480px;">
 
             <!-- Logo -->
@@ -34,14 +34,14 @@
             <div class="mb-4">
               <p class="mb-3" style="font-size: 1rem;">Sign up with</p>
               <div class="row g-2">
-                <div class="col-6">
+                <div class="col-4">
                   <button type="button"
                     class="btn w-100 rounded-0 py-2 d-flex align-items-center justify-content-center text-white"
                     style="background-color: #3b5998; height: 50px;">
                     <i class="fa-brands fa-facebook-f me-2"></i> Facebook
                   </button>
                 </div>
-                <div class="col-6">
+                <div class="col-4">
                   <button type="button"
                     class="btn w-100 rounded-0 border py-2 d-flex align-items-center justify-content-center bg-white"
                     style="height: 50px;">
@@ -62,6 +62,13 @@
                           fill="#EA4335" />
                       </g>
                     </svg> Google
+                  </button>
+                </div>
+                <div class="col-4">
+                  <button type="button"
+                    class="btn w-100 rounded-0 border py-2 d-flex align-items-center justify-content-center bg-white"
+                    style="height: 50px;">
+                    <i class="fa-solid fa-phone me-2"></i> Phone
                   </button>
                 </div>
               </div>
@@ -205,7 +212,7 @@
 
         <!-- Right Column: Image -->
         <div
-          class="col-12 col-md-6 d-none d-md-block min-vh-100 p-0 order-1 order-md-2 position-relative overflow-hidden">
+          class="col-12 col-md-6 d-none d-md-block vh-100 p-0 order-1 order-md-2 position-fixed end-0 overflow-hidden">
           <img src="./assets/img/hero-banner-1.jpg" alt="Signup Banner" class="w-100 h-100 object-fit-cover"
             onerror="this.src='https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=2574&auto=format&fit=crop'">
         </div>

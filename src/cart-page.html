@@ -1324,128 +1324,228 @@
     <!-- Main Content: Active Cart -->
     <main class="active-cart-section py-5">
         <div class="container">
-            <h1 class="mb-4">Your Shopping Basket</h1>
+            <div class="row mx-auto align-items-center">
+                <div class="offset-md-1 col-md-10">
 
-            <!-- Info Banner -->
-            <div class="alert alert-info d-flex align-items-center mb-5" role="alert"
-                style="background-color: #e3effd; border: none; color: #333;">
-                <i class="fa-solid fa-circle-info me-2"></i>
-                <div style="font-size: 0.9rem;">
-                    Add Cult Beauty The Bold Beauty Edit (Worth over €145) to your basket for €28.00 <strong>Add To
-                        Basket</strong>
-                </div>
-            </div>
+                    <div class="d-flex justify-content-start align-items-center gap-4 mb-4">
+                        <h2 class="">Your Shopping Basket</h2>
+                        <!-- <button class="bg-transparent border border-light-subtle px-2 py-2 d-flex align-items-center"
+                            type="button" data-bs-toggle="offcanvas" data-bs-target="#shareCartOffcanvas"
+                            aria-controls="shareCartOffcanvas">
+                            <i class="fa-solid fa-share"></i>
+                        </button> -->
+                    </div>
 
-            <div class="row">
-                <!-- Left Column: Product List -->
-                <div class="col-lg-8">
-
-                    <!-- Product Item 1 -->
-                    <div class="cart-item d-flex border-bottom py-4">
-                        <div class="cart-item-image me-4">
-                            <img src="./assets/img/memo-best-body.webp" alt="Saie CitySet"
-                                style="width: 80px; height: auto;">
+                    <!-- Info Banner -->
+                    <div class="alert alert-info d-flex align-items-center mb-5" role="alert"
+                        style="background-color: #e3effd; border: none; color: #333;">
+                        <i class="fa-solid fa-circle-info me-2"></i>
+                        <div style="font-size: 0.9rem;">
+                            Add Cult Beauty The Bold Beauty Edit (Worth over €145) to your basket for €28.00 <strong>Add
+                                To
+                                Basket</strong>
                         </div>
-                        <div class="cart-item-details flex-grow-1">
-                            <h5 class="mb-1" style="font-size: 1rem;">Saie CitySet™ Lightweight Setting Spray 95ml</h5>
-                            <p class="text-muted mb-3" style="font-size: 0.9rem;">Quantity: 1</p>
+                    </div>
+                    <div class="row">
+                        <!-- Left Column: Product List -->
+                        <div class="col-lg-8">
 
-                            <div class="d-flex align-items-center mb-3">
-                                <button class="btn btn-link p-0 text-decoration-none text-muted"
-                                    style="font-size: 0.85rem;">
-                                    <i class="fa-regular fa-heart me-1"></i> Add to wishlist
-                                </button>
+                            <!-- Product Item 1 -->
+                            <div class="cart-item d-flex border-bottom py-4">
+                                <div class="cart-item-image me-4">
+                                    <img src="./assets/img/memo-best-body.webp" alt="Saie CitySet"
+                                        style="width: 80px; height: auto;">
+                                </div>
+                                <div class="cart-item-details flex-grow-1">
+                                    <h5 class="mb-1" style="font-size: 1rem;">Saie CitySet™ Lightweight Setting Spray
+                                        95ml</h5>
+                                    <p class="text-muted mb-2" style="font-size: 0.9rem;">Quantity: 1</p>
+
+                                    <div class="d-flex align-items-center mb-2">
+                                        <button class="btn btn-link p-0 text-decoration-none text-muted"
+                                            style="font-size: 0.85rem;">
+                                            <i class="fa-regular fa-heart me-1"></i> Add to wishlist
+                                        </button>
+                                    </div>
+                                    <div class="delivery-options-container d-flex flex-column gap-2">
+                                        <!-- Express Delivery -->
+                                        <div class="delivery-box express d-flex align-items-center rounded-3">
+                                            <span class="icon-wrapper me-2"><i
+                                                    class="fa-solid fa-truck-fast"></i></span>
+                                            <div class="text-content">
+                                                <span class="fw-bold fst-italic">Express</span> Delivery by <span
+                                                    class="fw-bold text-dark">Tomorrow</span>
+                                            </div>
+                                        </div>
+                                        <!-- Standard Delivery -->
+                                        <div class="delivery-box standard d-flex align-items-center rounded-3">
+                                            <span class="icon-wrapper me-2 text-black "><i
+                                                    class="fa-solid fa-truck"></i></span>
+                                            <div class="text-content text-black">
+                                                <span class="fw-bold">Standard</span> Delivery by <span
+                                                    class="fw-bold">01 Feb, Sun</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-end">
+                                        <div class="price fw-bold">34.45€</div>
+                                        <div class="actions">
+                                            <button class="btn btn-link p-0 text-decoration-none text-muted me-2"
+                                                style="font-size: 0.85rem;">Buy it later</button>
+                                            <span class="text-muted">|</span>
+                                            <button class="btn btn-link p-0 text-decoration-none text-muted me-2"
+                                                style="font-size: 0.85rem;">Remove</button>
+                                            <span class="text-muted">|</span>
+                                            <button class="btn btn-link p-0 text-decoration-none text-muted ms-2"
+                                                style="font-size: 0.85rem;">Update</button>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
 
-                            <div class="d-flex justify-content-between align-items-end">
-                                <div class="price fw-bold">34.45€</div>
-                                <div class="actions">
-                                    <button class="btn btn-link p-0 text-decoration-none text-muted me-2"
-                                        style="font-size: 0.85rem;">Remove</button>
-                                    <span class="text-muted">|</span>
-                                    <button class="btn btn-link p-0 text-decoration-none text-muted ms-2"
-                                        style="font-size: 0.85rem;">Update</button>
+                            <!-- Product Item 2 -->
+                            <div class="cart-item d-flex border-bottom py-4">
+                                <div class="cart-item-image me-4">
+                                    <img src="./assets/img/memo-best-body.webp" alt="Saie CitySet"
+                                        style="width: 80px; height: auto;">
+                                </div>
+                                <div class="cart-item-details flex-grow-1">
+                                    <h5 class="mb-1" style="font-size: 1rem;">Saie CitySet™ Lightweight Setting Spray
+                                        95ml</h5>
+                                    <p class="text-muted mb-2" style="font-size: 0.9rem;">Quantity: 1</p>
+
+                                    <div class="d-flex align-items-center mb-2">
+                                        <button class="btn btn-link p-0 text-decoration-none text-muted"
+                                            style="font-size: 0.85rem;">
+                                            <i class="fa-regular fa-heart me-1"></i> Add to wishlist
+                                        </button>
+                                    </div>
+                                    <div class="delivery-options-container d-flex flex-column gap-2">
+                                        <!-- Express Delivery -->
+                                        <div class="delivery-box express d-flex align-items-center rounded-3">
+                                            <span class="icon-wrapper me-2"><i
+                                                    class="fa-solid fa-truck-fast"></i></span>
+                                            <div class="text-content">
+                                                <span class="fw-bold fst-italic">Express</span> Delivery by <span
+                                                    class="fw-bold text-dark">Tomorrow</span>
+                                            </div>
+                                        </div>
+                                        <!-- Standard Delivery -->
+                                        <div class="delivery-box standard d-flex align-items-center rounded-3">
+                                            <span class="icon-wrapper me-2 text-black "><i
+                                                    class="fa-solid fa-truck"></i></span>
+                                            <div class="text-content text-black">
+                                                <span class="fw-bold">Standard</span> Delivery by <span
+                                                    class="fw-bold">01 Feb, Sun</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="d-flex justify-content-between align-items-end">
+                                        <div class="price fw-bold">34.45€</div>
+                                        <div class="actions">
+                                            <button class="btn btn-link p-0 text-decoration-none text-muted me-2"
+                                                style="font-size: 0.85rem;">Buy it later</button>
+                                            <span class="text-muted">|</span>
+                                            <button class="btn btn-link p-0 text-decoration-none text-muted me-2"
+                                                style="font-size: 0.85rem;">Remove</button>
+                                            <span class="text-muted">|</span>
+                                            <button class="btn btn-link p-0 text-decoration-none text-muted ms-2"
+                                                style="font-size: 0.85rem;">Update</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Status Points Banner -->
+                            <div class="status-points py-3 border-bottom d-flex align-items-center">
+                                <i class="fa-solid fa-gem me-3"></i>
+                                <span style="font-size: 0.9rem;">This order will earn 64 Status Points with this
+                                    product</span>
+                            </div>
+
+                            <!-- Discount Code -->
+                            <div
+                                class="discount-code mt-4 d-flex align-items-center justify-content-center flex-column">
+                                <div style="max-width: 447px; min-width: 320px;"
+                                    class=" d-flex align-items-center justify-content-center flex-column">
+                                    <label for="discountInput"
+                                        class="form-label text-start justify-content-start me-auto text-uppercase fw-bold text-muted"
+                                        style="font-size: 0.8rem;">ENTER DISCOUNT CODE</label>
+                                    <div class="input-group " style="max-width: 447px;">
+                                        <input type="text" class="form-control border border-1 border-light-subtle py-2"
+                                            id="discountInput" placeholder="Got a discount code? Enter Here"
+                                            style="border-radius: 0;">
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            style="border-radius: 0;">Add</button>
+                                    </div>
+                                </div>
+                                <div class="payments-methods mt-4 d-lg-none" style="max-width: 447px;">
+                                    <div class="payment-icons d-flex justify-content-center gap-2 flex-wrap">
+                                        <img class="border border-1 border-light-subtle rounded-1 p-1 flex-shrink-0"
+                                            src="./assets/img/payments-methods/Google_Pay_Logo.svg" alt="PayPal"
+                                            style="height: 40px;">
+                                        <img class="border border-1 border-light-subtle rounded-1 p-1 flex-shrink-0"
+                                            src="./assets/img/payments-methods/Google_Pay_Logo.svg" alt="Amazon Pay"
+                                            style="height: 40px;">
+                                        <img class="border border-1 border-light-subtle rounded-1 p-1 flex-shrink-0"
+                                            src="./assets/img/payments-methods/PayPal.svg" alt="Apple Pay"
+                                            style="height: 40px;">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <!-- Right Column: Summary -->
+                        <div class="col-lg-4 mt-5 mt-lg-0">
+                            <div class="cart-summary bg-white p-4">
+                                <!-- Mobile Layout: Side by side -->
+                                <div class="mobile-checkout-layout">
+                                    <div class="basket-total-section">
+                                        <div class="basket-label">Basket Total:</div>
+                                        <div class="basket-price">£53.00</div>
+                                    </div>
+                                    <button class="btn btn-dark checkout-btn text-uppercase fw-bold">CHECKOUT
+                                        NOW</button>
+                                </div>
+
+                                <!-- Desktop Layout: Stacked -->
+                                <div class="desktop-checkout-layout d-none d-lg-block">
+                                    <div class="d-flex justify-content-between mb-4">
+                                        <span class="fw-bold">Basket subtotal:</span>
+                                        <span class="fw-bold">64.40€</span>
+                                    </div>
+
+                                    <button class="btn btn-dark w-100 py-3 mb-2 text-uppercase fw-bold"
+                                        style="border-radius: 0; background-color: #000;">CHECKOUT NOW</button>
+                                    <div class="text-center mb-4">
+                                        <small class="text-muted"><i class="fa-solid fa-lock me-1"></i> This is a secure
+                                            transaction</small>
+                                    </div>
+
+                                    <div class="payment-icons d-flex justify-content-center gap-2 flex-wrap">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg"
+                                            alt="PayPal" style="height: 20px;">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Amazon_Pay_logo.svg/2560px-Amazon_Pay_logo.svg.png"
+                                            alt="Amazon Pay" style="height: 20px;">
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Apple_Pay_logo.svg/2560px-Apple_Pay_logo.svg.png"
+                                            alt="Apple Pay" style="height: 20px;">
+                                    </div>
+                                </div>
+
+                                <!-- Secure transaction text (mobile only) -->
+                                <div class="text-center mt-3 mobile-secure-text">
+                                    <small class="text-muted"><i class="fa-solid fa-lock me-1"></i> This is a secure
+                                        transaction</small>
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <!-- Product Item 2 -->
-                    <div class="cart-item d-flex border-bottom py-4">
-                        <div class="cart-item-image me-4">
-                            <img src="./assets/img/memo-new-beauty.webp" alt="OUAI Santorini"
-                                style="width: 80px; height: auto;">
-                        </div>
-                        <div class="cart-item-details flex-grow-1">
-                            <h5 class="mb-1" style="font-size: 1rem;">OUAI Santorini Fragrance Mist 97ml</h5>
-                            <p class="text-muted mb-3" style="font-size: 0.9rem;">Quantity: 1</p>
-
-                            <div class="d-flex align-items-center mb-3">
-                                <button class="btn btn-link p-0 text-decoration-none text-muted"
-                                    style="font-size: 0.85rem;">
-                                    <i class="fa-regular fa-heart me-1"></i> Add to wishlist
-                                </button>
-                            </div>
-
-                            <div class="d-flex justify-content-between align-items-end">
-                                <div class="price fw-bold">29.95€</div>
-                                <div class="actions">
-                                    <button class="btn btn-link p-0 text-decoration-none text-muted me-2"
-                                        style="font-size: 0.85rem;">Remove</button>
-                                    <span class="text-muted">|</span>
-                                    <button class="btn btn-link p-0 text-decoration-none text-muted ms-2"
-                                        style="font-size: 0.85rem;">Update</button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Status Points Banner -->
-                    <div class="status-points py-3 border-bottom d-flex align-items-center">
-                        <i class="fa-solid fa-gem me-3"></i>
-                        <span style="font-size: 0.9rem;">This order will earn 64 Status Points with this product</span>
-                    </div>
-
-                    <!-- Discount Code -->
-                    <div class="discount-code mt-4">
-                        <label for="discountInput" class="form-label text-uppercase fw-bold text-muted"
-                            style="font-size: 0.8rem;">ENTER DISCOUNT CODE</label>
-                        <div class="input-group mb-3" style="max-width: 400px;">
-                            <input type="text" class="form-control" id="discountInput"
-                                placeholder="Got a discount code? Enter it here:" style="border-radius: 0;">
-                            <button class="btn btn-outline-secondary" type="button"
-                                style="border-radius: 0;">Add</button>
-                        </div>
-                    </div>
-
-                </div>
-
-                <!-- Right Column: Summary -->
-                <div class="col-lg-4 mt-5 mt-lg-0">
-                    <div class="cart-summary bg-white p-4">
-                        <div class="d-flex justify-content-between mb-4">
-                            <span class="fw-bold">Basket subtotal:</span>
-                            <span class="fw-bold">64.40€</span>
-                        </div>
-
-                        <button class="btn btn-dark w-100 py-3 mb-2 text-uppercase fw-bold"
-                            style="border-radius: 0; background-color: #000;">CHECKOUT NOW</button>
-                        <div class="text-center mb-4">
-                            <small class="text-muted"><i class="fa-solid fa-lock me-1"></i> This is a secure
-                                transaction</small>
-                        </div>
-
-                        <div class="payment-icons d-flex justify-content-center gap-2 flex-wrap">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b5/PayPal.svg" alt="PayPal"
-                                style="height: 20px;">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f2/Amazon_Pay_logo.svg/2560px-Amazon_Pay_logo.svg.png"
-                                alt="Amazon Pay" style="height: 20px;">
-                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Apple_Pay_logo.svg/2560px-Apple_Pay_logo.svg.png"
-                                alt="Apple Pay" style="height: 20px;">
-                        </div>
-                    </div>
                 </div>
             </div>
+
         </div>
 
 
@@ -1455,402 +1555,57 @@
 
             <div class="dynamic-tab-content mx-auto">
                 <div class="container mx-auto">
-                    <h4 class="category-section-title text-center text-uppercase pb-4"> WHAT'S NEW AT nour beauty</h4>
-                    <div class="flex justify-center items-center">
-                        <div class="flex border-b ">
-                            <button
-                                class="tab-btn px-4  py-2 text-xs md:text-base uppercase text-black font-bold border-b-2 border-black hover:text-black focus:text-black focus:border-black"
-                                data-tab="tab1">
-                                Trending
-                            </button>
-                            <button
-                                class="tab-btn px-4  py-2 text-xs md:text-base uppercase text-black border-b-2 border-transparent hover:text-black focus:text-black focus:border-black"
-                                data-tab="tab2">
-                                best seller
-                            </button>
+                    <div class="row">
+                        <div class="offset-md-1 col-md-10">
+                            <h4 class="category-section-title text-center text-uppercase pb-4"> WHAT'S NEW AT nour
+                                beauty</h4>
+                            <div class="flex justify-center items-center">
+                                <div class="flex border-b ">
+                                    <button
+                                        class="tab-btn px-4  py-2 text-xs md:text-base uppercase text-black font-bold border-b-2 border-black hover:text-black focus:text-black focus:border-black"
+                                        data-tab="tab1">
+                                        Trending
+                                    </button>
+                                    <button
+                                        class="tab-btn px-4  py-2 text-xs md:text-base uppercase text-black border-b-2 border-transparent hover:text-black focus:text-black focus:border-black"
+                                        data-tab="tab2">
+                                        best seller
+                                    </button>
 
-                        </div>
-                    </div>
-                    <div class="tab-content mt-4">
-                        <div id="tab1" class="">
-                            <div class="swiper tabContentSlider02 !pb-[32px]">
-                                <div class="swiper-wrapper ">
-                                    <!-- slider 1 -->
-                                    <div class="swiper-slide">
-                                        <div class="product-card flex flex-col gap-2">
-                                            <a href="/#" class="product-image-link">
-                                                <figure class="mb-0 position-relative">
-                                                    <picture>
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 1024px)" />
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 768px)" />
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 640px)" />
-                                                        <img src="./assets/img/product/images.avif"
-                                                            alt="Brand of the month" loading="lazy" width="350"
-                                                            height="430"
-                                                            class="object-cover mx-auto w-full h-full shrink-0"
-                                                            decoding="auto" fetchpriority="auto" />
-                                                    </picture>
-                                                    <button class="wishlist-btn" aria-label="Add to wishlist">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </button>
-                                                </figure>
-                                            </a>
-                                            <div class="flex flex-col gap-2">
-                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
-                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
-                                                </p>
-                                                <!-- <div class="block my-2">
-                      <a href="/#">
-                        <button
-                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
-                          new in
-                        </button>
-                      </a>
-                    </div> -->
-                                                <div class="flex gap-2 text-sm tracking-wider">
-                                                    <div class="flex items-center">
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                                                    </div>
-                                                    <p class="m-0">7</p>
-                                                </div>
-                                                <div class="my-1">
-                                                    <p class="text-sm  font-bold">$ 20.00</p>
-                                                </div>
-                                                <div class="block">
-                                                    <button class="card-button">
-                                                        add to bag
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- slider 1 -->
-                                    <div class="swiper-slide">
-                                        <div class="product-card flex flex-col gap-2">
-                                            <a href="/#" class="product-image-link">
-                                                <figure class="mb-0 position-relative">
-                                                    <picture>
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 1024px)" />
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 768px)" />
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 640px)" />
-                                                        <img src="./assets/img/product/images.avif"
-                                                            alt="Brand of the month" loading="lazy" width="350"
-                                                            height="430"
-                                                            class="object-cover mx-auto w-full h-full shrink-0"
-                                                            decoding="auto" fetchpriority="auto" />
-                                                    </picture>
-                                                    <button class="wishlist-btn" aria-label="Add to wishlist">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </button>
-                                                </figure>
-                                            </a>
-                                            <div class="flex flex-col gap-2">
-                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
-                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
-                                                </p>
-                                                <!-- <div class="block my-2">
-                      <a href="/#">
-                        <button
-                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
-                          new in
-                        </button>
-                      </a>
-                    </div> -->
-                                                <div class="flex gap-2 text-sm tracking-wider">
-                                                    <div class="flex items-center">
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                                                    </div>
-                                                    <p class="m-0">7</p>
-                                                </div>
-                                                <div class="my-1">
-                                                    <p class="text-sm  font-bold">$ 20.00</p>
-                                                </div>
-                                                <div class="block">
-                                                    <button class="card-button">
-                                                        add to bag
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- slider 1 -->
-                                    <div class="swiper-slide">
-                                        <div class="product-card flex flex-col gap-2">
-                                            <a href="/#" class="product-image-link">
-                                                <figure class="mb-0 position-relative">
-                                                    <picture>
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 1024px)" />
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 768px)" />
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 640px)" />
-                                                        <img src="./assets/img/product/images.avif"
-                                                            alt="Brand of the month" loading="lazy" width="350"
-                                                            height="430"
-                                                            class="object-cover mx-auto w-full h-full shrink-0"
-                                                            decoding="auto" fetchpriority="auto" />
-                                                    </picture>
-                                                    <button class="wishlist-btn" aria-label="Add to wishlist">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </button>
-                                                </figure>
-                                            </a>
-                                            <div class="flex flex-col gap-2">
-                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
-                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
-                                                </p>
-                                                <!-- <div class="block my-2">
-                      <a href="/#">
-                        <button
-                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
-                          new in
-                        </button>
-                      </a>
-                    </div> -->
-                                                <div class="flex gap-2 text-sm tracking-wider">
-                                                    <div class="flex items-center">
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                                                    </div>
-                                                    <p class="m-0">7</p>
-                                                </div>
-                                                <div class="my-1">
-                                                    <p class="text-sm  font-bold">$ 20.00</p>
-                                                </div>
-                                                <div class="block">
-                                                    <button class="card-button">
-                                                        add to bag
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- slider 1 -->
-                                    <div class="swiper-slide">
-                                        <div class="product-card flex flex-col gap-2">
-                                            <a href="/#" class="product-image-link">
-                                                <figure class="mb-0 position-relative">
-                                                    <picture>
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 1024px)" />
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 768px)" />
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 640px)" />
-                                                        <img src="./assets/img/product/images.avif"
-                                                            alt="Brand of the month" loading="lazy" width="350"
-                                                            height="430"
-                                                            class="object-cover mx-auto w-full h-full shrink-0"
-                                                            decoding="auto" fetchpriority="auto" />
-                                                    </picture>
-                                                    <button class="wishlist-btn" aria-label="Add to wishlist">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </button>
-                                                </figure>
-                                            </a>
-                                            <div class="flex flex-col gap-2">
-                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
-                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
-                                                </p>
-                                                <!-- <div class="block my-2">
-                      <a href="/#">
-                        <button
-                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
-                          new in
-                        </button>
-                      </a>
-                    </div> -->
-                                                <div class="flex gap-2 text-sm tracking-wider">
-                                                    <div class="flex items-center">
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                                                    </div>
-                                                    <p class="m-0">7</p>
-                                                </div>
-                                                <div class="my-1">
-                                                    <p class="text-sm  font-bold">$ 20.00</p>
-                                                </div>
-                                                <div class="block">
-                                                    <button class="card-button">
-                                                        add to bag
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- slider 1 -->
-                                    <div class="swiper-slide">
-                                        <div class="product-card flex flex-col gap-2">
-                                            <a href="/#" class="product-image-link">
-                                                <figure class="mb-0 position-relative">
-                                                    <picture>
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 1024px)" />
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 768px)" />
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 640px)" />
-                                                        <img src="./assets/img/product/images.avif"
-                                                            alt="Brand of the month" loading="lazy" width="350"
-                                                            height="430"
-                                                            class="object-cover mx-auto w-full h-full shrink-0"
-                                                            decoding="auto" fetchpriority="auto" />
-                                                    </picture>
-                                                    <button class="wishlist-btn" aria-label="Add to wishlist">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </button>
-                                                </figure>
-                                            </a>
-                                            <div class="flex flex-col gap-2">
-                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
-                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
-                                                </p>
-                                                <!-- <div class="block my-2">
-                      <a href="/#">
-                        <button
-                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
-                          new in
-                        </button>
-                      </a>
-                    </div> -->
-                                                <div class="flex gap-2 text-sm tracking-wider">
-                                                    <div class="flex items-center">
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                                                    </div>
-                                                    <p class="m-0">7</p>
-                                                </div>
-                                                <div class="my-1">
-                                                    <p class="text-sm  font-bold">$ 20.00</p>
-                                                </div>
-                                                <div class="block">
-                                                    <button class="card-button">
-                                                        add to bag
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- slider 1 -->
-                                    <div class="swiper-slide">
-                                        <div class="product-card flex flex-col gap-2">
-                                            <a href="/#" class="product-image-link">
-                                                <figure class="mb-0 position-relative">
-                                                    <picture>
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 1024px)" />
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 768px)" />
-                                                        <source srcset="./assets/img/product/images.avif"
-                                                            media="(min-width: 640px)" />
-                                                        <img src="./assets/img/product/images.avif"
-                                                            alt="Brand of the month" loading="lazy" width="350"
-                                                            height="430"
-                                                            class="object-cover mx-auto w-full h-full shrink-0"
-                                                            decoding="auto" fetchpriority="auto" />
-                                                    </picture>
-                                                    <button class="wishlist-btn" aria-label="Add to wishlist">
-                                                        <i class="fa-regular fa-heart"></i>
-                                                    </button>
-                                                </figure>
-                                            </a>
-                                            <div class="flex flex-col gap-2">
-                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
-                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
-                                                </p>
-                                                <!-- <div class="block my-2">
-                      <a href="/#">
-                        <button
-                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
-                          new in
-                        </button>
-                      </a>
-                    </div> -->
-                                                <div class="flex gap-2 text-sm tracking-wider">
-                                                    <div class="flex items-center">
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                                                    </div>
-                                                    <p class="m-0">7</p>
-                                                </div>
-                                                <div class="my-1">
-                                                    <p class="text-sm  font-bold">$ 20.00</p>
-                                                </div>
-                                                <div class="block">
-                                                    <button class="card-button">
-                                                        add to bag
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- pagination buttons -->
-                                <div class="slider-pagination swiper-pagination"></div>
-                                <!-- If we need navigation buttons -->
-                                <div class="tab-content-swiper-button-prev bg-white shadow-sm">
-                                    <i class="fa-solid fa-chevron-left"></i>
-                                </div>
-                                <div class="tab-content-swiper-button-next bg-white shadow-sm">
-                                    <i class="fa-solid fa-chevron-right"></i>
                                 </div>
                             </div>
-                        </div>
-                        <div id="tab2" class="hidden">
-                            <div class="swiper tabContentSlider02 !pb-[32px]">
-                                <div class="swiper-wrapper ">
-                                    <!-- slider 1 -->
-                                    <div class="swiper-slide">
-                                        <div class="flex flex-col gap-2">
-                                            <a href="/#">
-                                                <figure class="mb-0">
-                                                    <picture>
-                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                            media="(min-width: 1024px)" />
-                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                            media="(min-width: 768px)" />
-                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                            media="(min-width: 640px)" />
-                                                        <img src="./assets/img/product/nour-product-01.jpg"
-                                                            alt="Brand of the month" loading="lazy" width="350"
-                                                            height="430"
-                                                            class="object-cover mx-auto w-full h-full shrink-0"
-                                                            decoding="auto" fetchpriority="auto" />
-                                                    </picture>
-                                                </figure>
-                                            </a>
-                                            <div class="flex flex-col gap-2">
-                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
-                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
-                                                </p>
-                                                <!-- <div class="block my-2">
+                            <div class="tab-content mt-4">
+                                <div id="tab1" class="">
+                                    <div class="swiper tabContentSlider02 !pb-[32px]">
+                                        <div class="swiper-wrapper ">
+                                            <!-- slider 1 -->
+                                            <div class="swiper-slide">
+                                                <div class="product-card flex flex-col gap-2">
+                                                    <a href="/#" class="product-image-link">
+                                                        <figure class="mb-0 position-relative">
+                                                            <picture>
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 1024px)" />
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 768px)" />
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 640px)" />
+                                                                <img src="./assets/img/product/images.avif"
+                                                                    alt="Brand of the month" loading="lazy" width="350"
+                                                                    height="430"
+                                                                    class="object-cover mx-auto w-full h-full shrink-0"
+                                                                    decoding="auto" fetchpriority="auto" />
+                                                            </picture>
+                                                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </button>
+                                                        </figure>
+                                                    </a>
+                                                    <div class="flex flex-col gap-2">
+                                                        <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                            Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                        </p>
+                                                        <!-- <div class="block my-2">
                       <a href="/#">
                         <button
                           class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
@@ -1858,253 +1613,630 @@
                         </button>
                       </a>
                     </div> -->
-                                                <div class="flex gap-2 text-sm tracking-wider">
-                                                    <div class="flex items-center">
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                                                        <div class="flex gap-2 text-sm tracking-wider">
+                                                            <div class="flex items-center">
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i
+                                                                        class="fa-regular fa-star-half-stroke"></i></span>
+                                                            </div>
+                                                            <p class="m-0">7</p>
+                                                        </div>
+                                                        <div class="my-1">
+                                                            <p class="text-sm  font-bold">$ 20.00</p>
+                                                        </div>
+                                                        <div class="block">
+                                                            <button class="card-button">
+                                                                add to bag
+                                                            </button>
+                                                        </div>
                                                     </div>
-                                                    <p class="m-0">7</p>
                                                 </div>
-                                                <div class="my-1">
-                                                    <p class="text-sm  font-bold">$ 20.00</p>
+                                            </div>
+                                            <!-- slider 1 -->
+                                            <div class="swiper-slide">
+                                                <div class="product-card flex flex-col gap-2">
+                                                    <a href="/#" class="product-image-link">
+                                                        <figure class="mb-0 position-relative">
+                                                            <picture>
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 1024px)" />
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 768px)" />
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 640px)" />
+                                                                <img src="./assets/img/product/images.avif"
+                                                                    alt="Brand of the month" loading="lazy" width="350"
+                                                                    height="430"
+                                                                    class="object-cover mx-auto w-full h-full shrink-0"
+                                                                    decoding="auto" fetchpriority="auto" />
+                                                            </picture>
+                                                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </button>
+                                                        </figure>
+                                                    </a>
+                                                    <div class="flex flex-col gap-2">
+                                                        <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                            Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                        </p>
+                                                        <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                        <div class="flex gap-2 text-sm tracking-wider">
+                                                            <div class="flex items-center">
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i
+                                                                        class="fa-regular fa-star-half-stroke"></i></span>
+                                                            </div>
+                                                            <p class="m-0">7</p>
+                                                        </div>
+                                                        <div class="my-1">
+                                                            <p class="text-sm  font-bold">$ 20.00</p>
+                                                        </div>
+                                                        <div class="block">
+                                                            <button class="card-button">
+                                                                add to bag
+                                                            </button>
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="block">
-                                                    <button class="card-button">
-                                                        add to bag
-                                                    </button>
+                                            </div>
+                                            <!-- slider 1 -->
+                                            <div class="swiper-slide">
+                                                <div class="product-card flex flex-col gap-2">
+                                                    <a href="/#" class="product-image-link">
+                                                        <figure class="mb-0 position-relative">
+                                                            <picture>
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 1024px)" />
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 768px)" />
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 640px)" />
+                                                                <img src="./assets/img/product/images.avif"
+                                                                    alt="Brand of the month" loading="lazy" width="350"
+                                                                    height="430"
+                                                                    class="object-cover mx-auto w-full h-full shrink-0"
+                                                                    decoding="auto" fetchpriority="auto" />
+                                                            </picture>
+                                                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </button>
+                                                        </figure>
+                                                    </a>
+                                                    <div class="flex flex-col gap-2">
+                                                        <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                            Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                        </p>
+                                                        <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                        <div class="flex gap-2 text-sm tracking-wider">
+                                                            <div class="flex items-center">
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i
+                                                                        class="fa-regular fa-star-half-stroke"></i></span>
+                                                            </div>
+                                                            <p class="m-0">7</p>
+                                                        </div>
+                                                        <div class="my-1">
+                                                            <p class="text-sm  font-bold">$ 20.00</p>
+                                                        </div>
+                                                        <div class="block">
+                                                            <button class="card-button">
+                                                                add to bag
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- slider 1 -->
+                                            <div class="swiper-slide">
+                                                <div class="product-card flex flex-col gap-2">
+                                                    <a href="/#" class="product-image-link">
+                                                        <figure class="mb-0 position-relative">
+                                                            <picture>
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 1024px)" />
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 768px)" />
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 640px)" />
+                                                                <img src="./assets/img/product/images.avif"
+                                                                    alt="Brand of the month" loading="lazy" width="350"
+                                                                    height="430"
+                                                                    class="object-cover mx-auto w-full h-full shrink-0"
+                                                                    decoding="auto" fetchpriority="auto" />
+                                                            </picture>
+                                                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </button>
+                                                        </figure>
+                                                    </a>
+                                                    <div class="flex flex-col gap-2">
+                                                        <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                            Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                        </p>
+                                                        <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                        <div class="flex gap-2 text-sm tracking-wider">
+                                                            <div class="flex items-center">
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i
+                                                                        class="fa-regular fa-star-half-stroke"></i></span>
+                                                            </div>
+                                                            <p class="m-0">7</p>
+                                                        </div>
+                                                        <div class="my-1">
+                                                            <p class="text-sm  font-bold">$ 20.00</p>
+                                                        </div>
+                                                        <div class="block">
+                                                            <button class="card-button">
+                                                                add to bag
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- slider 1 -->
+                                            <div class="swiper-slide">
+                                                <div class="product-card flex flex-col gap-2">
+                                                    <a href="/#" class="product-image-link">
+                                                        <figure class="mb-0 position-relative">
+                                                            <picture>
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 1024px)" />
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 768px)" />
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 640px)" />
+                                                                <img src="./assets/img/product/images.avif"
+                                                                    alt="Brand of the month" loading="lazy" width="350"
+                                                                    height="430"
+                                                                    class="object-cover mx-auto w-full h-full shrink-0"
+                                                                    decoding="auto" fetchpriority="auto" />
+                                                            </picture>
+                                                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </button>
+                                                        </figure>
+                                                    </a>
+                                                    <div class="flex flex-col gap-2">
+                                                        <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                            Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                        </p>
+                                                        <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                        <div class="flex gap-2 text-sm tracking-wider">
+                                                            <div class="flex items-center">
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i
+                                                                        class="fa-regular fa-star-half-stroke"></i></span>
+                                                            </div>
+                                                            <p class="m-0">7</p>
+                                                        </div>
+                                                        <div class="my-1">
+                                                            <p class="text-sm  font-bold">$ 20.00</p>
+                                                        </div>
+                                                        <div class="block">
+                                                            <button class="card-button">
+                                                                add to bag
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- slider 1 -->
+                                            <div class="swiper-slide">
+                                                <div class="product-card flex flex-col gap-2">
+                                                    <a href="/#" class="product-image-link">
+                                                        <figure class="mb-0 position-relative">
+                                                            <picture>
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 1024px)" />
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 768px)" />
+                                                                <source srcset="./assets/img/product/images.avif"
+                                                                    media="(min-width: 640px)" />
+                                                                <img src="./assets/img/product/images.avif"
+                                                                    alt="Brand of the month" loading="lazy" width="350"
+                                                                    height="430"
+                                                                    class="object-cover mx-auto w-full h-full shrink-0"
+                                                                    decoding="auto" fetchpriority="auto" />
+                                                            </picture>
+                                                            <button class="wishlist-btn" aria-label="Add to wishlist">
+                                                                <i class="fa-regular fa-heart"></i>
+                                                            </button>
+                                                        </figure>
+                                                    </a>
+                                                    <div class="flex flex-col gap-2">
+                                                        <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                            Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                        </p>
+                                                        <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                        <div class="flex gap-2 text-sm tracking-wider">
+                                                            <div class="flex items-center">
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i
+                                                                        class="fa-regular fa-star-half-stroke"></i></span>
+                                                            </div>
+                                                            <p class="m-0">7</p>
+                                                        </div>
+                                                        <div class="my-1">
+                                                            <p class="text-sm  font-bold">$ 20.00</p>
+                                                        </div>
+                                                        <div class="block">
+                                                            <button class="card-button">
+                                                                add to bag
+                                                            </button>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <!-- slider 1 -->
-                                    <div class="swiper-slide">
-                                        <div class="flex flex-col gap-2">
-                                            <a href="/#">
-                                                <figure class="mb-0">
-                                                    <picture>
-                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                            media="(min-width: 1024px)" />
-                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                            media="(min-width: 768px)" />
-                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                            media="(min-width: 640px)" />
-                                                        <img src="./assets/img/product/nour-product-01.jpg"
-                                                            alt="Brand of the month" loading="lazy" width="350"
-                                                            height="430"
-                                                            class="object-cover mx-auto w-full h-full shrink-0"
-                                                            decoding="auto" fetchpriority="auto" />
-                                                    </picture>
-                                                </figure>
-                                            </a>
-                                            <div class="flex flex-col gap-2">
-                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
-                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
-                                                </p>
-                                                <!-- <div class="block my-2">
-                      <a href="/#">
-                        <button
-                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
-                          new in
-                        </button>
-                      </a>
-                    </div> -->
-                                                <div class="flex gap-2 text-sm tracking-wider">
-                                                    <div class="flex items-center">
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                                                    </div>
-                                                    <p class="m-0">7</p>
-                                                </div>
-                                                <div class="my-1">
-                                                    <p class="text-sm  font-bold">$ 20.00</p>
-                                                </div>
-                                                <div class="block">
-                                                    <button class="card-button">
-                                                        add to bag
-                                                    </button>
-                                                </div>
-                                            </div>
+                                        <!-- pagination buttons -->
+                                        <div class="slider-pagination swiper-pagination"></div>
+                                        <!-- If we need navigation buttons -->
+                                        <div class="tab-content-swiper-button-prev bg-white shadow-sm">
+                                            <i class="fa-solid fa-chevron-left"></i>
                                         </div>
-                                    </div>
-                                    <!-- slider 1 -->
-                                    <div class="swiper-slide">
-                                        <div class="flex flex-col gap-2">
-                                            <a href="/#">
-                                                <figure class="mb-0">
-                                                    <picture>
-                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                            media="(min-width: 1024px)" />
-                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                            media="(min-width: 768px)" />
-                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                            media="(min-width: 640px)" />
-                                                        <img src="./assets/img/product/nour-product-01.jpg"
-                                                            alt="Brand of the month" loading="lazy" width="350"
-                                                            height="430"
-                                                            class="object-cover mx-auto w-full h-full shrink-0"
-                                                            decoding="auto" fetchpriority="auto" />
-                                                    </picture>
-                                                </figure>
-                                            </a>
-                                            <div class="flex flex-col gap-2">
-                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
-                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
-                                                </p>
-                                                <!-- <div class="block my-2">
-                      <a href="/#">
-                        <button
-                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
-                          new in
-                        </button>
-                      </a>
-                    </div> -->
-                                                <div class="flex gap-2 text-sm tracking-wider">
-                                                    <div class="flex items-center">
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                                                    </div>
-                                                    <p class="m-0">7</p>
-                                                </div>
-                                                <div class="my-1">
-                                                    <p class="text-sm  font-bold">$ 20.00</p>
-                                                </div>
-                                                <div class="block">
-                                                    <button class="card-button">
-                                                        add to bag
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- slider 1 -->
-                                    <div class="swiper-slide">
-                                        <div class="flex flex-col gap-2">
-                                            <a href="/#">
-                                                <figure class="mb-0">
-                                                    <picture>
-                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                            media="(min-width: 1024px)" />
-                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                            media="(min-width: 768px)" />
-                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                            media="(min-width: 640px)" />
-                                                        <img src="./assets/img/product/nour-product-01.jpg"
-                                                            alt="Brand of the month" loading="lazy" width="350"
-                                                            height="430"
-                                                            class="object-cover mx-auto w-full h-full shrink-0"
-                                                            decoding="auto" fetchpriority="auto" />
-                                                    </picture>
-                                                </figure>
-                                            </a>
-                                            <div class="flex flex-col gap-2">
-                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
-                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
-                                                </p>
-                                                <!-- <div class="block my-2">
-                      <a href="/#">
-                        <button
-                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
-                          new in
-                        </button>
-                      </a>
-                    </div> -->
-                                                <div class="flex gap-2 text-sm tracking-wider">
-                                                    <div class="flex items-center">
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                                                    </div>
-                                                    <p class="m-0">7</p>
-                                                </div>
-                                                <div class="my-1">
-                                                    <p class="text-sm  font-bold">$ 20.00</p>
-                                                </div>
-                                                <div class="block">
-                                                    <button class="card-button">
-                                                        add to bag
-                                                    </button>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- slider 1 -->
-                                    <div class="swiper-slide">
-                                        <div class="flex flex-col gap-2">
-                                            <a href="/#">
-                                                <figure class="mb-0">
-                                                    <picture>
-                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                            media="(min-width: 1024px)" />
-                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                            media="(min-width: 768px)" />
-                                                        <source srcset="./assets/img/product/nour-product-01.jpg"
-                                                            media="(min-width: 640px)" />
-                                                        <img src="./assets/img/product/nour-product-01.jpg"
-                                                            alt="Brand of the month" loading="lazy" width="350"
-                                                            height="430"
-                                                            class="object-cover mx-auto w-full h-full shrink-0"
-                                                            decoding="auto" fetchpriority="auto" />
-                                                    </picture>
-                                                </figure>
-                                            </a>
-                                            <div class="flex flex-col gap-2">
-                                                <p class="card-title text-sm tracking-wider text-balance  m-0">
-                                                    Saie Glowy Super Gel Mini 15ml (Various Shades)
-                                                </p>
-                                                <!-- <div class="block my-2">
-                      <a href="/#">
-                        <button
-                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
-                          new in
-                        </button>
-                      </a>
-                    </div> -->
-                                                <div class="flex gap-2 text-sm tracking-wider">
-                                                    <div class="flex items-center">
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-solid fa-star"></i></span>
-                                                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
-                                                    </div>
-                                                    <p class="m-0">7</p>
-                                                </div>
-                                                <div class="my-1">
-                                                    <p class="text-sm  font-bold">$ 20.00</p>
-                                                </div>
-                                                <div class="block">
-                                                    <button class="card-button">
-                                                        add to bag
-                                                    </button>
-                                                </div>
-                                            </div>
+                                        <div class="tab-content-swiper-button-next bg-white shadow-sm">
+                                            <i class="fa-solid fa-chevron-right"></i>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- pagination buttons -->
-                                <div class="slider-pagination swiper-pagination"></div>
-                                <!-- If we need navigation buttons -->
-                                <div class="tab-content-swiper-button-prev  bg-white shadow-sm">
-                                    <i class="fa-solid fa-chevron-left"></i>
+                                <div id="tab2" class="hidden">
+                                    <div class="swiper tabContentSlider02 !pb-[32px]">
+                                        <div class="swiper-wrapper ">
+                                            <!-- slider 1 -->
+                                            <div class="swiper-slide">
+                                                <div class="flex flex-col gap-2">
+                                                    <a href="/#">
+                                                        <figure class="mb-0">
+                                                            <picture>
+                                                                <source
+                                                                    srcset="./assets/img/product/nour-product-01.jpg"
+                                                                    media="(min-width: 1024px)" />
+                                                                <source
+                                                                    srcset="./assets/img/product/nour-product-01.jpg"
+                                                                    media="(min-width: 768px)" />
+                                                                <source
+                                                                    srcset="./assets/img/product/nour-product-01.jpg"
+                                                                    media="(min-width: 640px)" />
+                                                                <img src="./assets/img/product/nour-product-01.jpg"
+                                                                    alt="Brand of the month" loading="lazy" width="350"
+                                                                    height="430"
+                                                                    class="object-cover mx-auto w-full h-full shrink-0"
+                                                                    decoding="auto" fetchpriority="auto" />
+                                                            </picture>
+                                                        </figure>
+                                                    </a>
+                                                    <div class="flex flex-col gap-2">
+                                                        <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                            Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                        </p>
+                                                        <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                        <div class="flex gap-2 text-sm tracking-wider">
+                                                            <div class="flex items-center">
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i
+                                                                        class="fa-regular fa-star-half-stroke"></i></span>
+                                                            </div>
+                                                            <p class="m-0">7</p>
+                                                        </div>
+                                                        <div class="my-1">
+                                                            <p class="text-sm  font-bold">$ 20.00</p>
+                                                        </div>
+                                                        <div class="block">
+                                                            <button class="card-button">
+                                                                add to bag
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- slider 1 -->
+                                            <div class="swiper-slide">
+                                                <div class="flex flex-col gap-2">
+                                                    <a href="/#">
+                                                        <figure class="mb-0">
+                                                            <picture>
+                                                                <source
+                                                                    srcset="./assets/img/product/nour-product-01.jpg"
+                                                                    media="(min-width: 1024px)" />
+                                                                <source
+                                                                    srcset="./assets/img/product/nour-product-01.jpg"
+                                                                    media="(min-width: 768px)" />
+                                                                <source
+                                                                    srcset="./assets/img/product/nour-product-01.jpg"
+                                                                    media="(min-width: 640px)" />
+                                                                <img src="./assets/img/product/nour-product-01.jpg"
+                                                                    alt="Brand of the month" loading="lazy" width="350"
+                                                                    height="430"
+                                                                    class="object-cover mx-auto w-full h-full shrink-0"
+                                                                    decoding="auto" fetchpriority="auto" />
+                                                            </picture>
+                                                        </figure>
+                                                    </a>
+                                                    <div class="flex flex-col gap-2">
+                                                        <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                            Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                        </p>
+                                                        <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                        <div class="flex gap-2 text-sm tracking-wider">
+                                                            <div class="flex items-center">
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i
+                                                                        class="fa-regular fa-star-half-stroke"></i></span>
+                                                            </div>
+                                                            <p class="m-0">7</p>
+                                                        </div>
+                                                        <div class="my-1">
+                                                            <p class="text-sm  font-bold">$ 20.00</p>
+                                                        </div>
+                                                        <div class="block">
+                                                            <button class="card-button">
+                                                                add to bag
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- slider 1 -->
+                                            <div class="swiper-slide">
+                                                <div class="flex flex-col gap-2">
+                                                    <a href="/#">
+                                                        <figure class="mb-0">
+                                                            <picture>
+                                                                <source
+                                                                    srcset="./assets/img/product/nour-product-01.jpg"
+                                                                    media="(min-width: 1024px)" />
+                                                                <source
+                                                                    srcset="./assets/img/product/nour-product-01.jpg"
+                                                                    media="(min-width: 768px)" />
+                                                                <source
+                                                                    srcset="./assets/img/product/nour-product-01.jpg"
+                                                                    media="(min-width: 640px)" />
+                                                                <img src="./assets/img/product/nour-product-01.jpg"
+                                                                    alt="Brand of the month" loading="lazy" width="350"
+                                                                    height="430"
+                                                                    class="object-cover mx-auto w-full h-full shrink-0"
+                                                                    decoding="auto" fetchpriority="auto" />
+                                                            </picture>
+                                                        </figure>
+                                                    </a>
+                                                    <div class="flex flex-col gap-2">
+                                                        <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                            Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                        </p>
+                                                        <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                        <div class="flex gap-2 text-sm tracking-wider">
+                                                            <div class="flex items-center">
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i
+                                                                        class="fa-regular fa-star-half-stroke"></i></span>
+                                                            </div>
+                                                            <p class="m-0">7</p>
+                                                        </div>
+                                                        <div class="my-1">
+                                                            <p class="text-sm  font-bold">$ 20.00</p>
+                                                        </div>
+                                                        <div class="block">
+                                                            <button class="card-button">
+                                                                add to bag
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- slider 1 -->
+                                            <div class="swiper-slide">
+                                                <div class="flex flex-col gap-2">
+                                                    <a href="/#">
+                                                        <figure class="mb-0">
+                                                            <picture>
+                                                                <source
+                                                                    srcset="./assets/img/product/nour-product-01.jpg"
+                                                                    media="(min-width: 1024px)" />
+                                                                <source
+                                                                    srcset="./assets/img/product/nour-product-01.jpg"
+                                                                    media="(min-width: 768px)" />
+                                                                <source
+                                                                    srcset="./assets/img/product/nour-product-01.jpg"
+                                                                    media="(min-width: 640px)" />
+                                                                <img src="./assets/img/product/nour-product-01.jpg"
+                                                                    alt="Brand of the month" loading="lazy" width="350"
+                                                                    height="430"
+                                                                    class="object-cover mx-auto w-full h-full shrink-0"
+                                                                    decoding="auto" fetchpriority="auto" />
+                                                            </picture>
+                                                        </figure>
+                                                    </a>
+                                                    <div class="flex flex-col gap-2">
+                                                        <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                            Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                        </p>
+                                                        <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                        <div class="flex gap-2 text-sm tracking-wider">
+                                                            <div class="flex items-center">
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i
+                                                                        class="fa-regular fa-star-half-stroke"></i></span>
+                                                            </div>
+                                                            <p class="m-0">7</p>
+                                                        </div>
+                                                        <div class="my-1">
+                                                            <p class="text-sm  font-bold">$ 20.00</p>
+                                                        </div>
+                                                        <div class="block">
+                                                            <button class="card-button">
+                                                                add to bag
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- slider 1 -->
+                                            <div class="swiper-slide">
+                                                <div class="flex flex-col gap-2">
+                                                    <a href="/#">
+                                                        <figure class="mb-0">
+                                                            <picture>
+                                                                <source
+                                                                    srcset="./assets/img/product/nour-product-01.jpg"
+                                                                    media="(min-width: 1024px)" />
+                                                                <source
+                                                                    srcset="./assets/img/product/nour-product-01.jpg"
+                                                                    media="(min-width: 768px)" />
+                                                                <source
+                                                                    srcset="./assets/img/product/nour-product-01.jpg"
+                                                                    media="(min-width: 640px)" />
+                                                                <img src="./assets/img/product/nour-product-01.jpg"
+                                                                    alt="Brand of the month" loading="lazy" width="350"
+                                                                    height="430"
+                                                                    class="object-cover mx-auto w-full h-full shrink-0"
+                                                                    decoding="auto" fetchpriority="auto" />
+                                                            </picture>
+                                                        </figure>
+                                                    </a>
+                                                    <div class="flex flex-col gap-2">
+                                                        <p class="card-title text-sm tracking-wider text-balance  m-0">
+                                                            Saie Glowy Super Gel Mini 15ml (Various Shades)
+                                                        </p>
+                                                        <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                                                        <div class="flex gap-2 text-sm tracking-wider">
+                                                            <div class="flex items-center">
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i class="fa-solid fa-star"></i></span>
+                                                                <span><i
+                                                                        class="fa-regular fa-star-half-stroke"></i></span>
+                                                            </div>
+                                                            <p class="m-0">7</p>
+                                                        </div>
+                                                        <div class="my-1">
+                                                            <p class="text-sm  font-bold">$ 20.00</p>
+                                                        </div>
+                                                        <div class="block">
+                                                            <button class="card-button">
+                                                                add to bag
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <!-- pagination buttons -->
+                                        <div class="slider-pagination swiper-pagination"></div>
+                                        <!-- If we need navigation buttons -->
+                                        <div class="tab-content-swiper-button-prev  bg-white shadow-sm">
+                                            <i class="fa-solid fa-chevron-left"></i>
+                                        </div>
+                                        <div class="tab-content-swiper-button-next  bg-white shadow-sm">
+                                            <i class="fa-solid fa-chevron-right"></i>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="tab-content-swiper-button-next  bg-white shadow-sm">
-                                    <i class="fa-solid fa-chevron-right"></i>
-                                </div>
+
                             </div>
                         </div>
-
                     </div>
+
                 </div>
             </div>
 
@@ -2113,71 +2245,75 @@
         <!-- Shop by Category Section all css have shop-by-category.scss file -->
         <section class="shop-by-category-section bg-white">
             <div class="container">
-                <h2 class="section-title text-center">SHOP BY CATEGORY</h2>
-                <div class="row row-cols-2 row-cols-md-3 g-4">
-                    <!-- Category 1: Make Up -->
-                    <div class="col">
-                        <a href="#" class="category-card text-center">
-                            <div class="image-wrapper">
-                                <img src="./assets/img/memo-best-body.webp" alt="Make Up" class="img-fluid">
+                <div class="row">
+                    <div class="offset-md-1 col-lg-10">
+                        <h4 class="category-section-title text-center text-uppercase pb-4"> SHOP BY CATEGORY</h4>
+                        <div class="row row-cols-2 row-cols-md-3 g-4">
+                            <!-- Category 1: Make Up -->
+                            <div class="col">
+                                <a href="#" class="category-card text-center">
+                                    <div class="image-wrapper">
+                                        <img src="./assets/img/memo-best-body.webp" alt="Make Up" class="img-fluid">
+                                    </div>
+                                    <h3 class="category-name">MAKE UP</h3>
+                                </a>
                             </div>
-                            <h3 class="category-name">MAKE UP</h3>
-                        </a>
-                    </div>
 
-                    <!-- Category 2: Body Care -->
-                    <div class="col">
-                        <a href="#" class="category-card text-center">
-                            <div class="image-wrapper">
-                                <img src="./assets/img/memo-new-beauty.webp" alt="Body Care" class="img-fluid">
+                            <!-- Category 2: Body Care -->
+                            <div class="col">
+                                <a href="#" class="category-card text-center">
+                                    <div class="image-wrapper">
+                                        <img src="./assets/img/memo-new-beauty.webp" alt="Body Care" class="img-fluid">
+                                    </div>
+                                    <h3 class="category-name">BODY CARE</h3>
+                                </a>
                             </div>
-                            <h3 class="category-name">BODY CARE</h3>
-                        </a>
-                    </div>
 
-                    <!-- Category 3: Skin Care -->
-                    <div class="col">
-                        <a href="#" class="category-card text-center">
-                            <div class="image-wrapper">
-                                <img src="./assets/img/skintints.webp" alt="Skin Care" class="img-fluid">
+                            <!-- Category 3: Skin Care -->
+                            <div class="col">
+                                <a href="#" class="category-card text-center">
+                                    <div class="image-wrapper">
+                                        <img src="./assets/img/skintints.webp" alt="Skin Care" class="img-fluid">
+                                    </div>
+                                    <h3 class="category-name">SKIN CARE</h3>
+                                </a>
                             </div>
-                            <h3 class="category-name">SKIN CARE</h3>
-                        </a>
-                    </div>
 
-                    <!-- Category 4: Hair Care -->
-                    <div class="col">
-                        <a href="#" class="category-card text-center">
-                            <div class="image-wrapper">
-                                <img src="./assets/img/gloss-hair.webp" alt="Hair Care" class="img-fluid">
+                            <!-- Category 4: Hair Care -->
+                            <div class="col">
+                                <a href="#" class="category-card text-center">
+                                    <div class="image-wrapper">
+                                        <img src="./assets/img/gloss-hair.webp" alt="Hair Care" class="img-fluid">
+                                    </div>
+                                    <h3 class="category-name">HAIR CARE</h3>
+                                </a>
                             </div>
-                            <h3 class="category-name">HAIR CARE</h3>
-                        </a>
-                    </div>
 
-                    <!-- Category 5: Self Care -->
-                    <div class="col">
-                        <a href="#" class="category-card text-center">
-                            <div class="image-wrapper">
-                                <!-- Using a placeholder/related image for Self Care as specific one might be missing, 
+                            <!-- Category 5: Self Care -->
+                            <div class="col">
+                                <a href="#" class="category-card text-center">
+                                    <div class="image-wrapper">
+                                        <!-- Using a placeholder/related image for Self Care as specific one might be missing, 
                      checking assets list, 'memo-mecca-talk.webp' or reuse -->
-                                <img src="./assets/img/memo-mecca-talk.webp" alt="Self Care" class="img-fluid">
+                                        <img src="./assets/img/memo-mecca-talk.webp" alt="Self Care" class="img-fluid">
+                                    </div>
+                                    <h3 class="category-name">SELF CARE</h3>
+                                </a>
                             </div>
-                            <h3 class="category-name">SELF CARE</h3>
-                        </a>
-                    </div>
 
-                    <!-- Category 6: Fragrance -->
-                    <div class="col">
-                        <a href="#" class="category-card text-center">
-                            <div class="image-wrapper">
-                                <!-- Using placeholder for Fragrance -->
-                                <img src="./assets/img/home-slider-image/fragrance.webp"
-                                    onerror="this.src='./assets/img/memo-best-body.webp'" alt="Fragrance"
-                                    class="img-fluid">
+                            <!-- Category 6: Fragrance -->
+                            <div class="col">
+                                <a href="#" class="category-card text-center">
+                                    <div class="image-wrapper">
+                                        <!-- Using placeholder for Fragrance -->
+                                        <img src="./assets/img/home-slider-image/fragrance.webp"
+                                            onerror="this.src='./assets/img/memo-best-body.webp'" alt="Fragrance"
+                                            class="img-fluid">
+                                    </div>
+                                    <h3 class="category-name">FRAGRANCE</h3>
+                                </a>
                             </div>
-                            <h3 class="category-name">FRAGRANCE</h3>
-                        </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -2512,6 +2648,80 @@
         </div>
     </div>
 
+
+
+    <!-- Share Cart Offcanvas -->
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="shareCartOffcanvas"
+        aria-labelledby="shareCartOffcanvasLabel">
+        <div class="offcanvas-header border-bottom">
+            <h5 class="offcanvas-title fw-bold" id="shareCartOffcanvasLabel">Share Your Cart</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+            <p class="mb-4 text-muted">Sharing is caring! Share your cart with friends and family to get their opinions
+                before making a purchase. 🛒✨</p>
+
+            <!-- Share URL -->
+            <div class="mb-4">
+                <label class="form-label fw-semibold mb-2">Share Link</label>
+                <div class="input-group">
+                    <input type="text" class="form-control" id="shareUrlInput"
+                        value="https://nour-beauty.com/share_cart?user_id=2zHWRZnrmiAY9E1rS9f1gQ==" readonly>
+                    <button class="btn btn-outline-secondary" type="button" onclick="copyShareLink()">
+                        <i class="fa-regular fa-copy"></i>
+                    </button>
+                </div>
+                <small class="text-success d-none" id="copiedMessage">Link copied!</small>
+            </div>
+
+            <!-- Social Share Buttons -->
+            <div class="share-buttons">
+                <p class="fw-semibold mb-3">Share via</p>
+                <div class="d-grid gap-3">
+                    <!-- Facebook -->
+                    <a href="#" onclick="shareOnFacebook(); return false;"
+                        class="btn btn-lg d-flex align-items-center gap-3 border-0" style="background-color: #f8f9fa;">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 45px; height: 45px; background-color: #1877f2; flex-shrink: 0;">
+                            <i class="fa-brands fa-facebook-f text-white"></i>
+                        </div>
+                        <span class="flex-grow-1 text-start text-dark fw-semibold">Share on Facebook</span>
+                    </a>
+
+                    <!-- Twitter -->
+                    <a href="#" onclick="shareOnTwitter(); return false;"
+                        class="btn btn-lg d-flex align-items-center gap-3 border-0" style="background-color: #f8f9fa;">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 45px; height: 45px; background-color: #1da1f2; flex-shrink: 0;">
+                            <i class="fa-brands fa-twitter text-white"></i>
+                        </div>
+                        <span class="flex-grow-1 text-start text-dark fw-semibold">Share on Twitter</span>
+                    </a>
+
+                    <!-- WhatsApp -->
+                    <a href="#" onclick="shareOnWhatsApp(); return false;"
+                        class="btn btn-lg d-flex align-items-center gap-3 border-0" style="background-color: #f8f9fa;">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 45px; height: 45px; background-color: #25d366; flex-shrink: 0;">
+                            <i class="fa-brands fa-whatsapp text-white"></i>
+                        </div>
+                        <span class="flex-grow-1 text-start text-dark fw-semibold">Share on WhatsApp</span>
+                    </a>
+
+                    <!-- Google (Gmail) -->
+                    <a href="#" onclick="shareViaEmail(); return false;"
+                        class="btn btn-lg d-flex align-items-center gap-3 border-0" style="background-color: #f8f9fa;">
+                        <div class="rounded-circle d-flex align-items-center justify-content-center"
+                            style="width: 45px; height: 45px; background-color: #ea4335; flex-shrink: 0;">
+                            <i class="fa-brands fa-google text-white"></i>
+                        </div>
+                        <span class="flex-grow-1 text-start text-dark fw-semibold">Share via Email</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <script src="./assets/js/bootstrap.bundle.min.js"></script>
     <!-- swiper slider js CDN -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
@@ -2554,6 +2764,49 @@
                 }
             });
     </script>
+
+
+
+    <script>
+        const shareUrl = 'https://nour-beauty.com/share_cart?user_id=2zHWRZnrmiAY9E1rS9f1gQ==';
+        const shareMessage = 'Sharing is caring! Share your cart with friends and family to get their opinions before making a purchase. 🛒✨';
+
+        function copyShareLink() {
+            const input = document.getElementById('shareUrlInput');
+            input.select();
+            document.execCommand('copy');
+
+            const message = document.getElementById('copiedMessage');
+            message.classList.remove('d-none');
+            setTimeout(() => {
+                message.classList.add('d-none');
+            }, 2000);
+        }
+
+        function shareOnFacebook() {
+            const url = `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(shareUrl)}`;
+            window.open(url, '_blank', 'width=600,height=400');
+        }
+
+        function shareOnTwitter() {
+            const text = encodeURIComponent(shareMessage + ' ' + shareUrl);
+            const url = `https://twitter.com/intent/tweet?text=${text}`;
+            window.open(url, '_blank', 'width=600,height=400');
+        }
+
+        function shareOnWhatsApp() {
+            const text = encodeURIComponent(shareMessage + ' ' + shareUrl);
+            const url = `https://wa.me/?text=${text}`;
+            window.open(url, '_blank');
+        }
+
+        function shareViaEmail() {
+            const subject = encodeURIComponent('Check out my shopping cart!');
+            const body = encodeURIComponent(shareMessage + '\n\n' + shareUrl);
+            window.location.href = `mailto:?subject=${subject}&body=${body}`;
+        }
+    </script>
+
 </body>
 
 </html>

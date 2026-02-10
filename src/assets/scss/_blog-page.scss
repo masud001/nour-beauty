@@ -6,9 +6,10 @@
 
 .blog-thumb {
     width: 100%;
-    height: 280px;
+    max-width: 500px;
+    height: 281px;
     overflow: hidden;
-    aspect-ratio: 16/9;
+    aspect-ratio: 500/281;
 
     img {
         width: 100%;
@@ -21,38 +22,58 @@
     }
 }
 
+.blog-item {
+    @media screen and (max-width:768px) {
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+    }
+}
+
 .blog-details {
-    @media (max-width: 768px) {
 
-        .news-tag,
-        .writter-name {
-            font-size: 12px !important;
+    .blog-content {
+        gap: 1.5rem !important;
+    }
+
+    .date-writter-area {
+        gap: 24px;
+    }
+
+    .news-tag,
+    .writter-name {
+        font-size: 16px !important;
+        text-transform: uppercase;
+    }
+
+
+
+    .blog-title {
+        font-size: 30px !important;
+        width: 80%;
+
+        @media screen and (min-width: 768px) {
+            font-size: 48px !important;
+            max-width: 87%;
+            width: 100%;
         }
 
-        .blog-title {
-            font-size: 18px !important;
-        }
-
-        p {
-            font-size: 13px !important;
+        @media screen and (min-width: 1536px) {
+            width: 72%;
         }
     }
 
-    @media (min-width:992px) and (max-width:1199px) {
-
-        .news-tag,
-        .writter-name {
-            font-size: 14px !important;
-        }
-
-        .blog-title {
-            font-size: 24px !important;
-        }
-
-        p {
-            font-size: 16px !important;
-        }
+    .blog-text {
+        font-size: 18px !important;
+        opacity: .60 !important;
     }
+
+    .blog-date {
+        font-size: 16px !important;
+        opacity: .60 !important;
+    }
+
+
+
 
 
 }
@@ -66,16 +87,16 @@
 // --------------------------------
 
 .blog-title-background {
-    @media (max-width: 768px) {
-        background-color: red;
+    @media (max-width: 767px) {
+        // background-color: red;
         background-image: url("../img/blog/blog-thumb-01.jpg");
         background-position: center;
         background-size: cover;
         background-repeat: no-repeat;
-        height: 300px;
+        height: 250px;
 
         .blog-details {
-            padding: 15px;
+            padding: 15px 2.5rem 15px 2.5rem;
             width: 100%;
             height: 100%;
             background-color: rgba(0, 0, 0, 0.5);
@@ -89,12 +110,24 @@
                 color: #fff !important;
 
             }
+
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1023px) {
+        .blog-title {
+            font-size: 24px !important;
         }
     }
 
 }
 
 .single-page-blog-details {
+    p {
+        font-size: 18px !important;
+        color: #121212cc !important;
+    }
+
     ul {
         list-style-type: disc;
         display: flex;
@@ -106,9 +139,12 @@
 
     @media (max-width: 768px) {
 
-        p,
+        padding-left: 1rem;
+        padding-right: 1rem;
+
+
         ul>li>a {
-            font-size: 13px !important;
+            font-size: 18px !important;
         }
 
         .writer-avater {
@@ -125,9 +161,9 @@
 
     @media (min-width:992px) and (max-width:1199px) {
 
-        p,
+
         ul>li>a {
-            font-size: 16px !important;
+            font-size: 18px !important;
         }
     }
 }
@@ -231,9 +267,15 @@
 
 .single-blog-thumb {
     width: 100%;
-    max-height: 350px;
+    max-width: 570px;
+    max-height: 380px;
     overflow: hidden;
-    aspect-ratio: 16/9;
+    aspect-ratio: 3/2;
+
+    @media (max-width: 768px) {
+        max-width: 100%;
+        max-height: 250px !important;
+    }
 
     img {
         width: 100%;
@@ -244,13 +286,42 @@
 
 .related-blog-thumb {
     width: 100%;
-    max-height: 375px;
     overflow: hidden;
-    aspect-ratio: 16/9;
+    aspect-ratio: 194/109;
+
+    // @media screen and (min-width:1440px) {
+    //     max-width: 582px;
+    //     max-height: 327px;
+    // }
 
     img {
         width: 100%;
         height: 100%;
         object-fit: cover;
+    }
+}
+
+.related-blog-details {
+    .blog-title {
+        font-size: 18px !important;
+    }
+
+    .blog-text {
+        font-size: 16px !important;
+    }
+
+    .date-writter-area {
+        gap: 24px;
+    }
+
+    .news-tag,
+    .writter-name {
+        font-size: 16px !important;
+        text-transform: uppercase;
+    }
+
+    .blog-date {
+        font-size: 16px !important;
+        opacity: .60 !important;
     }
 }
