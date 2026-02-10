@@ -11,6 +11,13 @@ document.addEventListener('DOMContentLoaded', function () {
                 backdrop: 'static', // Prevent closing when clicking outside
                 keyboard: false
             });
+            // Ensure aria-hidden is removed when shown
+            modalElement.addEventListener('show.bs.modal', () => {
+                modalElement.removeAttribute('aria-hidden');
+            });
+            modalElement.addEventListener('hidden.bs.modal', () => {
+                modalElement.setAttribute('aria-hidden', 'true');
+            });
             myModal.show();
         }
     }, popupDelay);
