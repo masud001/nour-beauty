@@ -1,3 +1,5 @@
+@use "./variable" as vars;
+
 .product-filter-section {
   z-index: 30;
   top: 56px;
@@ -68,4 +70,57 @@
 // show more button
 .hidden-button {
   display: none;
+}
+
+// Active Filters Section
+.active-filters-wrapper {
+  background-color: vars.$background;
+  
+  .filter-tag {
+    display: inline-flex;
+    align-items: center;
+    background-color: #F9F9F9;
+    border: 1px solid #E5E5E5;
+    padding: 6px 12px;
+    font-size: vars.$font-sm;
+    color: vars.$text-color;
+    border-radius: 2px;
+    gap: 8px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      background-color: #f0f0f0;
+    }
+
+    .btn-close-custom {
+      background: none;
+      border: none;
+      padding: 0;
+      font-size: 12px;
+      cursor: pointer;
+      color: vars.$text-color;
+      display: flex;
+      align-items: center;
+      opacity: 0.6;
+      transition: opacity 0.2s ease;
+      
+      &:hover {
+        opacity: 1;
+        color: vars.$color-red;
+      }
+    }
+  }
+
+  .clear-all-btn {
+    font-size: vars.$font-sm;
+    color: vars.$text-color;
+    text-decoration: underline;
+    margin-left: 8px;
+    font-weight: 500;
+    
+    &:hover {
+      color: vars.$primary-color;
+      text-decoration: none;
+    }
+  }
 }

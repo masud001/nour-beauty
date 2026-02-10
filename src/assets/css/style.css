@@ -14684,6 +14684,52 @@ textarea.form-control-lg {
   display: none;
 }
 
+.active-filters-wrapper {
+  background-color: #ffffff;
+}
+.active-filters-wrapper .filter-tag {
+  display: inline-flex;
+  align-items: center;
+  background-color: #F9F9F9;
+  border: 1px solid #E5E5E5;
+  padding: 6px 12px;
+  font-size: 14px;
+  color: #072835;
+  border-radius: 2px;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+.active-filters-wrapper .filter-tag:hover {
+  background-color: #f0f0f0;
+}
+.active-filters-wrapper .filter-tag .btn-close-custom {
+  background: none;
+  border: none;
+  padding: 0;
+  font-size: 12px;
+  cursor: pointer;
+  color: #072835;
+  display: flex;
+  align-items: center;
+  opacity: 0.6;
+  transition: opacity 0.2s ease;
+}
+.active-filters-wrapper .filter-tag .btn-close-custom:hover {
+  opacity: 1;
+  color: #ad1f1a;
+}
+.active-filters-wrapper .clear-all-btn {
+  font-size: 14px;
+  color: #072835;
+  text-decoration: underline;
+  margin-left: 8px;
+  font-weight: 500;
+}
+.active-filters-wrapper .clear-all-btn:hover {
+  color: #000000;
+  text-decoration: none;
+}
+
 .product-listing-section {
   position: relative;
   z-index: 0;
@@ -15091,29 +15137,6 @@ textarea.form-control-lg {
   width: 100%;
   height: 100%;
 }
-.dynamic-tab-content .discount-badge {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  background-color: #dc3545;
-  color: #ffffff;
-  font-size: 12px;
-  font-weight: 600;
-  padding: 6px 12px;
-  border-radius: 4px;
-  z-index: 2;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-}
-@media (max-width: 768px) {
-  .dynamic-tab-content .discount-badge {
-    font-size: 10px;
-    padding: 4px 8px;
-    top: 8px;
-    left: 8px;
-  }
-}
 .dynamic-tab-content .card-title {
   margin-top: 12px !important;
   font-size: 14px;
@@ -15287,6 +15310,30 @@ textarea.form-control-lg {
 .dynamic-tab-content .tabContentSlider02:hover .tab-content-swiper-button-next {
   opacity: 1;
   visibility: visible;
+}
+
+.discount-badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background-color: #dc3545;
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 4px;
+  z-index: 2;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+@media (max-width: 768px) {
+  .discount-badge {
+    font-size: 10px;
+    padding: 4px 8px;
+    top: 8px;
+    left: 8px;
+  }
 }
 
 #selectRegionModal {
