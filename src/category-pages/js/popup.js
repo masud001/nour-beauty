@@ -2,35 +2,18 @@ document.addEventListener('DOMContentLoaded', function () {
     // Configuration
     const popupDelay = 5000; // 5 seconds
     const popupId = 'promoPopupModal';
-    const storageKey = 'nourPopupShown_v1';
 
-    // Check if popup should be shown
-    const hasShown = localStorage.getItem(storageKey);
-
-    if (!hasShown) {
-        setTimeout(() => {
-            const modalElement = document.getElementById(popupId);
-            if (modalElement && window.bootstrap) {
-                const myModal = new window.bootstrap.Modal(modalElement, {
-                    backdrop: 'static', // Prevent closing when clicking outside (optional, maybe distinct)
-                    keyboard: false
-                });
-                myModal.show();
-
-                // Set flag so it doesn't show again in this session/ever
-                // For testing, you might want to comment this out or clear localStorage
-                // localStorage.setItem(storageKey, 'true'); 
-
-                // Handle "No thanks" and Close button specific logic if needed
-                const closeBtns = modalElement.querySelectorAll('[data-bs-dismiss="modal"]');
-                closeBtns.forEach(btn => {
-                    btn.addEventListener('click', () => {
-                        localStorage.setItem(storageKey, 'true');
-                    });
-                });
-            }
-        }, popupDelay);
-    }
+    // Show popup on every page load
+    setTimeout(() => {
+        const modalElement = document.getElementById(popupId);
+        if (modalElement && window.bootstrap) {
+            const myModal = new window.bootstrap.Modal(modalElement, {
+                backdrop: 'static', // Prevent closing when clicking outside
+                keyboard: false
+            });
+            myModal.show();
+        }
+    }, popupDelay);
 
     // Countdown Timer Logic
     const timerElement = document.querySelector('.countdown-timer');
