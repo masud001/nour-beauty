@@ -1581,22 +1581,10 @@
 
 
   <!-- clear filter section start -->
-  <div class="active-filters-wrapper py-0">
+  <div class="active-filters-wrapper py-0" style="display: none;">
     <div class="container">
-      <div class="d-flex align-items-center flex-wrap gap-2">
-        <div class="filter-tag">
-          Exfoliators & Scrubs
-          <button type="button" class="btn-close-custom" aria-label="Remove filter">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </div>
-        <div class="filter-tag">
-          Eye Care
-          <button type="button" class="btn-close-custom" aria-label="Remove filter">
-            <i class="fa-solid fa-xmark"></i>
-          </button>
-        </div>
-        <a href="#" class="clear-all-btn">Clear All</a>
+      <div class="d-flex align-items-center flex-wrap gap-2" id="active-filters-container">
+        <!-- Filters will be injected here by filter-manager.js -->
       </div>
     </div>
   </div>
@@ -1623,7 +1611,7 @@
                   <img src="./img/product/images.avif" alt="Brand of the month" loading="lazy" width="350" height="430"
                     class="object-cover mx-auto w-full h-full shrink-0" decoding="auto" fetchpriority="auto" />
                 </picture>
-                <button class="wishlist-btn" aria-label="Add to wishlist">
+                <button class="wishlist-btn" aria-label="Add to wishlist" data-product-id="203">
                   <i class="fa-regular fa-heart"></i>
                 </button>
               </figure>
@@ -1677,7 +1665,7 @@
                   <img src="./img/product/images.avif" alt="Brand of the month" loading="lazy" width="350" height="430"
                     class="object-cover mx-auto w-full h-full shrink-0" decoding="auto" fetchpriority="auto" />
                 </picture>
-                <button class="wishlist-btn" aria-label="Add to wishlist">
+                <button class="wishlist-btn" aria-label="Add to wishlist" data-product-id="204">
                   <i class="fa-regular fa-heart"></i>
                 </button>
               </figure>
@@ -1731,7 +1719,7 @@
                   <img src="./img/product/images.avif" alt="Brand of the month" loading="lazy" width="350" height="430"
                     class="object-cover mx-auto w-full h-full shrink-0" decoding="auto" fetchpriority="auto" />
                 </picture>
-                <button class="wishlist-btn" aria-label="Add to wishlist">
+                <button class="wishlist-btn" aria-label="Add to wishlist" data-product-id="205">
                   <i class="fa-regular fa-heart"></i>
                 </button>
               </figure>
@@ -1785,7 +1773,7 @@
                   <img src="./img/product/images.avif" alt="Brand of the month" loading="lazy" width="350" height="430"
                     class="object-cover mx-auto w-full h-full shrink-0" decoding="auto" fetchpriority="auto" />
                 </picture>
-                <button class="wishlist-btn" aria-label="Add to wishlist">
+                <button class="wishlist-btn" aria-label="Add to wishlist" data-product-id="206">
                   <i class="fa-regular fa-heart"></i>
                 </button>
               </figure>
@@ -1839,7 +1827,7 @@
                   <img src="./img/product/images.avif" alt="Brand of the month" loading="lazy" width="350" height="430"
                     class="object-cover mx-auto w-full h-full shrink-0" decoding="auto" fetchpriority="auto" />
                 </picture>
-                <button class="wishlist-btn" aria-label="Add to wishlist">
+                <button class="wishlist-btn" aria-label="Add to wishlist" data-product-id="207">
                   <i class="fa-regular fa-heart"></i>
                 </button>
               </figure>
@@ -1893,7 +1881,7 @@
                   <img src="./img/product/images.avif" alt="Brand of the month" loading="lazy" width="350" height="430"
                     class="object-cover mx-auto w-full h-full shrink-0" decoding="auto" fetchpriority="auto" />
                 </picture>
-                <button class="wishlist-btn" aria-label="Add to wishlist">
+                <button class="wishlist-btn" aria-label="Add to wishlist" data-product-id="208">
                   <i class="fa-regular fa-heart"></i>
                 </button>
               </figure>
@@ -1947,7 +1935,7 @@
                   <img src="./img/product/images.avif" alt="Brand of the month" loading="lazy" width="350" height="430"
                     class="object-cover mx-auto w-full h-full shrink-0" decoding="auto" fetchpriority="auto" />
                 </picture>
-                <button class="wishlist-btn" aria-label="Add to wishlist">
+                <button class="wishlist-btn" aria-label="Add to wishlist" data-product-id="209">
                   <i class="fa-regular fa-heart"></i>
                 </button>
               </figure>
@@ -2001,7 +1989,7 @@
                   <img src="./img/product/images.avif" alt="Brand of the month" loading="lazy" width="350" height="430"
                     class="object-cover mx-auto w-full h-full shrink-0" decoding="auto" fetchpriority="auto" />
                 </picture>
-                <button class="wishlist-btn" aria-label="Add to wishlist">
+                <button class="wishlist-btn" aria-label="Add to wishlist" data-product-id="210">
                   <i class="fa-regular fa-heart"></i>
                 </button>
               </figure>
@@ -2604,6 +2592,8 @@
       });
     });
   </script>
+  <script src="./js/wishlist-manager.js"></script>
+  <script src="./js/filter-manager.js"></script>
 </body>
 
 </html>
