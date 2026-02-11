@@ -49,7 +49,7 @@ class WishlistManager {
     // Handle the click event
     handleWishlistToggle(btn) {
         const productId = btn.dataset.productId;
-        
+
         if (!productId) {
             console.error('Wishlist Error: No data-product-id found on button', btn);
             return;
@@ -71,12 +71,12 @@ class WishlistManager {
     addToWishlist(id) {
         // --- BACKEND READY BLOCK ---
         // Future: fetch('/api/wishlist/add', { method: 'POST', body: JSON.stringify({id}) })
-        
+
         if (!this.isInWishlist(id)) {
             this.wishlist.push(id.toString());
             this.saveWishlist();
             this.dispatchUpdateEvent(id, 'added');
-            
+
             // Optional: Show toast/notification here
             console.log(`Product ${id} added to wishlist`);
         }
