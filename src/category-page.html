@@ -1581,10 +1581,23 @@
 
 
   <!-- clear filter section start -->
-  <div class="active-filters-wrapper py-0" style="display: none;">
+  <div class="active-filters-wrapper py-3">
     <div class="container">
       <div class="d-flex align-items-center flex-wrap gap-2" id="active-filters-container">
-        <!-- Filters will be injected here by filter-manager.js -->
+        <!-- Static HTML for Design Purposes -->
+        <div class="filter-tag">
+          Hair Care
+          <button type="button" class="btn-close-custom" aria-label="Remove filter">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <div class="filter-tag">
+          Under $50
+          <button type="button" class="btn-close-custom" aria-label="Remove filter">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+        <a href="#" class="clear-all-btn">Clear All</a>
       </div>
     </div>
   </div>
@@ -1595,8 +1608,6 @@
   <div class="product-listing-section py-5">
     <div class="container">
       <div class="row gy-4">
-
-
         <div class="col-6 col-sm-4 col-md-3 ">
           <div class="product-card flex flex-col gap-2">
             <a href="/#" class="product-image-link">
@@ -2601,7 +2612,6 @@
     });
   </script>
   <script src="./assets/js/wishlist-manager.js"></script>
-  <script src="./assets/js/filter-manager.js"></script>
 </body>
 
 </html>
