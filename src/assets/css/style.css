@@ -16563,6 +16563,67 @@ textarea.form-control-lg {
     opacity: 1;
   }
 }
+.submit-review-section .product-info-section .product-image {
+  max-height: 250px;
+  object-fit: contain;
+  width: auto;
+  max-width: 100%;
+}
+.submit-review-section .review-form .form-label {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 0.5rem;
+}
+.submit-review-section .review-form .form-control,
+.submit-review-section .review-form .form-select {
+  border-color: #e5e5e5;
+  font-size: 14px;
+}
+.submit-review-section .review-form .form-control:focus,
+.submit-review-section .review-form .form-select:focus {
+  border-color: #000;
+  box-shadow: none;
+}
+.submit-review-section .review-form textarea.form-control {
+  resize: vertical;
+}
+.submit-review-section .review-form .star-rating-selector .star-item {
+  border: 1px solid #e5e5e5;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  color: #e5e5e5;
+}
+.submit-review-section .review-form .star-rating-selector .star-item i {
+  font-size: 14px;
+}
+.submit-review-section .review-form .star-rating-selector .star-item:hover {
+  border-color: #f59e0b;
+}
+.submit-review-section .review-form .star-rating-selector .star-item:hover i {
+  color: #f59e0b;
+}
+.submit-review-section .review-form .star-rating-selector .star-item.active {
+  border-color: #f59e0b;
+  background-color: rgba(245, 158, 11, 0.05);
+}
+.submit-review-section .review-form .star-rating-selector .star-item.active i {
+  color: #f59e0b;
+}
+.submit-review-section .review-form .btn-black {
+  background-color: #000;
+  color: #fff;
+  transition: opacity 0.3s ease;
+}
+.submit-review-section .review-form .btn-black:hover {
+  opacity: 0.9;
+  color: #fff;
+}
+
 .b2b-brand-section h2, .b2b-brand-section .h2 {
   font-size: 50px;
   font-stretch: normal;

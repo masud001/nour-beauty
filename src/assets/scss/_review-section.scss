@@ -1,0 +1,81 @@
+@use "./variable" as vars;
+
+.submit-review-section {
+  .product-info-section {
+    .product-image {
+      max-height: 250px;
+      object-fit: contain;
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+  .review-form {
+    .form-label {
+      font-weight: 500;
+      font-size: vars.$font-sm;
+      margin-bottom: 0.5rem;
+    }
+
+    .form-control,
+    .form-select {
+      border-color: #e5e5e5;
+      font-size: vars.$font-sm;
+
+      &:focus {
+        border-color: #000;
+        box-shadow: none;
+      }
+    }
+
+    textarea.form-control {
+      resize: vertical;
+    }
+
+    .star-rating-selector {
+      .star-item {
+        border: 1px solid #e5e5e5;
+        padding: 10px 15px;
+        cursor: pointer;
+        border-radius: 4px;
+        transition: all 0.2s ease;
+        display: flex;
+        align-items: center;
+        gap: 2px;
+        color: #e5e5e5; // Default gray star color
+
+        i {
+          font-size: 14px;
+        }
+
+        &:hover {
+          border-color: #f59e0b;
+
+          i {
+            color: #f59e0b;
+          }
+        }
+
+        &.active {
+          border-color: #f59e0b;
+          background-color: rgba(245, 158, 11, 0.05);
+
+          i {
+            color: #f59e0b;
+          }
+        }
+      }
+    }
+
+    .btn-black {
+      background-color: #000;
+      color: #fff;
+      transition: opacity 0.3s ease;
+
+      &:hover {
+        opacity: 0.9;
+        color: #fff;
+      }
+    }
+  }
+}
