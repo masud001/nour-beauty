@@ -1,0 +1,36 @@
+/* Wishlist Notification Toast */
+.notification {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 25px;
+  border-radius: 4px;
+  z-index: 9999;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  animation: slideIn 0.3s ease-out;
+  font-family: var(--bs-body-font-family);
+  font-size: 0.9rem;
+}
+
+.notification a {
+  color: #fff;
+  text-decoration: underline;
+  font-weight: bold;
+  margin-left: auto;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
