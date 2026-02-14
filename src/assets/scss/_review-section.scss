@@ -33,6 +33,8 @@
     }
 
     .star-rating-selector {
+      flex-wrap: wrap;
+
       .star-item {
         border: 1px solid #e5e5e5;
         padding: 10px 15px;
@@ -43,6 +45,13 @@
         align-items: center;
         gap: 2px;
         color: #e5e5e5; // Default gray star color
+        
+        // Responsive adjustments for mobile
+        @media (max-width: 575.98px) {
+          padding: 8px 10px;
+          flex-grow: 1; // Allow items to grow to fill space
+          justify-content: center; // Center content
+        }
 
         i {
           font-size: 14px;

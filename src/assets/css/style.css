@@ -16587,6 +16587,9 @@ textarea.form-control-lg {
 .submit-review-section .review-form textarea.form-control {
   resize: vertical;
 }
+.submit-review-section .review-form .star-rating-selector {
+  flex-wrap: wrap;
+}
 .submit-review-section .review-form .star-rating-selector .star-item {
   border: 1px solid #e5e5e5;
   padding: 10px 15px;
@@ -16597,6 +16600,13 @@ textarea.form-control-lg {
   align-items: center;
   gap: 2px;
   color: #e5e5e5;
+}
+@media (max-width: 575.98px) {
+  .submit-review-section .review-form .star-rating-selector .star-item {
+    padding: 8px 10px;
+    flex-grow: 1;
+    justify-content: center;
+  }
 }
 .submit-review-section .review-form .star-rating-selector .star-item i {
   font-size: 14px;
@@ -17960,6 +17970,44 @@ body .product-overlay-listing {
   padding: 1.5rem;
   border: 1px solid #e5e5e5;
   border-radius: 2px;
+}
+.order-summary-page .order-summary-sidebar .summary-card .coupon-box {
+  border: 2px dashed #2dd4bf;
+  background-color: #ecfeff;
+  border-radius: 6px;
+  padding: 12px 14px;
+}
+.order-summary-page .order-summary-sidebar .summary-card .coupon-box .coupon-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  background-color: #ccfbf1;
+  color: #0f766e;
+}
+.order-summary-page .order-summary-sidebar .summary-card .coupon-box .coupon-icon i {
+  font-size: 16px;
+}
+.order-summary-page .order-summary-sidebar .summary-card .coupon-box .coupon-input-group .coupon-input {
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  padding-left: 0;
+  font-size: 0.95rem;
+}
+.order-summary-page .order-summary-sidebar .summary-card .coupon-box .coupon-input-group .coupon-input:focus {
+  box-shadow: none;
+}
+.order-summary-page .order-summary-sidebar .summary-card .coupon-box .coupon-input-group .btn-apply-coupon {
+  background-color: #000;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  border-radius: 2px;
+}
+.order-summary-page .order-summary-sidebar .summary-card .coupon-box .coupon-input-group .btn-apply-coupon:hover {
+  opacity: 0.9;
+  color: #fff;
 }
 .order-summary-page .order-summary-sidebar .item-list li {
   padding-bottom: 1rem;
