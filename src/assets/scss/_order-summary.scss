@@ -118,6 +118,23 @@
         }
     }
 
+    .payment-option {
+        cursor: pointer;
+        transition: border-color .2s ease, background-color .2s ease;
+        border-color: #e5e5e5;
+        &.active {
+            border-color: #000;
+            background-color: #fafafa;
+        }
+        .form-check-input {
+            margin-top: 0;
+        }
+    }
+
+    .payment-form-panel {
+        display: block;
+    }
+
     .payment-icons {
         img {
             height: 30px;
