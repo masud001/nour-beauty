@@ -78,6 +78,42 @@
     }
 }
 
+.wishlist-product-grid {
+    .product-card {
+        figure {
+            height: unset;
+            /* Use aspect-ratio to maintain container shape */
+            aspect-ratio: 3/4;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: transparent;
+            /* Optional background for letterboxing */
+
+            picture {
+                display: block;
+                width: 100%;
+                height: 100%;
+                max-height: unset !important;
+                min-height: unset !important;
+
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: contain !important;
+                    /* Ensures image fits within the box without cropping */
+
+                    @media screen and (min-width: 992px) {
+                        /* Ensuring consistency across breakpoints */
+                        object-fit: contain !important;
+                        height: 100%;
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* Mobile Menu Transitions */
 .mobile-menu-overlay {
     &.open {

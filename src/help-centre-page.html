@@ -1254,219 +1254,245 @@
     </div>
   </div>
 
-  <!-- Help Centre Main Content -->
-  <main class="help-centre-page bg-light py-5">
+  <!-- Help Centre Main Content start-->
+  <main class="help-centre-page py-5">
     <div class="container">
       <!-- Help Centre Header -->
       <div class="text-center mb-5">
-        <h1 class="fw-bold mb-3" style="font-size: 2rem;">HELP CENTRE</h1>
-        <p class="mb-4">Try searching for your question</p>
+        <h6 class="fw-bold mb-3 text-uppercase small" style="letter-spacing: 1px;">Help Centre</h6>
+        <p class="mb-4 text-muted">Try searching for your question</p>
 
         <!-- Search Bar -->
         <div class="mx-auto" style="max-width: 600px;">
           <div class="position-relative">
-            <input type="text" class="form-control rounded-0 ps-5 py-3" placeholder="Find help...">
-            <i class="fa-solid fa-magnifying-glass position-absolute top-50 translate-middle-y ms-3"
+            <input type="text" class="form-control rounded-1 ps-5 py-3 border" placeholder="Find help..."
+              style="box-shadow: none;">
+            <i class="fa-solid fa-magnifying-glass position-absolute top-50 translate-middle-y ms-3 text-muted"
               style="left: 0;"></i>
           </div>
         </div>
       </div>
 
-      <div class="row g-4">
+      <div class="row g-5">
         <!-- Left Column - FAQ Categories -->
-        <div class="col-lg-3">
-          <div class="bg-white p-4 border">
-            <h6 class="fw-bold text-uppercase mb-3" style="font-size: 0.9rem;">FREQUENTLY ASKED QUESTIONS</h6>
-            <ul class="list-unstyled mb-0" id="faqCategories">
-              <li class="mb-2"><a href="#" class="faq-category-link text-decoration-none text-dark d-block py-1 fw-bold"
-                  data-category="my-account">My Account</a></li>
-              <li class="mb-2"><a href="#" class="faq-category-link text-decoration-none text-dark d-block py-1"
-                  data-category="ordering">Ordering</a></li>
-              <li class="mb-2"><a href="#" class="faq-category-link text-decoration-none text-dark d-block py-1"
-                  data-category="payments">Payments</a></li>
-              <li class="mb-2"><a href="#" class="faq-category-link text-decoration-none text-dark d-block py-1"
-                  data-category="gift-vouchers">Cult Beauty Gift Vouchers</a></li>
-              <li class="mb-2"><a href="#" class="faq-category-link text-decoration-none text-dark d-block py-1"
-                  data-category="delivery">Delivery</a></li>
-              <li class="mb-2"><a href="#" class="faq-category-link text-decoration-none text-dark d-block py-1"
-                  data-category="returns">Returns and Refunds</a></li>
-              <li class="mb-2"><a href="#" class="faq-category-link text-decoration-none text-dark d-block py-1"
-                  data-category="website">Website</a></li>
-              <li class="mb-2"><a href="#" class="faq-category-link text-decoration-none text-dark d-block py-1"
-                  data-category="recycle">Recycle Me</a></li>
-            </ul>
+        <div class="col-lg-10 offset-lg-1">
+          <div class="row">
 
-            <hr class="my-4">
+            <div class="col-lg-3" id="faqCategoriesColumn">
+              <div class="">
+                <h6 class="fw-bold text-uppercase mb-4 small" style="letter-spacing: 0.5px;">Frequently Asked Questions
+                </h6>
+                <ul class="list-unstyled mb-0 d-flex flex-column gap-3" id="faqCategories">
+                  <li><a href="#" class="faq-category-link text-decoration-none text-dark d-block small"
+                      data-category="my-account">My Account</a></li>
+                  <li><a href="#" class="faq-category-link text-decoration-none text-dark d-block small"
+                      data-category="ordering">Ordering</a></li>
+                  <li><a href="#" class="faq-category-link text-decoration-none text-dark d-block small"
+                      data-category="payments">Payments</a></li>
+                  <li><a href="#" class="faq-category-link text-decoration-none text-dark d-block small"
+                      data-category="gift-vouchers">Cult Beauty Gift Vouchers</a></li>
+                  <li><a href="#" class="faq-category-link text-decoration-none text-dark d-block small"
+                      data-category="delivery">Delivery</a></li>
+                  <li><a href="#" class="faq-category-link text-decoration-none text-dark d-block small"
+                      data-category="returns">Returns and Refunds</a></li>
+                  <li><a href="#" class="faq-category-link text-decoration-none text-dark d-block small"
+                      data-category="website">Website</a></li>
+                  <li><a href="#" class="faq-category-link text-decoration-none text-dark d-block small"
+                      data-category="recycle">Recycle Me</a></li>
+                </ul>
 
-            <h6 class="fw-bold text-uppercase mb-3" style="font-size: 0.9rem;">CUSTOMER SUPPORT</h6>
-            <ul class="list-unstyled mb-0">
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none text-dark d-flex align-items-center py-1">
-                  <i class="fa-regular fa-comment-dots me-2"></i>
-                  Open messages app
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none text-dark d-flex align-items-center py-1">
-                  <i class="fa-regular fa-message me-2"></i>
-                  Message
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none text-dark d-flex align-items-center py-1">
-                  <i class="fa-regular fa-envelope me-2"></i>
-                  View your messages
-                </a>
-              </li>
-            </ul>
+                <div class="py-4"></div>
 
-            <hr class="my-4">
+                <h6 class="fw-bold text-uppercase mb-4 small" style="letter-spacing: 0.5px;">Customer Support</h6>
+                <ul class="list-unstyled mb-0 d-flex flex-column gap-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center small">
+                      <i class="fa-regular fa-comment-dots me-2"></i>
+                      Open messages app
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center small">
+                      <i class="fa-regular fa-message me-2"></i>
+                      Message
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center small">
+                      <i class="fa-regular fa-envelope me-2"></i>
+                      View your messages
+                    </a>
+                  </li>
+                </ul>
 
-            <h6 class="fw-bold text-uppercase mb-3" style="font-size: 0.9rem;">SOCIAL LINKS</h6>
-            <ul class="list-unstyled mb-0">
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none text-dark d-flex align-items-center py-1">
-                  <i class="fa-brands fa-facebook me-2"></i>
-                  Facebook
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none text-dark d-flex align-items-center py-1">
-                  <i class="fa-brands fa-twitter me-2"></i>
-                  Twitter
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none text-dark d-flex align-items-center py-1">
-                  <i class="fa-brands fa-instagram me-2"></i>
-                  Instagram
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none text-dark d-flex align-items-center py-1">
-                  <i class="fa-brands fa-pinterest me-2"></i>
-                  Pinterest
-                </a>
-              </li>
-              <li class="mb-2">
-                <a href="#" class="text-decoration-none text-dark d-flex align-items-center py-1">
-                  <i class="fa-brands fa-tiktok me-2"></i>
-                  Tiktok
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+                <div class="py-4"></div>
 
-        <!-- Right Column - FAQ Content -->
-        <div class="col-lg-9">
-          <div class="bg-white p-4 border">
-            <h5 class="fw-bold mb-3">MY ACCOUNT</h5>
-            <p class="text-muted small mb-4">Below are the most frequently asked questions for this topic</p>
-
-            <!-- FAQ Accordion -->
-            <div class="accordion accordion-flush" id="faqAccordion">
-              <!-- FAQ Item 1 -->
-              <div class="accordion-item border-bottom">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed bg-white text-dark fw-normal py-3 px-0" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#faq1">
-                    How do I create an account?
-                  </button>
-                </h2>
-                <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body px-0 py-3">
-                    To create an account, click on the "Account" button in the top right corner of the page and select
-                    "Registration". Fill in your details and click "Create Account".
-                  </div>
-                </div>
+                <h6 class="fw-bold text-uppercase mb-4 small" style="letter-spacing: 0.5px;">Social Links</h6>
+                <ul class="list-unstyled mb-0 d-flex flex-column gap-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center small">
+                      <i class="fa-brands fa-facebook me-2"></i>
+                      Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center small">
+                      <i class="fa-brands fa-twitter me-2"></i>
+                      Twitter
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center small">
+                      <i class="fa-brands fa-instagram me-2"></i>
+                      Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center small">
+                      <i class="fa-brands fa-pinterest me-2"></i>
+                      Pinterest
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center small">
+                      <i class="fa-brands fa-tiktok me-2"></i>
+                      Tiktok
+                    </a>
+                  </li>
+                </ul>
               </div>
+            </div>
 
-              <!-- FAQ Item 2 -->
-              <div class="accordion-item border-bottom">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed bg-white text-dark fw-normal py-3 px-0" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#faq2">
-                    How do I register to receive special offers?
-                  </button>
-                </h2>
-                <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body px-0 py-3">
-                    You can register for special offers by creating an account and opting in to receive marketing emails
-                    during registration, or by updating your preferences in your account settings.
+
+            <!-- Right Column - FAQ Content -->
+            <div class="col-lg-8 offset-lg-1 d-none d-lg-block" id="faqContentColumn">
+              <div class="">
+                <!-- Back Button for Mobile -->
+                <button class="btn btn-link text-dark text-decoration-none p-0 mb-4 d-lg-none" id="backToHelpCentre">
+                  <i class="fa-solid fa-chevron-left me-2"></i> Back to Help Centre
+                </button>
+
+                <h6 class="fw-bold text-uppercase mb-3 small" style="letter-spacing: 0.5px;">My Account</h6>
+                <p class="text-muted small mb-5">Below are the most frequently asked questions for this topic</p>
+
+                <!-- FAQ Accordion -->
+                <div class="accordion accordion-flush" id="faqAccordion">
+                  <!-- FAQ Item 1 -->
+                  <div class="accordion-item border-bottom border-light-subtle">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent text-dark fw-normal py-4 px-0 shadow-none"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        How do I create an account?
+                      </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body px-0 pb-4 text-muted small">
+                        To create an account, click on the "Account" button in the top right corner of the page and
+                        select
+                        "Registration". Fill in your details and click "Create Account".
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <!-- FAQ Item 3 -->
-              <div class="accordion-item border-bottom">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed bg-white text-dark fw-normal py-3 px-0" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#faq3">
-                    How do I change my account details?
-                  </button>
-                </h2>
-                <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body px-0 py-3">
-                    Log in to your account, go to "Account Details" and update your personal information, email
-                    preferences, or password as needed.
+                  <!-- FAQ Item 2 -->
+                  <div class="accordion-item border-bottom border-light-subtle">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent text-dark fw-normal py-4 px-0 shadow-none"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        How do I register to receive special offers?
+                      </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body px-0 pb-4 text-muted small">
+                        You can register for special offers by creating an account and opting in to receive marketing
+                        emails
+                        during registration, or by updating your preferences in your account settings.
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <!-- FAQ Item 4 -->
-              <div class="accordion-item border-bottom">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed bg-white text-dark fw-normal py-3 px-0" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#faq4">
-                    Are my personal details safe if I create an account?
-                  </button>
-                </h2>
-                <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body px-0 py-3">
-                    Yes, we take data security very seriously. All personal information is encrypted and stored
-                    securely. We comply with GDPR and other data protection regulations.
+                  <!-- FAQ Item 3 -->
+                  <div class="accordion-item border-bottom border-light-subtle">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent text-dark fw-normal py-4 px-0 shadow-none"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        How do I change my account details?
+                      </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body px-0 pb-4 text-muted small">
+                        Log in to your account, go to "Account Details" and update your personal information, email
+                        preferences, or password as needed.
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <!-- FAQ Item 5 -->
-              <div class="accordion-item border-bottom">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed bg-white text-dark fw-normal py-3 px-0" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#faq5">
-                    I have forgotten my password. What should I do?
-                  </button>
-                </h2>
-                <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body px-0 py-3">
-                    Click on "Forgot Password" on the login page. Enter your email address and we'll send you a link to
-                    reset your password.
+                  <!-- FAQ Item 4 -->
+                  <div class="accordion-item border-bottom border-light-subtle">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent text-dark fw-normal py-4 px-0 shadow-none"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                        Are my personal details safe if I create an account?
+                      </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body px-0 pb-4 text-muted small">
+                        Yes, we take data security very seriously. All personal information is encrypted and stored
+                        securely. We comply with GDPR and other data protection regulations.
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
 
-              <!-- FAQ Item 6 -->
-              <div class="accordion-item">
-                <h2 class="accordion-header">
-                  <button class="accordion-button collapsed bg-white text-dark fw-normal py-3 px-0" type="button"
-                    data-bs-toggle="collapse" data-bs-target="#faq6">
-                    How do I unsubscribe?
-                  </button>
-                </h2>
-                <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
-                  <div class="accordion-body px-0 py-3">
-                    You can unsubscribe from marketing emails by clicking the "Unsubscribe" link at the bottom of any
-                    email, or by updating your contact preferences in your account settings.
+                  <!-- FAQ Item 5 -->
+                  <div class="accordion-item border-bottom border-light-subtle">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent text-dark fw-normal py-4 px-0 shadow-none"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                        I have forgotten my password. What should I do?
+                      </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body px-0 pb-4 text-muted small">
+                        Click on "Forgot Password" on the login page. Enter your email address and we'll send you a link
+                        to
+                        reset your password.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 6 -->
+                  <div class="accordion-item border-bottom border-light-subtle">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent text-dark fw-normal py-4 px-0 shadow-none"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                        How do I unsubscribe?
+                      </button>
+                    </h2>
+                    <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body px-0 pb-4 text-muted small">
+                        You can unsubscribe from marketing emails by clicking the "Unsubscribe" link at the bottom of
+                        any
+                        email, or by updating your contact preferences in your account settings.
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
+
       </div>
     </div>
   </main>
+  <!-- Help Centre Main Content end -->
   <footer class="site-footer bg-black text-white pt-5 pb-3">
     <!-- Footer Top: Newsletter & Social -->
     <div class="footer-top border-bottom border-light-subtle pb-4 mb-5">
@@ -1819,10 +1845,31 @@
   </script>
   <script src="assets/js/main.js"></script>
   <script>
-    // FAQ Category Switching
+    // FAQ Category Switching & Mobile Interaction
     document.addEventListener('DOMContentLoaded', function () {
       const categoryLinks = document.querySelectorAll('.faq-category-link');
+      const faqCategoriesColumn = document.getElementById('faqCategoriesColumn');
+      const faqContentColumn = document.getElementById('faqContentColumn');
+      const backButton = document.getElementById('backToHelpCentre');
+      // Mock existing sections just to prevent errors in existing logic code retention
       const faqSections = document.querySelectorAll('.faq-section');
+
+      // Function to show FAQ content (Mobile)
+      function showFaqContent() {
+        if (window.innerWidth < 992) { // Bootstrap lg breakpoint
+          faqCategoriesColumn.classList.add('d-none');
+          faqContentColumn.classList.remove('d-none');
+          window.scrollTo(0, 0);
+        }
+      }
+
+      // Function to show Categories (Mobile)
+      function showCategories() {
+        if (window.innerWidth < 992) {
+          faqCategoriesColumn.classList.remove('d-none');
+          faqContentColumn.classList.add('d-none');
+        }
+      }
 
       categoryLinks.forEach(link => {
         link.addEventListener('click', function (e) {
@@ -1835,17 +1882,36 @@
           // Add active class to clicked link
           this.classList.add('fw-bold');
 
-          // Hide all FAQ sections
+          // Mobile interaction
+          showFaqContent();
+
+          // Existing filtering logic (kept for potential future matching)
           faqSections.forEach(section => {
             section.classList.add('d-none');
           });
 
-          // Show selected FAQ section
           const targetSection = document.querySelector(`[data-category="${category}"].faq-section`);
           if (targetSection) {
             targetSection.classList.remove('d-none');
           }
         });
+      });
+
+      if (backButton) {
+        backButton.addEventListener('click', function () {
+          showCategories();
+        });
+      }
+
+      // Handle resize events
+      window.addEventListener('resize', function () {
+        if (window.innerWidth >= 992) {
+          // Restore functionality for desktop
+          if (faqCategoriesColumn) faqCategoriesColumn.classList.remove('d-none');
+          if (faqContentColumn) {
+            faqContentColumn.classList.remove('d-none');
+          }
+        }
       });
     });
   </script>
