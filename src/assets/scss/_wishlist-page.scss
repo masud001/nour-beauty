@@ -11,6 +11,11 @@
 
 /* Sidebar Navigation */
 .sidebar-nav {
+    @media (min-width: 768px) {
+        position: sticky;
+        top: 1rem;
+    }
+
     .nav-section {
         h6 {
             letter-spacing: 0.5px;
@@ -35,6 +40,14 @@
 /* Main Content Area */
 .account-page-wrapper {
     background-color: #f9f9f9;
+
+    @media (min-width: 768px) {
+        aside.col-md-3.d-none.d-md-block {
+            position: sticky;
+            top: 3rem;
+            align-self: flex-start;
+        }
+    }
 }
 
 .min-vh-50 {
