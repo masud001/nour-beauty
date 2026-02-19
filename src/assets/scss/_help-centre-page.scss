@@ -1,0 +1,16 @@
+.help-centre-page {
+    ul {
+        li {
+            a {
+                transition: background-color 0.3s ease, padding 0.3s ease;
+                // Ensure there is some padding so the hover background looks good
+                padding: 5px 10px;
+                border-radius: 5px;
+
+                &:hover {
+                    background-color: #f8f9fa;
+                }
+            }
+        }
+    }
+}

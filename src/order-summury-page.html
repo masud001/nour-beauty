@@ -462,7 +462,7 @@
                                         </li>
                                     </ul>
 
-                                    <div class="summary-totals">
+                                    <div class="summary-totals d-none d-lg-block">
                                         <div class="row-line">
                                             <span class="text-muted">Subtotal</span>
                                             <span class="fw-bold">£53.00</span>
@@ -485,6 +485,18 @@
 
         </div>
     </main>
+
+    <!-- Floating Order Summary Bar -->
+    <div
+        class="floating-order-summary bg-white border-top shadow-lg p-3 d-flex justify-content-between align-items-center d-lg-none">
+        <div class="d-flex flex-column">
+            <span class="fw-bold fs-5">£53.00</span>
+            <a href="#" class="text-decoration-underline text-dark small">View Details</a>
+        </div>
+        <button class="btn btn-black text-uppercase px-5 py-3 fw-bold rounded-1" style="letter-spacing: 1px;">
+            Place Order
+        </button>
+    </div>
 
     <!-- Leaflet Map Modal -->
     <div class="modal fade" id="mapLocationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"

@@ -333,4 +333,35 @@
             background-color: #222;
         }
     }
+
+    // Floating Order Summary
+    .floating-order-summary {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1030;
+        /* Bootstrap modal is 1055, sticky header often 1020-1030 */
+        box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.1);
+
+        .btn-black {
+            background-color: #000;
+            color: #fff;
+            border: 1px solid #000;
+            transition: all 0.3s;
+
+            &:hover {
+                background-color: #333;
+                border-color: #333;
+                color: #fff;
+            }
+        }
+    }
+}
+
+// Add padding to body to prevent content from being hidden behind the fixed bar (Mobile Only)
+body.order-summary-page {
+    @media (max-width: 991.98px) {
+        padding-bottom: 100px;
+    }
 }
