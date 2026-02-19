@@ -1353,8 +1353,8 @@
                             <!-- Product Item 1 -->
                             <div class="cart-item d-flex border-bottom py-4">
                                 <div class="cart-item-image me-4">
-                                    <img src="./assets/img/memo-best-body.webp" alt="Saie CitySet"
-                                        style="width: 80px; height: auto;">
+                                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1887&auto=format&fit=crop"
+                                        alt="Saie CitySet">
                                 </div>
                                 <div class="cart-item-details flex-grow-1">
                                     <h5 class="mb-1" style="font-size: 1rem;">Saie CitySet™ Lightweight Setting Spray
@@ -1398,7 +1398,8 @@
                                                 style="font-size: 0.85rem;">Remove</button>
                                             <span class="text-muted">|</span>
                                             <button class="btn btn-link p-0 text-decoration-none text-muted ms-2"
-                                                style="font-size: 0.85rem;">Update</button>
+                                                style="font-size: 0.85rem;" data-bs-toggle="modal"
+                                                data-bs-target="#cartUpdateModal">Update</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1407,8 +1408,8 @@
                             <!-- Product Item 2 -->
                             <div class="cart-item d-flex border-bottom py-4">
                                 <div class="cart-item-image me-4">
-                                    <img src="./assets/img/memo-best-body.webp" alt="Saie CitySet"
-                                        style="width: 80px; height: auto;">
+                                    <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1887&auto=format&fit=crop"
+                                        alt="Saie CitySet">
                                 </div>
                                 <div class="cart-item-details flex-grow-1">
                                     <h5 class="mb-1" style="font-size: 1rem;">Saie CitySet™ Lightweight Setting Spray
@@ -1452,7 +1453,8 @@
                                                 style="font-size: 0.85rem;">Remove</button>
                                             <span class="text-muted">|</span>
                                             <button class="btn btn-link p-0 text-decoration-none text-muted ms-2"
-                                                style="font-size: 0.85rem;">Update</button>
+                                                style="font-size: 0.85rem;" data-bs-toggle="modal"
+                                                data-bs-target="#cartUpdateModal">Update</button>
                                         </div>
                                     </div>
                                 </div>
@@ -1546,6 +1548,60 @@
                 </div>
             </div>
 
+        </div>
+
+
+        <!-- Cart Item Update Modal -->
+        <div class="modal fade promo-popup-modal cart-update-modal" id="cartUpdateModal" tabindex="-1"
+            aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <button type="button" class="popup-close-btn" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+                        <div class="row g-0">
+                            <div class="col-md-6 promo-image-col d-flex align-items-center justify-content-center">
+                                <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1887&auto=format&fit=crop"
+                                    alt="Saie CitySet" width="299" height="430" class="cart-update-image">
+                            </div>
+                            <div class="col-md-6 promo-content-col text-start align-items-start">
+                                <h4 class="brand-title cart-update-brand mb-1">Saie</h4>
+                                <h2 class="offer-title cart-update-name mb-3">
+                                    CitySet™ Lightweight Setting Spray 95ml
+                                </h2>
+                                <p class="cart-update-price mb-4">34.45€</p>
+
+                                <div class="mb-4">
+                                    <p class="cart-update-qty-label mb-2 text-uppercase">
+                                        Quantity</p>
+                                    <div class="d-flex align-items-center gap-3">
+                                        <button type="button"
+                                            class="btn btn-light border-0 rounded-0 d-flex align-items-center justify-content-center cart-update-qty-btn">
+                                            <span class="cart-update-qty-icon">−</span>
+                                        </button>
+                                        <span class="cart-update-qty-value">1</span>
+                                        <button type="button"
+                                            class="btn btn-outline-dark rounded-0 d-flex align-items-center justify-content-center cart-update-qty-btn">
+                                            <span class="cart-update-qty-icon">+</span>
+                                        </button>
+                                    </div>
+                                </div>
+
+                                <div class="d-grid gap-2 w-100">
+                                    <button type="button" class="btn btn-dark rounded-0 text-uppercase fw-bold py-3">
+                                        Update
+                                    </button>
+                                    <button type="button"
+                                        class="btn btn-outline-dark rounded-0 text-uppercase fw-bold py-3">
+                                        More details
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
 
 
@@ -2253,7 +2309,8 @@
                             <div class="col">
                                 <a href="#" class="category-card text-center">
                                     <div class="image-wrapper">
-                                        <img src="./assets/img/memo-best-body.webp" alt="Make Up" class="img-fluid">
+                                        <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1887&auto=format&fit=crop"
+                                            alt="Make Up" class="img-fluid">
                                     </div>
                                     <h3 class="category-name">MAKE UP</h3>
                                 </a>
@@ -2307,8 +2364,8 @@
                                     <div class="image-wrapper">
                                         <!-- Using placeholder for Fragrance -->
                                         <img src="./assets/img/home-slider-image/fragrance.webp"
-                                            onerror="this.src='./assets/img/memo-best-body.webp'" alt="Fragrance"
-                                            class="img-fluid">
+                                            onerror="this.src='https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1887&auto=format&fit=crop'"
+                                            alt="Fragrance" class="img-fluid">
                                     </div>
                                     <h3 class="category-name">FRAGRANCE</h3>
                                 </a>

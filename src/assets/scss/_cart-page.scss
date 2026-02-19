@@ -21,8 +21,16 @@
     }
 
     .cart-item {
-        .cart-item-image img {
-            object-fit: contain;
+        .cart-item-image {
+            width: 80px;
+
+            img {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 299 / 430;
+                object-fit: contain;
+                display: block;
+            }
         }
 
         .cart-item-details {
@@ -97,6 +105,65 @@
 
     .status-points {
         color: #333;
+    }
+
+    .cart-update-modal {
+        .promo-image-col {
+            img.cart-update-image {
+                width: 100%;
+                height: auto;
+                aspect-ratio: 299 / 430;
+                object-fit: contain;
+                display: block;
+            }
+        }
+
+        .cart-update-brand {
+            font-size: 1.2rem;
+            letter-spacing: 0;
+        }
+
+        .cart-update-name {
+            font-size: 1.4rem;
+            font-weight: 500;
+            white-space: normal;
+        }
+
+        .cart-update-price {
+            font-size: 1rem;
+            font-weight: 500;
+        }
+
+        .cart-update-qty-label {
+            font-size: 0.8rem;
+            letter-spacing: 1px;
+        }
+
+        .cart-update-qty-btn {
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .cart-update-qty-icon {
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .cart-update-qty-value {
+            font-size: 1rem;
+        }
+    }
+
+    @media (min-width: 992px) {
+        .cart-update-modal {
+            .modal-dialog,
+            .modal-content {
+                min-height: 580px;
+            }
+        }
     }
 
     .discount-code {
