@@ -15862,7 +15862,7 @@ textarea.form-control-lg {
 }
 
 .accordion-header .accordion-button {
-  font-size: 1rem !important;
+  font-size: 20px !important;
   font-weight: 400 !important;
   color: #000 !important;
 }
@@ -17680,7 +17680,7 @@ body .product-overlay-listing {
 .wishlist-product-grid .product-card figure {
   height: unset;
   /* Use aspect-ratio to maintain container shape */
-  aspect-ratio: 3/4;
+  aspect-ratio: 299/430;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -18161,9 +18161,13 @@ body .product-overlay-listing {
   transition: background-color 0.3s ease, padding 0.3s ease;
   padding: 5px 10px;
   border-radius: 5px;
+  font-size: 16px !important;
 }
 .help-centre-page ul li a:hover {
   background-color: #f8f9fa;
+}
+.help-centre-page .accordion-body {
+  font-size: 16px;
 }
 
 *,

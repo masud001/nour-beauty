@@ -174,7 +174,7 @@
                         </div>
 
                         <!-- Active Cards Section -->
-                        <div class="bg-white border p-4 mb-4">
+                        <div class="bg-white border p-3 p-md-4 mb-4">
                             <h5 class="fw-bold mb-3" style="font-size: 1rem;">
                                 <i class="fa-regular fa-credit-card me-2"></i> Active Cards
                             </h5>
@@ -182,11 +182,237 @@
                         </div>
 
                         <!-- Expired Cards Section -->
-                        <div class="bg-white border p-4 mb-4">
+                        <div class="bg-white border p-3 p-md-4 mb-4">
                             <h5 class="fw-bold mb-3" style="font-size: 1rem;">
                                 <i class="fa-regular fa-credit-card me-2"></i> Expired Cards
                             </h5>
                             <p class="text-muted mb-0">There are currently no expired payment cards on your account</p>
+                        </div>
+
+                        <!-- Payment History Section -->
+                        <div class="mb-4">
+                            <h3 class="h6 fw-normal mb-3">Payment History</h3>
+                            <div class="bg-white border p-3 p-md-4">
+                                <!-- Payment Item 1 -->
+                                <div class="d-flex align-items-start justify-content-between border-bottom pb-3 mb-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="me-3 p-2 rounded"
+                                            style="background-color: #f5f5f5; min-width: 44px; text-align: center;">
+                                            <i class="fa-brands fa-cc-visa fs-5 text-dark"></i>
+                                        </div>
+                                        <div>
+                                            <span class="d-block fw-semibold" style="font-size: 0.9rem;">Visa ending in
+                                                4242</span>
+                                            <span class="text-muted small">Order #NB-20250115 &middot; 15 Jan
+                                                2025</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="d-block fw-bold" style="font-size: 0.95rem;">-€89.50</span>
+                                        <span class="badge rounded-pill text-bg-success"
+                                            style="font-size: 0.7rem;">Completed</span>
+                                    </div>
+                                </div>
+
+                                <!-- Payment Item 2 -->
+                                <div class="d-flex align-items-start justify-content-between border-bottom pb-3 mb-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="me-3 p-2 rounded"
+                                            style="background-color: #f5f5f5; min-width: 44px; text-align: center;">
+                                            <i class="fa-brands fa-cc-mastercard fs-5 text-dark"></i>
+                                        </div>
+                                        <div>
+                                            <span class="d-block fw-semibold" style="font-size: 0.9rem;">Mastercard
+                                                ending in 1234</span>
+                                            <span class="text-muted small">Order #NB-20241210 &middot; 10 Dec
+                                                2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="d-block fw-bold" style="font-size: 0.95rem;">-€54.00</span>
+                                        <span class="badge rounded-pill text-bg-success"
+                                            style="font-size: 0.7rem;">Completed</span>
+                                    </div>
+                                </div>
+
+                                <!-- Payment Item 3 — Refund -->
+                                <div class="d-flex align-items-start justify-content-between border-bottom pb-3 mb-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="me-3 p-2 rounded"
+                                            style="background-color: #f5f5f5; min-width: 44px; text-align: center;">
+                                            <i class="fa-brands fa-cc-visa fs-5 text-dark"></i>
+                                        </div>
+                                        <div>
+                                            <span class="d-block fw-semibold" style="font-size: 0.9rem;">Visa ending in
+                                                4242</span>
+                                            <span class="text-muted small">Refund #NB-20241125 &middot; 25 Nov
+                                                2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="d-block fw-bold text-success"
+                                            style="font-size: 0.95rem;">+€32.00</span>
+                                        <span class="badge rounded-pill text-bg-secondary"
+                                            style="font-size: 0.7rem;">Refunded</span>
+                                    </div>
+                                </div>
+
+                                <!-- Payment Item 4 — Pending -->
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <div class="d-flex align-items-start">
+                                        <div class="me-3 p-2 rounded"
+                                            style="background-color: #f5f5f5; min-width: 44px; text-align: center;">
+                                            <i class="fa-brands fa-cc-amex fs-5 text-dark"></i>
+                                        </div>
+                                        <div>
+                                            <span class="d-block fw-semibold" style="font-size: 0.9rem;">Amex ending in
+                                                5678</span>
+                                            <span class="text-muted small">Order #NB-20250210 &middot; 10 Feb
+                                                2025</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="d-block fw-bold" style="font-size: 0.95rem;">-€120.00</span>
+                                        <span class="badge rounded-pill text-bg-warning text-dark"
+                                            style="font-size: 0.7rem;">Pending</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Transaction History Section -->
+                        <div class="mb-4">
+                            <h3 class="h6 fw-normal mb-3">Transaction History</h3>
+                            <div class="table-responsive bg-white border">
+                                <table class="table table-borderless align-middle mb-0">
+                                    <thead class="border-bottom">
+                                        <tr>
+                                            <!-- Date col: hidden on mobile, visible on md+ -->
+                                            <th scope="col"
+                                                class="px-3 px-md-4 py-3 text-muted small text-uppercase fw-normal d-none d-md-table-cell"
+                                                style="min-width: 110px;">Date</th>
+                                            <th scope="col"
+                                                class="px-3 px-md-4 py-3 text-muted small text-uppercase fw-normal"
+                                                style="min-width: 140px;">Description</th>
+                                            <!-- Card col: hidden on mobile -->
+                                            <th scope="col"
+                                                class="px-3 px-md-4 py-3 text-muted small text-uppercase fw-normal d-none d-md-table-cell"
+                                                style="min-width: 150px;">Card</th>
+                                            <th scope="col"
+                                                class="px-3 px-md-4 py-3 text-muted small text-uppercase fw-normal text-end"
+                                                style="min-width: 80px;">Amount</th>
+                                            <th scope="col"
+                                                class="px-3 px-md-4 py-3 text-muted small text-uppercase fw-normal text-end"
+                                                style="min-width: 80px;">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-bottom">
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell">10 Feb
+                                                2025</td>
+                                            <td class="px-3 px-md-4 py-3">
+                                                <span class="d-block text-dark" style="font-size: 0.9rem;">Order
+                                                    #NB-20250210</span>
+                                                <span class="text-muted small">Beauty Essentials Kit</span>
+                                                <!-- Shown only on mobile -->
+                                                <span class="d-block d-md-none text-muted mt-1"
+                                                    style="font-size: 0.75rem;"><i
+                                                        class="fa-brands fa-cc-amex me-1"></i> Amex ···· 5678 &middot;
+                                                    10 Feb 2025</span>
+                                            </td>
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell"><i
+                                                    class="fa-brands fa-cc-amex me-1"></i> Amex ···· 5678</td>
+                                            <td class="px-3 px-md-4 py-3 text-end fw-bold">€120.00</td>
+                                            <td class="px-3 px-md-4 py-3 text-end">
+                                                <span class="badge rounded-pill text-bg-warning text-dark"
+                                                    style="font-size: 0.7rem;">Pending</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell">15 Jan
+                                                2025</td>
+                                            <td class="px-3 px-md-4 py-3">
+                                                <span class="d-block text-dark" style="font-size: 0.9rem;">Order
+                                                    #NB-20250115</span>
+                                                <span class="text-muted small">Skincare Bundle</span>
+                                                <span class="d-block d-md-none text-muted mt-1"
+                                                    style="font-size: 0.75rem;"><i
+                                                        class="fa-brands fa-cc-visa me-1"></i> Visa ···· 4242 &middot;
+                                                    15 Jan 2025</span>
+                                            </td>
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell"><i
+                                                    class="fa-brands fa-cc-visa me-1"></i> Visa ···· 4242</td>
+                                            <td class="px-3 px-md-4 py-3 text-end fw-bold">€89.50</td>
+                                            <td class="px-3 px-md-4 py-3 text-end">
+                                                <span class="badge rounded-pill text-bg-success"
+                                                    style="font-size: 0.7rem;">Completed</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell">10 Dec
+                                                2024</td>
+                                            <td class="px-3 px-md-4 py-3">
+                                                <span class="d-block text-dark" style="font-size: 0.9rem;">Order
+                                                    #NB-20241210</span>
+                                                <span class="text-muted small">Fragrance Collection</span>
+                                                <span class="d-block d-md-none text-muted mt-1"
+                                                    style="font-size: 0.75rem;"><i
+                                                        class="fa-brands fa-cc-mastercard me-1"></i> Mastercard ····
+                                                    1234 &middot; 10 Dec 2024</span>
+                                            </td>
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell"><i
+                                                    class="fa-brands fa-cc-mastercard me-1"></i> Mastercard ···· 1234
+                                            </td>
+                                            <td class="px-3 px-md-4 py-3 text-end fw-bold">€54.00</td>
+                                            <td class="px-3 px-md-4 py-3 text-end">
+                                                <span class="badge rounded-pill text-bg-success"
+                                                    style="font-size: 0.7rem;">Completed</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell">25 Nov
+                                                2024</td>
+                                            <td class="px-3 px-md-4 py-3">
+                                                <span class="d-block text-dark" style="font-size: 0.9rem;">Refund
+                                                    #NB-20241125</span>
+                                                <span class="text-muted small">Return — Lipstick Set</span>
+                                                <span class="d-block d-md-none text-muted mt-1"
+                                                    style="font-size: 0.75rem;"><i
+                                                        class="fa-brands fa-cc-visa me-1"></i> Visa ···· 4242 &middot;
+                                                    25 Nov 2024</span>
+                                            </td>
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell"><i
+                                                    class="fa-brands fa-cc-visa me-1"></i> Visa ···· 4242</td>
+                                            <td class="px-3 px-md-4 py-3 text-end fw-bold text-success">+€32.00</td>
+                                            <td class="px-3 px-md-4 py-3 text-end">
+                                                <span class="badge rounded-pill text-bg-secondary"
+                                                    style="font-size: 0.7rem;">Refunded</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell">02 Nov
+                                                2024</td>
+                                            <td class="px-3 px-md-4 py-3">
+                                                <span class="d-block text-dark" style="font-size: 0.9rem;">Order
+                                                    #NB-20241102</span>
+                                                <span class="text-muted small">Hair Care Set</span>
+                                                <span class="d-block d-md-none text-muted mt-1"
+                                                    style="font-size: 0.75rem;"><i
+                                                        class="fa-brands fa-cc-mastercard me-1"></i> Mastercard ····
+                                                    1234 &middot; 02 Nov 2024</span>
+                                            </td>
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell"><i
+                                                    class="fa-brands fa-cc-mastercard me-1"></i> Mastercard ···· 1234
+                                            </td>
+                                            <td class="px-3 px-md-4 py-3 text-end fw-bold">€67.00</td>
+                                            <td class="px-3 px-md-4 py-3 text-end">
+                                                <span class="badge rounded-pill text-bg-success"
+                                                    style="font-size: 0.7rem;">Completed</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                         </div>
 
                     </div>
