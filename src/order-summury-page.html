@@ -486,17 +486,109 @@
         </div>
     </main>
 
-    <!-- Floating Order Summary Bar -->
-    <div
-        class="floating-order-summary bg-white border-top shadow-lg p-3 d-flex justify-content-between align-items-center d-lg-none">
-        <div class="d-flex flex-column">
-            <span class="fw-bold fs-5">£53.00</span>
-            <a href="#" class="text-decoration-underline text-dark small">View Details</a>
+    <!-- Floating Order Summary Bar (Mobile Only) -->
+    <div class="floating-order-summary d-lg-none" id="floatingOrderSummary" style="
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #fff;
+        z-index: 1040;
+        border-radius: 16px 16px 0 0;
+        box-shadow: 0 -4px 24px rgba(0,0,0,0.12);
+        overflow: hidden;
+    ">
+        <!-- Drag Handle / Toggle -->
+        <div id="floatToggleBtn" style="cursor: pointer; text-align: center; padding: 12px 0 4px; user-select: none;"
+            onclick="toggleFloatSummary()">
+            <i class="fa-solid fa-chevron-up" id="floatChevron"
+                style="font-size: 14px; color: #999; transition: transform 0.3s;"></i>
         </div>
-        <button class="btn btn-black text-uppercase px-5 py-3 fw-bold rounded-1" style="letter-spacing: 1px;">
-            Place Order
-        </button>
+
+        <!-- Expandable Content -->
+        <div id="floatSummaryContent" style="
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.35s ease;
+            padding: 0 20px;
+        ">
+            <!-- Subtotal Row -->
+            <div
+                style="display: flex; justify-content: space-between; align-items: center; padding: 14px 0; border-bottom: 1px solid #e9e9e9;">
+                <span style="font-size: 15px; color: #333;">Subtotal</span>
+                <span style="font-size: 15px; color: #333;">£53.00</span>
+            </div>
+
+            <!-- Handling Fee Row (collapsible) -->
+            <div style="border-bottom: 1px solid #e9e9e9;">
+                <div onclick="toggleHandlingFee()"
+                    style="display: flex; justify-content: space-between; align-items: center; padding: 14px 0; cursor: pointer; user-select: none;">
+                    <span style="font-size: 15px; color: #333; display: flex; align-items: center; gap: 6px;">
+                        Handling Fee
+                        <i class="fa-solid fa-chevron-down" id="handlingFeeChevron"
+                            style="font-size: 11px; color: #555; transition: transform 0.3s;"></i>
+                    </span>
+                    <span style="font-size: 15px; color: #333;">£3.00</span>
+                </div>
+                <!-- Handling Fee Detail (hidden by default) -->
+                <div id="handlingFeeDetail" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                    <p style="font-size: 13px; color: #888; padding-bottom: 12px; margin: 0;">
+                        A small handling fee is applied to cover order processing costs.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Total Amount Row -->
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 18px 0 8px;">
+                <span style="font-size: 16px; color: #111;">Total Amount</span>
+                <span style="font-size: 17px; font-weight: 700; color: #111;">£56.00</span>
+            </div>
+        </div>
+
+        <!-- Always-visible bottom: Total + Button -->
+        <div style="padding: 12px 20px 20px;">
+            <button style="
+                width: 100%;
+                background: #b0b0b0;
+                color: #fff;
+                border: none;
+                border-radius: 12px;
+                padding: 16px;
+                font-size: 15px;
+                font-weight: 700;
+                letter-spacing: 1.5px;
+                text-transform: uppercase;
+                cursor: pointer;
+            ">
+                Add Credit Card
+            </button>
+        </div>
     </div>
+
+    <script>
+        let floatExpanded = false;
+        function toggleFloatSummary() {
+            const content = document.getElementById('floatSummaryContent');
+            const chevron = document.getElementById('floatChevron');
+            floatExpanded = !floatExpanded;
+            content.style.maxHeight = floatExpanded ? content.scrollHeight + 'px' : '0';
+            chevron.style.transform = floatExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
+        }
+
+        let handlingFeeExpanded = false;
+        function toggleHandlingFee() {
+            const detail = document.getElementById('handlingFeeDetail');
+            const chevron = document.getElementById('handlingFeeChevron');
+            handlingFeeExpanded = !handlingFeeExpanded;
+            detail.style.maxHeight = handlingFeeExpanded ? detail.scrollHeight + 'px' : '0';
+            chevron.style.transform = handlingFeeExpanded ? 'rotate(180deg)' : 'rotate(0deg)';
+            // Also update parent max-height so the expansion fits
+            if (floatExpanded) {
+                const content = document.getElementById('floatSummaryContent');
+                content.style.maxHeight = content.scrollHeight + detail.scrollHeight + 'px';
+            }
+        }
+    </script>
 
     <!-- Leaflet Map Modal -->
     <div class="modal fade" id="mapLocationModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
