@@ -1,0 +1,385 @@
+@use "./variable" as vars;
+
+/* ──────────────────────────────────────────
+   OTP Verification Page
+   Color palette: linear-gradient(90deg, #BEE4DA 0%, #D5BAFD 100%)
+   — Mint-teal to soft lavender
+────────────────────────────────────────── */
+
+// ── Gradient palette tokens ──────────────
+// From the gradient:
+//   Mint teal  → #BEE4DA  (start)
+//   Lavender   → #D5BAFD  (end)
+// Derived accents:
+//   Deep purple (button/link) → #7C3AED  (saturated lavender)
+//   Hover purple              → #6D28D9
+//   Mint dark (illustration)  → #5BBFA8
+//   Soft lavender bg          → #EDE9FE  (icon circle bg)
+//   Lavender border           → #E9D5FF
+//   Gradient shadow           → rgba(213, 186, 253, 0.5)
+
+.otp-page-container {
+    font-family: vars.$font-family-base;
+    // ★ Main gradient background
+    background: linear-gradient(90deg, #BEE4DA 0%, #D5BAFD 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Layout wrapper */
+.otp-layout-wrapper {
+    width: 100%;
+    max-width: 1024px;
+}
+
+/* Row gap */
+.otp-row {
+    --bs-gutter-x: 2rem;
+
+    @media (max-width: 991.98px) {
+        --bs-gutter-x: 0;
+    }
+}
+
+/* ── Left illustration panel ── */
+.otp-illustration-col {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.otp-illustration-inner {
+    width: 100%;
+    max-width: 448px;
+}
+
+/* ★ Illustration card — mint teal tint from gradient start */
+.otp-illustration-card {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 1.5rem;
+    // Soft mint from gradient, slightly more opaque
+    background: rgba(190, 228, 218, 0.55);
+    border: 1.5px solid rgba(190, 228, 218, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin-bottom: 0;
+    // Shadow tinted with mint-teal
+    box-shadow: 0 20px 40px rgba(91, 191, 168, 0.2);
+    backdrop-filter: blur(4px);
+}
+
+.otp-illustration-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 2rem;
+}
+
+/* ★ Illustration title — dark for legibility on gradient bg */
+.otp-illustration-title {
+    font-family: vars.$font-family-heading;
+    font-size: 1.5rem;
+    font-weight: 700;
+    // Dark enough to read on the gradient
+    color: #1e1b4b;
+    margin-bottom: 0.5rem;
+}
+
+/* ★ Illustration body text — on gradient bg */
+.otp-illustration-text {
+    font-size: 0.875rem;
+    color: #374151;
+    line-height: 1.7;
+    margin-bottom: 0;
+    max-width: 20rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* ── Right form panel ── */
+.otp-form-col {
+    justify-content: center;
+
+    @media (min-width: 992px) {
+        justify-content: flex-start;
+    }
+
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+/* Form wrapper */
+.otp-form-wrapper {
+    width: 100%;
+    max-width: 448px;
+}
+
+/* ── Card ── */
+/* White card stands out cleanly against the gradient bg */
+.otp-card {
+    background: #ffffff;
+    border-radius: 2rem;
+    padding: 2rem;
+    // ★ Shadow tinted with lavender (gradient end color)
+    box-shadow: 0 25px 60px rgba(213, 186, 253, 0.55),
+        0 8px 20px rgba(124, 58, 237, 0.08);
+    // ★ Subtle lavender border
+    border: 1px solid #ede9fe;
+    width: 100%;
+
+    @media (min-width: 576px) {
+        padding: 3rem;
+    }
+}
+
+/* Heading block */
+.otp-heading-block {
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+/* ★ Icon circle — lavender tint (gradient end) */
+.otp-icon-circle {
+    width: 4rem;
+    height: 4rem;
+    // Gradient used as background
+    background: linear-gradient(135deg, #d1faf2 0%, #ede9fe 100%);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+
+    i {
+        font-size: 1.5rem;
+        // ★ Deep purple from lavender end
+        color: #7c3aed;
+    }
+}
+
+/* ★ Title — deep purple derived from gradient */
+.otp-title {
+    font-family: vars.$font-family-heading;
+    font-size: 1.875rem;
+    font-weight: 800;
+    // Deep purple — anchor color pulled from gradient end
+    color: #1e1b4b;
+    letter-spacing: -0.025em;
+    margin-bottom: 0.75rem;
+}
+
+.otp-subtitle {
+    font-size: 0.9375rem;
+    color: #6b7280;
+    font-weight: 500;
+    line-height: 1.6;
+    margin-bottom: 0;
+}
+
+/* ★ Phone number — mint-dark accent */
+.otp-phone-number {
+    // Slightly deeper teal, readable and on-brand
+    color: #1e1b4b;
+    font-weight: 600;
+    font-size: inherit;
+}
+
+/* ── Digit inputs ── */
+.otp-inputs-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 0.5rem;
+    margin-bottom: 2rem;
+
+    @media (min-width: 576px) {
+        gap: 1rem;
+    }
+}
+
+/* ★ OTP digit — lavender-tinted bg + lavender focus ring */
+.otp-digit-input {
+    flex: 1;
+    min-width: 0;
+    height: 3.5rem;
+    max-width: 3.5rem;
+    text-align: center;
+    font-family: vars.$font-family-heading;
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #1e1b4b;
+    // ★ Very soft lavender tinted bg
+    background: #f5f3ff;
+    // ★ Lavender border (derived from gradient end)
+    border: 2px solid #ddd6fe;
+    border-radius: 0.75rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s, background 0.2s;
+
+    &:focus {
+        border-color: #7c3aed;
+        background: #faf5ff;
+        // ★ Lavender glow ring
+        box-shadow: 0 0 0 4px rgba(196, 181, 253, 0.35);
+    }
+
+    &--error {
+        border-color: #ef4444 !important;
+        background: #fef2f2 !important;
+        animation: otp-shake 0.35s ease;
+    }
+
+    @media (max-width: 400px) {
+        height: 2.75rem;
+        font-size: 1rem;
+        border-radius: 0.5rem;
+    }
+}
+
+@keyframes otp-shake {
+
+    0%,
+    100% {
+        transform: translateX(0);
+    }
+
+    20% {
+        transform: translateX(-5px);
+    }
+
+    60% {
+        transform: translateX(5px);
+    }
+
+    80% {
+        transform: translateX(-3px);
+    }
+}
+
+/* ── Resend block ── */
+.otp-resend-block {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.otp-resend-text {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 0.5rem;
+}
+
+.otp-resend-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+}
+
+/* ★ Resend button — deep purple from gradient end */
+.otp-resend-btn {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: vars.$font-family-base;
+    font-size: 0.875rem;
+    font-weight: 700;
+    color: #7c3aed;
+    text-decoration: none;
+    cursor: pointer;
+    transition: opacity 0.2s;
+
+    &:disabled {
+        color: #9ca3af;
+        cursor: not-allowed;
+        opacity: 0.7;
+    }
+
+    &:not(:disabled):hover {
+        text-decoration: underline;
+        text-underline-offset: 4px;
+        text-decoration-thickness: 2px;
+    }
+}
+
+.otp-timer {
+    display: inline-flex;
+    align-items: center;
+    font-size: 0.875rem;
+    color: #6b7280;
+    font-variant-numeric: tabular-nums;
+}
+
+/* ── Verify button ── */
+/* ★ GRADIENT button matching the page gradient */
+.otp-verify-btn {
+    width: 100%;
+    // ★ The same brand gradient on the button — but saturated/darker
+    background: linear-gradient(90deg, #5BBFA8 0%, #7C3AED 100%);
+    color: #fff;
+    border: none;
+    border-radius: 0.75rem;
+    padding: 1rem 1.5rem;
+    font-family: vars.$font-family-base;
+    font-size: 0.9375rem;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    cursor: pointer;
+    // ★ Shadow matching the gradient (lavender)
+    box-shadow: 0 10px 24px rgba(124, 58, 237, 0.28),
+        0 4px 8px rgba(91, 191, 168, 0.18);
+    transition: filter 0.2s, transform 0.15s, box-shadow 0.2s;
+    margin-bottom: 0;
+
+    &:hover {
+        filter: brightness(1.08);
+        box-shadow: 0 14px 32px rgba(124, 58, 237, 0.36),
+            0 4px 10px rgba(91, 191, 168, 0.22);
+    }
+
+    &:active {
+        transform: scale(0.98);
+    }
+
+    &--success {
+        background: linear-gradient(90deg, #16a34a 0%, #15803d 100%) !important;
+        box-shadow: 0 8px 16px rgba(22, 163, 74, 0.3) !important;
+    }
+}
+
+/* ── Security divider ── */
+.otp-security-divider {
+    margin-top: 2.5rem;
+    padding-top: 2rem;
+    // ★ Lavender-tinted divider line
+    border-top: 1px solid #ede9fe;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ── Security note ── */
+.otp-security-note {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    font-size: 0.75rem;
+    color: #9ca3af;
+    margin-bottom: 0;
+
+    i {
+        font-size: 0.875rem;
+        // ★ Tint with mint-teal
+        color: #5bbfa8;
+    }
+}
