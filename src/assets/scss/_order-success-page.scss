@@ -1,14 +1,25 @@
 @use "./variable" as vars;
 
 // ─── Design tokens ─────────────────────────────────────────────────────────
-$osp-accent: #8b1c24; // deep brand red
-$osp-accent-hover: #6e1319;
-$osp-tan: #8e7356; // warm tan from hero bg
-$osp-hero-bg: #6b5044; // rich warm brown (like the image)
+// Brand gradient: #BEE4DA (mint-teal) → #D5BAFD (soft lavender)
+// Derived palette:
+$osp-mint: #BEE4DA; // gradient start
+$osp-lavender: #D5BAFD; // gradient end
+$osp-mint-deep: #3BAAA0; // saturated mint (icons, borders)
+$osp-lavender-deep: #8B5CF6; // vivid violet (active states)
+$osp-gradient: linear-gradient(90deg, #BEE4DA 0%, #D5BAFD 100%);
+$osp-gradient-vivid: linear-gradient(90deg, #3BAAA0 0%, #8B5CF6 100%); // CTA / accents
+$osp-gradient-soft: linear-gradient(90deg,
+        rgba(#BEE4DA, 0.18) 0%,
+        rgba(#D5BAFD, 0.18) 100%); // page bg wash
+
+$osp-accent: $osp-mint-deep; // kept as alias
+$osp-accent-hover: #2d9088; // hover teal
+$osp-hero-bg: #6b5044; // warm brown — hero photo backdrop (unchanged)
 $osp-text: #1a1a1a;
 $osp-muted: #6b7280;
-$osp-border: #e8e3de;
-$osp-card-bg: #f7f5f2;
+$osp-border: rgba(#BEE4DA, 0.45); // mint-tinted dividers
+$osp-card-bg: rgba(#BEE4DA, 0.10); // very soft mint card bg
 $osp-white: #ffffff;
 $osp-radius-hero: 20px;
 $osp-radius-card: 14px;
@@ -16,7 +27,8 @@ $osp-radius-card: 14px;
 // ─── Page wrapper ───────────────────────────────────────────────────────────
 .osp-main {
     min-height: 100vh;
-    background: $osp-white;
+    // Subtle gradient wash from the brand palette
+    background: $osp-gradient-soft, $osp-white;
     display: flex;
     align-items: flex-start;
     justify-content: center;
@@ -299,20 +311,21 @@ $osp-radius-card: 14px;
     width: 32px;
     height: 32px;
     border-radius: 50%;
-    border: 1.5px solid $osp-border;
+    border: 1.5px solid rgba(#BEE4DA, 0.7);
     background: $osp-white;
-    color: $osp-text;
+    color: $osp-mint-deep;
     font-size: 12px;
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.2s;
+    transition: all 0.22s;
 
     &:hover:not(.osp-items__nav-btn--disabled) {
-        background: $osp-text;
+        background: $osp-gradient-vivid;
         color: $osp-white;
-        border-color: $osp-text;
+        border-color: transparent;
+        box-shadow: 0 4px 14px rgba(#8B5CF6, 0.3);
     }
 
     &--disabled {
@@ -393,9 +406,14 @@ $osp-radius-card: 14px;
     align-items: flex-start;
     gap: 0;
     padding: 22px 0;
-    border-top: 1px solid $osp-border;
-    border-bottom: 1px solid $osp-border;
+    border-top: 1.5px solid rgba(#BEE4DA, 0.6);
+    border-bottom: 1.5px solid rgba(#BEE4DA, 0.6);
     margin-bottom: 0;
+    // Soft gradient bg strip for delivery block
+    background: $osp-gradient-soft;
+    border-radius: 12px;
+    padding-left: 14px;
+    padding-right: 14px;
 }
 
 .osp-delivery__col {
@@ -420,16 +438,17 @@ $osp-radius-card: 14px;
     width: 36px;
     height: 36px;
     border-radius: 8px;
-    background: rgba($osp-accent, 0.08);
+    background: $osp-gradient;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
     margin-top: 2px;
+    box-shadow: 0 3px 10px rgba(#8B5CF6, 0.2);
 
     i {
         font-size: 16px;
-        color: $osp-accent;
+        color: $osp-lavender-deep;
     }
 }
 
@@ -465,7 +484,8 @@ $osp-radius-card: 14px;
 
 .osp-meta__divider {
     height: 1px;
-    background: $osp-border;
+    background: $osp-gradient;
+    opacity: 0.6;
 }
 
 .osp-meta__label {
@@ -533,7 +553,7 @@ $osp-radius-card: 14px;
     align-items: center;
     justify-content: center;
     padding: 15px 52px;
-    background: $osp-accent;
+    background: $osp-gradient-vivid;
     color: $osp-white;
     text-decoration: none;
     border-radius: 50px;
@@ -541,18 +561,20 @@ $osp-radius-card: 14px;
     font-size: 0.9375rem;
     font-weight: 600;
     letter-spacing: 0.01em;
-    transition: background 0.22s, transform 0.15s, box-shadow 0.22s;
-    box-shadow: 0 8px 24px rgba($osp-accent, 0.35);
+    transition: filter 0.22s, transform 0.15s, box-shadow 0.22s;
+    box-shadow: 0 8px 28px rgba(#8B5CF6, 0.38),
+        0 4px 10px rgba(#3BAAA0, 0.2);
 
     &:hover {
-        background: $osp-accent-hover;
+        filter: brightness(1.1);
         color: $osp-white;
         transform: translateY(-2px);
-        box-shadow: 0 12px 32px rgba($osp-accent, 0.45);
+        box-shadow: 0 14px 36px rgba(#8B5CF6, 0.50);
     }
 
     &:active {
         transform: translateY(0);
+        filter: brightness(0.96);
     }
 }
 
@@ -564,13 +586,13 @@ $osp-radius-card: 14px;
     .swiper-pagination-bullet {
         width: 6px;
         height: 6px;
-        background: $osp-border;
+        background: rgba(#BEE4DA, 0.7);
         opacity: 1;
         transition: all 0.25s;
     }
 
     .swiper-pagination-bullet-active {
-        background: $osp-accent;
+        background: $osp-lavender-deep;
         width: 18px;
         border-radius: 3px;
     }

@@ -18584,7 +18584,7 @@ body .product-overlay-listing {
 
 .osp-main {
   min-height: 100vh;
-  background: #ffffff;
+  background: linear-gradient(90deg, rgba(190, 228, 218, 0.18) 0%, rgba(213, 186, 253, 0.18) 100%), #ffffff;
   display: flex;
   align-items: flex-start;
   justify-content: center;
@@ -18842,20 +18842,21 @@ body .product-overlay-listing {
   width: 32px;
   height: 32px;
   border-radius: 50%;
-  border: 1.5px solid #e8e3de;
+  border: 1.5px solid rgba(190, 228, 218, 0.7);
   background: #ffffff;
-  color: #1a1a1a;
+  color: #3BAAA0;
   font-size: 12px;
   display: flex;
   align-items: center;
   justify-content: center;
   cursor: pointer;
-  transition: all 0.2s;
+  transition: all 0.22s;
 }
 .osp-items__nav-btn:hover:not(.osp-items__nav-btn--disabled) {
-  background: #1a1a1a;
+  background: linear-gradient(90deg, #3BAAA0 0%, #8B5CF6 100%);
   color: #ffffff;
-  border-color: #1a1a1a;
+  border-color: transparent;
+  box-shadow: 0 4px 14px rgba(139, 92, 246, 0.3);
 }
 .osp-items__nav-btn--disabled {
   opacity: 0.35;
@@ -18871,7 +18872,7 @@ body .product-overlay-listing {
   display: block;
   text-decoration: none;
   color: inherit;
-  background: #f7f5f2;
+  background: rgba(190, 228, 218, 0.1);
   border-radius: 0;
   overflow: hidden;
   transition: transform 0.25s ease, box-shadow 0.25s ease;
@@ -18886,7 +18887,7 @@ body .product-overlay-listing {
   width: 100%;
   aspect-ratio: 299/430;
   overflow: hidden;
-  background: #f7f5f2;
+  background: rgba(190, 228, 218, 0.1);
 }
 
 .osp-card__img {
@@ -18929,9 +18930,13 @@ body .product-overlay-listing {
   align-items: flex-start;
   gap: 0;
   padding: 22px 0;
-  border-top: 1px solid #e8e3de;
-  border-bottom: 1px solid #e8e3de;
+  border-top: 1.5px solid rgba(190, 228, 218, 0.6);
+  border-bottom: 1.5px solid rgba(190, 228, 218, 0.6);
   margin-bottom: 0;
+  background: linear-gradient(90deg, rgba(190, 228, 218, 0.18) 0%, rgba(213, 186, 253, 0.18) 100%);
+  border-radius: 12px;
+  padding-left: 14px;
+  padding-right: 14px;
 }
 
 .osp-delivery__col {
@@ -18947,7 +18952,7 @@ body .product-overlay-listing {
 .osp-delivery__divider {
   width: 1px;
   align-self: stretch;
-  background: #e8e3de;
+  background: rgba(190, 228, 218, 0.45);
   flex-shrink: 0;
 }
 
@@ -18955,16 +18960,17 @@ body .product-overlay-listing {
   width: 36px;
   height: 36px;
   border-radius: 8px;
-  background: rgba(139, 28, 36, 0.08);
+  background: linear-gradient(90deg, #BEE4DA 0%, #D5BAFD 100%);
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
   margin-top: 2px;
+  box-shadow: 0 3px 10px rgba(139, 92, 246, 0.2);
 }
 .osp-delivery__icon-wrap i {
   font-size: 16px;
-  color: #8b1c24;
+  color: #8B5CF6;
 }
 
 .osp-delivery__label {
@@ -18998,7 +19004,8 @@ body .product-overlay-listing {
 
 .osp-meta__divider {
   height: 1px;
-  background: #e8e3de;
+  background: linear-gradient(90deg, #BEE4DA 0%, #D5BAFD 100%);
+  opacity: 0.6;
 }
 
 .osp-meta__label {
@@ -19060,7 +19067,7 @@ body .product-overlay-listing {
   align-items: center;
   justify-content: center;
   padding: 15px 52px;
-  background: #8b1c24;
+  background: linear-gradient(90deg, #3BAAA0 0%, #8B5CF6 100%);
   color: #ffffff;
   text-decoration: none;
   border-radius: 50px;
@@ -19068,17 +19075,18 @@ body .product-overlay-listing {
   font-size: 0.9375rem;
   font-weight: 600;
   letter-spacing: 0.01em;
-  transition: background 0.22s, transform 0.15s, box-shadow 0.22s;
-  box-shadow: 0 8px 24px rgba(139, 28, 36, 0.35);
+  transition: filter 0.22s, transform 0.15s, box-shadow 0.22s;
+  box-shadow: 0 8px 28px rgba(139, 92, 246, 0.38), 0 4px 10px rgba(59, 170, 160, 0.2);
 }
 .osp-cta__btn:hover {
-  background: #6e1319;
+  filter: brightness(1.1);
   color: #ffffff;
   transform: translateY(-2px);
-  box-shadow: 0 12px 32px rgba(139, 28, 36, 0.45);
+  box-shadow: 0 14px 36px rgba(139, 92, 246, 0.5);
 }
 .osp-cta__btn:active {
   transform: translateY(0);
+  filter: brightness(0.96);
 }
 
 .osp-pagination {
@@ -19088,12 +19096,12 @@ body .product-overlay-listing {
 .osp-pagination .swiper-pagination-bullet {
   width: 6px;
   height: 6px;
-  background: #e8e3de;
+  background: rgba(190, 228, 218, 0.7);
   opacity: 1;
   transition: all 0.25s;
 }
 .osp-pagination .swiper-pagination-bullet-active {
-  background: #8b1c24;
+  background: #8B5CF6;
   width: 18px;
   border-radius: 3px;
 }
