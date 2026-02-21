@@ -14097,6 +14097,10 @@ textarea.form-control-lg {
   color: #fff;
   z-index: 1;
 }
+.category-feature-section .feature-card:not(:has(.feature-footer)) .feature-content,
+.category-feature-section .feature-card:has(.feature-footer:empty) .feature-content {
+  bottom: 0px !important;
+}
 .category-feature-section .feature-category {
   display: inline-block;
   font-size: 14px;

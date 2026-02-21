@@ -963,9 +963,17 @@
     position: absolute;
     left: 16px;
     right: 16px;
-    bottom: 64px;
+    bottom: 64px; // sits above the footer bar
     color: #fff;
     z-index: 1;
+  }
+
+  // When card has no footer, or footer is empty — drop content to card bottom
+  .feature-card:not(:has(.feature-footer)),
+  .feature-card:has(.feature-footer:empty) {
+    .feature-content {
+      bottom: 0px !important;
+    }
   }
 
   .feature-category {
