@@ -20,17 +20,18 @@
             <div class="row g-0">
 
                 <!-- ── Left: Form ── -->
-                <div class="col-12 col-md-6 login-left">
+                <div class="col-12 col-xl-6 login-left">
 
-                    <!-- Logo -->
-                    <div class="login-logo">
-                        <a href="index-page-2.html">
-                            <img src="./assets/img/brand-logo/brand-logo.svg" alt="Nour Beauty" />
-                        </a>
-                    </div>
+
 
                     <!-- Form content -->
                     <div class="login-form-area">
+                        <!-- Logo -->
+                        <div class="login-logo">
+                            <a href="index-page-2.html">
+                                <img src="./assets/img/brand-logo/brand-logo.svg" alt="Nour Beauty" />
+                            </a>
+                        </div>
 
                         <p class="login-continue-label">Sign up with</p>
 
@@ -59,7 +60,7 @@
                                         d="M9 3.58c1.32 0 2.5.45 3.44 1.34l2.58-2.58C13.46.89 11.42 0 9 0A9 9 0 0 0 .96 4.96l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58z"
                                         fill="#EA4335" />
                                 </svg>
-                                Google
+                                <span>Google</span>
                             </button>
                         </div>
 
@@ -86,14 +87,14 @@
 
                     <!-- Disclaimer pinned to bottom -->
                     <p class="login-disclaimer">
-                        by continuing you agree to our <strong>Terms and Conditions</strong><br>
-                        For more information, See our <a href="#">privacy policy.</a>
+                        by continuing you agree to our <strong><a href="http://">Terms and Conditions</a></strong><br>
+                        For more information, See our <strong><a href="http://">privacy policy.</a></strong>
                     </p>
 
                 </div><!-- /left col -->
 
                 <!-- ── Right: Image ── -->
-                <div class="col-md-6 login-right d-none d-md-block">
+                <div class="col-xl-6 login-right d-none d-xl-block">
                     <img src="./assets/img/hero-banner-1.jpg" alt="Login Banner"
                         onerror="this.src='https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=2574&auto=format&fit=crop'">
                 </div>
@@ -156,7 +157,7 @@
                     </p>
 
                     <!-- Continue -->
-                    <button type="button" class="phone-modal__continue">
+                    <button type="button" class="phone-modal__continue fb-modal__continue">
                         CONTINUE
                     </button>
                 </div>
@@ -187,7 +188,7 @@
                     </h2>
 
                     <!-- Signup checkbox row -->
-                    <div class="phone-modal__check-row">
+                    <div class="phone-modal__check-row fb-modal__check-row">
                         <span class="phone-modal__check-icon">
                             <i class="fa-solid fa-check"></i>
                         </span>
@@ -201,7 +202,7 @@
                     </p>
 
                     <!-- Continue -->
-                    <button type="button" class="phone-modal__continue">
+                    <button type="button" class="phone-modal__continue fb-modal__continue">
                         CONTINUE
                     </button>
                 </div>
@@ -227,10 +228,29 @@
                     <h2 class="phone-modal__title">Enter mobile number</h2>
                     <p class="phone-modal__subtitle">Enter your mobile number for OTP</p>
 
-                    <!-- Phone input -->
+                    <!-- Phone input with country code -->
                     <div class="phone-modal__input-wrap">
-                        <input id="phoneInput" type="tel" class="phone-modal__input" placeholder="Enter mobile number"
-                            maxlength="15" />
+                        <div class="phone-modal__input-group">
+                            <select class="phone-modal__country-code" id="countryCode" aria-label="Country code">
+                                <option value="+971">🇦🇪 +971</option>
+                                <option value="+966">🇸🇦 +966</option>
+                                <option value="+974">🇶🇦 +974</option>
+                                <option value="+965">🇰🇼 +965</option>
+                                <option value="+973">🇧🇭 +973</option>
+                                <option value="+968">🇴🇲 +968</option>
+                                <option value="+91">🇮🇳 +91</option>
+                                <option value="+92">🇵🇰 +92</option>
+                                <option value="+880">🇧🇩 +880</option>
+                                <option value="+44">🇬🇧 +44</option>
+                                <option value="+1">🇺🇸 +1</option>
+                                <option value="+33">🇫🇷 +33</option>
+                                <option value="+49">🇩🇪 +49</option>
+                                <option value="+20">🇪🇬 +20</option>
+                                <option value="+212">🇲🇦 +212</option>
+                            </select>
+                            <input id="phoneInput" type="tel" class="phone-modal__input" placeholder="Mobile number"
+                                maxlength="15" />
+                        </div>
                     </div>
 
                     <!-- Signup checkbox row -->
@@ -428,13 +448,23 @@
         otpDigits.forEach((input, idx, all) => {
             input.addEventListener('input', () => {
                 input.value = input.value.replace(/\D/g, '');
+                // Toggle filled class on dash inputs (idx > 0)
+                if (idx > 0) {
+                    input.classList.toggle('otp-modal__digit--filled', input.value.length > 0);
+                }
                 if (input.value && idx < all.length - 1) {
                     all[idx + 1].focus();
                 }
             });
             input.addEventListener('keydown', (e) => {
-                if (e.key === 'Backspace' && !input.value && idx > 0) {
-                    all[idx - 1].focus();
+                if (e.key === 'Backspace') {
+                    if (!input.value && idx > 0) {
+                        all[idx - 1].focus();
+                    }
+                    // Remove filled class if clearing
+                    if (idx > 0) {
+                        input.classList.remove('otp-modal__digit--filled');
+                    }
                 }
             });
         });

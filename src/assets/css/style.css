@@ -17536,26 +17536,6 @@ body .product-overlay-listing {
 /* ================================================================
    Login Page  |  _login-page.scss
    ================================================================ */
-.login-btn-create, .login-btn-facebook, .login-btn-phone,
-.login-btn-google {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  border-radius: 50px;
-  font-weight: 400;
-  cursor: pointer;
-  transition: opacity 0.2s ease;
-  border: 1.5px solid #d4d4d4;
-  background: #fff;
-  color: #111;
-  white-space: nowrap;
-}
-.login-btn-create:hover, .login-btn-facebook:hover, .login-btn-phone:hover,
-.login-btn-google:hover {
-  opacity: 0.75;
-}
-
 .login-left {
   display: flex;
   flex-direction: column;
@@ -17563,8 +17543,9 @@ body .product-overlay-listing {
   min-height: 100vh;
   background: #fff;
   padding: 48px 32px 32px;
+  justify-content: center;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .login-left {
     align-items: stretch;
     padding: 48px 56px 36px;
@@ -17574,21 +17555,22 @@ body .product-overlay-listing {
 .login-logo {
   display: flex;
   justify-content: center;
-  margin-bottom: 40px;
+  margin-bottom: 61px;
 }
 .login-logo img {
-  height: 42px;
-  width: auto;
+  height: 55px;
+  width: 222px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .login-logo img {
-    height: 38px;
+    height: 74px;
+    width: 296px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .login-logo {
     justify-content: center;
-    margin-bottom: auto;
+    margin-bottom: 40px;
   }
 }
 
@@ -17599,133 +17581,221 @@ body .product-overlay-listing {
   flex-direction: column;
   align-items: stretch;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .login-form-area {
-    max-width: 370px;
+    max-width: 538px;
     margin: 0 auto;
-    padding-bottom: 32px;
   }
 }
 
 .login-continue-label {
-  font-size: 1.35rem;
+  font-size: 22px;
   font-weight: 500;
-  color: #111;
-  margin-bottom: 20px;
+  color: #000;
   text-align: center;
+  margin-bottom: 33px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .login-continue-label {
-    font-size: 1.1rem;
+    margin-bottom: 10px;
+    font-family: Flink;
+    font-size: 25px;
+    font-weight: 500;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: normal;
     text-align: left;
+    color: #000;
   }
 }
 
 .login-social-row {
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 13px;
+  align-items: center;
+  gap: 13px;
 }
-@media (min-width: 768px) {
+@media (min-width: 1200px) {
   .login-social-row {
+    margin-bottom: 21px;
+    gap: 40px;
     flex-direction: row;
   }
 }
 
-.login-btn-phone,
-.login-btn-google {
-  padding: 13px 20px;
-  font-size: 0.9rem;
-  flex: 1;
+.login-btn-phone {
+  font-family: Flink;
+  font-size: 17px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+  background-color: #fff;
+  min-width: 247px;
+  max-width: 247px;
+  border: solid 0.3px #000;
+  border-radius: 50px;
+  padding: 14px 60px 12px 60px;
+  text-align: center;
 }
-@media (min-width: 768px) {
-  .login-btn-phone,
-  .login-btn-google {
-    padding: 10px 16px;
-  }
+
+.login-btn-google {
+  min-width: 247px;
+  max-width: 247px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4px;
+  padding: 14px 64px 12px 63px;
+  border-radius: 50px;
+  border: solid 0.3px #000;
+  font-family: Flink;
+  font-size: 17px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+  background-color: #fff;
 }
 
 .login-btn-facebook {
-  background: #1a3c8e;
-  border-color: #1a3c8e;
-  color: #fff;
-  font-size: 0.92rem;
-  padding: 13px 20px;
-  width: 100%;
+  min-width: 247px;
+  width: 247px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 64px 12px 63px;
   margin-top: 0;
+  font-family: Flink;
+  font-size: 17px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #fff;
+  background-color: #3a589b;
+  margin: auto;
+  border-radius: 50px;
+  gap: 4px;
 }
-@media (min-width: 768px) {
-  .login-btn-facebook {
-    width: 260px;
-    padding: 11px 20px;
-    margin: 0 auto;
-  }
+.login-btn-facebook i {
+  color: #3a589b;
+  font-size: 14px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .login-or-divider {
   display: flex;
   align-items: center;
   gap: 12px;
-  margin: 22px 0;
-  color: #aaa;
-  font-size: 0.8rem;
+  font-family: Flink;
+  font-size: 17px;
   font-weight: 500;
-  letter-spacing: 1px;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
+  margin: 34px 0 54px 0;
+}
+@media (min-width: 1200px) {
+  .login-or-divider {
+    margin: 40px 0 52px 0;
+  }
 }
 .login-or-divider::before, .login-or-divider::after {
   content: "";
   flex: 1;
   height: 1px;
-  background: #e0e0e0;
+  background: #c7c7c7;
 }
 
 .login-btn-create {
-  background: #c4adea;
-  border-color: #c4adea;
+  width: 283px;
+  font-family: Flink;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
   color: #fff;
-  font-weight: 600;
-  font-size: 0.82rem;
-  letter-spacing: 0.1em;
-  padding: 15px 20px;
-  width: 100%;
-}
-@media (min-width: 768px) {
-  .login-btn-create {
-    width: 260px;
-    padding: 13px 20px;
-    margin: 0 auto;
-  }
+  padding: 18px 62px 17px 63px;
+  border-radius: 50px;
+  background-color: #d4b9fc;
+  margin: auto;
 }
 
 .login-new-here {
-  display: block;
+  font-family: Flink;
+  font-size: 17px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
   text-align: center;
-  margin-top: 16px;
-  font-size: 0.88rem;
-  font-weight: 700;
-  color: #111;
-  text-decoration: underline;
+  color: #000;
+  margin-top: 33px;
+}
+@media (min-width: 1200px) {
+  .login-new-here {
+    margin-top: 21px;
+  }
 }
 .login-new-here:hover {
   color: #555;
 }
 
 .login-disclaimer {
+  font-family: Flink;
+  font-size: 13px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
   text-align: center;
-  font-size: 0.72rem;
-  color: #888;
-  line-height: 1.7;
-  margin-top: auto;
-  padding-top: 28px;
-  width: 100%;
+  color: #000;
+  margin-top: 93px;
 }
-.login-disclaimer strong {
+@media (min-width: 1200px) {
+  .login-disclaimer {
+    margin-top: 108px;
+  }
+}
+.login-disclaimer strong a {
+  color: #000;
   font-weight: 600;
-  color: rgb(110.5, 110.5, 110.5);
+  text-decoration: none;
 }
-.login-disclaimer a {
-  color: #888;
+.login-disclaimer strong a:hover {
+  color: #555;
+  text-decoration: underline;
 }
 
 .login-right {
@@ -17745,7 +17815,7 @@ body .product-overlay-listing {
 /* ================================================================
    Phone Number Modal  |  #phoneNumberModal
    ================================================================ */
-.otp-modal__close, .phone-modal__close {
+.fb-modal__close, .otp-modal__close, .phone-modal__close {
   position: absolute;
   top: 16px;
   right: 16px;
@@ -17757,39 +17827,48 @@ body .product-overlay-listing {
   line-height: 1;
   padding: 4px 8px;
 }
-.otp-modal__close:hover, .phone-modal__close:hover {
+.fb-modal__close:hover, .otp-modal__close:hover, .phone-modal__close:hover {
   color: #111;
 }
 
-.otp-modal__continue, .phone-modal__continue {
+.fb-modal__continue, .otp-modal__continue, .phone-modal__continue {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 16px;
+  padding: 10px 50px;
   border-radius: 50px;
-  background: #c4adea;
-  border: none;
+  background: #d4b9fc;
+  font-family: Flink;
+  font-size: 15px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: left;
   color: #fff;
-  font-weight: 600;
-  font-size: 0.9rem;
-  letter-spacing: 0.1em;
   cursor: pointer;
   transition: opacity 0.2s;
   margin-top: auto;
 }
-.otp-modal__continue:hover, .phone-modal__continue:hover {
+.fb-modal__continue:hover, .otp-modal__continue:hover, .phone-modal__continue:hover {
   opacity: 0.85;
 }
 
 .phone-modal__content {
-  border-radius: 20px;
   border: none;
-  padding: 40px 32px 32px;
+  padding: 40px 17px 20px 16px;
   position: relative;
-  min-height: 480px;
+  min-height: 265px;
+  min-width: 265px;
+  max-width: 265px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin: auto;
 }
 .phone-modal__body {
   display: flex;
@@ -17797,62 +17876,85 @@ body .product-overlay-listing {
   flex: 1;
   text-align: center;
   justify-content: center;
-  gap: 20px;
 }
+
 .phone-modal__title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #111;
-  margin-bottom: 10px;
-  line-height: 1.2;
+  font-family: Flink;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  margin-bottom: 2px;
 }
-
-.fb-modal__title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-  font-size: 2rem;
-  font-weight: 700;
-  color: #111;
-  margin-bottom: 40px;
-}
-.fb-modal__icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 46px;
-  height: 46px;
-  border-radius: 50%;
-  background: #111;
-  color: #fff;
-  font-size: 1.4rem;
-  flex-shrink: 0;
-}
-
 .phone-modal__subtitle {
-  font-size: 1rem;
-  color: #999;
-  margin-bottom: 28px;
+  font-family: Flink;
+  font-size: 11px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.73;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  margin-bottom: 6px;
 }
 .phone-modal__input-wrap {
-  margin-bottom: 24px;
+  margin-bottom: 11px;
+}
+.phone-modal__input-group {
+  display: flex;
+  align-items: center;
+  max-width: 232px;
+  border-radius: 2px;
+  background-color: #f7f7f8;
+  overflow: hidden;
+}
+.phone-modal__input-group:focus-within {
+  background: #ebe9f2;
+}
+.phone-modal__country-code {
+  flex-shrink: 0;
+  border: none;
+  background: transparent;
+  outline: none;
+  padding: 8px 4px 8px 8px;
+  font-family: Flink;
+  font-size: 11px;
+  font-weight: 500;
+  color: #000;
+  cursor: pointer;
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 8 5'%3E%3Cpath d='M0 0l4 5 4-5z' fill='%23000'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 4px center;
+  padding-right: 16px;
 }
 .phone-modal__input {
-  width: 100%;
-  padding: 18px 20px;
-  border-radius: 12px;
+  flex: 1;
+  min-width: 0;
+  padding: 8.4px 10px 7.5px 10px;
   border: none;
-  background: #f3f3f5;
-  font-size: 1rem;
-  color: #555;
+  background: transparent;
   outline: none;
+  font-family: Flink;
+  font-size: 11px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.73;
+  letter-spacing: normal;
+  text-align: left;
+  color: #000;
 }
 .phone-modal__input::placeholder {
-  color: #bbb;
-}
-.phone-modal__input:focus {
-  background: #ebe9f2;
+  color: #000;
+  opacity: 0.13;
 }
 .phone-modal__input--error {
   outline: 2px solid #e55;
@@ -17862,47 +17964,68 @@ body .product-overlay-listing {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 .phone-modal__check-icon {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 36px;
-  height: 36px;
+  width: 21px;
+  height: 21px;
   border-radius: 50%;
   border: 2px solid #111;
   flex-shrink: 0;
-  font-size: 0.85rem;
+  font-size: 14px;
   color: #111;
 }
 .phone-modal__check-label {
-  font-size: 1.05rem;
+  font-family: Flink;
+  font-size: 11px;
   font-weight: 500;
-  color: #111;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 2;
+  letter-spacing: 0.44px;
+  text-align: left;
+  color: #221d1d;
 }
 .phone-modal__terms {
-  font-size: 0.88rem;
-  color: #555;
-  line-height: 1.6;
-  margin-bottom: 28px;
+  font-family: Flink;
+  font-size: 9px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.44;
+  letter-spacing: normal;
+  text-align: center;
+  color: #221d1d;
+  margin-bottom: 0;
 }
 .phone-modal__terms a {
-  color: #111;
+  color: #000;
   font-weight: 700;
   text-decoration: underline;
 }
+.phone-modal__continue {
+  margin-top: 21px !important;
+}
+
 /* ================================================================
    OTP Modal  |  #otpModal
    ================================================================ */
 .otp-modal__content {
-  border-radius: 20px;
   border: none;
-  padding: 40px 32px 32px;
+  padding: 40px 17px 20px 16px;
   position: relative;
-  min-height: 480px;
+  min-height: 265px;
+  min-width: 265px;
+  max-width: 265px;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  margin: auto;
 }
 .otp-modal__body {
   display: flex;
@@ -17910,92 +18033,140 @@ body .product-overlay-listing {
   flex: 1;
   text-align: center;
   justify-content: center;
-  gap: 20px;
 }
 .otp-modal__title {
-  font-size: 2rem;
-  font-weight: 700;
-  color: #111;
-  margin-bottom: 12px;
+  font-family: Flink;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  margin-bottom: 2px;
 }
 .otp-modal__subtitle {
-  font-size: 0.95rem;
-  color: #999;
-  margin-bottom: 36px;
-  line-height: 1.5;
+  font-family: Flink;
+  font-size: 11px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.73;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  margin-bottom: 6px;
 }
 .otp-modal__subtitle strong {
-  color: #999;
+  color: #221d1d;
   font-weight: 500;
 }
 .otp-modal__edit-btn {
   background: none;
   border: none;
-  color: #999;
-  font-size: 0.95rem;
+  font-family: Flink;
+  font-size: 11px;
+  font-weight: 500;
+  color: #000;
+  opacity: 0.5;
   cursor: pointer;
   padding: 0 0 0 4px;
   vertical-align: middle;
 }
 .otp-modal__edit-btn:hover {
-  color: #555;
+  opacity: 1;
 }
 .otp-modal__digits {
   display: flex;
   justify-content: center;
-  gap: 16px;
-  margin-bottom: 32px;
+  gap: 10px;
+  margin-bottom: 11px;
 }
 .otp-modal__digit {
-  width: 64px;
-  height: 64px;
-  border-radius: 50%;
-  border: 2px solid #d4d4d4;
   text-align: center;
-  font-size: 1.4rem;
-  font-weight: 600;
-  color: #111;
-  background: #fff;
+  font-family: Flink;
+  font-size: 11px;
+  font-weight: 500;
+  color: #000;
+  background: transparent;
   outline: none;
-  transition: border-color 0.2s;
+  border: none;
   -moz-appearance: textfield;
   appearance: textfield;
+  transition: all 0.2s;
 }
 .otp-modal__digit::-webkit-outer-spin-button, .otp-modal__digit::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
-.otp-modal__digit:focus {
-  border-color: #111;
+.otp-modal__digit:first-child {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid #000;
+  background: transparent;
 }
-.otp-modal__digit:not(:placeholder-shown) {
-  border-color: #111;
+.otp-modal__digit:first-child:focus {
+  border-color: #d4b9fc;
+}
+.otp-modal__digit:first-child:not(:placeholder-shown) {
+  border-color: #000;
+}
+.otp-modal__digit:not(:first-child) {
+  width: 32px;
+  height: 18px;
+  border-radius: 0;
+  background: transparent;
+  border-bottom: 2px solid #000;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  align-self: center;
+  color: transparent;
+  caret-color: #000;
+  transition: all 0.2s ease;
+}
+.otp-modal__digit:not(:first-child):focus {
+  border-bottom-color: #d4b9fc;
+}
+.otp-modal__digit:not(:first-child).otp-modal__digit--filled {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1.5px solid #000;
+  background: transparent;
+  align-self: unset;
+  color: #000;
 }
 .otp-modal__resend {
   background: none;
   border: none;
   text-decoration: underline;
-  font-size: 0.95rem;
-  color: #111;
+  font-family: Flink;
+  font-size: 9px;
+  font-weight: 500;
+  color: #221d1d;
   cursor: pointer;
-  margin-bottom: 28px;
+  margin-bottom: 0;
 }
 .otp-modal__resend:hover {
   opacity: 0.7;
 }
 .otp-modal__continue {
-  margin-top: 0;
+  margin-top: 21px !important;
 }
 .otp-modal__digit--error {
-  border-color: #e53e3e !important;
+  background: #fff5f5 !important;
+  outline: 2px solid #e53e3e;
   color: #e53e3e;
-  background: #fff5f5;
 }
 .otp-modal__error {
-  color: #e53e3e;
-  font-size: 0.85rem;
+  font-family: Flink;
+  font-size: 9px;
   font-weight: 500;
-  margin-bottom: 16px;
-  margin-top: -12px;
+  color: #e53e3e;
+  margin-bottom: 6px;
+  margin-top: -4px;
 }
 .otp-modal__error[hidden] {
   display: none;
@@ -18027,9 +18198,8 @@ body .product-overlay-listing {
   animation: otp-shake 0.45s ease-in-out;
 }
 .otp-modal__digit--success {
-  border-color: #38a169 !important;
-  color: #38a169;
-  background: #f0fff4;
+  background: #ebe9f2 !important;
+  color: #d4b9fc;
 }
 .otp-modal__success {
   position: absolute;
@@ -18039,8 +18209,8 @@ body .product-overlay-listing {
   align-items: center;
   justify-content: center;
   background: #fff;
-  border-radius: 20px;
-  padding: 40px 32px;
+  border-radius: 2px;
+  padding: 20px 17px;
   text-align: center;
   animation: fadeInUp 0.4s ease;
 }
@@ -18061,14 +18231,14 @@ body .product-overlay-listing {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 80px;
-  height: 80px;
+  width: 42px;
+  height: 42px;
   border-radius: 50%;
   background: #f0fff4;
-  border: 3px solid #38a169;
-  color: #38a169;
-  font-size: 2rem;
-  margin-bottom: 24px;
+  border: 2px solid #d4b9fc;
+  color: #d4b9fc;
+  font-size: 14px;
+  margin-bottom: 10px;
   animation: popIn 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 @keyframes popIn {
@@ -18082,17 +18252,87 @@ body .product-overlay-listing {
   }
 }
 .otp-modal__success-title {
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #111;
-  margin-bottom: 12px;
+  font-family: Flink;
+  font-size: 20px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 2px;
 }
 .otp-modal__success-msg {
-  font-size: 0.95rem;
-  color: #888;
-  line-height: 1.6;
-  margin-bottom: 32px;
-  max-width: 260px;
+  font-family: Flink;
+  font-size: 11px;
+  font-weight: 500;
+  color: #221d1d;
+  line-height: 1.73;
+  margin-bottom: 0;
+}
+
+.fb-modal__content {
+  border: none;
+  padding: 40px 17px 20px 16px;
+  position: relative;
+  min-height: 265px;
+  min-width: 265px;
+  max-width: 265px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto;
+}
+.fb-modal__body {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+}
+.fb-modal__title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-family: Flink;
+  font-size: 20px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  margin-bottom: 43px !important;
+}
+.fb-modal__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21px;
+  height: 21px;
+  border-radius: 50%;
+  background: #111;
+  color: #fff;
+  font-size: 14px;
+  flex-shrink: 0;
+}
+.fb-modal__subtitle {
+  font-family: Flink;
+  font-size: 11px;
+  font-weight: 500;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.73;
+  letter-spacing: normal;
+  text-align: center;
+  color: #000;
+  margin-bottom: 6px;
+}
+.fb-modal__check-row {
+  margin-bottom: 22px !important;
+}
+.fb-modal__continue {
+  margin-top: 39px !important;
 }
 
 /* Signup Page Styling - reusing Login page styles */
