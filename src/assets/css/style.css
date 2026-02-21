@@ -19128,6 +19128,10 @@ body .product-overlay-listing {
 }
 .help-centre-page .accordion-body {
   font-size: 16px;
+  font-weight: 300;
+}
+.help-centre-page .accordion-button {
+  font-weight: 300 !important;
 }
 
 .osp-main {
