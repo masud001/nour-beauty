@@ -1,26 +1,34 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Configuration
-    const popupDelay = 5000; // 5 seconds
+    const popupDelay = 5000;        // 5 seconds initial delay
+    const cooldownMs = 60 * 60 * 1000; // 1 hour in milliseconds
+    const storageKey = 'promoPopupLastShown';
     const popupId = 'promoPopupModal';
 
-    // Show popup on every page load
-    setTimeout(() => {
-        const modalElement = document.getElementById(popupId);
-        if (modalElement && window.bootstrap) {
-            const myModal = new window.bootstrap.Modal(modalElement, {
-                backdrop: 'static', // Prevent closing when clicking outside
-                keyboard: false
-            });
-            // Ensure aria-hidden is removed when shown
-            modalElement.addEventListener('show.bs.modal', () => {
-                modalElement.removeAttribute('aria-hidden');
-            });
-            modalElement.addEventListener('hidden.bs.modal', () => {
-                modalElement.setAttribute('aria-hidden', 'true');
-            });
-            myModal.show();
-        }
-    }, popupDelay);
+    // Only show if never shown before OR more than 1 hour has passed
+    const lastShown = localStorage.getItem(storageKey);
+    const shouldShow = !lastShown || (Date.now() - parseInt(lastShown, 10)) >= cooldownMs;
+
+    if (shouldShow) {
+        setTimeout(() => {
+            const modalElement = document.getElementById(popupId);
+            if (modalElement && window.bootstrap) {
+                const myModal = new window.bootstrap.Modal(modalElement, {
+                    backdrop: 'static',
+                    keyboard: false
+                });
+                modalElement.addEventListener('show.bs.modal', () => {
+                    modalElement.removeAttribute('aria-hidden');
+                    // Save the timestamp when the popup is actually displayed
+                    localStorage.setItem(storageKey, Date.now().toString());
+                });
+                modalElement.addEventListener('hidden.bs.modal', () => {
+                    modalElement.setAttribute('aria-hidden', 'true');
+                });
+                myModal.show();
+            }
+        }, popupDelay);
+    }
 
     // Countdown Timer Logic
     const timerElement = document.querySelector('.countdown-timer');

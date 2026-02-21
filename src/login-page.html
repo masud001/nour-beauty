@@ -15,163 +15,425 @@
 </head>
 
 <body>
-
-    <main class="login-page-container">
+    <main>
         <div class="container-fluid p-0">
             <div class="row g-0">
-                <!-- Left Column: Login Form -->
-                <div
-                    class="col-12 col-md-6 d-flex flex-column align-items-center justify-content-center vh-100 bg-white order-2 order-md-1">
-                    <div class="login-form-wrapper w-100 p-4" style="max-width: 480px;">
 
-                        <!-- Logo -->
-                        <div class="text-center mb-5">
-                            <img id="brand-logo" width="200" height="40" src="./assets/img/brand-logo/brand-logo.svg"
-                                alt="brand-logo" />
+                <!-- ── Left: Form ── -->
+                <div class="col-12 col-md-6 login-left">
+
+                    <!-- Logo -->
+                    <div class="login-logo">
+                        <a href="index-page-2.html">
+                            <img src="./assets/img/brand-logo/brand-logo.svg" alt="Nour Beauty" />
+                        </a>
+                    </div>
+
+                    <!-- Form content -->
+                    <div class="login-form-area">
+
+                        <p class="login-continue-label">Sign up with</p>
+
+                        <!-- Phone – full width on mobile, row on desktop -->
+                        <div class="login-social-row">
+                            <button type="button" class="login-btn-phone" data-bs-toggle="modal"
+                                data-bs-target="#phoneNumberModal">
+                                Phone Number
+                            </button>
+
+                            <button type="button" class="login-btn-google" data-bs-toggle="modal"
+                                data-bs-target="#googleLoginModal">
+                                <!-- Google colour SVG -->
+                                <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                                    aria-hidden="true">
+                                    <path
+                                        d="M17.64 9.2a9.4 9.4 0 0 0-.15-1.64H9v3.1h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.91C16.66 14.25 17.64 11.95 17.64 9.2z"
+                                        fill="#4285F4" />
+                                    <path
+                                        d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.91-2.26C11.24 14.12 10.21 14.42 9 14.42c-2.34 0-4.32-1.58-5.03-3.71H.96v2.33A9 9 0 0 0 9 18z"
+                                        fill="#34A853" />
+                                    <path
+                                        d="M3.97 10.71A5.4 5.4 0 0 1 3.68 9c0-.59.1-1.17.28-1.71V4.96H.96A9 9 0 0 0 0 9c0 1.45.35 2.82.96 4.04l3.01-2.33z"
+                                        fill="#FBBC05" />
+                                    <path
+                                        d="M9 3.58c1.32 0 2.5.45 3.44 1.34l2.58-2.58C13.46.89 11.42 0 9 0A9 9 0 0 0 .96 4.96l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58z"
+                                        fill="#EA4335" />
+                                </svg>
+                                Google
+                            </button>
                         </div>
 
-                        <!-- Heading -->
-                        <!-- <div class="mb-4">
-                            <h3 class="h4 fw-normal">Log in to continue</h3>
-                        </div> -->
+                        <!-- Facebook – full width -->
+                        <button type="button" class="login-btn-facebook" data-bs-toggle="modal"
+                            data-bs-target="#facebookLoginModal">
+                            <i class="fa-brands fa-facebook-f"></i>
+                            Facebook
+                        </button>
 
-                        <!-- Login Form -->
-                        <form action="#" method="POST">
-                            <!-- Email Input -->
-                            <!-- <div class="mb-3">
-                                <label for="emailInput"
-                                    class="form-label d-flex justify-content-between align-items-center"
-                                    style="font-weight: 600; font-size: 0.9rem;">
-                                    Email Address
-                                    <span class="text-muted fw-normal fst-italic"
-                                        style="font-size: 0.8rem;">(required)</span>
-                                </label>
-                                <input type="email" class="form-control rounded-0" id="emailInput"
-                                    style="height: 50px;">
-                            </div> -->
+                        <!-- OR divider -->
+                        <div class="login-or-divider">OR</div>
 
-                            <!-- Password Input -->
-                            <!-- <div class="mb-2 position-relative">
-                                <label for="passwordInput"
-                                    class="form-label d-flex justify-content-between align-items-center"
-                                    style="font-weight: 600; font-size: 0.9rem;">
-                                    Password
-                                    <span class="text-muted fw-normal fst-italic"
-                                        style="font-size: 0.8rem;">(required)</span>
-                                </label>
-                                <input type="password" class="form-control rounded-0" id="passwordInput"
-                                    style="height: 50px;">
-                            </div> -->
+                        <!-- Create Account -->
+                        <button type="button" class="login-btn-create"
+                            onclick="window.location.href='signup-page.html'">
+                            CREATE ACCOUNT
+                        </button>
 
-                            <!-- Show Password Toggle -->
-                            <!-- <div class="text-end mb-4">
-                                <button type="button"
-                                    class="btn btn-link text-decoration-none text-muted p-0 text-uppercase"
-                                    style="font-size: 0.85rem;" onclick="togglePassword()">Show</button>
-                            </div> -->
+                        <!-- Already have account link -->
+                        <a href="#" class="login-new-here">Already got an account? log in here</a>
 
-                            <!-- Login Button -->
-                            <!-- <div class="mb-3">
-                                <button type="submit"
-                                    class="btn btn-black w-100 rounded-0 text-white fw-bold text-uppercase py-3"
-                                    style="background-color: #000; letter-spacing: 1px;">Login</button>
-                            </div> -->
+                    </div><!-- /login-form-area -->
 
-                            <!-- Forgot Password -->
-                            <!-- <div class="text-center mb-5">
-                                <a href="#" class="text-decoration-underline text-dark"
-                                    style="font-size: 0.9rem;">Forgot Password?</a>
-                            </div> -->
+                    <!-- Disclaimer pinned to bottom -->
+                    <p class="login-disclaimer">
+                        by continuing you agree to our <strong>Terms and Conditions</strong><br>
+                        For more information, See our <a href="#">privacy policy.</a>
+                    </p>
 
-                            <!-- Continue With -->
-                            <div class="mb-4">
-                                <h3 class="h4 fw-normal mb-4">Log in to continue with</h3>
-                                <div class="row g-2">
-                                    <div class="col-12">
-                                        <button type="button"
-                                            class="btn w-100 rounded-0 py-2 d-flex align-items-center justify-content-center text-white"
-                                            style="background-color: #3b5998; height: 50px;">
-                                            <i class="fa-brands fa-facebook-f me-2"></i> Facebook
-                                        </button>
-                                    </div>
-                                    <div class="col-12">
-                                        <button type="button"
-                                            class="btn w-100 rounded-0 border py-2 d-flex align-items-center justify-content-center bg-white"
-                                            style="height: 50px;">
-                                            <svg class="me-2" width="20" height="20" xmlns="http://www.w3.org/2000/svg"
-                                                xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 18 18"
-                                                version="1.1">
-                                                <g id="Google-Button" stroke="none" stroke-width="1" fill="none"
-                                                    fill-rule="evenodd">
-                                                    <path
-                                                        d="M17.64,9.20454545 C17.64,8.56636364 17.5827273,7.95272727 17.4763636,7.36363636 L9,7.36363636 L9,10.845 L13.8436364,10.845 C13.635,11.97 13.0009091,12.9231818 12.0477273,13.5613636 L12.0477273,15.8195455 L14.9563636,15.8195455 C16.6581818,14.2527273 17.64,11.9454545 17.64,9.20454545 L17.64,9.20454545 Z"
-                                                        fill="#4285F4" />
-                                                    <path
-                                                        d="M9,18 C11.43,18 13.4672727,17.1940909 14.9563636,15.8195455 L12.0477273,13.5613636 C11.2418182,14.1013636 10.2109091,14.4204545 9,14.4204545 C6.65590909,14.4204545 4.67181818,12.8372727 3.96409091,10.71 L0.957272727,10.71 L0.957272727,13.0418182 C2.43818182,15.9831818 5.48181818,18 9,18 L9,18 Z"
-                                                        fill="#34A853" />
-                                                    <path
-                                                        d="M3.96409091,10.71 C3.78409091,10.17 3.68181818,9.59318182 3.68181818,9 C3.68181818,8.40681818 3.78409091,7.83 3.96409091,7.29 L3.96409091,4.95818182 L0.957272727,4.95818182 C0.347727273,6.17318182 0,7.54772727 0,9 C0,10.4522727 0.347727273,11.8268182 0.957272727,13.0418182 L3.96409091,10.71 L3.96409091,10.71 Z"
-                                                        fill="#FBBC05" />
-                                                    <path
-                                                        d="M9,3.57954545 C10.3213636,3.57954545 11.5077273,4.03363636 12.4404545,4.92545455 L15.0218182,2.34409091 C13.4631818,0.891818182 11.4259091,0 9,0 C5.48181818,0 2.43818182,2.01681818 0.957272727,4.95818182 L3.96409091,7.29 C4.67181818,5.16272727 6.65590909,3.57954545 9,3.57954545 L9,3.57954545 Z"
-                                                        fill="#EA4335" />
-                                                </g>
-                                            </svg> Google
-                                        </button>
-                                    </div>
-                                    <div class="col-12">
-                                        <button type="button"
-                                            class="btn w-100 rounded-0 border py-2 d-flex align-items-center justify-content-center bg-white"
-                                            style="height: 50px;">
-                                            <i class="fa-solid fa-phone me-2"></i> Phone
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
+                </div><!-- /left col -->
 
-                            <!-- OR Separator -->
-                            <div class="position-relative text-center mb-5">
-                                <hr class="my-0" style="opacity: 0.15;">
-                                <span
-                                    class="position-absolute top-50 start-50 translate-middle bg-white px-3 text-uppercase"
-                                    style="font-size: 0.8rem; letter-spacing: 1px;">OR</span>
-                            </div>
-
-                            <!-- Sign Up Link -->
-                            <div class="text-center">
-                                <a href="signup-page.html" class="fw-bold text-dark text-decoration-underline">Continue
-                                    as
-                                    guest!</a>
-                            </div>
-
-                        </form>
-                    </div>
-                </div>
-
-                <!-- Right Column: Image -->
-                <div
-                    class="col-12 col-md-6 d-none d-md-block vh-100 p-0 order-1 order-md-2 position-relative overflow-hidden">
-                    <img src="./assets/img/hero-banner-1.jpg" alt="Login Banner" class="w-100 h-100 object-fit-cover"
+                <!-- ── Right: Image ── -->
+                <div class="col-md-6 login-right d-none d-md-block">
+                    <img src="./assets/img/hero-banner-1.jpg" alt="Login Banner"
                         onerror="this.src='https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?q=80&w=2574&auto=format&fit=crop'">
                 </div>
-            </div>
+
+            </div><!-- /row -->
         </div>
     </main>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script>
-        function togglePassword() {
-            const passwordInput = document.getElementById('passwordInput');
-            const toggleBtn = event.target;
 
-            if (passwordInput.type === 'password') {
-                passwordInput.type = 'text';
-                toggleBtn.textContent = 'Hide';
-            } else {
-                passwordInput.type = 'password';
-                toggleBtn.textContent = 'Show';
+    <!-- ══════════════════════════════════════════
+         Modal – Google Login
+    ══════════════════════════════════════════ -->
+    <div class="modal fade phone-modal" id="googleLoginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content phone-modal__content">
+
+                <!-- Close -->
+                <button type="button" class="phone-modal__close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <div class="phone-modal__body">
+
+                    <!-- Title with Google icon -->
+                    <h2 class="phone-modal__title fb-modal__title">
+                        Login using
+                        <span class="fb-modal__icon" style="background:#fff; border:2px solid #e0e0e0;">
+                            <svg width="22" height="22" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg"
+                                aria-hidden="true">
+                                <path
+                                    d="M17.64 9.2a9.4 9.4 0 0 0-.15-1.64H9v3.1h4.84a4.14 4.14 0 0 1-1.8 2.72v2.26h2.91C16.66 14.25 17.64 11.95 17.64 9.2z"
+                                    fill="#4285F4" />
+                                <path
+                                    d="M9 18c2.43 0 4.47-.8 5.96-2.18l-2.91-2.26C11.24 14.12 10.21 14.42 9 14.42c-2.34 0-4.32-1.58-5.03-3.71H.96v2.33A9 9 0 0 0 9 18z"
+                                    fill="#34A853" />
+                                <path
+                                    d="M3.97 10.71A5.4 5.4 0 0 1 3.68 9c0-.59.1-1.17.28-1.71V4.96H.96A9 9 0 0 0 0 9c0 1.45.35 2.82.96 4.04l3.01-2.33z"
+                                    fill="#FBBC05" />
+                                <path
+                                    d="M9 3.58c1.32 0 2.5.45 3.44 1.34l2.58-2.58C13.46.89 11.42 0 9 0A9 9 0 0 0 .96 4.96l3.01 2.33C4.68 5.16 6.66 3.58 9 3.58z"
+                                    fill="#EA4335" />
+                            </svg>
+                        </span>
+                    </h2>
+
+                    <!-- Signup checkbox row -->
+                    <div class="phone-modal__check-row">
+                        <span class="phone-modal__check-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+                        <span class="phone-modal__check-label">Signup for Club Apparel</span>
+                    </div>
+
+                    <!-- Terms -->
+                    <p class="phone-modal__terms">
+                        By Selecting "CONTINUE", I agree to the
+                        <a href="#">Terms of Use, Privacy Policy</a>
+                    </p>
+
+                    <!-- Continue -->
+                    <button type="button" class="phone-modal__continue">
+                        CONTINUE
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+         Modal – Facebook Login
+    ══════════════════════════════════════════ -->
+    <div class="modal fade phone-modal" id="facebookLoginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content phone-modal__content">
+
+                <!-- Close -->
+                <button type="button" class="phone-modal__close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <div class="phone-modal__body">
+
+                    <!-- Title with Facebook icon -->
+                    <h2 class="phone-modal__title fb-modal__title">
+                        Login using
+                        <span class="fb-modal__icon"><i class="fa-brands fa-facebook"></i></span>
+                    </h2>
+
+                    <!-- Signup checkbox row -->
+                    <div class="phone-modal__check-row">
+                        <span class="phone-modal__check-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+                        <span class="phone-modal__check-label">Signup for Club Apparel</span>
+                    </div>
+
+                    <!-- Terms -->
+                    <p class="phone-modal__terms">
+                        By Selecting "CONTINUE", I agree to the
+                        <a href="#">Terms of Use, Privacy Policy</a>
+                    </p>
+
+                    <!-- Continue -->
+                    <button type="button" class="phone-modal__continue">
+                        CONTINUE
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+         Modal 1 – Enter Mobile Number
+    ══════════════════════════════════════════ -->
+    <div class="modal fade phone-modal" id="phoneNumberModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content phone-modal__content">
+
+                <!-- Close -->
+                <button type="button" class="phone-modal__close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <div class="phone-modal__body">
+                    <h2 class="phone-modal__title">Enter mobile number</h2>
+                    <p class="phone-modal__subtitle">Enter your mobile number for OTP</p>
+
+                    <!-- Phone input -->
+                    <div class="phone-modal__input-wrap">
+                        <input id="phoneInput" type="tel" class="phone-modal__input" placeholder="Enter mobile number"
+                            maxlength="15" />
+                    </div>
+
+                    <!-- Signup checkbox row -->
+                    <div class="phone-modal__check-row">
+                        <span class="phone-modal__check-icon">
+                            <i class="fa-solid fa-check"></i>
+                        </span>
+                        <span class="phone-modal__check-label">Signup for Club Apparel</span>
+                    </div>
+
+                    <!-- Terms -->
+                    <p class="phone-modal__terms">
+                        By Selecting "CONTINUE", I agree to the
+                        <a href="#">Terms of Use, Privacy Policy</a>
+                    </p>
+
+                    <!-- Continue -->
+                    <button type="button" class="phone-modal__continue" id="phoneContinueBtn">
+                        CONTINUE
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════
+         Modal 2 – Enter OTP
+    ══════════════════════════════════════════ -->
+    <div class="modal fade otp-modal" id="otpModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content otp-modal__content">
+
+                <!-- Close -->
+                <button type="button" class="otp-modal__close" data-bs-dismiss="modal" aria-label="Close">
+                    <i class="fa-solid fa-xmark"></i>
+                </button>
+
+                <div class="otp-modal__body">
+                    <h2 class="otp-modal__title">Enter OTP</h2>
+                    <p class="otp-modal__subtitle">
+                        We sent a 4 digit code to
+                        <strong id="otpPhoneDisplay"></strong>
+                        <button type="button" class="otp-modal__edit-btn" id="otpEditBtn"
+                            aria-label="Edit phone number">
+                            <i class="fa-regular fa-pen-to-square"></i>
+                        </button>
+                    </p>
+
+                    <!-- 4 OTP digit inputs -->
+                    <div class="otp-modal__digits" id="otpDigitsRow">
+                        <input class="otp-modal__digit" type="tel" maxlength="1" inputmode="numeric" pattern="[0-9]" />
+                        <input class="otp-modal__digit" type="tel" maxlength="1" inputmode="numeric" pattern="[0-9]" />
+                        <input class="otp-modal__digit" type="tel" maxlength="1" inputmode="numeric" pattern="[0-9]" />
+                        <input class="otp-modal__digit" type="tel" maxlength="1" inputmode="numeric" pattern="[0-9]" />
+                    </div>
+
+                    <!-- Error message (hidden by default) -->
+                    <p class="otp-modal__error" id="otpError">Incorrect OTP. Please try again.</p>
+
+                    <!-- Resend -->
+                    <button type="button" class="otp-modal__resend" id="resendBtn">
+                        Resend code by SMS
+                    </button>
+
+                    <!-- Continue -->
+                    <button type="button" class="otp-modal__continue" id="otpContinueBtn">
+                        CONTINUE
+                    </button>
+                </div>
+
+                <!-- ── Success overlay (shown on valid OTP) ── -->
+                <div class="otp-modal__success" id="otpSuccess" hidden>
+                    <div class="otp-modal__success-icon">
+                        <i class="fa-solid fa-check"></i>
+                    </div>
+                    <h2 class="otp-modal__success-title">Verified!</h2>
+                    <p class="otp-modal__success-msg">Your mobile number has been verified successfully.</p>
+                    <button type="button" class="otp-modal__continue" data-bs-dismiss="modal">
+                        CONTINUE
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // ── Phone → OTP flow ─────────────────────────────────────
+        const phoneContinueBtn = document.getElementById('phoneContinueBtn');
+        const phoneInput = document.getElementById('phoneInput');
+        const otpPhoneDisplay = document.getElementById('otpPhoneDisplay');
+        const otpEditBtn = document.getElementById('otpEditBtn');
+        const otpContinueBtn = document.getElementById('otpContinueBtn');
+        const otpError = document.getElementById('otpError');
+        const otpSuccess = document.getElementById('otpSuccess');
+        const otpDigitsRow = document.getElementById('otpDigitsRow');
+        const otpDigits = document.querySelectorAll('.otp-modal__digit');
+
+        const phoneModalEl = document.getElementById('phoneNumberModal');
+        const otpModalEl = document.getElementById('otpModal');
+
+        const phoneModal = new bootstrap.Modal(phoneModalEl);
+        const otpModal = new bootstrap.Modal(otpModalEl);
+
+        // ── Phone CONTINUE ────────────────────────────────────────
+        phoneContinueBtn.addEventListener('click', () => {
+            const number = phoneInput.value.trim();
+            if (!number) {
+                phoneInput.classList.add('phone-modal__input--error');
+                phoneInput.focus();
+                return;
             }
+            phoneInput.classList.remove('phone-modal__input--error');
+            otpPhoneDisplay.textContent = number;
+            phoneModal.hide();
+            phoneModalEl.addEventListener('hidden.bs.modal', () => {
+                resetOtpModal();
+                otpModal.show();
+                otpDigits[0].focus();
+            }, { once: true });
+        });
+
+        // ── Edit icon → back to phone modal ──────────────────────
+        otpEditBtn.addEventListener('click', () => {
+            otpModal.hide();
+            otpModalEl.addEventListener('hidden.bs.modal', () => {
+                phoneModal.show();
+            }, { once: true });
+        });
+
+        // ── OTP CONTINUE → validate ───────────────────────────────
+        // Demo rule: code "0000" = wrong, anything else (all 4 filled) = success
+        otpContinueBtn.addEventListener('click', () => {
+            const code = [...otpDigits].map(i => i.value).join('');
+            if (code.length < 4) {
+                // Not all digits entered — shake
+                triggerShake();
+                return;
+            }
+            if (code === '0000') {
+                // ── WRONG OTP ──
+                setErrorState();
+            } else {
+                // ── SUCCESS OTP ──
+                setSuccessState();
+            }
+        });
+
+        // ── Helpers ───────────────────────────────────────────────
+        function resetOtpModal() {
+            otpDigits.forEach(d => {
+                d.value = '';
+                d.classList.remove('otp-modal__digit--error', 'otp-modal__digit--success');
+            });
+            otpError.hidden = true;
+            otpSuccess.hidden = true;
+            otpDigitsRow.classList.remove('otp-modal__digits--shake');
         }
+
+        function setErrorState() {
+            otpDigits.forEach(d => {
+                d.classList.add('otp-modal__digit--error');
+                d.classList.remove('otp-modal__digit--success');
+            });
+            otpError.hidden = false;
+            triggerShake();
+        }
+
+        function setSuccessState() {
+            // Show success overlay, hide the body content
+            otpSuccess.hidden = false;
+            // Dim the body behind the overlay
+            document.querySelector('.otp-modal__body').style.opacity = '0';
+            document.querySelector('.otp-modal__body').style.pointerEvents = 'none';
+        }
+
+        function triggerShake() {
+            otpDigitsRow.classList.remove('otp-modal__digits--shake');
+            // Force reflow to restart animation
+            void otpDigitsRow.offsetWidth;
+            otpDigitsRow.classList.add('otp-modal__digits--shake');
+        }
+
+        // Clear error state when user starts typing again
+        otpDigits.forEach(d => {
+            d.addEventListener('input', () => {
+                d.classList.remove('otp-modal__digit--error');
+                otpError.hidden = true;
+            });
+        });
+
+        // ── OTP digit auto-advance ────────────────────────────────
+        otpDigits.forEach((input, idx, all) => {
+            input.addEventListener('input', () => {
+                input.value = input.value.replace(/\D/g, '');
+                if (input.value && idx < all.length - 1) {
+                    all[idx + 1].focus();
+                }
+            });
+            input.addEventListener('keydown', (e) => {
+                if (e.key === 'Backspace' && !input.value && idx > 0) {
+                    all[idx - 1].focus();
+                }
+            });
+        });
     </script>
 </body>
 
