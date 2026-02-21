@@ -539,6 +539,16 @@ $login-muted : #888;
         letter-spacing: 0.44px;
         text-align: left;
         color: #221d1d;
+
+        a {
+            color: inherit;
+            text-decoration: none;
+            font-weight: 500;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
     }
 
     &__terms {
