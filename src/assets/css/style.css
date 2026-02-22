@@ -17906,6 +17906,7 @@ body .product-overlay-listing {
 }
 .phone-modal__input-wrap {
   margin-bottom: 11px;
+  margin-top: 15px;
 }
 .phone-modal__input-group {
   display: flex;
@@ -17914,6 +17915,7 @@ body .product-overlay-listing {
   border-radius: 2px;
   background-color: #f7f7f8;
   overflow: hidden;
+  margin: auto;
 }
 .phone-modal__input-group:focus-within {
   background: #ebe9f2;
@@ -17977,7 +17979,8 @@ body .product-overlay-listing {
   align-items: center;
   justify-content: center;
   gap: 12px;
-  margin-bottom: 10px;
+  margin-top: 25px;
+  margin-bottom: 25px;
 }
 .phone-modal__check-icon {
   display: flex;

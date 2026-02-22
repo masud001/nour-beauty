@@ -445,6 +445,7 @@ $login-muted : #888;
 
     &__input-wrap {
         margin-bottom: 11px;
+        margin-top: 15px;
     }
 
     &__input-group {
@@ -454,6 +455,7 @@ $login-muted : #888;
         border-radius: 2px;
         background-color: #f7f7f8;
         overflow: hidden;
+        margin: auto;
 
         &:focus-within {
             background: #ebe9f2;
@@ -528,7 +530,8 @@ $login-muted : #888;
         align-items: center;
         justify-content: center;
         gap: 12px;
-        margin-bottom: 10px;
+        margin-top: 25px;
+        margin-bottom: 25px;
     }
 
     &__check-icon {
