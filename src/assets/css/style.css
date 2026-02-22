@@ -17664,6 +17664,7 @@ body .product-overlay-listing {
   text-align: left;
   color: #000;
   background-color: #fff;
+  text-decoration: none;
 }
 
 .login-btn-facebook {
@@ -17687,6 +17688,7 @@ body .product-overlay-listing {
   margin: auto;
   border-radius: 50px;
   gap: 4px;
+  text-decoration: none;
 }
 .login-btn-facebook i {
   color: #3a589b;
@@ -17836,11 +17838,11 @@ body .product-overlay-listing {
   align-items: center;
   justify-content: center;
   width: 100%;
-  padding: 10px 50px;
+  padding: 14px 64px;
   border-radius: 50px;
   background: #d4b9fc;
   font-family: Flink;
-  font-size: 15px;
+  font-size: 17px;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -17858,11 +17860,11 @@ body .product-overlay-listing {
 
 .phone-modal__content {
   border: none;
-  padding: 40px 17px 20px 16px;
+  padding: 54px 26px 30px 26px;
   position: relative;
-  min-height: 265px;
-  min-width: 265px;
-  max-width: 265px;
+  min-height: 340px;
+  min-width: 340px;
+  max-width: 340px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -17880,7 +17882,7 @@ body .product-overlay-listing {
 
 .phone-modal__title {
   font-family: Flink;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -17892,7 +17894,7 @@ body .product-overlay-listing {
 }
 .phone-modal__subtitle {
   font-family: Flink;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -17908,7 +17910,7 @@ body .product-overlay-listing {
 .phone-modal__input-group {
   display: flex;
   align-items: center;
-  max-width: 232px;
+  max-width: 260px;
   border-radius: 2px;
   background-color: #f7f7f8;
   overflow: hidden;
@@ -17923,7 +17925,7 @@ body .product-overlay-listing {
   outline: none;
   padding: 8px 4px 8px 8px;
   font-family: Flink;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   color: #000;
   cursor: pointer;
@@ -17943,7 +17945,7 @@ body .product-overlay-listing {
   background: transparent;
   outline: none;
   font-family: Flink;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -17958,6 +17960,17 @@ body .product-overlay-listing {
 }
 .phone-modal__input--error {
   outline: 2px solid #e55;
+}
+.phone-modal__check {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+.phone-modal__check-input {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
 }
 .phone-modal__check-row {
   display: flex;
@@ -17977,10 +17990,25 @@ body .product-overlay-listing {
   flex-shrink: 0;
   font-size: 14px;
   color: #111;
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+.phone-modal__check-icon i {
+  opacity: 0;
+  transform: scale(0.7);
+  transition: opacity 0.2s ease, transform 0.2s ease;
+}
+.phone-modal__check-input:checked + .phone-modal__check-icon {
+  border-color: #5bbfa8;
+  background-color: #5bbfa8;
+  color: #fff;
+}
+.phone-modal__check-input:checked + .phone-modal__check-icon i {
+  opacity: 1;
+  transform: scale(1);
 }
 .phone-modal__check-label {
   font-family: Flink;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -17999,7 +18027,7 @@ body .product-overlay-listing {
 }
 .phone-modal__terms {
   font-family: Flink;
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -18023,11 +18051,11 @@ body .product-overlay-listing {
    ================================================================ */
 .otp-modal__content {
   border: none;
-  padding: 40px 17px 20px 16px;
+  padding: 54px 26px 30px 26px;
   position: relative;
-  min-height: 265px;
-  min-width: 265px;
-  max-width: 265px;
+  min-height: 340px;
+  min-width: 340px;
+  max-width: 340px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -18044,7 +18072,7 @@ body .product-overlay-listing {
 }
 .otp-modal__title {
   font-family: Flink;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -18056,7 +18084,7 @@ body .product-overlay-listing {
 }
 .otp-modal__subtitle {
   font-family: Flink;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   font-stretch: normal;
   font-style: normal;
@@ -18094,7 +18122,7 @@ body .product-overlay-listing {
 .otp-modal__digit {
   text-align: center;
   font-family: Flink;
-  font-size: 11px;
+  font-size: 12px;
   font-weight: 500;
   color: #000;
   background: transparent;
@@ -18108,8 +18136,8 @@ body .product-overlay-listing {
   -webkit-appearance: none;
 }
 .otp-modal__digit:first-child {
-  width: 40px;
-  height: 40px;
+  width: 44px;
+  height: 44px;
   border-radius: 50%;
   border: 1.5px solid #000;
   background: transparent;

@@ -164,6 +164,7 @@ $login-muted : #888;
     text-align: left;
     color: #000;
     background-color: #fff;
+    text-decoration: none;
 
 }
 
@@ -189,6 +190,7 @@ $login-muted : #888;
     margin: auto;
     border-radius: 50px;
     gap: 4px;
+    text-decoration: none;
 
     i {
         color: #3a589b;
@@ -354,11 +356,11 @@ $login-muted : #888;
     align-items: center;
     justify-content: center;
     width: 100%;
-    padding: 10px 50px;
+    padding: 14px 64px;
     border-radius: 50px;
     background: $login-purple;
     font-family: Flink;
-    font-size: 15px;
+    font-size: 17px;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -380,11 +382,11 @@ $login-muted : #888;
     &__content {
         // border-radius: 20px;
         border: none;
-        padding: 40px 17px 20px 16px;
+        padding: 54px 26px 30px 26px;
         position: relative;
-        min-height: 265px;
-        min-width: 265px;
-        max-width: 265px;
+        min-height: 340px;
+        min-width: 340px;
+        max-width: 340px;
         width: 100%;
         height: 100%;
         display: flex;
@@ -417,7 +419,7 @@ $login-muted : #888;
 
     &__title {
         font-family: Flink;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 500;
         font-stretch: normal;
         font-style: normal;
@@ -430,7 +432,7 @@ $login-muted : #888;
 
     &__subtitle {
         font-family: Flink;
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 500;
         font-stretch: normal;
         font-style: normal;
@@ -448,7 +450,7 @@ $login-muted : #888;
     &__input-group {
         display: flex;
         align-items: center;
-        max-width: 232px;
+        max-width: 260px;
         border-radius: 2px;
         background-color: #f7f7f8;
         overflow: hidden;
@@ -465,7 +467,7 @@ $login-muted : #888;
         outline: none;
         padding: 8px 4px 8px 8px;
         font-family: Flink;
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 500;
         color: #000;
         cursor: pointer;
@@ -488,7 +490,7 @@ $login-muted : #888;
         background: transparent;
         outline: none;
         font-family: Flink;
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 500;
         font-stretch: normal;
         font-style: normal;
@@ -506,6 +508,19 @@ $login-muted : #888;
         &--error {
             outline: 2px solid #e55;
         }
+    }
+
+    &__check {
+        display: inline-flex;
+        align-items: center;
+        gap: 12px;
+        cursor: pointer;
+    }
+
+    &__check-input {
+        position: absolute;
+        opacity: 0;
+        pointer-events: none;
     }
 
     &__check-row {
@@ -527,11 +542,29 @@ $login-muted : #888;
         flex-shrink: 0;
         font-size: 14px;
         color: #111;
+        transition: border-color .2s ease, background-color .2s ease, color .2s ease;
+
+        i {
+            opacity: 0;
+            transform: scale(0.7);
+            transition: opacity .2s ease, transform .2s ease;
+        }
+    }
+
+    &__check-input:checked+&__check-icon {
+        border-color: #5bbfa8;
+        background-color: #5bbfa8;
+        color: #fff;
+
+        i {
+            opacity: 1;
+            transform: scale(1);
+        }
     }
 
     &__check-label {
         font-family: Flink;
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 500;
         font-stretch: normal;
         font-style: normal;
@@ -553,7 +586,7 @@ $login-muted : #888;
 
     &__terms {
         font-family: Flink;
-        font-size: 9px;
+        font-size: 10px;
         font-weight: 500;
         font-stretch: normal;
         font-style: normal;
@@ -585,11 +618,11 @@ $login-muted : #888;
 
     &__content {
         border: none;
-        padding: 40px 17px 20px 16px;
+        padding: 54px 26px 30px 26px;
         position: relative;
-        min-height: 265px;
-        min-width: 265px;
-        max-width: 265px;
+        min-height: 340px;
+        min-width: 340px;
+        max-width: 340px;
         width: 100%;
         height: 100%;
         display: flex;
@@ -612,7 +645,7 @@ $login-muted : #888;
 
     &__title {
         font-family: Flink;
-        font-size: 20px;
+        font-size: 22px;
         font-weight: 500;
         font-stretch: normal;
         font-style: normal;
@@ -625,7 +658,7 @@ $login-muted : #888;
 
     &__subtitle {
         font-family: Flink;
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 500;
         font-stretch: normal;
         font-style: normal;
@@ -670,7 +703,7 @@ $login-muted : #888;
         // Shared base
         text-align: center;
         font-family: Flink;
-        font-size: 11px;
+        font-size: 12px;
         font-weight: 500;
         color: #000;
         background: transparent;
@@ -687,8 +720,8 @@ $login-muted : #888;
 
         // ── 1st digit: large circle ───────────────────────────────
         &:first-child {
-            width: 40px;
-            height: 40px;
+            width: 44px;
+            height: 44px;
             border-radius: 50%;
             border: 1.5px solid #000;
             background: transparent;
