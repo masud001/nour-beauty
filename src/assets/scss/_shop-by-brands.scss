@@ -128,3 +128,51 @@
     }
   }
 }
+
+.b2b-brand-section {
+  .shop-by-brands-section {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .shop-by-brands-section .brand-cell {
+    border-right: 1px solid #e5e7eb;
+    border-bottom: 1px solid #e5e7eb;
+  }
+
+  @media (max-width: 768px) {
+    .shop-by-brands-section .brand-cell {
+      max-height: none;
+    }
+
+    .shop-by-brands-section .brand-cell:nth-child(n+7) {
+      display: flex;
+    }
+
+    .shop-by-brands-section .brand-cell:nth-child(n+5) {
+      border-bottom: 1px solid #e5e7eb;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .shop-by-brands-section .brand-cell:nth-child(5n) {
+      border-right: 1px solid #e5e7eb;
+    }
+
+    .shop-by-brands-section .brand-cell:nth-child(n+6) {
+      border-bottom: 1px solid #e5e7eb;
+    }
+  }
+
+  @media (max-width: 1023px) {
+    .shop-by-brands-section .brand-cell:nth-child(2n) {
+      border-right: 1px solid #e5e7eb;
+    }
+  }
+
+  @media (min-width: 640px) and (max-width: 1023px) {
+    .shop-by-brands-section .brand-cell:nth-child(3n) {
+      border-right: 1px solid #e5e7eb;
+    }
+  }
+}

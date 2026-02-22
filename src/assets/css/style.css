@@ -16911,7 +16911,6 @@ textarea.form-control-lg {
 
 .section-thumb {
   color: #fff;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://picsum.photos/1200/540.webp/?blur=2");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -19102,6 +19101,44 @@ body .product-overlay-listing {
   .shop-by-brands-section .brand-cell img {
     width: 100px;
     height: 47px;
+  }
+}
+
+.b2b-brand-section .shop-by-brands-section {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+.b2b-brand-section .shop-by-brands-section .brand-cell {
+  border-right: 1px solid #e5e7eb;
+  border-bottom: 1px solid #e5e7eb;
+}
+@media (max-width: 768px) {
+  .b2b-brand-section .shop-by-brands-section .brand-cell {
+    max-height: none;
+  }
+  .b2b-brand-section .shop-by-brands-section .brand-cell:nth-child(n+7) {
+    display: flex;
+  }
+  .b2b-brand-section .shop-by-brands-section .brand-cell:nth-child(n+5) {
+    border-bottom: 1px solid #e5e7eb;
+  }
+}
+@media (min-width: 1024px) {
+  .b2b-brand-section .shop-by-brands-section .brand-cell:nth-child(5n) {
+    border-right: 1px solid #e5e7eb;
+  }
+  .b2b-brand-section .shop-by-brands-section .brand-cell:nth-child(n+6) {
+    border-bottom: 1px solid #e5e7eb;
+  }
+}
+@media (max-width: 1023px) {
+  .b2b-brand-section .shop-by-brands-section .brand-cell:nth-child(2n) {
+    border-right: 1px solid #e5e7eb;
+  }
+}
+@media (min-width: 640px) and (max-width: 1023px) {
+  .b2b-brand-section .shop-by-brands-section .brand-cell:nth-child(3n) {
+    border-right: 1px solid #e5e7eb;
   }
 }
 
