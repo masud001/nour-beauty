@@ -516,6 +516,14 @@
 
 }
 
+.single-brand-slider {
+  .swiper-slide {
+    img {
+      aspect-ratio: 1/1 !important;
+    }
+  }
+}
+
 .pagination-number {
 
   margin-bottom: 15px;
