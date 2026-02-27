@@ -18825,7 +18825,6 @@ body .product-overlay-listing {
 }
 
 .footer-logo {
-  filter: invert(1);
   max-width: 120px;
 }
 
