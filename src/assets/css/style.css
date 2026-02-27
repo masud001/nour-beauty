@@ -14357,10 +14357,6 @@ textarea.form-control-lg {
     width: 320px;
     background-color: white;
   }
-  .header-container .customar-account ul.dropdown-menu li:first-child, .header-container .customar-account ul.dropdown-menu li:nth-child(2) {
-    padding: 8px 15px;
-    background-color: #efefef;
-  }
   .header-container .customar-account ul.dropdown-menu li button:hover {
     opacity: 0.8;
     text-decoration: underline;
@@ -18878,6 +18874,7 @@ body .product-overlay-listing {
 /* Main Content Area */
 .account-page-wrapper {
   background-color: #f9f9f9;
+  /* Order Page Button Overrides - Gradient & Card Button Behavior */
 }
 @media (min-width: 768px) {
   .account-page-wrapper aside.col-md-3.d-none.d-md-block {
@@ -18885,6 +18882,52 @@ body .product-overlay-listing {
     top: 3rem;
     align-self: flex-start;
   }
+}
+.account-page-wrapper .btn-dark,
+.account-page-wrapper .btn-outline-dark,
+.account-page-wrapper .btn-black,
+.account-page-wrapper .btn-light {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  transition: color 0.4s ease, background 0.4s ease;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  /* Gradient Background */
+  background: linear-gradient(90deg, #BEE4DA 0%, #D5BAFD 100%);
+  border: none;
+  color: #000;
+  /* Slide Effect (Pseudo-element) */
+}
+.account-page-wrapper .btn-dark::before,
+.account-page-wrapper .btn-outline-dark::before,
+.account-page-wrapper .btn-black::before,
+.account-page-wrapper .btn-light::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: rgb(205.0540540541, 171.7567567568, 250.2432432432);
+  /* Hover color */
+  z-index: -1;
+  transition: width 0.4s ease;
+}
+.account-page-wrapper .btn-dark:hover,
+.account-page-wrapper .btn-outline-dark:hover,
+.account-page-wrapper .btn-black:hover,
+.account-page-wrapper .btn-light:hover {
+  color: #000 !important;
+}
+.account-page-wrapper .btn-dark:hover::before,
+.account-page-wrapper .btn-outline-dark:hover::before,
+.account-page-wrapper .btn-black:hover::before,
+.account-page-wrapper .btn-light:hover::before {
+  width: 100%;
 }
 
 .min-vh-50 {
@@ -18918,48 +18961,7 @@ body .product-overlay-listing {
 .product-card:hover .product-image img {
   transform: scale(1.05);
 }
-.product-card .btn-close-custom {
-  z-index: 10;
-  font-size: 0.9rem;
-}
 
-.wishlist-product-grid .product-card figure {
-  height: unset;
-  /* Use aspect-ratio to maintain container shape */
-  aspect-ratio: 299/430;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: transparent;
-  /* Optional background for letterboxing */
-}
-.wishlist-product-grid .product-card figure picture {
-  display: block;
-  width: 100%;
-  height: 100%;
-  max-height: unset !important;
-  min-height: unset !important;
-}
-.wishlist-product-grid .product-card figure picture img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain !important;
-  /* Ensures image fits within the box without cropping */
-}
-@media screen and (min-width: 992px) {
-  .wishlist-product-grid .product-card figure picture img {
-    /* Ensuring consistency across breakpoints */
-    object-fit: contain !important;
-    height: 100%;
-  }
-}
-
-/* Mobile Menu Transitions */
-.mobile-menu-overlay.open {
-  transform: translateX(0) !important;
-}
-
-/* Dark Mode Support needed for this page as well */
 /* Account Credit Page Styles */
 /* Inherits most layout styles from _wishlist-page.scss (sidebar, header) */
 /* Specifics for Credit Cards */

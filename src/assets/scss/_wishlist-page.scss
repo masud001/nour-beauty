@@ -50,6 +50,49 @@
             align-self: flex-start;
         }
     }
+
+    /* Order Page Button Overrides - Gradient & Card Button Behavior */
+    .btn-dark,
+    .btn-outline-dark,
+    .btn-black,
+    .btn-light {
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        transition: color 0.4s ease, background 0.4s ease;
+        font-family: inherit;
+        font-weight: 500;
+        line-height: 1.2;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+
+        /* Gradient Background */
+        background: linear-gradient(90deg, #BEE4DA 0%, #D5BAFD 100%);
+        border: none;
+        color: #000;
+
+        /* Slide Effect (Pseudo-element) */
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: darken(#eadcfd, 10%);
+            /* Hover color */
+            z-index: -1;
+            transition: width 0.4s ease;
+        }
+
+        &:hover {
+            color: #000 !important;
+
+            &::before {
+                width: 100%;
+            }
+        }
+    }
 }
 
 .min-vh-50 {
@@ -83,57 +126,9 @@
         transition: transform 0.3s ease;
     }
 
-    &:hover .product-image img {
-        transform: scale(1.05);
-    }
-
-    .btn-close-custom {
-        z-index: 10;
-        font-size: 0.9rem;
-    }
-}
-
-.wishlist-product-grid {
-    .product-card {
-        figure {
-            height: unset;
-            /* Use aspect-ratio to maintain container shape */
-            aspect-ratio: 299/430;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            background-color: transparent;
-            /* Optional background for letterboxing */
-
-            picture {
-                display: block;
-                width: 100%;
-                height: 100%;
-                max-height: unset !important;
-                min-height: unset !important;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                    object-fit: contain !important;
-                    /* Ensures image fits within the box without cropping */
-
-                    @media screen and (min-width: 992px) {
-                        /* Ensuring consistency across breakpoints */
-                        object-fit: contain !important;
-                        height: 100%;
-                    }
-                }
-            }
+    &:hover {
+        .product-image img {
+            transform: scale(1.05);
         }
     }
 }
-
-/* Mobile Menu Transitions */
-.mobile-menu-overlay {
-    &.open {
-        transform: translateX(0) !important;
-    }
-}
-
-/* Dark Mode Support needed for this page as well */
