@@ -60,4 +60,19 @@ document.addEventListener("DOMContentLoaded", function () {
     tick();
     setInterval(tick, 1000);
   }
+
+  // Sidebar active link
+  // ------------------
+  const currentFilename = window.location.pathname.split('/').filter(Boolean).pop() || 'index.html';
+
+  const sidebarLinks = document.querySelectorAll('.sidebar-nav .nav-section ul a[href]');
+  sidebarLinks.forEach((link) => {
+    const href = link.getAttribute('href');
+    if (!href || href.startsWith('#')) return;
+
+    const linkFilename = new URL(href, window.location.href).pathname.split('/').filter(Boolean).pop() || '';
+    const isActive = linkFilename === currentFilename;
+
+    link.classList.toggle('active', isActive);
+  });
 });
