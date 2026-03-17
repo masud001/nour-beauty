@@ -15499,6 +15499,11 @@ textarea.form-control-lg {
   grid-template-columns: 1fr;
   gap: 18px;
 }
+@media (min-width: 768px) {
+  .trust-grid-section .trust-grid {
+    grid-template-columns: 1fr 2fr !important;
+  }
+}
 @media (min-width: 1024px) {
   .trust-grid-section .trust-grid {
     grid-template-columns: 1fr 1fr 1fr;
@@ -15518,10 +15523,17 @@ textarea.form-control-lg {
     min-height: 498px !important;
   }
 }
+@media (min-width: 768px) {
+  .trust-grid-section .countdown-card {
+    grid-column: 1/span 1 !important;
+    grid-row: 1 !important;
+    min-height: auto !important;
+  }
+}
 @media (min-width: 1024px) {
   .trust-grid-section .countdown-card {
     grid-column: 1/span 1;
-    grid-row: 1/span 3;
+    grid-row: 1;
   }
 }
 .trust-grid-section .countdown-card .overlay {
@@ -15599,12 +15611,19 @@ textarea.form-control-lg {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
+@media (min-width: 768px) {
+  .trust-grid-section .grid-items {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    grid-column: 2/span 1 !important;
+    grid-row: 1 !important;
+  }
+}
 @media (min-width: 1024px) {
   .trust-grid-section .grid-items {
     grid-template-columns: repeat(4, minmax(0, 1fr));
     grid-auto-rows: 1fr;
     grid-column: 2/span 2;
-    grid-row: 1/span 3;
+    grid-row: 1;
   }
 }
 .trust-grid-section .category-tile {
