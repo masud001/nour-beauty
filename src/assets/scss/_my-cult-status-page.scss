@@ -1,18 +1,318 @@
-/* My Cult Status Page Styles */
+/* Club Apparel Loyalty Page Styles */
 
-/* Inherits layout from _wishlist-page.scss */
+.loyalty-card-container {
+    // Diagonal gradient: mint top-left → lavender bottom-right (matches reference image exactly)
+    background: linear-gradient(180deg, rgba(189, 228, 221, 0.7) 0%, rgba(189, 228, 221, 0.7) 46.15%, rgba(221, 198, 255, 0.7) 100%);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    width: 100%;
+    display: block;
 
-/* Custom Utilities */
-@media (min-width: 768px) {
-    .border-end-md {
-        border-right: 1px solid #dee2e6 !important;
+    .loyalty-main-logo-placeholder {
+        max-width: 200px;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+
+    .loyalty-feature-card {
+        // Near-fully white, clearly visible against the colored gradient bg
+        background: linear-gradient(180deg, rgba(126, 110, 149, 0) 0%, rgba(212, 186, 251, 0.7) 100%);
+        color: inherit;
+        // Solid light gray border — exactly as seen in reference
+        border: 1px solid rgba(180, 180, 195, 0.65);
+        border-radius: 14px;
+        transition: transform 0.25s ease, box-shadow 0.25s ease, background 0.25s ease;
+
+        &:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0, 0, 0, 0.09);
+            background: rgba(255, 255, 255, 0.97);
+        }
+
+        .feature-icon {
+            .feature-icon-img {
+                width: 60px;
+                height: 60px;
+                object-fit: contain;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+
+        h6 {
+            // Reference: ~11-12px uppercase bold, tight spacing
+            font-family: Flink;
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 13px;
+            line-height: 20px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: rgba(34, 29, 29, 1);
+
+        }
+
+        p {
+            // Reference: small gray body text ~11-12px
+            font-family: Flink;
+            font-weight: 500;
+            font-style: Medium;
+            font-size: 11px;
+            line-height: 13px;
+            letter-spacing: 0%;
+            text-align: center;
+            color: rgba(34, 29, 29, 1);
+
+        }
+
+        .extra-small {
+            font-size: 0.68rem;
+            color: #666;
+        }
+    }
+
+    .btn-light {
+        background: #fff;
+        border: 1.5px solid rgba(0, 0, 0, 0.1);
+        color: #111;
+        letter-spacing: 2px;
+        font-size: 0.78rem;
+        min-width: 200px;
+        transition: all 0.3s ease;
+
+        &:hover {
+            background: #111;
+            color: #fff;
+            border-color: #111;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.18);
+        }
     }
 }
 
-/* Progress Bar Customization */
-.progress {
-    overflow: visible;
-    /* To show labels if needed, though they are outside */
+.loyalty-cta-text {
+    font-family: Flink, sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: 0.04em; // 4% of font-size
+    text-align: center;
 }
 
-/* Dark Mode Overrides */
+.about-loyalty-link {
+    transition: all 0.3s ease;
+    border-color: #e0e0e0 !important;
+
+    &:hover {
+        padding-left: 10px !important;
+        background-color: rgba(0, 0, 0, 0.02);
+    }
+
+    h5 {
+        letter-spacing: 0.3px;
+    }
+}
+
+/* Mobile Adjustments */
+@media (max-width: 767.98px) {
+    .loyalty-card-container {
+        padding: 2rem 1.5rem !important;
+
+        .loyalty-main-logo-placeholder {
+            max-width: 160px;
+        }
+    }
+
+    .loyalty-feature-card {
+        padding: 1.5rem !important;
+    }
+}
+
+/* =============================================
+   Page 02 — Loyalty Tier Card Styles
+   ============================================= */
+
+.ca-logo-sm {
+    width: 90px;
+    height: auto;
+    display: block;
+}
+
+.loyalty-card-inner-page {
+    max-width: 480px;
+}
+
+.loyalty-tier-inner-card {
+
+    background: linear-gradient(180deg, rgba(212, 185, 252, 0) 0%, rgba(102, 102, 102, 0.2) 100%);
+    width: 289px;
+    min-height: 279px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem !important;
+    /* overrides bootstrap padding to fit nicely */
+
+    .tier-badge-circle {
+        width: 140px;
+        height: 140px;
+        border-radius: 50%;
+        background: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+
+        .tier-badge-img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+            position: relative;
+            transform: scale(2.5);
+        }
+    }
+
+
+
+    .loyalty-divider {
+        border-top: 1px solid rgba(0, 0, 0, 1);
+        border-bottom: 1px solid rgba(0, 0, 0, 1);
+    }
+
+    .points-balance-amount {
+        font-size: 2rem;
+        font-weight: 700;
+        color: #111;
+        letter-spacing: 1px;
+    }
+
+    .points-balance-label {
+        font-size: 0.8rem;
+        color: #666;
+        letter-spacing: 0.5px;
+    }
+
+    .loyalty-phone {
+        font-size: 0.82rem;
+        color: #555;
+        letter-spacing: 0.3px;
+    }
+
+    .loyalty-unlock-text {
+        font-family: Flink, sans-serif;
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 16px;
+        letter-spacing: 0;
+        text-align: center;
+        color: rgba(52, 52, 52, 1);
+
+        span {
+            font-weight: 700;
+        }
+    }
+}
+
+/* About CA Section */
+.about-ca-section {
+    .about-ca-title {
+        color: #111;
+    }
+
+    .about-ca-divider {
+        border-color: #e0e0e0;
+        opacity: 1;
+    }
+
+    .about-ca-link-separator {
+        width: 1px;
+        height: 18px;
+        background-color: #ccc;
+    }
+
+    .about-ca-action-link {
+        font-size: 0.85rem;
+        color: #3a4fd4;
+        text-decoration: none;
+        transition: opacity 0.2s ease;
+
+        &:hover {
+            opacity: 0.75;
+            text-decoration: underline;
+        }
+    }
+}
+
+/* Loyalty Modals */
+.loyalty-action-modal {
+    .modal-content {
+        border-radius: 4px;
+        box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    }
+    
+    .btn-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 0.8rem;
+        z-index: 10;
+        opacity: 0.6;
+        &:hover {
+            opacity: 1;
+        }
+    }
+
+    .custom-otp-input {
+        background-color: #f8f8f8;
+        border: none;
+        border-radius: 4px;
+        padding: 14px;
+        font-size: 13px;
+        text-align: center;
+        &:focus {
+            box-shadow: none;
+            outline: 1px solid #ddd;
+        }
+        &::placeholder {
+            color: #aaa;
+            font-size: 13px;
+        }
+    }
+
+    .btn-lavender {
+        background-color: #D4B9FC; /* matches UI lavender shade */
+        color: #fff;
+        font-weight: 600;
+        font-size: 14px;
+        border: none;
+        &:hover {
+            background-color: darken(#D4B9FC, 5%);
+            color: #fff;
+        }
+    }
+}
+/* Page-02 Mobile Adjustments */
+@media (max-width: 767.98px) {
+    .loyalty-tier-inner-card {
+        max-width: 100%;
+
+        .tier-badge-circle {
+            width: 120px;
+            height: 120px;
+
+            .tier-badge-img {
+                width: 65px;
+                height: 65px;
+            }
+        }
+
+        .points-balance-amount {
+            font-size: 1.6rem;
+        }
+    }
+}

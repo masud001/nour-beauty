@@ -157,82 +157,125 @@
 
                 <!-- Main Content Area -->
                 <div class="col-12 col-md-9">
-                    <h5 class="mb-4" style="font-size: 17px; font-weight: 500; letter-spacing: 4%;">Club Apparel Loyalty
-                    </h5>
-                    <div class="loyalty-card-container p-4 p-md-5 mb-4 position-relative overflow-hidden">
-                        <!-- Club Apparel Logo -->
-                        <div class="text-center mb-5">
-                            <div class="loyalty-main-logo-placeholder mx-auto">
-                                <img src="./assets/img/ca-logos/ca-logo-01-black-en.png" alt="Club Apparel"
-                                    class="img-fluid">
-                            </div>
+                    <h5 class="mb-4" style="font-size: 17px; font-weight: 500; letter-spacing: 0.04em;">Club Apparel
+                        Loyalty</h5>
+
+                    <!-- Loyalty Tier Card Container -->
+                    <div
+                        class="loyalty-card-container loyalty-card-inner-page p-4 p-md-5 mb-4 position-relative overflow-hidden">
+                        <!-- CA Logo top-left -->
+                        <div class="ca-logo-top-left mb-3">
+                            <img src="./assets/img/ca-logos/ca-logo-01-black-en.png" alt="Club Apparel"
+                                class="ca-logo-sm">
                         </div>
 
-                        <!-- Cards Row -->
-                        <div class="row g-4 mb-5">
-                            <!-- Card 1 -->
-                            <div class="col-12 col-md-4">
-                                <a href="#"
-                                    class="loyalty-feature-card text-center h-100 p-4 d-flex flex-column text-decoration-none">
-                                    <div class="feature-icon mb-4">
-                                        <img src="./assets/img/ca-logos/feature-logo-01.png" alt="Loyalty Benefits"
-                                            class="feature-icon-img">
-                                    </div>
-                                    <h6 class="text-uppercase fw-bold mb-3">Avail Loyalty Benefits on Victoria's Secret
-                                    </h6>
-                                    <p class="small mb-0">Get access and offers from your favourite
-                                        international brands.</p>
-                                </a>
+                        <!-- Tier Badge Circle + Inner Card -->
+                        <div class="loyalty-tier-inner-card mx-auto text-center">
+                            <!-- Tier Badge Circle -->
+                            <div class="tier-badge-circle mx-auto mb-2">
+                                <img src="./assets/img/ca-logos/silver-tier-logo.png" alt="Silver Tier"
+                                    class="tier-badge-img">
                             </div>
-                            <!-- Card 2 -->
-                            <div class="col-12 col-md-4">
-                                <a href="#"
-                                    class="loyalty-feature-card text-center h-100 p-4 d-flex flex-column text-decoration-none">
-                                    <div class="feature-icon mb-4">
-                                        <img src="./assets/img/ca-logos/feature-logo-02.png" alt="Tier Benefits"
-                                            class="feature-icon-img">
-                                    </div>
-                                    <h6 class="text-uppercase fw-bold mb-3">Tier Benefits</h6>
-                                    <p class="small mb-0">Get access and offers from your favourite
-                                        international brands.</p>
-                                </a>
-                            </div>
-                            <!-- Card 3 -->
-                            <div class="col-12 col-md-4">
-                                <a href="#"
-                                    class="loyalty-feature-card text-center h-100 p-4 d-flex flex-column text-decoration-none">
-                                    <div class="feature-icon mb-4">
-                                        <img src="./assets/img/ca-logos/feature-logo-03.png" alt="Redemption Value"
-                                            class="feature-icon-img">
-                                    </div>
-                                    <h6 class="text-uppercase fw-bold mb-3">Redemption Value</h6>
-                                    <div class="mt-auto">
-                                        <p class="fw-bold mb-0">1 CA Point = 1 INR</p>
-                                        <p class="extra-small text-muted mb-0">*Country Specific</p>
-                                    </div>
-                                </a>
-                            </div>
-                        </div>
 
-                        <!-- Footer Content -->
-                        <div class="text-center">
-                            <p class="mb-4 fw-medium loyalty-cta-text">Link your Club Apparel Account to earn & redeem
-                                points <br class="d-none d-md-block"> with every purchase</p>
-                            <button class="btn btn-light rounded-pill px-5 py-3 fw-bold text-uppercase shadow-sm">Link
-                                Account</button>
+
+
+
+                            <!-- Points Balance -->
+                            <div class="loyalty-divider mt-5">
+                                <h2 class="points-balance-amount mb-0 mt-2">INR 1400</h2>
+                                <p class="points-balance-label mb-2">Your Points Balance</p>
+                            </div>
+
+
+
+                            <!-- Phone Number -->
+                            <p class="loyalty-phone mb-0 mt-3">Phone No. : 8789787869</p>
+
+                            <!-- Redeem Unlock Text -->
+                            <p class="loyalty-unlock-text mb-0 mt-4">Please complete your profile on <span>Club Apparel App</span> to UNLOCK redemption</p>
                         </div>
                     </div>
 
-                    <!-- About Section (Linkable) -->
-                    <a href="#"
-                        class="about-loyalty-link d-flex justify-content-between align-items-center py-4 border-top text-decoration-none text-dark mt-5 px-2">
-                        <h5 class="mb-0" style="font-size: 17px; font-weight: 500;">About Club Apparel</h5>
-                        <i class="fa-solid fa-plus fs-6"></i>
-                    </a>
+                    <!-- About Club Apparel Section -->
+                    <div class="about-ca-section mt-4">
+                        <h5 class="about-ca-title mb-3" style="font-size: 17px; font-weight: 500;">About Club Apparel
+                        </h5>
+                        <hr class="about-ca-divider mt-0 mb-3">
+                        <div class="about-ca-links d-flex align-items-center gap-3 flex-wrap">
+                            <a href="#" class="about-ca-action-link" data-bs-toggle="modal" data-bs-target="#delinkModal">De-Link Club Apparel Account</a>
+                            <div class="about-ca-link-separator d-none d-md-block"></div>
+                            <a href="#" class="about-ca-action-link" data-bs-toggle="modal" data-bs-target="#successModal">Change Mobile Number of Club Apparel Account</a>
+                        </div>
+                    </div>
                 </div>
 
             </div>
+
+        </div>
     </main>
+
+    <!-- Loyalty Modals -->
+    <!-- Delink Modal -->
+    <div class="modal fade loyalty-action-modal" id="delinkModal" tabindex="-1" aria-labelledby="delinkModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0 justify-content-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pt-0 px-md-4 pb-md-4">
+                    <img src="./assets/img/ca-logos/ca-logo-01-black-en.png" alt="CA Logo" width="50" class="mb-4 d-inline-block" style="filter: invert(65%) sepia(57%) saturate(1067%) hue-rotate(5deg) brightness(88%) contrast(92%);">
+                    <p class="mb-1 modal-subtitle-text">Please enter the OTP sent on your number</p>
+                    <p class="fw-bold mb-1" style="font-size: 14px; color: #333;">+91-8787987897</p>
+                    <p class="mb-4 modal-subtitle-text">to de-link your account</p>
+                    
+                    <input type="text" class="form-control text-center custom-otp-input mb-3" placeholder="Enter your 4 digit OTP">
+                    <div class="text-end mb-4">
+                        <a href="#" class="text-dark small text-decoration-underline fw-medium">Resend OTP</a>
+                    </div>
+                    
+                    <button type="button" class="btn btn-lavender w-100 rounded-pill py-2 text-uppercase mt-2" data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#delinkedModal">De-link Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- De-Linked Success Modal -->
+    <div class="modal fade loyalty-action-modal" id="delinkedModal" tabindex="-1" aria-labelledby="delinkedModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0 justify-content-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pt-0 px-md-4 pb-md-4 mt-2">
+                    <div class="mb-4">
+                        <i class="fa-solid fa-link-slash text-danger" style="font-size: 3rem;"></i>
+                    </div>
+                    <h4 class="modal-title-text fw-bold mb-3">Account De-Linked!</h4>
+                    <p class="mb-4 modal-subtitle-text">Club Apparel account has been delinked</p>
+                    
+                    <button type="button" class="btn btn-lavender w-100 rounded-pill py-2 text-uppercase mt-2" data-bs-dismiss="modal">Link Your Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Success Modal (Number changed) -->
+    <div class="modal fade loyalty-action-modal" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0 justify-content-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pt-0 px-md-4 pb-md-4 mt-2">
+                    <div class="mb-4">
+                        <i class="fa-regular fa-circle-check" style="color: #06b328; font-size: 3.5rem;"></i>
+                    </div>
+                    <h4 class="modal-title-text fw-bold mb-3 mt-1">Success!</h4>
+                    <p class="mb-4 modal-subtitle-text">Your number is changed successfully.</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Footer -->
     <footer class="bg-light text-center py-4 border-top">
