@@ -61,6 +61,32 @@ document.addEventListener("DOMContentLoaded", function () {
     setInterval(tick, 1000);
   }
 
+  // Account pages – mobile menu overlay
+  // ------------------
+  const mobileMenuOverlay = document.getElementById('mobileMenuOverlay');
+  const mobileMenuBtn     = document.getElementById('mobileMenuBtn');
+  const mobileMenuCloseBtn = document.getElementById('mobileMenuCloseBtn');
+
+  if (mobileMenuOverlay && mobileMenuBtn && mobileMenuCloseBtn) {
+    function openMobileMenu() {
+      mobileMenuOverlay.style.transform = 'translateX(0)';
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeMobileMenu() {
+      mobileMenuOverlay.style.transform = 'translateX(-100%)';
+      document.body.style.overflow = '';
+    }
+
+    mobileMenuBtn.addEventListener('click', openMobileMenu);
+    mobileMenuCloseBtn.addEventListener('click', closeMobileMenu);
+
+    // Close when clicking outside the menu panel
+    mobileMenuOverlay.addEventListener('click', function (e) {
+      if (e.target === mobileMenuOverlay) closeMobileMenu();
+    });
+  }
+
   // Sidebar active link
   // ------------------
   const currentFilename = window.location.pathname.split('/').filter(Boolean).pop() || 'index.html';
