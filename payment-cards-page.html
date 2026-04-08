@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payment Cards | Nour Beauty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+</head>
+
+<body>
+
+    <!-- Header (Specific to Account Pages) -->
+    <header class="account-header border-bottom">
+        <!-- Top Bar -->
+        <div class="top-bar border-bottom py-2 d-none d-md-block">
+            <div class="container px-4 px-lg-5 d-flex justify-content-between align-items-center">
+                <a href="index.html" class="text-decoration-none text-dark d-flex align-items-center"
+                    style="font-size: 0.85rem;">
+                    <i class="fa-solid fa-chevron-left me-2" style="font-size: 0.7rem;"></i> Return to store
+                </a>
+                <a href="#" class="text-decoration-none text-dark d-flex align-items-center text-uppercase"
+                    style="font-size: 0.85rem;">
+                    <i class="fa-solid fa-arrow-right-from-bracket me-2"></i> Log out
+                </a>
+            </div>
+        </div>
+        <!-- Main Header -->
+        <div class="main-header py-3">
+            <div class="container px-4 px-lg-5">
+                <div class="row align-items-center">
+                    <!-- Mobile Menu Button -->
+                    <div class="col-4 d-md-none">
+                        <button class="btn border-0 p-0" id="mobileMenuBtn">
+                            <i class="fa-solid fa-bars fs-4"></i>
+                        </button>
+                    </div>
+                    <!-- Logo -->
+                    <div class="col-4 col-md-6 text-center text-md-start">
+                        <img id="brand-logo" width="120" src="./assets/img/brand-logo/brand-logo.svg" alt="Nour Beauty"
+                            class="d-inline-block">
+                    </div>
+                    <!-- Basket -->
+                    <div class="col-4 col-md-6 text-end">
+                        <a href="cart-page.html"
+                            class="text-reset text-decoration-none d-flex align-items-center justify-content-end fw-bold">
+                            <i class="fa-solid fa-bag-shopping fs-5 me-2"></i>
+                            <span class="d-none d-md-inline text-uppercase" style="font-size: 0.9rem;">Basket</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="account-page-wrapper bg-light min-vh-100 pb-5">
+        <div class="container px-4 py-4 px-md-4 px-lg-5 pt-0 pt-md-4">
+            <div class="row g-0 g-md-4 py-4">
+
+                <!-- Desktop Sidebar Navigation -->
+                <aside class="col-md-3 d-none d-md-block">
+                    <div class="sidebar-nav bg-white p-3 border-0">
+                        <div class="nav-section mb-4">
+                            <h6 class="text-uppercase fw-bold mb-3 px-2" style="font-size: 0.8rem;">
+                                <a href="account-home-page.html" class="text-decoration-none text-dark">Account Home</a>
+                            </h6>
+                        </div>
+
+                        <!-- My Account -->
+                        <div class="nav-section mb-4">
+                            <h6 class="text-uppercase fw-bold mb-2 px-2" style="font-size: 0.8rem;">My Account</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="my-orders-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-cube me-2 text-muted" style="width: 20px;"></i> My
+                                        Orders</a></li>
+                                <li><a href="wishlist-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-heart me-2 text-muted" style="width: 20px;"></i>
+                                        Wishlist</a></li>
+                                <li><a href="account-credit-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark d-flex justify-content-between align-items-center"><span
+                                            class="d-flex align-items-center"><i
+                                                class="fa-solid fa-wallet me-2 text-muted" style="width: 20px;"></i>
+                                            Account Credit</span> <span class="fw-bold">0.00€</span></a></li>
+                                <li><a href="my-cult-status-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-crown me-2 text-muted" style="width: 20px;"></i> My Cult
+                                        Status</a></li>
+                                <li><a href="my-profile-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-user me-2 text-muted" style="width: 20px;"></i> My
+                                        Profile</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-user-group me-2 text-muted" style="width: 20px;"></i> My
+                                        Referrals</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Account Settings -->
+                        <div class="nav-section mb-4">
+                            <h6 class="text-uppercase fw-bold mb-2 px-2" style="font-size: 0.8rem;">Account Settings
+                            </h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="account-details-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-address-card me-2 text-muted" style="width: 20px;"></i>
+                                        Account Details</a></li>
+                                <li><a href="payment-cards-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark active fw-bold bg-light"><i
+                                            class="fa-regular fa-credit-card me-2" style="width: 20px;"></i>
+                                        Payment Cards</a></li>
+                                <li><a href="address-book-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-address-book me-2 text-muted" style="width: 20px;"></i>
+                                        Address Book</a></li>
+                                <li><a href="contact-preferences-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-sliders me-2 text-muted" style="width: 20px;"></i>
+                                        Contact Preferences</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Customer Service -->
+                        <div class="nav-section mb-4">
+                            <h6 class="text-uppercase fw-bold mb-2 px-2" style="font-size: 0.8rem;">Customer Service
+                            </h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-life-ring me-2 text-muted" style="width: 20px;"></i>
+                                        Help Centre</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-message me-2 text-muted" style="width: 20px;"></i>
+                                        Messages</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-brands fa-facebook me-2 text-muted" style="width: 20px;"></i>
+                                        Facebook</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-brands fa-twitter me-2 text-muted" style="width: 20px;"></i>
+                                        Twitter</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-brands fa-instagram me-2 text-muted" style="width: 20px;"></i>
+                                        Instagram</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-brands fa-tiktok me-2 text-muted" style="width: 20px;"></i>
+                                        TikTok</a></li>
+                            </ul>
+
+                        </div>
+
+                        <!-- Log out -->
+                        <div class="nav-section">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-arrow-right-from-bracket me-2 text-muted"
+                                            style="width: 20px;"></i> Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Main Content Area -->
+                <div class="col-12 col-md-9">
+                    <div class="h-100 ps-md-4">
+                        <!-- Header -->
+                        <div class="mb-5">
+                            <h2 class="h4 mb-0 fw-normal">Payment Cards</h2>
+                        </div>
+
+                        <!-- Active Cards Section -->
+                        <div class="bg-white border p-3 p-md-4 mb-4">
+                            <h5 class="fw-bold mb-3" style="font-size: 1rem;">
+                                <i class="fa-regular fa-credit-card me-2"></i> Active Cards
+                            </h5>
+                            <p class="text-muted mb-0">There are currently no active payment cards on your account</p>
+                        </div>
+
+                        <!-- Expired Cards Section -->
+                        <div class="bg-white border p-3 p-md-4 mb-4">
+                            <h5 class="fw-bold mb-3" style="font-size: 1rem;">
+                                <i class="fa-regular fa-credit-card me-2"></i> Expired Cards
+                            </h5>
+                            <p class="text-muted mb-0">There are currently no expired payment cards on your account</p>
+                        </div>
+
+                        <!-- Payment History Section -->
+                        <div class="mb-4">
+                            <h3 class="h6 fw-normal mb-3">Payment History</h3>
+                            <div class="bg-white border p-3 p-md-4">
+                                <!-- Payment Item 1 -->
+                                <div class="d-flex align-items-start justify-content-between border-bottom pb-3 mb-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="me-3 p-2 rounded"
+                                            style="background-color: #f5f5f5; min-width: 44px; text-align: center;">
+                                            <i class="fa-brands fa-cc-visa fs-5 text-dark"></i>
+                                        </div>
+                                        <div>
+                                            <span class="d-block fw-semibold" style="font-size: 0.9rem;">Visa ending in
+                                                4242</span>
+                                            <span class="text-muted small">Order #NB-20250115 &middot; 15 Jan
+                                                2025</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="d-block fw-bold" style="font-size: 0.95rem;">-€89.50</span>
+                                        <span class="badge rounded-pill text-bg-success"
+                                            style="font-size: 0.7rem;">Completed</span>
+                                    </div>
+                                </div>
+
+                                <!-- Payment Item 2 -->
+                                <div class="d-flex align-items-start justify-content-between border-bottom pb-3 mb-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="me-3 p-2 rounded"
+                                            style="background-color: #f5f5f5; min-width: 44px; text-align: center;">
+                                            <i class="fa-brands fa-cc-mastercard fs-5 text-dark"></i>
+                                        </div>
+                                        <div>
+                                            <span class="d-block fw-semibold" style="font-size: 0.9rem;">Mastercard
+                                                ending in 1234</span>
+                                            <span class="text-muted small">Order #NB-20241210 &middot; 10 Dec
+                                                2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="d-block fw-bold" style="font-size: 0.95rem;">-€54.00</span>
+                                        <span class="badge rounded-pill text-bg-success"
+                                            style="font-size: 0.7rem;">Completed</span>
+                                    </div>
+                                </div>
+
+                                <!-- Payment Item 3 — Refund -->
+                                <div class="d-flex align-items-start justify-content-between border-bottom pb-3 mb-3">
+                                    <div class="d-flex align-items-start">
+                                        <div class="me-3 p-2 rounded"
+                                            style="background-color: #f5f5f5; min-width: 44px; text-align: center;">
+                                            <i class="fa-brands fa-cc-visa fs-5 text-dark"></i>
+                                        </div>
+                                        <div>
+                                            <span class="d-block fw-semibold" style="font-size: 0.9rem;">Visa ending in
+                                                4242</span>
+                                            <span class="text-muted small">Refund #NB-20241125 &middot; 25 Nov
+                                                2024</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="d-block fw-bold text-success"
+                                            style="font-size: 0.95rem;">+€32.00</span>
+                                        <span class="badge rounded-pill text-bg-secondary"
+                                            style="font-size: 0.7rem;">Refunded</span>
+                                    </div>
+                                </div>
+
+                                <!-- Payment Item 4 — Pending -->
+                                <div class="d-flex align-items-start justify-content-between">
+                                    <div class="d-flex align-items-start">
+                                        <div class="me-3 p-2 rounded"
+                                            style="background-color: #f5f5f5; min-width: 44px; text-align: center;">
+                                            <i class="fa-brands fa-cc-amex fs-5 text-dark"></i>
+                                        </div>
+                                        <div>
+                                            <span class="d-block fw-semibold" style="font-size: 0.9rem;">Amex ending in
+                                                5678</span>
+                                            <span class="text-muted small">Order #NB-20250210 &middot; 10 Feb
+                                                2025</span>
+                                        </div>
+                                    </div>
+                                    <div class="text-end">
+                                        <span class="d-block fw-bold" style="font-size: 0.95rem;">-€120.00</span>
+                                        <span class="badge rounded-pill text-bg-warning text-dark"
+                                            style="font-size: 0.7rem;">Pending</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Transaction History Section -->
+                        <div class="mb-4">
+                            <h3 class="h6 fw-normal mb-3">Transaction History</h3>
+                            <div class="table-responsive bg-white border">
+                                <table class="table table-borderless align-middle mb-0">
+                                    <thead class="border-bottom">
+                                        <tr>
+                                            <!-- Date col: hidden on mobile, visible on md+ -->
+                                            <th scope="col"
+                                                class="px-3 px-md-4 py-3 text-muted small text-uppercase fw-normal d-none d-md-table-cell"
+                                                style="min-width: 110px;">Date</th>
+                                            <th scope="col"
+                                                class="px-3 px-md-4 py-3 text-muted small text-uppercase fw-normal"
+                                                style="min-width: 140px;">Description</th>
+                                            <!-- Card col: hidden on mobile -->
+                                            <th scope="col"
+                                                class="px-3 px-md-4 py-3 text-muted small text-uppercase fw-normal d-none d-md-table-cell"
+                                                style="min-width: 150px;">Card</th>
+                                            <th scope="col"
+                                                class="px-3 px-md-4 py-3 text-muted small text-uppercase fw-normal text-end"
+                                                style="min-width: 80px;">Amount</th>
+                                            <th scope="col"
+                                                class="px-3 px-md-4 py-3 text-muted small text-uppercase fw-normal text-end"
+                                                style="min-width: 80px;">Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="border-bottom">
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell">10 Feb
+                                                2025</td>
+                                            <td class="px-3 px-md-4 py-3">
+                                                <span class="d-block text-dark" style="font-size: 0.9rem;">Order
+                                                    #NB-20250210</span>
+                                                <span class="text-muted small">Beauty Essentials Kit</span>
+                                                <!-- Shown only on mobile -->
+                                                <span class="d-block d-md-none text-muted mt-1"
+                                                    style="font-size: 0.75rem;"><i
+                                                        class="fa-brands fa-cc-amex me-1"></i> Amex ···· 5678 &middot;
+                                                    10 Feb 2025</span>
+                                            </td>
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell"><i
+                                                    class="fa-brands fa-cc-amex me-1"></i> Amex ···· 5678</td>
+                                            <td class="px-3 px-md-4 py-3 text-end fw-bold">€120.00</td>
+                                            <td class="px-3 px-md-4 py-3 text-end">
+                                                <span class="badge rounded-pill text-bg-warning text-dark"
+                                                    style="font-size: 0.7rem;">Pending</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell">15 Jan
+                                                2025</td>
+                                            <td class="px-3 px-md-4 py-3">
+                                                <span class="d-block text-dark" style="font-size: 0.9rem;">Order
+                                                    #NB-20250115</span>
+                                                <span class="text-muted small">Skincare Bundle</span>
+                                                <span class="d-block d-md-none text-muted mt-1"
+                                                    style="font-size: 0.75rem;"><i
+                                                        class="fa-brands fa-cc-visa me-1"></i> Visa ···· 4242 &middot;
+                                                    15 Jan 2025</span>
+                                            </td>
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell"><i
+                                                    class="fa-brands fa-cc-visa me-1"></i> Visa ···· 4242</td>
+                                            <td class="px-3 px-md-4 py-3 text-end fw-bold">€89.50</td>
+                                            <td class="px-3 px-md-4 py-3 text-end">
+                                                <span class="badge rounded-pill text-bg-success"
+                                                    style="font-size: 0.7rem;">Completed</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell">10 Dec
+                                                2024</td>
+                                            <td class="px-3 px-md-4 py-3">
+                                                <span class="d-block text-dark" style="font-size: 0.9rem;">Order
+                                                    #NB-20241210</span>
+                                                <span class="text-muted small">Fragrance Collection</span>
+                                                <span class="d-block d-md-none text-muted mt-1"
+                                                    style="font-size: 0.75rem;"><i
+                                                        class="fa-brands fa-cc-mastercard me-1"></i> Mastercard ····
+                                                    1234 &middot; 10 Dec 2024</span>
+                                            </td>
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell"><i
+                                                    class="fa-brands fa-cc-mastercard me-1"></i> Mastercard ···· 1234
+                                            </td>
+                                            <td class="px-3 px-md-4 py-3 text-end fw-bold">€54.00</td>
+                                            <td class="px-3 px-md-4 py-3 text-end">
+                                                <span class="badge rounded-pill text-bg-success"
+                                                    style="font-size: 0.7rem;">Completed</span>
+                                            </td>
+                                        </tr>
+                                        <tr class="border-bottom">
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell">25 Nov
+                                                2024</td>
+                                            <td class="px-3 px-md-4 py-3">
+                                                <span class="d-block text-dark" style="font-size: 0.9rem;">Refund
+                                                    #NB-20241125</span>
+                                                <span class="text-muted small">Return — Lipstick Set</span>
+                                                <span class="d-block d-md-none text-muted mt-1"
+                                                    style="font-size: 0.75rem;"><i
+                                                        class="fa-brands fa-cc-visa me-1"></i> Visa ···· 4242 &middot;
+                                                    25 Nov 2024</span>
+                                            </td>
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell"><i
+                                                    class="fa-brands fa-cc-visa me-1"></i> Visa ···· 4242</td>
+                                            <td class="px-3 px-md-4 py-3 text-end fw-bold text-success">+€32.00</td>
+                                            <td class="px-3 px-md-4 py-3 text-end">
+                                                <span class="badge rounded-pill text-bg-secondary"
+                                                    style="font-size: 0.7rem;">Refunded</span>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell">02 Nov
+                                                2024</td>
+                                            <td class="px-3 px-md-4 py-3">
+                                                <span class="d-block text-dark" style="font-size: 0.9rem;">Order
+                                                    #NB-20241102</span>
+                                                <span class="text-muted small">Hair Care Set</span>
+                                                <span class="d-block d-md-none text-muted mt-1"
+                                                    style="font-size: 0.75rem;"><i
+                                                        class="fa-brands fa-cc-mastercard me-1"></i> Mastercard ····
+                                                    1234 &middot; 02 Nov 2024</span>
+                                            </td>
+                                            <td class="px-3 px-md-4 py-3 text-muted small d-none d-md-table-cell"><i
+                                                    class="fa-brands fa-cc-mastercard me-1"></i> Mastercard ···· 1234
+                                            </td>
+                                            <td class="px-3 px-md-4 py-3 text-end fw-bold">€67.00</td>
+                                            <td class="px-3 px-md-4 py-3 text-end">
+                                                <span class="badge rounded-pill text-bg-success"
+                                                    style="font-size: 0.7rem;">Completed</span>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4 border-top">
+        <p class="mb-0 text-muted" style="font-size: 0.8rem;">&copy; 2024 The Hut.com Ltd t/a CultBeauty.com</p>
+    </footer>
+
+    <!-- Mobile Navigation Overlay -->
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay d-md-none position-fixed top-0 start-0 w-100 h-100 bg-white"
+        style="z-index: 1050; transform: translateX(-100%); transition: transform 0.3s ease-in-out;">
+        <!-- Mobile Menu Header -->
+        <div class="p-3 border-bottom d-flex align-items-center justify-content-between">
+            <button class="btn border-0 p-0" id="mobileMenuCloseBtn">
+                <i class="fa-solid fa-xmark fs-4"></i>
+            </button>
+            <img width="100" src="./assets/img/brand-logo/brand-logo.svg" alt="Nour Beauty">
+            <a href="cart-page.html" class="text-reset"><i class="fa-solid fa-bag-shopping fs-5"></i></a>
+        </div>
+
+        <!-- Mobile User Info -->
+        <div class="bg-light p-3 border-bottom">
+            <h5 class="mb-1 fw-bold">MD Masudur Rahman</h5>
+            <p class="mb-0 text-muted small">Credit: 0.00€</p>
+        </div>
+
+        <!-- Mobile Menu Links (Scrollable) -->
+        <div class="mobile-menu-content overflow-auto" style="height: calc(100% - 135px);">
+            <!-- Account Home -->
+            <div class="p-3 border-bottom">
+                <h6 class="fw-bold mb-0"><a href="account-home-page.html" class="text-decoration-none text-dark">Account
+                        Home</a></h6>
+            </div>
+
+            <!-- My Account -->
+            <div class="py-2 border-bottom">
+                <h6 class="px-3 fw-bold text-uppercase text-muted small mb-2 mt-2">My Account</h6>
+                <a href="my-orders-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">My Orders</a>
+                <a href="wishlist-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Wishlist</a>
+                <a href="account-credit-page.html"
+                    class="d-block px-3 py-2 text-decoration-none text-dark d-flex justify-content-between">Account
+                    Credit <span>0.00€</span></a>
+                <a href="my-cult-status-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">My Cult
+                    Status</a>
+                <a href="my-profile-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">My Profile</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">My Referrals</a>
+            </div>
+
+            <!-- Account Settings -->
+            <div class="py-2 border-bottom">
+                <h6 class="px-3 fw-bold text-uppercase text-muted small mb-2 mt-2">Account Settings</h6>
+                <a href="account-details-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Account
+                    Details</a>
+                <a href="payment-cards-page.html"
+                    class="d-block px-3 py-2 text-decoration-none text-dark fw-bold">Payment Cards</a>
+                <a href="address-book-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Address
+                    Book</a>
+                <a href="contact-preferences-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Contact
+                    Preferences</a>
+            </div>
+
+            <!-- Customer Service -->
+            <div class="py-2 border-bottom">
+                <h6 class="px-3 fw-bold text-uppercase text-muted small mb-2 mt-2">Customer Service</h6>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Help Centre</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Messages</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Facebook</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Twitter</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Instagram</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">TikTok</a>
+            </div>
+
+            <div class="p-3 border-bottom">
+                <a href="#" class="d-flex align-items-center text-decoration-none text-dark fw-bold">
+                    <i class="fa-solid fa-arrow-right-from-bracket me-2"></i> Log out
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/wishlist.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+
+</html>

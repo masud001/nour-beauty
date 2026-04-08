@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Orders | Nour Beauty</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./assets/css/output.css" />
+    <link rel="stylesheet" href="./assets/css/style.min.css" />
+    <style>
+        .nav-tabs-custom .nav-item {
+            flex: 1;
+            text-align: center;
+        }
+
+        .nav-tabs-custom .nav-link {
+            border: none;
+            border-bottom: 2px solid transparent;
+            /* Default no border */
+            color: #6c757d;
+            font-weight: 500;
+            padding-bottom: 1rem;
+            border-radius: 0;
+            width: 100%;
+        }
+
+        .nav-tabs-custom .nav-link.active {
+            color: #000;
+            border-bottom: 2px solid #000;
+            background: transparent;
+        }
+
+        .nav-tabs-custom .nav-link:hover {
+            border-color: transparent transparent #ddd transparent;
+            isolation: isolate;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header (Specific to Account Pages) -->
+    <header class="account-header border-bottom">
+        <!-- Top Bar -->
+        <div class="top-bar border-bottom py-2 d-none d-md-block">
+            <div class="container px-4 px-lg-5 d-flex justify-content-between align-items-center">
+                <a href="index.html" class="text-decoration-none text-dark d-flex align-items-center"
+                    style="font-size: 0.85rem;">
+                    <i class="fa-solid fa-chevron-left me-2" style="font-size: 0.7rem;"></i> Return to store
+                </a>
+                <a href="#" class="text-decoration-none text-dark d-flex align-items-center text-uppercase"
+                    style="font-size: 0.85rem;">
+                    <i class="fa-solid fa-arrow-right-from-bracket me-2"></i> Log out
+                </a>
+            </div>
+        </div>
+        <!-- Main Header -->
+        <div class="main-header py-3">
+            <div class="container px-4 px-lg-5">
+                <div class="row align-items-center">
+                    <!-- Mobile Menu Button -->
+                    <div class="col-4 d-md-none">
+                        <button class="btn border-0 p-0" id="mobileMenuBtn">
+                            <i class="fa-solid fa-bars fs-4"></i>
+                        </button>
+                    </div>
+                    <!-- Logo -->
+                    <div class="col-4 col-md-6 text-center text-md-start">
+                        <img id="brand-logo" width="120" src="./assets/img/brand-logo/brand-logo.svg" alt="Nour Beauty"
+                            class="d-inline-block">
+                    </div>
+                    <!-- Basket -->
+                    <div class="col-4 col-md-6 text-end">
+                        <a href="cart-page.html"
+                            class="text-reset text-decoration-none d-flex align-items-center justify-content-end fw-bold">
+                            <i class="fa-solid fa-bag-shopping fs-5 me-2"></i>
+                            <span class="d-none d-md-inline text-uppercase" style="font-size: 0.9rem;">Basket</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="account-page-wrapper bg-light min-vh-100 pb-5">
+        <div class="container px-4 py-4 px-md-4 px-lg-5 pt-0 pt-md-4">
+            <div class="row g-0 g-md-4 py-4">
+
+                <!-- Desktop Sidebar Navigation -->
+                <aside class="col-md-3 d-none d-md-block">
+                    <div class="sidebar-nav bg-white p-3 border-0">
+                        <!-- Account Home -->
+                        <div class="nav-section mb-4">
+                            <h6 class="text-uppercase fw-bold mb-3 px-2" style="font-size: 0.8rem;">
+                                <a href="account-home-page.html" class="text-decoration-none text-dark">Account Home</a>
+                            </h6>
+                        </div>
+
+                        <!-- My Account -->
+                        <div class="nav-section mb-4">
+                            <h6 class="text-uppercase fw-bold mb-2 px-2" style="font-size: 0.8rem;">My Account</h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="my-orders-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-cube me-2" style="width: 20px;"></i> My
+                                        Orders</a></li>
+                                <li><a href="wishlist-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-heart me-2 text-muted" style="width: 20px;"></i>
+                                        Wishlist</a></li>
+                                <li><a href="account-credit-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark d-flex justify-content-between align-items-center"><span
+                                            class="d-flex align-items-center"><i
+                                                class="fa-solid fa-wallet me-2 text-muted" style="width: 20px;"></i>
+                                            Account Credit</span> <span class="fw-bold">0.00€</span></a></li>
+                                <li><a href="my-cult-status-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-crown me-2 text-muted" style="width: 20px;"></i> My Cult
+                                        Status</a></li>
+                                <li><a href="my-profile-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-user me-2 text-muted" style="width: 20px;"></i> My
+                                        Profile</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-user-group me-2 text-muted" style="width: 20px;"></i> My
+                                        Referrals</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Account Settings -->
+                        <div class="nav-section mb-4">
+                            <h6 class="text-uppercase fw-bold mb-2 px-2" style="font-size: 0.8rem;">Account Settings
+                            </h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="account-details-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-address-card me-2 text-muted" style="width: 20px;"></i>
+                                        Account Details</a></li>
+                                <li><a href="payment-cards-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-credit-card me-2 text-muted" style="width: 20px;"></i>
+                                        Payment Cards</a></li>
+                                <li><a href="address-book-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-address-book me-2 text-muted" style="width: 20px;"></i>
+                                        Address Book</a></li>
+                                <li><a href="contact-preferences-page.html"
+                                        class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-sliders me-2 text-muted" style="width: 20px;"></i>
+                                        Contact Preferences</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Customer Service -->
+                        <div class="nav-section mb-4">
+                            <h6 class="text-uppercase fw-bold mb-2 px-2" style="font-size: 0.8rem;">Customer Service
+                            </h6>
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-life-ring me-2 text-muted" style="width: 20px;"></i>
+                                        Help Centre</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-regular fa-message me-2 text-muted" style="width: 20px;"></i>
+                                        Messages</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-brands fa-facebook me-2 text-muted" style="width: 20px;"></i>
+                                        Facebook</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-brands fa-twitter me-2 text-muted" style="width: 20px;"></i>
+                                        Twitter</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-brands fa-instagram me-2 text-muted" style="width: 20px;"></i>
+                                        Instagram</a></li>
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-brands fa-tiktok me-2 text-muted" style="width: 20px;"></i>
+                                        TikTok</a></li>
+                            </ul>
+
+                        </div>
+
+                        <!-- Log out -->
+                        <div class="nav-section">
+                            <ul class="list-unstyled mb-0">
+                                <li><a href="#" class="d-block py-2 px-2 text-decoration-none text-dark"><i
+                                            class="fa-solid fa-arrow-right-from-bracket me-2 text-muted"
+                                            style="width: 20px;"></i> Log out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </aside>
+
+                <!-- Main Content Area -->
+                <div class="col-12 col-md-9">
+                    <div class="h-100 ps-md-4">
+                        <!-- Header -->
+                        <div class="mb-5">
+                            <h2 class="h4 mb-0 fw-normal">My Orders</h2>
+                        </div>
+
+                        <!-- Orders Content -->
+                        <div class="bg-white">
+                            <!-- Tabs -->
+                            <ul class="nav nav-tabs-custom border-bottom" id="ordersTab" role="tablist">
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link active" id="active-orders-tab" data-bs-toggle="tab"
+                                        data-bs-target="#active-orders" type="button" role="tab"
+                                        aria-controls="active-orders" aria-selected="true"><i
+                                            class="fa-regular fa-file-lines me-2"></i> Active orders</button>
+                                </li>
+                                <li class="nav-item" role="presentation">
+                                    <button class="nav-link" id="past-orders-tab" data-bs-toggle="tab"
+                                        data-bs-target="#past-orders" type="button" role="tab"
+                                        aria-controls="past-orders" aria-selected="false"><i
+                                            class="fa-solid fa-box-archive me-2"></i> Past orders</button>
+                                </li>
+                            </ul>
+
+                            <!-- Tab Content -->
+                            <div class="tab-content text-center py-5" id="ordersTabContent" style="min-height: 400px;">
+                                <div class="tab-pane fade show active w-100" id="active-orders" role="tabpanel"
+                                    aria-labelledby="active-orders-tab">
+
+                                    <!-- Empty State (Kept as requested) -->
+                                    <div class="py-5 mb-5 border-bottom">
+                                        <i class="fa-solid fa-box-open mb-4" style="font-size: 4rem; color: #000;"></i>
+                                        <p class="h5 fw-normal text-muted">There are no orders to display</p>
+                                    </div>
+
+                                    <!-- Order List Design -->
+                                    <div class="text-start">
+                                        <!-- Order Item 1 -->
+                                        <div class="card border mb-4 rounded-0">
+                                            <div
+                                                class="card-header bg-white border-bottom p-3 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <span class="fw-bold me-2">Order #12345678</span>
+                                                    <span class="badge bg-success rounded-0 fw-normal">Processing</span>
+                                                </div>
+                                                <div class="text-muted small">
+                                                    Variable Date: <span class="fw-bold text-dark">Oct 24, 2023</span>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-3">
+                                                <div class="row align-items-center">
+                                                    <div class="col-md-8 mb-3 mb-md-0">
+                                                        <div class="d-flex gap-2 text-start">
+                                                            <img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?q=80&w=2680&auto=format&fit=crop"
+                                                                alt="Product" class="img-fluid border"
+                                                                style="width: 60px; height: 86px; object-fit: contain; aspect-ratio: 299/430;">
+                                                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1887&auto=format&fit=crop"
+                                                                alt="Product" class="img-fluid border"
+                                                                style="width: 60px; height: 86px; object-fit: contain; aspect-ratio: 299/430;">
+                                                            <div class="d-flex align-items-center justify-content-center border bg-light text-muted small"
+                                                                style="width: 60px; height: 86px;">
+                                                                +2
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 text-md-end">
+                                                        <div class="mb-2">
+                                                            <span class="text-muted small">Total:</span> <span
+                                                                class="fw-bold">120.00€</span>
+                                                        </div>
+                                                        <a href="order-details-page.html"
+                                                            class="btn btn-dark rounded-0 w-100 w-md-auto small text-uppercase"
+                                                            style="font-size: 0.8rem;">View Order</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <!-- Order Item 2 -->
+                                        <div class="card border mb-4 rounded-0">
+                                            <div
+                                                class="card-header bg-white border-bottom p-3 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <span class="fw-bold me-2">Order #87654321</span>
+                                                    <span class="badge bg-secondary rounded-0 fw-normal">Shipped</span>
+                                                </div>
+                                                <div class="text-muted small">
+                                                    Placed on: <span class="fw-bold text-dark">Sep 15, 2023</span>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-3">
+                                                <div class="row align-items-center">
+                                                    <div class="col-md-8 mb-3 mb-md-0">
+                                                        <div class="d-flex gap-2">
+                                                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1887&auto=format&fit=crop"
+                                                                alt="Product" class="img-fluid border"
+                                                                style="width: 60px; height: 86px; object-fit: contain; aspect-ratio: 299/430;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 text-md-end">
+                                                        <div class="mb-2">
+                                                            <span class="text-muted small">Total:</span> <span
+                                                                class="fw-bold">45.50€</span>
+                                                        </div>
+                                                        <a href="order-details-page.html"
+                                                            class="btn btn-outline-dark rounded-0 w-100 w-md-auto small text-uppercase"
+                                                            style="font-size: 0.8rem;">View Order</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="tab-pane fade w-100" id="past-orders" role="tabpanel"
+                                    aria-labelledby="past-orders-tab">
+
+                                    <!-- Empty State (Kept as requested) -->
+                                    <div class="py-5 mb-5 border-bottom">
+                                        <i class="fa-solid fa-box-open mb-4" style="font-size: 4rem; color: #000;"></i>
+                                        <p class="h5 fw-normal text-muted">There are no orders to display</p>
+                                    </div>
+
+                                    <!-- Order List Design -->
+                                    <div class="text-start">
+                                        <!-- Order Item 1 -->
+                                        <div class="card border mb-4 rounded-0">
+                                            <div
+                                                class="card-header bg-white border-bottom p-3 d-flex justify-content-between align-items-center">
+                                                <div>
+                                                    <span class="fw-bold me-2">Order #11223344</span>
+                                                    <span class="badge bg-dark rounded-0 fw-normal">Delivered</span>
+                                                </div>
+                                                <div class="text-muted small">
+                                                    Delivered on: <span class="fw-bold text-dark">Aug 10, 2023</span>
+                                                </div>
+                                            </div>
+                                            <div class="card-body p-3">
+                                                <div class="row align-items-center">
+                                                    <div class="col-md-8 mb-3 mb-md-0">
+                                                        <div class="d-flex gap-2">
+                                                            <img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?q=80&w=2680&auto=format&fit=crop"
+                                                                alt="Product" class="img-fluid border"
+                                                                style="width: 60px; height: 60px; object-fit: contain;">
+                                                            <img src="https://images.unsplash.com/photo-1620916566398-39f1143ab7be?q=80&w=1887&auto=format&fit=crop"
+                                                                alt="Product" class="img-fluid border"
+                                                                style="width: 60px; height: 60px; object-fit: contain;">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 text-md-end">
+                                                        <div class="mb-2">
+                                                            <span class="text-muted small">Total:</span> <span
+                                                                class="fw-bold">89.00€</span>
+                                                        </div>
+                                                        <a href="order-details-page.html"
+                                                            class="btn btn-outline-dark rounded-0 w-100 w-md-auto small text-uppercase"
+                                                            style="font-size: 0.8rem;">View Order</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-light text-center py-4 border-top">
+        <p class="mb-0 text-muted" style="font-size: 0.8rem;">&copy; 2024 The Hut.com Ltd t/a CultBeauty.com</p>
+    </footer>
+
+    <!-- Mobile Navigation Overlay -->
+    <div id="mobileMenuOverlay" class="mobile-menu-overlay d-md-none position-fixed top-0 start-0 w-100 h-100 bg-white"
+        style="z-index: 1050; transform: translateX(-100%); transition: transform 0.3s ease-in-out;">
+        <!-- Mobile Menu Header -->
+        <div class="p-3 border-bottom d-flex align-items-center justify-content-between">
+            <button class="btn border-0 p-0" id="mobileMenuCloseBtn">
+                <i class="fa-solid fa-xmark fs-4"></i>
+            </button>
+            <img width="100" src="./assets/img/brand-logo/brand-logo.svg" alt="Nour Beauty">
+            <a href="cart-page.html" class="text-reset"><i class="fa-solid fa-bag-shopping fs-5"></i></a>
+        </div>
+
+        <!-- Mobile User Info -->
+        <div class="bg-light p-3 border-bottom">
+            <h5 class="mb-1 fw-bold">MD Masudur Rahman</h5>
+            <p class="mb-0 text-muted small">Credit: 0.00€</p>
+        </div>
+
+        <!-- Mobile Menu Links (Scrollable) -->
+        <div class="mobile-menu-content overflow-auto" style="height: calc(100% - 135px);">
+            <!-- Account Home -->
+            <div class="p-3 border-bottom">
+                <h6 class="fw-bold mb-0"><a href="account-home-page.html" class="text-decoration-none text-dark">Account
+                        Home</a></h6>
+            </div>
+
+            <!-- My Account -->
+            <div class="py-2 border-bottom">
+                <h6 class="px-3 fw-bold text-uppercase text-muted small mb-2 mt-2">My Account</h6>
+                <a href="my-orders-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">My
+                    Orders</a>
+                <a href="wishlist-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Wishlist</a>
+                <a href="account-credit-page.html"
+                    class="d-block px-3 py-2 text-decoration-none text-dark d-flex justify-content-between">Account
+                    Credit <span>0.00€</span></a>
+                <a href="my-cult-status-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">My Cult
+                    Status</a>
+                <a href="my-profile-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">My Profile</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">My Referrals</a>
+            </div>
+
+            <!-- Account Settings -->
+            <div class="py-2 border-bottom">
+                <h6 class="px-3 fw-bold text-uppercase text-muted small mb-2 mt-2">Account Settings</h6>
+                <a href="account-details-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Account
+                    Details</a>
+                <a href="payment-cards-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Payment
+                    Cards</a>
+                <a href="address-book-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Address
+                    Book</a>
+                <a href="contact-preferences-page.html" class="d-block px-3 py-2 text-decoration-none text-dark">Contact
+                    Preferences</a>
+            </div>
+
+            <!-- Customer Service -->
+            <div class="py-2 border-bottom">
+                <h6 class="px-3 fw-bold text-uppercase text-muted small mb-2 mt-2">Customer Service</h6>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Help Centre</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Messages</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Facebook</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Twitter</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">Instagram</a>
+                <a href="#" class="d-block px-3 py-2 text-decoration-none text-dark">TikTok</a>
+            </div>
+
+            <div class="p-3 border-bottom">
+                <a href="#" class="d-flex align-items-center text-decoration-none text-dark fw-bold">
+                    <i class="fa-solid fa-arrow-right-from-bracket me-2"></i> Log out
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/js/wishlist.js"></script>
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+
+</html>

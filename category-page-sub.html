@@ -1,0 +1,3232 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sub category page</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/output.css" />
+  <link rel="stylesheet" href="./assets/css/style.min.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <!-- swiper slider css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+
+  <!-- Header top new banner start-->
+  <div class="new-top-banner">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Section: Links (Hidden on Mobile) -->
+        <div class="col-lg-4 d-none d-lg-flex justify-content-start">
+          <nav class="new-top-banner__nav">
+            <a href="#">Help Center</a>
+            <a href="#">Find a Store</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Center Section: Promo Message (Always Visible) -->
+        <div class="col-12 col-lg-4 d-flex justify-content-center">
+          <div class="new-top-banner__promo">
+            <span class="new-top-banner__promo-emoji">✌🏼</span>
+            <p class="new-top-banner__promo-text">
+              Free Express Shipping on orders $120!
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Section: Social Icons (Hidden on Mobile) -->
+        <div class="col-lg-4 d-none d-lg-flex justify-content-end">
+          <div class="new-top-banner__social">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header top new banner end  -->
+
+  <!-- stripe banner  -->
+  <div class="stripe-banner container-fluid d-flex justify-content-center align-items-center p-2">
+    <a href="/#" class="text-reset text-uppercase text-decoration-none fs-6">
+      <span class="">SALE - UP TO 50% OFF</span>
+    </a>
+  </div>
+
+  <header id="site-header" class="header-container shadow-sm sticky top-0 z-30 pt-3 pb-3 pb-lg-0">
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- search container for mobile  -->
+      <div class="col d-flex d-lg-none gap-3 align-items-center">
+        <div class="menu-bar">
+          <button type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavigation"
+            aria-controls="mobileNavigation">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+        </div>
+        <div class="search-bar">
+          <button class="">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </button>
+        </div>
+      </div>
+      <!-- search container for pc  -->
+      <div class="col d-none d-lg-block">
+        <div class="header-search">
+          <form action="" class="">
+            <div class="position-relative">
+              <input id="search-input" type="text" class="w-100 rounded-pill"
+                placeholder="Search for a product or brand" />
+              <button class="position-absolute">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- logo container  -->
+      <div class="col logo-container d-flex align-items-center justify-content-center mx-auto">
+        <a href="/#">
+          <img id="brand-logo" width="200" height="40" src="./assets/img/logo/brand-logo.svg" alt="brand-logo" />
+        </a>
+      </div>
+      <!-- other container  -->
+      <div class="col other-container d-flex gap-3 gap-lg-4 align-items-center justify-content-end">
+        <div class="change-local d-none d-lg-flex align-items-center">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#selectRegionModal"
+            class="text-uppercase d-flex align-items-center gap-2">
+            <span class="">
+              <img class="" src="./assets/img/flags/united-kingdom.png" alt="united-kingdom flag" />
+            </span>
+            <span class="">&bull;</span>
+            <span class="fw-medium">KSA</span>
+          </button>
+        </div>
+        <!-- Location -->
+        <div class="map-location">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#mapLocationModal"
+            class="d-flex gap-2 align-items-center">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span class="d-none d-lg-flex fw-medium">Location</span>
+          </button>
+        </div>
+        <div class="customar-account dropdown">
+          <button data-bs-toggle="dropdown" aria-expanded="false" class="d-flex gap-2 align-items-center" type="button">
+            <span><i class="fa-regular fa-user"></i></span>
+            <span class="d-none d-lg-flex fw-medium">Account</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end rounded-0 border border-light-subtle shadow m-0 p-0">
+            <li>
+              <button class="w-100 p-3 text-uppercase fs-6 fw-normal text-white bg-black">
+                registration
+              </button>
+            </li>
+            <li>
+              <button class="w-100 p-3 text-uppercase fs-6 fw-normal text-black bg-white border border-black">
+                login
+              </button>
+            </li>
+            <li>
+              <a class="dropdown-item p-3 fs-6 text-capitalize" href="#">your wishlist</a>
+            </li>
+            <li>
+              <a class="dropdown-item p-3 fs-6 text-capitalize" href="#">your order</a>
+            </li>
+            <li>
+              <a class="dropdown-item p-3 fs-6 text-capitalize" href="#">your referrel</a>
+            </li>
+          </ul>
+        </div>
+        <div class="addto-busket">
+          <button class="d-flex gap-2 align-items-center">
+            <span><i class="fa-solid fa-basket-shopping"></i></span>
+            <span class="d-none d-lg-flex fw-medium">Bag</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- desktop navigation  -->
+    <nav class="header-nav d-none d-lg-block mt-3">
+      <ul class="d-flex justify-content-center align-items-center">
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">SALE </a>
+          </li>
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Brands</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">New & Trending</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Fragrance</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Skin Care</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Make Up</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Hair</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Body & Wellbeing</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">SPF</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Minis</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Cult Conscious</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Blog</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <!-- mobile navigation -->
+  <div class="offcanvas offcanvas-start mobile-navigation" id="mobileNavigation"
+    aria-labelledby="mobileNavigationLabel">
+    <div class="offcanvas-header d-flex flex-column p-0">
+      <div class="d-flex justify-content-between w-100 p-4 border-bottom border-light-subtle">
+        <div class="offcanvas-title" id="mobileNavigationLabel">
+          <i class="fa-solid fa-house fs-4"></i>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#selectRegionModal"
+            class="open-modal-btn text-uppercase d-flex align-items-center gap-2 border-0 bg-transparent">
+            <span class="">
+              <img class="" src="./assets/img/flags/united-kingdom.png" alt="united-kingdom flag" />
+            </span>
+            <span class="">&bull;</span>
+            <span class="fw-medium">KSA</span>
+          </button>
+
+          <button type="button" class="btn-close text-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="w-100 d-flex flex-row gap-4 px-4 py-3 mobile-registraion border-bottom border-light-subtle">
+        <button class="w-100 text-uppercase fs-6 fw-normal text-white bg-black">
+          registration
+        </button>
+        <button class="w-100 text-uppercase fs-6 fw-normal text-black bg-transparent">
+          login
+        </button>
+      </div>
+    </div>
+    <div class="offcanvas-body position-relative px-0">
+      <div class="position-static pb-4 border-bottom border-light-subtle px-3 mb-4">
+        <a href="/#" class="h5 text-decoration-none fw-bold mb-3 d-block">Brand</a>
+        <div class="d-flex flex-column gap-2">
+          <button data-slide="slide1"
+            class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+            <span>items</span>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </button>
+          <button data-slide="slide2"
+            class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+            <span>items 2</span>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </button>
+        </div>
+      </div>
+      <!-- slider-1 window -->
+      <div id="slide1" class="slide-window">
+        <div class="slide-content">
+          <div class="d-flex gap-3 align-items-center mb-4">
+            <button class="close-btn p-0 bg-transparent border-0 fs-5 d-flex align-items-center gap-3 text-capitalize">
+              <span><i class="fa-solid fa-angle-left"></i></span>
+              <span class="h5 text-decoration-none fw-bold d-block m-0">items</span>
+            </button>
+          </div>
+          <div class="">
+            <div class="d-flex flex-column gap-2">
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slider-2 window -->
+      <div id="slide2" class="slide-window">
+        <div class="slide-content">
+          <div class="d-flex gap-3 align-items-center mb-4">
+            <button class="close-btn p-0 bg-transparent border-0 fs-5 d-flex align-items-center gap-3 text-capitalize">
+              <span><i class="fa-solid fa-angle-left"></i></span>
+              <span class="h5 text-decoration-none fw-bold d-block m-0">items 2</span>
+            </button>
+          </div>
+          <div class="">
+            <div class="d-flex flex-column gap-2">
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- home slider section  -->
+  <div class="home-slider home-slider-inline-controls container">
+    <!-- Slider main container -->
+    <div class="swiper homeSlider pb-0 w-full max-w-[1920px] mx-auto">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper ">
+        <!-- Slides 1 -->
+        <div class="swiper-slide w-full flex flex-col md:flex-row items-center justify-center">
+          <div class="flex-1 order-1 order-md-0 w-full py-4 sm-py-20 h-auto text-left flex flex-col mx-auto sm:w-auto">
+            <div class="flex flex-col text-center slider-content-card">
+              <h1 class="home-slider-sub-title text-center">The nour</h1>
+              <h3 class="home-slider-title  text-center">
+                Getting Your Natural Beauty
+              </h3>
+              <p class="home-slider-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit, optio beatae. Nam ipsam laudantium tenetur.
+              </p>
+
+              <div class="flex flex-row justify-center gap-3 mt-3 slider-btns ">
+                <a href="" class="home-slider-btn rounded-pill">
+                  shop now
+                </a>
+                <a href="" class="home-slider-btn rounded-pill">
+                  discover
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 order-0 order-md-1 w-100 h-100">
+            <a href="" class="h-100 slider-image">
+              <figure class="w-fit relative h-100 mx-auto grid mb-0 rounded-4">
+                <picture class="w-100 h-100 rounded-4">
+                  <source srcset="
+                        ./assets/img/home-slider-image/slider-image-01.jpg
+                      " media="(max-width: 430px)" />
+                  <source srcset="
+                        ./assets/img/home-slider-image/slider-image-01.jpg
+                      " media="(max-width: 640px)" />
+                  <source srcset="
+                        ./assets/img/home-slider-image/slider-image-01.jpg
+                      " media="(max-width: 1024px)" />
+                  <source srcset="
+                        ./assets/img/home-slider-image/slider-image-01.jpg
+                      " media="(max-width: 1280px)" />
+                  <source srcset="
+                        ./assets/img/home-slider-image/slider-image-01.jpg
+                      " media="(max-width: 1366px)" />
+                  <img src="./assets/img/home-slider-image/slider-image-01.jpg" alt="MAISON MARGIELA BOTM WK3"
+                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover rounded-4"
+                    decoding="auto" fetchpriority="high" />
+                </picture>
+              </figure>
+            </a>
+          </div>
+        </div>
+        <!-- Slides 1 -->
+        <div class="swiper-slide w-full flex flex-col md:flex-row items-center justify-center">
+          <div class="flex-1 order-1 order-md-0 w-full py-4 sm-py-20 h-auto text-left flex flex-col mx-auto sm:w-auto">
+            <div class="flex flex-col text-center slider-content-card">
+              <h1 class="home-slider-sub-title text-center">The nour</h1>
+              <h3 class="home-slider-title  text-center">
+                Getting Your Natural Beauty
+              </h3>
+              <p class="home-slider-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit, optio beatae. Nam ipsam laudantium tenetur.
+              </p>
+
+              <div class="flex flex-row justify-center gap-3 mt-3 slider-btns ">
+                <a href="" class="home-slider-btn rounded-pill">
+                  shop now
+                </a>
+                <a href="" class="home-slider-btn rounded-pill">
+                  discover
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 order-0 order-md-1 w-100 h-100">
+            <a href="" class="h-100 slider-image">
+              <figure class="w-fit relative h-100 mx-auto grid mb-0 rounded-4">
+                <picture class="w-100 h-100 rounded-4">
+                  <source srcset="
+                        ./assets/img/home-slider-image/slider-image-01.jpg
+                      " media="(max-width: 430px)" />
+                  <source srcset="
+                        ./assets/img/home-slider-image/slider-image-01.jpg
+                      " media="(max-width: 640px)" />
+                  <source srcset="
+                        ./assets/img/home-slider-image/slider-image-01.jpg
+                      " media="(max-width: 1024px)" />
+                  <source srcset="
+                        ./assets/img/home-slider-image/slider-image-01.jpg
+                      " media="(max-width: 1280px)" />
+                  <source srcset="
+                        ./assets/img/home-slider-image/slider-image-01.jpg
+                      " media="(max-width: 1366px)" />
+                  <img src="./assets/img/home-slider-image/slider-image-01.jpg" alt="MAISON MARGIELA BOTM WK3"
+                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover rounded-4"
+                    decoding="auto" fetchpriority="high" />
+                </picture>
+              </figure>
+            </a>
+          </div>
+        </div>
+        <!-- Slides 1 -->
+        <div class="swiper-slide w-full flex flex-col md:flex-row items-center justify-center">
+          <div class="flex-1 order-1 order-md-0 w-full py-4 sm-py-20 h-auto text-left flex flex-col mx-auto sm:w-auto">
+            <div class="flex flex-col text-center slider-content-card">
+              <h1 class="home-slider-sub-title text-center">The nour</h1>
+              <h3 class="home-slider-title  text-center">
+                Getting Your Natural Beauty
+              </h3>
+              <p class="home-slider-description text-center">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Impedit, optio beatae. Nam ipsam laudantium tenetur.
+              </p>
+
+              <div class="flex flex-row justify-center gap-3 mt-3 slider-btns ">
+                <a href="" class="home-slider-btn rounded-pill">
+                  shop now
+                </a>
+                <a href="" class="home-slider-btn rounded-pill">
+                  discover
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="flex-1 order-0 order-md-1 w-100 h-100">
+            <a href="" class="h-100 slider-image">
+              <figure class="w-fit relative h-100 mx-auto grid mb-0 rounded-4">
+                <picture class="w-100 h-100 rounded-4">
+                  <source srcset="
+                        ./assets/img/home-slider-image/slider-image-01.jpg
+                      " media="(max-width: 430px)" />
+                  <source srcset="
+                        ./assets/img/home-slider-image/slider-image-01.jpg
+                      " media="(max-width: 640px)" />
+                  <source srcset="
+                        ./assets/img/home-slider-image/slider-image-01.jpg
+                      " media="(max-width: 1024px)" />
+                  <source srcset="
+                        ./assets/img/home-slider-image/slider-image-01.jpg
+                      " media="(max-width: 1280px)" />
+                  <source srcset="
+                        ./assets/img/home-slider-image/slider-image-01.jpg
+                      " media="(max-width: 1366px)" />
+                  <img src="./assets/img/home-slider-image/slider-image-01.jpg" alt="MAISON MARGIELA BOTM WK3"
+                    loading="eager" width="1920" class="mx-auto my-auto h-100 max-w-full object-cover rounded-4"
+                    decoding="auto" fetchpriority="high" />
+                </picture>
+              </figure>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="home-slider-controls">
+        <div class="home-prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="slider-pagination swiper-pagination"></div>
+        <div class="home-next ">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- category section  -->
+  <div class="category-section container mx-auto ">
+    <h4 class="category-section-title  text-center">shop by
+      skin care Category</h4>
+    <div class="swiper categorySlider  mx-auto">
+      <div class="swiper-wrapper px-4 md:px-8 xl:px-0">
+
+        <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+          <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center" title="Hair"
+            aria-label="Hair">
+            <img src="./assets/img/category-image/caregory-image-thumb-hair.jpg" alt="Hair" loading="lazy" width="350"
+              height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0" decoding="auto"
+              fetchpriority="auto" />
+          </a>
+          <p class="text-sm uppercase ">Hair</p>
+        </div>
+
+        <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+          <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+            title="Lipstick" aria-label="Lipstick">
+            <img src="./assets/img/category-image/caregory-image-thumb-lipstick.jpg" alt="Lipstick" loading="lazy"
+              width="350" height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0" decoding="auto"
+              fetchpriority="auto" />
+          </a>
+          <p class="text-sm uppercase ">Lipstick</p>
+        </div>
+
+        <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+          <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+            title="Skin Care" aria-label="Skin Care">
+            <img src="./assets/img/category-image/caregory-image-thumb-skin-care.jpg" alt="Skin Care" loading="lazy"
+              width="350" height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0" decoding="auto"
+              fetchpriority="auto" />
+          </a>
+          <p class="text-sm uppercase ">Skin Care</p>
+        </div>
+
+        <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+          <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+            title="Make Up" aria-label="Make Up">
+            <img src="./assets/img/category-image/caregory-image-thumb-make-up.jpg" alt="Make Up" loading="lazy"
+              width="350" height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0" decoding="auto"
+              fetchpriority="auto" />
+          </a>
+          <p class="text-sm uppercase ">Make Up</p>
+        </div>
+
+        <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+          <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+            title="Makeup Kit" aria-label="Makeup Kit">
+            <img src="./assets/img/category-image/caregory-image-thumb-makeup-kit.jpg" alt="Makeup Kit" loading="lazy"
+              width="350" height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0" decoding="auto"
+              fetchpriority="auto" />
+          </a>
+          <p class="text-sm uppercase ">Makeup Kit</p>
+        </div>
+
+        <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+          <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+            title="Perfume" aria-label="Perfume">
+            <img src="./assets/img/category-image/caregory-image-thumb-perfume.jpg" alt="Perfume" loading="lazy"
+              width="350" height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0" decoding="auto"
+              fetchpriority="auto" />
+          </a>
+          <p class="text-sm uppercase ">Perfume</p>
+        </div>
+
+        <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+          <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+            title="Skin Care" aria-label="Skin Care">
+            <img src="./assets/img/category-image/skin-care.jpg" alt="Skin Care" loading="lazy" width="350" height="350"
+              class="object-cover mx-auto rounded-full w-full h-full shrink-0" decoding="auto" fetchpriority="auto" />
+          </a>
+          <p class="text-sm uppercase ">Skin Care</p>
+        </div>
+      </div>
+
+
+      <div class="slider-pagination swiper-pagination"></div>
+
+
+      <div class="category-slider-prev">
+        <i class="fa-solid fa-chevron-left"></i>
+      </div>
+      <div class="category-slider-next">
+        <i class="fa-solid fa-chevron-right"></i>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- dynamic tab content  -->
+  <div class="dynamic-tab-content mx-auto">
+    <div class="container mx-auto">
+      <h4 class="category-section-title text-center text-uppercase">in the spotlight</h4>
+      <div class="flex justify-center items-center">
+        <div class="flex border-b ">
+          <button
+            class="tab-btn px-4  py-2 text-xs md:text-base uppercase text-black font-bold border-b-2 border-black hover:text-black focus:text-black focus:border-black"
+            data-tab="tab1">
+            Trending
+          </button>
+          <button
+            class="tab-btn px-4  py-2 text-xs md:text-base uppercase text-black border-b-2 border-transparent hover:text-black focus:text-black focus:border-black"
+            data-tab="tab2">
+            best seller
+          </button>
+
+        </div>
+      </div>
+      <div class="tab-content mt-4">
+        <div id="tab1" class="">
+          <div class="swiper tabContentSlider02 !pb-[32px]">
+            <div class="swiper-wrapper ">
+              <!-- slider 1 -->
+              <div class="swiper-slide">
+                <div class="product-card flex flex-col gap-2">
+                  <a href="/#" class="product-image-link">
+                    <figure class="mb-0 position-relative">
+                      <span class="badge  discount-badge">- 50
+                        %</span>
+
+                      <picture>
+                        <source srcset="./assets/img/product/product-card-image-02.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./assets/img/product/product-card-image-02.jpg" media="(min-width: 768px)" />
+                        <source srcset="./assets/img/product/product-card-image-02.jpg" media="(min-width: 640px)" />
+                        <img src="./assets/img/product/product-card-image-02.jpg" alt="Brand of the month"
+                          loading="lazy" width="350" height="430" class="object-cover mx-auto w-full h-full shrink-0"
+                          decoding="auto" fetchpriority="auto" />
+                      </picture>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </figure>
+                  </a>
+                  <div class="flex flex-col gap-2">
+                    <p class="card-title text-sm tracking-wider text-balance  m-0">
+                      Saie Glowy Super Gel Mini 15ml (Various Shades)
+                    </p>
+                    <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                    <div class="flex gap-2 text-sm tracking-wider">
+                      <div class="flex items-center">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                      </div>
+                      <p class="m-0">7</p>
+                    </div>
+                    <div class="mt-1 mb-3 card-price flex gap-3 align-items-center">
+                      <p class="text-sm  font-bold">$ 20.00</p>
+                      <p class="text-xs  font-normal compare-price text-decoration-line-through">$ 20.00</p>
+                    </div>
+                    <div class="block">
+                      <button class="card-button">
+                        add to bag
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slider 1 -->
+              <div class="swiper-slide">
+                <div class="product-card flex flex-col gap-2">
+                  <a href="/#" class="product-image-link">
+                    <figure class="mb-0 position-relative">
+                      <span class="badge  discount-badge">- 50
+                        %</span>
+
+                      <picture>
+                        <source srcset="./assets/img/product/product-card-image-03.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./assets/img/product/product-card-image-03.jpg" media="(min-width: 768px)" />
+                        <source srcset="./assets/img/product/product-card-image-03.jpg" media="(min-width: 640px)" />
+                        <img src="./assets/img/product/product-card-image-03.jpg" alt="Brand of the month"
+                          loading="lazy" width="350" height="430" class="object-cover mx-auto w-full h-full shrink-0"
+                          decoding="auto" fetchpriority="auto" />
+                      </picture>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </figure>
+                  </a>
+                  <div class="flex flex-col gap-2">
+                    <p class="card-title text-sm tracking-wider text-balance  m-0">
+                      Saie Glowy Super Gel Mini 15ml (Various Shades)
+                    </p>
+                    <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                    <div class="flex gap-2 text-sm tracking-wider">
+                      <div class="flex items-center">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                      </div>
+                      <p class="m-0">7</p>
+                    </div>
+                    <div class="mt-1 mb-3 card-price flex gap-3 align-items-center">
+                      <p class="text-sm  font-bold">$ 20.00</p>
+                      <p class="text-xs  font-normal compare-price text-decoration-line-through">$ 20.00</p>
+                    </div>
+                    <div class="block">
+                      <button class="card-button">
+                        add to bag
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slider 1 -->
+              <div class="swiper-slide">
+                <div class="product-card flex flex-col gap-2">
+                  <a href="/#" class="product-image-link">
+                    <figure class="mb-0 position-relative">
+                      <span class="badge  discount-badge">- 50
+                        %</span>
+
+                      <picture>
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 768px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 640px)" />
+                        <img src="./assets/img/product/product-card-image-01.jpg" alt="Brand of the month"
+                          loading="lazy" width="350" height="430" class="object-cover mx-auto w-full h-full shrink-0"
+                          decoding="auto" fetchpriority="auto" />
+                      </picture>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </figure>
+                  </a>
+                  <div class="flex flex-col gap-2">
+                    <p class="card-title text-sm tracking-wider text-balance  m-0">
+                      Saie Glowy Super Gel Mini 15ml (Various Shades)
+                    </p>
+                    <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                    <div class="flex gap-2 text-sm tracking-wider">
+                      <div class="flex items-center">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                      </div>
+                      <p class="m-0">7</p>
+                    </div>
+                    <div class="mt-1 mb-3 card-price flex gap-3 align-items-center">
+                      <p class="text-sm  font-bold">$ 20.00</p>
+                      <p class="text-xs  font-normal compare-price text-decoration-line-through">$ 20.00</p>
+                    </div>
+                    <div class="block">
+                      <button class="card-button">
+                        add to bag
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slider 1 -->
+              <div class="swiper-slide">
+                <div class="product-card flex flex-col gap-2">
+                  <a href="/#" class="product-image-link">
+                    <figure class="mb-0 position-relative">
+                      <span class="badge  discount-badge">- 50
+                        %</span>
+
+                      <picture>
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 768px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 640px)" />
+                        <img src="./assets/img/product/product-card-image-01.jpg" alt="Brand of the month"
+                          loading="lazy" width="350" height="430" class="object-cover mx-auto w-full h-full shrink-0"
+                          decoding="auto" fetchpriority="auto" />
+                      </picture>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </figure>
+                  </a>
+                  <div class="flex flex-col gap-2">
+                    <p class="card-title text-sm tracking-wider text-balance  m-0">
+                      Saie Glowy Super Gel Mini 15ml (Various Shades)
+                    </p>
+                    <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                    <div class="flex gap-2 text-sm tracking-wider">
+                      <div class="flex items-center">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                      </div>
+                      <p class="m-0">7</p>
+                    </div>
+                    <div class="mt-1 mb-3 card-price flex gap-3 align-items-center">
+                      <p class="text-sm  font-bold">$ 20.00</p>
+                      <p class="text-xs  font-normal compare-price text-decoration-line-through">$ 20.00</p>
+                    </div>
+                    <div class="block">
+                      <button class="card-button">
+                        add to bag
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slider 1 -->
+              <div class="swiper-slide">
+                <div class="product-card flex flex-col gap-2">
+                  <a href="/#" class="product-image-link">
+                    <figure class="mb-0 position-relative">
+                      <span class="badge  discount-badge">- 50
+                        %</span>
+
+                      <picture>
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 768px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 640px)" />
+                        <img src="./assets/img/product/product-card-image-01.jpg" alt="Brand of the month"
+                          loading="lazy" width="350" height="430" class="object-cover mx-auto w-full h-full shrink-0"
+                          decoding="auto" fetchpriority="auto" />
+                      </picture>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </figure>
+                  </a>
+                  <div class="flex flex-col gap-2">
+                    <p class="card-title text-sm tracking-wider text-balance  m-0">
+                      Saie Glowy Super Gel Mini 15ml (Various Shades)
+                    </p>
+                    <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                    <div class="flex gap-2 text-sm tracking-wider">
+                      <div class="flex items-center">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                      </div>
+                      <p class="m-0">7</p>
+                    </div>
+                    <div class="mt-1 mb-3 card-price flex gap-3 align-items-center">
+                      <p class="text-sm  font-bold">$ 20.00</p>
+                      <p class="text-xs  font-normal compare-price text-decoration-line-through">$ 20.00</p>
+                    </div>
+                    <div class="block">
+                      <button class="card-button">
+                        add to bag
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slider 1 -->
+              <div class="swiper-slide">
+                <div class="product-card flex flex-col gap-2">
+                  <a href="/#" class="product-image-link">
+                    <figure class="mb-0 position-relative">
+                      <span class="badge  discount-badge">- 50
+                        %</span>
+
+                      <picture>
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 768px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 640px)" />
+                        <img src="./assets/img/product/product-card-image-01.jpg" alt="Brand of the month"
+                          loading="lazy" width="350" height="430" class="object-cover mx-auto w-full h-full shrink-0"
+                          decoding="auto" fetchpriority="auto" />
+                      </picture>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </figure>
+                  </a>
+                  <div class="flex flex-col gap-2">
+                    <p class="card-title text-sm tracking-wider text-balance  m-0">
+                      Saie Glowy Super Gel Mini 15ml (Various Shades)
+                    </p>
+                    <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                    <div class="flex gap-2 text-sm tracking-wider">
+                      <div class="flex items-center">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                      </div>
+                      <p class="m-0">7</p>
+                    </div>
+                    <div class="mt-1 mb-3 card-price flex gap-3 align-items-center">
+                      <p class="text-sm  font-bold">$ 20.00</p>
+                      <p class="text-xs  font-normal compare-price text-decoration-line-through">$ 20.00</p>
+                    </div>
+                    <div class="block">
+                      <button class="card-button">
+                        add to bag
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pagination buttons -->
+            <div class="slider-pagination swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="tab-content-swiper-button-prev bg-white shadow-sm">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="tab-content-swiper-button-next bg-white shadow-sm">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+        <div id="tab2" class="hidden">
+          <div class="swiper tabContentSlider02 !pb-[32px]">
+            <div class="swiper-wrapper ">
+              <!-- slider 1 -->
+              <div class="swiper-slide">
+                <div class="product-card flex flex-col gap-2">
+                  <a href="/#" class="product-image-link">
+                    <figure class="mb-0 position-relative">
+                      <span class="badge  discount-badge">- 50
+                        %</span>
+
+                      <picture>
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 768px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 640px)" />
+                        <img src="./assets/img/product/product-card-image-01.jpg" alt="Brand of the month"
+                          loading="lazy" width="350" height="430" class="object-cover mx-auto w-full h-full shrink-0"
+                          decoding="auto" fetchpriority="auto" />
+                      </picture>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </figure>
+                  </a>
+                  <div class="flex flex-col gap-2">
+                    <p class="card-title text-sm tracking-wider text-balance  m-0">
+                      Saie Glowy Super Gel Mini 15ml (Various Shades)
+                    </p>
+                    <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                    <div class="flex gap-2 text-sm tracking-wider">
+                      <div class="flex items-center">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                      </div>
+                      <p class="m-0">7</p>
+                    </div>
+                    <div class="mt-1 mb-3 card-price flex gap-3 align-items-center">
+                      <p class="text-sm  font-bold">$ 20.00</p>
+                      <p class="text-xs  font-normal compare-price text-decoration-line-through">$ 20.00</p>
+                    </div>
+                    <div class="block">
+                      <button class="card-button">
+                        add to bag
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slider 1 -->
+              <div class="swiper-slide">
+                <div class="product-card flex flex-col gap-2">
+                  <a href="/#" class="product-image-link">
+                    <figure class="mb-0 position-relative">
+                      <span class="badge  discount-badge">- 50
+                        %</span>
+
+                      <picture>
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 768px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 640px)" />
+                        <img src="./assets/img/product/product-card-image-01.jpg" alt="Brand of the month"
+                          loading="lazy" width="350" height="430" class="object-cover mx-auto w-full h-full shrink-0"
+                          decoding="auto" fetchpriority="auto" />
+                      </picture>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </figure>
+                  </a>
+                  <div class="flex flex-col gap-2">
+                    <p class="card-title text-sm tracking-wider text-balance  m-0">
+                      Saie Glowy Super Gel Mini 15ml (Various Shades)
+                    </p>
+                    <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                    <div class="flex gap-2 text-sm tracking-wider">
+                      <div class="flex items-center">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                      </div>
+                      <p class="m-0">7</p>
+                    </div>
+                    <div class="mt-1 mb-3 card-price flex gap-3 align-items-center">
+                      <p class="text-sm  font-bold">$ 20.00</p>
+                      <p class="text-xs  font-normal compare-price text-decoration-line-through">$ 20.00</p>
+                    </div>
+                    <div class="block">
+                      <button class="card-button">
+                        add to bag
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slider 1 -->
+              <div class="swiper-slide">
+                <div class="product-card flex flex-col gap-2">
+                  <a href="/#" class="product-image-link">
+                    <figure class="mb-0 position-relative">
+                      <span class="badge  discount-badge">- 50
+                        %</span>
+
+                      <picture>
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 768px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 640px)" />
+                        <img src="./assets/img/product/product-card-image-01.jpg" alt="Brand of the month"
+                          loading="lazy" width="350" height="430" class="object-cover mx-auto w-full h-full shrink-0"
+                          decoding="auto" fetchpriority="auto" />
+                      </picture>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </figure>
+                  </a>
+                  <div class="flex flex-col gap-2">
+                    <p class="card-title text-sm tracking-wider text-balance  m-0">
+                      Saie Glowy Super Gel Mini 15ml (Various Shades)
+                    </p>
+                    <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                    <div class="flex gap-2 text-sm tracking-wider">
+                      <div class="flex items-center">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                      </div>
+                      <p class="m-0">7</p>
+                    </div>
+                    <div class="mt-1 mb-3 card-price flex gap-3 align-items-center">
+                      <p class="text-sm  font-bold">$ 20.00</p>
+                      <p class="text-xs  font-normal compare-price text-decoration-line-through">$ 20.00</p>
+                    </div>
+                    <div class="block">
+                      <button class="card-button">
+                        add to bag
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slider 1 -->
+              <div class="swiper-slide">
+                <div class="product-card flex flex-col gap-2">
+                  <a href="/#" class="product-image-link">
+                    <figure class="mb-0 position-relative">
+                      <span class="badge  discount-badge">- 50
+                        %</span>
+
+                      <picture>
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 768px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 640px)" />
+                        <img src="./assets/img/product/product-card-image-01.jpg" alt="Brand of the month"
+                          loading="lazy" width="350" height="430" class="object-cover mx-auto w-full h-full shrink-0"
+                          decoding="auto" fetchpriority="auto" />
+                      </picture>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </figure>
+                  </a>
+                  <div class="flex flex-col gap-2">
+                    <p class="card-title text-sm tracking-wider text-balance  m-0">
+                      Saie Glowy Super Gel Mini 15ml (Various Shades)
+                    </p>
+                    <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                    <div class="flex gap-2 text-sm tracking-wider">
+                      <div class="flex items-center">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                      </div>
+                      <p class="m-0">7</p>
+                    </div>
+                    <div class="mt-1 mb-3 card-price flex gap-3 align-items-center">
+                      <p class="text-sm  font-bold">$ 20.00</p>
+                      <p class="text-xs  font-normal compare-price text-decoration-line-through">$ 20.00</p>
+                    </div>
+                    <div class="block">
+                      <button class="card-button">
+                        add to bag
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- slider 1 -->
+              <div class="swiper-slide">
+                <div class="product-card flex flex-col gap-2">
+                  <a href="/#" class="product-image-link">
+                    <figure class="mb-0 position-relative">
+                      <span class="badge  discount-badge">- 50
+                        %</span>
+
+                      <picture>
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 1024px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 768px)" />
+                        <source srcset="./assets/img/product/product-card-image-01.jpg" media="(min-width: 640px)" />
+                        <img src="./assets/img/product/product-card-image-01.jpg" alt="Brand of the month"
+                          loading="lazy" width="350" height="430" class="object-cover mx-auto w-full h-full shrink-0"
+                          decoding="auto" fetchpriority="auto" />
+                      </picture>
+                      <button class="wishlist-btn" aria-label="Add to wishlist">
+                        <i class="fa-regular fa-heart"></i>
+                      </button>
+                    </figure>
+                  </a>
+                  <div class="flex flex-col gap-2">
+                    <p class="card-title text-sm tracking-wider text-balance  m-0">
+                      Saie Glowy Super Gel Mini 15ml (Various Shades)
+                    </p>
+                    <!-- <div class="block my-2">
+                      <a href="/#">
+                        <button
+                          class="px-2  py-1 text-xs bg-white text-black uppercase tracking-wider border border-black">
+                          new in
+                        </button>
+                      </a>
+                    </div> -->
+                    <div class="flex gap-2 text-sm tracking-wider">
+                      <div class="flex items-center">
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-solid fa-star"></i></span>
+                        <span><i class="fa-regular fa-star-half-stroke"></i></span>
+                      </div>
+                      <p class="m-0">7</p>
+                    </div>
+                    <div class="mt-1 mb-3 card-price flex gap-3 align-items-center">
+                      <p class="text-sm  font-bold">$ 20.00</p>
+                      <p class="text-xs  font-normal compare-price text-decoration-line-through">$ 20.00</p>
+                    </div>
+                    <div class="block">
+                      <button class="card-button">
+                        add to bag
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- pagination buttons -->
+            <div class="slider-pagination swiper-pagination"></div>
+            <!-- If we need navigation buttons -->
+            <div class="tab-content-swiper-button-prev  bg-white shadow-sm">
+              <i class="fa-solid fa-chevron-left"></i>
+            </div>
+            <div class="tab-content-swiper-button-next  bg-white shadow-sm">
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <section class="concern-section py-8">
+    <div class="container mx-auto">
+      <h4 class="category-section-title  text-center text-uppercase">SHOP BY SKIN CARE CONCERN</h4>
+      <div class="swiper concernSlider  mx-auto">
+        <div class="swiper-wrapper px-4 md:px-8 xl:px-0">
+          <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+              title="Dehydrated Skin" aria-label="Dehydrated Skin">
+              <img src="./assets/img/category-image/slider-image-01.png" alt="Dehydrated Skin" loading="lazy"
+                width="350" height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0"
+                decoding="auto" fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase ">DEHYDRATED SKIN</p>
+          </div>
+          <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+              title="Fine Lines & Wrinkles" aria-label="Fine Lines & Wrinkles">
+              <img src="./assets/img/category-image/slider-image-06.png" alt="Fine Lines & Wrinkles" loading="lazy"
+                width="350" height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0"
+                decoding="auto" fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase ">FINE LINES & WRINKLES</p>
+          </div>
+          <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+              title="Redness" aria-label="Redness">
+              <img src="./assets/img/category-image/slider-image-05.png" alt="Redness" loading="lazy" width="350"
+                height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0" decoding="auto"
+                fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase ">REDNESS</p>
+          </div>
+          <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+              title="Acne & Blemishes" aria-label="Acne & Blemishes">
+              <img src="./assets/img/category-image/slider-image-04.png" alt="Acne & Blemishes" loading="lazy"
+                width="350" height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0"
+                decoding="auto" fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase ">ACNE & BLEMISHES</p>
+          </div>
+          <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+              title="Sensitive Skin" aria-label="Sensitive Skin">
+              <img src="./assets/img/category-image/slider-image-06.png" alt="Sensitive Skin" loading="lazy" width="350"
+                height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0" decoding="auto"
+                fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase ">SENSITIVE SKIN</p>
+          </div>
+          <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+              title="Pigmentation" aria-label="Pigmentation">
+              <img src="./assets/img/category-image/slider-image-03.png" alt="Pigmentation" loading="lazy" width="350"
+                height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0" decoding="auto"
+                fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase ">PIGMENTATION</p>
+          </div>
+          <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+              title="Dryness" aria-label="Dryness">
+              <img src="./assets/img/category-image/slider-image-05.png" alt="Dryness" loading="lazy" width="350"
+                height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0" decoding="auto"
+                fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase ">DRYNESS</p>
+          </div>
+          <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+              title="Oiliness" aria-label="Oiliness">
+              <img src="./assets/img/category-image/slider-image-06.png" alt="Oiliness" loading="lazy" width="350"
+                height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0" decoding="auto"
+                fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase ">OILINESS</p>
+          </div>
+          <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+              title="Dullness" aria-label="Dullness">
+              <img src="./assets/img/category-image/slider-image-04.png" alt="Dullness" loading="lazy" width="350"
+                height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0" decoding="auto"
+                fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase ">DULLNESS</p>
+          </div>
+          <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+              title="Uneven Tone" aria-label="Uneven Tone">
+              <img src="./assets/img/category-image/slider-image-03.png" alt="Uneven Tone" loading="lazy" width="350"
+                height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0" decoding="auto"
+                fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase ">UNEVEN TONE</p>
+          </div>
+          <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+              title="Large Pores" aria-label="Large Pores">
+              <img src="./assets/img/category-image/slider-image-02.png" alt="Large Pores" loading="lazy" width="350"
+                height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0" decoding="auto"
+                fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase ">LARGE PORES</p>
+          </div>
+          <div class="swiper-slide flex flex-col gap-2 items-center text-center">
+            <a href="/#" class="w-full h-full rounded-full bg-gray flex flex-col items-center justify-center"
+              title="Dark Circles" aria-label="Dark Circles">
+              <img src="./assets/img/category-image/slider-image-01.png" alt="Dark Circles" loading="lazy" width="350"
+                height="350" class="object-cover mx-auto rounded-full w-full h-full shrink-0" decoding="auto"
+                fetchpriority="auto" />
+            </a>
+            <p class="text-sm uppercase ">DARK CIRCLES</p>
+          </div>
+        </div>
+
+        <div class="concern-slider-prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="concern-slider-next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="shop-by-brand-slider-section py-8">
+    <div class="container mx-auto">
+      <h4 class="category-section-title text-center text-uppercase">SHOP BY SKIN CARE Brand</h4>
+      <div class="swiper shopByBrand  mx-auto">
+        <div class="swiper-wrapper ">
+          <div class="swiper-slide">
+            <a href="#" class="brand-card bg-white shadow-sm">
+              <img src="./assets/img/category-image/caregory-image-thumb-hair.jpg" alt="Brand 1">
+              <span class="brand-title">BRAND 1</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="brand-card bg-white shadow-sm">
+              <img src="./assets/img/category-image/caregory-image-thumb-make-up.jpg" alt="Brand 2">
+              <span class="brand-title">BRAND 2</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="brand-card bg-white shadow-sm">
+              <img src="./assets/img/category-image/caregory-image-thumb-hair.jpg" alt="Brand 3">
+              <span class="brand-title">BRAND 3</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="brand-card bg-white shadow-sm">
+              <img src="./assets/img/category-image/caregory-image-thumb-make-up.jpg" alt="Brand 4">
+              <span class="brand-title">BRAND 4</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="brand-card bg-white shadow-sm">
+              <img src="./assets/img/category-image/caregory-image-thumb-hair.jpg" alt="Brand 5">
+              <span class="brand-title">BRAND 5</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="brand-card bg-white shadow-sm">
+              <img src="./assets/img/category-image/caregory-image-thumb-make-up.jpg" alt="Brand 6">
+              <span class="brand-title">BRAND 6</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="brand-card bg-white shadow-sm">
+              <img src="./assets/img/category-image/caregory-image-thumb-hair.jpg" alt="Brand 7">
+              <span class="brand-title">BRAND 7</span>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="#" class="brand-card bg-white shadow-sm">
+              <img src="./assets/img/category-image/caregory-image-thumb-make-up.jpg" alt="Brand 8">
+              <span class="brand-title">BRAND 8</span>
+            </a>
+          </div>
+        </div>
+        <div class="slider-pagination swiper-pagination"></div>
+        <div class="shop-by-brand-prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="shop-by-brand-next">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+      </div>
+      <div class="text-center mt-6">
+        <a href="/#" class="shop-by-brand-view-all-btn inline-block px-4 py-3  text-xs uppercase tracking-wider">SHOP
+          ALL
+          BRANDS</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- <section class="shop-by-brands-section pt-4">
+    <div class="container-fluid mx-auto px-lg-5">
+      <div class="brands-header">
+        <h2 class="title ">Shop By Brands</h2>
+        <a href="/#" class="view-all">Shop All Brands ›</a>
+      </div>
+      <div class="brands-grid">
+        <a href="/#" class="brand-cell"><img src="./assets/img/category-image/caregory-image-thumb-hair.jpg" alt="Brand 1"></a>
+        <a href="/#" class="brand-cell"><img src="./assets/img/category-image/caregory-image-thumb-make-up.jpg" alt="Brand 2"></a>
+        <a href="/#" class="brand-cell"><img src="./assets/img/category-image/caregory-image-thumb-hair.jpg" alt="Brand 3"></a>
+        <a href="/#" class="brand-cell"><img src="./assets/img/category-image/caregory-image-thumb-make-up.jpg" alt="Brand 4"></a>
+        <a href="/#" class="brand-cell"><img src="./assets/img/category-image/caregory-image-thumb-hair.jpg" alt="Brand 5"></a>
+        <a href="/#" class="brand-cell"><img src="./assets/img/category-image/caregory-image-thumb-make-up.jpg" alt="Brand 6"></a>
+        <a href="/#" class="brand-cell"><img src="./assets/img/category-image/caregory-image-thumb-hair.jpg" alt="Brand 7"></a>
+        <a href="/#" class="brand-cell"><img src="./assets/img/category-image/caregory-image-thumb-make-up.jpg" alt="Brand 8"></a>
+        <a href="/#" class="brand-cell"><img src="./assets/img/category-image/caregory-image-thumb-hair.jpg" alt="Brand 9"></a>
+        <a href="/#" class="brand-cell"><img src="./assets/img/category-image/caregory-image-thumb-make-up.jpg" alt="Brand 10"></a>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- new comming items  -->
+  <!-- <div class="mx-auto py-8">
+    <h2 class="text-center  text-lg md:text-2xl font-normal mb-8 uppercase">
+      WHAT'S NEW AT nour beauty
+    </h2>
+    <div class="container mx-auto px-4 lg:px-0">
+      <div class="swiper newProductSlider !pb-[32px]">
+        <div class="swiper-wrapper">
+
+          <div class="swiper-slide">
+            <div class="flex flex-col gap-2">
+              <a href="/#">
+                <figure>
+                  <picture>
+                    <source srcset="./assets/img/product/nour-product-01.jpg" media="(min-width: 1024px)" />
+                    <source srcset="./assets/img/product/nour-product-01.jpg" media="(min-width: 768px)" />
+                    <source srcset="./assets/img/product/nour-product-01.jpg" media="(min-width: 640px)" />
+                    <img src="./assets/img/product/nour-product-01.jpg" alt="Brand of the month" loading="lazy"
+                      width="350" height="350" class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
+                      fetchpriority="auto" />
+                  </picture>
+                </figure>
+              </a>
+              <div class="text-center">
+                <h3 class="text-gray-900 title-font text-lg  font-medium mt-4 uppercase">
+                  discover
+                </h3>
+                <p class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow uppercase">
+                  shark
+                </p>
+                <p class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow">
+                  Meet the CryoGlow Skincare LED Face Mask, equipped with
+                  unique under-eye cooling tech.
+                </p>
+
+                <div class="block my-3">
+                  <button
+                    class="px-2  py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                    shop now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="flex flex-col gap-2">
+              <a href="/#">
+                <figure>
+                  <picture>
+                    <source srcset="./assets/img/product/nour-product-02.jpg" media="(min-width: 1024px)" />
+                    <source srcset="./assets/img/product/nour-product-02.jpg" media="(min-width: 768px)" />
+                    <source srcset="./assets/img/product/nour-product-02.jpg" media="(min-width: 640px)" />
+                    <img src="./assets/img/product/nour-product-02.jpg" alt="Brand of the month" loading="lazy"
+                      width="350" height="350" class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
+                      fetchpriority="auto" />
+                  </picture>
+                </figure>
+              </a>
+              <div class="text-center">
+                <h3 class="text-gray-900 title-font text-lg  font-medium mt-4 uppercase">
+                  discover
+                </h3>
+                <p class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow uppercase">
+                  shark
+                </p>
+                <p class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow">
+                  Meet the CryoGlow Skincare LED Face Mask, equipped with
+                  unique under-eye cooling tech.
+                </p>
+
+                <div class="block my-3">
+                  <button
+                    class="px-2  py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                    shop now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="flex flex-col gap-2">
+              <a href="/#">
+                <figure>
+                  <picture>
+                    <source srcset="./assets/img/product/nour-product-03.jpg" media="(min-width: 1024px)" />
+                    <source srcset="./assets/img/product/nour-product-03.jpg" media="(min-width: 768px)" />
+                    <source srcset="./assets/img/product/nour-product-03.jpg" media="(min-width: 640px)" />
+                    <img src="./assets/img/product/nour-product-03.jpg" alt="Brand of the month" loading="lazy"
+                      width="350" height="350" class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
+                      fetchpriority="auto" />
+                  </picture>
+                </figure>
+              </a>
+              <div class="text-center">
+                <h3 class="text-gray-900 title-font text-lg  font-medium mt-4 uppercase">
+                  discover
+                </h3>
+                <p class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow uppercase">
+                  shark
+                </p>
+                <p class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow">
+                  Meet the CryoGlow Skincare LED Face Mask, equipped with
+                  unique under-eye cooling tech.
+                </p>
+
+                <div class="block my-3">
+                  <button
+                    class="px-2  py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                    shop now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="flex flex-col gap-2">
+              <a href="/#">
+                <figure>
+                  <picture>
+                    <source srcset="./assets/img/product/nour-product-04.jpg" media="(min-width: 1024px)" />
+                    <source srcset="./assets/img/product/nour-product-04.jpg" media="(min-width: 768px)" />
+                    <source srcset="./assets/img/product/nour-product-04.jpg" media="(min-width: 640px)" />
+                    <img src="./assets/img/product/nour-product-04.jpg" alt="Brand of the month" loading="lazy"
+                      width="350" height="350" class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
+                      fetchpriority="auto" />
+                  </picture>
+                </figure>
+              </a>
+              <div class="text-center">
+                <h3 class="text-gray-900 title-font text-lg  font-medium mt-4 uppercase">
+                  discover
+                </h3>
+                <p class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow uppercase">
+                  shark
+                </p>
+                <p class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow">
+                  Meet the CryoGlow Skincare LED Face Mask, equipped with
+                  unique under-eye cooling tech.
+                </p>
+
+                <div class="block my-3">
+                  <button
+                    class="px-2  py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                    shop now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="flex flex-col gap-2">
+              <a href="/#">
+                <figure>
+                  <picture>
+                    <source srcset="./assets/img/product/nour-product-05.jpg" media="(min-width: 1024px)" />
+                    <source srcset="./assets/img/product/nour-product-05.jpg" media="(min-width: 768px)" />
+                    <source srcset="./assets/img/product/nour-product-05.jpg" media="(min-width: 640px)" />
+                    <img src="./assets/img/product/nour-product-05.jpg" alt="Brand of the month" loading="lazy"
+                      width="350" height="350" class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
+                      fetchpriority="auto" />
+                  </picture>
+                </figure>
+              </a>
+              <div class="text-center">
+                <h3 class="text-gray-900 title-font text-lg  font-medium mt-4 uppercase">
+                  discover
+                </h3>
+                <p class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow uppercase">
+                  shark
+                </p>
+                <p class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow">
+                  Meet the CryoGlow Skincare LED Face Mask, equipped with
+                  unique under-eye cooling tech.
+                </p>
+
+                <div class="block my-3">
+                  <button
+                    class="px-2  py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                    shop now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="swiper-slide">
+            <div class="flex flex-col gap-2">
+              <a href="/#">
+                <figure>
+                  <picture>
+                    <source srcset="./assets/img/product/nour-product-06.jpg" media="(min-width: 1024px)" />
+                    <source srcset="./assets/img/product/nour-product-06.jpg" media="(min-width: 768px)" />
+                    <source srcset="./assets/img/product/nour-product-06.jpg" media="(min-width: 640px)" />
+                    <img src="./assets/img/product/nour-product-06.jpg" alt="Brand of the month" loading="lazy"
+                      width="350" height="350" class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
+                      fetchpriority="auto" />
+                  </picture>
+                </figure>
+              </a>
+              <div class="text-center">
+                <h3 class="text-gray-900 title-font text-lg  font-medium mt-4 uppercase">
+                  discover
+                </h3>
+                <p class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow uppercase">
+                  shark
+                </p>
+                <p class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow">
+                  Meet the CryoGlow Skincare LED Face Mask, equipped with
+                  unique under-eye cooling tech.
+                </p>
+
+                <div class="block my-3">
+                  <button
+                    class="px-2  py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                    shop now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="flex flex-col gap-2">
+              <a href="/#">
+                <figure>
+                  <picture>
+                    <source srcset="./assets/img/product/nour-product-07.jpg" media="(min-width: 1024px)" />
+                    <source srcset="./assets/img/product/nour-product-07.jpg" media="(min-width: 768px)" />
+                    <source srcset="./assets/img/product/nour-product-07.jpg" media="(min-width: 640px)" />
+                    <img src="./assets/img/product/nour-product-07.jpg" alt="Brand of the month" loading="lazy"
+                      width="350" height="350" class="object-cover mx-auto w-full h-full shrink-0" decoding="auto"
+                      fetchpriority="auto" />
+                  </picture>
+                </figure>
+              </a>
+              <div class="text-center">
+                <h3 class="text-gray-900 title-font text-lg  font-medium mt-4 uppercase">
+                  discover
+                </h3>
+                <p class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow uppercase">
+                  shark
+                </p>
+                <p class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow">
+                  Meet the CryoGlow Skincare LED Face Mask, equipped with
+                  unique under-eye cooling tech.
+                </p>
+
+                <div class="block my-3">
+                  <button
+                    class="px-2  py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+                    shop now
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
+        <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+      </div>
+    </div>
+  </div> -->
+
+  <!--nour memo  -->
+  <!-- <div class="nour-memo mx-auto py-8">
+    <div class="container mx-auto px-4 lg:px-0">
+      <div class="flex flex-row flex-wrap w-full lg:h-[450px]">
+        <div class="image-figure shrink-0 w-2/4 lg:w-1/4">
+          <figure>
+            <picture>
+              <source srcset="./assets/img/memo-best-body.jpg" media="(min-width: 1024px)" />
+              <source srcset="./assets/img/memo-best-body.jpg" media="(min-width: 768px)" />
+              <source srcset="./assets/img/memo-best-body.jpg" media="(min-width: 640px)" />
+              <img src="./assets/img/memo-best-body.jpg" alt="Brand of the month" loading="lazy" width="350"
+                height="450" class="object-cover mx-auto w-full h-[450px]" decoding="auto" fetchpriority="auto" />
+            </picture>
+          </figure>
+        </div>
+        <div class="image-figure shrink-0 w-2/4 lg:w-1/4">
+          <figure>
+            <picture>
+              <source srcset="./assets/img/skintints.webp" media="(min-width: 1024px)" />
+              <source srcset="./assets/img/skintints.webp" media="(min-width: 768px)" />
+              <source srcset="./assets/img/skintints.webp" media="(min-width: 640px)" />
+              <img src="./assets/img/skintints.webp" alt="Brand of the month" loading="lazy" width="350" height="450"
+                class="object-cover mx-auto w-full h-[450px]" decoding="auto" fetchpriority="auto" />
+            </picture>
+          </figure>
+        </div>
+        <div class="image-figure shrink-0 relative w-full lg:w-2/4">
+          <figure class="mb-0 h-[450px]">
+            <picture>
+              <source srcset="./assets/img/memo-new-beauty.webp" media="(min-width: 1024px)" />
+              <source srcset="./assets/img/memo-new-beauty.webp" media="(min-width: 768px)" />
+              <source srcset="./assets/img/memo-new-beauty.webp" media="(min-width: 640px)" />
+              <img src="./assets/img/memo-new-beauty.webp" alt="Brand of the month" loading="lazy" width="350"
+                height="450" class="object-cover d-none d-lg-inline-block mx-auto w-full h-[450px]" decoding="auto"
+                fetchpriority="auto" />
+            </picture>
+          </figure>
+          <div class="nour-memo-content p-8 absolute bottom-0 right-0 w-full xl:w-2/3 xl:h-2/3">
+            <div class="flex flex-col justify-between h-full">
+              <div class="flex flex-col gap-3">
+                <a href="/#" class="text-3xl font-normal italic  text-reset text-black">
+                  Instant Hair Transformation? Here’s Proof
+                </a>
+                <p class="text-sm  font-semibold">
+                  December 27 | 5 minute read
+                </p>
+              </div>
+              <div class="pt-5 pt-lg-0">
+                <a href="/#" class="text-5xl text-white  fst-italic">MM.</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> -->
+
+  <!-- <div class="blog-section mx-auto py-8">
+    <div class="container mx-auto px-4 lg:px-0">
+      <div class="swiper blogSlider !pb-[32px]">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide single-post">
+            <div class="flex flex-col gap-2">
+              <a href="/#" class="group block">
+                <figure class="overflow-hidden">
+                  <picture>
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 1024px)" />
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 768px)" />
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 640px)" />
+                    <img src="./assets/img/memo-mecca-talk.webp" alt="Brand of the month" loading="lazy" width="350"
+                      height="200"
+                      class="object-cover mx-auto w-full h-[150px] shrink-0 transform transition-transform duration-300 group-hover:scale-125"
+                      decoding="auto" fetchpriority="auto" />
+                  </picture>
+                </figure>
+              </a>
+              <div class="text-left flex flex-col gap-3">
+                <a href="/#" class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow">
+                  Meet the CryoGlow Skincare LED Face Mask, equipped with
+                  unique
+                </a>
+                <p class="text-sm  text-gray-500 font-medium">
+                  December 27 | 5 minute read
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide single-post">
+            <div class="flex flex-col gap-2">
+              <a href="/#" class="group block">
+                <figure class="overflow-hidden">
+                  <picture>
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 1024px)" />
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 768px)" />
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 640px)" />
+                    <img src="./assets/img/memo-mecca-talk.webp" alt="Brand of the month" loading="lazy" width="350"
+                      height="200"
+                      class="object-cover mx-auto w-full h-[150px] shrink-0 transform transition-transform duration-300 group-hover:scale-125"
+                      decoding="auto" fetchpriority="auto" />
+                  </picture>
+                </figure>
+              </a>
+              <div class="text-left flex flex-col gap-3">
+                <a href="/#" class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow">
+                  Meet the CryoGlow Skincare LED Face Mask, equipped with
+                  unique
+                </a>
+                <p class="text-sm  text-gray-500 font-medium">
+                  December 27 | 5 minute read
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide single-post">
+            <div class="flex flex-col gap-2">
+              <a href="/#" class="group block">
+                <figure class="overflow-hidden">
+                  <picture>
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 1024px)" />
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 768px)" />
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 640px)" />
+                    <img src="./assets/img/memo-mecca-talk.webp" alt="Brand of the month" loading="lazy" width="350"
+                      height="200"
+                      class="object-cover mx-auto w-full h-[150px] shrink-0 transform transition-transform duration-300 group-hover:scale-125"
+                      decoding="auto" fetchpriority="auto" />
+                  </picture>
+                </figure>
+              </a>
+              <div class="text-left flex flex-col gap-3">
+                <a href="/#" class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow">
+                  Meet the CryoGlow Skincare LED Face Mask, equipped with
+                  unique
+                </a>
+                <p class="text-sm  text-gray-500 font-medium">
+                  December 27 | 5 minute read
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide single-post">
+            <div class="flex flex-col gap-2">
+              <a href="/#" class="group block">
+                <figure class="overflow-hidden">
+                  <picture>
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 1024px)" />
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 768px)" />
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 640px)" />
+                    <img src="./assets/img/memo-mecca-talk.webp" alt="Brand of the month" loading="lazy" width="350"
+                      height="200"
+                      class="object-cover mx-auto w-full h-[150px] shrink-0 transform transition-transform duration-300 group-hover:scale-125"
+                      decoding="auto" fetchpriority="auto" />
+                  </picture>
+                </figure>
+              </a>
+              <div class="text-left flex flex-col gap-3">
+                <a href="/#" class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow">
+                  Meet the CryoGlow Skincare LED Face Mask, equipped with
+                  unique
+                </a>
+                <p class="text-sm  text-gray-500 font-medium">
+                  December 27 | 5 minute read
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide single-post">
+            <div class="flex flex-col gap-2">
+              <a href="/#" class="group block">
+                <figure class="overflow-hidden">
+                  <picture>
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 1024px)" />
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 768px)" />
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 640px)" />
+                    <img src="./assets/img/memo-mecca-talk.webp" alt="Brand of the month" loading="lazy" width="350"
+                      height="200"
+                      class="object-cover mx-auto w-full h-[150px] shrink-0 transform transition-transform duration-300 group-hover:scale-125"
+                      decoding="auto" fetchpriority="auto" />
+                  </picture>
+                </figure>
+              </a>
+              <div class="text-left flex flex-col gap-3">
+                <a href="/#" class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow">
+                  Meet the CryoGlow Skincare LED Face Mask, equipped with
+                  unique
+                </a>
+                <p class="text-sm  text-gray-500 font-medium">
+                  December 27 | 5 minute read
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide single-post">
+            <div class="flex flex-col gap-2">
+              <a href="/#" class="group block">
+                <figure class="overflow-hidden">
+                  <picture>
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 1024px)" />
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 768px)" />
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 640px)" />
+                    <img src="./assets/img/memo-mecca-talk.webp" alt="Brand of the month" loading="lazy" width="350"
+                      height="200"
+                      class="object-cover mx-auto w-full h-[150px] shrink-0 transform transition-transform duration-300 group-hover:scale-125"
+                      decoding="auto" fetchpriority="auto" />
+                  </picture>
+                </figure>
+              </a>
+              <div class="text-left flex flex-col gap-3">
+                <a href="/#" class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow">
+                  Meet the CryoGlow Skincare LED Face Mask, equipped with
+                  unique
+                </a>
+                <p class="text-sm  text-gray-500 font-medium">
+                  December 27 | 5 minute read
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-slide single-post">
+            <div class="flex flex-col gap-2">
+              <a href="/#" class="group block">
+                <figure class="overflow-hidden">
+                  <picture>
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 1024px)" />
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 768px)" />
+                    <source srcset="./assets/img/memo-mecca-talk.webp" media="(min-width: 640px)" />
+                    <img src="./assets/img/memo-mecca-talk.webp" alt="Brand of the month" loading="lazy" width="350"
+                      height="200"
+                      class="object-cover mx-auto w-full h-[150px] shrink-0 transform transition-transform duration-300 group-hover:scale-125"
+                      decoding="auto" fetchpriority="auto" />
+                  </picture>
+                </figure>
+              </a>
+              <div class="text-left flex flex-col gap-3">
+                <a href="/#" class="text-gray-900 title-font text-sm  font-medium mt-2 flex-grow">
+                  Meet the CryoGlow Skincare LED Face Mask, equipped with
+                  unique
+                </a>
+                <p class="text-sm  text-gray-500 font-medium">
+                  December 27 | 5 minute read
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev w-6 h-6 bg-white shadow-sm"></div>
+        <div class="swiper-button-next w-6 h-6 bg-white shadow-sm"></div>
+      </div>
+    </div>
+  </div> -->
+
+
+
+
+  <!-- Site Footer -->
+  <footer class="site-footer bg-black text-white pt-4 pb-3">
+    <!-- Footer Top: Newsletter & Social -->
+    <div class="footer-top border-bottom border-light-subtle pb-4 mb-4">
+      <div class="container mx-auto">
+        <div class="row align-items-center gy-4">
+          <!-- Newsletter -->
+          <div class="col-lg-6">
+            <div
+              class="d-flex flex-column flex-lg-row align-items-center gap-3 justify-content-center justify-content-lg-start">
+
+              <span class="text-uppercase d-flex justify-center fw-light text-center text-lg-start">
+                <span class="me-2"><i class="fa-regular fa-envelope fs-4"></i></span>
+                15% off your order when you sign-up to our
+                emails</span>
+              <button class="btn btn-light rounded-0 px-4 py-2 text-uppercase fw-bold">Sign Up</button>
+            </div>
+          </div>
+          <!-- Social Icons -->
+          <div class="col-lg-6">
+            <div class="d-flex justify-content-center justify-content-lg-end gap-4 fs-5 social-icons">
+              <span class="d-none d-lg-block">Connect with us</span>
+              <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Main: Accordion for Mobile, Grid for Desktop -->
+    <div class="footer-main mb-5">
+      <div class="container mx-auto">
+
+        <!-- Mobile View: Accordion (Visible only on mobile/tablet) -->
+        <div class="footer-mobile-view text-center d-lg-none">
+          <div class="footer-accordion" id="footerAccordion">
+
+            <!-- Customer Service -->
+            <div class="footer-accordion-item w-100">
+              <h2 class="footer-accordion-header" id="headingCS">
+                <button class="footer-accordion-button collapsed text-uppercase fw-bold fs-6" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseCS" aria-expanded="false"
+                  aria-controls="collapseCS">
+                  Customer Service
+                </button>
+              </h2>
+              <div id="collapseCS" class="footer-accordion-collapse collapse" aria-labelledby="headingCS"
+                data-bs-parent="#footerAccordion">
+                <div class="footer-accordion-body">
+                  <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small fw-light">
+                    <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Help Centre / FAQs</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Shipping</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Returns</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Track my order</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- About Cult Beauty -->
+            <div class="footer-accordion-item w-100">
+              <h2 class="footer-accordion-header" id="headingAbout">
+                <button class="footer-accordion-button collapsed text-uppercase fw-bold fs-6" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseAbout" aria-expanded="false"
+                  aria-controls="collapseAbout">
+                  About Cult Beauty
+                </button>
+              </h2>
+              <div id="collapseAbout" class="footer-accordion-collapse collapse" aria-labelledby="headingAbout"
+                data-bs-parent="#footerAccordion">
+                <div class="footer-accordion-body">
+                  <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small fw-light">
+                    <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">People and Planet</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Cult Conscious</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Legal -->
+            <div class="footer-accordion-item w-100">
+              <h2 class="footer-accordion-header" id="headingLegal">
+                <button class="footer-accordion-button collapsed text-uppercase fw-bold fs-6" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseLegal" aria-expanded="false"
+                  aria-controls="collapseLegal">
+                  Legal
+                </button>
+              </h2>
+              <div id="collapseLegal" class="footer-accordion-collapse collapse" aria-labelledby="headingLegal"
+                data-bs-parent="#footerAccordion">
+                <div class="footer-accordion-body">
+                  <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small fw-light">
+                    <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Cookie Policy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Modern Slavery Policy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Accessibility</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Find Out More -->
+            <div class="footer-accordion-item w-100">
+              <h2 class="footer-accordion-header" id="headingMore">
+                <button class="footer-accordion-button collapsed text-uppercase fw-bold fs-6" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseMore" aria-expanded="false"
+                  aria-controls="collapseMore">
+                  Find Out More
+                </button>
+              </h2>
+              <div id="collapseMore" class="footer-accordion-collapse collapse" aria-labelledby="headingMore"
+                data-bs-parent="#footerAccordion">
+                <div class="footer-accordion-body">
+                  <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small fw-light">
+                    <li><a href="#" class="text-white text-decoration-none">Cult Status</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Promotions</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Affiliates</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Refer A Friend</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Logo & Blurb (Mobile Bottom) -->
+          <div class="text-center mt-4">
+            <img src="./assets/img/category-image/caregory-image-thumb-hair.jpg" alt="Cult Beauty"
+              class="img-fluid mb-3 footer-logo mx-auto" style="filter: invert(1); max-width: 120px;">
+            <p class="small fw-light text-dark">Cult Beauty is THE destination for the very best in beauty!</p>
+          </div>
+        </div>
+
+        <!-- Desktop View: Static Grid (Visible only on desktop) -->
+        <div class="footer-desktop-view d-none d-lg-block">
+          <div class="row gx-5">
+            <!-- Col 1: Logo & Blurb -->
+            <div class="col-lg-3">
+              <img src="./assets/img/logo/brand-logo.svg" alt="Cult Beauty" class="img-fluid mb-4 footer-logo"
+                style="filter: invert(1); max-width: 160px;">
+              <p class="small fw-light lh-lg" style="color: #ccc;">Cult Beauty is THE destination for the very best in
+                beauty! From make up and skin care to fragrance, hair care and more, explore our line up of trending
+                brands today.</p>
+            </div>
+
+            <!-- Col 2: Customer Service -->
+            <div class="col-lg-2 offset-lg-1">
+              <h5 class="text-uppercase fw-bold mb-4 text-white fst-medium" style="font-size: 14px;">Customer Service
+              </h5>
+              <ul class="list-unstyled d-flex flex-column gap-2 small fw-light">
+                <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Help Centre / FAQs</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Shipping</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Returns</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Track my order</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 3: About Cult Beauty -->
+            <div class="col-lg-2">
+              <h5 class="text-uppercase fw-bold mb-4 text-white fst-medium" style="font-size: 14px;">About Cult Beauty
+              </h5>
+              <ul class="list-unstyled d-flex flex-column gap-2 small fw-light">
+                <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                <li><a href="#" class="text-white text-decoration-none">People and Planet</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Cult Conscious</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 4: Legal -->
+            <div class="col-lg-2">
+              <h5 class="text-uppercase fw-bold mb-4 text-white fst-medium" style="font-size: 14px;">Legal</h5>
+              <ul class="list-unstyled d-flex flex-column gap-2 small fw-light">
+                <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Cookie Policy</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Modern Slavery Policy</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Accessibility</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 5: Find Out More -->
+            <div class="col-lg-2">
+              <h5 class="text-uppercase fw-bold mb-4 text-white fst-medium" style="font-size: 14px;">Find Out More</h5>
+              <ul class="list-unstyled d-flex flex-column gap-2 small fw-light">
+                <li><a href="#" class="text-white text-decoration-none">Cult Status</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Promotions</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Affiliates</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Refer A Friend</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom pt-4 border-top border-light-subtle">
+      <div class="container mx-auto">
+        <div class="row gy-3  justify-content-between">
+          <div class="col-lg-6 text-center text-lg-start">
+            <span class="small fw-light">2025 © The Hut.com Ltd. t/a CultBeauty.com</span>
+          </div>
+          <div class="col-lg-4 offset-lg-2">
+            <div class="d-flex flex-column gap-2 align-items-center align-items-lg-end">
+              <span class="fw-bold">Pay Securely With</span>
+              <div class="d-flex gap-2 payment-icons fs-3">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+                <i class="fa-brands fa-cc-apple-pay"></i>
+                <i class="fa-brands fa-google-pay"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- modal for country (rigion ) selection  -->
+  <div class="modal fade" id="selectRegionModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="0"
+    aria-labelledby="selectRegionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="selectRegionModalLabel">
+            Your region settings
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="" method="post">
+            <div class="input-group mb-3">
+              <label for="country" class="form-label fw-bold">Shipping Country</label>
+              <select id="country" class="form-select rounded-1 w-100 py-2" aria-label="Default select example">
+                <option selected>country name</option>
+                <option value="1">country name One</option>
+                <option value="2">country name Two</option>
+                <option value="3">country name Three</option>
+              </select>
+            </div>
+            <div class="input-group mb-3">
+              <label for="language" class="form-label fw-bold">Region & Language</label>
+              <select id="language" class="form-select rounded-1 w-100 py-2" aria-label="Default select example">
+                <option selected>Region & Language</option>
+                <option value="1">Region & Language One</option>
+                <option value="2">Region & Language Two</option>
+                <option value="3">Region & Language Three</option>
+              </select>
+            </div>
+            <div class="input-group mb-3">
+              <label for="Currencies" class="form-label fw-bold">Currencies</label>
+              <select id="Currencies" class="form-select rounded-1 w-100 py-2" aria-label="Default select example">
+                <option selected>Currencies</option>
+                <option value="1">Currencies One</option>
+                <option value="2">Currencies Two</option>
+                <option value="3">Currencies Three</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer border-top-0 pb-5 w-100 justify-content-center">
+          <div class="block w-100">
+            <button
+              class="px-2 py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+              add to bag
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- custom modal for region modal for mobile  -->
+
+  <!-- modal for discount code -->
+  <div class="modal fade" id="getDiscountModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="getDiscountModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-capitalize" id="getDiscountModalLabel">
+            get your cupon code
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body py-5">
+          <form action="" method="post">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control py-2 form-control-lg" placeholder="cupon code - 123456"
+                aria-label="cupon code - 123456" aria-describedby="basic-addon2" />
+              <span class="input-group-text bg-black text-white border border-black cursor-pointer"
+                id="basic-addon2">Copy code</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- swiper slider js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- custom js -->
+  <script type="module" src="./assets/js/main.js"></script>
+  <script type="module" src="./assets/js/slider.js"></script>
+  <script>
+    document.addEventListener("shown.bs.modal", function () {
+      document.body.style.overflow = "hidden";
+    });
+    document.addEventListener("hidden.bs.modal", function () {
+      document.body.style.overflow = "";
+    });
+
+    document
+      .getElementById("selectRegionModal")
+      .addEventListener("show.bs.modal", function () {
+        let offcanvas = bootstrap.Offcanvas.getInstance(
+          document.getElementById("mobileNavigation")
+        );
+        if (offcanvas) {
+          offcanvas.hide();
+        }
+      });
+
+    document
+      .getElementById("selectRegionModal")
+      .addEventListener("hidden.bs.modal", function () {
+        let backdrop = document.querySelector(".offcanvas-backdrop");
+        if (backdrop) {
+          backdrop.remove();
+          location.reload(true);
+        }
+        // Hide the Offcanvas forcefully to reset it
+        let offcanvasElement = document.getElementById("mobileNavigation");
+        let offcanvasInstance =
+          bootstrap.Offcanvas.getInstance(offcanvasElement);
+        if (offcanvasInstance) {
+        }
+      });
+  </script>
+</body>
+
+</html>

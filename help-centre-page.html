@@ -1,0 +1,1925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Help Centre | Nour Beauty</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./assets/css/output.css" />
+  <link rel="stylesheet" href="./assets/css/style.css" />
+  <link rel="stylesheet" href="./assets/css/style.min.css" />
+  <!-- swiper slider css -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+  <!-- Header top new banner start-->
+  <div class="new-top-banner">
+    <div class="container">
+      <div class="row align-items-center">
+        <!-- Left Section: Links (Hidden on Mobile) -->
+        <div class="col-lg-4 d-none d-lg-flex justify-content-start">
+          <nav class="new-top-banner__nav">
+            <a href="#">Help Center</a>
+            <a href="#">Find a Store</a>
+            <a href="#">Contact</a>
+          </nav>
+        </div>
+
+        <!-- Center Section: Promo Message (Always Visible) -->
+        <div class="col-12 col-lg-4 d-flex justify-content-center">
+          <div class="new-top-banner__promo">
+            <span class="new-top-banner__promo-emoji">✌🏼</span>
+            <p class="new-top-banner__promo-text">
+              Free Express Shipping on orders $120!
+            </p>
+          </div>
+        </div>
+
+        <!-- Right Section: Social Icons (Hidden on Mobile) -->
+        <div class="col-lg-4 d-none d-lg-flex justify-content-end">
+          <div class="new-top-banner__social">
+            <a href="#">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Header top new banner end  -->
+
+  <!-- header top banner  -->
+  <!-- <div class="header-banner">
+    <div class="container-fluid d-flex justify-content-center align-items-center gap-sm-3 gap-lg-4 p-2 p-lg-3">
+
+      <div class="mobile-slides d-lg-none">
+        <a href="/#" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+          <span><i class="fa-solid fa-truck-moving"></i></span>
+          <span class="text-reset"> Free UK shipping over £25</span>
+        </a>
+        <button type="button" data-bs-toggle="modal" data-bs-target="#getDiscountModal"
+          class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+          <span><i class="fa-solid fa-mobile-screen-button"></i></span>
+          <span>15% off your app order</span>
+        </button>
+        <a href="./signup-page.html" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+          <span><i class="fa-regular fa-envelope"></i></span>
+          <span> Sign up for email exclusives</span>
+        </a>
+        <a href="/#" class="slide-item d-flex gap-2 text-reset fs-6 text-decoration-none">
+          <span><i class="fa-solid fa-gift"></i></span>
+          <span> Earn Cult Status Points</span>
+        </a>
+      </div>
+
+
+      <a href="/#" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+        <span><i class="fa-solid fa-truck-moving"></i></span>
+        <span class="text-reset"> Free UK shipping over £25</span>
+      </a>
+      <button type="button" data-bs-toggle="modal" data-bs-target="#getDiscountModal"
+        class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+        <span><i class="fa-solid fa-mobile-screen-button"></i></span>
+        <span> 15% off your app order</span>
+      </button>
+      <a href="./signup-page.html" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+        <span><i class="fa-regular fa-envelope"></i></span>
+        <span> Sign up for email exclusives</span>
+      </a>
+      <a href="/#" class="d-none d-lg-flex gap-2 text-reset fs-6 text-decoration-none">
+        <span><i class="fa-solid fa-gift"></i></span>
+        <span> Earn Cult Status Points</span>
+      </a>
+    </div>
+  </div> -->
+
+  <!-- stripe banner  -->
+  <div class="stripe-banner container-fluid d-flex justify-content-center align-items-center p-2">
+    <a href="/#" class="text-reset text-uppercase text-decoration-none fs-6">
+      <span class="">SALE - UP TO 50% OFF</span>
+    </a>
+  </div>
+
+  <header id="site-header" class="header-container shadow-sm sticky top-0 z-30 pt-3 pb-3 pb-lg-0">
+    <div class="container d-flex align-items-center justify-content-between">
+      <!-- search container for mobile  -->
+      <div class="col d-flex d-lg-none gap-3 align-items-center">
+        <div class="menu-bar">
+          <button type="button" data-bs-toggle="offcanvas" data-bs-target="#mobileNavigation"
+            aria-controls="mobileNavigation">
+            <span><i class="fa-solid fa-bars"></i></span>
+          </button>
+        </div>
+        <div class="search-bar">
+          <button class="">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          </button>
+        </div>
+      </div>
+      <!-- search container for pc  -->
+      <div class="col d-none d-lg-block">
+        <div class="header-search">
+          <form action="" class="">
+            <div class="position-relative">
+              <input id="search-input" type="text" class="w-100 rounded-pill"
+                placeholder="Search for a product or brand" />
+              <button class="position-absolute">
+                <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+      <!-- logo container  -->
+      <div class="col logo-container d-flex align-items-center justify-content-center mx-auto">
+        <a href="/#">
+          <img id="brand-logo" width="200" height="40" src="./assets/img/brand-logo/brand-logo.svg" alt="brand-logo" />
+        </a>
+      </div>
+      <!-- other container  -->
+      <div class="col other-container d-flex gap-3 gap-lg-4 align-items-center justify-content-end">
+        <div class="change-local d-none d-lg-flex align-items-center">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#selectRegionModal"
+            class="text-uppercase d-flex align-items-center gap-2">
+            <span class="">
+              <img class="" src="./assets/img/flags/united-kingdom.png" alt="united-kingdom flag" />
+            </span>
+            <span class="">&bull;</span>
+            <span class="fw-medium">KSA</span>
+          </button>
+        </div>
+        <!-- Location -->
+        <div class="map-location">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#mapLocationModal"
+            class="d-flex gap-2 align-items-center">
+            <span><i class="fa-solid fa-location-dot"></i></span>
+            <span class="d-none d-lg-flex fw-medium">Location</span>
+          </button>
+        </div>
+        <div class="customar-account dropdown">
+          <button data-bs-toggle="dropdown" aria-expanded="false" class="d-flex gap-2 align-items-center" type="button">
+            <span><i class="fa-regular fa-user"></i></span>
+            <span class="d-none d-lg-flex fw-medium">Account</span>
+          </button>
+          <ul class="dropdown-menu dropdown-menu-end rounded-0 border border-light-subtle shadow m-0 p-0">
+            <li>
+              <button class="w-100 p-3 text-uppercase fs-6 fw-normal text-white bg-black">
+                registration
+              </button>
+            </li>
+            <li>
+              <button class="w-100 p-3 text-uppercase fs-6 fw-normal text-black bg-white border border-black">
+                login
+              </button>
+            </li>
+            <li>
+              <a class="dropdown-item p-3 fs-6 text-capitalize" href="#">your wishlist</a>
+            </li>
+            <li>
+              <a class="dropdown-item p-3 fs-6 text-capitalize" href="#">your order</a>
+            </li>
+            <li>
+              <a class="dropdown-item p-3 fs-6 text-capitalize" href="#">your referrel</a>
+            </li>
+          </ul>
+        </div>
+        <div class="addto-busket">
+          <button class="d-flex gap-2 align-items-center">
+            <span><i class="fa-solid fa-basket-shopping"></i></span>
+            <span class="d-none d-lg-flex fw-medium">Bag</span>
+          </button>
+        </div>
+      </div>
+    </div>
+    <!-- desktop navigation  -->
+    <nav class="header-nav d-none d-lg-block mt-3">
+      <ul class="d-flex justify-content-center align-items-center">
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">SALE </a>
+          </li>
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Brands</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">New & Trending</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Fragrance</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Skin Care</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Make Up</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Hair</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Body & Wellbeing</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">SPF</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Minis</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Cult Conscious</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="nav-navigation">
+          <li class="nav-item">
+            <a href="/#" class="">Blog</a>
+          </li>
+
+          <div class="mega-navigation">
+            <div class="container">
+              <div class="row row-cols-5 g-3">
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+                <div class="col">
+                  <h3 class="sub-category-menu-items text-uppercase  fw-light p-2  border-bottom border-light-subtle">
+                    View All Brands
+                  </h3>
+                  <ul class="list-unstyled">
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                    <li><a href="/#">items</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+    </nav>
+  </header>
+  <!-- mobile navigation -->
+  <div class="offcanvas offcanvas-start mobile-navigation" id="mobileNavigation"
+    aria-labelledby="mobileNavigationLabel">
+    <div class="offcanvas-header d-flex flex-column p-0">
+      <div class="d-flex justify-content-between w-100 p-4 border-bottom border-light-subtle">
+        <div class="offcanvas-title" id="mobileNavigationLabel">
+          <i class="fa-solid fa-house fs-4"></i>
+        </div>
+        <div class="d-flex align-items-center gap-4">
+          <button type="button" data-bs-toggle="modal" data-bs-target="#selectRegionModal"
+            class="open-modal-btn text-uppercase d-flex align-items-center gap-2 border-0 bg-transparent">
+            <span class="">
+              <img class="" src="./assets/img/flags/united-kingdom.png" alt="united-kingdom flag" />
+            </span>
+            <span class="">&bull;</span>
+            <span class="fw-medium">KSA</span>
+          </button>
+
+          <button type="button" class="btn-close text-black" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+      </div>
+      <div class="w-100 d-flex flex-row gap-4 px-4 py-3 mobile-registraion border-bottom border-light-subtle">
+        <button class="w-100 text-uppercase fs-6 fw-normal text-white bg-black">
+          registration
+        </button>
+        <button class="w-100 text-uppercase fs-6 fw-normal text-black bg-transparent">
+          login
+        </button>
+      </div>
+    </div>
+    <div class="offcanvas-body position-relative px-0">
+      <div class="position-static pb-4 border-bottom border-light-subtle px-3 mb-4">
+        <a href="/#" class="h5 text-decoration-none fw-bold mb-3 d-block">Brand</a>
+        <div class="d-flex flex-column gap-2">
+          <button data-slide="slide1"
+            class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+            <span>items</span>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </button>
+          <button data-slide="slide2"
+            class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+            <span>items 2</span>
+            <span><i class="fa-solid fa-angle-right"></i></span>
+          </button>
+        </div>
+      </div>
+      <!-- slider-1 window -->
+      <div id="slide1" class="slide-window">
+        <div class="slide-content">
+          <div class="d-flex gap-3 align-items-center mb-4">
+            <button class="close-btn p-0 bg-transparent border-0 fs-5 d-flex align-items-center gap-3 text-capitalize">
+              <span><i class="fa-solid fa-angle-left"></i></span>
+              <span class="h5 text-decoration-none fw-bold d-block m-0">items</span>
+            </button>
+          </div>
+          <div class="">
+            <div class="d-flex flex-column gap-2">
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- slider-2 window -->
+      <div id="slide2" class="slide-window">
+        <div class="slide-content">
+          <div class="d-flex gap-3 align-items-center mb-4">
+            <button class="close-btn p-0 bg-transparent border-0 fs-5 d-flex align-items-center gap-3 text-capitalize">
+              <span><i class="fa-solid fa-angle-left"></i></span>
+              <span class="h5 text-decoration-none fw-bold d-block m-0">items 2</span>
+            </button>
+          </div>
+          <div class="">
+            <div class="d-flex flex-column gap-2">
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+              <button
+                class="w-100 bg-transparent border-0 p-0 d-flex fs-5 fw-medium justify-content-between align-items-center text-capitalize">
+                <span>nested items</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Help Centre Main Content start-->
+  <main class="help-centre-page py-5">
+    <div class="container">
+      <!-- Help Centre Header -->
+      <div class="text-center mb-5">
+        <h6 class="fw-bold mb-3 text-uppercase small" style="letter-spacing: 1px; font-size: 20px;">Help Centre</h6>
+        <p class="mb-4 text-muted" style="font-size: 20px;">Try searching for your question</p>
+
+        <!-- Search Bar -->
+        <div class="mx-auto" style="max-width: 600px;">
+          <div class="position-relative">
+            <input type="text" class="form-control rounded-1 ps-5 py-3 border" placeholder="Find help..."
+              style="box-shadow: none;">
+            <i class="fa-solid fa-magnifying-glass position-absolute top-50 translate-middle-y ms-3 text-muted"
+              style="left: 0;"></i>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-5">
+        <!-- Left Column - FAQ Categories -->
+        <div class="col-lg-10 offset-lg-1">
+          <div class="row">
+
+            <div class="col-lg-4" id="faqCategoriesColumn">
+              <div class="">
+                <h6 class="fw-medium text-uppercase mb-4 small" style="letter-spacing: 0.5px; font-size: 18px;">
+                  Frequently
+                  Asked Questions
+                </h6>
+                <ul class="list-unstyled mb-0 d-flex flex-column gap-3" id="faqCategories">
+                  <li><a href="#" class="faq-category-link text-decoration-none text-dark d-block small"
+                      data-category="my-account">My Account</a></li>
+                  <li><a href="#" class="faq-category-link text-decoration-none text-dark d-block small"
+                      data-category="ordering">Ordering</a></li>
+                  <li><a href="#" class="faq-category-link text-decoration-none text-dark d-block small"
+                      data-category="payments">Payments</a></li>
+                  <li><a href="#" class="faq-category-link text-decoration-none text-dark d-block small"
+                      data-category="gift-vouchers">Cult Beauty Gift Vouchers</a></li>
+                  <li><a href="#" class="faq-category-link text-decoration-none text-dark d-block small"
+                      data-category="delivery">Delivery</a></li>
+                  <li><a href="#" class="faq-category-link text-decoration-none text-dark d-block small"
+                      data-category="returns">Returns and Refunds</a></li>
+                  <li><a href="#" class="faq-category-link text-decoration-none text-dark d-block small"
+                      data-category="website">Website</a></li>
+                  <li><a href="#" class="faq-category-link text-decoration-none text-dark d-block small"
+                      data-category="recycle">Recycle Me</a></li>
+                </ul>
+
+                <div class="py-4"></div>
+
+                <h6 class="fw-bold text-uppercase mb-4 small" style="letter-spacing: 0.5px;">Customer Support</h6>
+                <ul class="list-unstyled mb-0 d-flex flex-column gap-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center small">
+                      <i class="fa-regular fa-comment-dots me-2"></i>
+                      Open messages app
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center small">
+                      <i class="fa-regular fa-message me-2"></i>
+                      Message
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center small">
+                      <i class="fa-regular fa-envelope me-2"></i>
+                      View your messages
+                    </a>
+                  </li>
+                </ul>
+
+                <div class="py-4"></div>
+
+                <h6 class="fw-bold text-uppercase mb-4 small" style="letter-spacing: 0.5px;">Social Links</h6>
+                <ul class="list-unstyled mb-0 d-flex flex-column gap-3">
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center small">
+                      <i class="fa-brands fa-facebook me-2"></i>
+                      Facebook
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center small">
+                      <i class="fa-brands fa-twitter me-2"></i>
+                      Twitter
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center small">
+                      <i class="fa-brands fa-instagram me-2"></i>
+                      Instagram
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center small">
+                      <i class="fa-brands fa-pinterest me-2"></i>
+                      Pinterest
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="text-decoration-none text-dark d-flex align-items-center small">
+                      <i class="fa-brands fa-tiktok me-2"></i>
+                      Tiktok
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+
+            <!-- Right Column - FAQ Content -->
+            <div class="col-lg-7 offset-lg-1 d-none d-lg-block" id="faqContentColumn">
+              <div class="">
+                <!-- Back Button for Mobile -->
+                <button class="btn btn-link text-dark text-decoration-none p-0 mb-4 d-lg-none" id="backToHelpCentre">
+                  <i class="fa-solid fa-chevron-left me-2"></i> Back to Help Centre
+                </button>
+
+                <h6 class="fw-normal text-uppercase mb-3 small" style="letter-spacing: 0.5px; font-size: 20px;">My
+                  Account
+                </h6>
+                <p class="text-muted small mb-3" style="font-size: 16px;">Below are the most frequently asked questions
+                  for this topic</p>
+
+                <!-- FAQ Accordion -->
+                <div class="accordion accordion-flush" id="faqAccordion">
+                  <!-- FAQ Item 1 -->
+                  <div class="accordion-item border-bottom border-light-subtle">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent text-dark fw-normal py-4 px-0 shadow-none fw-normal"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                        How do I create an account?
+                      </button>
+                    </h2>
+                    <div id="faq1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body px-0 pb-4 text-muted small">
+                        To create an account, click on the "Account" button in the top right corner of the page and
+                        select
+                        "Registration". Fill in your details and click "Create Account".
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 2 -->
+                  <div class="accordion-item border-bottom border-light-subtle">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent text-dark fw-normal py-4 px-0 shadow-none fw-normal"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                        How do I register to receive special offers?
+                      </button>
+                    </h2>
+                    <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body px-0 pb-4 text-muted small">
+                        You can register for special offers by creating an account and opting in to receive marketing
+                        emails
+                        during registration, or by updating your preferences in your account settings.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 3 -->
+                  <div class="accordion-item border-bottom border-light-subtle">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent text-dark fw-normal py-4 px-0 shadow-none fw-normal"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                        How do I change my account details?
+                      </button>
+                    </h2>
+                    <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body px-0 pb-4 text-muted small">
+                        Log in to your account, go to "Account Details" and update your personal information, email
+                        preferences, or password as needed.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 4 -->
+                  <div class="accordion-item border-bottom border-light-subtle">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent text-dark fw-normal py-4 px-0 shadow-none fw-normal"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                        Are my personal details safe if I create an account?
+                      </button>
+                    </h2>
+                    <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body px-0 pb-4 text-muted small">
+                        Yes, we take data security very seriously. All personal information is encrypted and stored
+                        securely. We comply with GDPR and other data protection regulations.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 5 -->
+                  <div class="accordion-item border-bottom border-light-subtle">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent text-dark fw-normal py-4 px-0 shadow-none fw-normal"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faq5">
+                        I have forgotten my password. What should I do?
+                      </button>
+                    </h2>
+                    <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body px-0 pb-4 text-muted small">
+                        Click on "Forgot Password" on the login page. Enter your email address and we'll send you a link
+                        to
+                        reset your password.
+                      </div>
+                    </div>
+                  </div>
+
+                  <!-- FAQ Item 6 -->
+                  <div class="accordion-item border-bottom border-light-subtle">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed bg-transparent text-dark fw-normal py-4 px-0 shadow-none fw-normal"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#faq6">
+                        How do I unsubscribe?
+                      </button>
+                    </h2>
+                    <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                      <div class="accordion-body px-0 pb-4 text-muted small">
+                        You can unsubscribe from marketing emails by clicking the "Unsubscribe" link at the bottom of
+                        any
+                        email, or by updating your contact preferences in your account settings.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+    </div>
+  </main>
+  <!-- Help Centre Main Content end -->
+  <footer class="site-footer bg-black text-white pt-5 pb-3">
+    <!-- Footer Top: Newsletter & Social -->
+    <div class="footer-top border-bottom border-light-subtle pb-4 mb-5">
+      <div class="container">
+        <div class="row align-items-center gy-4">
+          <!-- Newsletter -->
+          <div class="col-lg-6">
+            <div
+              class="d-flex flex-column flex-lg-row align-items-center gap-3 justify-content-center justify-content-lg-start">
+              <span><i class="fa-regular fa-envelope fs-4"></i></span>
+              <span class="text-uppercase fw-light text-center text-lg-start">15% off your order when you sign-up to our
+                emails</span>
+              <button class="btn btn-light rounded-0 px-4 py-2 text-uppercase fw-bold">Sign Up</button>
+            </div>
+          </div>
+          <!-- Social Icons -->
+          <div class="col-lg-6">
+            <div class="d-flex justify-content-center justify-content-lg-end gap-4 fs-5 social-icons">
+              <span>Connect with us</span>
+              <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-facebook-f"></i></a>
+              <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-x-twitter"></i></a>
+              <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-instagram"></i></a>
+              <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-tiktok"></i></a>
+              <a href="#" class="text-white text-decoration-none"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Main: Accordion for Mobile, Grid for Desktop -->
+    <div class="footer-main mb-5">
+      <div class="container px-lg-5">
+
+        <!-- Mobile View: Accordion (Visible only on mobile/tablet) -->
+        <div class="footer-mobile-view text-center d-lg-none">
+          <div class="footer-accordion" id="footerAccordion">
+
+            <!-- Customer Service -->
+            <div class="footer-accordion-item w-100">
+              <h2 class="footer-accordion-header" id="headingCS">
+                <button class="footer-accordion-button collapsed text-uppercase fw-bold fs-6" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseCS" aria-expanded="false"
+                  aria-controls="collapseCS">
+                  Customer Service
+                </button>
+              </h2>
+              <div id="collapseCS" class="footer-accordion-collapse collapse" aria-labelledby="headingCS"
+                data-bs-parent="#footerAccordion">
+                <div class="footer-accordion-body">
+                  <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small fw-light">
+                    <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Help Centre / FAQs</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Shipping</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Returns</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Track my order</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- About Cult Beauty -->
+            <div class="footer-accordion-item w-100">
+              <h2 class="footer-accordion-header" id="headingAbout">
+                <button class="footer-accordion-button collapsed text-uppercase fw-bold fs-6" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseAbout" aria-expanded="false"
+                  aria-controls="collapseAbout">
+                  About Cult Beauty
+                </button>
+              </h2>
+              <div id="collapseAbout" class="footer-accordion-collapse collapse" aria-labelledby="headingAbout"
+                data-bs-parent="#footerAccordion">
+                <div class="footer-accordion-body">
+                  <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small fw-light">
+                    <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">People and Planet</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Cult Conscious</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Legal -->
+            <div class="footer-accordion-item w-100">
+              <h2 class="footer-accordion-header" id="headingLegal">
+                <button class="footer-accordion-button collapsed text-uppercase fw-bold fs-6" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseLegal" aria-expanded="false"
+                  aria-controls="collapseLegal">
+                  Legal
+                </button>
+              </h2>
+              <div id="collapseLegal" class="footer-accordion-collapse collapse" aria-labelledby="headingLegal"
+                data-bs-parent="#footerAccordion">
+                <div class="footer-accordion-body">
+                  <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small fw-light">
+                    <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Cookie Policy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Modern Slavery Policy</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Accessibility</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <!-- Find Out More -->
+            <div class="footer-accordion-item w-100">
+              <h2 class="footer-accordion-header" id="headingMore">
+                <button class="footer-accordion-button collapsed text-uppercase fw-bold fs-6" type="button"
+                  data-bs-toggle="collapse" data-bs-target="#collapseMore" aria-expanded="false"
+                  aria-controls="collapseMore">
+                  Find Out More
+                </button>
+              </h2>
+              <div id="collapseMore" class="footer-accordion-collapse collapse" aria-labelledby="headingMore"
+                data-bs-parent="#footerAccordion">
+                <div class="footer-accordion-body">
+                  <ul class="list-unstyled mb-0 d-flex flex-column gap-2 small fw-light">
+                    <li><a href="#" class="text-white text-decoration-none">Cult Status</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Promotions</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Affiliates</a></li>
+                    <li><a href="#" class="text-white text-decoration-none">Refer A Friend</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Logo & Blurb (Mobile Bottom) -->
+          <div class="text-center mt-4">
+            <img src="./assets/img/brand-logo/brand-logo.svg" alt="Cult Beauty"
+              class="img-fluid mb-3 footer-logo mx-auto" style="filter: invert(1); max-width: 120px;">
+            <p class="small fw-light">Cult Beauty is THE destination for the very best in beauty!</p>
+          </div>
+        </div>
+
+        <!-- Desktop View: Static Grid (Visible only on desktop) -->
+        <div class="footer-desktop-view d-none d-lg-block">
+          <div class="row gx-5">
+            <!-- Col 1: Logo & Blurb -->
+            <div class="col-lg-3">
+              <img src="./assets/img/brand-logo/brand-logo.svg" alt="Cult Beauty" class="img-fluid mb-4 footer-logo"
+                style="filter: invert(1); max-width: 160px;">
+              <p class="small fw-light lh-lg" style="color: #ccc;">Cult Beauty is THE destination for the very best in
+                beauty! From make up and skin care to fragrance, hair care and more, explore our line up of trending
+                brands today.</p>
+            </div>
+
+            <!-- Col 2: Customer Service -->
+            <div class="col-lg-2 offset-lg-1">
+              <h5 class="text-uppercase fw-bold fs-6 mb-4 text-white">Customer Service</h5>
+              <ul class="list-unstyled d-flex flex-column gap-2 small fw-light">
+                <li><a href="#" class="text-white text-decoration-none">Contact Us</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Help Centre / FAQs</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Shipping</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Returns</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Track my order</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 3: About Cult Beauty -->
+            <div class="col-lg-2">
+              <h5 class="text-uppercase fw-bold fs-6 mb-4 text-white">About Cult Beauty</h5>
+              <ul class="list-unstyled d-flex flex-column gap-2 small fw-light">
+                <li><a href="#" class="text-white text-decoration-none">About Us</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Careers</a></li>
+                <li><a href="#" class="text-white text-decoration-none">People and Planet</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Cult Conscious</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 4: Legal -->
+            <div class="col-lg-2">
+              <h5 class="text-uppercase fw-bold fs-6 mb-4 text-white">Legal</h5>
+              <ul class="list-unstyled d-flex flex-column gap-2 small fw-light">
+                <li><a href="#" class="text-white text-decoration-none">Terms & Conditions</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Privacy Policy</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Cookie Policy</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Modern Slavery Policy</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Accessibility</a></li>
+              </ul>
+            </div>
+
+            <!-- Col 5: Find Out More -->
+            <div class="col-lg-2">
+              <h5 class="text-uppercase fw-bold fs-6 mb-4 text-white">Find Out More</h5>
+              <ul class="list-unstyled d-flex flex-column gap-2 small fw-light">
+                <li><a href="#" class="text-white text-decoration-none">Cult Status</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Promotions</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Affiliates</a></li>
+                <li><a href="#" class="text-white text-decoration-none">Refer A Friend</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom pt-4 border-top border-light-subtle">
+      <div class="container ">
+        <div class="row gy-3  justify-content-between">
+          <div class="col-lg-6 text-center text-lg-start">
+            <span class="small fw-light">2025 © The Hut.com Ltd. t/a CultBeauty.com</span>
+          </div>
+          <div class="col-lg-4 offset-lg-2">
+            <div class="d-flex flex-column gap-2 align-items-center align-items-lg-end">
+              <span class="fw-bold">Pay Securely With</span>
+              <div class="d-flex gap-2 payment-icons fs-3">
+                <i class="fa-brands fa-cc-visa"></i>
+                <i class="fa-brands fa-cc-mastercard"></i>
+                <i class="fa-brands fa-cc-paypal"></i>
+                <i class="fa-brands fa-cc-amex"></i>
+                <i class="fa-brands fa-cc-apple-pay"></i>
+                <i class="fa-brands fa-google-pay"></i>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- modal for country (rigion ) selection  -->
+  <div class="modal fade" id="selectRegionModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="0"
+    aria-labelledby="selectRegionModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="selectRegionModalLabel">
+            Your region settings
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="" method="post">
+            <div class="input-group mb-3">
+              <label for="country" class="form-label fw-bold">Shipping Country</label>
+              <select id="country" class="form-select rounded-1 w-100 py-2" aria-label="Default select example">
+                <option selected>country name</option>
+                <option value="1">country name One</option>
+                <option value="2">country name Two</option>
+                <option value="3">country name Three</option>
+              </select>
+            </div>
+            <div class="input-group mb-3">
+              <label for="language" class="form-label fw-bold">Region & Language</label>
+              <select id="language" class="form-select rounded-1 w-100 py-2" aria-label="Default select example">
+                <option selected>Region & Language</option>
+                <option value="1">Region & Language One</option>
+                <option value="2">Region & Language Two</option>
+                <option value="3">Region & Language Three</option>
+              </select>
+            </div>
+            <div class="input-group mb-3">
+              <label for="Currencies" class="form-label fw-bold">Currencies</label>
+              <select id="Currencies" class="form-select rounded-1 w-100 py-2" aria-label="Default select example">
+                <option selected>Currencies</option>
+                <option value="1">Currencies One</option>
+                <option value="2">Currencies Two</option>
+                <option value="3">Currencies Three</option>
+              </select>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer border-top-0 pb-5 w-100 justify-content-center">
+          <div class="block w-100">
+            <button
+              class="px-2 py-3 text-xs bg-black text-white uppercase tracking-wider w-full cursor-pointer hover:bg-[#4c4c4c] hover:underline">
+              add to bag
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- custom modal for region modal for mobile  -->
+
+  <!-- modal for discount code -->
+  <div class="modal fade" id="getDiscountModal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+    aria-labelledby="getDiscountModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5 text-capitalize" id="getDiscountModalLabel">
+            get your cupon code
+          </h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body py-5">
+          <form action="" method="post">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control py-2 form-control-lg" placeholder="cupon code - 123456"
+                aria-label="cupon code - 123456" aria-describedby="basic-addon2" />
+              <span class="input-group-text bg-black text-white border border-black cursor-pointer"
+                id="basic-addon2">Copy code</span>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="./assets/js/bootstrap.bundle.min.js"></script>
+  <!-- swiper slider js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- custom js -->
+  <script type="module" src="./assets/js/main.js"></script>
+  <script type="module" src="./assets/js/slider.js"></script>
+  <script>
+    document.addEventListener("shown.bs.modal", function () {
+      document.body.style.overflow = "hidden";
+    });
+    document.addEventListener("hidden.bs.modal", function () {
+      document.body.style.overflow = "";
+    });
+
+    document
+      .getElementById("selectRegionModal")
+      .addEventListener("show.bs.modal", function () {
+        let offcanvas = bootstrap.Offcanvas.getInstance(
+          document.getElementById("mobileNavigation")
+        );
+        if (offcanvas) {
+          offcanvas.hide();
+        }
+      });
+
+    document
+      .getElementById("selectRegionModal")
+      .addEventListener("hidden.bs.modal", function () {
+        let backdrop = document.querySelector(".offcanvas-backdrop");
+        if (backdrop) {
+          backdrop.remove();
+          location.reload(true);
+        }
+        // Hide the Offcanvas forcefully to reset it
+        let offcanvasElement = document.getElementById("mobileNavigation");
+        let offcanvasInstance =
+          bootstrap.Offcanvas.getInstance(offcanvasElement);
+        if (offcanvasInstance) {
+          offcanvasInstance.hide(); // Ensures Offcanvas is reset properly
+        }
+      });
+  </script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    // FAQ Category Switching & Mobile Interaction
+    document.addEventListener('DOMContentLoaded', function () {
+      const categoryLinks = document.querySelectorAll('.faq-category-link');
+      const faqCategoriesColumn = document.getElementById('faqCategoriesColumn');
+      const faqContentColumn = document.getElementById('faqContentColumn');
+      const backButton = document.getElementById('backToHelpCentre');
+      // Mock existing sections just to prevent errors in existing logic code retention
+      const faqSections = document.querySelectorAll('.faq-section');
+
+      // Function to show FAQ content (Mobile)
+      function showFaqContent() {
+        if (window.innerWidth < 992) { // Bootstrap lg breakpoint
+          faqCategoriesColumn.classList.add('d-none');
+          faqContentColumn.classList.remove('d-none');
+          window.scrollTo(0, 0);
+        }
+      }
+
+      // Function to show Categories (Mobile)
+      function showCategories() {
+        if (window.innerWidth < 992) {
+          faqCategoriesColumn.classList.remove('d-none');
+          faqContentColumn.classList.add('d-none');
+        }
+      }
+
+      categoryLinks.forEach(link => {
+        link.addEventListener('click', function (e) {
+          e.preventDefault();
+          const category = this.getAttribute('data-category');
+
+          // Remove active class from all links
+          categoryLinks.forEach(l => l.classList.remove('fw-bold'));
+
+          // Add active class to clicked link
+          this.classList.add('fw-bold');
+
+          // Mobile interaction
+          showFaqContent();
+
+          // Existing filtering logic (kept for potential future matching)
+          faqSections.forEach(section => {
+            section.classList.add('d-none');
+          });
+
+          const targetSection = document.querySelector(`[data-category="${category}"].faq-section`);
+          if (targetSection) {
+            targetSection.classList.remove('d-none');
+          }
+        });
+      });
+
+      if (backButton) {
+        backButton.addEventListener('click', function () {
+          showCategories();
+        });
+      }
+
+      // Handle resize events
+      window.addEventListener('resize', function () {
+        if (window.innerWidth >= 992) {
+          // Restore functionality for desktop
+          if (faqCategoriesColumn) faqCategoriesColumn.classList.remove('d-none');
+          if (faqContentColumn) {
+            faqContentColumn.classList.remove('d-none');
+          }
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>
