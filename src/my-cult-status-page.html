@@ -218,7 +218,8 @@
                         <div class="text-center">
                             <p class="mb-4 fw-medium loyalty-cta-text">Link your Club Apparel Account to earn & redeem
                                 points <br class="d-none d-md-block"> with every purchase</p>
-                            <button class="btn btn-light rounded-pill px-5 py-3 fw-bold text-uppercase shadow-sm">Link
+                            <button class="btn btn-light rounded-pill px-5 py-3 fw-bold text-uppercase shadow-sm"
+                                data-bs-toggle="modal" data-bs-target="#delinkedModal">Link
                                 Account</button>
                         </div>
                     </div>
@@ -306,6 +307,28 @@
                 <a href="#" class="d-flex align-items-center text-decoration-none text-dark fw-bold">
                     <i class="fa-solid fa-arrow-right-from-bracket me-2"></i> Log out
                 </a>
+            </div>
+        </div>
+    </div>
+
+    <!-- De-Linked Success Modal -->
+    <div class="modal fade loyalty-action-modal" id="delinkedModal" tabindex="-1" aria-labelledby="delinkedModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0 justify-content-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pt-0 px-md-4 pb-md-4 mt-2">
+                    <div class="mb-4">
+                        <i class="fa-solid fa-link-slash text-danger" style="font-size: 3rem;"></i>
+                    </div>
+                    <h4 class="modal-title-text fw-bold mb-3">Account De-Linked!</h4>
+                    <p class="mb-4 modal-subtitle-text">Club Apparel account has been delinked as consent was not provided</p>
+
+                    <button type="button" class="btn btn-lavender w-100 rounded-pill py-3 text-uppercase mt-2 fw-bold"
+                        data-bs-dismiss="modal">Link Account</button>
+                </div>
             </div>
         </div>
     </div>
