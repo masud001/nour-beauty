@@ -13805,6 +13805,27 @@ body .product-overlay-listing {
   transform: translateX(0) !important;
 }
 
+/* De-Linked Consent Modal desktop size & responsiveness */
+@media (min-width: 576px) {
+  #delinkedModal .modal-dialog {
+    max-width: 420px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #delinkedModal .modal-content {
+    height: 302px;
+    padding: 10px 15px 15px 15px;
+  }
+  #delinkedModal .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-top: 0 !important;
+  }
+}
+
 *,
 ::before,
 ::after {
