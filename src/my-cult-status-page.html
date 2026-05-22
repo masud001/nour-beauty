@@ -343,24 +343,73 @@
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body text-center pt-0 px-md-4 pb-md-4">
-                    <img src="./assets/img/ca-logos/ca-logo-01-black-en.png" alt="CA Logo" width="50"
-                        class="mb-3 d-inline-block"
-                        style="filter: invert(65%) sepia(57%) saturate(1067%) hue-rotate(5deg) brightness(88%) contrast(92%);">
+                    <img src="./assets/img/ca-logos/modal-logo-image.png" alt="CA Logo" width="52" height="52"
+                        class="mb-3 d-block mx-auto">
                     <h4 class="modal-title-text fw-bold mb-3">Verify your mobile number</h4>
                     <p class="mb-1 modal-subtitle-text">Please enter the OTP sent on your number</p>
                     <p class="fw-bold mb-4" style="font-size: 14px; color: #333;">+91-8787987897 <a href="#"
                             class="text-dark fw-medium text-decoration-underline ms-1" style="font-size: 13px;"
-                            data-bs-dismiss="modal">Edit</a>
+                            data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#editMobileModal">Edit</a>
                     </p>
 
                     <input type="text" class="form-control text-center custom-otp-input mb-3"
                         placeholder="Enter your 4 digit OTP">
-                    <div class="text-end mb-4">
-                        <a href="#" class="text-dark small text-decoration-underline fw-medium">Resend OTP</a>
+                    <div class="text-end mb-4" id="otp-timer-container">
+                        <a href="#" id="resend-otp-btn" class="text-dark small text-decoration-underline fw-medium">Resend OTP</a>
                     </div>
 
                     <button type="button" class="btn btn-lavender w-100 rounded-pill py-3 text-uppercase mt-2 fw-bold"
-                        data-bs-dismiss="modal">VERIFY</button>
+                        data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#linkedModal">VERIFY</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Account Linked Modal -->
+    <div class="modal fade loyalty-action-modal" id="linkedModal" tabindex="-1" aria-labelledby="linkedModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0 justify-content-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pt-0 px-md-4 pb-md-4 mt-2">
+                    <div class="mb-3">
+                        <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg" class="d-block mx-auto">
+                            <circle cx="32" cy="32" r="30" stroke="#00C200" stroke-width="4" fill="none"/>
+                            <path d="M22 32L29 39L44 24" stroke="#00C200" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </div>
+                    <h4 class="modal-title-text fw-bold mb-2">Account Linked!</h4>
+                    <p class="mb-4 modal-subtitle-text fw-light" style="font-size: 14px; color: #555; line-height: 1.4;">
+                        Welcome back to Club Apparel, we have linked your account successfully.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Edit Mobile Number Modal -->
+    <div class="modal fade loyalty-action-modal" id="editMobileModal" tabindex="-1"
+        aria-labelledby="editMobileModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0 justify-content-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pt-0 px-md-4 pb-md-4">
+                    <img src="./assets/img/ca-logos/modal-logo-image.png" alt="CA Logo" width="52" height="52"
+                        class="mb-3 d-block mx-auto">
+                    <h4 class="modal-title-text fw-bold mb-3">Edit mobile number</h4>
+                    <p class="mb-4 modal-subtitle-text fw-light" style="font-size: 14px; color: #555; line-height: 1.4;">
+                        Please enter the correct mobile number to verify
+                    </p>
+
+                    <input type="text" class="form-control text-center custom-otp-input mb-4"
+                        placeholder="Enter mobile number">
+
+                    <button type="button" class="btn btn-lavender w-100 rounded-pill py-3 text-uppercase mt-2 fw-bold"
+                        data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#verifyMobileModal">SUBMIT</button>
                 </div>
             </div>
         </div>

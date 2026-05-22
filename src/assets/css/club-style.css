@@ -13847,6 +13847,48 @@ body .product-overlay-listing {
   }
 }
 
+/* Account Linked Modal desktop size & responsiveness */
+@media (min-width: 576px) {
+  #linkedModal .modal-dialog {
+    max-width: 400px;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #linkedModal .modal-content {
+    height: 228px;
+    padding: 10px 15px 15px 15px;
+  }
+  #linkedModal .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-top: 0 !important;
+  }
+}
+
+/* Edit Mobile Number Modal desktop size & responsiveness */
+@media (min-width: 576px) {
+  #editMobileModal .modal-dialog {
+    max-width: 420px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #editMobileModal .modal-content {
+    height: 411px;
+    padding: 10px 15px 15px 15px;
+  }
+  #editMobileModal .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-top: 0 !important;
+  }
+}
+
 *,
 ::before,
 ::after {

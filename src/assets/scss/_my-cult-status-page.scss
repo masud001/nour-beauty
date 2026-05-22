@@ -367,3 +367,49 @@
         }
     }
 }
+
+/* Account Linked Modal desktop size & responsiveness */
+#linkedModal {
+    @media (min-width: 576px) {
+        .modal-dialog {
+            max-width: 400px;
+            width: 400px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .modal-content {
+            height: 228px;
+            padding: 10px 15px 15px 15px;
+        }
+        .modal-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding-top: 0 !important;
+        }
+    }
+}
+
+/* Edit Mobile Number Modal desktop size & responsiveness */
+#editMobileModal {
+    @media (min-width: 576px) {
+        .modal-dialog {
+            max-width: 420px;
+            width: 420px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .modal-content {
+            height: 411px;
+            padding: 10px 15px 15px 15px;
+        }
+        .modal-body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            padding-top: 0 !important;
+        }
+    }
+}
