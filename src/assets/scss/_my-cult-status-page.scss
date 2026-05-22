@@ -316,3 +316,8 @@
         }
     }
 }
+
+/* Mobile Menu Transitions */
+.mobile-menu-overlay.open {
+    transform: translateX(0) !important;
+}

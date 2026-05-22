@@ -19256,6 +19256,11 @@ body .product-overlay-listing {
     font-size: 1.6rem;
   }
 }
+/* Mobile Menu Transitions */
+.mobile-menu-overlay.open {
+  transform: translateX(0) !important;
+}
+
 /* My Profile Page Styles */
 /* Inherits layout from _wishlist-page.scss and others */
 /* Dark Mode Overrides */
