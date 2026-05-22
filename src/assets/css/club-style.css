@@ -13826,6 +13826,27 @@ body .product-overlay-listing {
   }
 }
 
+/* Verify Mobile Number Modal desktop size & responsiveness */
+@media (min-width: 576px) {
+  #verifyMobileModal .modal-dialog {
+    max-width: 420px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #verifyMobileModal .modal-content {
+    height: 411px;
+    padding: 10px 15px 15px 15px;
+  }
+  #verifyMobileModal .modal-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding-top: 0 !important;
+  }
+}
+
 *,
 ::before,
 ::after {

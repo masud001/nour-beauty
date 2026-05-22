@@ -328,7 +328,39 @@
                         not provided</p>
 
                     <button type="button" class="btn btn-lavender w-100 rounded-pill py-3 text-uppercase mt-2 fw-bold"
-                        data-bs-dismiss="modal">Link Account</button>
+                        data-bs-dismiss="modal" data-bs-toggle="modal" data-bs-target="#verifyMobileModal">Link Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Verify Mobile Number Modal -->
+    <div class="modal fade loyalty-action-modal" id="verifyMobileModal" tabindex="-1"
+        aria-labelledby="verifyMobileModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0 pb-0 justify-content-end">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pt-0 px-md-4 pb-md-4">
+                    <img src="./assets/img/ca-logos/ca-logo-01-black-en.png" alt="CA Logo" width="50"
+                        class="mb-3 d-inline-block"
+                        style="filter: invert(65%) sepia(57%) saturate(1067%) hue-rotate(5deg) brightness(88%) contrast(92%);">
+                    <h4 class="modal-title-text fw-bold mb-3">Verify your mobile number</h4>
+                    <p class="mb-1 modal-subtitle-text">Please enter the OTP sent on your number</p>
+                    <p class="fw-bold mb-4" style="font-size: 14px; color: #333;">+91-8787987897 <a href="#"
+                            class="text-dark fw-medium text-decoration-underline ms-1" style="font-size: 13px;"
+                            data-bs-dismiss="modal">Edit</a>
+                    </p>
+
+                    <input type="text" class="form-control text-center custom-otp-input mb-3"
+                        placeholder="Enter your 4 digit OTP">
+                    <div class="text-end mb-4">
+                        <a href="#" class="text-dark small text-decoration-underline fw-medium">Resend OTP</a>
+                    </div>
+
+                    <button type="button" class="btn btn-lavender w-100 rounded-pill py-3 text-uppercase mt-2 fw-bold"
+                        data-bs-dismiss="modal">VERIFY</button>
                 </div>
             </div>
         </div>
