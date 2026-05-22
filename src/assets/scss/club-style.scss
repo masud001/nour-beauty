@@ -1,0 +1,69 @@
+@use "./design-tokens" as tokens;
+@use "./variable" as vars;
+
+// Overriding Bootstrap Variables
+$container-max-widths: (
+  sm: tokens.$container-sm,
+  md: tokens.$container-md,
+  lg: tokens.$container-lg,
+  xl: tokens.$container-xl,
+  xxl: tokens.$container-2xl,
+  3xl: tokens.$container-3xl
+);
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: tokens.$breakpoint-sm,
+  md: tokens.$breakpoint-md,
+  lg: tokens.$breakpoint-lg,
+  xl: tokens.$breakpoint-xl,
+  xxl: tokens.$breakpoint-2xl,
+  3xl: tokens.$breakpoint-3xl
+);
+
+@import "../../../node_modules/bootstrap/scss/bootstrap.scss";
+// font install from local folder
+@import "../fonts/flink-font/fonts.css";
+
+// all component scss file import
+@import "./Header-container";
+@import "./footer";
+@import "./custom-modal";
+@import "./popup-modal";
+@import "./theme";
+
+// layouts & pages
+@import "./wishlist-page";
+@import "./my-cult-status-page";
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: vars.$font-family-base;
+  font-size: 100%;
+  font-weight: normal;
+  font-style: normal;
+  background-color: vars.$background;
+  color: vars.$primary-color;
+}
+
+.h-color {
+  color: vars.$heading-color;
+}
+
+.t-color {
+  color: vars.$text-color;
+}
+
+.p-color {
+  color: vars.$paragraph-color;
+}
